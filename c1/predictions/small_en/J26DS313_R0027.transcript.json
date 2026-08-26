@@ -1,0 +1,480 @@
+{
+  "recording": "J26DS313_R0027",
+  "config": "small_en",
+  "model_size": "small",
+  "language_setting": "en",
+  "detected_language": "en",
+  "language_probability": 1,
+  "audio_duration_s": 266.12,
+  "transcribe_wall_s": 29.73,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0027_w001",
+      "start": 0.0,
+      "end": 2.0,
+      "text": "I don't know. I'm not sure if it's a dialogue."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w002",
+      "start": 2.0,
+      "end": 4.0,
+      "text": "I'm not sure."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w003",
+      "start": 4.0,
+      "end": 7.0,
+      "text": "So, you're not going to do an SSCL for Trashhold?"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w004",
+      "start": 7.0,
+      "end": 9.0,
+      "text": "No, I'm not going to do that."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w005",
+      "start": 9.0,
+      "end": 10.0,
+      "text": "No, I'm not going to do that."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w006",
+      "start": 10.0,
+      "end": 13.0,
+      "text": "After the SSCL Act, in April,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w007",
+      "start": 13.0,
+      "end": 16.0,
+      "text": "one of the members of the SSCL Trashhold"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w008",
+      "start": 16.0,
+      "end": 19.0,
+      "text": "was going to do a million-hectare and a million-thousand-hectare."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w009",
+      "start": 19.0,
+      "end": 20.0,
+      "text": "So, you're going to do a lot of SSCL?"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w010",
+      "start": 20.0,
+      "end": 22.0,
+      "text": "Yes. I'm going to do a lot of SSCL."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w011",
+      "start": 22.0,
+      "end": 24.0,
+      "text": "If we do a million-hectare and a million-hectare,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w012",
+      "start": 24.0,
+      "end": 26.0,
+      "text": "we're going to do that."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w013",
+      "start": 26.0,
+      "end": 27.0,
+      "text": "So, you're not going to do SSCL?"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w014",
+      "start": 27.0,
+      "end": 28.0,
+      "text": "No, I'm not going to do that."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w015",
+      "start": 28.0,
+      "end": 33.0,
+      "text": "So you're not going to do a million-hisectare and a million-thousand-hectare?"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w016",
+      "start": 33.0,
+      "end": 36.0,
+      "text": "Yes, because when you became an SKL city,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w017",
+      "start": 36.0,
+      "end": 39.0,
+      "text": "you said you will do a million-t diction for disturbances."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w018",
+      "start": 39.0,
+      "end": 40.0,
+      "text": "Do people call you that?"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w019",
+      "start": 40.0,
+      "end": 41.0,
+      "text": "They just call me they can tell me so."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w020",
+      "start": 41.0,
+      "end": 43.0,
+      "text": "I'll just tell you for you."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w021",
+      "start": 43.0,
+      "end": 46.0,
+      "text": "You don't want to know, what they will say?"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w022",
+      "start": 46.0,
+      "end": 48.0,
+      "text": "They won't say it, just that someone from Maholongoy would say that."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w023",
+      "start": 48.0,
+      "end": 50.0,
+      "text": "Someone from Maholongoy would say like,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w024",
+      "start": 50.0,
+      "end": 53.0,
+      "text": "it looks like we could usualy do more than 1 million."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w025",
+      "start": 83.0,
+      "end": 85.0,
+      "text": "No, one has to pay for the whole house."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w026",
+      "start": 85.0,
+      "end": 90.0,
+      "text": "We are not giving the money, we are just giving the wedding and we are selling it and we have to pay the tax."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w027",
+      "start": 90.0,
+      "end": 91.0,
+      "text": "It's all in our hands."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w028",
+      "start": 91.0,
+      "end": 92.0,
+      "text": "You have to take the money."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w029",
+      "start": 92.0,
+      "end": 93.0,
+      "text": "No, no."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w030",
+      "start": 93.0,
+      "end": 94.0,
+      "text": "We have to approach it, that's it."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w031",
+      "start": 94.0,
+      "end": 95.0,
+      "text": "No, no."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w032",
+      "start": 95.0,
+      "end": 96.0,
+      "text": "We have to give the money."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w033",
+      "start": 96.0,
+      "end": 97.0,
+      "text": "We have to pay for the whole house."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w034",
+      "start": 97.0,
+      "end": 98.0,
+      "text": "We have to take the money."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w035",
+      "start": 98.0,
+      "end": 101.0,
+      "text": "We don't have to pay the tax."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w036",
+      "start": 101.0,
+      "end": 102.0,
+      "text": "No, it's my decision."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w037",
+      "start": 102.0,
+      "end": 104.0,
+      "text": "My uncle is a SSCL and he has to tell us."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w038",
+      "start": 104.0,
+      "end": 105.0,
+      "text": "He has not been in the office."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w039",
+      "start": 105.0,
+      "end": 106.0,
+      "text": "He has not been in the office."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w040",
+      "start": 106.0,
+      "end": 108.0,
+      "text": "We have the committee, the IRD."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w041",
+      "start": 108.0,
+      "end": 110.0,
+      "text": "We have the treasury and he has to tell us that things have changed."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w042",
+      "start": 110.0,
+      "end": 112.0,
+      "text": "They have to show us."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w043",
+      "start": 112.0,
+      "end": 124.0,
+      "text": "Mr. Meefli."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w044",
+      "start": 124.0,
+      "end": 129.0,
+      "text": "Mr. Meefli."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w045",
+      "start": 129.0,
+      "end": 131.0,
+      "text": "articles, tax money, you know."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w046",
+      "start": 132.0,
+      "end": 134.0,
+      "text": "You have given this advice,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w047",
+      "start": 134.0,
+      "end": 136.0,
+      "text": "you have given this to SSCL,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w048",
+      "start": 136.0,
+      "end": 138.0,
+      "text": "you have given this to trading and wholesale,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w049",
+      "start": 138.0,
+      "end": 140.0,
+      "text": "you have given this to vet,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w050",
+      "start": 140.0,
+      "end": 142.0,
+      "text": "you have given this to the logic,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w051",
+      "start": 142.0,
+      "end": 144.0,
+      "text": "I don't know if it's true,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w052",
+      "start": 144.0,
+      "end": 146.0,
+      "text": "I don't know if it's true,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w053",
+      "start": 146.0,
+      "end": 148.0,
+      "text": "SSCL, VAT,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w054",
+      "start": 148.0,
+      "end": 150.0,
+      "text": "thresholds are not there,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w055",
+      "start": 150.0,
+      "end": 152.0,
+      "text": "it's complicated,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w056",
+      "start": 152.0,
+      "end": 154.0,
+      "text": "so I have given this to you."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w057",
+      "start": 155.0,
+      "end": 157.0,
+      "text": "You have given this to me,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w058",
+      "start": 157.0,
+      "end": 159.0,
+      "text": "you have given this to Iran,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w059",
+      "start": 159.0,
+      "end": 161.0,
+      "text": "you have given this to Bakht swab,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w060",
+      "start": 161.0,
+      "end": 163.0,
+      "text": "and now you have given this to Mokota."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w061",
+      "start": 164.0,
+      "end": 165.0,
+      "text": "Some pilot are not completing"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w062",
+      "start": 165.0,
+      "end": 170.0,
+      "text": "so these will be the explained areas,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w063",
+      "start": 171.0,
+      "end": 173.0,
+      "text": "some will be illiterate"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w064",
+      "start": 173.0,
+      "end": 175.0,
+      "text": "才 can administer them or not."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w065",
+      "start": 176.0,
+      "end": 178.0,
+      "text": "Is this a wrong or wrong,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w066",
+      "start": 178.0,
+      "end": 179.0,
+      "text": "This is what we are here for,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w067",
+      "start": 182.0,
+      "end": 183.0,
+      "text": "Yes exactly,"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w068",
+      "start": 213.0,
+      "end": 219.0,
+      "text": "Then at Thamma, we had to give Ramesh for the NCS company."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w069",
+      "start": 219.0,
+      "end": 221.0,
+      "text": "We were not able to arrange the funds."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w070",
+      "start": 221.0,
+      "end": 223.0,
+      "text": "But they were given to you, right?"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w071",
+      "start": 223.0,
+      "end": 225.0,
+      "text": "No, they are given to me in the maintenance period."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w072",
+      "start": 225.0,
+      "end": 227.0,
+      "text": "So, they are given?"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w073",
+      "start": 227.0,
+      "end": 229.0,
+      "text": "They are given to you in the maintenance period."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w074",
+      "start": 229.0,
+      "end": 231.0,
+      "text": "They are given to me in the maintenance period."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w075",
+      "start": 231.0,
+      "end": 233.0,
+      "text": "So, the DST QA?"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w076",
+      "start": 233.0,
+      "end": 236.0,
+      "text": "What is done for VAT?"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w077",
+      "start": 236.0,
+      "end": 239.0,
+      "text": "No, it is a 1% C."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w078",
+      "start": 239.0,
+      "end": 265.98,
+      "text": "Right. Well done. We'll go to the next, next, next excise, the custom."
+    }
+  ]
+}

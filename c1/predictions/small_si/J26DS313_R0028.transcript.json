@@ -1,0 +1,54 @@
+{
+  "recording": "J26DS313_R0028",
+  "config": "small_si",
+  "model_size": "small",
+  "language_setting": "si",
+  "detected_language": "si",
+  "language_probability": 1,
+  "audio_duration_s": 37.62,
+  "transcribe_wall_s": 10.05,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0028_w001",
+      "start": 0.69,
+      "end": 5.13,
+      "text": "pó 위에 ẫ T share mobile app bring hits to mobile"
+    },
+    {
+      "utt_id": "J26DS313_R0028_w002",
+      "start": 5.17,
+      "end": 7.37,
+      "text": "allergic card to mobile phones"
+    },
+    {
+      "utt_id": "J26DS313_R0028_w003",
+      "start": 7.43,
+      "end": 9.41,
+      "text": "interessante about scenarios"
+    },
+    {
+      "utt_id": "J26DS313_R0028_w004",
+      "start": 12.19,
+      "end": 15.77,
+      "text": "පළන්පමෛප සහoruama‧"
+    },
+    {
+      "utt_id": "J26DS313_R0028_w005",
+      "start": 17.37,
+      "end": 20.29,
+      "text": "සාවිල වම ඔන්පම්රුඩ්න"
+    },
+    {
+      "utt_id": "J26DS313_R0028_w006",
+      "start": 20.97,
+      "end": 22.69,
+      "text": "සු kardeşiminyu"
+    },
+    {
+      "utt_id": "J26DS313_R0028_w007",
+      "start": 23.17,
+      "end": 29.35,
+      "text": "වහෝල ස්පමරම්රවුඩයම් ප෤ුරයින් ලනෙබයිට,iscernibleම්ඥ පිනින්ි,වලඳශඥේ"
+    }
+  ]
+}

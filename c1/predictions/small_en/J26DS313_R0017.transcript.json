@@ -1,0 +1,312 @@
+{
+  "recording": "J26DS313_R0017",
+  "config": "small_en",
+  "model_size": "small",
+  "language_setting": "en",
+  "detected_language": "en",
+  "language_probability": 1,
+  "audio_duration_s": 151.06,
+  "transcribe_wall_s": 6.22,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0017_w001",
+      "start": 0.0,
+      "end": 3.76,
+      "text": "Good morning, Ceylon Electricity Board, Cardwell Office."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w002",
+      "start": 3.76,
+      "end": 5.12,
+      "text": "Can I come in?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w003",
+      "start": 5.12,
+      "end": 7.0,
+      "text": "Who's the connection?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w004",
+      "start": 8.32,
+      "end": 10.48,
+      "text": "Good morning, I'm Alut Gidra."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w005",
+      "start": 10.48,
+      "end": 13.36,
+      "text": "How do you get the electricity connection?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w006",
+      "start": 13.36,
+      "end": 16.2,
+      "text": "What's the full name?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w007",
+      "start": 16.2,
+      "end": 17.92,
+      "text": "Ruchira Pereira."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w008",
+      "start": 17.92,
+      "end": 21.84,
+      "text": "Ruchira R-U-C-E-H-I-E-R-E."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w009",
+      "start": 21.84,
+      "end": 23.8,
+      "text": "What's the name?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w010",
+      "start": 23.8,
+      "end": 26.48,
+      "text": "It's called Anu Atai,"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w011",
+      "start": 26.48,
+      "end": 29.8,
+      "text": "Dula Hai, Ti Hai, Anu Atai."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w012",
+      "start": 30.76,
+      "end": 33.48,
+      "text": "What's the date of birth?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w013",
+      "start": 33.48,
+      "end": 36.08,
+      "text": "It's December 8th."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w014",
+      "start": 36.08,
+      "end": 40.48,
+      "text": "How do you get the connection?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w015",
+      "start": 40.48,
+      "end": 43.68,
+      "text": "It's called Anu Atai."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w016",
+      "start": 43.68,
+      "end": 45.08,
+      "text": "What's the full name?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w017",
+      "start": 45.08,
+      "end": 49.84,
+      "text": "Bindu Hai, Atai, Deka Hai, Ti Hai, Anu Atai, Bindu Hai, Dula Hai."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w018",
+      "start": 49.84,
+      "end": 51.48,
+      "text": "What's the full name?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w019",
+      "start": 51.48,
+      "end": 61.88,
+      "text": "It's called P-D-D-D-D-A-S-V-C-T-I-K-W-Bindu-Deka Hai, Ata-L-I-S-P-H-I-V-C-E-K."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w020",
+      "start": 61.88,
+      "end": 63.64,
+      "text": "What's the full name?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w021",
+      "start": 63.64,
+      "end": 66.64,
+      "text": "Single-Face and Free-Face."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w022",
+      "start": 66.64,
+      "end": 71.48,
+      "text": "I'm using Single-Face for the first time in my life."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w023",
+      "start": 71.48,
+      "end": 74.28,
+      "text": "What's the technical assessment?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w024",
+      "start": 74.88,
+      "end": 81.4,
+      "text": "Sir, I got 89 new candy rods for the new connection."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w025",
+      "start": 81.4,
+      "end": 84.28,
+      "text": "Yes, I'm a technical officer Mahesh."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w026",
+      "start": 84.28,
+      "end": 86.88,
+      "text": "I'm doing my site visit."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w027",
+      "start": 86.88,
+      "end": 91.48,
+      "text": "I'm checking for the nearest transformer."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w028",
+      "start": 91.48,
+      "end": 93.44,
+      "text": "Do you check the load capacity for the transformer?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w029",
+      "start": 93.44,
+      "end": 99.6,
+      "text": "Sir, there's a 70% load capacity for the transformer in this area."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w030",
+      "start": 99.6,
+      "end": 100.24,
+      "text": "Good."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w031",
+      "start": 100.24,
+      "end": 104.4,
+      "text": "What's the site visit for this week's Friday?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w032",
+      "start": 104.4,
+      "end": 108.2,
+      "text": "I'm checking for the morning and afternoon."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w033",
+      "start": 108.2,
+      "end": 112.0,
+      "text": "Morning 10 to 12."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w034",
+      "start": 112.0,
+      "end": 116.84,
+      "text": "After the site visit, I'm checking for the connection approval date."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w035",
+      "start": 116.84,
+      "end": 123.2,
+      "text": "The name of the meeting is C-E-B-K-W-D-A-S-V-C-H-I-Bindu-A-S-V-A-T-I-T."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w036",
+      "start": 123.2,
+      "end": 124.8,
+      "text": "Note it down."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w037",
+      "start": 125.52,
+      "end": 131.52,
+      "text": "C-E-B-K-W-D-A-S-V-C-H-I-Bindu-A-S-V-A-T-I-T."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w038",
+      "start": 131.52,
+      "end": 136.52,
+      "text": "I'm checking for the file date."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w039",
+      "start": 136.52,
+      "end": 141.52,
+      "text": "Do you have any application fee?"
+    },
+    {
+      "utt_id": "J26DS313_R0017_w040",
+      "start": 141.52,
+      "end": 143.52,
+      "text": "Oh, no."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w041",
+      "start": 143.52,
+      "end": 144.52,
+      "text": "Oh, no."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w042",
+      "start": 144.52,
+      "end": 145.52,
+      "text": "Oh, no."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w043",
+      "start": 145.52,
+      "end": 146.52,
+      "text": "Oh, no."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w044",
+      "start": 146.52,
+      "end": 147.52,
+      "text": "Oh, no."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w045",
+      "start": 147.52,
+      "end": 148.52,
+      "text": "Oh, no."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w046",
+      "start": 148.52,
+      "end": 149.52,
+      "text": "Oh, no."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w047",
+      "start": 149.52,
+      "end": 150.52,
+      "text": "Oh, no."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w048",
+      "start": 150.52,
+      "end": 151.52,
+      "text": "Oh, no."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w049",
+      "start": 151.52,
+      "end": 152.52,
+      "text": "Oh, no."
+    },
+    {
+      "utt_id": "J26DS313_R0017_w050",
+      "start": 152.52,
+      "end": 153.52,
+      "text": "Oh, no."
+    }
+  ]
+}

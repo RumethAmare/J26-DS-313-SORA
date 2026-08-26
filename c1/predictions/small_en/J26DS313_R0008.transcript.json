@@ -1,0 +1,96 @@
+{
+  "recording": "J26DS313_R0008",
+  "config": "small_en",
+  "model_size": "small",
+  "language_setting": "en",
+  "detected_language": "en",
+  "language_probability": 1,
+  "audio_duration_s": 62.48,
+  "transcribe_wall_s": 7.91,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0008_w001",
+      "start": 1.81,
+      "end": 5.71,
+      "text": "Once you hear the first advance, we can move to Ampat bank and transferin it for that"
+    },
+    {
+      "utt_id": "J26DS313_R0008_w002",
+      "start": 5.99,
+      "end": 8.09,
+      "text": "We will contact them, according their account"
+    },
+    {
+      "utt_id": "J26DS313_R0008_w003",
+      "start": 8.35,
+      "end": 10.69,
+      "text": "Well, it wasn't according to my account"
+    },
+    {
+      "utt_id": "J26DS313_R0008_w004",
+      "start": 19.31,
+      "end": 24.39,
+      "text": "How can we get Shubhan 4.5.0?"
+    },
+    {
+      "utt_id": "J26DS313_R0008_w005",
+      "start": 24.61,
+      "end": 30.21,
+      "text": "If we can continue to transfery, no room can compare to my 27.5"
+    },
+    {
+      "utt_id": "J26DS313_R0008_w006",
+      "start": 30.21,
+      "end": 32.68,
+      "text": "I had a lot of children."
+    },
+    {
+      "utt_id": "J26DS313_R0008_w007",
+      "start": 35.68,
+      "end": 37.68,
+      "text": "We lived in 220-250 years."
+    },
+    {
+      "utt_id": "J26DS313_R0008_w008",
+      "start": 38.68,
+      "end": 40.68,
+      "text": "And the rest of the family was parents."
+    },
+    {
+      "utt_id": "J26DS313_R0008_w009",
+      "start": 41.68,
+      "end": 43.68,
+      "text": "But we cannot build the house."
+    },
+    {
+      "utt_id": "J26DS313_R0008_w010",
+      "start": 43.68,
+      "end": 45.68,
+      "text": "But we can change the house."
+    },
+    {
+      "utt_id": "J26DS313_R0008_w011",
+      "start": 46.68,
+      "end": 52.86,
+      "text": "This is our home."
+    },
+    {
+      "utt_id": "J26DS313_R0008_w012",
+      "start": 53.86,
+      "end": 56.86,
+      "text": "We can change the house."
+    },
+    {
+      "utt_id": "J26DS313_R0008_w013",
+      "start": 56.86,
+      "end": 59.36,
+      "text": "Can we change the house?"
+    },
+    {
+      "utt_id": "J26DS313_R0008_w014",
+      "start": 59.86,
+      "end": 60.86,
+      "text": "No."
+    }
+  ]
+}

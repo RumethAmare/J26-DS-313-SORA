@@ -1,0 +1,252 @@
+{
+  "recording": "J26DS313_R0023",
+  "config": "small_en",
+  "model_size": "small",
+  "language_setting": "en",
+  "detected_language": "en",
+  "language_probability": 1,
+  "audio_duration_s": 141.67,
+  "transcribe_wall_s": 3.31,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0023_w001",
+      "start": 0.34,
+      "end": 4.78,
+      "text": "Good morning, I am Constable Teela. Can I come in?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w002",
+      "start": 4.78,
+      "end": 9.78,
+      "text": "Good morning sir, I have a complaint. I have to file a complaint and I have to get my vehicle."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w003",
+      "start": 9.78,
+      "end": 11.62,
+      "text": "Oh, okay. What's your name?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w004",
+      "start": 11.62,
+      "end": 13.42,
+      "text": "Chamarit Jaivardhan Singh."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w005",
+      "start": 13.42,
+      "end": 14.82,
+      "text": "What's your name?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w006",
+      "start": 14.82,
+      "end": 20.1,
+      "text": "Iqdas Nam Sia Anu Dekai, Hatta Hatai, Asu Wai, Tis Dekai Daha Hatra."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w007",
+      "start": 20.1,
+      "end": 22.34,
+      "text": "What's your name?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w008",
+      "start": 22.34,
+      "end": 26.1,
+      "text": "Julie Visina, Iqdas Nam Sia Anu Dekai."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w009",
+      "start": 26.1,
+      "end": 28.74,
+      "text": "Okay. What's your name?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w010",
+      "start": 29.06,
+      "end": 32.1,
+      "text": "Number of Hatta, TV Road, Muratotur."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w011",
+      "start": 32.1,
+      "end": 33.78,
+      "text": "What's your full name?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w012",
+      "start": 33.78,
+      "end": 39.38,
+      "text": "Bindwai Hattai Ekai, Dasiai Hatta Hattai, Tunsia Hattaalis, Paha."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w013",
+      "start": 39.38,
+      "end": 40.82,
+      "text": "What's your name?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w014",
+      "start": 40.82,
+      "end": 47.14,
+      "text": "Sudupata Aqwaika, Plate, Nambeka, Western Province, C.A.L, Visitunai, Hattaalis, Ekka."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w015",
+      "start": 47.14,
+      "end": 50.18,
+      "text": "What's your name?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w016",
+      "start": 50.18,
+      "end": 57.54,
+      "text": "I'm from Muratotur Town Parking Area, Pakkalla, Shopping Kerala and I have a vehicle."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w017",
+      "start": 58.1,
+      "end": 60.5,
+      "text": "What's your full name?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w018",
+      "start": 60.5,
+      "end": 63.7,
+      "text": "I'm from Sunilad, Nibakini, Saakshi."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w019",
+      "start": 63.7,
+      "end": 69.22,
+      "text": "I'm from Bindwai, Hattai, Dekai, Tis Dekai, Panasai, Hatia, Asu Wai."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w020",
+      "start": 69.22,
+      "end": 72.02,
+      "text": "What's your full name?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w021",
+      "start": 72.02,
+      "end": 81.62,
+      "text": "Iqdas Nam Sia Anu Dekai, Chamarit Jaivardhan, V.P. Cole, Dasiai, Tis Dekai."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w022",
+      "start": 81.62,
+      "end": 84.66,
+      "text": "What's your full name?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w023",
+      "start": 84.74,
+      "end": 88.58,
+      "text": "I'm from OICP, C.C.T.V."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w024",
+      "start": 88.58,
+      "end": 92.02,
+      "text": "I'm requesting for CCTV footage from Muratotur Town."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w025",
+      "start": 92.02,
+      "end": 94.82,
+      "text": "What's your full name?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w026",
+      "start": 94.82,
+      "end": 97.14,
+      "text": "Yes, my full name is C.M.P."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w027",
+      "start": 97.14,
+      "end": 102.82,
+      "text": "I'm from Muratotur, Bindwai, Asunamai, Ekka."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w028",
+      "start": 102.82,
+      "end": 106.9,
+      "text": "Chamarit, my full name is C.M.P."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w029",
+      "start": 106.9,
+      "end": 111.46,
+      "text": "I'm from Bindwai, Hatta, Muratotur, Bindwai, Asunamai, Ekka."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w030",
+      "start": 111.46,
+      "end": 114.58,
+      "text": "I'm calling from my personal phone."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w031",
+      "start": 114.58,
+      "end": 116.58,
+      "text": "What's your full name?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w032",
+      "start": 116.58,
+      "end": 120.58,
+      "text": "I'm from 071-234-5678."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w033",
+      "start": 120.58,
+      "end": 122.58,
+      "text": "Thank you, sir."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w034",
+      "start": 122.58,
+      "end": 124.58,
+      "text": "I'm calling from the insurance claim file."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w035",
+      "start": 124.58,
+      "end": 126.58,
+      "text": "I'm calling from the police report."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w036",
+      "start": 126.58,
+      "end": 130.58,
+      "text": "I'm calling from the front counter."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w037",
+      "start": 130.58,
+      "end": 136.58,
+      "text": "Have your vehicle papers ready or what?"
+    },
+    {
+      "utt_id": "J26DS313_R0023_w038",
+      "start": 136.58,
+      "end": 138.58,
+      "text": "Okay, sir. Thank you."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w039",
+      "start": 138.58,
+      "end": 140.58,
+      "text": "Thank you, constable."
+    },
+    {
+      "utt_id": "J26DS313_R0023_w040",
+      "start": 140.58,
+      "end": 142.58,
+      "text": "Okay."
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "recording": "J26DS313_R0019",
+  "config": "small_en",
+  "model_size": "small",
+  "language_setting": "en",
+  "detected_language": "en",
+  "language_probability": 1,
+  "audio_duration_s": 169.64,
+  "transcribe_wall_s": 11.3,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0019_w001",
+      "start": 0.66,
+      "end": 5.94,
+      "text": "Good afternoon, dialogue customer."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w002",
+      "start": 12.44,
+      "end": 23.48,
+      "text": "Thank you."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w003",
+      "start": 23.48,
+      "end": 24.48,
+      "text": "Thank you."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w004",
+      "start": 24.48,
+      "end": 25.48,
+      "text": "What's your account name?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w005",
+      "start": 25.48,
+      "end": 28.48,
+      "text": "My account name is Anu Maa Siri Vardhanan."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w006",
+      "start": 28.48,
+      "end": 31.48,
+      "text": "Can you explain the issue to me?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w007",
+      "start": 31.48,
+      "end": 35.48,
+      "text": "My last month's bill was not available."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w008",
+      "start": 35.48,
+      "end": 38.48,
+      "text": "I don't know if I was able to charge extra data."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w009",
+      "start": 38.48,
+      "end": 42.48,
+      "text": "But I was able to add packages."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w010",
+      "start": 42.48,
+      "end": 46.48,
+      "text": "I don't know if I was able to charge extra data."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w011",
+      "start": 46.48,
+      "end": 48.48,
+      "text": "Let me check."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w012",
+      "start": 48.48,
+      "end": 50.48,
+      "text": "Let's see."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w013",
+      "start": 50.48,
+      "end": 54.48,
+      "text": "I was able to charge extra data in October 5th."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w014",
+      "start": 54.48,
+      "end": 57.48,
+      "text": "But I was able to charge extra data in October 1st."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w015",
+      "start": 57.48,
+      "end": 62.48,
+      "text": "So I was able to charge extra data in October 1st and 4th."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w016",
+      "start": 62.48,
+      "end": 68.48,
+      "text": "So you didn't have to explain the issue to me?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w017",
+      "start": 68.48,
+      "end": 70.48,
+      "text": "Yes, I understand."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w018",
+      "start": 70.48,
+      "end": 71.48,
+      "text": "Sorry for the confusion."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w019",
+      "start": 71.48,
+      "end": 72.48,
+      "text": "Yes, Madam."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w020",
+      "start": 72.48,
+      "end": 76.48,
+      "text": "I don't want you to complain."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w021",
+      "start": 76.48,
+      "end": 81.98,
+      "text": "Can you explain the issue to me?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w022",
+      "start": 81.98,
+      "end": 89.98,
+      "text": "Sir, Anu Maa Siri Vardhanan, DLG 2019 00567834."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w023",
+      "start": 89.98,
+      "end": 91.98,
+      "text": "Can you explain the issue to me?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w024",
+      "start": 91.98,
+      "end": 92.98,
+      "text": "Yes, Anu Maa."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w025",
+      "start": 92.98,
+      "end": 97.98,
+      "text": "I was able to charge extra data in October 1st."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w026",
+      "start": 97.98,
+      "end": 102.98,
+      "text": "So I was able to credit the account for the confusion."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w027",
+      "start": 102.98,
+      "end": 104.98,
+      "text": "Thank you so much, Sir."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w028",
+      "start": 104.98,
+      "end": 105.98,
+      "text": "Thank you."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w029",
+      "start": 105.98,
+      "end": 108.98,
+      "text": "As per the 5 years lawyer customer account,"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w030",
+      "start": 108.98,
+      "end": 111.98,
+      "text": "I was able to offer a special update."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w031",
+      "start": 111.98,
+      "end": 113.98,
+      "text": "I was able to ship the 15 GB plan."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w032",
+      "start": 113.98,
+      "end": 114.98,
+      "text": "Oh, really?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w033",
+      "start": 114.98,
+      "end": 116.98,
+      "text": "The same price."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w034",
+      "start": 116.98,
+      "end": 117.98,
+      "text": "Oh, really, Sir."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w035",
+      "start": 117.98,
+      "end": 118.98,
+      "text": "Thank you so much, Sir."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w036",
+      "start": 118.98,
+      "end": 120.98,
+      "text": "Can you process the update form?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w037",
+      "start": 120.98,
+      "end": 122.98,
+      "text": "Can you confirm the address?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w038",
+      "start": 122.98,
+      "end": 125.98,
+      "text": "Sir, number 56, Hospital Road, Gumpa."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w039",
+      "start": 125.98,
+      "end": 126.98,
+      "text": "What is the contact number?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w040",
+      "start": 126.98,
+      "end": 127.98,
+      "text": "I don't know."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w041",
+      "start": 127.98,
+      "end": 128.98,
+      "text": "I don't know."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w042",
+      "start": 128.98,
+      "end": 129.98,
+      "text": "I don't know."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w043",
+      "start": 129.98,
+      "end": 130.98,
+      "text": "I don't know the contact number."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w044",
+      "start": 130.98,
+      "end": 132.98,
+      "text": "I don't know the address."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w045",
+      "start": 132.98,
+      "end": 134.98,
+      "text": "I don't know about the address."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w046",
+      "start": 134.98,
+      "end": 135.98,
+      "text": "Oh, Sir."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w047",
+      "start": 135.98,
+      "end": 136.98,
+      "text": "Oh, Sir."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w048",
+      "start": 136.98,
+      "end": 139.98,
+      "text": "Did you receive your date of verification?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w049",
+      "start": 139.98,
+      "end": 143.98,
+      "text": "Sir, March 7, 1991, Sir."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w050",
+      "start": 143.98,
+      "end": 144.98,
+      "text": "Do we have to wait until the update is confirmed?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w051",
+      "start": 144.98,
+      "end": 145.98,
+      "text": "Yes, Sir."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w052",
+      "start": 145.98,
+      "end": 146.98,
+      "text": "Do we have to wait until the update is confirmed?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w053",
+      "start": 146.98,
+      "end": 147.98,
+      "text": "Yes, Sir."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w054",
+      "start": 147.98,
+      "end": 148.98,
+      "text": "What are the other confirmations?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w055",
+      "start": 148.98,
+      "end": 153.98,
+      "text": "Anu Maa, the report is available on 7th March, 1993,"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w056",
+      "start": 153.98,
+      "end": 154.98,
+      "text": "No, Sir."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w057",
+      "start": 154.98,
+      "end": 155.98,
+      "text": "They don't need the details."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w058",
+      "start": 155.98,
+      "end": 157.98,
+      "text": "The complaint requirements are DLG, CMP,"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w059",
+      "start": 157.98,
+      "end": 161.98,
+      "text": "visit or visit anything else?"
+    },
+    {
+      "utt_id": "J26DS313_R0019_w060",
+      "start": 161.98,
+      "end": 165.98,
+      "text": "No, sorry madam, all good. Everything is okay."
+    },
+    {
+      "utt_id": "J26DS313_R0019_w061",
+      "start": 165.98,
+      "end": 168.98,
+      "text": "Okay, take care. Have a nice day. Thank you madam."
+    }
+  ]
+}

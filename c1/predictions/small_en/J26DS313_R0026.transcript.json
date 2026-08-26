@@ -1,0 +1,318 @@
+{
+  "recording": "J26DS313_R0026",
+  "config": "small_en",
+  "model_size": "small",
+  "language_setting": "en",
+  "detected_language": "en",
+  "language_probability": 1,
+  "audio_duration_s": 127.4,
+  "transcribe_wall_s": 9.18,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0026_w001",
+      "start": 0.24,
+      "end": 2.24,
+      "text": "Good morning, Fleet Registration Count."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w002",
+      "start": 2.24,
+      "end": 4.24,
+      "text": "I am Kavindu."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w003",
+      "start": 4.24,
+      "end": 6.24,
+      "text": "Can you help us?"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w004",
+      "start": 6.24,
+      "end": 8.24,
+      "text": "Good morning, Madam."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w005",
+      "start": 8.24,
+      "end": 10.24,
+      "text": "I want to register for IT faculty."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w006",
+      "start": 10.24,
+      "end": 12.24,
+      "text": "I know how to register."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w007",
+      "start": 12.24,
+      "end": 14.24,
+      "text": "Sure. First student."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w008",
+      "start": 14.24,
+      "end": 16.24,
+      "text": "Madam, I am Manimali Bandar."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w009",
+      "start": 18.24,
+      "end": 20.24,
+      "text": "What is your name?"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w010",
+      "start": 20.24,
+      "end": 22.24,
+      "text": "My name is Dadasa."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w011",
+      "start": 22.24,
+      "end": 24.24,
+      "text": "I am Bindu."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w012",
+      "start": 24.24,
+      "end": 26.24,
+      "text": "I am Tunai."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w013",
+      "start": 26.24,
+      "end": 28.24,
+      "text": "I am a high school student."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w014",
+      "start": 28.24,
+      "end": 30.24,
+      "text": "I am a high school student."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w015",
+      "start": 30.24,
+      "end": 32.24,
+      "text": "It is confirmed date of birth."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w016",
+      "start": 32.24,
+      "end": 34.24,
+      "text": "It was August 7th, 2001."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w017",
+      "start": 36.24,
+      "end": 38.24,
+      "text": "What is your address?"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w018",
+      "start": 38.24,
+      "end": 40.24,
+      "text": "I am number 45 Mal Burton."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w019",
+      "start": 40.24,
+      "end": 44.24,
+      "text": "What is your contact name?"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w020",
+      "start": 44.24,
+      "end": 46.24,
+      "text": "I am Bindu."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w021",
+      "start": 46.24,
+      "end": 48.24,
+      "text": "I am Tunai."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w022",
+      "start": 48.24,
+      "end": 50.24,
+      "text": "I am a high school student."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w023",
+      "start": 50.24,
+      "end": 52.24,
+      "text": "When do you register for email?"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w024",
+      "start": 52.24,
+      "end": 57.24,
+      "text": "Animali.bandara.gmail.com"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w025",
+      "start": 57.24,
+      "end": 63.38,
+      "text": "Kavind, what is your system update for now?"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w026",
+      "start": 63.38,
+      "end": 66.38,
+      "text": "I have updated the house, but I don't have any checker."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w027",
+      "start": 66.38,
+      "end": 68.38,
+      "text": "Sorry, I forgot to tell you."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w028",
+      "start": 68.38,
+      "end": 71.38,
+      "text": "Okay, okay. What is it for IT? Which page?"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w029",
+      "start": 71.38,
+      "end": 75.38,
+      "text": "Sir, it is for 2021 intake."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w030",
+      "start": 75.38,
+      "end": 78.38,
+      "text": "Okay, okay. Kavind, what is it for IT?"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w031",
+      "start": 78.38,
+      "end": 82.38,
+      "text": "I am going to give you a new lecture."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w032",
+      "start": 82.38,
+      "end": 86.38,
+      "text": "Check the register portal for Friday, sir."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w033",
+      "start": 86.38,
+      "end": 89.38,
+      "text": "Friday, 2 o'clock, sir."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w034",
+      "start": 89.38,
+      "end": 92.38,
+      "text": "Oh, on Monday, sir."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w035",
+      "start": 92.38,
+      "end": 94.38,
+      "text": "Call me on Monday, sir."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w036",
+      "start": 94.38,
+      "end": 95.38,
+      "text": "I am on the call, sir."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w037",
+      "start": 95.38,
+      "end": 97.38,
+      "text": "Okay, sir. I am not on the call."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w038",
+      "start": 97.38,
+      "end": 100.38,
+      "text": "It is on Monday, sir."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w039",
+      "start": 100.38,
+      "end": 102.38,
+      "text": "Okay, thank you."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w040",
+      "start": 102.38,
+      "end": 104.38,
+      "text": "Okay, Animali."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w041",
+      "start": 104.38,
+      "end": 107.7,
+      "text": "student ID, IT, Visutanai, Kasiya Panasaya,"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w042",
+      "start": 107.7,
+      "end": 110.5,
+      "text": "an email like this,"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w043",
+      "start": 110.5,
+      "end": 113.5,
+      "text": "nimali.bandarajmail.com"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w044",
+      "start": 113.5,
+      "end": 115.5,
+      "text": "Oh, oh, oh! Madame, here you are."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w045",
+      "start": 115.5,
+      "end": 116.5,
+      "text": "Yes, Hari."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w046",
+      "start": 116.5,
+      "end": 119.46,
+      "text": "You can check the account of any problem"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w047",
+      "start": 119.46,
+      "end": 121.46,
+      "text": "otherwise, check the portal."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w048",
+      "start": 121.46,
+      "end": 122.46,
+      "text": "Have a good day."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w049",
+      "start": 122.46,
+      "end": 124.46,
+      "text": "Thank you so much, Madame. Thank you, Sir."
+    },
+    {
+      "utt_id": "J26DS313_R0026_w050",
+      "start": 124.46,
+      "end": 125.96,
+      "text": "No problem. It's tough, right?"
+    },
+    {
+      "utt_id": "J26DS313_R0026_w051",
+      "start": 125.96,
+      "end": 126.96,
+      "text": "Thank you, Sir."
+    }
+  ]
+}

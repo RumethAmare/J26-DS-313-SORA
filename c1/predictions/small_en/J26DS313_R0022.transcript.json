@@ -1,0 +1,342 @@
+{
+  "recording": "J26DS313_R0022",
+  "config": "small_en",
+  "model_size": "small",
+  "language_setting": "en",
+  "detected_language": "en",
+  "language_probability": 1,
+  "audio_duration_s": 186.64,
+  "transcribe_wall_s": 13.6,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0022_w001",
+      "start": 0.0,
+      "end": 3.72,
+      "text": "Good morning, people's bank has a branch, how can I help you?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w002",
+      "start": 3.72,
+      "end": 7.6,
+      "text": "Good morning, I have to apply for a personal loan."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w003",
+      "start": 7.6,
+      "end": 11.64,
+      "text": "Do you have my salary account or my salary account?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w004",
+      "start": 11.64,
+      "end": 14.4,
+      "text": "Yes, I have. What's the name of the account?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w005",
+      "start": 14.4,
+      "end": 18.28,
+      "text": "Binduay, Binduay, Hatirispahay, Hatahatay, Asuna Mayay."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w006",
+      "start": 18.28,
+      "end": 20.28,
+      "text": "Do you have one account?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w007",
+      "start": 20.28,
+      "end": 24.36,
+      "text": "Yes, ma'am, I have a full name."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w008",
+      "start": 24.44,
+      "end": 26.36,
+      "text": "What's the name of the account?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w009",
+      "start": 26.36,
+      "end": 30.36,
+      "text": "Binduay, Asuna Mayay, Hatirispahay, Hatahatay, Asuna Mayay."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w010",
+      "start": 30.36,
+      "end": 32.36,
+      "text": "What's the name of the account, ma'am?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w011",
+      "start": 32.36,
+      "end": 38.36,
+      "text": "Binduay, Asuna Mayay, Hatirispahay, Hatahatay, Asuna Mayay."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w012",
+      "start": 38.36,
+      "end": 41.36,
+      "text": "What's the date of your birth?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w013",
+      "start": 41.36,
+      "end": 43.36,
+      "text": "February 18th."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w014",
+      "start": 43.36,
+      "end": 45.36,
+      "text": "What's the date of your birth?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w015",
+      "start": 45.36,
+      "end": 48.36,
+      "text": "I have to apply for a personal loan."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w016",
+      "start": 48.36,
+      "end": 51.36,
+      "text": "What's the date of your birth?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w017",
+      "start": 51.36,
+      "end": 53.36,
+      "text": "What's the date of your birth, ma'am?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w018",
+      "start": 53.36,
+      "end": 57.36,
+      "text": "Binduay, Hatay, Pahay, Asuna Mayay, Hatahatay, Asuna Mayay."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w019",
+      "start": 57.36,
+      "end": 60.36,
+      "text": "What's the date of your birth, ma'am?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w020",
+      "start": 60.36,
+      "end": 62.36,
+      "text": "Ma'am, what's the date of your birth, ma'am?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w021",
+      "start": 62.36,
+      "end": 67.36,
+      "text": "Ma'am, I have an IT department software for the dialogue and SCRT."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w022",
+      "start": 67.36,
+      "end": 71.36,
+      "text": "Ma'am, what's the rate of your personal loan?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w023",
+      "start": 71.36,
+      "end": 74.36,
+      "text": "1 lakhs for a personal loan."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w024",
+      "start": 74.36,
+      "end": 78.36,
+      "text": "What's the rate of your personal loan?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w025",
+      "start": 78.36,
+      "end": 80.36,
+      "text": "3 lakhs for a personal loan."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w026",
+      "start": 80.36,
+      "end": 86.36,
+      "text": "What's the rate of your personal loan?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w027",
+      "start": 86.36,
+      "end": 93.36,
+      "text": "In the case of a loan that is once a month, it will take 3 months to get a loan."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w028",
+      "start": 93.36,
+      "end": 96.36,
+      "text": "Ma'am, what's the rate of your personal loan?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w029",
+      "start": 96.36,
+      "end": 101.36,
+      "text": "Are you busy with your dialogue?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w030",
+      "start": 101.36,
+      "end": 104.04,
+      "text": "I'm also a bank manager, Sujeeva."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w031",
+      "start": 104.04,
+      "end": 106.68,
+      "text": "I'm also a slideshow employee."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w032",
+      "start": 106.68,
+      "end": 108.48,
+      "text": "Yes, madam."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w033",
+      "start": 108.48,
+      "end": 110.88,
+      "text": "We're all in the document."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w034",
+      "start": 110.88,
+      "end": 115.63,
+      "text": "We're a dialogue company,"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w035",
+      "start": 115.63,
+      "end": 117.43,
+      "text": "we're an eraser,"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w036",
+      "start": 117.43,
+      "end": 121.99,
+      "text": "and we're a betting company."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w037",
+      "start": 121.99,
+      "end": 123.31,
+      "text": "We're doing something."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w038",
+      "start": 123.31,
+      "end": 125.39,
+      "text": "If you don't have a direct opinion, I won't."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w039",
+      "start": 125.39,
+      "end": 127.19,
+      "text": "Yes, Harry."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w040",
+      "start": 127.19,
+      "end": 129.31,
+      "text": "If you have a question,"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w041",
+      "start": 129.31,
+      "end": 132.03,
+      "text": "I'll give you an in principle approval."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w042",
+      "start": 132.03,
+      "end": 135.55,
+      "text": "Finally, I've been working in this department for the past few months,"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w043",
+      "start": 135.55,
+      "end": 138.19,
+      "text": "I've been in this department for a long time now."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w044",
+      "start": 138.19,
+      "end": 140.61,
+      "text": "I've been in this department for two years now,"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w045",
+      "start": 140.61,
+      "end": 143.69,
+      "text": "I've been in this department for a long time now,"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w046",
+      "start": 143.69,
+      "end": 146.57,
+      "text": "and I've been working in this department for a long time now."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w047",
+      "start": 146.57,
+      "end": 148.21,
+      "text": "Thank you sir."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w048",
+      "start": 148.21,
+      "end": 150.85,
+      "text": "Please tell me your name."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w049",
+      "start": 150.85,
+      "end": 158.45,
+      "text": "I've got an application reference, LN2024NG00445."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w050",
+      "start": 158.45,
+      "end": 159.99,
+      "text": "Do you know what it is?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w051",
+      "start": 159.99,
+      "end": 167.99,
+      "text": "LN, Visai, Visihatarai, NG, Bindwai, Bindwai, Harsi, Hathaliswha. Got it?"
+    },
+    {
+      "utt_id": "J26DS313_R0022_w052",
+      "start": 167.99,
+      "end": 175.99,
+      "text": "I personally follow the documents."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w053",
+      "start": 175.99,
+      "end": 180.99,
+      "text": "They give me a copy of the documents."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w054",
+      "start": 180.99,
+      "end": 183.99,
+      "text": "And madam, thank you for choosing People's Bank."
+    },
+    {
+      "utt_id": "J26DS313_R0022_w055",
+      "start": 183.99,
+      "end": 185.99,
+      "text": "Thank you. Godox. Tuthi."
+    }
+  ]
+}

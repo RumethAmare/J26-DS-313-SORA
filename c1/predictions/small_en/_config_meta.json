@@ -1,0 +1,10 @@
+{
+  "config": "small_en",
+  "model_size": "small",
+  "language_setting": "en",
+  "n_recordings": 26,
+  "total_audio_s": 3069.86,
+  "total_wall_s": 161.25,
+  "real_time_factor": 0.0525,
+  "compute_type": "float16"
+}

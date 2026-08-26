@@ -1,0 +1,120 @@
+{
+  "recording": "J26DS313_R0004",
+  "config": "small_en",
+  "model_size": "small",
+  "language_setting": "en",
+  "detected_language": "en",
+  "language_probability": 1,
+  "audio_duration_s": 41.15,
+  "transcribe_wall_s": 0.75,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0004_w001",
+      "start": 0.69,
+      "end": 2.69,
+      "text": "Yes, finally."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w002",
+      "start": 2.69,
+      "end": 4.69,
+      "text": "After that, I met him."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w003",
+      "start": 4.69,
+      "end": 6.69,
+      "text": "We had a meeting."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w004",
+      "start": 6.69,
+      "end": 10.13,
+      "text": "Oh, my God!"
+    },
+    {
+      "utt_id": "J26DS313_R0004_w005",
+      "start": 10.13,
+      "end": 12.13,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w006",
+      "start": 12.13,
+      "end": 14.13,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w007",
+      "start": 14.13,
+      "end": 16.13,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w008",
+      "start": 16.13,
+      "end": 18.13,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w009",
+      "start": 18.13,
+      "end": 20.13,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w010",
+      "start": 20.13,
+      "end": 22.13,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w011",
+      "start": 22.13,
+      "end": 24.13,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w012",
+      "start": 24.13,
+      "end": 26.13,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w013",
+      "start": 26.13,
+      "end": 29.89,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w014",
+      "start": 29.89,
+      "end": 31.89,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w015",
+      "start": 31.89,
+      "end": 33.89,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w016",
+      "start": 33.89,
+      "end": 35.89,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w017",
+      "start": 35.89,
+      "end": 37.89,
+      "text": "I'm so happy."
+    },
+    {
+      "utt_id": "J26DS313_R0004_w018",
+      "start": 37.89,
+      "end": 39.89,
+      "text": "I'm so happy."
+    }
+  ]
+}

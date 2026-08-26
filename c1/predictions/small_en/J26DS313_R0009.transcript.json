@@ -1,0 +1,66 @@
+{
+  "recording": "J26DS313_R0009",
+  "config": "small_en",
+  "model_size": "small",
+  "language_setting": "en",
+  "detected_language": "en",
+  "language_probability": 1,
+  "audio_duration_s": 42.86,
+  "transcribe_wall_s": 0.63,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0009_w001",
+      "start": 0.62,
+      "end": 6.62,
+      "text": "We don't have a report on the trip."
+    },
+    {
+      "utt_id": "J26DS313_R0009_w002",
+      "start": 6.62,
+      "end": 17.86,
+      "text": "What kind of reschedules do you have?"
+    },
+    {
+      "utt_id": "J26DS313_R0009_w003",
+      "start": 17.86,
+      "end": 19.86,
+      "text": "I don't have a story to tell you."
+    },
+    {
+      "utt_id": "J26DS313_R0009_w004",
+      "start": 19.86,
+      "end": 23.86,
+      "text": "I have been rescheduling on Mondays and Fridays."
+    },
+    {
+      "utt_id": "J26DS313_R0009_w005",
+      "start": 23.86,
+      "end": 29.66,
+      "text": "I don't have any pressure on the trip."
+    },
+    {
+      "utt_id": "J26DS313_R0009_w006",
+      "start": 29.66,
+      "end": 32.66,
+      "text": "I have a lot of slides."
+    },
+    {
+      "utt_id": "J26DS313_R0009_w007",
+      "start": 32.66,
+      "end": 33.66,
+      "text": "I don't have a job."
+    },
+    {
+      "utt_id": "J26DS313_R0009_w008",
+      "start": 33.66,
+      "end": 38.66,
+      "text": "I have been rescheduling on Mondays and Fridays."
+    },
+    {
+      "utt_id": "J26DS313_R0009_w009",
+      "start": 38.66,
+      "end": 42.0,
+      "text": "I don't have a story to tell you."
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "recording": "J26DS313_R0028",
+  "config": "small_en",
+  "model_size": "small",
+  "language_setting": "en",
+  "detected_language": "en",
+  "language_probability": 1,
+  "audio_duration_s": 37.62,
+  "transcribe_wall_s": 1.22,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0028_w001",
+      "start": 0.69,
+      "end": 2.69,
+      "text": "Mobile app is not available."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w002",
+      "start": 2.69,
+      "end": 4.69,
+      "text": "Mobile app is not available at the bank."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w003",
+      "start": 4.69,
+      "end": 6.69,
+      "text": "Phone is not available."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w004",
+      "start": 6.69,
+      "end": 8.69,
+      "text": "At the same time, it is not available at the bank."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w005",
+      "start": 8.69,
+      "end": 10.69,
+      "text": "It is not available at the bank."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w006",
+      "start": 10.69,
+      "end": 12.69,
+      "text": "Minister, you are saying that"
+    },
+    {
+      "utt_id": "J26DS313_R0028_w007",
+      "start": 12.69,
+      "end": 14.69,
+      "text": "you have to pay the tax pay for food."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w008",
+      "start": 14.69,
+      "end": 17.69,
+      "text": "If it is not available at the individual app,"
+    },
+    {
+      "utt_id": "J26DS313_R0028_w009",
+      "start": 17.69,
+      "end": 19.69,
+      "text": "we have to manage the tax."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w010",
+      "start": 19.69,
+      "end": 21.69,
+      "text": "We have to get the website."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w011",
+      "start": 21.69,
+      "end": 23.69,
+      "text": "So, services are not available."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w012",
+      "start": 23.69,
+      "end": 25.69,
+      "text": "Mobile app is not available."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w013",
+      "start": 25.69,
+      "end": 27.69,
+      "text": "We have to get the website."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w014",
+      "start": 27.69,
+      "end": 29.69,
+      "text": "We have to introduce it to the mobile app."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w015",
+      "start": 29.69,
+      "end": 31.69,
+      "text": "Individual app is not available."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w016",
+      "start": 31.69,
+      "end": 33.69,
+      "text": "Individual app is not available."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w017",
+      "start": 33.69,
+      "end": 35.69,
+      "text": "We have to get the website."
+    },
+    {
+      "utt_id": "J26DS313_R0028_w018",
+      "start": 35.69,
+      "end": 37.69,
+      "text": "We have to get the website."
+    }
+  ]
+}

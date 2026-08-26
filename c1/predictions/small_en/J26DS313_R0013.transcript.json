@@ -1,0 +1,192 @@
+{
+  "recording": "J26DS313_R0013",
+  "config": "small_en",
+  "model_size": "small",
+  "language_setting": "en",
+  "detected_language": "en",
+  "language_probability": 1,
+  "audio_duration_s": 96.87,
+  "transcribe_wall_s": 2.01,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0013_w001",
+      "start": 0.14,
+      "end": 3.14,
+      "text": "Good afternoon. Welcome to Senaratna and Associates."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w002",
+      "start": 3.14,
+      "end": 8.14,
+      "text": "Let's discuss confidential case details about your property agreement dispute."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w003",
+      "start": 9.14,
+      "end": 10.14,
+      "text": "Good afternoon, miss."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w004",
+      "start": 10.14,
+      "end": 14.14,
+      "text": "I tried to transfer the property to my business partner's agreement bridge."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w005",
+      "start": 14.14,
+      "end": 16.14,
+      "text": "But I didn't get it."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w006",
+      "start": 16.14,
+      "end": 20.14,
+      "text": "Miss, I'm a registrar and contract document checker."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w007",
+      "start": 20.14,
+      "end": 23.14,
+      "text": "I don't know how to close or close the contract."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w008",
+      "start": 24.14,
+      "end": 26.14,
+      "text": "Let me check the file."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w009",
+      "start": 26.14,
+      "end": 30.14,
+      "text": "Mahesh, can you tell me the full name of the NICA?"
+    },
+    {
+      "utt_id": "J26DS313_R0013_w010",
+      "start": 30.14,
+      "end": 33.14,
+      "text": "Can you update the record in the system?"
+    },
+    {
+      "utt_id": "J26DS313_R0013_w011",
+      "start": 33.14,
+      "end": 35.14,
+      "text": "I'm Mahesh Gunawar."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w012",
+      "start": 35.14,
+      "end": 39.14,
+      "text": "NICA has been working on it for a long time."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w013",
+      "start": 39.14,
+      "end": 42.14,
+      "text": "It's been a long time since I've seen it."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w014",
+      "start": 42.14,
+      "end": 44.14,
+      "text": "Can you update the address?"
+    },
+    {
+      "utt_id": "J26DS313_R0013_w015",
+      "start": 44.14,
+      "end": 48.14,
+      "text": "Do you have 45 duplication roads in the system?"
+    },
+    {
+      "utt_id": "J26DS313_R0013_w016",
+      "start": 48.14,
+      "end": 50.14,
+      "text": "No, miss. I have an address."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w017",
+      "start": 50.14,
+      "end": 54.14,
+      "text": "The number 12 base line road in Alut is Bural."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w018",
+      "start": 54.14,
+      "end": 59.14,
+      "text": "Mahesh, the phone number is 07712345678."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w019",
+      "start": 59.14,
+      "end": 60.14,
+      "text": "Oh, that's the number."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w020",
+      "start": 60.14,
+      "end": 62.14,
+      "text": "Is the NDA document sent?"
+    },
+    {
+      "utt_id": "J26DS313_R0013_w021",
+      "start": 62.14,
+      "end": 63.14,
+      "text": "Yes, it is."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w022",
+      "start": 63.14,
+      "end": 65.14,
+      "text": "Sorry, Puri."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w023",
+      "start": 65.14,
+      "end": 72.14,
+      "text": "We'll find an injunction order immediately to protect our rights under this."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w024",
+      "start": 73.14,
+      "end": 76.14,
+      "text": "Miss, can you send the notice to the court?"
+    },
+    {
+      "utt_id": "J26DS313_R0013_w025",
+      "start": 77.14,
+      "end": 80.14,
+      "text": "Oh, first send it to the formal notice."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w026",
+      "start": 80.14,
+      "end": 85.14,
+      "text": "Mahesh, can you send the notice to the head office?"
+    },
+    {
+      "utt_id": "J26DS313_R0013_w027",
+      "start": 85.14,
+      "end": 87.14,
+      "text": "Yes, miss. I'll send it to you."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w028",
+      "start": 87.14,
+      "end": 88.14,
+      "text": "Great."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w029",
+      "start": 88.14,
+      "end": 92.14,
+      "text": "Anitha, I'll send the notice to the draft."
+    },
+    {
+      "utt_id": "J26DS313_R0013_w030",
+      "start": 92.14,
+      "end": 96.14,
+      "text": "I'll finish the court documentation checker."
+    }
+  ]
+}
