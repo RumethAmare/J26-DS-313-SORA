@@ -1,0 +1,235 @@
+{
+  "note": "raw_wer = lowercase+punct-strip only (script differences penalized); norm_wer = both sides transliterated to one phonetic skeleton via script_normalize.py.",
+  "d_excluded_recordings": [
+    "J26DS313_R0008",
+    "J26DS313_R0017"
+  ],
+  "configs": {
+    "small_auto": {
+      "overall": {
+        "n_recordings": 15,
+        "n_ref_words": 2180,
+        "micro_raw_wer": 1.0005,
+        "micro_norm_wer": 0.9959,
+        "micro_raw_cer": 0.8901,
+        "micro_norm_cer": 0.7764,
+        "macro_raw_wer": 1.014,
+        "macro_norm_wer": 1.0074
+      },
+      "by_gold_script": {
+        "LATIN": {
+          "n_recordings": 5,
+          "n_ref_words": 701,
+          "micro_raw_wer": 0.9986,
+          "micro_norm_wer": 0.9914,
+          "micro_raw_cer": 0.9373,
+          "micro_norm_cer": 0.7638,
+          "macro_raw_wer": 0.9992,
+          "macro_norm_wer": 0.9903
+        },
+        "MIXED": {
+          "n_recordings": 8,
+          "n_ref_words": 1299,
+          "micro_raw_wer": 1.0015,
+          "micro_norm_wer": 0.9977,
+          "micro_raw_cer": 0.8792,
+          "micro_norm_cer": 0.7891,
+          "macro_raw_wer": 1.0267,
+          "macro_norm_wer": 1.0199
+        },
+        "SINHALA": {
+          "n_recordings": 2,
+          "n_ref_words": 180,
+          "micro_raw_wer": 1.0,
+          "micro_norm_wer": 1.0,
+          "micro_raw_cer": 0.7762,
+          "micro_norm_cer": 0.7299,
+          "macro_raw_wer": 1.0,
+          "macro_norm_wer": 1.0
+        }
+      },
+      "per_recording": [
+        {
+          "recording": "J26DS313_R0002",
+          "status": "VALIDATED",
+          "gold_script": "LATIN",
+          "d_excluded": false,
+          "detected_language": "si",
+          "n_ref_words": 114,
+          "raw_wer": 1.0,
+          "raw_cer": 0.9077,
+          "norm_wer": 0.9912,
+          "norm_cer": 0.7421
+        },
+        {
+          "recording": "J26DS313_R0003",
+          "status": "VALIDATED",
+          "gold_script": "LATIN",
+          "d_excluded": false,
+          "detected_language": "si",
+          "n_ref_words": 70,
+          "raw_wer": 1.0,
+          "raw_cer": 0.8822,
+          "norm_wer": 1.0,
+          "norm_cer": 0.7136
+        },
+        {
+          "recording": "J26DS313_R0004",
+          "status": "VALIDATED",
+          "gold_script": "LATIN",
+          "d_excluded": false,
+          "detected_language": "si",
+          "n_ref_words": 75,
+          "raw_wer": 1.0,
+          "raw_cer": 0.9417,
+          "norm_wer": 0.9733,
+          "norm_cer": 0.7412
+        },
+        {
+          "recording": "J26DS313_R0005",
+          "status": "VALIDATED",
+          "gold_script": "MIXED",
+          "d_excluded": false,
+          "detected_language": "si",
+          "n_ref_words": 83,
+          "raw_wer": 1.0,
+          "raw_cer": 0.8257,
+          "norm_wer": 1.0,
+          "norm_cer": 0.7344
+        },
+        {
+          "recording": "J26DS313_R0006",
+          "status": "VALIDATED",
+          "gold_script": "SINHALA",
+          "d_excluded": false,
+          "detected_language": "si",
+          "n_ref_words": 108,
+          "raw_wer": 1.0,
+          "raw_cer": 0.7851,
+          "norm_wer": 1.0,
+          "norm_cer": 0.7618
+        },
+        {
+          "recording": "J26DS313_R0008",
+          "status": "VALIDATED",
+          "gold_script": "MIXED",
+          "d_excluded": true,
+          "detected_language": "si",
+          "n_ref_words": 22,
+          "raw_wer": 1.2273,
+          "raw_cer": 1.482,
+          "norm_wer": 1.2273,
+          "norm_cer": 1.2797
+        },
+        {
+          "recording": "J26DS313_R0009",
+          "status": "VALIDATED",
+          "gold_script": "SINHALA",
+          "d_excluded": false,
+          "detected_language": "si",
+          "n_ref_words": 72,
+          "raw_wer": 1.0,
+          "raw_cer": 0.7623,
+          "norm_wer": 1.0,
+          "norm_cer": 0.6802
+        },
+        {
+          "recording": "J26DS313_R0010",
+          "status": "VALIDATED",
+          "gold_script": "MIXED",
+          "d_excluded": false,
+          "detected_language": "ml",
+          "n_ref_words": 64,
+          "raw_wer": 1.0,
+          "raw_cer": 0.8576,
+          "norm_wer": 0.9524,
+          "norm_cer": 0.6893
+        },
+        {
+          "recording": "J26DS313_R0011",
+          "status": "VALIDATED",
+          "gold_script": "MIXED",
+          "d_excluded": false,
+          "detected_language": "si",
+          "n_ref_words": 214,
+          "raw_wer": 0.9953,
+          "raw_cer": 0.8456,
+          "norm_wer": 0.9953,
+          "norm_cer": 0.7473
+        },
+        {
+          "recording": "J26DS313_R0012",
+          "status": "VALIDATED",
+          "gold_script": "MIXED",
+          "d_excluded": false,
+          "detected_language": "si",
+          "n_ref_words": 202,
+          "raw_wer": 1.0,
+          "raw_cer": 0.9437,
+          "norm_wer": 1.0,
+          "norm_cer": 0.911
+        },
+        {
+          "recording": "J26DS313_R0013",
+          "status": "VALIDATED",
+          "gold_script": "MIXED",
+          "d_excluded": false,
+          "detected_language": "si",
+          "n_ref_words": 191,
+          "raw_wer": 0.9948,
+          "raw_cer": 0.8594,
+          "norm_wer": 0.9947,
+          "norm_cer": 0.7703
+        },
+        {
+          "recording": "J26DS313_R0014",
+          "status": "VALIDATED",
+          "gold_script": "LATIN",
+          "d_excluded": false,
+          "detected_language": "si",
+          "n_ref_words": 180,
+          "raw_wer": 1.0,
+          "raw_cer": 0.9658,
+          "norm_wer": 0.9944,
+          "norm_cer": 0.772
+        },
+        {
+          "recording": "J26DS313_R0015",
+          "status": "VALIDATED",
+          "gold_script": "MIXED",
+          "d_excluded": false,
+          "detected_language": "si",
+          "n_ref_words": 284,
+          "raw_wer": 0.9965,
+          "raw_cer": 0.8204,
+          "norm_wer": 0.9894,
+          "norm_cer": 0.7407
+        },
+        {
+          "recording": "J26DS313_R0016",
+          "status": "VALIDATED",
+          "gold_script": "MIXED",
+          "d_excluded": false,
+          "detected_language": "si",
+          "n_ref_words": 239,
+          "raw_wer": 1.0,
+          "raw_cer": 0.898,
+          "norm_wer": 1.0,
+          "norm_cer": 0.7855
+        },
+        {
+          "recording": "J26DS313_R0017",
+          "status": "VALIDATED",
+          "gold_script": "LATIN",
+          "d_excluded": true,
+          "detected_language": "si",
+          "n_ref_words": 262,
+          "raw_wer": 0.9962,
+          "raw_cer": 0.9415,
+          "norm_wer": 0.9924,
+          "norm_cer": 0.7852
+        }
+      ]
+    }
+  }
+}

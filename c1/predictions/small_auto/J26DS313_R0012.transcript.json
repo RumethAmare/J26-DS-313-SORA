@@ -1,0 +1,36 @@
+{
+  "recording": "J26DS313_R0012",
+  "config": "small_auto",
+  "model_size": "small",
+  "language_setting": "auto",
+  "detected_language": "si",
+  "language_probability": 0.92,
+  "audio_duration_s": 107.11,
+  "transcribe_wall_s": 19.35,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0012_w001",
+      "start": 0.82,
+      "end": 30.82,
+      "text": "規則"
+    },
+    {
+      "utt_id": "J26DS313_R0012_w002",
+      "start": 90.82,
+      "end": 96.98,
+      "text": "වනදනිපිමද්ද් තුරාන්කකන වේ්මත් ඔටඳහයම්"
+    },
+    {
+      "utt_id": "J26DS313_R0012_w003",
+      "start": 97.1,
+      "end": 101.9,
+      "text": "අවනතරමද්න කරන්ත්තරුණික්න වතරන්තරේන්ත්න"
+    },
+    {
+      "utt_id": "J26DS313_R0012_w004",
+      "start": 102.38,
+      "end": 106.9,
+      "text": "වණයිනෙන්නකකන්නත්න"
+    }
+  ]
+}

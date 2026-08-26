@@ -1,0 +1,24 @@
+{
+  "recording": "J26DS313_R0024",
+  "config": "small_auto",
+  "model_size": "small",
+  "language_setting": "auto",
+  "detected_language": "si",
+  "language_probability": 0.718,
+  "audio_duration_s": 150.63,
+  "transcribe_wall_s": 30.98,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0024_w001",
+      "start": 1.0,
+      "end": 11.0,
+      "text": "いう මි සුළව ඤ්ඩාවයීු තොණින්ව වසේ්ඤු වබි්ඞේලක්ව ෉්මී සැල්ද කුල් ලඩු �政ො."
+    },
+    {
+      "utt_id": "J26DS313_R0024_w002",
+      "start": 132.31,
+      "end": 150.63,
+      "text": ",නිල්ක්කිඩ් යිල්ල්ල්ල් දැද්ල්වෟද ලව්ල්වින්යක නෙකන්තුමි නැල්ලලත්වවෙනනන්නක නැල්ල්ලල යක පු කිල්ල දක්ල්ල්ල මෙතුමියි‍ක්ද්ල්ල්ල්ල"
+    }
+  ]
+}

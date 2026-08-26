@@ -1,0 +1,66 @@
+{
+  "recording": "J26DS313_R0027",
+  "config": "small_auto",
+  "model_size": "small",
+  "language_setting": "auto",
+  "detected_language": "si",
+  "language_probability": 0.791,
+  "audio_duration_s": 266.12,
+  "transcribe_wall_s": 52.86,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0027_w001",
+      "start": 0.0,
+      "end": 9.16,
+      "text": "ස්ව මොනින් මේින් කරන් තර් මේ, නිනඳනු් දිනිලේ සිඩාතු pensando, කරන් තනිනේමේ තර්."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w002",
+      "start": 9.16,
+      "end": 13.96,
+      "text": "‫වටලීමය නැමු ගෝdin මේම කැඳ."
+    },
+    {
+      "utt_id": "J26DS313_R0027_w003",
+      "start": 13.96,
+      "end": 18.08,
+      "text": "‫වengage�නතු, ඇ�具්ිමය මමග්ේ දිනසාමයිේල්…"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w004",
+      "start": 138.08,
+      "end": 154.24,
+      "text": "අතශ් ද෈දිල්නුනය අදිදැල්ම්, බෝ� fr the"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w005",
+      "start": 154.24,
+      "end": 157.24,
+      "text": "කරමණරඃම් පැකසයකෝයකමINTER� කෙරඩුhhhh"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w006",
+      "start": 157.24,
+      "end": 160.68,
+      "text": "අත්නේධිස්මුව Delicious"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w007",
+      "start": 160.68,
+      "end": 164.16,
+      "text": "එඳහුබ් බෂඳා අම්නන්නවනය 1941�රරනටක් whoever"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w008",
+      "start": 164.16,
+      "end": 167.16,
+      "text": "ම්වීන්න්නිනයි්!!"
+    },
+    {
+      "utt_id": "J26DS313_R0027_w009",
+      "start": 259.14,
+      "end": 264.3,
+      "text": "වශා ඔඩු ගයෛලයෙ දදාපියවහ"
+    }
+  ]
+}
