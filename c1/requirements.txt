@@ -1,0 +1,25 @@
+# ASR
+faster-whisper==1.2.1
+ctranslate2==4.8.1
+nvidia-cublas-cu12
+nvidia-cudnn-cu12==9.*
+
+# evaluation
+jiwer==4.0.0
+
+# LID
+wordfreq==3.1.1
+fasttext-wheel        # 'fasttext' has broken wheels on recent Python
+langid==1.1.6         # optional cross-check baseline
+
+# noise robustness (Task 6)
+audiomentations
+soundfile
+scipy
+
+# benchmarking (Task 7)
+psutil
+
+# shared
+pandas
+numpy
