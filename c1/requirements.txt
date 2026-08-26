@@ -10,6 +10,11 @@ jiwer==4.0.0
 # LID
 wordfreq==3.1.1
 fasttext-wheel        # 'fasttext' has broken wheels on recent Python
+                      # NOTE: its .predict() wrapper ends in
+                      # np.array(probs, copy=False), which NumPy 2.x rejects.
+                      # Do NOT pin numpy<2 to work around this — call
+                      # model.f.predict() (the raw C++ binding) instead, as
+                      # lid_hybrid.py and train_lid_fasttext.py do.
 langid==1.1.6         # optional cross-check baseline
 
 # noise robustness (Task 6)

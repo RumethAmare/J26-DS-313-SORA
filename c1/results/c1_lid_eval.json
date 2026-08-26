@@ -1,0 +1,201 @@
+{
+  "note": "Folded by recording, not token, so no conversation appears in both train and test. fastText sees Latin-script tokens only; Sinhala/Tamil script and numerics are handled by deterministic rules. OTHER F1 near zero is a property of the labels (15 Latin-script examples, incoherent membership), not the model.",
+  "n_tokens": 5545,
+  "n_recordings": 25,
+  "excluded_recordings": [
+    "J26DS313_R0008",
+    "J26DS313_R0017"
+  ],
+  "folds": [
+    [
+      "J26DS313_R0009",
+      "J26DS313_R0018",
+      "J26DS313_R0022",
+      "J26DS313_R0015",
+      "J26DS313_R0019"
+    ],
+    [
+      "J26DS313_R0004",
+      "J26DS313_R0024",
+      "J26DS313_R0027",
+      "J26DS313_R0011",
+      "J26DS313_R0020"
+    ],
+    [
+      "J26DS313_R0007",
+      "J26DS313_R0002",
+      "J26DS313_R0016",
+      "J26DS313_R0010",
+      "J26DS313_R0021"
+    ],
+    [
+      "J26DS313_R0028",
+      "J26DS313_R0003",
+      "J26DS313_R0013",
+      "J26DS313_R0006",
+      "J26DS313_R0025"
+    ],
+    [
+      "J26DS313_R0023",
+      "J26DS313_R0014",
+      "J26DS313_R0012",
+      "J26DS313_R0005",
+      "J26DS313_R0026"
+    ]
+  ],
+  "fasttext_params": {
+    "epoch": 50,
+    "lr": 0.5,
+    "dim": 50,
+    "minn": 2,
+    "maxn": 5,
+    "wordNgrams": 1,
+    "minCount": 1,
+    "loss": "softmax",
+    "seed": 13,
+    "thread": 1,
+    "bucket": 50000
+  },
+  "results": {
+    "method_a_heuristic_all_tokens": {
+      "SI": {
+        "f1_mean": 0.9251,
+        "f1_std": 0.0274,
+        "precision_mean": 0.8989,
+        "recall_mean": 0.9536,
+        "support_total": 3320
+      },
+      "EN": {
+        "f1_mean": 0.8705,
+        "f1_std": 0.0417,
+        "precision_mean": 0.9007,
+        "recall_mean": 0.8443,
+        "support_total": 2147
+      },
+      "OTHER": {
+        "f1_mean": 0.0,
+        "f1_std": 0.0,
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "support_total": 78
+      },
+      "_accuracy_mean": 0.8994,
+      "_accuracy_std": 0.0319,
+      "_macro_f1_mean": 0.5985,
+      "_macro_f1_std": 0.0209
+    },
+    "method_b_fasttext_latin_only": {
+      "SI": {
+        "f1_mean": 0.8553,
+        "f1_std": 0.0739,
+        "precision_mean": 0.8646,
+        "recall_mean": 0.8545,
+        "support_total": 764
+      },
+      "EN": {
+        "f1_mean": 0.9393,
+        "f1_std": 0.0418,
+        "precision_mean": 0.9281,
+        "recall_mean": 0.9527,
+        "support_total": 1895
+      },
+      "OTHER": {
+        "f1_mean": 0.0,
+        "f1_std": 0.0,
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "support_total": 15
+      },
+      "_accuracy_mean": 0.915,
+      "_accuracy_std": 0.0508,
+      "_macro_f1_mean": 0.5982,
+      "_macro_f1_std": 0.0365
+    },
+    "heuristic_latin_only": {
+      "SI": {
+        "f1_mean": 0.7465,
+        "f1_std": 0.0596,
+        "precision_mean": 0.6857,
+        "recall_mean": 0.8244,
+        "support_total": 764
+      },
+      "EN": {
+        "f1_mean": 0.8848,
+        "f1_std": 0.0501,
+        "precision_mean": 0.9187,
+        "recall_mean": 0.8547,
+        "support_total": 1895
+      },
+      "OTHER": {
+        "f1_mean": 0.0,
+        "f1_std": 0.0,
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "support_total": 15
+      },
+      "_accuracy_mean": 0.8442,
+      "_accuracy_std": 0.05,
+      "_macro_f1_mean": 0.5438,
+      "_macro_f1_std": 0.0272
+    },
+    "hybrid_all_tokens": {
+      "SI": {
+        "f1_mean": 0.951,
+        "f1_std": 0.0341,
+        "precision_mean": 0.9495,
+        "recall_mean": 0.9545,
+        "support_total": 3320
+      },
+      "EN": {
+        "f1_mean": 0.9183,
+        "f1_std": 0.0374,
+        "precision_mean": 0.9102,
+        "recall_mean": 0.9306,
+        "support_total": 2147
+      },
+      "OTHER": {
+        "f1_mean": 0.0,
+        "f1_std": 0.0,
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "support_total": 78
+      },
+      "_accuracy_mean": 0.9317,
+      "_accuracy_std": 0.0386,
+      "_macro_f1_mean": 0.6231,
+      "_macro_f1_std": 0.0236
+    },
+    "paired_fold_comparison": {
+      "heuristic_accuracy_per_fold": [
+        0.9165,
+        0.9064,
+        0.9241,
+        0.9062,
+        0.844
+      ],
+      "hybrid_accuracy_per_fold": [
+        0.9343,
+        0.9602,
+        0.9575,
+        0.941,
+        0.8654
+      ],
+      "delta_per_fold": [
+        0.0178,
+        0.0538,
+        0.0334,
+        0.0348,
+        0.0214
+      ],
+      "folds_won_by_hybrid": 5,
+      "mean_delta": 0.0322,
+      "min_delta": 0.0178,
+      "max_delta": 0.0538
+    }
+  },
+  "final_model": {
+    "path": "/mnt/F/SLIIT/Research/J26-DS-313-SORA/c1/models/lid_latin.ftz",
+    "size_kb": 1309.3,
+    "n_train_tokens": 2674
+  }
+}
