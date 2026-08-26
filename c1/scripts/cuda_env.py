@@ -55,5 +55,13 @@ def ensure_cuda_libs():
         return
 
     new_path = os.pathsep.join(missing + ([current] if current else []))
-    env = dict(os.environ, LD_LIBRARY_PATH=new_path, **{_GUARD: "1"})
+    # PYTHONUNBUFFERED is set explicitly because the re-exec below rebuilds the
+    # command as [sys.executable] + sys.argv, and sys.argv does NOT include
+    # interpreter flags. A run started as `python3 -u script.py` therefore comes
+    # back as `python3 script.py` and silently becomes block-buffered -- a
+    # long-running job then writes nothing to its log until it exits, which
+    # looks exactly like a hung process. Setting the env var survives the
+    # re-exec and preserves the caller's intent whether or not they passed -u.
+    env = dict(os.environ, LD_LIBRARY_PATH=new_path,
+               PYTHONUNBUFFERED="1", **{_GUARD: "1"})
     os.execve(sys.executable, [sys.executable] + sys.argv, env)

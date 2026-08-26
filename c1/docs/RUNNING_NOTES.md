@@ -61,3 +61,21 @@ copies keeps runs reproducible rather than dependent on system-wide installs.
 51 minutes of audio, so about 9 minutes per full-corpus config and ~26 minutes
 for the three language-forcing configs. Comfortably within budget for the
 noise-robustness sweep in Task 6, which re-runs this pipeline per SNR tier.
+
+## 3. `cuda_env` re-exec drops interpreter flags (fixed)
+
+`cuda_env.ensure_cuda_libs()` restarts the interpreter with
+`os.execve(sys.executable, [sys.executable] + sys.argv, env)`. `sys.argv` does
+**not** carry interpreter flags, so a job launched as `python3 -u script.py`
+comes back as `python3 script.py` and becomes block-buffered.
+
+The symptom is nasty: a long-running background job writes **nothing** to its
+log until it exits, which is indistinguishable from a hung process. This bit
+the Task 1 ablation and again the Task 6 noise sweep, and both times the
+instinct was to check whether the process had stalled.
+
+Diagnosis: `ps` shows the process alive and `nvidia-smi` shows GPU utilisation
+high while the log file stays 0 bytes.
+
+Fixed by setting `PYTHONUNBUFFERED=1` in the environment handed to `execve`,
+which survives the re-exec regardless of how the caller invoked Python.
