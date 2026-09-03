@@ -1,0 +1,13 @@
+Phase 0 is closed — decoding mode and model size are decided, and the write-up and artifact document that. What's left is Phase 1 (Weeks 1–3, Sep 6–26 per the timeline), which starts in two days. Splitting it by who actually does it:
+
+On you / the team — these don't need me
+
+1. Data collection is the critical path. 52 minutes → the 15–20 hours §6.2 assumes is ~20× growth in three weeks. The plan's own risk flag (§12.1) calls this "the least late-fixable risk" and says escalate if the pace is short by end of Week 2 — that's the single most important thing on this list.
+
+2. Review the relabel patch. data/label_relabel_patch.jsonl proposes 323 corrections (moving numerals out of SI/EN/OTHER into a new NUM class). It's sitting there for team sign-off — I can't apply it to SORA_Dataset myself, and it needs approval since it changes what validate.py accepts.
+
+3. Correct R0017 and R0023. These are the two recordings the label audit found to be systematically mislabelled against the rest of the corpus (found in your report, §4.2 / §6 of docs/TOKEN_SCHEMA.md). Nothing downstream of the labels is trustworthy until someone re-annotates them.
+
+4. Decide on R0005 and R0008. Their gold transcripts cover under half the audio's timeline — either re-annotate or formally exclude them from ASR scoring.
+
+5. Read the two IEEE Xplore PDFs (IALP 2019, SCSE 2019) to verify the CRF/RF F1 figures before they're cited anywhere — this is §10's outstanding item, and it needs someone with Xplore access to physically read the source.
