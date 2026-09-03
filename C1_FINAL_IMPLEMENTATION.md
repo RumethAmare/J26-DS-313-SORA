@@ -4,6 +4,53 @@
 
 ---
 
+## Phase 0 status: RESOLVED (Aug 30–Sep 5 2026)
+
+Both open Phase 0 questions are now settled on real data (234 decodes,
+26 recordings, 51.2 minutes, `faster-whisper`/CTranslate2 on an RTX 5050).
+Full report: `phase0_decode_grid_report.pdf`; machine-readable results:
+`eval/baseline_decisions.json`.
+
+- **Decoding mode: forced-`en`.** Wins decisively, not narrowly — all
+  three forced-`en` configs cluster under 0.87 WER; every auto-detect and
+  forced-`si` config sits at 0.96–0.99, a ~10-point gap no model size
+  closes. Root cause: under auto/si, 57–79% of words are deletions —
+  Whisper's Sinhala decoder falls into repetition/temperature-fallback
+  loops rather than transcribing, a capacity-independent collapse.
+  Forcing `en` drops deletions to 5–14%; the model actually attempts
+  transcription and the errors become fixable substitutions.
+- **Model size: `medium`.** Beats `large-v3` (0.841 vs. 0.868 eval WER)
+  and beats `small` (0.855) — **not monotonic with parameter count**.
+  This contradicts the general "bigger model, better on low-resource
+  languages" assumption used to justify a `large-v3` stretch goal earlier
+  in this document — that assumption is now superseded by measurement.
+  `large-v3`'s deletion rate collapses (5%) but substitutions (70%) and
+  insertions (16%) rise — it hears more but mangles more of what it hears.
+- **Script-mismatch hypothesis: rejected.** Folding hypothesis and
+  reference into a common romanized space changes WER by at most 0.026
+  points across all 9 configs — the high WER is genuine recognition
+  failure, not a scoring artifact. Which script to standardize training
+  data on can be chosen for convenience, not accuracy.
+- **Deployment risk: lower than planned for.** Winning config runs at
+  RTF 0.056 (~18× real-time); even `large-v3`/`en` hits RTF 0.173. All
+  configs fit well under the 8GB target. The size-vs-deployability
+  tension anticipated in §5 did not materialize for this decode mode.
+- **Data volume: the binding constraint, confirmed in numbers.** 52
+  minutes total (35.6 min train / 15.6 min eval) exist against a 15–20
+  hour floor — see the updated Risk Flags (§12).
+- **Two recordings need re-annotation before training use**: R0008 (gold
+  transcript covers 56% of audio) and R0005, both flagged by the
+  team's data-quality audit.
+
+Baseline numbers to beat in Phase 2 (medium/forced-en, eval split):
+**WER 0.841, CER 0.588, RTF 0.056.**
+
+Sections below are updated to reflect these decisions; §5's model-size
+comparison table is retained as the reasoning that motivated the test,
+now marked resolved rather than open.
+
+---
+
 ## 1. Objective
 
 Given raw Sinhala-English code-mixed conversational audio, output a
@@ -37,11 +84,12 @@ Audio (.wav, 16kHz mono)
 Token-level output → feeds C2 and C3
 ```
 
-Two decisions are resolved empirically in Phase 0, not assumed:
-- **Decoding mode**: native Sinhala Unicode output vs. forced-`en`
-  ("script collapse"/romanized) decoding — whichever wins on real WER/CER
-  becomes the fixed foundation for Stage C's design.
-- **Model size**: `small` / `medium` / `large-v3` — see §5.
+Two decisions were resolved empirically in Phase 0 (see banner above,
+full results in §5):
+- **Decoding mode: forced-`en`** — this is now the fixed foundation for
+  Stage C's design (language ID operates on romanized/English-phonetic
+  tokens, not native Sinhala Unicode).
+- **Model size: `medium`.**
 
 ---
 
@@ -102,32 +150,63 @@ across Phase 2 and Phase 3 retrains.
 
 ---
 
-## 5. Model size and fine-tuning method decision
+## 5. Model size and fine-tuning method decision — RESOLVED (Phase 0)
 
-### 5.1 Whisper size comparison
+### 5.1 Whisper size comparison — measured, not hypothesized
+
+Original plan (superseded): pick `small`/`medium` as a balance of
+iteration speed and deployment fit, treat `large-v3` as a stretch-goal
+comparison, on the general assumption that larger models gain most on
+low-resource languages. **That assumption did not hold for this corpus.**
+9-configuration decode grid, 26 recordings, 51.2 minutes, 7-recording
+held-out eval split, `faster-whisper`/CTranslate2 float16 on an RTX 5050:
+
+| Model (forced-`en`, the winning decode mode) | Eval WER | Fold CER | RTF | Resident VRAM |
+|---|---|---|---|---|
+| `small` (244M) | 0.855 | 0.632 | 0.056 | well under 8GB |
+| **`medium` (769M) — winner** | **0.841** | **0.588** | **0.056** | well under 8GB |
+| `large-v3` (1.55B) | 0.868 | 0.584 | 0.173 | ~5.7GB |
+
+**`medium` wins outright and the relationship is not monotonic** — going
+from `medium` to `large-v3` makes WER *worse* (0.841 → 0.868), not
+better, despite doubling parameter count again. Error-composition
+breakdown explains why: `large-v3`'s deletion rate collapses to 5% (best
+of the three — it stops staying silent) but its substitution rate rises
+to 70% and insertion rate to 16% (worst of the three) — it attempts to
+transcribe more of the audio and gets more of that attempt wrong. WER
+penalizes every one of those extra wrong/inserted tokens, and since
+downstream components (C2, C3) consume individual word tokens, a
+correct token — not a phonetically-close one — is what matters. This is
+why WER, not CER, was used as the decision metric (`large-v3` actually
+has the best CER of the three, which would have picked the wrong model).
+
+Under auto-detect and forced-`si`, size barely moves the number at all
+(all three sizes land between 0.96–0.99) — confirming the failure there
+is a decode-mode collapse (§ Phase 0 banner), not a capacity problem no
+amount of scaling fixes.
+
+**Decision, now fixed: `medium` is the primary development and
+deployment model.** The anticipated size-vs-deployability tension in the
+original table below did not materialize for the winning decode mode —
+RTF and VRAM headroom are comfortable at all three sizes, so the choice
+was decided on accuracy alone.
+
+**`large-v3` stretch-goal status, revised:** still worth an optional
+Weeks 6-7 comparison run if ahead of schedule, but reframed — not as "is
+bigger better" (Phase 0 already answered no, for this task and this
+decode mode) but as "does fine-tuning change this ranking," since all
+three Phase 0 numbers are zero-shot.
+
+*Original hypothesis table, retained for the reasoning trail:*
 
 | | `small` (~244M) | `medium` (~769M) | `large-v3` (~1.55B) |
 |---|---|---|---|
-| Zero-shot accuracy | Weakest, especially low-resource languages | Meaningful step up | Best, largest gain specifically on low-resource languages (general Whisper-family pattern; exact Sinhala numbers unverified — confirm via Phase 0) |
-| Fine-tuning signal clarity | Largest relative gain from fine-tuning (more room to improve) | Moderate | Smallest relative gain — strong baseline already, harder to show fine-tuning worked |
-| Overfitting risk at 15-20h data | Lowest | Moderate | Highest — more capacity than the data volume comfortably supports |
+| Zero-shot accuracy (assumed) | Weakest | Meaningful step up | Best (assumption rejected by Phase 0) |
+| Fine-tuning signal clarity | Largest relative gain | Moderate | Smallest relative gain |
+| Overfitting risk at 15-20h data | Lowest | Moderate | Highest |
 | LoRA fits 8GB GPU comfortably | Yes | Yes | Tight — QLoRA effectively required |
-| Training/iteration speed | Fastest | Moderate | Slowest — directly costs retraining cycles in Weeks 4-7 |
-| Quantized deployment footprint | Best fit for on-device target | Good fit | Largest, most likely to strain the real-time/on-device requirement |
-
-**Decision:** use `small` or `medium` as the primary development and
-deployment model — best balance of iteration speed, fine-tuning signal
-clarity, and deployment fit against the TAF's own on-device constraint.
-Treat `large-v3` (with QLoRA) as an optional Week 6-7 stretch-goal
-comparison only if the primary pipeline is ahead of schedule — useful for
-the final report ("bigger model vs. more fine-tuning data") but not the
-default path.
-
-**How to actually decide, not guess:** extend the Phase 0 baseline script
-to run zero-shot WER/CER for `small`, `medium`, and `large-v3` on the real
-held-out eval set before committing. This is the same script, same data,
-three extra inference runs — costs almost nothing and replaces
-size-comparison guesswork with a real number.
+| Training/iteration speed | Fastest | Moderate | Slowest |
+| Quantized deployment footprint (assumed) | Best fit | Good fit | Largest (not confirmed as a real constraint by Phase 0) |
 
 ### 5.2 LoRA vs. QLoRA
 
@@ -158,13 +237,27 @@ triples for the CRF tagger, drawn from the team's `tokens.jsonl` schema.
 Text script (native Sinhala Unicode vs. romanized) must match the Phase 0
 decoding-mode decision and be consistent across all training examples.
 
-### 6.2 Volume and split
+### 6.2 Volume and split — actual vs. target (updated post-Phase 0)
 
-| Pool | Size | Role |
-|---|---|---|
-| Held-out evaluation set | ~1 hour currently validated | Reserved exclusively for evaluation — never trained on, at any phase, by any model size |
-| Training pool | 15-20 hours minimum, 30+ preferred | ASR fine-tuning + CRF training |
-| Noisy test subset | Slice of either pool, real or `audiomentations`-augmented | Clean-vs-noisy robustness comparison (Phase 3) |
+| Pool | Target | **Actual, as of Phase 0 (Sep 5 2026)** | Role |
+|---|---|---|---|
+| Held-out evaluation set | ~1 hour | **15.6 min, 7 recordings** — locked, seeded, stratified by script group | Reserved exclusively for evaluation — never trained on, at any phase, by any model size or decode mode |
+| Training pool | 15-20 hours minimum, 30+ preferred | **35.6 min, 19 recordings** | ASR fine-tuning + CRF training |
+| **Total scorable corpus** | — | **51.2 min, 26 of 27 gold-transcribed recordings** (R0007 excluded — no matching audio file) | — |
+| Noisy test subset | Slice of either pool | Not yet built | Clean-vs-noisy robustness comparison (Phase 3) |
+
+**The training pool is at roughly 3% of its 15-20 hour floor.** This is
+now the project's single largest risk (see §12) — every WER/CER number
+in the Phase 0 report is a zero-shot baseline on a tiny corpus, not yet
+informative about fine-tuned performance, and Phase 2 cannot proceed
+meaningfully until this gap closes substantially.
+
+**Two recordings need re-annotation before any training use**:
+`J26DS313_R0008` (gold transcript covers only 56% of its audio timeline —
+its WER score of 4.227 measures the incomplete annotation, not the
+model) and `J26DS313_R0005`. Both are excluded from the Phase 0
+corpus-level averages by the team's data-quality audit but must be fixed,
+not just excluded, before they can contribute to the training pool.
 
 ### 6.3 Sources
 - **Primary**: team's own recorded meetings via the validated 7-step
@@ -226,24 +319,37 @@ appears in the training file list.
 
 ## 8. Implementation phases
 
-### Phase 0 (Week 0) — Baseline decisions
-Run Whisper across {auto-detect, forced-en, forced-si} × {small, medium,
-large-v3} against the held-out eval set. Compute WER/CER for all
-combinations. Record the winning decoding mode and the working model size
-in `eval/baseline_report.md`. This file is the single source of truth
-every later phase reads from.
+### Phase 0 (Week 0) — ✅ COMPLETE (Aug 30–Sep 5 2026)
+Ran Whisper across {auto-detect, forced-en, forced-si} × {small, medium,
+large-v3} against 26 recordings (51.2 min), scored on a locked 7-recording
+eval split (234 decodes total). **Result: forced-`en` decoding, `medium`
+model, baseline eval WER 0.841 / CER 0.588 / RTF 0.056** — see the Phase 0
+status banner at the top of this document and full report
+`phase0_decode_grid_report.pdf` / `eval/baseline_decisions.json`.
 
 ### Phase 1 (Weeks 1-3) — Scaffolding + data collection (parallel)
 Team-wide recording push targeting 15-20+ validated training hours;
-track hours/week from day one. In parallel: build `preprocess.py`,
-`lid_features.py`, `assemble_tokens.py`; lock the `manifest.csv` split
-policy with the Phase 0 eval recording(s) as `eval`, permanently.
+track hours/week from day one. **Starting point confirmed by Phase 0:
+35.6 min (19 recordings) currently in the training pool — roughly 3% of
+the floor.** Re-annotate R0008 and R0005 before they can count toward
+this pool. In parallel: build `preprocess.py`, `lid_features.py`,
+`assemble_tokens.py`; the `manifest.csv` split policy is already locked
+from Phase 0 (7 recordings as `eval`, seeded and stratified by script
+group — do not re-shuffle this split later).
+
+**Gate before Phase 2 begins:** do not start fine-tuning on a training
+pool under roughly 5 hours (per the risk flag already in §12) — with the
+current ~36 minutes, Phase 2's start date is contingent on Phase 1's
+collection pace, not fixed to the calendar week.
 
 ### Phase 2 (Weeks 4-5) — First fine-tune
-LoRA fine-tune the chosen model size on the `train` split. Evaluate
-WER/CER on the untouched `eval` split, compared against Phase 0 zero-shot.
-Train the CRF tagger on real token labels (not placeholder dictionary).
-Wire Stages A-D end-to-end; verify schema-valid output.
+LoRA fine-tune **`medium`, forced-`en`** (both now fixed by Phase 0,
+not open choices) on the `train` split. Evaluate WER/CER on the
+untouched `eval` split against the **Phase 0 baseline of WER 0.841 / CER
+0.588** — this is the number Phase 2 must beat for fine-tuning to be
+demonstrated as worthwhile, not just "any WER number." Train the CRF
+tagger on real token labels (not placeholder dictionary). Wire Stages A-D
+end-to-end; verify schema-valid output.
 
 ### Phase 3 (Weeks 6-7) — Iterate + robustness
 Retrain if more data has accumulated. Build/source a noisy eval variant;
@@ -305,7 +411,7 @@ Start: 30 August 2026. Target: last week of October 2026.
 
 | Week | Dates | Phase | Key deliverable |
 |---|---|---|---|
-| 0 | Aug 30 – Sep 5 | Baseline decisions | Decoding-mode + model-size WER/CER comparison; decisions recorded |
+| 0 | Aug 30 – Sep 5 | Baseline decisions | ✅ Done — forced-en / medium confirmed, WER 0.841 baseline recorded |
 | 1-3 | Sep 6 – Sep 26 | Scaffolding + data collection | 15-20+ validated training hours; split policy locked; scaffolding code ready |
 | 4-5 | Sep 27 – Oct 10 | First fine-tune | Fine-tuned checkpoint; CRF tagger; before/after WER/CER & F1 |
 | 6-7 | Oct 11 – Oct 24 | Iterate + robustness | Possible retrain; clean-vs-noisy comparison; optional large-v3 stretch run |
@@ -316,12 +422,33 @@ Start: 30 August 2026. Target: last week of October 2026.
 
 ## 12. Risk flags
 
-- Data collection pace below target by end of Week 2 — escalate
-  immediately; this is the least late-fixable risk.
-- Fewer than ~5 hours of `train`-split data by Phase 2 start — flag before
-  fine-tuning; risk of an unstable, overfit, misleading result.
-- Phase 0 WER/CER far worse than the 32-52% CS-FLEURS distinct-script
-  range — signal to reset final-accuracy expectations.
-- Any attempt to train on `eval`-split data — hard stop, not a warning.
-- Citing the unverified CRF/RF percentage figures in any submitted
-  document before §10's outstanding task is resolved.
+1. **[TOP RISK, confirmed not hypothetical] Training pool is at 35.6
+   minutes against a 15-20 hour floor — roughly 3%.** This is no longer
+   a scheduling risk to watch for; it is the project's current, measured
+   state as of Sep 5 2026. Weeks 1-3 collection pace must be tracked
+   weekly starting immediately, and any week that doesn't show
+   substantial growth toward the floor should be escalated to
+   supervisors that week, not accumulated silently. Fewer than ~5 hours
+   of `train`-split data by the Phase 2 start date (per the original
+   plan) should delay Phase 2's start rather than force a fine-tune on
+   an unstable, overfit-prone sample.
+2. **Two recordings (R0008, R0005) need re-annotation before counting
+   toward the training pool** — do not let partial/incomplete
+   transcripts silently inflate the training-hours count without fixing
+   the underlying annotation first.
+3. Phase 2's fine-tuned WER must be compared against the **confirmed
+   Phase 0 baseline of 0.841 (medium, forced-en)** — a fine-tune result
+   worse than or barely better than this number, given how little
+   training data is likely available by Phase 2, is a plausible outcome
+   to prepare for and report honestly, not a failure to hide.
+4. Any attempt to train on `eval`-split data (the locked 7-recording,
+   15.6-minute set) — hard stop in code, not a warning.
+5. Citing the unverified CRF/RF percentage figures (§10) in any
+   submitted document before that section's outstanding task is
+   resolved.
+
+**Resolved, no longer risks:** decoding-mode uncertainty and model-size
+uncertainty (both settled by Phase 0, §5); deployment/quantization
+fitting the 8GB target (Phase 0 showed comfortable headroom at all sizes
+tested); script-mismatch inflating WER (tested and rejected, cost ≤0.026
+WER points).
