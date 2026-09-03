@@ -1,0 +1,45 @@
+# Component 1 — Code-Switched ASR + Per-Token Language Identification
+# J26-DS-313 | see C1_FINAL_IMPLEMENTATION.md §3
+#
+# Install into the SORA_Dataset venv, which already carries most of this:
+#   /mnt/F/SLIIT/Research/SORA_Dataset/.venv/bin/pip install -r requirements.txt
+#
+# System dependency, not pip-installable: ffmpeg
+
+# ── Phase 0 (needed now) ──────────────────────────────────────
+# faster-whisper runs on CTranslate2, so Phase 0 needs no torch.
+faster-whisper
+ctranslate2
+jiwer
+pandas
+indic-transliteration      # Sinhala -> ISO-15919 bridge for script-folded scoring
+
+# ── Stage C — language ID ─────────────────────────────────────
+sklearn-crfsuite
+scikit-learn
+wordfreq
+
+# ── Stage A — preprocessing (Phase 1) ─────────────────────────
+silero-vad
+webrtcvad
+noisereduce
+librosa
+soundfile
+
+# ── Stage B — ASR fine-tuning (Phase 2) ───────────────────────
+# ~5 GB of wheels. Deliberately NOT installed until Phase 2 opens;
+# /mnt/F had ~20 GB free as of Week 0, and Phase 0 does not need them.
+# The RTX 5050 is Blackwell (sm_120), so torch must be a cu128-or-newer build.
+openai-whisper
+transformers
+peft
+bitsandbytes
+accelerate
+datasets
+
+# ── Phase 3 — noise robustness ────────────────────────────────
+audiomentations
+
+# ── Data sourcing / IO ────────────────────────────────────────
+jsonlines
+yt-dlp

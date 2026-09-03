@@ -1,0 +1,959 @@
+{
+  "n_recordings": 27,
+  "n_tokens": 5818,
+  "label_counts_before": {
+    "EN": 2388,
+    "SI": 3338,
+    "OTHER": 92
+  },
+  "label_counts_after": {
+    "EN": 2161,
+    "SI": 3323,
+    "NUM": 323,
+    "OTHER": 11
+  },
+  "n_proposed_relabels": 323,
+  "relabel_transitions": {
+    "EN -> NUM": 227,
+    "SI -> NUM": 15,
+    "OTHER -> NUM": 81
+  },
+  "other_survivors": [
+    {
+      "recording": "J26DS313_R0012",
+      "token": "puriyam.",
+      "script": "latin"
+    },
+    {
+      "recording": "J26DS313_R0013",
+      "token": "ಪುരിയമ്.",
+      "script": "latin"
+    },
+    {
+      "recording": "J26DS313_R0015",
+      "token": "ඉදු",
+      "script": "sinhala"
+    },
+    {
+      "recording": "J26DS313_R0015",
+      "token": "ඔරුව",
+      "script": "sinhala"
+    },
+    {
+      "recording": "J26DS313_R0015",
+      "token": "පෙරිය",
+      "script": "sinhala"
+    },
+    {
+      "recording": "J26DS313_R0015",
+      "token": "ප්‍රචන",
+      "script": "sinhala"
+    },
+    {
+      "recording": "J26DS313_R0015",
+      "token": "ඉල්ලයි.",
+      "script": "sinhala"
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "token": "sari",
+      "script": "latin"
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "token": "sari.",
+      "script": "latin"
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "token": "hasitha.94@gmail.com.",
+      "script": "latin"
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "token": "No.",
+      "script": "latin"
+    }
+  ],
+  "review": {
+    "en_loanword_in_sinhala_script": [
+      {
+        "recording": "J26DS313_R0006",
+        "token": "හොටෙල්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "ගාඩ්න්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "රිසෝට්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "මැනේජර්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "ඩිස්කවුන්ට්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "හෙලෝ"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "හියර්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "ටු"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "රූම්ස්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "ටූ"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "රූම්ස්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "බුකින්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "එන්අයිසී"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "එන්අයිසී"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "ඇඩ්රස්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "ඩිරෙක්ෂන්ස්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "හොටෙල්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "ඇඩ්රස්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "වට්ස්ඇප්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "නම්බර්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "රෝඩ්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "කන්ටැක්ට්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "නම්බර්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "තෑන්ක්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "යු"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "රූම්ස්"
+      },
+      {
+        "recording": "J26DS313_R0006",
+        "token": "ඇඩ්වාන්ස්"
+      },
+      {
+        "recording": "J26DS313_R0008",
+        "token": "බෑන්ක්"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "කීප්"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "ට්‍රිප්"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "රිපෝට්"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "රිපෝට්"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "ෆ්‍රයිඩේ"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "ඩියු"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "ටිප්"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "රීෂෙඩියුල්"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "ෆ්‍රයිඩේ"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "රීෂෙඩියුල්"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "ට්‍රිප්"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "ප්‍රෙෂර්"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "ස්ලයිඩ්ස්"
+      },
+      {
+        "recording": "J26DS313_R0009",
+        "token": "ඩේට"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "කන්ෆර්ම්"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "හොටෙල්"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "ෆයිනලයිස්"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "කෝල්"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "වෑන්"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "කන්ෆර්ම්"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "පික්අප්"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "ඇඩ්වාන්ස්"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "ට්‍රාන්ස්ෆර්"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "ගෲප්"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "ඩේටා"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "බර්ත්ඩේ"
+      },
+      {
+        "recording": "J26DS313_R0010",
+        "token": "පර්ෆෙක්ට්"
+      },
+      {
+        "recording": "J26DS313_R0015",
+        "token": "numbersුත්"
+      }
+    ],
+    "email_like": [
+      {
+        "recording": "J26DS313_R0018",
+        "token": "hasitha.94@gmail.com."
+      },
+      {
+        "recording": "J26DS313_R0021",
+        "token": "dinusha.r95@gmail.com."
+      },
+      {
+        "recording": "J26DS313_R0026",
+        "token": "nimali.bandara@gmail.com."
+      },
+      {
+        "recording": "J26DS313_R0026",
+        "token": "nimali.bandara@gmail.com."
+      }
+    ]
+  },
+  "switch_field": {
+    "total": 5818,
+    "annotated_true": 2012,
+    "derived_true": 1877,
+    "agree": 5681,
+    "annotated_not_derived": 136,
+    "derived_not_annotated": 1
+  },
+  "switch_agreement": 0.9765,
+  "cross_recording_consistency": {
+    "J26DS313_R0002": {
+      "n_checked": 65,
+      "n_contradictions": 0,
+      "contradiction_rate": 0.0,
+      "systematic": false,
+      "examples": []
+    },
+    "J26DS313_R0003": {
+      "n_checked": 49,
+      "n_contradictions": 1,
+      "contradiction_rate": 0.0204,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "Address",
+          "utt_id": "J26DS313_R0003_u009",
+          "tok_id": 0,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        }
+      ]
+    },
+    "J26DS313_R0004": {
+      "n_checked": 52,
+      "n_contradictions": 1,
+      "contradiction_rate": 0.0192,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "mm",
+          "utt_id": "J26DS313_R0004_u007",
+          "tok_id": 0,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        }
+      ]
+    },
+    "J26DS313_R0005": {
+      "n_checked": 58,
+      "n_contradictions": 0,
+      "contradiction_rate": 0.0,
+      "systematic": false,
+      "examples": []
+    },
+    "J26DS313_R0006": {
+      "n_checked": 68,
+      "n_contradictions": 0,
+      "contradiction_rate": 0.0,
+      "systematic": false,
+      "examples": []
+    },
+    "J26DS313_R0007": {
+      "n_checked": 64,
+      "n_contradictions": 0,
+      "contradiction_rate": 0.0,
+      "systematic": false,
+      "examples": []
+    },
+    "J26DS313_R0008": {
+      "n_checked": 12,
+      "n_contradictions": 0,
+      "contradiction_rate": 0.0,
+      "systematic": false,
+      "examples": []
+    },
+    "J26DS313_R0009": {
+      "n_checked": 44,
+      "n_contradictions": 0,
+      "contradiction_rate": 0.0,
+      "systematic": false,
+      "examples": []
+    },
+    "J26DS313_R0010": {
+      "n_checked": 34,
+      "n_contradictions": 0,
+      "contradiction_rate": 0.0,
+      "systematic": false,
+      "examples": []
+    },
+    "J26DS313_R0011": {
+      "n_checked": 150,
+      "n_contradictions": 2,
+      "contradiction_rate": 0.0133,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "සෝ",
+          "utt_id": "J26DS313_R0011_u006",
+          "tok_id": 9,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "me.",
+          "utt_id": "J26DS313_R0011_u015",
+          "tok_id": 6,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        }
+      ]
+    },
+    "J26DS313_R0012": {
+      "n_checked": 148,
+      "n_contradictions": 2,
+      "contradiction_rate": 0.0135,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "me",
+          "utt_id": "J26DS313_R0012_u004",
+          "tok_id": 1,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "Hari",
+          "utt_id": "J26DS313_R0012_u011",
+          "tok_id": 0,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        }
+      ]
+    },
+    "J26DS313_R0013": {
+      "n_checked": 144,
+      "n_contradictions": 2,
+      "contradiction_rate": 0.0139,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "me",
+          "utt_id": "J26DS313_R0013_u004",
+          "tok_id": 1,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "this.",
+          "utt_id": "J26DS313_R0013_u010",
+          "tok_id": 14,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        }
+      ]
+    },
+    "J26DS313_R0014": {
+      "n_checked": 127,
+      "n_contradictions": 9,
+      "contradiction_rate": 0.0709,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "one",
+          "utt_id": "J26DS313_R0014_u004",
+          "tok_id": 9,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "one,",
+          "utt_id": "J26DS313_R0014_u009",
+          "tok_id": 10,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "March",
+          "utt_id": "J26DS313_R0014_u010",
+          "tok_id": 5,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "sure",
+          "utt_id": "J26DS313_R0014_u011",
+          "tok_id": 2,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "one",
+          "utt_id": "J26DS313_R0014_u011",
+          "tok_id": 6,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "Road,",
+          "utt_id": "J26DS313_R0014_u013",
+          "tok_id": 4,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "Moratuwa.",
+          "utt_id": "J26DS313_R0014_u013",
+          "tok_id": 5,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "transfer",
+          "utt_id": "J26DS313_R0014_u016",
+          "tok_id": 7,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "account",
+          "utt_id": "J26DS313_R0014_u016",
+          "tok_id": 9,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        }
+      ]
+    },
+    "J26DS313_R0015": {
+      "n_checked": 201,
+      "n_contradictions": 0,
+      "contradiction_rate": 0.0,
+      "systematic": false,
+      "examples": []
+    },
+    "J26DS313_R0016": {
+      "n_checked": 170,
+      "n_contradictions": 1,
+      "contradiction_rate": 0.0059,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "me",
+          "utt_id": "J26DS313_R0016_u006",
+          "tok_id": 2,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        }
+      ]
+    },
+    "J26DS313_R0017": {
+      "n_checked": 179,
+      "n_contradictions": 99,
+      "contradiction_rate": 0.5531,
+      "systematic": true,
+      "examples": [
+        {
+          "token": "eken,",
+          "utt_id": "J26DS313_R0017_u001",
+          "tok_id": 7,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "mama",
+          "utt_id": "J26DS313_R0017_u001",
+          "tok_id": 8,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "Oyata",
+          "utt_id": "J26DS313_R0017_u001",
+          "tok_id": 10,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "ekak",
+          "utt_id": "J26DS313_R0017_u001",
+          "tok_id": 12,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "oneda?",
+          "utt_id": "J26DS313_R0017_u001",
+          "tok_id": 13,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "Ow,",
+          "utt_id": "J26DS313_R0017_u002",
+          "tok_id": 0,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "Mage",
+          "utt_id": "J26DS313_R0017_u002",
+          "tok_id": 3,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "aluth",
+          "utt_id": "J26DS313_R0017_u002",
+          "tok_id": 4,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "thiyenawa",
+          "utt_id": "J26DS313_R0017_u002",
+          "tok_id": 6,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "ekakata",
+          "utt_id": "J26DS313_R0017_u002",
+          "tok_id": 9,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "karaganna",
+          "utt_id": "J26DS313_R0017_u002",
+          "tok_id": 11,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "awe.",
+          "utt_id": "J26DS313_R0017_u002",
+          "tok_id": 13,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "hari,",
+          "utt_id": "J26DS313_R0017_u003",
+          "tok_id": 1,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "oyage",
+          "utt_id": "J26DS313_R0017_u003",
+          "tok_id": 2,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "nama",
+          "utt_id": "J26DS313_R0017_u003",
+          "tok_id": 4,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        }
+      ]
+    },
+    "J26DS313_R0018": {
+      "n_checked": 192,
+      "n_contradictions": 1,
+      "contradiction_rate": 0.0052,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "No.",
+          "utt_id": "J26DS313_R0018_u024",
+          "tok_id": 5,
+          "labelled": "OTHER",
+          "corpus_majority": "EN"
+        }
+      ]
+    },
+    "J26DS313_R0019": {
+      "n_checked": 271,
+      "n_contradictions": 1,
+      "contradiction_rate": 0.0037,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "me",
+          "utt_id": "J26DS313_R0019_u009",
+          "tok_id": 1,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        }
+      ]
+    },
+    "J26DS313_R0020": {
+      "n_checked": 198,
+      "n_contradictions": 0,
+      "contradiction_rate": 0.0,
+      "systematic": false,
+      "examples": []
+    },
+    "J26DS313_R0021": {
+      "n_checked": 253,
+      "n_contradictions": 1,
+      "contradiction_rate": 0.004,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "මිස්,",
+          "utt_id": "J26DS313_R0021_u031",
+          "tok_id": 1,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        }
+      ]
+    },
+    "J26DS313_R0022": {
+      "n_checked": 212,
+      "n_contradictions": 2,
+      "contradiction_rate": 0.0094,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "road",
+          "utt_id": "J26DS313_R0022_u007",
+          "tok_id": 10,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "note",
+          "utt_id": "J26DS313_R0022_u020",
+          "tok_id": 6,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        }
+      ]
+    },
+    "J26DS313_R0023": {
+      "n_checked": 128,
+      "n_contradictions": 25,
+      "contradiction_rate": 0.1953,
+      "systematic": true,
+      "examples": [
+        {
+          "token": "complaint",
+          "utt_id": "J26DS313_R0023_u001",
+          "tok_id": 9,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "sir,",
+          "utt_id": "J26DS313_R0023_u002",
+          "tok_id": 2,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "complaint",
+          "utt_id": "J26DS313_R0023_u002",
+          "tok_id": 4,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "file",
+          "utt_id": "J26DS313_R0023_u002",
+          "tok_id": 6,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "Phone",
+          "utt_id": "J26DS313_R0023_u009",
+          "tok_id": 0,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "number",
+          "utt_id": "J26DS313_R0023_u009",
+          "tok_id": 1,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "number",
+          "utt_id": "J26DS313_R0023_u011",
+          "tok_id": 7,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "kare,",
+          "utt_id": "J26DS313_R0023_u012",
+          "tok_id": 4,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "eke",
+          "utt_id": "J26DS313_R0023_u012",
+          "tok_id": 14,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "Sir,",
+          "utt_id": "J26DS313_R0023_u016",
+          "tok_id": 0,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "number",
+          "utt_id": "J26DS313_R0023_u017",
+          "tok_id": 17,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "sign",
+          "utt_id": "J26DS313_R0023_u017",
+          "tok_id": 19,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "sir,",
+          "utt_id": "J26DS313_R0023_u018",
+          "tok_id": 1,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "number",
+          "utt_id": "J26DS313_R0023_u018",
+          "tok_id": 3,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        },
+        {
+          "token": "number",
+          "utt_id": "J26DS313_R0023_u019",
+          "tok_id": 2,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        }
+      ]
+    },
+    "J26DS313_R0024": {
+      "n_checked": 188,
+      "n_contradictions": 2,
+      "contradiction_rate": 0.0106,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "hari,",
+          "utt_id": "J26DS313_R0024_u010",
+          "tok_id": 1,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "hari",
+          "utt_id": "J26DS313_R0024_u019",
+          "tok_id": 2,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        }
+      ]
+    },
+    "J26DS313_R0025": {
+      "n_checked": 292,
+      "n_contradictions": 3,
+      "contradiction_rate": 0.0103,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "vehicle",
+          "utt_id": "J26DS313_R0025_u016",
+          "tok_id": 4,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "me",
+          "utt_id": "J26DS313_R0025_u021",
+          "tok_id": 1,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        },
+        {
+          "token": "this",
+          "utt_id": "J26DS313_R0025_u031",
+          "tok_id": 2,
+          "labelled": "EN",
+          "corpus_majority": "SI"
+        }
+      ]
+    },
+    "J26DS313_R0026": {
+      "n_checked": 209,
+      "n_contradictions": 1,
+      "contradiction_rate": 0.0048,
+      "systematic": false,
+      "examples": [
+        {
+          "token": "කඩුවෙල.",
+          "utt_id": "J26DS313_R0026_u010",
+          "tok_id": 7,
+          "labelled": "SI",
+          "corpus_majority": "EN"
+        }
+      ]
+    },
+    "J26DS313_R0027": {
+      "n_checked": 383,
+      "n_contradictions": 0,
+      "contradiction_rate": 0.0,
+      "systematic": false,
+      "examples": []
+    },
+    "J26DS313_R0028": {
+      "n_checked": 46,
+      "n_contradictions": 0,
+      "contradiction_rate": 0.0,
+      "systematic": false,
+      "examples": []
+    }
+  },
+  "systematically_mislabelled": [
+    "J26DS313_R0017",
+    "J26DS313_R0023"
+  ],
+  "num_rule": "strip surrounding punctuation; NUM if the remainder contains a digit and no '@'",
+  "note": "Proposals only. Nothing in SORA_Dataset is modified by this script; applying the patch is a team decision (Phase 1)."
+}

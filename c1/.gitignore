@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+
+# Decode predictions: regenerable from `python -m src.decode_compare`, and the
+# full 3x3 grid is ~230 JSON files carrying word-level timestamps. The scored
+# results live in eval/baseline_decisions.json, which IS committed.
+predictions/
+
+# Fine-tuned and quantized checkpoints (Phases 2 and 4). Set up Git LFS before
+# committing any of these, or the repo bloats permanently.
+models/
+*.bin
+*.ctranslate2

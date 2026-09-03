@@ -1,0 +1,6179 @@
+{
+  "phase": 0,
+  "decision_metric": "eval-split micro WER under script-folded normalization",
+  "winning_decode_mode": "en",
+  "winning_model_size": "medium",
+  "winning_config": "medium/en",
+  "winning_eval_folded_wer": 0.841,
+  "winning_eval_raw_wer": 0.8473,
+  "harness_reproduction_check": {
+    "prior_baseline_micro_wer": 0.9372,
+    "this_harness_legacy_micro_wer": 0.9525,
+    "delta": 0.0153,
+    "reproduced": true,
+    "source": "SORA_Dataset/results/c1_report.md"
+  },
+  "eval_split_recordings": [
+    "J26DS313_R0010",
+    "J26DS313_R0012",
+    "J26DS313_R0014",
+    "J26DS313_R0019",
+    "J26DS313_R0020",
+    "J26DS313_R0023",
+    "J26DS313_R0025"
+  ],
+  "configs": [
+    {
+      "model_size": "large-v3",
+      "decode_mode": "auto",
+      "real_time_factor": 0.9719,
+      "total_decode_s": 2983.67,
+      "n_scored": 26,
+      "metrics": {
+        "raw": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5798,
+            "micro_wer": 0.9712,
+            "micro_cer": 0.8349,
+            "macro_wer": 0.9917,
+            "macro_cer": 0.8522,
+            "errors": {
+              "hits": 220,
+              "substitutions": 2061,
+              "deletions": 3517,
+              "insertions": 53,
+              "n_ref_words": 5798,
+              "hit_rate": 0.0379,
+              "sub_rate": 0.3555,
+              "del_rate": 0.6066,
+              "ins_rate": 0.0091
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1827,
+              "micro_wer": 0.9732,
+              "micro_cer": 0.8355,
+              "macro_wer": 0.9732,
+              "macro_cer": 0.8343,
+              "errors": {
+                "hits": 58,
+                "substitutions": 688,
+                "deletions": 1081,
+                "insertions": 9,
+                "n_ref_words": 1827,
+                "hit_rate": 0.0317,
+                "sub_rate": 0.3766,
+                "del_rate": 0.5917,
+                "ins_rate": 0.0049
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3971,
+              "micro_wer": 0.9703,
+              "micro_cer": 0.8346,
+              "macro_wer": 0.9985,
+              "macro_cer": 0.8589,
+              "errors": {
+                "hits": 162,
+                "substitutions": 1373,
+                "deletions": 2436,
+                "insertions": 44,
+                "n_ref_words": 3971,
+                "hit_rate": 0.0408,
+                "sub_rate": 0.3458,
+                "del_rate": 0.6134,
+                "ins_rate": 0.0111
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.9963,
+              "micro_cer": 0.9226,
+              "macro_wer": 0.9963,
+              "macro_cer": 0.9226,
+              "errors": {
+                "hits": 1,
+                "substitutions": 84,
+                "deletions": 182,
+                "insertions": 0,
+                "n_ref_words": 267,
+                "hit_rate": 0.0037,
+                "sub_rate": 0.3146,
+                "del_rate": 0.6816,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4285,
+              "micro_wer": 0.9652,
+              "micro_cer": 0.7998,
+              "macro_wer": 0.9963,
+              "macro_cer": 0.8141,
+              "errors": {
+                "hits": 202,
+                "substitutions": 1495,
+                "deletions": 2588,
+                "insertions": 53,
+                "n_ref_words": 4285,
+                "hit_rate": 0.0471,
+                "sub_rate": 0.3489,
+                "del_rate": 0.604,
+                "ins_rate": 0.0124
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9864,
+              "micro_cer": 0.9267,
+              "macro_wer": 0.9813,
+              "macro_cer": 0.9246,
+              "errors": {
+                "hits": 17,
+                "substitutions": 482,
+                "deletions": 747,
+                "insertions": 0,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0136,
+                "sub_rate": 0.3868,
+                "del_rate": 0.5995,
+                "ins_rate": 0.0
+              }
+            }
+          }
+        },
+        "folded": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5765,
+            "micro_wer": 0.9648,
+            "micro_cer": 0.74,
+            "macro_wer": 0.9846,
+            "macro_cer": 0.7474,
+            "errors": {
+              "hits": 259,
+              "substitutions": 2000,
+              "deletions": 3506,
+              "insertions": 56,
+              "n_ref_words": 5765,
+              "hit_rate": 0.0449,
+              "sub_rate": 0.3469,
+              "del_rate": 0.6082,
+              "ins_rate": 0.0097
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1811,
+              "micro_wer": 0.9619,
+              "micro_cer": 0.7339,
+              "macro_wer": 0.9591,
+              "macro_cer": 0.7272,
+              "errors": {
+                "hits": 78,
+                "substitutions": 662,
+                "deletions": 1071,
+                "insertions": 9,
+                "n_ref_words": 1811,
+                "hit_rate": 0.0431,
+                "sub_rate": 0.3655,
+                "del_rate": 0.5914,
+                "ins_rate": 0.005
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3954,
+              "micro_wer": 0.9661,
+              "micro_cer": 0.7428,
+              "macro_wer": 0.994,
+              "macro_cer": 0.7549,
+              "errors": {
+                "hits": 181,
+                "substitutions": 1338,
+                "deletions": 2435,
+                "insertions": 47,
+                "n_ref_words": 3954,
+                "hit_rate": 0.0458,
+                "sub_rate": 0.3384,
+                "del_rate": 0.6158,
+                "ins_rate": 0.0119
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.9888,
+              "micro_cer": 0.7723,
+              "macro_wer": 0.9888,
+              "macro_cer": 0.7723,
+              "errors": {
+                "hits": 3,
+                "substitutions": 79,
+                "deletions": 185,
+                "insertions": 0,
+                "n_ref_words": 267,
+                "hit_rate": 0.0112,
+                "sub_rate": 0.2959,
+                "del_rate": 0.6929,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4252,
+              "micro_wer": 0.9635,
+              "micro_cer": 0.7365,
+              "macro_wer": 0.9948,
+              "macro_cer": 0.7478,
+              "errors": {
+                "hits": 211,
+                "substitutions": 1472,
+                "deletions": 2569,
+                "insertions": 56,
+                "n_ref_words": 4252,
+                "hit_rate": 0.0496,
+                "sub_rate": 0.3462,
+                "del_rate": 0.6042,
+                "ins_rate": 0.0132
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9639,
+              "micro_cer": 0.7454,
+              "macro_wer": 0.9626,
+              "macro_cer": 0.7435,
+              "errors": {
+                "hits": 45,
+                "substitutions": 449,
+                "deletions": 752,
+                "insertions": 0,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0361,
+                "sub_rate": 0.3604,
+                "del_rate": 0.6035,
+                "ins_rate": 0.0
+              }
+            }
+          }
+        },
+        "legacy": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 7895,
+            "micro_wer": 0.9055,
+            "micro_cer": 0.7776,
+            "macro_wer": 0.952,
+            "macro_cer": 0.7827,
+            "errors": {
+              "hits": 891,
+              "substitutions": 3751,
+              "deletions": 3253,
+              "insertions": 145,
+              "n_ref_words": 7895,
+              "hit_rate": 0.1129,
+              "sub_rate": 0.4751,
+              "del_rate": 0.412,
+              "ins_rate": 0.0184
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 2358,
+              "micro_wer": 0.9084,
+              "micro_cer": 0.7754,
+              "macro_wer": 0.9285,
+              "macro_cer": 0.763,
+              "errors": {
+                "hits": 238,
+                "substitutions": 1274,
+                "deletions": 846,
+                "insertions": 22,
+                "n_ref_words": 2358,
+                "hit_rate": 0.1009,
+                "sub_rate": 0.5403,
+                "del_rate": 0.3588,
+                "ins_rate": 0.0093
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 5537,
+              "micro_wer": 0.9043,
+              "micro_cer": 0.7785,
+              "macro_wer": 0.9607,
+              "macro_cer": 0.79,
+              "errors": {
+                "hits": 653,
+                "substitutions": 2477,
+                "deletions": 2407,
+                "insertions": 123,
+                "n_ref_words": 5537,
+                "hit_rate": 0.1179,
+                "sub_rate": 0.4474,
+                "del_rate": 0.4347,
+                "ins_rate": 0.0222
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 274,
+              "micro_wer": 0.9745,
+              "micro_cer": 0.8607,
+              "macro_wer": 0.9745,
+              "macro_cer": 0.8607,
+              "errors": {
+                "hits": 7,
+                "substitutions": 181,
+                "deletions": 86,
+                "insertions": 0,
+                "n_ref_words": 274,
+                "hit_rate": 0.0255,
+                "sub_rate": 0.6606,
+                "del_rate": 0.3139,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 6375,
+              "micro_wer": 0.8751,
+              "micro_cer": 0.7452,
+              "macro_wer": 0.9164,
+              "macro_cer": 0.7466,
+              "errors": {
+                "hits": 867,
+                "substitutions": 2537,
+                "deletions": 2971,
+                "insertions": 71,
+                "n_ref_words": 6375,
+                "hit_rate": 0.136,
+                "sub_rate": 0.398,
+                "del_rate": 0.466,
+                "ins_rate": 0.0111
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 1.0457,
+              "micro_cer": 0.855,
+              "macro_wer": 1.025,
+              "macro_cer": 0.8496,
+              "errors": {
+                "hits": 17,
+                "substitutions": 1033,
+                "deletions": 196,
+                "insertions": 74,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0136,
+                "sub_rate": 0.8291,
+                "del_rate": 0.1573,
+                "ins_rate": 0.0594
+              }
+            }
+          }
+        }
+      },
+      "per_recording": [
+        {
+          "recording": "J26DS313_R0002",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 0.8684,
+          "raw_cer": 0.8719,
+          "folded_wer": 0.8684,
+          "folded_cer": 0.7067,
+          "legacy_wer": 0.9649,
+          "legacy_cer": 0.7872
+        },
+        {
+          "recording": "J26DS313_R0003",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 0.9857,
+          "raw_cer": 0.9423,
+          "folded_wer": 0.9857,
+          "folded_cer": 0.7869,
+          "legacy_wer": 0.9857,
+          "legacy_cer": 0.8684
+        },
+        {
+          "recording": "J26DS313_R0004",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9254,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7161,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8275
+        },
+        {
+          "recording": "J26DS313_R0005",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9518,
+          "raw_cer": 0.8111,
+          "folded_wer": 0.9518,
+          "folded_cer": 0.7021,
+          "legacy_wer": 0.9189,
+          "legacy_cer": 0.6971
+        },
+        {
+          "recording": "J26DS313_R0006",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.7554,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7033,
+          "legacy_wer": 0.8416,
+          "legacy_cer": 0.6547
+        },
+        {
+          "recording": "J26DS313_R0008",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.6364,
+          "raw_cer": 1.2446,
+          "folded_wer": 1.6364,
+          "folded_cer": 1.1888,
+          "legacy_wer": 1.6279,
+          "legacy_cer": 1.0952
+        },
+        {
+          "recording": "J26DS313_R0009",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9861,
+          "raw_cer": 0.8243,
+          "folded_wer": 0.9851,
+          "folded_cer": 0.8096,
+          "legacy_wer": 0.8905,
+          "legacy_cer": 0.7912
+        },
+        {
+          "recording": "J26DS313_R0010",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9844,
+          "raw_cer": 0.7788,
+          "folded_wer": 0.9841,
+          "folded_cer": 0.678,
+          "legacy_wer": 0.981,
+          "legacy_cer": 0.6323
+        },
+        {
+          "recording": "J26DS313_R0011",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9813,
+          "raw_cer": 0.8305,
+          "folded_wer": 0.9811,
+          "folded_cer": 0.7402,
+          "legacy_wer": 0.8712,
+          "legacy_cer": 0.7609
+        },
+        {
+          "recording": "J26DS313_R0012",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.8911,
+          "raw_cer": 0.7153,
+          "folded_wer": 0.8911,
+          "folded_cer": 0.6562,
+          "legacy_wer": 0.8446,
+          "legacy_cer": 0.6675
+        },
+        {
+          "recording": "J26DS313_R0013",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.7487,
+          "raw_cer": 0.5032,
+          "folded_wer": 0.7368,
+          "folded_cer": 0.4479,
+          "legacy_wer": 0.7155,
+          "legacy_cer": 0.483
+        },
+        {
+          "recording": "J26DS313_R0014",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9474,
+          "folded_wer": 0.9333,
+          "folded_cer": 0.7797,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.892
+        },
+        {
+          "recording": "J26DS313_R0015",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9824,
+          "raw_cer": 0.8387,
+          "folded_wer": 0.9787,
+          "folded_cer": 0.7995,
+          "legacy_wer": 0.8714,
+          "legacy_cer": 0.7969
+        },
+        {
+          "recording": "J26DS313_R0016",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9874,
+          "raw_cer": 0.8462,
+          "folded_wer": 0.9874,
+          "folded_cer": 0.7896,
+          "legacy_wer": 0.8775,
+          "legacy_cer": 0.8064
+        },
+        {
+          "recording": "J26DS313_R0017",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9497,
+          "folded_wer": 0.9771,
+          "folded_cer": 0.7839,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8886
+        },
+        {
+          "recording": "J26DS313_R0018",
+          "split": "train",
+          "script_group": "mixed",
+          "detected_language": "si",
+          "raw_wer": 0.9963,
+          "raw_cer": 0.9226,
+          "folded_wer": 0.9888,
+          "folded_cer": 0.7723,
+          "legacy_wer": 0.9745,
+          "legacy_cer": 0.8607
+        },
+        {
+          "recording": "J26DS313_R0019",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.995,
+          "raw_cer": 0.8488,
+          "folded_wer": 0.995,
+          "folded_cer": 0.7622,
+          "legacy_wer": 0.9121,
+          "legacy_cer": 0.7918
+        },
+        {
+          "recording": "J26DS313_R0020",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9971,
+          "raw_cer": 0.8481,
+          "folded_wer": 0.9911,
+          "folded_cer": 0.782,
+          "legacy_wer": 0.8854,
+          "legacy_cer": 0.8015
+        },
+        {
+          "recording": "J26DS313_R0021",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9586,
+          "raw_cer": 0.775,
+          "folded_wer": 0.9583,
+          "folded_cer": 0.705,
+          "legacy_wer": 0.8566,
+          "legacy_cer": 0.7043
+        },
+        {
+          "recording": "J26DS313_R0022",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9218,
+          "raw_cer": 0.779,
+          "folded_wer": 0.9215,
+          "folded_cer": 0.7093,
+          "legacy_wer": 0.8491,
+          "legacy_cer": 0.7269
+        },
+        {
+          "recording": "J26DS313_R0023",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9306,
+          "folded_wer": 0.9767,
+          "folded_cer": 0.7377,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8466
+        },
+        {
+          "recording": "J26DS313_R0024",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 0.996,
+          "raw_cer": 0.8981,
+          "folded_wer": 0.9839,
+          "folded_cer": 0.7019,
+          "legacy_wer": 1.249,
+          "legacy_cer": 0.8285
+        },
+        {
+          "recording": "J26DS313_R0025",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9451,
+          "raw_cer": 0.7712,
+          "folded_wer": 0.9424,
+          "folded_cer": 0.6945,
+          "legacy_wer": 0.8767,
+          "legacy_cer": 0.7092
+        },
+        {
+          "recording": "J26DS313_R0026",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9775,
+          "raw_cer": 0.8384,
+          "folded_wer": 0.9774,
+          "folded_cer": 0.7489,
+          "legacy_wer": 0.8883,
+          "legacy_cer": 0.7803
+        },
+        {
+          "recording": "J26DS313_R0027",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.993,
+          "raw_cer": 0.8303,
+          "folded_wer": 0.993,
+          "folded_cer": 0.7962,
+          "legacy_wer": 0.8708,
+          "legacy_cer": 0.7937
+        },
+        {
+          "recording": "J26DS313_R0028",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9315,
+          "folded_wer": 0.9753,
+          "folded_cer": 0.735,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8577
+        }
+      ]
+    },
+    {
+      "model_size": "large-v3",
+      "decode_mode": "en",
+      "real_time_factor": 0.1728,
+      "total_decode_s": 530.39,
+      "n_scored": 26,
+      "metrics": {
+        "raw": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5798,
+            "micro_wer": 0.9201,
+            "micro_cer": 0.6559,
+            "macro_wer": 1.0535,
+            "macro_cer": 0.7329,
+            "errors": {
+              "hits": 1374,
+              "substitutions": 4122,
+              "deletions": 302,
+              "insertions": 911,
+              "n_ref_words": 5798,
+              "hit_rate": 0.237,
+              "sub_rate": 0.7109,
+              "del_rate": 0.0521,
+              "ins_rate": 0.1571
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1827,
+              "micro_wer": 0.8736,
+              "micro_cer": 0.6102,
+              "macro_wer": 0.9296,
+              "macro_cer": 0.6388,
+              "errors": {
+                "hits": 516,
+                "substitutions": 1147,
+                "deletions": 164,
+                "insertions": 285,
+                "n_ref_words": 1827,
+                "hit_rate": 0.2824,
+                "sub_rate": 0.6278,
+                "del_rate": 0.0898,
+                "ins_rate": 0.156
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3971,
+              "micro_wer": 0.9416,
+              "micro_cer": 0.6763,
+              "macro_wer": 1.0991,
+              "macro_cer": 0.7675,
+              "errors": {
+                "hits": 858,
+                "substitutions": 2975,
+                "deletions": 138,
+                "insertions": 626,
+                "n_ref_words": 3971,
+                "hit_rate": 0.2161,
+                "sub_rate": 0.7492,
+                "del_rate": 0.0348,
+                "ins_rate": 0.1576
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.6667,
+              "micro_cer": 0.4447,
+              "macro_wer": 0.6667,
+              "macro_cer": 0.4447,
+              "errors": {
+                "hits": 128,
+                "substitutions": 117,
+                "deletions": 22,
+                "insertions": 39,
+                "n_ref_words": 267,
+                "hit_rate": 0.4794,
+                "sub_rate": 0.4382,
+                "del_rate": 0.0824,
+                "ins_rate": 0.1461
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4285,
+              "micro_wer": 0.9181,
+              "micro_cer": 0.6859,
+              "macro_wer": 1.0998,
+              "macro_cer": 0.8079,
+              "errors": {
+                "hits": 938,
+                "substitutions": 3128,
+                "deletions": 219,
+                "insertions": 587,
+                "n_ref_words": 4285,
+                "hit_rate": 0.2189,
+                "sub_rate": 0.73,
+                "del_rate": 0.0511,
+                "ins_rate": 0.137
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9815,
+              "micro_cer": 0.6049,
+              "macro_wer": 1.0035,
+              "macro_cer": 0.6095,
+              "errors": {
+                "hits": 308,
+                "substitutions": 877,
+                "deletions": 61,
+                "insertions": 285,
+                "n_ref_words": 1246,
+                "hit_rate": 0.2472,
+                "sub_rate": 0.7039,
+                "del_rate": 0.049,
+                "ins_rate": 0.2287
+              }
+            }
+          }
+        },
+        "folded": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5765,
+            "micro_wer": 0.9147,
+            "micro_cer": 0.5836,
+            "macro_wer": 1.0466,
+            "macro_cer": 0.6405,
+            "errors": {
+              "hits": 1433,
+              "substitutions": 4033,
+              "deletions": 299,
+              "insertions": 941,
+              "n_ref_words": 5765,
+              "hit_rate": 0.2486,
+              "sub_rate": 0.6996,
+              "del_rate": 0.0519,
+              "ins_rate": 0.1632
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1811,
+              "micro_wer": 0.8675,
+              "micro_cer": 0.5468,
+              "macro_wer": 0.9233,
+              "macro_cer": 0.566,
+              "errors": {
+                "hits": 541,
+                "substitutions": 1106,
+                "deletions": 164,
+                "insertions": 301,
+                "n_ref_words": 1811,
+                "hit_rate": 0.2987,
+                "sub_rate": 0.6107,
+                "del_rate": 0.0906,
+                "ins_rate": 0.1662
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3954,
+              "micro_wer": 0.9363,
+              "micro_cer": 0.6,
+              "macro_wer": 1.0921,
+              "macro_cer": 0.668,
+              "errors": {
+                "hits": 892,
+                "substitutions": 2927,
+                "deletions": 135,
+                "insertions": 640,
+                "n_ref_words": 3954,
+                "hit_rate": 0.2256,
+                "sub_rate": 0.7403,
+                "del_rate": 0.0341,
+                "ins_rate": 0.1619
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.6629,
+              "micro_cer": 0.4297,
+              "macro_wer": 0.6629,
+              "macro_cer": 0.4297,
+              "errors": {
+                "hits": 129,
+                "substitutions": 116,
+                "deletions": 22,
+                "insertions": 39,
+                "n_ref_words": 267,
+                "hit_rate": 0.4831,
+                "sub_rate": 0.4345,
+                "del_rate": 0.0824,
+                "ins_rate": 0.1461
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4252,
+              "micro_wer": 0.9113,
+              "micro_cer": 0.5894,
+              "macro_wer": 1.0906,
+              "macro_cer": 0.671,
+              "errors": {
+                "hits": 994,
+                "substitutions": 3042,
+                "deletions": 216,
+                "insertions": 617,
+                "n_ref_words": 4252,
+                "hit_rate": 0.2338,
+                "sub_rate": 0.7154,
+                "del_rate": 0.0508,
+                "ins_rate": 0.1451
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9799,
+              "micro_cer": 0.5954,
+              "macro_wer": 1.0012,
+              "macro_cer": 0.6021,
+              "errors": {
+                "hits": 310,
+                "substitutions": 875,
+                "deletions": 61,
+                "insertions": 285,
+                "n_ref_words": 1246,
+                "hit_rate": 0.2488,
+                "sub_rate": 0.7022,
+                "del_rate": 0.049,
+                "ins_rate": 0.2287
+              }
+            }
+          }
+        },
+        "legacy": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 7895,
+            "micro_wer": 0.8803,
+            "micro_cer": 0.6377,
+            "macro_wer": 0.939,
+            "macro_cer": 0.7259,
+            "errors": {
+              "hits": 1403,
+              "substitutions": 4546,
+              "deletions": 1946,
+              "insertions": 458,
+              "n_ref_words": 7895,
+              "hit_rate": 0.1777,
+              "sub_rate": 0.5758,
+              "del_rate": 0.2465,
+              "ins_rate": 0.058
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 2358,
+              "micro_wer": 0.8478,
+              "micro_cer": 0.5948,
+              "macro_wer": 0.8808,
+              "macro_cer": 0.63,
+              "errors": {
+                "hits": 517,
+                "substitutions": 1273,
+                "deletions": 568,
+                "insertions": 158,
+                "n_ref_words": 2358,
+                "hit_rate": 0.2193,
+                "sub_rate": 0.5399,
+                "del_rate": 0.2409,
+                "ins_rate": 0.067
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 5537,
+              "micro_wer": 0.8942,
+              "micro_cer": 0.6571,
+              "macro_wer": 0.9604,
+              "macro_cer": 0.7612,
+              "errors": {
+                "hits": 886,
+                "substitutions": 3273,
+                "deletions": 1378,
+                "insertions": 300,
+                "n_ref_words": 5537,
+                "hit_rate": 0.16,
+                "sub_rate": 0.5911,
+                "del_rate": 0.2489,
+                "ins_rate": 0.0542
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 274,
+              "micro_wer": 0.6569,
+              "micro_cer": 0.444,
+              "macro_wer": 0.6569,
+              "macro_cer": 0.444,
+              "errors": {
+                "hits": 128,
+                "substitutions": 122,
+                "deletions": 24,
+                "insertions": 34,
+                "n_ref_words": 274,
+                "hit_rate": 0.4672,
+                "sub_rate": 0.4453,
+                "del_rate": 0.0876,
+                "ins_rate": 0.1241
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 6375,
+              "micro_wer": 0.8701,
+              "micro_cer": 0.6625,
+              "macro_wer": 0.9252,
+              "macro_cer": 0.7973,
+              "errors": {
+                "hits": 967,
+                "substitutions": 3547,
+                "deletions": 1861,
+                "insertions": 139,
+                "n_ref_words": 6375,
+                "hit_rate": 0.1517,
+                "sub_rate": 0.5564,
+                "del_rate": 0.2919,
+                "ins_rate": 0.0218
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9815,
+              "micro_cer": 0.6049,
+              "macro_wer": 1.0035,
+              "macro_cer": 0.6095,
+              "errors": {
+                "hits": 308,
+                "substitutions": 877,
+                "deletions": 61,
+                "insertions": 285,
+                "n_ref_words": 1246,
+                "hit_rate": 0.2472,
+                "sub_rate": 0.7039,
+                "del_rate": 0.049,
+                "ins_rate": 0.2287
+              }
+            }
+          }
+        }
+      },
+      "per_recording": [
+        {
+          "recording": "J26DS313_R0002",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.8772,
+          "raw_cer": 0.5763,
+          "folded_wer": 0.8772,
+          "folded_cer": 0.5709,
+          "legacy_wer": 0.8772,
+          "legacy_cer": 0.5763
+        },
+        {
+          "recording": "J26DS313_R0003",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.8,
+          "raw_cer": 0.4896,
+          "folded_wer": 0.7857,
+          "folded_cer": 0.4867,
+          "legacy_wer": 0.8,
+          "legacy_cer": 0.4896
+        },
+        {
+          "recording": "J26DS313_R0004",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 1.24,
+          "raw_cer": 0.7459,
+          "folded_wer": 1.24,
+          "folded_cer": 0.7513,
+          "legacy_wer": 1.24,
+          "legacy_cer": 0.7459
+        },
+        {
+          "recording": "J26DS313_R0005",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9398,
+          "raw_cer": 0.6489,
+          "folded_wer": 0.9398,
+          "folded_cer": 0.5427,
+          "legacy_wer": 0.8018,
+          "legacy_cer": 0.6266
+        },
+        {
+          "recording": "J26DS313_R0006",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.1296,
+          "raw_cer": 0.8678,
+          "folded_wer": 1.0463,
+          "folded_cer": 0.6115,
+          "legacy_wer": 0.9752,
+          "legacy_cer": 0.8698
+        },
+        {
+          "recording": "J26DS313_R0008",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 3.7727,
+          "raw_cer": 2.7338,
+          "folded_wer": 3.7273,
+          "folded_cer": 2.1119,
+          "legacy_wer": 1.9302,
+          "legacy_cer": 2.8492
+        },
+        {
+          "recording": "J26DS313_R0009",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.0556,
+          "raw_cer": 0.8579,
+          "folded_wer": 1.1194,
+          "folded_cer": 0.7056,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8235
+        },
+        {
+          "recording": "J26DS313_R0010",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.25,
+          "raw_cer": 0.903,
+          "folded_wer": 1.2381,
+          "folded_cer": 0.709,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.921
+        },
+        {
+          "recording": "J26DS313_R0011",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9252,
+          "raw_cer": 0.6594,
+          "folded_wer": 0.9198,
+          "folded_cer": 0.5861,
+          "legacy_wer": 0.8678,
+          "legacy_cer": 0.6458
+        },
+        {
+          "recording": "J26DS313_R0012",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.8713,
+          "raw_cer": 0.5686,
+          "folded_wer": 0.8614,
+          "folded_cer": 0.5004,
+          "legacy_wer": 0.7928,
+          "legacy_cer": 0.5515
+        },
+        {
+          "recording": "J26DS313_R0013",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.7906,
+          "raw_cer": 0.537,
+          "folded_wer": 0.7789,
+          "folded_cer": 0.4797,
+          "legacy_wer": 0.7531,
+          "legacy_cer": 0.5199
+        },
+        {
+          "recording": "J26DS313_R0014",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.8889,
+          "raw_cer": 0.5577,
+          "folded_wer": 0.8889,
+          "folded_cer": 0.5575,
+          "legacy_wer": 0.8889,
+          "legacy_cer": 0.5577
+        },
+        {
+          "recording": "J26DS313_R0015",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9789,
+          "raw_cer": 0.7032,
+          "folded_wer": 0.9787,
+          "folded_cer": 0.6085,
+          "legacy_wer": 0.881,
+          "legacy_cer": 0.6779
+        },
+        {
+          "recording": "J26DS313_R0016",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9958,
+          "raw_cer": 0.7307,
+          "folded_wer": 0.9874,
+          "folded_cer": 0.5956,
+          "legacy_wer": 0.8746,
+          "legacy_cer": 0.7131
+        },
+        {
+          "recording": "J26DS313_R0017",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 1.0458,
+          "raw_cer": 0.6753,
+          "folded_wer": 1.0458,
+          "folded_cer": 0.6678,
+          "legacy_wer": 1.0458,
+          "legacy_cer": 0.6753
+        },
+        {
+          "recording": "J26DS313_R0018",
+          "split": "train",
+          "script_group": "mixed",
+          "detected_language": "en",
+          "raw_wer": 0.6667,
+          "raw_cer": 0.4447,
+          "folded_wer": 0.6629,
+          "folded_cer": 0.4297,
+          "legacy_wer": 0.6569,
+          "legacy_cer": 0.444
+        },
+        {
+          "recording": "J26DS313_R0019",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.7789,
+          "raw_cer": 0.5795,
+          "folded_wer": 0.7714,
+          "folded_cer": 0.5272,
+          "legacy_wer": 0.7907,
+          "legacy_cer": 0.5594
+        },
+        {
+          "recording": "J26DS313_R0020",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.8309,
+          "raw_cer": 0.6227,
+          "folded_wer": 0.8244,
+          "folded_cer": 0.5225,
+          "legacy_wer": 0.8292,
+          "legacy_cer": 0.6065
+        },
+        {
+          "recording": "J26DS313_R0021",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9337,
+          "raw_cer": 0.684,
+          "folded_wer": 0.9194,
+          "folded_cer": 0.5831,
+          "legacy_wer": 0.8696,
+          "legacy_cer": 0.66
+        },
+        {
+          "recording": "J26DS313_R0022",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.8299,
+          "raw_cer": 0.6102,
+          "folded_wer": 0.8294,
+          "folded_cer": 0.5505,
+          "legacy_wer": 0.8042,
+          "legacy_cer": 0.5868
+        },
+        {
+          "recording": "J26DS313_R0023",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 1.0326,
+          "raw_cer": 0.6041,
+          "folded_wer": 1.0326,
+          "folded_cer": 0.5897,
+          "legacy_wer": 1.0326,
+          "legacy_cer": 0.6041
+        },
+        {
+          "recording": "J26DS313_R0024",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.8594,
+          "raw_cer": 0.5403,
+          "folded_wer": 0.8554,
+          "folded_cer": 0.5236,
+          "legacy_wer": 0.8594,
+          "legacy_cer": 0.5403
+        },
+        {
+          "recording": "J26DS313_R0025",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.8544,
+          "raw_cer": 0.6363,
+          "folded_wer": 0.8465,
+          "folded_cer": 0.5554,
+          "legacy_wer": 0.8311,
+          "legacy_cer": 0.6101
+        },
+        {
+          "recording": "J26DS313_R0026",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.7715,
+          "raw_cer": 0.5943,
+          "folded_wer": 0.7632,
+          "folded_cer": 0.5322,
+          "legacy_wer": 0.7793,
+          "legacy_cer": 0.5649
+        },
+        {
+          "recording": "J26DS313_R0027",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9874,
+          "raw_cer": 0.7974,
+          "folded_wer": 0.9888,
+          "folded_cer": 0.685,
+          "legacy_wer": 0.9475,
+          "legacy_cer": 0.7676
+        },
+        {
+          "recording": "J26DS313_R0028",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 1.284,
+          "raw_cer": 0.6865,
+          "folded_wer": 1.284,
+          "folded_cer": 0.6692,
+          "legacy_wer": 1.284,
+          "legacy_cer": 0.6865
+        }
+      ]
+    },
+    {
+      "model_size": "large-v3",
+      "decode_mode": "si",
+      "real_time_factor": 0.9387,
+      "total_decode_s": 2881.75,
+      "n_scored": 26,
+      "metrics": {
+        "raw": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5798,
+            "micro_wer": 0.9722,
+            "micro_cer": 0.8258,
+            "macro_wer": 1.0284,
+            "macro_cer": 0.8469,
+            "errors": {
+              "hits": 254,
+              "substitutions": 2243,
+              "deletions": 3301,
+              "insertions": 93,
+              "n_ref_words": 5798,
+              "hit_rate": 0.0438,
+              "sub_rate": 0.3869,
+              "del_rate": 0.5693,
+              "ins_rate": 0.016
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1827,
+              "micro_wer": 0.9787,
+              "micro_cer": 0.8461,
+              "macro_wer": 0.9739,
+              "macro_cer": 0.8414,
+              "errors": {
+                "hits": 43,
+                "substitutions": 627,
+                "deletions": 1157,
+                "insertions": 4,
+                "n_ref_words": 1827,
+                "hit_rate": 0.0235,
+                "sub_rate": 0.3432,
+                "del_rate": 0.6333,
+                "ins_rate": 0.0022
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3971,
+              "micro_wer": 0.9693,
+              "micro_cer": 0.8167,
+              "macro_wer": 1.0484,
+              "macro_cer": 0.8489,
+              "errors": {
+                "hits": 211,
+                "substitutions": 1616,
+                "deletions": 2144,
+                "insertions": 89,
+                "n_ref_words": 3971,
+                "hit_rate": 0.0531,
+                "sub_rate": 0.407,
+                "del_rate": 0.5399,
+                "ins_rate": 0.0224
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.9438,
+              "micro_cer": 0.7757,
+              "macro_wer": 0.9438,
+              "macro_cer": 0.7757,
+              "errors": {
+                "hits": 19,
+                "substitutions": 139,
+                "deletions": 109,
+                "insertions": 4,
+                "n_ref_words": 267,
+                "hit_rate": 0.0712,
+                "sub_rate": 0.5206,
+                "del_rate": 0.4082,
+                "ins_rate": 0.015
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4285,
+              "micro_wer": 0.9699,
+              "micro_cer": 0.7986,
+              "macro_wer": 1.0538,
+              "macro_cer": 0.8175,
+              "errors": {
+                "hits": 205,
+                "substitutions": 1556,
+                "deletions": 2524,
+                "insertions": 76,
+                "n_ref_words": 4285,
+                "hit_rate": 0.0478,
+                "sub_rate": 0.3631,
+                "del_rate": 0.589,
+                "ins_rate": 0.0177
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9864,
+              "micro_cer": 0.9208,
+              "macro_wer": 0.9848,
+              "macro_cer": 0.9184,
+              "errors": {
+                "hits": 30,
+                "substitutions": 548,
+                "deletions": 668,
+                "insertions": 13,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0241,
+                "sub_rate": 0.4398,
+                "del_rate": 0.5361,
+                "ins_rate": 0.0104
+              }
+            }
+          }
+        },
+        "folded": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5765,
+            "micro_wer": 0.9651,
+            "micro_cer": 0.7308,
+            "macro_wer": 1.016,
+            "macro_cer": 0.7421,
+            "errors": {
+              "hits": 294,
+              "substitutions": 2159,
+              "deletions": 3312,
+              "insertions": 93,
+              "n_ref_words": 5765,
+              "hit_rate": 0.051,
+              "sub_rate": 0.3745,
+              "del_rate": 0.5745,
+              "ins_rate": 0.0161
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1811,
+              "micro_wer": 0.9735,
+              "micro_cer": 0.7422,
+              "macro_wer": 0.9674,
+              "macro_cer": 0.7369,
+              "errors": {
+                "hits": 52,
+                "substitutions": 609,
+                "deletions": 1150,
+                "insertions": 4,
+                "n_ref_words": 1811,
+                "hit_rate": 0.0287,
+                "sub_rate": 0.3363,
+                "del_rate": 0.635,
+                "ins_rate": 0.0022
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3954,
+              "micro_wer": 0.9613,
+              "micro_cer": 0.7257,
+              "macro_wer": 1.0339,
+              "macro_cer": 0.744,
+              "errors": {
+                "hits": 242,
+                "substitutions": 1550,
+                "deletions": 2162,
+                "insertions": 89,
+                "n_ref_words": 3954,
+                "hit_rate": 0.0612,
+                "sub_rate": 0.392,
+                "del_rate": 0.5468,
+                "ins_rate": 0.0225
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.9176,
+              "micro_cer": 0.6453,
+              "macro_wer": 0.9176,
+              "macro_cer": 0.6453,
+              "errors": {
+                "hits": 26,
+                "substitutions": 127,
+                "deletions": 114,
+                "insertions": 4,
+                "n_ref_words": 267,
+                "hit_rate": 0.0974,
+                "sub_rate": 0.4757,
+                "del_rate": 0.427,
+                "ins_rate": 0.015
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4252,
+              "micro_wer": 0.9659,
+              "micro_cer": 0.7341,
+              "macro_wer": 1.0424,
+              "macro_cer": 0.7519,
+              "errors": {
+                "hits": 221,
+                "substitutions": 1508,
+                "deletions": 2523,
+                "insertions": 76,
+                "n_ref_words": 4252,
+                "hit_rate": 0.052,
+                "sub_rate": 0.3547,
+                "del_rate": 0.5934,
+                "ins_rate": 0.0179
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9727,
+              "micro_cer": 0.737,
+              "macro_wer": 0.9722,
+              "macro_cer": 0.7333,
+              "errors": {
+                "hits": 47,
+                "substitutions": 524,
+                "deletions": 675,
+                "insertions": 13,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0377,
+                "sub_rate": 0.4205,
+                "del_rate": 0.5417,
+                "ins_rate": 0.0104
+              }
+            }
+          }
+        },
+        "legacy": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 7895,
+            "micro_wer": 0.9216,
+            "micro_cer": 0.7713,
+            "macro_wer": 0.9947,
+            "macro_cer": 0.7834,
+            "errors": {
+              "hits": 904,
+              "substitutions": 3835,
+              "deletions": 3156,
+              "insertions": 285,
+              "n_ref_words": 7895,
+              "hit_rate": 0.1145,
+              "sub_rate": 0.4858,
+              "del_rate": 0.3997,
+              "ins_rate": 0.0361
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 2358,
+              "micro_wer": 0.9054,
+              "micro_cer": 0.789,
+              "macro_wer": 0.9221,
+              "macro_cer": 0.7815,
+              "errors": {
+                "hits": 247,
+                "substitutions": 1166,
+                "deletions": 945,
+                "insertions": 24,
+                "n_ref_words": 2358,
+                "hit_rate": 0.1047,
+                "sub_rate": 0.4945,
+                "del_rate": 0.4008,
+                "ins_rate": 0.0102
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 5537,
+              "micro_wer": 0.9285,
+              "micro_cer": 0.7633,
+              "macro_wer": 1.0215,
+              "macro_cer": 0.7841,
+              "errors": {
+                "hits": 657,
+                "substitutions": 2669,
+                "deletions": 2211,
+                "insertions": 261,
+                "n_ref_words": 5537,
+                "hit_rate": 0.1187,
+                "sub_rate": 0.482,
+                "del_rate": 0.3993,
+                "ins_rate": 0.0471
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 274,
+              "micro_wer": 0.9745,
+              "micro_cer": 0.7148,
+              "macro_wer": 0.9745,
+              "macro_cer": 0.7148,
+              "errors": {
+                "hits": 23,
+                "substitutions": 248,
+                "deletions": 3,
+                "insertions": 16,
+                "n_ref_words": 274,
+                "hit_rate": 0.0839,
+                "sub_rate": 0.9051,
+                "del_rate": 0.0109,
+                "ins_rate": 0.0584
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 6375,
+              "micro_wer": 0.8822,
+              "micro_cer": 0.7474,
+              "macro_wer": 0.9456,
+              "macro_cer": 0.7569,
+              "errors": {
+                "hits": 852,
+                "substitutions": 2528,
+                "deletions": 2995,
+                "insertions": 101,
+                "n_ref_words": 6375,
+                "hit_rate": 0.1336,
+                "sub_rate": 0.3965,
+                "del_rate": 0.4698,
+                "ins_rate": 0.0158
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 1.1116,
+              "micro_cer": 0.8525,
+              "macro_wer": 1.1016,
+              "macro_cer": 0.8482,
+              "errors": {
+                "hits": 29,
+                "substitutions": 1059,
+                "deletions": 158,
+                "insertions": 168,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0233,
+                "sub_rate": 0.8499,
+                "del_rate": 0.1268,
+                "ins_rate": 0.1348
+              }
+            }
+          }
+        }
+      },
+      "per_recording": [
+        {
+          "recording": "J26DS313_R0002",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 0.9211,
+          "raw_cer": 0.8606,
+          "folded_wer": 0.9211,
+          "folded_cer": 0.7421,
+          "legacy_wer": 1.3947,
+          "legacy_cer": 0.7966
+        },
+        {
+          "recording": "J26DS313_R0003",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 0.9857,
+          "raw_cer": 0.9215,
+          "folded_wer": 0.9857,
+          "folded_cer": 0.7409,
+          "legacy_wer": 1.0286,
+          "legacy_cer": 0.8406
+        },
+        {
+          "recording": "J26DS313_R0004",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9277,
+          "folded_wer": 0.9867,
+          "folded_cer": 0.7186,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8392
+        },
+        {
+          "recording": "J26DS313_R0005",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9639,
+          "raw_cer": 0.7676,
+          "folded_wer": 0.9639,
+          "folded_cer": 0.6813,
+          "legacy_wer": 1.045,
+          "legacy_cer": 0.6397
+        },
+        {
+          "recording": "J26DS313_R0006",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9815,
+          "raw_cer": 0.7603,
+          "folded_wer": 0.9722,
+          "folded_cer": 0.7033,
+          "legacy_wer": 0.8762,
+          "legacy_cer": 0.6962
+        },
+        {
+          "recording": "J26DS313_R0008",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 2.6818,
+          "raw_cer": 1.4604,
+          "folded_wer": 2.5455,
+          "folded_cer": 1.3916,
+          "legacy_wer": 2.0233,
+          "legacy_cer": 1.3333
+        },
+        {
+          "recording": "J26DS313_R0009",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9861,
+          "raw_cer": 0.7855,
+          "folded_wer": 0.9851,
+          "folded_cer": 0.7234,
+          "legacy_wer": 0.9124,
+          "legacy_cer": 0.7147
+        },
+        {
+          "recording": "J26DS313_R0010",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9688,
+          "raw_cer": 0.8,
+          "folded_wer": 0.9683,
+          "folded_cer": 0.7684,
+          "legacy_wer": 0.8762,
+          "legacy_cer": 0.7388
+        },
+        {
+          "recording": "J26DS313_R0011",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.8832,
+          "raw_cer": 0.6636,
+          "folded_wer": 0.8821,
+          "folded_cer": 0.5975,
+          "legacy_wer": 0.8542,
+          "legacy_cer": 0.5978
+        },
+        {
+          "recording": "J26DS313_R0012",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.8812,
+          "raw_cer": 0.6965,
+          "folded_wer": 0.8713,
+          "folded_cer": 0.62,
+          "legacy_wer": 0.8526,
+          "legacy_cer": 0.6552
+        },
+        {
+          "recording": "J26DS313_R0013",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.7487,
+          "raw_cer": 0.5032,
+          "folded_wer": 0.7368,
+          "folded_cer": 0.4479,
+          "legacy_wer": 0.7155,
+          "legacy_cer": 0.483
+        },
+        {
+          "recording": "J26DS313_R0014",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9197,
+          "folded_wer": 0.9722,
+          "folded_cer": 0.7011,
+          "legacy_wer": 1.0722,
+          "legacy_cer": 0.8338
+        },
+        {
+          "recording": "J26DS313_R0015",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9824,
+          "raw_cer": 0.8387,
+          "folded_wer": 0.9858,
+          "folded_cer": 0.7848,
+          "legacy_wer": 0.8952,
+          "legacy_cer": 0.7935
+        },
+        {
+          "recording": "J26DS313_R0016",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9749,
+          "raw_cer": 0.8425,
+          "folded_wer": 0.9665,
+          "folded_cer": 0.7903,
+          "legacy_wer": 0.8746,
+          "legacy_cer": 0.8135
+        },
+        {
+          "recording": "J26DS313_R0017",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9452,
+          "folded_wer": 0.9771,
+          "folded_cer": 0.7799,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8823
+        },
+        {
+          "recording": "J26DS313_R0018",
+          "split": "train",
+          "script_group": "mixed",
+          "detected_language": "si",
+          "raw_wer": 0.9438,
+          "raw_cer": 0.7757,
+          "folded_wer": 0.9176,
+          "folded_cer": 0.6453,
+          "legacy_wer": 0.9745,
+          "legacy_cer": 0.7148
+        },
+        {
+          "recording": "J26DS313_R0019",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9899,
+          "raw_cer": 0.8598,
+          "folded_wer": 0.9874,
+          "folded_cer": 0.7785,
+          "legacy_wer": 0.8935,
+          "legacy_cer": 0.8109
+        },
+        {
+          "recording": "J26DS313_R0020",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9943,
+          "raw_cer": 0.8459,
+          "folded_wer": 0.994,
+          "folded_cer": 0.7586,
+          "legacy_wer": 0.8854,
+          "legacy_cer": 0.7848
+        },
+        {
+          "recording": "J26DS313_R0021",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9972,
+          "raw_cer": 0.8318,
+          "folded_wer": 0.9944,
+          "folded_cer": 0.7669,
+          "legacy_wer": 0.8715,
+          "legacy_cer": 0.7751
+        },
+        {
+          "recording": "J26DS313_R0022",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9354,
+          "raw_cer": 0.7689,
+          "folded_wer": 0.9283,
+          "folded_cer": 0.6962,
+          "legacy_wer": 0.8514,
+          "legacy_cer": 0.706
+        },
+        {
+          "recording": "J26DS313_R0023",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9467,
+          "folded_wer": 0.9953,
+          "folded_cer": 0.7776,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8758
+        },
+        {
+          "recording": "J26DS313_R0024",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 0.9719,
+          "raw_cer": 0.8852,
+          "folded_wer": 0.9639,
+          "folded_cer": 0.6929,
+          "legacy_wer": 1.3173,
+          "legacy_cer": 0.8272
+        },
+        {
+          "recording": "J26DS313_R0025",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9833,
+          "raw_cer": 0.8213,
+          "folded_wer": 0.9832,
+          "folded_cer": 0.754,
+          "legacy_wer": 0.875,
+          "legacy_cer": 0.771
+        },
+        {
+          "recording": "J26DS313_R0026",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9775,
+          "raw_cer": 0.8242,
+          "folded_wer": 0.9737,
+          "folded_cer": 0.7365,
+          "legacy_wer": 0.8963,
+          "legacy_cer": 0.7625
+        },
+        {
+          "recording": "J26DS313_R0027",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9847,
+          "raw_cer": 0.8265,
+          "folded_wer": 0.9818,
+          "folded_cer": 0.7836,
+          "legacy_wer": 0.8771,
+          "legacy_cer": 0.7909
+        },
+        {
+          "recording": "J26DS313_R0028",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9405,
+          "folded_wer": 0.9753,
+          "folded_cer": 0.7137,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8901
+        }
+      ]
+    },
+    {
+      "model_size": "medium",
+      "decode_mode": "auto",
+      "real_time_factor": 0.5971,
+      "total_decode_s": 1833.17,
+      "n_scored": 26,
+      "metrics": {
+        "raw": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5798,
+            "micro_wer": 1.0009,
+            "micro_cer": 0.8913,
+            "macro_wer": 1.0405,
+            "macro_cer": 0.9236,
+            "errors": {
+              "hits": 21,
+              "substitutions": 1724,
+              "deletions": 4053,
+              "insertions": 26,
+              "n_ref_words": 5798,
+              "hit_rate": 0.0036,
+              "sub_rate": 0.2973,
+              "del_rate": 0.699,
+              "ins_rate": 0.0045
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1827,
+              "micro_wer": 0.9984,
+              "micro_cer": 0.8723,
+              "macro_wer": 0.9967,
+              "macro_cer": 0.8696,
+              "errors": {
+                "hits": 3,
+                "substitutions": 640,
+                "deletions": 1184,
+                "insertions": 0,
+                "n_ref_words": 1827,
+                "hit_rate": 0.0016,
+                "sub_rate": 0.3503,
+                "del_rate": 0.6481,
+                "ins_rate": 0.0
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3971,
+              "micro_wer": 1.002,
+              "micro_cer": 0.8999,
+              "macro_wer": 1.0567,
+              "macro_cer": 0.9436,
+              "errors": {
+                "hits": 18,
+                "substitutions": 1084,
+                "deletions": 2869,
+                "insertions": 26,
+                "n_ref_words": 3971,
+                "hit_rate": 0.0045,
+                "sub_rate": 0.273,
+                "del_rate": 0.7225,
+                "ins_rate": 0.0065
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.9963,
+              "micro_cer": 0.9382,
+              "macro_wer": 0.9963,
+              "macro_cer": 0.9382,
+              "errors": {
+                "hits": 1,
+                "substitutions": 66,
+                "deletions": 200,
+                "insertions": 0,
+                "n_ref_words": 267,
+                "hit_rate": 0.0037,
+                "sub_rate": 0.2472,
+                "del_rate": 0.7491,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4285,
+              "micro_wer": 1.0019,
+              "micro_cer": 0.873,
+              "macro_wer": 1.0633,
+              "macro_cer": 0.9181,
+              "errors": {
+                "hits": 18,
+                "substitutions": 1241,
+                "deletions": 3026,
+                "insertions": 26,
+                "n_ref_words": 4285,
+                "hit_rate": 0.0042,
+                "sub_rate": 0.2896,
+                "del_rate": 0.7062,
+                "ins_rate": 0.0061
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9984,
+              "micro_cer": 0.939,
+              "macro_wer": 0.9977,
+              "macro_cer": 0.9336,
+              "errors": {
+                "hits": 2,
+                "substitutions": 417,
+                "deletions": 827,
+                "insertions": 0,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0016,
+                "sub_rate": 0.3347,
+                "del_rate": 0.6637,
+                "ins_rate": 0.0
+              }
+            }
+          }
+        },
+        "folded": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5765,
+            "micro_wer": 0.9977,
+            "micro_cer": 0.804,
+            "macro_wer": 1.0339,
+            "macro_cer": 0.8207,
+            "errors": {
+              "hits": 37,
+              "substitutions": 1656,
+              "deletions": 4072,
+              "insertions": 24,
+              "n_ref_words": 5765,
+              "hit_rate": 0.0064,
+              "sub_rate": 0.2873,
+              "del_rate": 0.7063,
+              "ins_rate": 0.0042
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1811,
+              "micro_wer": 0.9934,
+              "micro_cer": 0.7813,
+              "macro_wer": 0.9902,
+              "macro_cer": 0.77,
+              "errors": {
+                "hits": 12,
+                "substitutions": 600,
+                "deletions": 1199,
+                "insertions": 0,
+                "n_ref_words": 1811,
+                "hit_rate": 0.0066,
+                "sub_rate": 0.3313,
+                "del_rate": 0.6621,
+                "ins_rate": 0.0
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3954,
+              "micro_wer": 0.9997,
+              "micro_cer": 0.8141,
+              "macro_wer": 1.0501,
+              "macro_cer": 0.8394,
+              "errors": {
+                "hits": 25,
+                "substitutions": 1056,
+                "deletions": 2873,
+                "insertions": 24,
+                "n_ref_words": 3954,
+                "hit_rate": 0.0063,
+                "sub_rate": 0.2671,
+                "del_rate": 0.7266,
+                "ins_rate": 0.0061
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.9963,
+              "micro_cer": 0.775,
+              "macro_wer": 0.9963,
+              "macro_cer": 0.775,
+              "errors": {
+                "hits": 1,
+                "substitutions": 63,
+                "deletions": 203,
+                "insertions": 0,
+                "n_ref_words": 267,
+                "hit_rate": 0.0037,
+                "sub_rate": 0.236,
+                "del_rate": 0.7603,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4252,
+              "micro_wer": 0.9995,
+              "micro_cer": 0.8141,
+              "macro_wer": 1.056,
+              "macro_cer": 0.8476,
+              "errors": {
+                "hits": 26,
+                "substitutions": 1204,
+                "deletions": 3022,
+                "insertions": 24,
+                "n_ref_words": 4252,
+                "hit_rate": 0.0061,
+                "sub_rate": 0.2832,
+                "del_rate": 0.7107,
+                "ins_rate": 0.0056
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.992,
+              "micro_cer": 0.7753,
+              "macro_wer": 0.9916,
+              "macro_cer": 0.7692,
+              "errors": {
+                "hits": 10,
+                "substitutions": 389,
+                "deletions": 847,
+                "insertions": 0,
+                "n_ref_words": 1246,
+                "hit_rate": 0.008,
+                "sub_rate": 0.3122,
+                "del_rate": 0.6798,
+                "ins_rate": 0.0
+              }
+            }
+          }
+        },
+        "legacy": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 7895,
+            "micro_wer": 0.944,
+            "micro_cer": 0.84,
+            "macro_wer": 1.014,
+            "macro_cer": 0.8558,
+            "errors": {
+              "hits": 548,
+              "substitutions": 3282,
+              "deletions": 4065,
+              "insertions": 106,
+              "n_ref_words": 7895,
+              "hit_rate": 0.0694,
+              "sub_rate": 0.4157,
+              "del_rate": 0.5149,
+              "ins_rate": 0.0134
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 2358,
+              "micro_wer": 0.9292,
+              "micro_cer": 0.8263,
+              "macro_wer": 0.9414,
+              "macro_cer": 0.8086,
+              "errors": {
+                "hits": 174,
+                "substitutions": 1076,
+                "deletions": 1108,
+                "insertions": 7,
+                "n_ref_words": 2358,
+                "hit_rate": 0.0738,
+                "sub_rate": 0.4563,
+                "del_rate": 0.4699,
+                "ins_rate": 0.003
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 5537,
+              "micro_wer": 0.9503,
+              "micro_cer": 0.8462,
+              "macro_wer": 1.0408,
+              "macro_cer": 0.8732,
+              "errors": {
+                "hits": 374,
+                "substitutions": 2206,
+                "deletions": 2957,
+                "insertions": 99,
+                "n_ref_words": 5537,
+                "hit_rate": 0.0675,
+                "sub_rate": 0.3984,
+                "del_rate": 0.534,
+                "ins_rate": 0.0179
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 274,
+              "micro_wer": 0.9818,
+              "micro_cer": 0.8704,
+              "macro_wer": 0.9818,
+              "macro_cer": 0.8704,
+              "errors": {
+                "hits": 5,
+                "substitutions": 172,
+                "deletions": 97,
+                "insertions": 0,
+                "n_ref_words": 274,
+                "hit_rate": 0.0182,
+                "sub_rate": 0.6277,
+                "del_rate": 0.354,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 6375,
+              "micro_wer": 0.9316,
+              "micro_cer": 0.8264,
+              "macro_wer": 1.0228,
+              "macro_cer": 0.8504,
+              "errors": {
+                "hits": 542,
+                "substitutions": 2170,
+                "deletions": 3663,
+                "insertions": 106,
+                "n_ref_words": 6375,
+                "hit_rate": 0.085,
+                "sub_rate": 0.3404,
+                "del_rate": 0.5746,
+                "ins_rate": 0.0166
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9992,
+              "micro_cer": 0.8733,
+              "macro_wer": 0.9995,
+              "macro_cer": 0.8656,
+              "errors": {
+                "hits": 1,
+                "substitutions": 940,
+                "deletions": 305,
+                "insertions": 0,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0008,
+                "sub_rate": 0.7544,
+                "del_rate": 0.2448,
+                "ins_rate": 0.0
+              }
+            }
+          }
+        }
+      },
+      "per_recording": [
+        {
+          "recording": "J26DS313_R0002",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8644,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7205,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.7834
+        },
+        {
+          "recording": "J26DS313_R0003",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 0.9857,
+          "raw_cer": 0.9469,
+          "folded_wer": 0.9857,
+          "folded_cer": 0.7724,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8799
+        },
+        {
+          "recording": "J26DS313_R0004",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9161,
+          "folded_wer": 1.0,
+          "folded_cer": 0.6985,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8368
+        },
+        {
+          "recording": "J26DS313_R0005",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8232,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7483,
+          "legacy_wer": 0.9189,
+          "legacy_cer": 0.7337
+        },
+        {
+          "recording": "J26DS313_R0006",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9907,
+          "raw_cer": 0.795,
+          "folded_wer": 0.9907,
+          "folded_cer": 0.7639,
+          "legacy_wer": 0.8663,
+          "legacy_cer": 0.7019
+        },
+        {
+          "recording": "J26DS313_R0008",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 2.1818,
+          "raw_cer": 2.0935,
+          "folded_wer": 2.0909,
+          "folded_cer": 1.951,
+          "legacy_wer": 2.8605,
+          "legacy_cer": 1.9603
+        },
+        {
+          "recording": "J26DS313_R0009",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9722,
+          "raw_cer": 0.7339,
+          "folded_wer": 0.9701,
+          "folded_cer": 0.6751,
+          "legacy_wer": 0.8394,
+          "legacy_cer": 0.5971
+        },
+        {
+          "recording": "J26DS313_R0010",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9844,
+          "raw_cer": 0.8,
+          "folded_wer": 0.9841,
+          "folded_cer": 0.7034,
+          "legacy_wer": 0.9333,
+          "legacy_cer": 0.6426
+        },
+        {
+          "recording": "J26DS313_R0011",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9766,
+          "raw_cer": 0.8423,
+          "folded_wer": 0.9764,
+          "folded_cer": 0.7639,
+          "legacy_wer": 0.9051,
+          "legacy_cer": 0.7772
+        },
+        {
+          "recording": "J26DS313_R0012",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.995,
+          "raw_cer": 0.8619,
+          "folded_wer": 0.9851,
+          "folded_cer": 0.7659,
+          "legacy_wer": 0.9124,
+          "legacy_cer": 0.8091
+        },
+        {
+          "recording": "J26DS313_R0013",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8685,
+          "folded_wer": 0.9947,
+          "folded_cer": 0.78,
+          "legacy_wer": 0.9247,
+          "legacy_cer": 0.8087
+        },
+        {
+          "recording": "J26DS313_R0014",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9178,
+          "folded_wer": 0.9722,
+          "folded_cer": 0.7797,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8707
+        },
+        {
+          "recording": "J26DS313_R0015",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.993,
+          "raw_cer": 0.8286,
+          "folded_wer": 0.9894,
+          "folded_cer": 0.7518,
+          "legacy_wer": 0.8857,
+          "legacy_cer": 0.7646
+        },
+        {
+          "recording": "J26DS313_R0016",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.895,
+          "folded_wer": 1.0,
+          "folded_cer": 0.8564,
+          "legacy_wer": 0.906,
+          "legacy_cer": 0.8741
+        },
+        {
+          "recording": "J26DS313_R0017",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9629,
+          "folded_wer": 0.9962,
+          "folded_cer": 0.7965,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.888
+        },
+        {
+          "recording": "J26DS313_R0018",
+          "split": "train",
+          "script_group": "mixed",
+          "detected_language": "si",
+          "raw_wer": 0.9963,
+          "raw_cer": 0.9382,
+          "folded_wer": 0.9963,
+          "folded_cer": 0.775,
+          "legacy_wer": 0.9818,
+          "legacy_cer": 0.8704
+        },
+        {
+          "recording": "J26DS313_R0019",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9975,
+          "raw_cer": 0.8488,
+          "folded_wer": 0.9975,
+          "folded_cer": 0.7813,
+          "legacy_wer": 0.9159,
+          "legacy_cer": 0.8073
+        },
+        {
+          "recording": "J26DS313_R0020",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8805,
+          "folded_wer": 0.997,
+          "folded_cer": 0.8207,
+          "legacy_wer": 0.9208,
+          "legacy_cer": 0.8569
+        },
+        {
+          "recording": "J26DS313_R0021",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9917,
+          "raw_cer": 0.8061,
+          "folded_wer": 0.9889,
+          "folded_cer": 0.7245,
+          "legacy_wer": 0.8939,
+          "legacy_cer": 0.7307
+        },
+        {
+          "recording": "J26DS313_R0022",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9966,
+          "raw_cer": 0.8342,
+          "folded_wer": 0.9932,
+          "folded_cer": 0.7481,
+          "legacy_wer": 0.8915,
+          "legacy_cer": 0.7643
+        },
+        {
+          "recording": "J26DS313_R0023",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.935,
+          "folded_wer": 0.9953,
+          "folded_cer": 0.7538,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8744
+        },
+        {
+          "recording": "J26DS313_R0024",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 0.996,
+          "raw_cer": 0.9491,
+          "folded_wer": 0.996,
+          "folded_cer": 0.7848,
+          "legacy_wer": 0.996,
+          "legacy_cer": 0.8872
+        },
+        {
+          "recording": "J26DS313_R0025",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.843,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7853,
+          "legacy_wer": 0.9071,
+          "legacy_cer": 0.799
+        },
+        {
+          "recording": "J26DS313_R0026",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9963,
+          "raw_cer": 0.8932,
+          "folded_wer": 0.9962,
+          "folded_cer": 0.836,
+          "legacy_wer": 0.9335,
+          "legacy_cer": 0.8709
+        },
+        {
+          "recording": "J26DS313_R0027",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.96,
+          "folded_wer": 0.9986,
+          "folded_cer": 0.9544,
+          "legacy_wer": 0.9718,
+          "legacy_cer": 0.9578
+        },
+        {
+          "recording": "J26DS313_R0028",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9766,
+          "folded_wer": 0.9877,
+          "folded_cer": 0.8472,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.9045
+        }
+      ]
+    },
+    {
+      "model_size": "medium",
+      "decode_mode": "en",
+      "real_time_factor": 0.0562,
+      "total_decode_s": 172.5,
+      "n_scored": 26,
+      "metrics": {
+        "raw": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5798,
+            "micro_wer": 0.9,
+            "micro_cer": 0.6507,
+            "macro_wer": 1.0387,
+            "macro_cer": 0.735,
+            "errors": {
+              "hits": 1307,
+              "substitutions": 3769,
+              "deletions": 722,
+              "insertions": 727,
+              "n_ref_words": 5798,
+              "hit_rate": 0.2254,
+              "sub_rate": 0.6501,
+              "del_rate": 0.1245,
+              "ins_rate": 0.1254
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1827,
+              "micro_wer": 0.8473,
+              "micro_cer": 0.6074,
+              "macro_wer": 0.8892,
+              "macro_cer": 0.6249,
+              "errors": {
+                "hits": 493,
+                "substitutions": 1061,
+                "deletions": 273,
+                "insertions": 214,
+                "n_ref_words": 1827,
+                "hit_rate": 0.2698,
+                "sub_rate": 0.5807,
+                "del_rate": 0.1494,
+                "ins_rate": 0.1171
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3971,
+              "micro_wer": 0.9242,
+              "micro_cer": 0.6701,
+              "macro_wer": 1.0938,
+              "macro_cer": 0.7755,
+              "errors": {
+                "hits": 814,
+                "substitutions": 2708,
+                "deletions": 449,
+                "insertions": 513,
+                "n_ref_words": 3971,
+                "hit_rate": 0.205,
+                "sub_rate": 0.6819,
+                "del_rate": 0.1131,
+                "ins_rate": 0.1292
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.7303,
+              "micro_cer": 0.5137,
+              "macro_wer": 0.7303,
+              "macro_cer": 0.5137,
+              "errors": {
+                "hits": 91,
+                "substitutions": 102,
+                "deletions": 74,
+                "insertions": 19,
+                "n_ref_words": 267,
+                "hit_rate": 0.3408,
+                "sub_rate": 0.382,
+                "del_rate": 0.2772,
+                "ins_rate": 0.0712
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4285,
+              "micro_wer": 0.9064,
+              "micro_cer": 0.6794,
+              "macro_wer": 1.1162,
+              "macro_cer": 0.8118,
+              "errors": {
+                "hits": 914,
+                "substitutions": 2800,
+                "deletions": 571,
+                "insertions": 513,
+                "n_ref_words": 4285,
+                "hit_rate": 0.2133,
+                "sub_rate": 0.6534,
+                "del_rate": 0.1333,
+                "ins_rate": 0.1197
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9141,
+              "micro_cer": 0.5891,
+              "macro_wer": 0.9126,
+              "macro_cer": 0.5993,
+              "errors": {
+                "hits": 302,
+                "substitutions": 867,
+                "deletions": 77,
+                "insertions": 195,
+                "n_ref_words": 1246,
+                "hit_rate": 0.2424,
+                "sub_rate": 0.6958,
+                "del_rate": 0.0618,
+                "ins_rate": 0.1565
+              }
+            }
+          }
+        },
+        "folded": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5765,
+            "micro_wer": 0.8938,
+            "micro_cer": 0.5881,
+            "macro_wer": 1.0309,
+            "macro_cer": 0.6512,
+            "errors": {
+              "hits": 1369,
+              "substitutions": 3677,
+              "deletions": 719,
+              "insertions": 757,
+              "n_ref_words": 5765,
+              "hit_rate": 0.2375,
+              "sub_rate": 0.6378,
+              "del_rate": 0.1247,
+              "ins_rate": 0.1313
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1811,
+              "micro_wer": 0.841,
+              "micro_cer": 0.5578,
+              "macro_wer": 0.8821,
+              "macro_cer": 0.5626,
+              "errors": {
+                "hits": 504,
+                "substitutions": 1048,
+                "deletions": 259,
+                "insertions": 216,
+                "n_ref_words": 1811,
+                "hit_rate": 0.2783,
+                "sub_rate": 0.5787,
+                "del_rate": 0.143,
+                "ins_rate": 0.1193
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3954,
+              "micro_wer": 0.9181,
+              "micro_cer": 0.6017,
+              "macro_wer": 1.0857,
+              "macro_cer": 0.6839,
+              "errors": {
+                "hits": 865,
+                "substitutions": 2629,
+                "deletions": 460,
+                "insertions": 541,
+                "n_ref_words": 3954,
+                "hit_rate": 0.2188,
+                "sub_rate": 0.6649,
+                "del_rate": 0.1163,
+                "ins_rate": 0.1368
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.7266,
+              "micro_cer": 0.5088,
+              "macro_wer": 0.7266,
+              "macro_cer": 0.5088,
+              "errors": {
+                "hits": 92,
+                "substitutions": 101,
+                "deletions": 74,
+                "insertions": 19,
+                "n_ref_words": 267,
+                "hit_rate": 0.3446,
+                "sub_rate": 0.3783,
+                "del_rate": 0.2772,
+                "ins_rate": 0.0712
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4252,
+              "micro_wer": 0.8984,
+              "micro_cer": 0.5948,
+              "macro_wer": 1.1044,
+              "macro_cer": 0.6874,
+              "errors": {
+                "hits": 975,
+                "substitutions": 2709,
+                "deletions": 568,
+                "insertions": 543,
+                "n_ref_words": 4252,
+                "hit_rate": 0.2293,
+                "sub_rate": 0.6371,
+                "del_rate": 0.1336,
+                "ins_rate": 0.1277
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9141,
+              "micro_cer": 0.5813,
+              "macro_wer": 0.9126,
+              "macro_cer": 0.5921,
+              "errors": {
+                "hits": 302,
+                "substitutions": 867,
+                "deletions": 77,
+                "insertions": 195,
+                "n_ref_words": 1246,
+                "hit_rate": 0.2424,
+                "sub_rate": 0.6958,
+                "del_rate": 0.0618,
+                "ins_rate": 0.1565
+              }
+            }
+          }
+        },
+        "legacy": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 7895,
+            "micro_wer": 0.8757,
+            "micro_cer": 0.6323,
+            "macro_wer": 0.9244,
+            "macro_cer": 0.7284,
+            "errors": {
+              "hits": 1317,
+              "substitutions": 4150,
+              "deletions": 2428,
+              "insertions": 336,
+              "n_ref_words": 7895,
+              "hit_rate": 0.1668,
+              "sub_rate": 0.5256,
+              "del_rate": 0.3075,
+              "ins_rate": 0.0426
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 2358,
+              "micro_wer": 0.8435,
+              "micro_cer": 0.591,
+              "macro_wer": 0.868,
+              "macro_cer": 0.6141,
+              "errors": {
+                "hits": 499,
+                "substitutions": 1139,
+                "deletions": 720,
+                "insertions": 130,
+                "n_ref_words": 2358,
+                "hit_rate": 0.2116,
+                "sub_rate": 0.483,
+                "del_rate": 0.3053,
+                "ins_rate": 0.0551
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 5537,
+              "micro_wer": 0.8895,
+              "micro_cer": 0.651,
+              "macro_wer": 0.9452,
+              "macro_cer": 0.7704,
+              "errors": {
+                "hits": 818,
+                "substitutions": 3011,
+                "deletions": 1708,
+                "insertions": 206,
+                "n_ref_words": 5537,
+                "hit_rate": 0.1477,
+                "sub_rate": 0.5438,
+                "del_rate": 0.3085,
+                "ins_rate": 0.0372
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 274,
+              "micro_wer": 0.7299,
+              "micro_cer": 0.513,
+              "macro_wer": 0.7299,
+              "macro_cer": 0.513,
+              "errors": {
+                "hits": 91,
+                "substitutions": 104,
+                "deletions": 79,
+                "insertions": 17,
+                "n_ref_words": 274,
+                "hit_rate": 0.3321,
+                "sub_rate": 0.3796,
+                "del_rate": 0.2883,
+                "ins_rate": 0.062
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 6375,
+              "micro_wer": 0.8745,
+              "micro_cer": 0.6555,
+              "macro_wer": 0.9414,
+              "macro_cer": 0.8017,
+              "errors": {
+                "hits": 924,
+                "substitutions": 3179,
+                "deletions": 2272,
+                "insertions": 124,
+                "n_ref_words": 6375,
+                "hit_rate": 0.1449,
+                "sub_rate": 0.4987,
+                "del_rate": 0.3564,
+                "ins_rate": 0.0195
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9141,
+              "micro_cer": 0.5891,
+              "macro_wer": 0.9126,
+              "macro_cer": 0.5993,
+              "errors": {
+                "hits": 302,
+                "substitutions": 867,
+                "deletions": 77,
+                "insertions": 195,
+                "n_ref_words": 1246,
+                "hit_rate": 0.2424,
+                "sub_rate": 0.6958,
+                "del_rate": 0.0618,
+                "ins_rate": 0.1565
+              }
+            }
+          }
+        }
+      },
+      "per_recording": [
+        {
+          "recording": "J26DS313_R0002",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.6491,
+          "raw_cer": 0.5669,
+          "folded_wer": 0.6491,
+          "folded_cer": 0.561,
+          "legacy_wer": 0.6491,
+          "legacy_cer": 0.5669
+        },
+        {
+          "recording": "J26DS313_R0003",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.9143,
+          "raw_cer": 0.5427,
+          "folded_wer": 0.9143,
+          "folded_cer": 0.54,
+          "legacy_wer": 0.9143,
+          "legacy_cer": 0.5427
+        },
+        {
+          "recording": "J26DS313_R0004",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 1.04,
+          "raw_cer": 0.7249,
+          "folded_wer": 1.04,
+          "folded_cer": 0.7085,
+          "legacy_wer": 1.04,
+          "legacy_cer": 0.7249
+        },
+        {
+          "recording": "J26DS313_R0005",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.0602,
+          "raw_cer": 0.7191,
+          "folded_wer": 1.0602,
+          "folded_cer": 0.6397,
+          "legacy_wer": 0.8739,
+          "legacy_cer": 0.7154
+        },
+        {
+          "recording": "J26DS313_R0006",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9907,
+          "raw_cer": 0.8298,
+          "folded_wer": 0.9444,
+          "folded_cer": 0.6082,
+          "legacy_wer": 0.9752,
+          "legacy_cer": 0.817
+        },
+        {
+          "recording": "J26DS313_R0008",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 4.3182,
+          "raw_cer": 2.9856,
+          "folded_wer": 4.2273,
+          "folded_cer": 2.3916,
+          "legacy_wer": 2.2093,
+          "legacy_cer": 3.127
+        },
+        {
+          "recording": "J26DS313_R0009",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.1111,
+          "raw_cer": 0.863,
+          "folded_wer": 1.1642,
+          "folded_cer": 0.7132,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8235
+        },
+        {
+          "recording": "J26DS313_R0010",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.1406,
+          "raw_cer": 0.8424,
+          "folded_wer": 1.127,
+          "folded_cer": 0.6441,
+          "legacy_wer": 0.9619,
+          "legacy_cer": 0.8522
+        },
+        {
+          "recording": "J26DS313_R0011",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9159,
+          "raw_cer": 0.6518,
+          "folded_wer": 0.9104,
+          "folded_cer": 0.582,
+          "legacy_wer": 0.8847,
+          "legacy_cer": 0.6313
+        },
+        {
+          "recording": "J26DS313_R0012",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.7376,
+          "raw_cer": 0.4672,
+          "folded_wer": 0.7178,
+          "folded_cer": 0.4122,
+          "legacy_wer": 0.7251,
+          "legacy_cer": 0.4485
+        },
+        {
+          "recording": "J26DS313_R0013",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.712,
+          "raw_cer": 0.4913,
+          "folded_wer": 0.7053,
+          "folded_cer": 0.4408,
+          "legacy_wer": 0.7071,
+          "legacy_cer": 0.4725
+        },
+        {
+          "recording": "J26DS313_R0014",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.8,
+          "raw_cer": 0.5402,
+          "folded_wer": 0.8,
+          "folded_cer": 0.5364,
+          "legacy_wer": 0.8,
+          "legacy_cer": 0.5402
+        },
+        {
+          "recording": "J26DS313_R0015",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.8486,
+          "raw_cer": 0.6503,
+          "folded_wer": 0.8475,
+          "folded_cer": 0.582,
+          "legacy_wer": 0.8476,
+          "legacy_cer": 0.6342
+        },
+        {
+          "recording": "J26DS313_R0016",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9916,
+          "raw_cer": 0.7187,
+          "folded_wer": 0.9791,
+          "folded_cer": 0.6063,
+          "legacy_wer": 0.8632,
+          "legacy_cer": 0.6988
+        },
+        {
+          "recording": "J26DS313_R0017",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.9656,
+          "raw_cer": 0.5595,
+          "folded_wer": 0.9656,
+          "folded_cer": 0.5557,
+          "legacy_wer": 0.9656,
+          "legacy_cer": 0.5595
+        },
+        {
+          "recording": "J26DS313_R0018",
+          "split": "train",
+          "script_group": "mixed",
+          "detected_language": "en",
+          "raw_wer": 0.7303,
+          "raw_cer": 0.5137,
+          "folded_wer": 0.7266,
+          "folded_cer": 0.5088,
+          "legacy_wer": 0.7299,
+          "legacy_cer": 0.513
+        },
+        {
+          "recording": "J26DS313_R0019",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.7889,
+          "raw_cer": 0.6164,
+          "folded_wer": 0.7764,
+          "folded_cer": 0.5761,
+          "legacy_wer": 0.815,
+          "legacy_cer": 0.5966
+        },
+        {
+          "recording": "J26DS313_R0020",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.8367,
+          "raw_cer": 0.6373,
+          "folded_wer": 0.8363,
+          "folded_cer": 0.5645,
+          "legacy_wer": 0.8375,
+          "legacy_cer": 0.6192
+        },
+        {
+          "recording": "J26DS313_R0021",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.0967,
+          "raw_cer": 0.682,
+          "folded_wer": 1.0833,
+          "folded_cer": 0.5686,
+          "legacy_wer": 0.905,
+          "legacy_cer": 0.6515
+        },
+        {
+          "recording": "J26DS313_R0022",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9184,
+          "raw_cer": 0.6393,
+          "folded_wer": 0.9181,
+          "folded_cer": 0.5551,
+          "legacy_wer": 0.8373,
+          "legacy_cer": 0.6141
+        },
+        {
+          "recording": "J26DS313_R0023",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 1.1209,
+          "raw_cer": 0.6523,
+          "folded_wer": 1.1209,
+          "folded_cer": 0.648,
+          "legacy_wer": 1.1209,
+          "legacy_cer": 0.6523
+        },
+        {
+          "recording": "J26DS313_R0024",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.8233,
+          "raw_cer": 0.5596,
+          "folded_wer": 0.8233,
+          "folded_cer": 0.5415,
+          "legacy_wer": 0.8233,
+          "legacy_cer": 0.5596
+        },
+        {
+          "recording": "J26DS313_R0025",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.7995,
+          "raw_cer": 0.6182,
+          "folded_wer": 0.7962,
+          "folded_cer": 0.5571,
+          "legacy_wer": 0.8159,
+          "legacy_cer": 0.5899
+        },
+        {
+          "recording": "J26DS313_R0026",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.779,
+          "raw_cer": 0.593,
+          "folded_wer": 0.7556,
+          "folded_cer": 0.54,
+          "legacy_wer": 0.7926,
+          "legacy_cer": 0.5692
+        },
+        {
+          "recording": "J26DS313_R0027",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9289,
+          "raw_cer": 0.7956,
+          "folded_wer": 0.9258,
+          "folded_cer": 0.7044,
+          "legacy_wer": 0.953,
+          "legacy_cer": 0.7687
+        },
+        {
+          "recording": "J26DS313_R0028",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.9877,
+          "raw_cer": 0.6486,
+          "folded_wer": 0.9877,
+          "folded_cer": 0.646,
+          "legacy_wer": 0.9877,
+          "legacy_cer": 0.6486
+        }
+      ]
+    },
+    {
+      "model_size": "medium",
+      "decode_mode": "si",
+      "real_time_factor": 0.5761,
+      "total_decode_s": 1768.61,
+      "n_scored": 26,
+      "metrics": {
+        "raw": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5798,
+            "micro_wer": 0.9966,
+            "micro_cer": 0.8814,
+            "macro_wer": 1.0098,
+            "macro_cer": 0.8863,
+            "errors": {
+              "hits": 28,
+              "substitutions": 1698,
+              "deletions": 4072,
+              "insertions": 8,
+              "n_ref_words": 5798,
+              "hit_rate": 0.0048,
+              "sub_rate": 0.2929,
+              "del_rate": 0.7023,
+              "ins_rate": 0.0014
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1827,
+              "micro_wer": 0.9951,
+              "micro_cer": 0.88,
+              "macro_wer": 0.9964,
+              "macro_cer": 0.8796,
+              "errors": {
+                "hits": 9,
+                "substitutions": 506,
+                "deletions": 1312,
+                "insertions": 0,
+                "n_ref_words": 1827,
+                "hit_rate": 0.0049,
+                "sub_rate": 0.277,
+                "del_rate": 0.7181,
+                "ins_rate": 0.0
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3971,
+              "micro_wer": 0.9972,
+              "micro_cer": 0.8821,
+              "macro_wer": 1.0147,
+              "macro_cer": 0.8887,
+              "errors": {
+                "hits": 19,
+                "substitutions": 1192,
+                "deletions": 2760,
+                "insertions": 8,
+                "n_ref_words": 3971,
+                "hit_rate": 0.0048,
+                "sub_rate": 0.3002,
+                "del_rate": 0.695,
+                "ins_rate": 0.002
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 1.0,
+              "micro_cer": 0.9499,
+              "macro_wer": 1.0,
+              "macro_cer": 0.9499,
+              "errors": {
+                "hits": 0,
+                "substitutions": 56,
+                "deletions": 211,
+                "insertions": 0,
+                "n_ref_words": 267,
+                "hit_rate": 0.0,
+                "sub_rate": 0.2097,
+                "del_rate": 0.7903,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4285,
+              "micro_wer": 0.9956,
+              "micro_cer": 0.8614,
+              "macro_wer": 1.0152,
+              "macro_cer": 0.8628,
+              "errors": {
+                "hits": 27,
+                "substitutions": 1172,
+                "deletions": 3086,
+                "insertions": 8,
+                "n_ref_words": 4285,
+                "hit_rate": 0.0063,
+                "sub_rate": 0.2735,
+                "del_rate": 0.7202,
+                "ins_rate": 0.0019
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9992,
+              "micro_cer": 0.93,
+              "macro_wer": 0.9995,
+              "macro_cer": 0.9282,
+              "errors": {
+                "hits": 1,
+                "substitutions": 470,
+                "deletions": 775,
+                "insertions": 0,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0008,
+                "sub_rate": 0.3772,
+                "del_rate": 0.622,
+                "ins_rate": 0.0
+              }
+            }
+          }
+        },
+        "folded": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5765,
+            "micro_wer": 0.9944,
+            "micro_cer": 0.7897,
+            "macro_wer": 1.0046,
+            "macro_cer": 0.7823,
+            "errors": {
+              "hits": 38,
+              "substitutions": 1645,
+              "deletions": 4082,
+              "insertions": 6,
+              "n_ref_words": 5765,
+              "hit_rate": 0.0066,
+              "sub_rate": 0.2853,
+              "del_rate": 0.7081,
+              "ins_rate": 0.001
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1811,
+              "micro_wer": 0.9934,
+              "micro_cer": 0.7792,
+              "macro_wer": 0.9945,
+              "macro_cer": 0.7783,
+              "errors": {
+                "hits": 12,
+                "substitutions": 489,
+                "deletions": 1310,
+                "insertions": 0,
+                "n_ref_words": 1811,
+                "hit_rate": 0.0066,
+                "sub_rate": 0.27,
+                "del_rate": 0.7234,
+                "ins_rate": 0.0
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3954,
+              "micro_wer": 0.9949,
+              "micro_cer": 0.7943,
+              "macro_wer": 1.0083,
+              "macro_cer": 0.7838,
+              "errors": {
+                "hits": 26,
+                "substitutions": 1156,
+                "deletions": 2772,
+                "insertions": 6,
+                "n_ref_words": 3954,
+                "hit_rate": 0.0066,
+                "sub_rate": 0.2924,
+                "del_rate": 0.7011,
+                "ins_rate": 0.0015
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 1.0,
+              "micro_cer": 0.8,
+              "macro_wer": 1.0,
+              "macro_cer": 0.8,
+              "errors": {
+                "hits": 0,
+                "substitutions": 56,
+                "deletions": 211,
+                "insertions": 0,
+                "n_ref_words": 267,
+                "hit_rate": 0.0,
+                "sub_rate": 0.2097,
+                "del_rate": 0.7903,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4252,
+              "micro_wer": 0.9932,
+              "micro_cer": 0.7971,
+              "macro_wer": 1.0077,
+              "macro_cer": 0.7933,
+              "errors": {
+                "hits": 35,
+                "substitutions": 1129,
+                "deletions": 3088,
+                "insertions": 6,
+                "n_ref_words": 4252,
+                "hit_rate": 0.0082,
+                "sub_rate": 0.2655,
+                "del_rate": 0.7262,
+                "ins_rate": 0.0014
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9976,
+              "micro_cer": 0.762,
+              "macro_wer": 0.9985,
+              "macro_cer": 0.7568,
+              "errors": {
+                "hits": 3,
+                "substitutions": 460,
+                "deletions": 783,
+                "insertions": 0,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0024,
+                "sub_rate": 0.3692,
+                "del_rate": 0.6284,
+                "ins_rate": 0.0
+              }
+            }
+          }
+        },
+        "legacy": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 7895,
+            "micro_wer": 0.9322,
+            "micro_cer": 0.8275,
+            "macro_wer": 0.9865,
+            "macro_cer": 0.8176,
+            "errors": {
+              "hits": 632,
+              "substitutions": 3344,
+              "deletions": 3919,
+              "insertions": 97,
+              "n_ref_words": 7895,
+              "hit_rate": 0.0801,
+              "sub_rate": 0.4236,
+              "del_rate": 0.4964,
+              "ins_rate": 0.0123
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 2358,
+              "micro_wer": 0.9207,
+              "micro_cer": 0.8308,
+              "macro_wer": 0.9285,
+              "macro_cer": 0.8228,
+              "errors": {
+                "hits": 188,
+                "substitutions": 979,
+                "deletions": 1191,
+                "insertions": 1,
+                "n_ref_words": 2358,
+                "hit_rate": 0.0797,
+                "sub_rate": 0.4152,
+                "del_rate": 0.5051,
+                "ins_rate": 0.0004
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 5537,
+              "micro_wer": 0.9372,
+              "micro_cer": 0.826,
+              "macro_wer": 1.0079,
+              "macro_cer": 0.8156,
+              "errors": {
+                "hits": 444,
+                "substitutions": 2365,
+                "deletions": 2728,
+                "insertions": 96,
+                "n_ref_words": 5537,
+                "hit_rate": 0.0802,
+                "sub_rate": 0.4271,
+                "del_rate": 0.4927,
+                "ins_rate": 0.0173
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 274,
+              "micro_wer": 0.9818,
+              "micro_cer": 0.8672,
+              "macro_wer": 0.9818,
+              "macro_cer": 0.8672,
+              "errors": {
+                "hits": 5,
+                "substitutions": 187,
+                "deletions": 82,
+                "insertions": 0,
+                "n_ref_words": 274,
+                "hit_rate": 0.0182,
+                "sub_rate": 0.6825,
+                "del_rate": 0.2993,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 6375,
+              "micro_wer": 0.9087,
+              "micro_cer": 0.8139,
+              "macro_wer": 0.9482,
+              "macro_cer": 0.7962,
+              "errors": {
+                "hits": 627,
+                "substitutions": 2123,
+                "deletions": 3625,
+                "insertions": 45,
+                "n_ref_words": 6375,
+                "hit_rate": 0.0984,
+                "sub_rate": 0.333,
+                "del_rate": 0.5686,
+                "ins_rate": 0.0071
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 1.0417,
+              "micro_cer": 0.859,
+              "macro_wer": 1.0685,
+              "macro_cer": 0.8567,
+              "errors": {
+                "hits": 0,
+                "substitutions": 1034,
+                "deletions": 212,
+                "insertions": 52,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0,
+                "sub_rate": 0.8299,
+                "del_rate": 0.1701,
+                "ins_rate": 0.0417
+              }
+            }
+          }
+        }
+      },
+      "per_recording": [
+        {
+          "recording": "J26DS313_R0002",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.887,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7362,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.7928
+        },
+        {
+          "recording": "J26DS313_R0003",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8938,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7361,
+          "legacy_wer": 1.4714,
+          "legacy_cer": 0.8383
+        },
+        {
+          "recording": "J26DS313_R0004",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9604,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7638,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8904
+        },
+        {
+          "recording": "J26DS313_R0005",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8523,
+          "folded_wer": 1.0,
+          "folded_cer": 0.8037,
+          "legacy_wer": 0.9369,
+          "legacy_cer": 0.7885
+        },
+        {
+          "recording": "J26DS313_R0006",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9815,
+          "raw_cer": 0.7471,
+          "folded_wer": 0.9722,
+          "folded_cer": 0.682,
+          "legacy_wer": 0.8515,
+          "legacy_cer": 0.6113
+        },
+        {
+          "recording": "J26DS313_R0008",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.3636,
+          "raw_cer": 1.1727,
+          "folded_wer": 1.2727,
+          "folded_cer": 1.0699,
+          "legacy_wer": 1.7442,
+          "legacy_cer": 1.0238
+        },
+        {
+          "recording": "J26DS313_R0009",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9861,
+          "raw_cer": 0.7494,
+          "folded_wer": 0.9851,
+          "folded_cer": 0.7081,
+          "legacy_wer": 0.8905,
+          "legacy_cer": 0.6324
+        },
+        {
+          "recording": "J26DS313_R0010",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8061,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7458,
+          "legacy_wer": 0.8667,
+          "legacy_cer": 0.7079
+        },
+        {
+          "recording": "J26DS313_R0011",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.986,
+          "raw_cer": 0.8591,
+          "folded_wer": 0.9858,
+          "folded_cer": 0.7885,
+          "legacy_wer": 0.8915,
+          "legacy_cer": 0.8053
+        },
+        {
+          "recording": "J26DS313_R0012",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.995,
+          "raw_cer": 0.8824,
+          "folded_wer": 0.9851,
+          "folded_cer": 0.7964,
+          "legacy_wer": 0.9163,
+          "legacy_cer": 0.8338
+        },
+        {
+          "recording": "J26DS313_R0013",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8959,
+          "folded_wer": 0.9947,
+          "folded_cer": 0.8171,
+          "legacy_wer": 0.9331,
+          "legacy_cer": 0.8494
+        },
+        {
+          "recording": "J26DS313_R0014",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9538,
+          "folded_wer": 1.0,
+          "folded_cer": 0.8142,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.9141
+        },
+        {
+          "recording": "J26DS313_R0015",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9894,
+          "raw_cer": 0.8526,
+          "folded_wer": 0.9894,
+          "folded_cer": 0.7919,
+          "legacy_wer": 0.8833,
+          "legacy_cer": 0.8218
+        },
+        {
+          "recording": "J26DS313_R0016",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9916,
+          "raw_cer": 0.8252,
+          "folded_wer": 0.9916,
+          "folded_cer": 0.7321,
+          "legacy_wer": 0.886,
+          "legacy_cer": 0.7474
+        },
+        {
+          "recording": "J26DS313_R0017",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9352,
+          "folded_wer": 0.9962,
+          "folded_cer": 0.7678,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8546
+        },
+        {
+          "recording": "J26DS313_R0018",
+          "split": "train",
+          "script_group": "mixed",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9499,
+          "folded_wer": 1.0,
+          "folded_cer": 0.8,
+          "legacy_wer": 0.9818,
+          "legacy_cer": 0.8672
+        },
+        {
+          "recording": "J26DS313_R0019",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8757,
+          "folded_wer": 1.0,
+          "folded_cer": 0.8074,
+          "legacy_wer": 0.9084,
+          "legacy_cer": 0.8385
+        },
+        {
+          "recording": "J26DS313_R0020",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9943,
+          "raw_cer": 0.847,
+          "folded_wer": 0.9911,
+          "folded_cer": 0.7432,
+          "legacy_wer": 0.9042,
+          "legacy_cer": 0.8009
+        },
+        {
+          "recording": "J26DS313_R0021",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9972,
+          "raw_cer": 0.8665,
+          "folded_wer": 0.9944,
+          "folded_cer": 0.8315,
+          "legacy_wer": 0.8864,
+          "legacy_cer": 0.8395
+        },
+        {
+          "recording": "J26DS313_R0022",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9932,
+          "raw_cer": 0.8223,
+          "folded_wer": 0.9898,
+          "folded_cer": 0.7196,
+          "legacy_wer": 0.8821,
+          "legacy_cer": 0.7326
+        },
+        {
+          "recording": "J26DS313_R0023",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9489,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7776,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.87
+        },
+        {
+          "recording": "J26DS313_R0024",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 0.996,
+          "raw_cer": 0.9026,
+          "folded_wer": 0.992,
+          "folded_cer": 0.7334,
+          "legacy_wer": 1.0763,
+          "legacy_cer": 0.8356
+        },
+        {
+          "recording": "J26DS313_R0025",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9857,
+          "raw_cer": 0.843,
+          "folded_wer": 0.9856,
+          "folded_cer": 0.7636,
+          "legacy_wer": 0.9037,
+          "legacy_cer": 0.7947
+        },
+        {
+          "recording": "J26DS313_R0026",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8614,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7951,
+          "legacy_wer": 0.9069,
+          "legacy_cer": 0.811
+        },
+        {
+          "recording": "J26DS313_R0027",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9944,
+          "raw_cer": 0.9087,
+          "folded_wer": 0.993,
+          "folded_cer": 0.8898,
+          "legacy_wer": 0.928,
+          "legacy_cer": 0.8974
+        },
+        {
+          "recording": "J26DS313_R0028",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9441,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7253,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8577
+        }
+      ]
+    },
+    {
+      "model_size": "small",
+      "decode_mode": "auto",
+      "real_time_factor": 0.2483,
+      "total_decode_s": 762.17,
+      "n_scored": 26,
+      "metrics": {
+        "raw": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5798,
+            "micro_wer": 0.9976,
+            "micro_cer": 0.9021,
+            "macro_wer": 0.997,
+            "macro_cer": 0.8937,
+            "errors": {
+              "hits": 14,
+              "substitutions": 1232,
+              "deletions": 4552,
+              "insertions": 0,
+              "n_ref_words": 5798,
+              "hit_rate": 0.0024,
+              "sub_rate": 0.2125,
+              "del_rate": 0.7851,
+              "ins_rate": 0.0
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1827,
+              "micro_wer": 0.9967,
+              "micro_cer": 0.9106,
+              "macro_wer": 0.9966,
+              "macro_cer": 0.923,
+              "errors": {
+                "hits": 6,
+                "substitutions": 348,
+                "deletions": 1473,
+                "insertions": 0,
+                "n_ref_words": 1827,
+                "hit_rate": 0.0033,
+                "sub_rate": 0.1905,
+                "del_rate": 0.8062,
+                "ins_rate": 0.0
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3971,
+              "micro_wer": 0.998,
+              "micro_cer": 0.8983,
+              "macro_wer": 0.9972,
+              "macro_cer": 0.8829,
+              "errors": {
+                "hits": 8,
+                "substitutions": 884,
+                "deletions": 3079,
+                "insertions": 0,
+                "n_ref_words": 3971,
+                "hit_rate": 0.002,
+                "sub_rate": 0.2226,
+                "del_rate": 0.7754,
+                "ins_rate": 0.0
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 1.0,
+              "micro_cer": 0.9408,
+              "macro_wer": 1.0,
+              "macro_cer": 0.9408,
+              "errors": {
+                "hits": 0,
+                "substitutions": 63,
+                "deletions": 204,
+                "insertions": 0,
+                "n_ref_words": 267,
+                "hit_rate": 0.0,
+                "sub_rate": 0.236,
+                "del_rate": 0.764,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4285,
+              "micro_wer": 0.9977,
+              "micro_cer": 0.8941,
+              "macro_wer": 0.9969,
+              "macro_cer": 0.8804,
+              "errors": {
+                "hits": 10,
+                "substitutions": 746,
+                "deletions": 3529,
+                "insertions": 0,
+                "n_ref_words": 4285,
+                "hit_rate": 0.0023,
+                "sub_rate": 0.1741,
+                "del_rate": 0.8236,
+                "ins_rate": 0.0
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9968,
+              "micro_cer": 0.9194,
+              "macro_wer": 0.9968,
+              "macro_cer": 0.9161,
+              "errors": {
+                "hits": 4,
+                "substitutions": 423,
+                "deletions": 819,
+                "insertions": 0,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0032,
+                "sub_rate": 0.3395,
+                "del_rate": 0.6573,
+                "ins_rate": 0.0
+              }
+            }
+          }
+        },
+        "folded": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5765,
+            "micro_wer": 0.9946,
+            "micro_cer": 0.8192,
+            "macro_wer": 0.9944,
+            "macro_cer": 0.7933,
+            "errors": {
+              "hits": 31,
+              "substitutions": 1205,
+              "deletions": 4529,
+              "insertions": 0,
+              "n_ref_words": 5765,
+              "hit_rate": 0.0054,
+              "sub_rate": 0.209,
+              "del_rate": 0.7856,
+              "ins_rate": 0.0
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1811,
+              "micro_wer": 0.9939,
+              "micro_cer": 0.8313,
+              "macro_wer": 0.994,
+              "macro_cer": 0.8426,
+              "errors": {
+                "hits": 11,
+                "substitutions": 340,
+                "deletions": 1460,
+                "insertions": 0,
+                "n_ref_words": 1811,
+                "hit_rate": 0.0061,
+                "sub_rate": 0.1877,
+                "del_rate": 0.8062,
+                "ins_rate": 0.0
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3954,
+              "micro_wer": 0.9949,
+              "micro_cer": 0.8138,
+              "macro_wer": 0.9945,
+              "macro_cer": 0.7752,
+              "errors": {
+                "hits": 20,
+                "substitutions": 865,
+                "deletions": 3069,
+                "insertions": 0,
+                "n_ref_words": 3954,
+                "hit_rate": 0.0051,
+                "sub_rate": 0.2188,
+                "del_rate": 0.7762,
+                "ins_rate": 0.0
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.9925,
+              "micro_cer": 0.7845,
+              "macro_wer": 0.9925,
+              "macro_cer": 0.7845,
+              "errors": {
+                "hits": 2,
+                "substitutions": 61,
+                "deletions": 204,
+                "insertions": 0,
+                "n_ref_words": 267,
+                "hit_rate": 0.0075,
+                "sub_rate": 0.2285,
+                "del_rate": 0.764,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4252,
+              "micro_wer": 0.9955,
+              "micro_cer": 0.8414,
+              "macro_wer": 0.9955,
+              "macro_cer": 0.8199,
+              "errors": {
+                "hits": 19,
+                "substitutions": 729,
+                "deletions": 3504,
+                "insertions": 0,
+                "n_ref_words": 4252,
+                "hit_rate": 0.0045,
+                "sub_rate": 0.1714,
+                "del_rate": 0.8241,
+                "ins_rate": 0.0
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.992,
+              "micro_cer": 0.7501,
+              "macro_wer": 0.9924,
+              "macro_cer": 0.7381,
+              "errors": {
+                "hits": 10,
+                "substitutions": 415,
+                "deletions": 821,
+                "insertions": 0,
+                "n_ref_words": 1246,
+                "hit_rate": 0.008,
+                "sub_rate": 0.3331,
+                "del_rate": 0.6589,
+                "ins_rate": 0.0
+              }
+            }
+          }
+        },
+        "legacy": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 7895,
+            "micro_wer": 0.9525,
+            "micro_cer": 0.8615,
+            "macro_wer": 0.9859,
+            "macro_cer": 0.8387,
+            "errors": {
+              "hits": 443,
+              "substitutions": 2483,
+              "deletions": 4969,
+              "insertions": 68,
+              "n_ref_words": 7895,
+              "hit_rate": 0.0561,
+              "sub_rate": 0.3145,
+              "del_rate": 0.6294,
+              "ins_rate": 0.0086
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 2358,
+              "micro_wer": 0.9402,
+              "micro_cer": 0.8756,
+              "macro_wer": 0.9553,
+              "macro_cer": 0.8901,
+              "errors": {
+                "hits": 141,
+                "substitutions": 666,
+                "deletions": 1551,
+                "insertions": 0,
+                "n_ref_words": 2358,
+                "hit_rate": 0.0598,
+                "sub_rate": 0.2824,
+                "del_rate": 0.6578,
+                "ins_rate": 0.0
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 5537,
+              "micro_wer": 0.9577,
+              "micro_cer": 0.8551,
+              "macro_wer": 0.9971,
+              "macro_cer": 0.8198,
+              "errors": {
+                "hits": 302,
+                "substitutions": 1817,
+                "deletions": 3418,
+                "insertions": 68,
+                "n_ref_words": 5537,
+                "hit_rate": 0.0545,
+                "sub_rate": 0.3282,
+                "del_rate": 0.6173,
+                "ins_rate": 0.0123
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 274,
+              "micro_wer": 0.9818,
+              "micro_cer": 0.8822,
+              "macro_wer": 0.9818,
+              "macro_cer": 0.8822,
+              "errors": {
+                "hits": 5,
+                "substitutions": 155,
+                "deletions": 114,
+                "insertions": 0,
+                "n_ref_words": 274,
+                "hit_rate": 0.0182,
+                "sub_rate": 0.5657,
+                "del_rate": 0.4161,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 6375,
+              "micro_wer": 0.9325,
+              "micro_cer": 0.8644,
+              "macro_wer": 0.9325,
+              "macro_cer": 0.8356,
+              "errors": {
+                "hits": 435,
+                "substitutions": 1310,
+                "deletions": 4630,
+                "insertions": 5,
+                "n_ref_words": 6375,
+                "hit_rate": 0.0682,
+                "sub_rate": 0.2055,
+                "del_rate": 0.7263,
+                "ins_rate": 0.0008
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 1.0482,
+              "micro_cer": 0.8488,
+              "macro_wer": 1.0998,
+              "macro_cer": 0.8399,
+              "errors": {
+                "hits": 3,
+                "substitutions": 1018,
+                "deletions": 225,
+                "insertions": 63,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0024,
+                "sub_rate": 0.817,
+                "del_rate": 0.1806,
+                "ins_rate": 0.0506
+              }
+            }
+          }
+        }
+      },
+      "per_recording": [
+        {
+          "recording": "J26DS313_R0002",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 0.9912,
+          "raw_cer": 0.8738,
+          "folded_wer": 0.9912,
+          "folded_cer": 0.7205,
+          "legacy_wer": 1.0351,
+          "legacy_cer": 0.7891
+        },
+        {
+          "recording": "J26DS313_R0003",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9469,
+          "folded_wer": 1.0,
+          "folded_cer": 0.724,
+          "legacy_wer": 1.2286,
+          "legacy_cer": 0.8383
+        },
+        {
+          "recording": "J26DS313_R0004",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9487,
+          "folded_wer": 0.9867,
+          "folded_cer": 0.6985,
+          "legacy_wer": 1.28,
+          "legacy_cer": 0.8275
+        },
+        {
+          "recording": "J26DS313_R0005",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.988,
+          "raw_cer": 0.8232,
+          "folded_wer": 0.988,
+          "folded_cer": 0.7113,
+          "legacy_wer": 0.9369,
+          "legacy_cer": 0.6945
+        },
+        {
+          "recording": "J26DS313_R0006",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8182,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7557,
+          "legacy_wer": 0.8911,
+          "legacy_cer": 0.7698
+        },
+        {
+          "recording": "J26DS313_R0008",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8273,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7413,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.6746
+        },
+        {
+          "recording": "J26DS313_R0009",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9861,
+          "raw_cer": 0.8062,
+          "folded_wer": 0.9851,
+          "folded_cer": 0.7411,
+          "legacy_wer": 0.9124,
+          "legacy_cer": 0.7353
+        },
+        {
+          "recording": "J26DS313_R0010",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "ml",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9697,
+          "folded_wer": 1.0,
+          "folded_cer": 0.9407,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.9656
+        },
+        {
+          "recording": "J26DS313_R0011",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9907,
+          "raw_cer": 0.8431,
+          "folded_wer": 0.9906,
+          "folded_cer": 0.7598,
+          "legacy_wer": 0.9051,
+          "legacy_cer": 0.8107
+        },
+        {
+          "recording": "J26DS313_R0012",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9344,
+          "folded_wer": 1.0,
+          "folded_cer": 0.8928,
+          "legacy_wer": 0.9203,
+          "legacy_cer": 0.9191
+        },
+        {
+          "recording": "J26DS313_R0013",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8795,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7889,
+          "legacy_wer": 0.9163,
+          "legacy_cer": 0.7907
+        },
+        {
+          "recording": "J26DS313_R0014",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 0.9833,
+          "raw_cer": 0.9344,
+          "folded_wer": 0.9778,
+          "folded_cer": 0.7883,
+          "legacy_wer": 0.9833,
+          "legacy_cer": 0.8846
+        },
+        {
+          "recording": "J26DS313_R0015",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9965,
+          "raw_cer": 0.833,
+          "folded_wer": 0.9929,
+          "folded_cer": 0.7488,
+          "legacy_wer": 0.9143,
+          "legacy_cer": 0.7942
+        },
+        {
+          "recording": "J26DS313_R0016",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.913,
+          "folded_wer": 1.0,
+          "folded_cer": 0.8905,
+          "legacy_wer": 0.9402,
+          "legacy_cer": 0.898
+        },
+        {
+          "recording": "J26DS313_R0017",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8861,
+          "folded_wer": 0.9962,
+          "folded_cer": 0.7425,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8288
+        },
+        {
+          "recording": "J26DS313_R0018",
+          "split": "train",
+          "script_group": "mixed",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9408,
+          "folded_wer": 0.9925,
+          "folded_cer": 0.7845,
+          "legacy_wer": 0.9818,
+          "legacy_cer": 0.8822
+        },
+        {
+          "recording": "J26DS313_R0019",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.995,
+          "raw_cer": 0.9078,
+          "folded_wer": 0.9899,
+          "folded_cer": 0.8497,
+          "legacy_wer": 0.9308,
+          "legacy_cer": 0.8944
+        },
+        {
+          "recording": "J26DS313_R0020",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9432,
+          "folded_wer": 1.0,
+          "folded_cer": 0.9263,
+          "legacy_wer": 0.9437,
+          "legacy_cer": 0.9313
+        },
+        {
+          "recording": "J26DS313_R0021",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9972,
+          "raw_cer": 0.91,
+          "folded_wer": 0.9944,
+          "folded_cer": 0.8776,
+          "legacy_wer": 0.9311,
+          "legacy_cer": 0.8965
+        },
+        {
+          "recording": "J26DS313_R0022",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8705,
+          "folded_wer": 0.9932,
+          "folded_cer": 0.8001,
+          "legacy_wer": 0.8915,
+          "legacy_cer": 0.8194
+        },
+        {
+          "recording": "J26DS313_R0023",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9313,
+          "folded_wer": 0.9953,
+          "folded_cer": 0.7439,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8473
+        },
+        {
+          "recording": "J26DS313_R0024",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9568,
+          "folded_wer": 0.992,
+          "folded_cer": 0.7848,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8859
+        },
+        {
+          "recording": "J26DS313_R0025",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9976,
+          "raw_cer": 0.8403,
+          "folded_wer": 0.9952,
+          "folded_cer": 0.7562,
+          "legacy_wer": 0.9088,
+          "legacy_cer": 0.7884
+        },
+        {
+          "recording": "J26DS313_R0026",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9963,
+          "raw_cer": 0.9067,
+          "folded_wer": 0.9962,
+          "folded_cer": 0.838,
+          "legacy_wer": 0.9415,
+          "legacy_cer": 0.8887
+        },
+        {
+          "recording": "J26DS313_R0027",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9402,
+          "folded_wer": 0.9972,
+          "folded_cer": 0.9191,
+          "legacy_wer": 0.9679,
+          "legacy_cer": 0.9332
+        },
+        {
+          "recording": "J26DS313_R0028",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8505,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7021,
+          "legacy_wer": 1.2716,
+          "legacy_cer": 0.818
+        }
+      ]
+    },
+    {
+      "model_size": "small",
+      "decode_mode": "en",
+      "real_time_factor": 0.0557,
+      "total_decode_s": 170.99,
+      "n_scored": 26,
+      "metrics": {
+        "raw": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5798,
+            "micro_wer": 0.9852,
+            "micro_cer": 0.7099,
+            "macro_wer": 1.1407,
+            "macro_cer": 0.7952,
+            "errors": {
+              "hits": 1015,
+              "substitutions": 3970,
+              "deletions": 813,
+              "insertions": 929,
+              "n_ref_words": 5798,
+              "hit_rate": 0.1751,
+              "sub_rate": 0.6847,
+              "del_rate": 0.1402,
+              "ins_rate": 0.1602
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1827,
+              "micro_wer": 0.8697,
+              "micro_cer": 0.6486,
+              "macro_wer": 0.8908,
+              "macro_cer": 0.6573,
+              "errors": {
+                "hits": 349,
+                "substitutions": 1227,
+                "deletions": 251,
+                "insertions": 111,
+                "n_ref_words": 1827,
+                "hit_rate": 0.191,
+                "sub_rate": 0.6716,
+                "del_rate": 0.1374,
+                "ins_rate": 0.0608
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3971,
+              "micro_wer": 1.0383,
+              "micro_cer": 0.7374,
+              "macro_wer": 1.2327,
+              "macro_cer": 0.846,
+              "errors": {
+                "hits": 666,
+                "substitutions": 2743,
+                "deletions": 562,
+                "insertions": 818,
+                "n_ref_words": 3971,
+                "hit_rate": 0.1677,
+                "sub_rate": 0.6908,
+                "del_rate": 0.1415,
+                "ins_rate": 0.206
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.7154,
+              "micro_cer": 0.5039,
+              "macro_wer": 0.7154,
+              "macro_cer": 0.5039,
+              "errors": {
+                "hits": 102,
+                "substitutions": 113,
+                "deletions": 52,
+                "insertions": 26,
+                "n_ref_words": 267,
+                "hit_rate": 0.382,
+                "sub_rate": 0.4232,
+                "del_rate": 0.1948,
+                "ins_rate": 0.0974
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4285,
+              "micro_wer": 1.0002,
+              "micro_cer": 0.7514,
+              "macro_wer": 1.2275,
+              "macro_cer": 0.8835,
+              "errors": {
+                "hits": 668,
+                "substitutions": 2984,
+                "deletions": 633,
+                "insertions": 669,
+                "n_ref_words": 4285,
+                "hit_rate": 0.1559,
+                "sub_rate": 0.6964,
+                "del_rate": 0.1477,
+                "ins_rate": 0.1561
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9912,
+              "micro_cer": 0.6223,
+              "macro_wer": 1.0092,
+              "macro_cer": 0.644,
+              "errors": {
+                "hits": 245,
+                "substitutions": 873,
+                "deletions": 128,
+                "insertions": 234,
+                "n_ref_words": 1246,
+                "hit_rate": 0.1966,
+                "sub_rate": 0.7006,
+                "del_rate": 0.1027,
+                "ins_rate": 0.1878
+              }
+            }
+          }
+        },
+        "folded": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5765,
+            "micro_wer": 0.9764,
+            "micro_cer": 0.6318,
+            "macro_wer": 1.1309,
+            "macro_cer": 0.696,
+            "errors": {
+              "hits": 1081,
+              "substitutions": 3888,
+              "deletions": 796,
+              "insertions": 945,
+              "n_ref_words": 5765,
+              "hit_rate": 0.1875,
+              "sub_rate": 0.6744,
+              "del_rate": 0.1381,
+              "ins_rate": 0.1639
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1811,
+              "micro_wer": 0.8548,
+              "micro_cer": 0.5912,
+              "macro_wer": 0.8682,
+              "macro_cer": 0.5862,
+              "errors": {
+                "hits": 373,
+                "substitutions": 1204,
+                "deletions": 234,
+                "insertions": 110,
+                "n_ref_words": 1811,
+                "hit_rate": 0.206,
+                "sub_rate": 0.6648,
+                "del_rate": 0.1292,
+                "ins_rate": 0.0607
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3954,
+              "micro_wer": 1.0321,
+              "micro_cer": 0.6498,
+              "macro_wer": 1.2276,
+              "macro_cer": 0.7365,
+              "errors": {
+                "hits": 708,
+                "substitutions": 2684,
+                "deletions": 562,
+                "insertions": 835,
+                "n_ref_words": 3954,
+                "hit_rate": 0.1791,
+                "sub_rate": 0.6788,
+                "del_rate": 0.1421,
+                "ins_rate": 0.2112
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.7079,
+              "micro_cer": 0.502,
+              "macro_wer": 0.7079,
+              "macro_cer": 0.502,
+              "errors": {
+                "hits": 104,
+                "substitutions": 111,
+                "deletions": 52,
+                "insertions": 26,
+                "n_ref_words": 267,
+                "hit_rate": 0.3895,
+                "sub_rate": 0.4157,
+                "del_rate": 0.1948,
+                "ins_rate": 0.0974
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4252,
+              "micro_wer": 0.9897,
+              "micro_cer": 0.6444,
+              "macro_wer": 1.2143,
+              "macro_cer": 0.7348,
+              "errors": {
+                "hits": 732,
+                "substitutions": 2901,
+                "deletions": 619,
+                "insertions": 688,
+                "n_ref_words": 4252,
+                "hit_rate": 0.1722,
+                "sub_rate": 0.6823,
+                "del_rate": 0.1456,
+                "ins_rate": 0.1618
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9888,
+              "micro_cer": 0.6152,
+              "macro_wer": 1.0064,
+              "macro_cer": 0.6378,
+              "errors": {
+                "hits": 245,
+                "substitutions": 876,
+                "deletions": 125,
+                "insertions": 231,
+                "n_ref_words": 1246,
+                "hit_rate": 0.1966,
+                "sub_rate": 0.703,
+                "del_rate": 0.1003,
+                "ins_rate": 0.1854
+              }
+            }
+          }
+        },
+        "legacy": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 7895,
+            "micro_wer": 0.9212,
+            "micro_cer": 0.6947,
+            "macro_wer": 0.9917,
+            "macro_cer": 0.7904,
+            "errors": {
+              "hits": 1021,
+              "substitutions": 4494,
+              "deletions": 2380,
+              "insertions": 399,
+              "n_ref_words": 7895,
+              "hit_rate": 0.1293,
+              "sub_rate": 0.5692,
+              "del_rate": 0.3015,
+              "ins_rate": 0.0505
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 2358,
+              "micro_wer": 0.883,
+              "micro_cer": 0.6321,
+              "macro_wer": 0.9036,
+              "macro_cer": 0.6438,
+              "errors": {
+                "hits": 374,
+                "substitutions": 1215,
+                "deletions": 769,
+                "insertions": 98,
+                "n_ref_words": 2358,
+                "hit_rate": 0.1586,
+                "sub_rate": 0.5153,
+                "del_rate": 0.3261,
+                "ins_rate": 0.0416
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 5537,
+              "micro_wer": 0.9375,
+              "micro_cer": 0.7231,
+              "macro_wer": 1.0242,
+              "macro_cer": 0.8443,
+              "errors": {
+                "hits": 647,
+                "substitutions": 3279,
+                "deletions": 1611,
+                "insertions": 301,
+                "n_ref_words": 5537,
+                "hit_rate": 0.1169,
+                "sub_rate": 0.5922,
+                "del_rate": 0.291,
+                "ins_rate": 0.0544
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 274,
+              "micro_wer": 0.719,
+              "micro_cer": 0.502,
+              "macro_wer": 0.719,
+              "macro_cer": 0.502,
+              "errors": {
+                "hits": 103,
+                "substitutions": 112,
+                "deletions": 59,
+                "insertions": 26,
+                "n_ref_words": 274,
+                "hit_rate": 0.3759,
+                "sub_rate": 0.4088,
+                "del_rate": 0.2153,
+                "ins_rate": 0.0949
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 6375,
+              "micro_wer": 0.9162,
+              "micro_cer": 0.7331,
+              "macro_wer": 0.9995,
+              "macro_cer": 0.8762,
+              "errors": {
+                "hits": 673,
+                "substitutions": 3509,
+                "deletions": 2193,
+                "insertions": 139,
+                "n_ref_words": 6375,
+                "hit_rate": 0.1056,
+                "sub_rate": 0.5504,
+                "del_rate": 0.344,
+                "ins_rate": 0.0218
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9912,
+              "micro_cer": 0.6223,
+              "macro_wer": 1.0092,
+              "macro_cer": 0.644,
+              "errors": {
+                "hits": 245,
+                "substitutions": 873,
+                "deletions": 128,
+                "insertions": 234,
+                "n_ref_words": 1246,
+                "hit_rate": 0.1966,
+                "sub_rate": 0.7006,
+                "del_rate": 0.1027,
+                "ins_rate": 0.1878
+              }
+            }
+          }
+        }
+      },
+      "per_recording": [
+        {
+          "recording": "J26DS313_R0002",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.886,
+          "raw_cer": 0.6893,
+          "folded_wer": 0.886,
+          "folded_cer": 0.689,
+          "legacy_wer": 0.886,
+          "legacy_cer": 0.6893
+        },
+        {
+          "recording": "J26DS313_R0003",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 1.0714,
+          "raw_cer": 0.6351,
+          "folded_wer": 1.0714,
+          "folded_cer": 0.632,
+          "legacy_wer": 1.0714,
+          "legacy_cer": 0.6351
+        },
+        {
+          "recording": "J26DS313_R0004",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.9867,
+          "raw_cer": 0.7413,
+          "folded_wer": 0.9733,
+          "folded_cer": 0.7261,
+          "legacy_wer": 0.9867,
+          "legacy_cer": 0.7413
+        },
+        {
+          "recording": "J26DS313_R0005",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.1205,
+          "raw_cer": 0.7942,
+          "folded_wer": 1.1084,
+          "folded_cer": 0.6836,
+          "legacy_wer": 0.9279,
+          "legacy_cer": 0.7859
+        },
+        {
+          "recording": "J26DS313_R0006",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9815,
+          "raw_cer": 0.8397,
+          "folded_wer": 0.9444,
+          "folded_cer": 0.5721,
+          "legacy_wer": 0.9752,
+          "legacy_cer": 0.8189
+        },
+        {
+          "recording": "J26DS313_R0008",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 5.0455,
+          "raw_cer": 3.2014,
+          "folded_wer": 5.0455,
+          "folded_cer": 2.5944,
+          "legacy_wer": 2.5814,
+          "legacy_cer": 3.3651
+        },
+        {
+          "recording": "J26DS313_R0009",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8501,
+          "folded_wer": 1.0448,
+          "folded_cer": 0.7132,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8
+        },
+        {
+          "recording": "J26DS313_R0010",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9844,
+          "raw_cer": 0.8273,
+          "folded_wer": 0.8889,
+          "folded_cer": 0.5989,
+          "legacy_wer": 0.9714,
+          "legacy_cer": 0.8144
+        },
+        {
+          "recording": "J26DS313_R0011",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9019,
+          "raw_cer": 0.6502,
+          "folded_wer": 0.8868,
+          "folded_cer": 0.5746,
+          "legacy_wer": 0.8678,
+          "legacy_cer": 0.6295
+        },
+        {
+          "recording": "J26DS313_R0012",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.7178,
+          "raw_cer": 0.5055,
+          "folded_wer": 0.7178,
+          "folded_cer": 0.474,
+          "legacy_wer": 0.753,
+          "legacy_cer": 0.4864
+        },
+        {
+          "recording": "J26DS313_R0013",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9476,
+          "raw_cer": 0.6164,
+          "folded_wer": 0.9421,
+          "folded_cer": 0.5283,
+          "legacy_wer": 0.8033,
+          "legacy_cer": 0.6023
+        },
+        {
+          "recording": "J26DS313_R0014",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.9556,
+          "raw_cer": 0.5873,
+          "folded_wer": 0.9556,
+          "folded_cer": 0.5814,
+          "legacy_wer": 0.9556,
+          "legacy_cer": 0.5873
+        },
+        {
+          "recording": "J26DS313_R0015",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.0951,
+          "raw_cer": 0.799,
+          "folded_wer": 1.0887,
+          "folded_cer": 0.6362,
+          "legacy_wer": 0.9,
+          "legacy_cer": 0.7935
+        },
+        {
+          "recording": "J26DS313_R0016",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.2008,
+          "raw_cer": 0.8012,
+          "folded_wer": 1.1883,
+          "folded_cer": 0.651,
+          "legacy_wer": 0.9202,
+          "legacy_cer": 0.7904
+        },
+        {
+          "recording": "J26DS313_R0017",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 1.1069,
+          "raw_cer": 0.6476,
+          "folded_wer": 1.1069,
+          "folded_cer": 0.6411,
+          "legacy_wer": 1.1069,
+          "legacy_cer": 0.6476
+        },
+        {
+          "recording": "J26DS313_R0018",
+          "split": "train",
+          "script_group": "mixed",
+          "detected_language": "en",
+          "raw_wer": 0.7154,
+          "raw_cer": 0.5039,
+          "folded_wer": 0.7079,
+          "folded_cer": 0.502,
+          "legacy_wer": 0.719,
+          "legacy_cer": 0.502
+        },
+        {
+          "recording": "J26DS313_R0019",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.799,
+          "raw_cer": 0.6371,
+          "folded_wer": 0.799,
+          "folded_cer": 0.5961,
+          "legacy_wer": 0.8224,
+          "legacy_cer": 0.6147
+        },
+        {
+          "recording": "J26DS313_R0020",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.8682,
+          "raw_cer": 0.6616,
+          "folded_wer": 0.8274,
+          "folded_cer": 0.5443,
+          "legacy_wer": 0.8854,
+          "legacy_cer": 0.6445
+        },
+        {
+          "recording": "J26DS313_R0021",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.1906,
+          "raw_cer": 0.7493,
+          "folded_wer": 1.1861,
+          "folded_cer": 0.6054,
+          "legacy_wer": 0.9143,
+          "legacy_cer": 0.7291
+        },
+        {
+          "recording": "J26DS313_R0022",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 1.2925,
+          "raw_cer": 0.8259,
+          "folded_wer": 1.2799,
+          "folded_cer": 0.6848,
+          "legacy_wer": 0.9363,
+          "legacy_cer": 0.8219
+        },
+        {
+          "recording": "J26DS313_R0023",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 1.0419,
+          "raw_cer": 0.6647,
+          "folded_wer": 1.0326,
+          "folded_cer": 0.6541,
+          "legacy_wer": 1.0419,
+          "legacy_cer": 0.6647
+        },
+        {
+          "recording": "J26DS313_R0024",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 0.8032,
+          "raw_cer": 0.5016,
+          "folded_wer": 0.8032,
+          "folded_cer": 0.4921,
+          "legacy_wer": 0.8032,
+          "legacy_cer": 0.5016
+        },
+        {
+          "recording": "J26DS313_R0025",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.8687,
+          "raw_cer": 0.7175,
+          "folded_wer": 0.8561,
+          "folded_cer": 0.6545,
+          "legacy_wer": 0.8953,
+          "legacy_cer": 0.6947
+        },
+        {
+          "recording": "J26DS313_R0026",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.8914,
+          "raw_cer": 0.6964,
+          "folded_wer": 0.8797,
+          "folded_cer": 0.6233,
+          "legacy_wer": 0.8617,
+          "legacy_cer": 0.6762
+        },
+        {
+          "recording": "J26DS313_R0027",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "en",
+          "raw_wer": 0.9623,
+          "raw_cer": 0.8467,
+          "folded_wer": 0.9594,
+          "folded_cer": 0.7576,
+          "legacy_wer": 0.9757,
+          "legacy_cer": 0.8281
+        },
+        {
+          "recording": "J26DS313_R0028",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "en",
+          "raw_wer": 1.2222,
+          "raw_cer": 0.6847,
+          "folded_wer": 1.2222,
+          "folded_cer": 0.6867,
+          "legacy_wer": 1.2222,
+          "legacy_cer": 0.6847
+        }
+      ]
+    },
+    {
+      "model_size": "small",
+      "decode_mode": "si",
+      "real_time_factor": 0.2528,
+      "total_decode_s": 776.0,
+      "n_scored": 26,
+      "metrics": {
+        "raw": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5798,
+            "micro_wer": 0.9976,
+            "micro_cer": 0.8996,
+            "macro_wer": 1.0032,
+            "macro_cer": 0.8968,
+            "errors": {
+              "hits": 19,
+              "substitutions": 1374,
+              "deletions": 4405,
+              "insertions": 5,
+              "n_ref_words": 5798,
+              "hit_rate": 0.0033,
+              "sub_rate": 0.237,
+              "del_rate": 0.7597,
+              "ins_rate": 0.0009
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1827,
+              "micro_wer": 0.9962,
+              "micro_cer": 0.8921,
+              "macro_wer": 0.9975,
+              "macro_cer": 0.8904,
+              "errors": {
+                "hits": 7,
+                "substitutions": 391,
+                "deletions": 1429,
+                "insertions": 0,
+                "n_ref_words": 1827,
+                "hit_rate": 0.0038,
+                "sub_rate": 0.214,
+                "del_rate": 0.7822,
+                "ins_rate": 0.0
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3971,
+              "micro_wer": 0.9982,
+              "micro_cer": 0.9029,
+              "macro_wer": 1.0052,
+              "macro_cer": 0.8992,
+              "errors": {
+                "hits": 12,
+                "substitutions": 983,
+                "deletions": 2976,
+                "insertions": 5,
+                "n_ref_words": 3971,
+                "hit_rate": 0.003,
+                "sub_rate": 0.2475,
+                "del_rate": 0.7494,
+                "ins_rate": 0.0013
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 1.0,
+              "micro_cer": 0.9174,
+              "macro_wer": 1.0,
+              "macro_cer": 0.9174,
+              "errors": {
+                "hits": 0,
+                "substitutions": 86,
+                "deletions": 181,
+                "insertions": 0,
+                "n_ref_words": 267,
+                "hit_rate": 0.0,
+                "sub_rate": 0.3221,
+                "del_rate": 0.6779,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4285,
+              "micro_wer": 0.9967,
+              "micro_cer": 0.8908,
+              "macro_wer": 1.0048,
+              "macro_cer": 0.8855,
+              "errors": {
+                "hits": 19,
+                "substitutions": 825,
+                "deletions": 3441,
+                "insertions": 5,
+                "n_ref_words": 4285,
+                "hit_rate": 0.0044,
+                "sub_rate": 0.1925,
+                "del_rate": 0.803,
+                "ins_rate": 0.0012
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 1.0,
+              "micro_cer": 0.9233,
+              "macro_wer": 1.0,
+              "macro_cer": 0.9183,
+              "errors": {
+                "hits": 0,
+                "substitutions": 463,
+                "deletions": 783,
+                "insertions": 0,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0,
+                "sub_rate": 0.3716,
+                "del_rate": 0.6284,
+                "ins_rate": 0.0
+              }
+            }
+          }
+        },
+        "folded": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 5765,
+            "micro_wer": 0.9941,
+            "micro_cer": 0.818,
+            "macro_wer": 0.9996,
+            "macro_cer": 0.7995,
+            "errors": {
+              "hits": 39,
+              "substitutions": 1324,
+              "deletions": 4402,
+              "insertions": 5,
+              "n_ref_words": 5765,
+              "hit_rate": 0.0068,
+              "sub_rate": 0.2297,
+              "del_rate": 0.7636,
+              "ins_rate": 0.0009
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 1811,
+              "micro_wer": 0.9934,
+              "micro_cer": 0.8102,
+              "macro_wer": 0.9951,
+              "macro_cer": 0.8016,
+              "errors": {
+                "hits": 12,
+                "substitutions": 359,
+                "deletions": 1440,
+                "insertions": 0,
+                "n_ref_words": 1811,
+                "hit_rate": 0.0066,
+                "sub_rate": 0.1982,
+                "del_rate": 0.7951,
+                "ins_rate": 0.0
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 3954,
+              "micro_wer": 0.9944,
+              "micro_cer": 0.8215,
+              "macro_wer": 1.0012,
+              "macro_cer": 0.7988,
+              "errors": {
+                "hits": 27,
+                "substitutions": 965,
+                "deletions": 2962,
+                "insertions": 5,
+                "n_ref_words": 3954,
+                "hit_rate": 0.0068,
+                "sub_rate": 0.2441,
+                "del_rate": 0.7491,
+                "ins_rate": 0.0013
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 267,
+              "micro_wer": 0.9925,
+              "micro_cer": 0.7716,
+              "macro_wer": 0.9925,
+              "macro_cer": 0.7716,
+              "errors": {
+                "hits": 2,
+                "substitutions": 84,
+                "deletions": 181,
+                "insertions": 0,
+                "n_ref_words": 267,
+                "hit_rate": 0.0075,
+                "sub_rate": 0.3146,
+                "del_rate": 0.6779,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 4252,
+              "micro_wer": 0.9941,
+              "micro_cer": 0.8353,
+              "macro_wer": 1.0014,
+              "macro_cer": 0.8182,
+              "errors": {
+                "hits": 30,
+                "substitutions": 812,
+                "deletions": 3410,
+                "insertions": 5,
+                "n_ref_words": 4252,
+                "hit_rate": 0.0071,
+                "sub_rate": 0.191,
+                "del_rate": 0.802,
+                "ins_rate": 0.0012
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 0.9944,
+              "micro_cer": 0.7681,
+              "macro_wer": 0.9965,
+              "macro_cer": 0.7633,
+              "errors": {
+                "hits": 7,
+                "substitutions": 428,
+                "deletions": 811,
+                "insertions": 0,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0056,
+                "sub_rate": 0.3435,
+                "del_rate": 0.6509,
+                "ins_rate": 0.0
+              }
+            }
+          }
+        },
+        "legacy": {
+          "overall": {
+            "n_recordings": 26,
+            "n_ref_words": 7895,
+            "micro_wer": 0.9538,
+            "micro_cer": 0.859,
+            "macro_wer": 1.0034,
+            "macro_cer": 0.8421,
+            "errors": {
+              "hits": 464,
+              "substitutions": 2567,
+              "deletions": 4864,
+              "insertions": 99,
+              "n_ref_words": 7895,
+              "hit_rate": 0.0588,
+              "sub_rate": 0.3251,
+              "del_rate": 0.6161,
+              "ins_rate": 0.0125
+            }
+          },
+          "by_split": {
+            "eval": {
+              "n_recordings": 7,
+              "n_ref_words": 2358,
+              "micro_wer": 0.9279,
+              "micro_cer": 0.8481,
+              "macro_wer": 0.9432,
+              "macro_cer": 0.8415,
+              "errors": {
+                "hits": 171,
+                "substitutions": 820,
+                "deletions": 1367,
+                "insertions": 1,
+                "n_ref_words": 2358,
+                "hit_rate": 0.0725,
+                "sub_rate": 0.3478,
+                "del_rate": 0.5797,
+                "ins_rate": 0.0004
+              }
+            },
+            "train": {
+              "n_recordings": 19,
+              "n_ref_words": 5537,
+              "micro_wer": 0.9648,
+              "micro_cer": 0.864,
+              "macro_wer": 1.0256,
+              "macro_cer": 0.8423,
+              "errors": {
+                "hits": 293,
+                "substitutions": 1747,
+                "deletions": 3497,
+                "insertions": 98,
+                "n_ref_words": 5537,
+                "hit_rate": 0.0529,
+                "sub_rate": 0.3155,
+                "del_rate": 0.6316,
+                "ins_rate": 0.0177
+              }
+            }
+          },
+          "by_script_group": {
+            "mixed": {
+              "n_recordings": 1,
+              "n_ref_words": 274,
+              "micro_wer": 0.9818,
+              "micro_cer": 0.8698,
+              "macro_wer": 0.9818,
+              "macro_cer": 0.8698,
+              "errors": {
+                "hits": 5,
+                "substitutions": 162,
+                "deletions": 107,
+                "insertions": 0,
+                "n_ref_words": 274,
+                "hit_rate": 0.0182,
+                "sub_rate": 0.5912,
+                "del_rate": 0.3905,
+                "ins_rate": 0.0
+              }
+            },
+            "native": {
+              "n_recordings": 17,
+              "n_ref_words": 6375,
+              "micro_wer": 0.933,
+              "micro_cer": 0.8558,
+              "macro_wer": 0.951,
+              "macro_cer": 0.8317,
+              "errors": {
+                "hits": 459,
+                "substitutions": 1499,
+                "deletions": 4417,
+                "insertions": 32,
+                "n_ref_words": 6375,
+                "hit_rate": 0.072,
+                "sub_rate": 0.2351,
+                "del_rate": 0.6929,
+                "ins_rate": 0.005
+              }
+            },
+            "romanized": {
+              "n_recordings": 8,
+              "n_ref_words": 1246,
+              "micro_wer": 1.0538,
+              "micro_cer": 0.8662,
+              "macro_wer": 1.1175,
+              "macro_cer": 0.8608,
+              "errors": {
+                "hits": 0,
+                "substitutions": 906,
+                "deletions": 340,
+                "insertions": 67,
+                "n_ref_words": 1246,
+                "hit_rate": 0.0,
+                "sub_rate": 0.7271,
+                "del_rate": 0.2729,
+                "ins_rate": 0.0538
+              }
+            }
+          }
+        }
+      },
+      "per_recording": [
+        {
+          "recording": "J26DS313_R0002",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9529,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7677,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8606
+        },
+        {
+          "recording": "J26DS313_R0003",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9099,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7579,
+          "legacy_wer": 1.8286,
+          "legacy_cer": 0.8383
+        },
+        {
+          "recording": "J26DS313_R0004",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8881,
+          "folded_wer": 1.0,
+          "folded_cer": 0.794,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8625
+        },
+        {
+          "recording": "J26DS313_R0005",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8305,
+          "folded_wer": 0.9759,
+          "folded_cer": 0.6998,
+          "legacy_wer": 0.9279,
+          "legacy_cer": 0.7702
+        },
+        {
+          "recording": "J26DS313_R0006",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8231,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7607,
+          "legacy_wer": 0.8812,
+          "legacy_cer": 0.7472
+        },
+        {
+          "recording": "J26DS313_R0008",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.1364,
+          "raw_cer": 1.2014,
+          "folded_wer": 1.1364,
+          "folded_cer": 1.1469,
+          "legacy_wer": 1.4419,
+          "legacy_cer": 1.0079
+        },
+        {
+          "recording": "J26DS313_R0009",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.7674,
+          "folded_wer": 1.0,
+          "folded_cer": 0.6751,
+          "legacy_wer": 0.8905,
+          "legacy_cer": 0.6588
+        },
+        {
+          "recording": "J26DS313_R0010",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8273,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7655,
+          "legacy_wer": 0.9524,
+          "legacy_cer": 0.7595
+        },
+        {
+          "recording": "J26DS313_R0011",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8406,
+          "folded_wer": 0.9906,
+          "folded_cer": 0.7426,
+          "legacy_wer": 0.9085,
+          "legacy_cer": 0.7853
+        },
+        {
+          "recording": "J26DS313_R0012",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8968,
+          "folded_wer": 0.995,
+          "folded_cer": 0.817,
+          "legacy_wer": 0.9203,
+          "legacy_cer": 0.8514
+        },
+        {
+          "recording": "J26DS313_R0013",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9948,
+          "raw_cer": 0.8438,
+          "folded_wer": 0.9895,
+          "folded_cer": 0.7376,
+          "legacy_wer": 0.9414,
+          "legacy_cer": 0.7917
+        },
+        {
+          "recording": "J26DS313_R0014",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9714,
+          "folded_wer": 1.0,
+          "folded_cer": 0.7538,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8883
+        },
+        {
+          "recording": "J26DS313_R0015",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.993,
+          "raw_cer": 0.9137,
+          "folded_wer": 1.0,
+          "folded_cer": 0.888,
+          "legacy_wer": 0.9238,
+          "legacy_cer": 0.9038
+        },
+        {
+          "recording": "J26DS313_R0016",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9874,
+          "raw_cer": 0.8845,
+          "folded_wer": 0.9833,
+          "folded_cer": 0.8429,
+          "legacy_wer": 0.9459,
+          "legacy_cer": 0.8781
+        },
+        {
+          "recording": "J26DS313_R0017",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9339,
+          "folded_wer": 0.9809,
+          "folded_cer": 0.7572,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8722
+        },
+        {
+          "recording": "J26DS313_R0018",
+          "split": "train",
+          "script_group": "mixed",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9174,
+          "folded_wer": 0.9925,
+          "folded_cer": 0.7716,
+          "legacy_wer": 0.9818,
+          "legacy_cer": 0.8698
+        },
+        {
+          "recording": "J26DS313_R0019",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9975,
+          "raw_cer": 0.8699,
+          "folded_wer": 0.9925,
+          "folded_cer": 0.7901,
+          "legacy_wer": 0.9047,
+          "legacy_cer": 0.8068
+        },
+        {
+          "recording": "J26DS313_R0020",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9971,
+          "raw_cer": 0.9054,
+          "folded_wer": 0.997,
+          "folded_cer": 0.8743,
+          "legacy_wer": 0.9125,
+          "legacy_cer": 0.8886
+        },
+        {
+          "recording": "J26DS313_R0021",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9917,
+          "raw_cer": 0.8625,
+          "folded_wer": 0.9889,
+          "folded_cer": 0.7859,
+          "legacy_wer": 0.9125,
+          "legacy_cer": 0.8316
+        },
+        {
+          "recording": "J26DS313_R0022",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8835,
+          "folded_wer": 0.9966,
+          "folded_cer": 0.827,
+          "legacy_wer": 0.8915,
+          "legacy_cer": 0.846
+        },
+        {
+          "recording": "J26DS313_R0023",
+          "split": "eval",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8912,
+          "folded_wer": 0.9953,
+          "folded_cer": 0.7975,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8619
+        },
+        {
+          "recording": "J26DS313_R0024",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9304,
+          "folded_wer": 0.996,
+          "folded_cer": 0.7862,
+          "legacy_wer": 1.0,
+          "legacy_cer": 0.8717
+        },
+        {
+          "recording": "J26DS313_R0025",
+          "split": "eval",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9881,
+          "raw_cer": 0.8709,
+          "folded_wer": 0.9856,
+          "folded_cer": 0.8127,
+          "legacy_wer": 0.9122,
+          "legacy_cer": 0.8343
+        },
+        {
+          "recording": "J26DS313_R0026",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 0.9963,
+          "raw_cer": 0.8526,
+          "folded_wer": 0.9925,
+          "folded_cer": 0.7677,
+          "legacy_wer": 0.9069,
+          "legacy_cer": 0.7996
+        },
+        {
+          "recording": "J26DS313_R0027",
+          "split": "train",
+          "script_group": "native",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.9799,
+          "folded_wer": 1.0,
+          "folded_cer": 0.9756,
+          "legacy_wer": 0.993,
+          "legacy_cer": 0.9786
+        },
+        {
+          "recording": "J26DS313_R0028",
+          "split": "train",
+          "script_group": "romanized",
+          "detected_language": "si",
+          "raw_wer": 1.0,
+          "raw_cer": 0.8685,
+          "folded_wer": 1.0,
+          "folded_cer": 0.6925,
+          "legacy_wer": 1.1111,
+          "legacy_cer": 0.8306
+        }
+      ]
+    }
+  ],
+  "caveats": [
+    "Scored on 52 min of audio; C1 §6.2 assumes ~1 h eval plus 15-20 h train. Treat every figure as provisional until the corpus grows.",
+    "Folded WER is a floor, not a headline: script_fold is deliberately many-to-one and merges genuinely distinct words.",
+    "Whisper segmentation does not align to gold utt_ids, so scoring is recording-level concatenation, which absorbs segmentation error into WER."
+  ]
+}

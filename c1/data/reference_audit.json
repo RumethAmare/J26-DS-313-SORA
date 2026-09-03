@@ -1,0 +1,473 @@
+{
+  "thresholds": {
+    "min_words_per_sec": 1.2,
+    "max_timeline_gap": 0.55
+  },
+  "n_recordings": 27,
+  "n_flagged": 2,
+  "recommend_exclude_from_asr_scoring": [
+    "J26DS313_R0005",
+    "J26DS313_R0008"
+  ],
+  "recommend_relabel_before_lid": [],
+  "per_recording": [
+    {
+      "recording": "J26DS313_R0002",
+      "duration_s": 66.8,
+      "n_words": 114,
+      "words_per_sec": 1.71,
+      "timeline_gap": 0.485,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 67,
+        "SI": 47
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0003",
+      "duration_s": 45.3,
+      "n_words": 70,
+      "words_per_sec": 1.54,
+      "timeline_gap": 0.367,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 29,
+        "SI": 41
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0004",
+      "duration_s": 41.1,
+      "n_words": 75,
+      "words_per_sec": 1.82,
+      "timeline_gap": 0.317,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "SI": 66,
+        "EN": 9
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0005",
+      "duration_s": 53.6,
+      "n_words": 83,
+      "words_per_sec": 1.55,
+      "timeline_gap": 0.566,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "SI": 56,
+        "EN": 27
+      },
+      "issues": [
+        "timeline-gap: 57% of audio uncovered"
+      ]
+    },
+    {
+      "recording": "J26DS313_R0006",
+      "duration_s": 86.0,
+      "n_words": 108,
+      "words_per_sec": 1.26,
+      "timeline_gap": 0.501,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "SI": 75,
+        "EN": 33
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0007",
+      "duration_s": 59.8,
+      "n_words": 101,
+      "words_per_sec": 1.69,
+      "timeline_gap": 0.306,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 22,
+        "SI": 77,
+        "OTHER": 2
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0008",
+      "duration_s": 62.5,
+      "n_words": 22,
+      "words_per_sec": 0.35,
+      "timeline_gap": 0.56,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "SI": 18,
+        "EN": 4
+      },
+      "issues": [
+        "sparse-reference: 0.35 words/s",
+        "timeline-gap: 56% of audio uncovered"
+      ]
+    },
+    {
+      "recording": "J26DS313_R0009",
+      "duration_s": 42.9,
+      "n_words": 67,
+      "words_per_sec": 1.56,
+      "timeline_gap": 0.524,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 14,
+        "SI": 53
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0010",
+      "duration_s": 40.4,
+      "n_words": 62,
+      "words_per_sec": 1.54,
+      "timeline_gap": 0.52,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "SI": 44,
+        "EN": 18
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0011",
+      "duration_s": 99.2,
+      "n_words": 211,
+      "words_per_sec": 2.13,
+      "timeline_gap": 0.277,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 79,
+        "SI": 132
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0012",
+      "duration_s": 107.1,
+      "n_words": 202,
+      "words_per_sec": 1.89,
+      "timeline_gap": 0.288,
+      "declared_languages": [
+        "EN",
+        "OTHER",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 117,
+        "SI": 84,
+        "OTHER": 1
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0013",
+      "duration_s": 96.9,
+      "n_words": 189,
+      "words_per_sec": 1.95,
+      "timeline_gap": 0.301,
+      "declared_languages": [
+        "EN",
+        "OTHER",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 102,
+        "SI": 86,
+        "OTHER": 1
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0014",
+      "duration_s": 90.9,
+      "n_words": 177,
+      "words_per_sec": 1.95,
+      "timeline_gap": 0.291,
+      "declared_languages": [
+        "EN",
+        "OTHER",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 59,
+        "SI": 112,
+        "OTHER": 6
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0015",
+      "duration_s": 150.5,
+      "n_words": 278,
+      "words_per_sec": 1.85,
+      "timeline_gap": 0.262,
+      "declared_languages": [
+        "EN",
+        "OTHER",
+        "SI"
+      ],
+      "label_counts": {
+        "SI": 177,
+        "EN": 96,
+        "OTHER": 5
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "duration_s": 110.6,
+      "n_words": 238,
+      "words_per_sec": 2.15,
+      "timeline_gap": 0.309,
+      "declared_languages": [
+        "EN",
+        "OTHER",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 80,
+        "SI": 150,
+        "OTHER": 8
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0017",
+      "duration_s": 151.1,
+      "n_words": 251,
+      "words_per_sec": 1.66,
+      "timeline_gap": 0.396,
+      "declared_languages": [
+        "EN",
+        "OTHER"
+      ],
+      "label_counts": {
+        "EN": 237,
+        "OTHER": 14
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "duration_s": 156.4,
+      "n_words": 260,
+      "words_per_sec": 1.66,
+      "timeline_gap": 0.356,
+      "declared_languages": [
+        "EN",
+        "OTHER",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 152,
+        "SI": 95,
+        "OTHER": 13
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "duration_s": 169.6,
+      "n_words": 398,
+      "words_per_sec": 2.35,
+      "timeline_gap": 0.192,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 224,
+        "SI": 174
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0020",
+      "duration_s": 161.7,
+      "n_words": 335,
+      "words_per_sec": 2.07,
+      "timeline_gap": 0.297,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 162,
+        "SI": 173
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0021",
+      "duration_s": 204.1,
+      "n_words": 355,
+      "words_per_sec": 1.74,
+      "timeline_gap": 0.318,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 132,
+        "SI": 223
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0022",
+      "duration_s": 186.6,
+      "n_words": 291,
+      "words_per_sec": 1.56,
+      "timeline_gap": 0.375,
+      "declared_languages": [
+        "EN",
+        "OTHER",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 107,
+        "SI": 173,
+        "OTHER": 11
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0023",
+      "duration_s": 141.7,
+      "n_words": 215,
+      "words_per_sec": 1.52,
+      "timeline_gap": 0.399,
+      "declared_languages": [
+        "EN",
+        "OTHER",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 64,
+        "SI": 138,
+        "OTHER": 13
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0024",
+      "duration_s": 150.6,
+      "n_words": 249,
+      "words_per_sec": 1.65,
+      "timeline_gap": 0.304,
+      "declared_languages": [
+        "EN",
+        "OTHER",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 114,
+        "SI": 123,
+        "OTHER": 12
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0025",
+      "duration_s": 223.0,
+      "n_words": 416,
+      "words_per_sec": 1.87,
+      "timeline_gap": 0.303,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 195,
+        "SI": 221
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0026",
+      "duration_s": 127.4,
+      "n_words": 259,
+      "words_per_sec": 2.03,
+      "timeline_gap": 0.317,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 118,
+        "SI": 141
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0027",
+      "duration_s": 266.1,
+      "n_words": 711,
+      "words_per_sec": 2.67,
+      "timeline_gap": 0.406,
+      "declared_languages": [
+        "EN",
+        "OTHER",
+        "SI"
+      ],
+      "label_counts": {
+        "SI": 597,
+        "EN": 108,
+        "OTHER": 6
+      },
+      "issues": []
+    },
+    {
+      "recording": "J26DS313_R0028",
+      "duration_s": 37.6,
+      "n_words": 81,
+      "words_per_sec": 2.15,
+      "timeline_gap": 0.182,
+      "declared_languages": [
+        "EN",
+        "SI"
+      ],
+      "label_counts": {
+        "EN": 19,
+        "SI": 62
+      },
+      "issues": []
+    }
+  ]
+}
