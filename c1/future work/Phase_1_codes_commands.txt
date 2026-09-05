@@ -1,0 +1,45 @@
+All commands run from c1/ using the shared venv:
+
+
+cd /mnt/F/SLIIT/Research/J26-DS-313-SORA/c1
+VP=/mnt/F/SLIIT/Research/SORA_Dataset/.venv/bin/python
+1. collection_pace.py — check where you stand (run this first, no side effects)
+
+
+$VP -m src.collection_pace
+Prints current training-pool hours against the 15h floor / 20h stretch target, days left in Phase 1, and the weekly collection rate needed to hit the deadline. Run this anytime — it just reads data/manifest.csv, changes nothing.
+
+2. preprocess.py — slice ASR training clips
+
+
+$VP -m src.preprocess
+Reads every train-split recording, excludes R0005/R0008 automatically (incomplete references), VAD-trims each utterance, and writes clips to data/asr_clips/ + data/asr_clips_manifest.csv — the file finetune_whisper.py will consume in Phase 2. Re-run it anytime new recordings get added to the corpus; it overwrites the manifest each time, so there's no need to clean up manually first.
+
+Flags: --include-flagged (also slice R0005/R0008, once re-annotated), --denoise (run noise reduction per clip), --no-vad (skip trimming, debug only).
+
+3. lid_features.py — inspect the CRF's feature set
+
+
+$VP -m src.lid_features --selftest
+There's no model to train yet (that's Phase 2's train_lid_crf.py), so right now this is a diagnostic: it prints the feature dict for a few real tokens so you can see what the CRF will actually see — script flags, English-frequency score, n-grams. Worth running if you're curious what "features" means concretely, or after editing the feature set to sanity-check nothing crashes.
+
+4. assemble_tokens.py — verify the merge logic
+
+
+$VP -m src.assemble_tokens --selftest
+Also nothing to assemble yet in production (needs real ASR + CRF output, Phase 2). The selftest runs the merge+switch-derivation logic against all 27 recordings' real gold data and checks it reproduces the known 97.6% switch-agreement rate. Re-run this after any edit to assemble_tokens.py — a rate that drifts from ~97.6% means the derivation logic broke.
+
+5. fetch_youtube_audio.py — only if you're sourcing supplementary audio
+
+
+$VP -m src.fetch_youtube_audio --url "https://youtube.com/watch?v=..."
+Downloads, canonicalizes to 16kHz/mono/16-bit, and stages the file + a metadata JSON in data/youtube_staging/ — it does not touch SORA_Dataset. To actually add a staged file to the corpus, run it through the team's existing 7-step workflow yourself. Repeat --url for multiple videos in one run.
+
+Quick reference:
+
+Script	Run when
+collection_pace.py	Anytime, check pace
+preprocess.py	After new recordings are validated
+lid_features.py --selftest	Curiosity / after editing features
+assemble_tokens.py --selftest	After editing the merge logic
+fetch_youtube_audio.py	Sourcing supplementary audio

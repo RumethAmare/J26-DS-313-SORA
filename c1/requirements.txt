@@ -20,7 +20,11 @@ scikit-learn
 wordfreq
 
 # ── Stage A — preprocessing (Phase 1) ─────────────────────────
-silero-vad
+# webrtcvad, not silero-vad: silero-vad's PyPI package requires torch and
+# torchaudio UNCONDITIONALLY (confirmed against its PyPI metadata), which
+# defeats the point of a lightweight Phase-1 VAD -- torch is deliberately
+# deferred to Phase 2 below. webrtcvad is a plain C-extension frame
+# classifier, no ML framework required.
 webrtcvad
 noisereduce
 librosa
