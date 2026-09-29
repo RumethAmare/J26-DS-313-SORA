@@ -1,0 +1,1528 @@
+{
+  "source": "synthetic-test",
+  "recordings": [
+    "SYN_T0001",
+    "SYN_T0002",
+    "SYN_T0003",
+    "SYN_T0004",
+    "SYN_T0005",
+    "SYN_T0006",
+    "SYN_T0007",
+    "SYN_T0008",
+    "SYN_T0009",
+    "SYN_T0010",
+    "SYN_T0011",
+    "SYN_T0012",
+    "SYN_T0013",
+    "SYN_T0014",
+    "SYN_T0015",
+    "SYN_T0016",
+    "SYN_T0017",
+    "SYN_T0018",
+    "SYN_T0019",
+    "SYN_T0020",
+    "SYN_T0021",
+    "SYN_T0022",
+    "SYN_T0023",
+    "SYN_T0024",
+    "SYN_T0025",
+    "SYN_T0026",
+    "SYN_T0027",
+    "SYN_T0028",
+    "SYN_T0029",
+    "SYN_T0030",
+    "SYN_T0031",
+    "SYN_T0032",
+    "SYN_T0033",
+    "SYN_T0034",
+    "SYN_T0035",
+    "SYN_T0036",
+    "SYN_T0037",
+    "SYN_T0038",
+    "SYN_T0039",
+    "SYN_T0040",
+    "SYN_T0041",
+    "SYN_T0042",
+    "SYN_T0043",
+    "SYN_T0044",
+    "SYN_T0045",
+    "SYN_T0046",
+    "SYN_T0047",
+    "SYN_T0048",
+    "SYN_T0049",
+    "SYN_T0050",
+    "SYN_T0051",
+    "SYN_T0052",
+    "SYN_T0053",
+    "SYN_T0054",
+    "SYN_T0055",
+    "SYN_T0056",
+    "SYN_T0057",
+    "SYN_T0058",
+    "SYN_T0059",
+    "SYN_T0060"
+  ],
+  "results": [
+    {
+      "system": "exact",
+      "threshold": 0.775,
+      "cross_script_accuracy": 0.0,
+      "entities": 158,
+      "pairwise": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "failures": [
+        {
+          "recording": "SYN_T0001",
+          "entity": "SYN_T0001_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0001",
+          "entity": "SYN_T0001_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0002",
+          "entity": "SYN_T0002_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0002",
+          "entity": "SYN_T0002_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0003",
+          "entity": "SYN_T0003_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0003",
+          "entity": "SYN_T0003_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0004",
+          "entity": "SYN_T0004_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0004",
+          "entity": "SYN_T0004_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0005",
+          "entity": "SYN_T0005_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0005",
+          "entity": "SYN_T0005_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0005",
+          "entity": "SYN_T0005_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0006",
+          "entity": "SYN_T0006_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0006",
+          "entity": "SYN_T0006_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0007",
+          "entity": "SYN_T0007_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0007",
+          "entity": "SYN_T0007_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0007",
+          "entity": "SYN_T0007_e005",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0008",
+          "entity": "SYN_T0008_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0008",
+          "entity": "SYN_T0008_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0008",
+          "entity": "SYN_T0008_e009",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0009",
+          "entity": "SYN_T0009_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0009",
+          "entity": "SYN_T0009_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0009",
+          "entity": "SYN_T0009_e006",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0010",
+          "entity": "SYN_T0010_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0010",
+          "entity": "SYN_T0010_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0010",
+          "entity": "SYN_T0010_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0011",
+          "entity": "SYN_T0011_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0011",
+          "entity": "SYN_T0011_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0012",
+          "entity": "SYN_T0012_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0012",
+          "entity": "SYN_T0012_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0013",
+          "entity": "SYN_T0013_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0013",
+          "entity": "SYN_T0013_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0013",
+          "entity": "SYN_T0013_e009",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0014",
+          "entity": "SYN_T0014_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0014",
+          "entity": "SYN_T0014_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0014",
+          "entity": "SYN_T0014_e008",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0015",
+          "entity": "SYN_T0015_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0015",
+          "entity": "SYN_T0015_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0015",
+          "entity": "SYN_T0015_e009",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0016",
+          "entity": "SYN_T0016_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0016",
+          "entity": "SYN_T0016_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0016",
+          "entity": "SYN_T0016_e006",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0017",
+          "entity": "SYN_T0017_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0017",
+          "entity": "SYN_T0017_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0017",
+          "entity": "SYN_T0017_e005",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0018",
+          "entity": "SYN_T0018_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0018",
+          "entity": "SYN_T0018_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0018",
+          "entity": "SYN_T0018_e004",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0019",
+          "entity": "SYN_T0019_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0019",
+          "entity": "SYN_T0019_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0019",
+          "entity": "SYN_T0019_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0020",
+          "entity": "SYN_T0020_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0020",
+          "entity": "SYN_T0020_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0021",
+          "entity": "SYN_T0021_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0021",
+          "entity": "SYN_T0021_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0022",
+          "entity": "SYN_T0022_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0022",
+          "entity": "SYN_T0022_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0023",
+          "entity": "SYN_T0023_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0023",
+          "entity": "SYN_T0023_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0023",
+          "entity": "SYN_T0023_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0024",
+          "entity": "SYN_T0024_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0024",
+          "entity": "SYN_T0024_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0024",
+          "entity": "SYN_T0024_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0025",
+          "entity": "SYN_T0025_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0025",
+          "entity": "SYN_T0025_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0025",
+          "entity": "SYN_T0025_e004",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0026",
+          "entity": "SYN_T0026_e002",
+          "clusters": 2,
+          "merged_with": 3
+        },
+        {
+          "recording": "SYN_T0026",
+          "entity": "SYN_T0026_e003",
+          "clusters": 3,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0026",
+          "entity": "SYN_T0026_e006",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0027",
+          "entity": "SYN_T0027_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0027",
+          "entity": "SYN_T0027_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0027",
+          "entity": "SYN_T0027_e006",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0028",
+          "entity": "SYN_T0028_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0028",
+          "entity": "SYN_T0028_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0029",
+          "entity": "SYN_T0029_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0029",
+          "entity": "SYN_T0029_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0030",
+          "entity": "SYN_T0030_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0030",
+          "entity": "SYN_T0030_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0030",
+          "entity": "SYN_T0030_e005",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0031",
+          "entity": "SYN_T0031_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0031",
+          "entity": "SYN_T0031_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0031",
+          "entity": "SYN_T0031_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0032",
+          "entity": "SYN_T0032_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0032",
+          "entity": "SYN_T0032_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0033",
+          "entity": "SYN_T0033_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0033",
+          "entity": "SYN_T0033_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0034",
+          "entity": "SYN_T0034_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0034",
+          "entity": "SYN_T0034_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0035",
+          "entity": "SYN_T0035_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0035",
+          "entity": "SYN_T0035_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0035",
+          "entity": "SYN_T0035_e009",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0036",
+          "entity": "SYN_T0036_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0036",
+          "entity": "SYN_T0036_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0036",
+          "entity": "SYN_T0036_e004",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0037",
+          "entity": "SYN_T0037_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0037",
+          "entity": "SYN_T0037_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0037",
+          "entity": "SYN_T0037_e010",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0038",
+          "entity": "SYN_T0038_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0038",
+          "entity": "SYN_T0038_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0038",
+          "entity": "SYN_T0038_e004",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0039",
+          "entity": "SYN_T0039_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0039",
+          "entity": "SYN_T0039_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0040",
+          "entity": "SYN_T0040_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0040",
+          "entity": "SYN_T0040_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0040",
+          "entity": "SYN_T0040_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0041",
+          "entity": "SYN_T0041_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0041",
+          "entity": "SYN_T0041_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0041",
+          "entity": "SYN_T0041_e004",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0042",
+          "entity": "SYN_T0042_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0042",
+          "entity": "SYN_T0042_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0042",
+          "entity": "SYN_T0042_e004",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0043",
+          "entity": "SYN_T0043_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0043",
+          "entity": "SYN_T0043_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0043",
+          "entity": "SYN_T0043_e005",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0044",
+          "entity": "SYN_T0044_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0044",
+          "entity": "SYN_T0044_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0045",
+          "entity": "SYN_T0045_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0045",
+          "entity": "SYN_T0045_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0045",
+          "entity": "SYN_T0045_e006",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0046",
+          "entity": "SYN_T0046_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0046",
+          "entity": "SYN_T0046_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0047",
+          "entity": "SYN_T0047_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0047",
+          "entity": "SYN_T0047_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0047",
+          "entity": "SYN_T0047_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0048",
+          "entity": "SYN_T0048_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0048",
+          "entity": "SYN_T0048_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0049",
+          "entity": "SYN_T0049_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0049",
+          "entity": "SYN_T0049_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0049",
+          "entity": "SYN_T0049_e006",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0050",
+          "entity": "SYN_T0050_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0050",
+          "entity": "SYN_T0050_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0051",
+          "entity": "SYN_T0051_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0051",
+          "entity": "SYN_T0051_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0051",
+          "entity": "SYN_T0051_e005",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0052",
+          "entity": "SYN_T0052_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0052",
+          "entity": "SYN_T0052_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0052",
+          "entity": "SYN_T0052_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0053",
+          "entity": "SYN_T0053_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0053",
+          "entity": "SYN_T0053_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0053",
+          "entity": "SYN_T0053_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0054",
+          "entity": "SYN_T0054_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0054",
+          "entity": "SYN_T0054_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0054",
+          "entity": "SYN_T0054_e008",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0055",
+          "entity": "SYN_T0055_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0055",
+          "entity": "SYN_T0055_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0055",
+          "entity": "SYN_T0055_e009",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0056",
+          "entity": "SYN_T0056_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0056",
+          "entity": "SYN_T0056_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0056",
+          "entity": "SYN_T0056_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0057",
+          "entity": "SYN_T0057_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0057",
+          "entity": "SYN_T0057_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0058",
+          "entity": "SYN_T0058_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0058",
+          "entity": "SYN_T0058_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0059",
+          "entity": "SYN_T0059_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0059",
+          "entity": "SYN_T0059_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0059",
+          "entity": "SYN_T0059_e005",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0060",
+          "entity": "SYN_T0060_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0060",
+          "entity": "SYN_T0060_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0060",
+          "entity": "SYN_T0060_e004",
+          "clusters": 2,
+          "merged_with": 0
+        }
+      ]
+    },
+    {
+      "system": "translit-exact",
+      "threshold": 0.775,
+      "cross_script_accuracy": 0.6013,
+      "entities": 158,
+      "pairwise": {
+        "precision": 0.9816,
+        "recall": 0.7051,
+        "f1": 0.8207
+      },
+      "failures": [
+        {
+          "recording": "SYN_T0001",
+          "entity": "SYN_T0001_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0001",
+          "entity": "SYN_T0001_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0002",
+          "entity": "SYN_T0002_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0003",
+          "entity": "SYN_T0003_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0004",
+          "entity": "SYN_T0004_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0004",
+          "entity": "SYN_T0004_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0005",
+          "entity": "SYN_T0005_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0005",
+          "entity": "SYN_T0005_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0007",
+          "entity": "SYN_T0007_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0008",
+          "entity": "SYN_T0008_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0008",
+          "entity": "SYN_T0008_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0009",
+          "entity": "SYN_T0009_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0009",
+          "entity": "SYN_T0009_e006",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0010",
+          "entity": "SYN_T0010_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0011",
+          "entity": "SYN_T0011_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0012",
+          "entity": "SYN_T0012_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0015",
+          "entity": "SYN_T0015_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0016",
+          "entity": "SYN_T0016_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0017",
+          "entity": "SYN_T0017_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0018",
+          "entity": "SYN_T0018_e004",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0021",
+          "entity": "SYN_T0021_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0023",
+          "entity": "SYN_T0023_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0024",
+          "entity": "SYN_T0024_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0024",
+          "entity": "SYN_T0024_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0026",
+          "entity": "SYN_T0026_e002",
+          "clusters": 1,
+          "merged_with": 3
+        },
+        {
+          "recording": "SYN_T0026",
+          "entity": "SYN_T0026_e003",
+          "clusters": 2,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0026",
+          "entity": "SYN_T0026_e006",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0027",
+          "entity": "SYN_T0027_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0028",
+          "entity": "SYN_T0028_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0029",
+          "entity": "SYN_T0029_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0030",
+          "entity": "SYN_T0030_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0030",
+          "entity": "SYN_T0030_e005",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0031",
+          "entity": "SYN_T0031_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0032",
+          "entity": "SYN_T0032_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0033",
+          "entity": "SYN_T0033_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0034",
+          "entity": "SYN_T0034_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0036",
+          "entity": "SYN_T0036_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0038",
+          "entity": "SYN_T0038_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0038",
+          "entity": "SYN_T0038_e004",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0040",
+          "entity": "SYN_T0040_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0041",
+          "entity": "SYN_T0041_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0042",
+          "entity": "SYN_T0042_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0042",
+          "entity": "SYN_T0042_e004",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0043",
+          "entity": "SYN_T0043_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0044",
+          "entity": "SYN_T0044_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0046",
+          "entity": "SYN_T0046_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0047",
+          "entity": "SYN_T0047_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0047",
+          "entity": "SYN_T0047_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0048",
+          "entity": "SYN_T0048_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0049",
+          "entity": "SYN_T0049_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0051",
+          "entity": "SYN_T0051_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0052",
+          "entity": "SYN_T0052_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0053",
+          "entity": "SYN_T0053_e007",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0054",
+          "entity": "SYN_T0054_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0054",
+          "entity": "SYN_T0054_e003",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0055",
+          "entity": "SYN_T0055_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0056",
+          "entity": "SYN_T0056_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0056",
+          "entity": "SYN_T0056_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0057",
+          "entity": "SYN_T0057_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0058",
+          "entity": "SYN_T0058_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0059",
+          "entity": "SYN_T0059_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0059",
+          "entity": "SYN_T0059_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "SYN_T0060",
+          "entity": "SYN_T0060_e003",
+          "clusters": 2,
+          "merged_with": 0
+        }
+      ]
+    },
+    {
+      "system": "resolver",
+      "threshold": 0.775,
+      "cross_script_accuracy": 0.8987,
+      "entities": 158,
+      "pairwise": {
+        "precision": 0.9005,
+        "recall": 0.9924,
+        "f1": 0.9442
+      },
+      "failures": [
+        {
+          "recording": "SYN_T0006",
+          "entity": "SYN_T0006_e002",
+          "clusters": 1,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0006",
+          "entity": "SYN_T0006_e003",
+          "clusters": 1,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0009",
+          "entity": "SYN_T0009_e003",
+          "clusters": 2,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0009",
+          "entity": "SYN_T0009_e006",
+          "clusters": 1,
+          "merged_with": 3
+        },
+        {
+          "recording": "SYN_T0015",
+          "entity": "SYN_T0015_e003",
+          "clusters": 2,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0015",
+          "entity": "SYN_T0015_e009",
+          "clusters": 1,
+          "merged_with": 3
+        },
+        {
+          "recording": "SYN_T0022",
+          "entity": "SYN_T0022_e002",
+          "clusters": 1,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0022",
+          "entity": "SYN_T0022_e003",
+          "clusters": 1,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0026",
+          "entity": "SYN_T0026_e002",
+          "clusters": 1,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0026",
+          "entity": "SYN_T0026_e003",
+          "clusters": 1,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0050",
+          "entity": "SYN_T0050_e002",
+          "clusters": 1,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0050",
+          "entity": "SYN_T0050_e003",
+          "clusters": 1,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0052",
+          "entity": "SYN_T0052_e002",
+          "clusters": 1,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0052",
+          "entity": "SYN_T0052_e007",
+          "clusters": 1,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0053",
+          "entity": "SYN_T0053_e002",
+          "clusters": 1,
+          "merged_with": 4
+        },
+        {
+          "recording": "SYN_T0053",
+          "entity": "SYN_T0053_e003",
+          "clusters": 1,
+          "merged_with": 4
+        }
+      ]
+    }
+  ]
+}
