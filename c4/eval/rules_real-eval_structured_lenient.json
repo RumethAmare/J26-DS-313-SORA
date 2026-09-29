@@ -1,0 +1,332 @@
+{
+  "config": {
+    "system": "rules",
+    "source": "real-eval",
+    "labels": "structured",
+    "matching": "strict (gold trailing punctuation stripped)",
+    "recordings": [
+      "J26DS313_R0011",
+      "J26DS313_R0019",
+      "J26DS313_R0021",
+      "J26DS313_R0022",
+      "J26DS313_R0023"
+    ],
+    "commit": "ccb771d",
+    "date": "2026-09-29"
+  },
+  "micro": {
+    "precision": 0.7156,
+    "recall": 0.8764,
+    "f1": 0.7879,
+    "tp": 78,
+    "fp": 31,
+    "fn": 11,
+    "support": 89
+  },
+  "macro": {
+    "precision": 0.8485,
+    "recall": 0.9135,
+    "f1": 0.8752
+  },
+  "per_label": {
+    "NIC": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 15,
+      "fp": 0,
+      "fn": 0,
+      "support": 15
+    },
+    "PHONE": {
+      "precision": 0.9355,
+      "recall": 0.9667,
+      "f1": 0.9508,
+      "tp": 29,
+      "fp": 2,
+      "fn": 1,
+      "support": 30
+    },
+    "ACCOUNT": {
+      "precision": 0.4583,
+      "recall": 0.6875,
+      "f1": 0.55,
+      "tp": 22,
+      "fp": 26,
+      "fn": 10,
+      "support": 32
+    },
+    "DOB": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 12,
+      "fp": 0,
+      "fn": 0,
+      "support": 12
+    },
+    "EMAIL": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 3,
+      "fn": 0,
+      "support": 0
+    }
+  },
+  "per_script": {
+    "LATIN": {
+      "precision": 0.7073,
+      "recall": 0.8657,
+      "f1": 0.7785,
+      "tp": 58,
+      "fp": 24,
+      "fn": 9,
+      "support": 67
+    },
+    "SINHALA": {
+      "precision": 0.7407,
+      "recall": 0.9091,
+      "f1": 0.8163,
+      "tp": 20,
+      "fp": 7,
+      "fn": 2,
+      "support": 22
+    }
+  },
+  "per_doc_kind": {
+    "clean_en": {
+      "precision": 0.7576,
+      "recall": 0.8621,
+      "f1": 0.8065,
+      "tp": 25,
+      "fp": 8,
+      "fn": 4,
+      "support": 29
+    },
+    "clean_si": {
+      "precision": 0.7879,
+      "recall": 0.8966,
+      "f1": 0.8387,
+      "tp": 26,
+      "fp": 7,
+      "fn": 3,
+      "support": 29
+    },
+    "summary": {
+      "precision": 0.3636,
+      "recall": 0.8,
+      "f1": 0.5,
+      "tp": 4,
+      "fp": 7,
+      "fn": 1,
+      "support": 5
+    },
+    "transcript": {
+      "precision": 0.7188,
+      "recall": 0.8846,
+      "f1": 0.7931,
+      "tp": 23,
+      "fp": 9,
+      "fn": 3,
+      "support": 26
+    }
+  },
+  "errors": {
+    "label": [
+      {
+        "doc_id": "J26DS313_R0019_c2_u030_en_v1",
+        "label": "PHONE",
+        "gold": "9999999999",
+        "predicted": [
+          "ACCOUNT:9999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0021_transcript_u016_v1",
+        "label": "ACCOUNT",
+        "gold": "xxxxxxx.x99@xxxxx.xxx",
+        "predicted": [
+          "EMAIL:xxxxxxx.x99@xxxxx.xxx"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0021_c2_u016_en_v1",
+        "label": "ACCOUNT",
+        "gold": "xxxxxxx.x99@xxxxx.xxx",
+        "predicted": [
+          "EMAIL:xxxxxxx.x99@xxxxx.xxx"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0021_c2_u016_si_v1",
+        "label": "ACCOUNT",
+        "gold": "xxxxxxx.x99@xxxxx.xxx",
+        "predicted": [
+          "EMAIL:xxxxxxx.x99@xxxxx.xxx"
+        ]
+      }
+    ],
+    "boundary": [
+      {
+        "doc_id": "J26DS313_R0023_transcript_u018_v1",
+        "label": "ACCOUNT",
+        "gold": "xxx 9999 xxxxxxxx 99999",
+        "predicted": [
+          "ACCOUNT:xxx 9999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_u018_en_v1",
+        "label": "ACCOUNT",
+        "gold": "xxx 9999 xxxxxxxx 99999",
+        "predicted": [
+          "ACCOUNT:xxx 9999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_u018_si_v1",
+        "label": "ACCOUNT",
+        "gold": "xxx 9999 xxxxxxxx 99999",
+        "predicted": [
+          "ACCOUNT:xxx 9999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0023_transcript_u019_v1",
+        "label": "ACCOUNT",
+        "gold": "xxx 9999 xxxxxxxx 99999",
+        "predicted": [
+          "ACCOUNT:xxx 9999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_u019_en_v1",
+        "label": "ACCOUNT",
+        "gold": "xxx 9999 xxxxxxxx 99999",
+        "predicted": [
+          "ACCOUNT:xxx 9999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_u019_si_v1",
+        "label": "ACCOUNT",
+        "gold": "xxx 9999 xxxxxxxx 99999",
+        "predicted": [
+          "ACCOUNT:xxx 9999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "xxx 9999 xxxxxxxx 99999",
+        "predicted": [
+          "ACCOUNT:xxx 9999"
+        ]
+      }
+    ],
+    "spurious": [
+      {
+        "doc_id": "J26DS313_R0019_transcript_u030_v1",
+        "label": "ACCOUNT",
+        "predicted": "x x x x x 9 9 9 9 9 9 9 9 9"
+      },
+      {
+        "doc_id": "J26DS313_R0019_c2_u030_en_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-xxx-9999-99999"
+      },
+      {
+        "doc_id": "J26DS313_R0019_c2_u030_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-xxx-9999-99999"
+      },
+      {
+        "doc_id": "J26DS313_R0021_transcript_u030_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0021_transcript_u030_v1",
+        "label": "ACCOUNT",
+        "predicted": "xx 99 999"
+      },
+      {
+        "doc_id": "J26DS313_R0021_c2_u030_en_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-9999-xx-99-999"
+      },
+      {
+        "doc_id": "J26DS313_R0021_c2_u030_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-9999-xx-99-999"
+      },
+      {
+        "doc_id": "J26DS313_R0021_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-9999-xx-99-999"
+      },
+      {
+        "doc_id": "J26DS313_R0022_transcript_u018_v1",
+        "label": "PHONE",
+        "predicted": "999 999 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0022_c2_summary_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xx9999xx99999"
+      },
+      {
+        "doc_id": "J26DS313_R0023_transcript_u011_v1",
+        "label": "ACCOUNT",
+        "predicted": "x 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0023_transcript_u016_v1",
+        "label": "ACCOUNT",
+        "predicted": "x 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_u011_en_v1",
+        "label": "ACCOUNT",
+        "predicted": "x 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_u011_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "x 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_u016_en_v1",
+        "label": "ACCOUNT",
+        "predicted": "x 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_u016_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "x 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "predicted": "x 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_summary_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "x 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_summary_si_v1",
+        "label": "PHONE",
+        "predicted": "99999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_summary_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx 9999"
+      }
+    ]
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "config": {
+    "system": "rules",
+    "source": "synthetic-test",
+    "labels": "structured",
+    "matching": "strict",
+    "recordings": [
+      "SYN_T0001",
+      "SYN_T0002",
+      "SYN_T0003",
+      "SYN_T0004",
+      "SYN_T0005",
+      "SYN_T0006",
+      "SYN_T0007",
+      "SYN_T0008",
+      "SYN_T0009",
+      "SYN_T0010",
+      "SYN_T0011",
+      "SYN_T0012",
+      "SYN_T0013",
+      "SYN_T0014",
+      "SYN_T0015",
+      "SYN_T0016",
+      "SYN_T0017",
+      "SYN_T0018",
+      "SYN_T0019",
+      "SYN_T0020",
+      "SYN_T0021",
+      "SYN_T0022",
+      "SYN_T0023",
+      "SYN_T0024",
+      "SYN_T0025",
+      "SYN_T0026",
+      "SYN_T0027",
+      "SYN_T0028",
+      "SYN_T0029",
+      "SYN_T0030",
+      "SYN_T0031",
+      "SYN_T0032",
+      "SYN_T0033",
+      "SYN_T0034",
+      "SYN_T0035",
+      "SYN_T0036",
+      "SYN_T0037",
+      "SYN_T0038",
+      "SYN_T0039",
+      "SYN_T0040",
+      "SYN_T0041",
+      "SYN_T0042",
+      "SYN_T0043",
+      "SYN_T0044",
+      "SYN_T0045",
+      "SYN_T0046",
+      "SYN_T0047",
+      "SYN_T0048",
+      "SYN_T0049",
+      "SYN_T0050",
+      "SYN_T0051",
+      "SYN_T0052",
+      "SYN_T0053",
+      "SYN_T0054",
+      "SYN_T0055",
+      "SYN_T0056",
+      "SYN_T0057",
+      "SYN_T0058",
+      "SYN_T0059",
+      "SYN_T0060"
+    ],
+    "commit": "ccb771d",
+    "date": "2026-09-29"
+  },
+  "micro": {
+    "precision": 0.9829,
+    "recall": 0.9842,
+    "f1": 0.9836,
+    "tp": 749,
+    "fp": 13,
+    "fn": 12,
+    "support": 761
+  },
+  "macro": {
+    "precision": 0.9805,
+    "recall": 0.9832,
+    "f1": 0.9818
+  },
+  "per_label": {
+    "NIC": {
+      "precision": 0.9655,
+      "recall": 1.0,
+      "f1": 0.9825,
+      "tp": 140,
+      "fp": 5,
+      "fn": 0,
+      "support": 140
+    },
+    "PHONE": {
+      "precision": 1.0,
+      "recall": 0.9864,
+      "f1": 0.9932,
+      "tp": 218,
+      "fp": 0,
+      "fn": 3,
+      "support": 221
+    },
+    "ACCOUNT": {
+      "precision": 0.937,
+      "recall": 0.9297,
+      "f1": 0.9333,
+      "tp": 119,
+      "fp": 8,
+      "fn": 9,
+      "support": 128
+    },
+    "DOB": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 136,
+      "fp": 0,
+      "fn": 0,
+      "support": 136
+    },
+    "EMAIL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 136,
+      "fp": 0,
+      "fn": 0,
+      "support": 136
+    }
+  },
+  "per_script": {
+    "LATIN": {
+      "precision": 0.9773,
+      "recall": 0.9792,
+      "f1": 0.9782,
+      "tp": 517,
+      "fp": 12,
+      "fn": 11,
+      "support": 528
+    },
+    "SINHALA": {
+      "precision": 0.9957,
+      "recall": 0.9957,
+      "f1": 0.9957,
+      "tp": 232,
+      "fp": 1,
+      "fn": 1,
+      "support": 233
+    }
+  },
+  "per_doc_kind": {
+    "clean_en": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 198,
+      "fp": 0,
+      "fn": 0,
+      "support": 198
+    },
+    "clean_si": {
+      "precision": 0.9949,
+      "recall": 0.9949,
+      "f1": 0.9949,
+      "tp": 197,
+      "fp": 1,
+      "fn": 1,
+      "support": 198
+    },
+    "summary": {
+      "precision": 0.975,
+      "recall": 0.9341,
+      "f1": 0.9541,
+      "tp": 156,
+      "fp": 4,
+      "fn": 11,
+      "support": 167
+    },
+    "transcript": {
+      "precision": 0.9612,
+      "recall": 1.0,
+      "f1": 0.9802,
+      "tp": 198,
+      "fp": 8,
+      "fn": 0,
+      "support": 198
+    }
+  },
+  "errors": {
+    "missed": [
+      {
+        "doc_id": "SYN_T0005_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "120031952214",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0008_c2_summary_en_v1",
+        "label": "PHONE",
+        "gold": "0770749936",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0018_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "116003803155",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0022_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "115151990915",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0025_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "78950862601139",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0029_c2_summary_en_v1",
+        "label": "PHONE",
+        "gold": "0705218939",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0039_c2_summary_en_v1",
+        "label": "PHONE",
+        "gold": "0715903523",
+        "predicted": []
+      }
+    ],
+    "label": [
+      {
+        "doc_id": "SYN_T0006_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "830367785001",
+        "predicted": [
+          "NIC:830367785001"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0011_c2_u009_si_v1",
+        "label": "ACCOUNT",
+        "gold": "883614234894",
+        "predicted": [
+          "NIC:883614234894"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0020_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "36745605977484",
+        "predicted": [
+          "NIC:36745605977484"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0032_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "495336988269",
+        "predicted": [
+          "NIC:495336988269"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0048_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "618947871933",
+        "predicted": [
+          "NIC:618947871933"
+        ]
+      }
+    ],
+    "spurious": [
+      {
+        "doc_id": "SYN_T0001_transcript_u004_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0005_transcript_u005_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0015_transcript_u003_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0024_transcript_u006_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0032_transcript_u008_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0033_transcript_u005_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0049_transcript_u004_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0051_transcript_u013_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      }
+    ]
+  },
+  "recall_by_noise": {
+    "clean": {
+      "recall": 0.9836,
+      "support": 731
+    },
+    "digit_repeated": {
+      "recall": 1.0,
+      "support": 6
+    },
+    "nic_letter_dropped": {
+      "recall": 1.0,
+      "support": 9
+    },
+    "ordinal_error": {
+      "recall": 1.0,
+      "support": 10
+    },
+    "restatement": {
+      "recall": 1.0,
+      "support": 8
+    }
+  }
+}

@@ -1,0 +1,634 @@
+{
+  "config": {
+    "system": "rules",
+    "source": "real-dev",
+    "labels": "structured",
+    "matching": "strict",
+    "recordings": [
+      "J26DS313_R0002",
+      "J26DS313_R0003",
+      "J26DS313_R0004",
+      "J26DS313_R0005",
+      "J26DS313_R0006",
+      "J26DS313_R0007",
+      "J26DS313_R0008",
+      "J26DS313_R0009",
+      "J26DS313_R0010",
+      "J26DS313_R0012",
+      "J26DS313_R0013",
+      "J26DS313_R0014",
+      "J26DS313_R0015",
+      "J26DS313_R0016",
+      "J26DS313_R0017",
+      "J26DS313_R0018",
+      "J26DS313_R0020",
+      "J26DS313_R0024",
+      "J26DS313_R0025",
+      "J26DS313_R0026",
+      "J26DS313_R0027",
+      "J26DS313_R0028"
+    ],
+    "commit": "ccb771d",
+    "date": "2026-09-29"
+  },
+  "micro": {
+    "precision": 0.7143,
+    "recall": 0.8128,
+    "f1": 0.7604,
+    "tp": 165,
+    "fp": 66,
+    "fn": 38,
+    "support": 203
+  },
+  "macro": {
+    "precision": 0.6477,
+    "recall": 0.8008,
+    "f1": 0.6994
+  },
+  "per_label": {
+    "NIC": {
+      "precision": 0.7959,
+      "recall": 0.9512,
+      "f1": 0.8667,
+      "tp": 39,
+      "fp": 10,
+      "fn": 2,
+      "support": 41
+    },
+    "PHONE": {
+      "precision": 0.8529,
+      "recall": 0.8923,
+      "f1": 0.8722,
+      "tp": 58,
+      "fp": 10,
+      "fn": 7,
+      "support": 65
+    },
+    "ACCOUNT": {
+      "precision": 0.5538,
+      "recall": 0.6667,
+      "f1": 0.605,
+      "tp": 36,
+      "fp": 29,
+      "fn": 18,
+      "support": 54
+    },
+    "DOB": {
+      "precision": 0.7632,
+      "recall": 0.7436,
+      "f1": 0.7532,
+      "tp": 29,
+      "fp": 9,
+      "fn": 10,
+      "support": 39
+    },
+    "EMAIL": {
+      "precision": 0.2727,
+      "recall": 0.75,
+      "f1": 0.4,
+      "tp": 3,
+      "fp": 8,
+      "fn": 1,
+      "support": 4
+    }
+  },
+  "per_script": {
+    "LATIN": {
+      "precision": 0.7176,
+      "recall": 0.8026,
+      "f1": 0.7578,
+      "tp": 122,
+      "fp": 48,
+      "fn": 30,
+      "support": 152
+    },
+    "SINHALA": {
+      "precision": 0.7049,
+      "recall": 0.8431,
+      "f1": 0.7679,
+      "tp": 43,
+      "fp": 18,
+      "fn": 8,
+      "support": 51
+    }
+  },
+  "per_doc_kind": {
+    "clean_en": {
+      "precision": 0.7971,
+      "recall": 0.873,
+      "f1": 0.8333,
+      "tp": 55,
+      "fp": 14,
+      "fn": 8,
+      "support": 63
+    },
+    "clean_si": {
+      "precision": 0.7879,
+      "recall": 0.8254,
+      "f1": 0.8062,
+      "tp": 52,
+      "fp": 14,
+      "fn": 11,
+      "support": 63
+    },
+    "summary": {
+      "precision": 0.3667,
+      "recall": 0.7857,
+      "f1": 0.5,
+      "tp": 11,
+      "fp": 19,
+      "fn": 3,
+      "support": 14
+    },
+    "transcript": {
+      "precision": 0.7121,
+      "recall": 0.746,
+      "f1": 0.7287,
+      "tp": 47,
+      "fp": 19,
+      "fn": 16,
+      "support": 63
+    }
+  },
+  "errors": {
+    "missed": [
+      {
+        "doc_id": "J26DS313_R0005_transcript_u005_v1",
+        "label": "DOB",
+        "gold": "99",
+        "predicted": []
+      },
+      {
+        "doc_id": "J26DS313_R0005_c2_u005_si_v1",
+        "label": "DOB",
+        "gold": "සසසසසසසසසසස",
+        "predicted": []
+      },
+      {
+        "doc_id": "J26DS313_R0005_c2_u007_si_v1",
+        "label": "DOB",
+        "gold": "සසසසසසස සසසසසසසසසසස",
+        "predicted": []
+      },
+      {
+        "doc_id": "J26DS313_R0005_c2_summary_en_v1",
+        "label": "DOB",
+        "gold": "99xx",
+        "predicted": []
+      },
+      {
+        "doc_id": "J26DS313_R0005_c2_summary_en_v1",
+        "label": "DOB",
+        "gold": "99xx",
+        "predicted": []
+      },
+      {
+        "doc_id": "J26DS313_R0008_c2_u002_si_v1",
+        "label": "ACCOUNT",
+        "gold": "999999999999",
+        "predicted": []
+      },
+      {
+        "doc_id": "J26DS313_R0008_transcript_u003_v1",
+        "label": "ACCOUNT",
+        "gold": "9999",
+        "predicted": []
+      },
+      {
+        "doc_id": "J26DS313_R0008_c2_u003_en_v1",
+        "label": "ACCOUNT",
+        "gold": "9999",
+        "predicted": []
+      },
+      {
+        "doc_id": "J26DS313_R0008_c2_u003_si_v1",
+        "label": "ACCOUNT",
+        "gold": "9999",
+        "predicted": []
+      }
+    ],
+    "boundary": [
+      {
+        "doc_id": "J26DS313_R0008_transcript_u002_v1",
+        "label": "ACCOUNT",
+        "gold": "999999999999",
+        "predicted": [
+          "ACCOUNT:999999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0008_c2_u002_en_v1",
+        "label": "ACCOUNT",
+        "gold": "999999999999",
+        "predicted": [
+          "ACCOUNT:999999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0017_c2_u010_si_v1",
+        "label": "DOB",
+        "gold": "9999 සසසසසසසසස 9",
+        "predicted": [
+          "DOB:9999 සසසසසසසසස 9 සසසසසස"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0018_c2_u026_en_v1",
+        "label": "PHONE",
+        "gold": "9999999999",
+        "predicted": [
+          "PHONE:9999999999 xxxxxxxxx 99"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0018_c2_u026_si_v1",
+        "label": "PHONE",
+        "gold": "9999999999",
+        "predicted": [
+          "PHONE:9999999999 සසස‍සසසසස සසස 99"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0018_transcript_u006_v1",
+        "label": "NIC",
+        "gold": "999999999999.",
+        "predicted": [
+          "NIC:999999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0018_transcript_u008_v1",
+        "label": "DOB",
+        "gold": "xxxxxxxxx 99xx, 9999.",
+        "predicted": [
+          "DOB:xxxxxxxxx 99xx, 9999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0018_transcript_u010_v1",
+        "label": "PHONE",
+        "gold": "9999999999.",
+        "predicted": [
+          "PHONE:9999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0018_transcript_u018_v1",
+        "label": "ACCOUNT",
+        "gold": "xxxxx9999/9999.",
+        "predicted": [
+          "ACCOUNT:xxxxx9999/9999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0018_transcript_u021_v1",
+        "label": "EMAIL",
+        "gold": "xxxxxxx.99@xxxxx.xxx.",
+        "predicted": [
+          "EMAIL:xxxxxxx.99@xxxxx.xxx"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0018_transcript_u026_v1",
+        "label": "PHONE",
+        "gold": "9999999999",
+        "predicted": [
+          "PHONE:9999999999 xxxxxxxxx 99"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0018_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "xxxxx9999/9999.",
+        "predicted": [
+          "ACCOUNT:xxxxx9999/9999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0024_transcript_u005_v1",
+        "label": "NIC",
+        "gold": "999999999999.",
+        "predicted": [
+          "NIC:999999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0024_transcript_u006_v1",
+        "label": "DOB",
+        "gold": "9999 xxxxxxxx 99xx.",
+        "predicted": [
+          "DOB:9999 xxxxxxxx 99xx"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0024_c2_u006_en_v1",
+        "label": "DOB",
+        "gold": "xxxxxxxx 99xx, 9999.",
+        "predicted": [
+          "DOB:xxxxxxxx 99xx, 9999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0024_c2_u006_si_v1",
+        "label": "DOB",
+        "gold": "9999 සසසසසසසසස 99.",
+        "predicted": [
+          "DOB:9999 සසසසසසසසස 99"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0024_transcript_u009_v1",
+        "label": "ACCOUNT",
+        "gold": "xx99999999.",
+        "predicted": [
+          "ACCOUNT:xx99999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0024_c2_u009_en_v1",
+        "label": "ACCOUNT",
+        "gold": "xx99999999.",
+        "predicted": [
+          "ACCOUNT:xx99999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0024_c2_u009_si_v1",
+        "label": "ACCOUNT",
+        "gold": "xx99999999.",
+        "predicted": [
+          "ACCOUNT:xx99999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0024_transcript_u010_v1",
+        "label": "PHONE",
+        "gold": "9999999999.",
+        "predicted": [
+          "PHONE:9999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0024_c2_u010_en_v1",
+        "label": "PHONE",
+        "gold": "9999999999.",
+        "predicted": [
+          "PHONE:9999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0024_c2_u010_si_v1",
+        "label": "PHONE",
+        "gold": "9999999999.",
+        "predicted": [
+          "PHONE:9999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0025_transcript_u004_v1",
+        "label": "ACCOUNT",
+        "gold": "xxx සසසස සසසසසසස සසසස සසසස සසසසස සසසසස සසසසසස සසසස සසස සසස",
+        "predicted": [
+          "ACCOUNT:සසසසසසස සසසස සසසස සසසසස සසසසස සසසසසස සසසස සසස සසස"
+        ]
+      }
+    ],
+    "label": [
+      {
+        "doc_id": "J26DS313_R0026_transcript_u014_v1",
+        "label": "ACCOUNT",
+        "gold": "xxxxxx.xxxxxxx@xxxxx.xxx",
+        "predicted": [
+          "EMAIL:xxxxxx.xxxxxxx@xxxxx.xxx"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0026_c2_u014_en_v1",
+        "label": "ACCOUNT",
+        "gold": "xxxxxx.xxxxxxx@xxxxx.xxx",
+        "predicted": [
+          "EMAIL:xxxxxx.xxxxxxx@xxxxx.xxx"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0026_c2_u014_si_v1",
+        "label": "ACCOUNT",
+        "gold": "xxxxxx.xxxxxxx@xxxxx.xxx",
+        "predicted": [
+          "EMAIL:xxxxxx.xxxxxxx@xxxxx.xxx"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0026_transcript_u024_v1",
+        "label": "ACCOUNT",
+        "gold": "xxxxxx.xxxxxxx@xxxxx.xxx",
+        "predicted": [
+          "EMAIL:xxxxxx.xxxxxxx@xxxxx.xxx"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0026_c2_u024_en_v1",
+        "label": "ACCOUNT",
+        "gold": "xxxxxx.xxxxxxx@xxxxx.xxx",
+        "predicted": [
+          "EMAIL:xxxxxx.xxxxxxx@xxxxx.xxx"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0026_c2_u024_si_v1",
+        "label": "ACCOUNT",
+        "gold": "xxxxxx.xxxxxxx@xxxxx.xxx",
+        "predicted": [
+          "EMAIL:xxxxxx.xxxxxxx@xxxxx.xxx"
+        ]
+      }
+    ],
+    "spurious": [
+      {
+        "doc_id": "J26DS313_R0005_c2_summary_en_v1",
+        "label": "DOB",
+        "predicted": "xxxxxx 99xx"
+      },
+      {
+        "doc_id": "J26DS313_R0008_c2_u002_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "999999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0010_c2_u004_en_v1",
+        "label": "DOB",
+        "predicted": "99xx"
+      },
+      {
+        "doc_id": "J26DS313_R0016_c2_summary_si_v1",
+        "label": "PHONE",
+        "predicted": "9999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0017_c2_summary_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx/xx/9999/999999"
+      },
+      {
+        "doc_id": "J26DS313_R0018_c2_u006_en_v1",
+        "label": "NIC",
+        "predicted": "999999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0018_c2_u006_si_v1",
+        "label": "NIC",
+        "predicted": "999999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0018_c2_summary_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxxxx9999/9999"
+      },
+      {
+        "doc_id": "J26DS313_R0018_c2_summary_si_v1",
+        "label": "EMAIL",
+        "predicted": "xxxxxxx.99@xxxxx.xxx"
+      },
+      {
+        "doc_id": "J26DS313_R0020_transcript_u028_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0020_c2_u028_en_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-9999-x9-999-999"
+      },
+      {
+        "doc_id": "J26DS313_R0020_c2_u028_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-9999-x9-999-999"
+      },
+      {
+        "doc_id": "J26DS313_R0020_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-9999-x9-999-999"
+      },
+      {
+        "doc_id": "J26DS313_R0024_c2_summary_en_v1",
+        "label": "DOB",
+        "predicted": "xxxxxxxx 99, 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0024_c2_summary_si_v1",
+        "label": "NIC",
+        "predicted": "999999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0024_c2_summary_si_v1",
+        "label": "DOB",
+        "predicted": "සසසසසසසසස 99, 9999"
+      },
+      {
+        "doc_id": "J26DS313_R0024_c2_summary_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xx99999999"
+      },
+      {
+        "doc_id": "J26DS313_R0024_c2_summary_si_v1",
+        "label": "PHONE",
+        "predicted": "9999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0025_transcript_u030_v1",
+        "label": "NIC",
+        "predicted": "9 9 9 9 9 9 9 9 9"
+      },
+      {
+        "doc_id": "J26DS313_R0025_transcript_u034_v1",
+        "label": "ACCOUNT",
+        "predicted": "සසසසසසස සසසස සසසස සසසසසස සසසසස සසසස සසසසස සසසස"
+      },
+      {
+        "doc_id": "J26DS313_R0025_transcript_u039_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx 9 9 9 9 9 9 9 9 9"
+      },
+      {
+        "doc_id": "J26DS313_R0025_transcript_u041_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx සසසසස සසසසසසසස සසසසස සසසසස"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_u030_en_v1",
+        "label": "NIC",
+        "predicted": "999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_u030_si_v1",
+        "label": "NIC",
+        "predicted": "999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_u034_en_v1",
+        "label": "ACCOUNT",
+        "predicted": "99999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_u034_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "99999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_u039_en_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-9999-99999"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_u039_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-9999-99999"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_u041_en_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx 9 9 9 9 9 9 9 9 9"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_u041_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx 9 9 9 9 9 9 9 9 9"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_summary_en_v1",
+        "label": "NIC",
+        "predicted": "999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-9999-99999"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_summary_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-9999-999999"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_summary_si_v1",
+        "label": "NIC",
+        "predicted": "999999999"
+      },
+      {
+        "doc_id": "J26DS313_R0025_c2_summary_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xxx-9999-99999"
+      },
+      {
+        "doc_id": "J26DS313_R0026_c2_summary_en_v1",
+        "label": "PHONE",
+        "predicted": "xxxxxxxxx 999"
+      },
+      {
+        "doc_id": "J26DS313_R0026_c2_summary_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "xx99999"
+      }
+    ]
+  }
+}
