@@ -1,0 +1,220 @@
+{
+  "recording": "SYN_T0001",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0001_e001",
+      "canonical": "NSB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "NSB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "NSB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජාතික ඉතිරිකිරීමේ බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0001_e002",
+      "canonical": "Anjali",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අංජලී"
+        },
+        {
+          "script": "LATIN",
+          "form": "Anjali"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0001_e003",
+      "canonical": "Piumi Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "පියුමි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Piumi"
+        },
+        {
+          "script": "LATIN",
+          "form": "Piumi Kumara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0001_e004",
+      "canonical": "1972-10-02",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1972-10-02",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1972 October 2th"
+        },
+        {
+          "script": "LATIN",
+          "form": "2 October 1972"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1972 ඔක්තෝබර් 2"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0001_e005",
+      "canonical": "No. 242/5, Park Avenue, Chilaw",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "242/5, Park Avenue, Chilaw"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 242/5, Park Avenue, Chilaw"
+        },
+        {
+          "script": "SINHALA",
+          "form": "242/5, උද්‍යාන මාවත, හලාවත"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0001_e006",
+      "canonical": "441536120941",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "441536120941",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "hatharai hatharai ekai pahai thunai hayai ekai dekai binduwai namayai hatharai eka"
+        },
+        {
+          "script": "LATIN",
+          "form": "441536120941"
+        },
+        {
+          "script": "SINHALA",
+          "form": "441536120941"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0001_e007",
+      "canonical": "0764870529",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0764870529",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0764870529"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 76 487 0529"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0764870529"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0001_e008",
+      "canonical": "piumi.kumara97@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "piumi.kumara97@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "piumi.kumara97@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "piumi.kumara97@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0001_e009",
+      "canonical": "197277681181",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "197277681181",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "one nine seven, two seven seven, six eight one, one eight one"
+        },
+        {
+          "script": "LATIN",
+          "form": "197277681181"
+        },
+        {
+          "script": "SINHALA",
+          "form": "197277681181"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0001_e010",
+      "canonical": "0112039599",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0112039599",
+      "redact": false,
+      "value": "0112039599",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "zero බිංදුවයි එකොළහයි විස්සයි තිස් තුනයි අනූ පහයි අනූ නවය"
+        },
+        {
+          "script": "LATIN",
+          "form": "0112039599"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0112039599"
+        }
+      ]
+    }
+  ]
+}

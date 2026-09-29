@@ -1,0 +1,132 @@
+{
+  "recording": "SYN_T0033",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0033_e001",
+      "canonical": "Hutch",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Hutch",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hutch"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හච්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0033_e002",
+      "canonical": "Amal",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අමල්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Amal"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0033_e003",
+      "canonical": "Isuru Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "isuru"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru Weerasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0033_e004",
+      "canonical": "No. 199, Market Road, Badulla",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "199, වෙළඳපොළ පාර, බදුල්ල"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 199, Market Road, Badulla"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0033_e005",
+      "canonical": "0760520897",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0760520897",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero seven six, zero five two, zero eight nine, seven"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 76 052 0897"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0760520897"
+        },
+        {
+          "script": "LATIN",
+          "form": "0760520897"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0033_e006",
+      "canonical": "isuru.weerasinghe12@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "isuru.weerasinghe12@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "isuru.weerasinghe12@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "isuru.weerasinghe12@yahoo.com"
+        }
+      ]
+    }
+  ]
+}

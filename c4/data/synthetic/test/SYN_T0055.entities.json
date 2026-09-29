@@ -1,0 +1,191 @@
+{
+  "recording": "SYN_T0055",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0055_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0055_e002",
+      "canonical": "Saman",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සමන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Saman"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0055_e003",
+      "canonical": "Piumi Liyanage",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Piumi Liyanage"
+        },
+        {
+          "script": "SINHALA",
+          "form": "පියුමි ලියනගේ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0055_e004",
+      "canonical": "0119976721",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0119976721",
+      "redact": false,
+      "value": "0119976721",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 1 1 9 9 7 6 7 2 1"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 997 6721"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0119976721"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0055_e005",
+      "canonical": "1969-09-26",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1969-09-26",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1969 September 26rd"
+        },
+        {
+          "script": "LATIN",
+          "form": "September 26, 1969"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1969 සැප්තැම්බර් 26"
+        },
+        {
+          "script": "LATIN",
+          "form": "26 September 1969"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0055_e006",
+      "canonical": "No. 46, Church Street, Badulla",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 46, Church Street, Badulla"
+        },
+        {
+          "script": "SINHALA",
+          "form": "46, පල්ලිය වීදිය, බදුල්ල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0055_e007",
+      "canonical": "Homagama",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Homagama",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "homagama"
+        },
+        {
+          "script": "LATIN",
+          "form": "Homagama"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හෝමාගම"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0055_e008",
+      "canonical": "0725378496",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0725378496",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 2 5 3 7 8 4 9 6"
+        },
+        {
+          "script": "LATIN",
+          "form": "0725378496"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0725378496"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0055_e009",
+      "canonical": "Isuru Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Isuru Kumara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු කුමාර"
+        }
+      ]
+    }
+  ]
+}

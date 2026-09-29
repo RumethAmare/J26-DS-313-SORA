@@ -1,0 +1,181 @@
+{
+  "recording": "SYN_T0052",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0052_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0052_e002",
+      "canonical": "Isuru",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Isuru"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0052_e003",
+      "canonical": "Piumi Ekanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "පියුමි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Piumi"
+        },
+        {
+          "script": "LATIN",
+          "form": "Piumi Ekanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0052_e004",
+      "canonical": "0775998288",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0775998288",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero binduwai hathai hathai pahai namayai namayai atai dekai atai ata"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 77 599 8288"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0775998288"
+        },
+        {
+          "script": "LATIN",
+          "form": "0775998288"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0052_e005",
+      "canonical": "Panadura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Panadura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "panadura"
+        },
+        {
+          "script": "LATIN",
+          "form": "Panadura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "පානදුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0052_e006",
+      "canonical": "0119400511",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0119400511",
+      "redact": false,
+      "value": "0119400511",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai ekai ekai namayai hatharai binduwai binduwai pahai ekai eka"
+        },
+        {
+          "script": "LATIN",
+          "form": "0119400511"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0119400511"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0052_e007",
+      "canonical": "Isuru Pathirana",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "isuru pathirana"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru Pathirana"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු පතිරණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0052_e008",
+      "canonical": "5483149030",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "5483149030",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "5 4 8 3 1 4 9 0 3 0"
+        },
+        {
+          "script": "LATIN",
+          "form": "5483149030"
+        },
+        {
+          "script": "SINHALA",
+          "form": "5483149030"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "recording": "SYN_T0047",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0047_e001",
+      "canonical": "Hutch",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Hutch",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hutch"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හච්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0047_e002",
+      "canonical": "Janaka",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ජනක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0047_e003",
+      "canonical": "Gayan Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Gayan"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ගයාන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Gayan Ranasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0047_e004",
+      "canonical": "Badulla",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Badulla",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Badulla"
+        },
+        {
+          "script": "SINHALA",
+          "form": "බදුල්ල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0047_e005",
+      "canonical": "1984-06-18",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1984-06-18",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1984 June 18th"
+        },
+        {
+          "script": "LATIN",
+          "form": "18th of June 1984"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1984 ජූනි 18"
+        },
+        {
+          "script": "LATIN",
+          "form": "June 18, 1984"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0047_e006",
+      "canonical": "841701927X",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "841701927X",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "8417 019 27"
+        },
+        {
+          "script": "LATIN",
+          "form": "841701927X"
+        },
+        {
+          "script": "SINHALA",
+          "form": "841701927X"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0047_e007",
+      "canonical": "Saman Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Saman Weerasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සමන් වීරසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0047_e008",
+      "canonical": "0111930841",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0111930841",
+      "redact": false,
+      "value": "0111930841",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0111930841"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0111930841"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0047_e009",
+      "canonical": "No. 156, Church Street, Jaffna",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 156, Church Street, Jaffna"
+        },
+        {
+          "script": "SINHALA",
+          "form": "156, පල්ලිය වීදිය, යාපනය"
+        }
+      ]
+    }
+  ]
+}

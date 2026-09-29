@@ -1,0 +1,206 @@
+{
+  "recording": "SYN_T0035",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0035_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0035_e002",
+      "canonical": "Gayan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ගයාන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Gayan"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0035_e003",
+      "canonical": "Amal Ekanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අමල් ඒකනායක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Amal Ekanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0035_e004",
+      "canonical": "amal.ekanayake70@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "amal.ekanayake70@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "amal.ekanayake70@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "amal.ekanayake70@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0035_e005",
+      "canonical": "480791127514",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "480791127514",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "4 8 0 7 9 1 1 2 7 5 1 4"
+        },
+        {
+          "script": "LATIN",
+          "form": "480791127514"
+        },
+        {
+          "script": "SINHALA",
+          "form": "480791127514"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0035_e006",
+      "canonical": "Homagama",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Homagama",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "homagama"
+        },
+        {
+          "script": "LATIN",
+          "form": "Homagama"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හෝමාගම"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0035_e007",
+      "canonical": "1992-01-27",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1992-01-27",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "1992 ජනවාරි 27"
+        },
+        {
+          "script": "LATIN",
+          "form": "1992-01-27"
+        },
+        {
+          "script": "LATIN",
+          "form": "January 27, 1992"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0035_e008",
+      "canonical": "0112855773",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0112855773",
+      "redact": false,
+      "value": "0112855773",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0112855773"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0112855773"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0035_e009",
+      "canonical": "Amal Samarakoon",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Amal Samarakoon"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අමල් සමරකෝන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0035_e010",
+      "canonical": "No. 207, Kandy Road, Jaffna",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "207, Kandy Road, Jaffna"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 207, Kandy Road, Jaffna"
+        },
+        {
+          "script": "SINHALA",
+          "form": "207, මහනුවර පාර, යාපනය"
+        }
+      ]
+    }
+  ]
+}

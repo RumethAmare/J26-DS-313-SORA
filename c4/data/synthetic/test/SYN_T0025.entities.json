@@ -1,0 +1,192 @@
+{
+  "recording": "SYN_T0025",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0025_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0025_e002",
+      "canonical": "Rashmi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "රශ්මි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Rashmi"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0025_e003",
+      "canonical": "Amal Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "amal kumara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Amal Kumara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අමල් කුමාර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0025_e004",
+      "canonical": "Janaka Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "janaka kumara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka Kumara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක කුමාර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0025_e005",
+      "canonical": "0710305761",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0710305761",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero seven one, zero three zero, five seven six, one"
+        },
+        {
+          "script": "LATIN",
+          "form": "0710305761"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0710305761"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0025_e006",
+      "canonical": "No. 59/4, Circular Road, Badulla",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "59/4, Circular Road, Badulla"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 59/4, Circular Road, Badulla"
+        },
+        {
+          "script": "SINHALA",
+          "form": "59/4, වටරවුම් පාර, බදුල්ල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0025_e007",
+      "canonical": "amal.kumara39@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "amal.kumara39@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "amal.kumara39@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "amal.kumara39@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0025_e008",
+      "canonical": "78950862601139",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "78950862601139",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "seven eight nine, five zero eight, six two six, zero one one, three nine"
+        },
+        {
+          "script": "LATIN",
+          "form": "78950862601139"
+        },
+        {
+          "script": "SINHALA",
+          "form": "78950862601139"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0025_e009",
+      "canonical": "953199198V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "953199198V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "953199198V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "953199198V"
+        }
+      ]
+    }
+  ]
+}

@@ -126,7 +126,9 @@ def load_real(rid: str, root: Path | None = None) -> Recording:
     )
 
 
-def load_synthetic(directory: Path = SYNTHETIC_DIR) -> list[Recording]:
+def load_synthetic(split: str = "test", directory: Path | None = None) -> list[Recording]:
+    """Synthetic recordings: 'train' to build with, 'test' (held-out) to score."""
+    directory = directory or SYNTHETIC_DIR / split
     recordings = []
     for pii in sorted(directory.glob("*.pii.jsonl")):
         rid = pii.name.removesuffix(".pii.jsonl")

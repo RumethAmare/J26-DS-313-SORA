@@ -1,0 +1,114 @@
+{
+  "recording": "SYN_T0045",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0045_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0045_e002",
+      "canonical": "Gayan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ගයාන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Gayan"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0045_e003",
+      "canonical": "Saman Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සමන් කුමාර"
+        },
+        {
+          "script": "LATIN",
+          "form": "Saman Kumara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0045_e004",
+      "canonical": "No. 240/3, Park Avenue, Jaffna",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "240/3, උද්‍යාන මාවත, යාපනය"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 240/3, Park Avenue, Jaffna"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0045_e005",
+      "canonical": "Panadura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Panadura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Panadura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "පානදුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0045_e006",
+      "canonical": "Amal Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Amal Ranasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අමල් රණසිංහ"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "recording": "SYN_T0016",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0016_e001",
+      "canonical": "Seylan Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Seylan Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Seylan Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලාන් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0016_e002",
+      "canonical": "Shanika",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ශානිකා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Shanika"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0016_e003",
+      "canonical": "Madhavi Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "මාධවී"
+        },
+        {
+          "script": "LATIN",
+          "form": "Madhavi"
+        },
+        {
+          "script": "LATIN",
+          "form": "Madhavi Ranasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0016_e004",
+      "canonical": "845826172V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "845826172V",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අටයි හතළිස් පහයි අටයි දෙසිය හැට එකයි හැත්තෑ දෙක"
+        },
+        {
+          "script": "LATIN",
+          "form": "845826172V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "845826172V"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0016_e005",
+      "canonical": "Ratnapura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Ratnapura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ratnapura"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ratnapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "රත්නපුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0016_e006",
+      "canonical": "Isuru Pathirana",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Isuru Pathirana"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු පතිරණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0016_e007",
+      "canonical": "No. 108/4, Kandy Road, Badulla",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "108/4, මහනුවර පාර, බදුල්ල"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 108/4, Kandy Road, Badulla"
+        }
+      ]
+    }
+  ]
+}

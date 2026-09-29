@@ -1,0 +1,151 @@
+{
+  "recording": "SYN_T0030",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0030_e001",
+      "canonical": "NSB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "NSB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "NSB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජාතික ඉතිරිකිරීමේ බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0030_e002",
+      "canonical": "Gayan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ගයාන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Gayan"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0030_e003",
+      "canonical": "Shanika Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Shanika"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශානිකා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Shanika Weerasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0030_e004",
+      "canonical": "4635130390",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "4635130390",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "4 6 3 5 1 3 0 3 9 9 0"
+        },
+        {
+          "script": "LATIN",
+          "form": "4635130390"
+        },
+        {
+          "script": "SINHALA",
+          "form": "4635130390"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0030_e005",
+      "canonical": "Isuru Abeysekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Isuru Abeysekara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු අබේසේකර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0030_e006",
+      "canonical": "shanika.weerasinghe13@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "shanika.weerasinghe13@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "shanika.weerasinghe13@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "shanika.weerasinghe13@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0030_e007",
+      "canonical": "1977-08-19",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1977-08-19",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "August 19rd 1977"
+        },
+        {
+          "script": "LATIN",
+          "form": "1977-08-19"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1977 අගෝස්තු 19"
+        },
+        {
+          "script": "LATIN",
+          "form": "August 19, 1977"
+        }
+      ]
+    }
+  ]
+}

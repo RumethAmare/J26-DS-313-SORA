@@ -1,0 +1,25 @@
+{"doc_id": "SYN_T0023_transcript_u001_v1", "recording": "SYN_T0023", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "ayubowan, SLT eken janaka kiyala kenek kathaa karanne."}
+{"doc_id": "SYN_T0023_c2_u001_en_v1", "recording": "SYN_T0023", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good afternoon, Janaka here from SLT."}
+{"doc_id": "SYN_T0023_c2_u001_si_v1", "recording": "SYN_T0023", "kind": "si", "utterance": 1, "topic": "greet", "text": "සුබ දවසක්, මම ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් ජනක."}
+{"doc_id": "SYN_T0023_transcript_u002_v1", "recording": "SYN_T0023", "kind": "transcript", "utterance": 2, "topic": "name", "text": "mama Rashmi, account holder."}
+{"doc_id": "SYN_T0023_c2_u002_en_v1", "recording": "SYN_T0023", "kind": "en", "utterance": 2, "topic": "name", "text": "I am Rashmi, the account holder."}
+{"doc_id": "SYN_T0023_c2_u002_si_v1", "recording": "SYN_T0023", "kind": "si", "utterance": 2, "topic": "name", "text": "මම රශ්මි, ගිණුම් හිමියා."}
+{"doc_id": "SYN_T0023_transcript_u003_v1", "recording": "SYN_T0023", "kind": "transcript", "utterance": 3, "topic": "dob", "text": "upan dinaya kiyanna puluwanda?"}
+{"doc_id": "SYN_T0023_c2_u003_en_v1", "recording": "SYN_T0023", "kind": "en", "utterance": 3, "topic": "dob", "text": "Can you confirm your date of birth?"}
+{"doc_id": "SYN_T0023_c2_u003_si_v1", "recording": "SYN_T0023", "kind": "si", "utterance": 3, "topic": "dob", "text": "ඔබේ උපන් දිනය තහවුරු කරන්න."}
+{"doc_id": "SYN_T0023_transcript_u004_v1", "recording": "SYN_T0023", "kind": "transcript", "utterance": 4, "topic": "dob", "text": "ah 1976 March 26th."}
+{"doc_id": "SYN_T0023_c2_u004_en_v1", "recording": "SYN_T0023", "kind": "en", "utterance": 4, "topic": "dob", "text": "Yes, March 26, 1976."}
+{"doc_id": "SYN_T0023_c2_u004_si_v1", "recording": "SYN_T0023", "kind": "si", "utterance": 4, "topic": "dob", "text": "1976.03.26."}
+{"doc_id": "SYN_T0023_transcript_u005_v1", "recording": "SYN_T0023", "kind": "transcript", "utterance": 5, "topic": "hotline", "text": "prashnayak thiyenam 011 4561 942 ta call karanna."}
+{"doc_id": "SYN_T0023_c2_u005_en_v1", "recording": "SYN_T0023", "kind": "en", "utterance": 5, "topic": "hotline", "text": "For any issue, call 0114561942."}
+{"doc_id": "SYN_T0023_c2_u005_si_v1", "recording": "SYN_T0023", "kind": "si", "utterance": 5, "topic": "hotline", "text": "ගැටලුවක් ඇත්නම් 0114561942 අමතන්න."}
+{"doc_id": "SYN_T0023_transcript_u006_v1", "recording": "SYN_T0023", "kind": "transcript", "utterance": 6, "topic": "email", "text": "email ekak thiyenawada?"}
+{"doc_id": "SYN_T0023_c2_u006_en_v1", "recording": "SYN_T0023", "kind": "en", "utterance": 6, "topic": "email", "text": "Do you have an email address?"}
+{"doc_id": "SYN_T0023_c2_u006_si_v1", "recording": "SYN_T0023", "kind": "si", "utterance": 6, "topic": "email", "text": "ඊමේල් ලිපිනයක් තිබේද?"}
+{"doc_id": "SYN_T0023_transcript_u007_v1", "recording": "SYN_T0023", "kind": "transcript", "utterance": 7, "topic": "email", "text": "hmm, ow, rashmi.liyanage16@gmail.com."}
+{"doc_id": "SYN_T0023_c2_u007_en_v1", "recording": "SYN_T0023", "kind": "en", "utterance": 7, "topic": "email", "text": "Yes, rashmi.liyanage16@gmail.com."}
+{"doc_id": "SYN_T0023_c2_u007_si_v1", "recording": "SYN_T0023", "kind": "si", "utterance": 7, "topic": "email", "text": "ඔව්, rashmi.liyanage16@gmail.com."}
+{"doc_id": "SYN_T0023_transcript_u008_v1", "recording": "SYN_T0023", "kind": "transcript", "utterance": 8, "topic": "relative", "text": "ane mage ayya ගයාන් කුමාර th ekka enawa."}
+{"doc_id": "SYN_T0023_c2_u008_en_v1", "recording": "SYN_T0023", "kind": "en", "utterance": 8, "topic": "relative", "text": "My brother Gayan Kumara will come with me."}
+{"doc_id": "SYN_T0023_c2_u008_si_v1", "recording": "SYN_T0023", "kind": "si", "utterance": 8, "topic": "relative", "text": "මගේ අයියා ගයාන් කුමාර මා සමඟ එනවා."}
+{"doc_id": "SYN_T0023_c2_summary_en_v1", "recording": "SYN_T0023", "kind": "summary", "utterance": null, "topic": "summary", "text": "Janaka of SLT handled a call from Rashmi Liyanage. Customer born March 26, 1976. Email: rashmi.liyanage16@gmail.com. Gayan Kumara was mentioned as a family member."}

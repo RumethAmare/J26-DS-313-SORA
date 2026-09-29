@@ -1,0 +1,197 @@
+{
+  "recording": "SYN_T0054",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0054_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0054_e002",
+      "canonical": "Piumi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Piumi"
+        },
+        {
+          "script": "SINHALA",
+          "form": "පියුමි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0054_e003",
+      "canonical": "Anjali Abeysekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Anjali"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අංජලී"
+        },
+        {
+          "script": "LATIN",
+          "form": "Anjali Abeysekara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0054_e004",
+      "canonical": "6590878541",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "6590878541",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "hayai pahai namayai binduwai atai hathai atai pahai hatharai eka"
+        },
+        {
+          "script": "LATIN",
+          "form": "6590878541"
+        },
+        {
+          "script": "SINHALA",
+          "form": "6590878541"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0054_e005",
+      "canonical": "anjali.abeysekara29@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "anjali.abeysekara29@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "anjali.abeysekara29@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "anjali.abeysekara29@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0054_e006",
+      "canonical": "0786386505",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0786386505",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero seven eight, six three eight, six five zero, five"
+        },
+        {
+          "script": "LATIN",
+          "form": "0786386505"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0786386505"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0054_e007",
+      "canonical": "1964-05-27",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1964-05-27",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1964 May 27th"
+        },
+        {
+          "script": "LATIN",
+          "form": "May 27, 1964"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1964.05.27"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0054_e008",
+      "canonical": "Gayan Liyanage",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "gayan liyanage"
+        },
+        {
+          "script": "LATIN",
+          "form": "Gayan Liyanage"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ගයාන් ලියනගේ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0054_e009",
+      "canonical": "646489074X",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "646489074X",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "646489074"
+        },
+        {
+          "script": "LATIN",
+          "form": "646489074X"
+        },
+        {
+          "script": "SINHALA",
+          "form": "646489074X"
+        }
+      ]
+    }
+  ]
+}

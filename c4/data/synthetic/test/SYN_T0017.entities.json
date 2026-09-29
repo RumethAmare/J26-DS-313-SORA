@@ -1,0 +1,215 @@
+{
+  "recording": "SYN_T0017",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0017_e001",
+      "canonical": "NSB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "NSB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "NSB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජාතික ඉතිරිකිරීමේ බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0017_e002",
+      "canonical": "Buddhika",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Buddhika"
+        },
+        {
+          "script": "SINHALA",
+          "form": "බුද්ධික"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0017_e003",
+      "canonical": "Janaka Abeysekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "janaka abeysekara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka Abeysekara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක අබේසේකර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0017_e004",
+      "canonical": "0119316763",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0119316763",
+      "redact": false,
+      "value": "0119316763",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 9316 763"
+        },
+        {
+          "script": "LATIN",
+          "form": "0119316763"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0119316763"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0017_e005",
+      "canonical": "Janaka Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Janaka Ranasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක රණසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0017_e006",
+      "canonical": "No. 229, Circular Road, Panadura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "229, Circular Road, Panadura"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 229, Circular Road, Panadura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "229, වටරවුම් පාර, පානදුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0017_e007",
+      "canonical": "0757912887",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0757912887",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0757912887"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0757912887"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0017_e008",
+      "canonical": "1997-03-02",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1997-03-02",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "2nd March 1997"
+        },
+        {
+          "script": "LATIN",
+          "form": "2nd of March 1997"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1997 මාර්තු 2"
+        },
+        {
+          "script": "LATIN",
+          "form": "2 March 1997"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0017_e009",
+      "canonical": "janaka.abeysekara71@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "janaka.abeysekara71@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "janaka.abeysekara71@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "janaka.abeysekara71@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0017_e010",
+      "canonical": "970620058V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "970620058V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "nine seven zero, six two zero, zero five eight"
+        },
+        {
+          "script": "LATIN",
+          "form": "970620058V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "970620058V"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "recording": "SYN_T0057",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0057_e001",
+      "canonical": "NSB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "NSB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "NSB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජාතික ඉතිරිකිරීමේ බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0057_e002",
+      "canonical": "Saman",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "saman"
+        },
+        {
+          "script": "LATIN",
+          "form": "Saman"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සමන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0057_e003",
+      "canonical": "Shanika Abeysekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Shanika Abeysekara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශානිකා අබේසේකර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0057_e004",
+      "canonical": "No. 166, Circular Road, Kalutara",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "166, Circular Road, Kalutara"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 166, Circular Road, Kalutara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "166, වටරවුම් පාර, කළුතර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0057_e005",
+      "canonical": "Ratnapura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Ratnapura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "රත්නපුර"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ratnapura"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0057_e006",
+      "canonical": "199086535306",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "199086535306",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "one nine nine, zero eight six, five three five, three zero six"
+        },
+        {
+          "script": "LATIN",
+          "form": "199086535306"
+        },
+        {
+          "script": "SINHALA",
+          "form": "199086535306"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0057_e007",
+      "canonical": "813748990208",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "813748990208",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අටයි එකයි තුනයි හතයි හාරසිය අසූ නවයයි නවයයි බිංදුවයි විස්සයි අට"
+        },
+        {
+          "script": "LATIN",
+          "form": "813748990208"
+        },
+        {
+          "script": "SINHALA",
+          "form": "813748990208"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0057_e008",
+      "canonical": "1990-12-30",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1990-12-30",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "1990 දෙසැම්බර් 30"
+        },
+        {
+          "script": "LATIN",
+          "form": "30 December 1990"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1990.12.30"
+        },
+        {
+          "script": "LATIN",
+          "form": "30th of December 1990"
+        }
+      ]
+    }
+  ]
+}

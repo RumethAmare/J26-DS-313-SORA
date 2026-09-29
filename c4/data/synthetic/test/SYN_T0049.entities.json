@@ -1,0 +1,165 @@
+{
+  "recording": "SYN_T0049",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0049_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0049_e002",
+      "canonical": "Madhavi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "මාධවී"
+        },
+        {
+          "script": "LATIN",
+          "form": "Madhavi"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0049_e003",
+      "canonical": "Anjali Liyanage",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අංජලී ලියනගේ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Anjali Liyanage"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0049_e004",
+      "canonical": "No. 215, Circular Road, Kalutara",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "215, වටරවුම් පාර, කළුතර"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 215, Circular Road, Kalutara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0049_e005",
+      "canonical": "anjali.liyanage81@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "anjali.liyanage81@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "anjali.liyanage81@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "anjali.liyanage81@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0049_e006",
+      "canonical": "Amal Pathirana",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "amal pathirana"
+        },
+        {
+          "script": "LATIN",
+          "form": "Amal Pathirana"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අමල් පතිරණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0049_e007",
+      "canonical": "77915895104845",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "77915895104845",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "seven seven nine, one five eight, nine five one, zero four eight, four five"
+        },
+        {
+          "script": "LATIN",
+          "form": "77915895104845"
+        },
+        {
+          "script": "SINHALA",
+          "form": "77915895104845"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0049_e008",
+      "canonical": "0717420544",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0717420544",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හතයි එකසිය හැත්තෑහතරයි දෙකයි බිංදුවයි පනස්හතරයි හතර"
+        },
+        {
+          "script": "LATIN",
+          "form": "0717420544"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0717420544"
+        }
+      ]
+    }
+  ]
+}

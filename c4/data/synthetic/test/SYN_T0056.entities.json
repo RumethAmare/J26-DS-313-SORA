@@ -1,0 +1,174 @@
+{
+  "recording": "SYN_T0056",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0056_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0056_e002",
+      "canonical": "Anjali",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "anjali"
+        },
+        {
+          "script": "LATIN",
+          "form": "Anjali"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අංජලී"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0056_e003",
+      "canonical": "Janaka Liyanage",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Janaka"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka Liyanage"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0056_e004",
+      "canonical": "198203700258",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "198203700258",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "one nine eight, two zero three, seven zero zero, two five eight"
+        },
+        {
+          "script": "LATIN",
+          "form": "198203700258"
+        },
+        {
+          "script": "SINHALA",
+          "form": "198203700258"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0056_e005",
+      "canonical": "janaka.liyanage52@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "janaka.liyanage52@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "janaka.liyanage52@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "janaka.liyanage52@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0056_e006",
+      "canonical": "3008158716",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "3008158716",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "thunai binduwai binduwai atai ekai pahai atai hathai ekai haya"
+        },
+        {
+          "script": "LATIN",
+          "form": "3008158716"
+        },
+        {
+          "script": "SINHALA",
+          "form": "3008158716"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0056_e007",
+      "canonical": "Isuru Pathirana",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු පතිරණ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru Pathirana"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0056_e008",
+      "canonical": "0116736148",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0116736148",
+      "redact": false,
+      "value": "0116736148",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි එකයි දහසයයි හත්සිය තිස් හයයි එකසිය හතළිස් අට"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 673 6148"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0116736148"
+        }
+      ]
+    }
+  ]
+}

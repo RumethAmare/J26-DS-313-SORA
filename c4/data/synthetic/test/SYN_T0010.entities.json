@@ -1,0 +1,196 @@
+{
+  "recording": "SYN_T0010",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0010_e001",
+      "canonical": "NSB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "NSB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "NSB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජාතික ඉතිරිකිරීමේ බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0010_e002",
+      "canonical": "Buddhika",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "buddhika"
+        },
+        {
+          "script": "LATIN",
+          "form": "Buddhika"
+        },
+        {
+          "script": "SINHALA",
+          "form": "බුද්ධික"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0010_e003",
+      "canonical": "Amal Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Amal"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අමල්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Amal Weerasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0010_e004",
+      "canonical": "641271959066",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "641271959066",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "641 2719 5906 6"
+        },
+        {
+          "script": "LATIN",
+          "form": "641271959066"
+        },
+        {
+          "script": "SINHALA",
+          "form": "641271959066"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0010_e005",
+      "canonical": "0759860455",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0759860455",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero seven five, nine eight six, zero four five, five"
+        },
+        {
+          "script": "LATIN",
+          "form": "0759860455"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0759860455"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0010_e006",
+      "canonical": "199618914629",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "199618914629",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "දහනවයයි අනූහයයි දහඅටයි අනූඑකයි හතළිස්හයයි දෙකයි නවය"
+        },
+        {
+          "script": "LATIN",
+          "form": "199618914629"
+        },
+        {
+          "script": "SINHALA",
+          "form": "199618914629"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0010_e007",
+      "canonical": "Saman Liyanage",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Saman Liyanage"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සමන් ලියනගේ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0010_e008",
+      "canonical": "Badulla",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Badulla",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "badulla"
+        },
+        {
+          "script": "LATIN",
+          "form": "Badulla"
+        },
+        {
+          "script": "SINHALA",
+          "form": "බදුල්ල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0010_e009",
+      "canonical": "amal.weerasinghe93@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "amal.weerasinghe93@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "amal.weerasinghe93@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "amal.weerasinghe93@gmail.com"
+        }
+      ]
+    }
+  ]
+}

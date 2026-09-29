@@ -1,0 +1,170 @@
+{
+  "recording": "SYN_T0002",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0002_e001",
+      "canonical": "Hutch",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Hutch",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hutch"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හච්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0002_e002",
+      "canonical": "Buddhika",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Buddhika"
+        },
+        {
+          "script": "SINHALA",
+          "form": "බුද්ධික"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0002_e003",
+      "canonical": "Rashmi Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Rashmi"
+        },
+        {
+          "script": "SINHALA",
+          "form": "රශ්මි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Rashmi Weerasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0002_e004",
+      "canonical": "rashmi.weerasinghe93@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "rashmi.weerasinghe93@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "rashmi.weerasinghe93@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "rashmi.weerasinghe93@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0002_e005",
+      "canonical": "198485030754",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "198485030754",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1 9 8 4 8 5 0 3 0 7 5 4"
+        },
+        {
+          "script": "LATIN",
+          "form": "198485030754"
+        },
+        {
+          "script": "SINHALA",
+          "form": "198485030754"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0002_e006",
+      "canonical": "0118743894",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0118743894",
+      "redact": false,
+      "value": "0118743894",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai ekai ekai atai hathai hatharai thunai atai namayai hathara"
+        },
+        {
+          "script": "LATIN",
+          "form": "0118743894"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0118743894"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0002_e007",
+      "canonical": "Panadura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Panadura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Panadura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "පානදුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0002_e008",
+      "canonical": "1984-12-15",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1984-12-15",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "December 15th 1984"
+        },
+        {
+          "script": "LATIN",
+          "form": "December 15, 1984"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1984 දෙසැම්බර් 15"
+        }
+      ]
+    }
+  ]
+}

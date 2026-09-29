@@ -1,0 +1,22 @@
+{"doc_id": "SYN_T0016_transcript_u001_v1", "recording": "SYN_T0016", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "ammo, Seylan Bank ekata call kalata thanks, mage nama ශානිකා."}
+{"doc_id": "SYN_T0016_c2_u001_en_v1", "recording": "SYN_T0016", "kind": "en", "utterance": 1, "topic": "greet", "text": "Thank you for calling Seylan Bank, my name is Shanika."}
+{"doc_id": "SYN_T0016_c2_u001_si_v1", "recording": "SYN_T0016", "kind": "si", "utterance": 1, "topic": "greet", "text": "සෙලාන් බැංකුව ඇමතීම ගැන ස්තූතියි, මගේ නම ශානිකා."}
+{"doc_id": "SYN_T0016_transcript_u002_v1", "recording": "SYN_T0016", "kind": "transcript", "utterance": 2, "topic": "name", "text": "mama මාධවී, account holder."}
+{"doc_id": "SYN_T0016_c2_u002_en_v1", "recording": "SYN_T0016", "kind": "en", "utterance": 2, "topic": "name", "text": "I am Madhavi, the account holder."}
+{"doc_id": "SYN_T0016_c2_u002_si_v1", "recording": "SYN_T0016", "kind": "si", "utterance": 2, "topic": "name", "text": "මම මාධවී, ගිණුම් හිමියා."}
+{"doc_id": "SYN_T0016_transcript_u003_v1", "recording": "SYN_T0016", "kind": "transcript", "utterance": 3, "topic": "nic", "text": "identity card eke thiyenne අටයි හතළිස් පහයි අටයි දෙසිය හැට එකයි හැත්තෑ දෙක."}
+{"doc_id": "SYN_T0016_c2_u003_en_v1", "recording": "SYN_T0016", "kind": "en", "utterance": 3, "topic": "nic", "text": "The number on my identity card is 845826172V."}
+{"doc_id": "SYN_T0016_c2_u003_si_v1", "recording": "SYN_T0016", "kind": "si", "utterance": 3, "topic": "nic", "text": "මගේ හැඳුනුම්පතේ අංකය 845826172V."}
+{"doc_id": "SYN_T0016_transcript_u004_v1", "recording": "SYN_T0016", "kind": "transcript", "utterance": 4, "topic": "payment", "text": "5th of April 12000 ක් bill eka gewwa."}
+{"doc_id": "SYN_T0016_c2_u004_en_v1", "recording": "SYN_T0016", "kind": "en", "utterance": 4, "topic": "payment", "text": "On 5th of April I transferred 12,000 rupees."}
+{"doc_id": "SYN_T0016_c2_u004_si_v1", "recording": "SYN_T0016", "kind": "si", "utterance": 4, "topic": "payment", "text": "අප්‍රේල් 5 දින රුපියල් 12,000 ක් මාරු කළා."}
+{"doc_id": "SYN_T0016_transcript_u005_v1", "recording": "SYN_T0016", "kind": "transcript", "utterance": 5, "topic": "branch", "text": "ah ratnapura office eke idala thamai call karanne."}
+{"doc_id": "SYN_T0016_c2_u005_en_v1", "recording": "SYN_T0016", "kind": "en", "utterance": 5, "topic": "branch", "text": "I am calling from near the Ratnapura office."}
+{"doc_id": "SYN_T0016_c2_u005_si_v1", "recording": "SYN_T0016", "kind": "si", "utterance": 5, "topic": "branch", "text": "මම රත්නපුර කාර්යාලය අසල සිට කතා කරන්නේ."}
+{"doc_id": "SYN_T0016_transcript_u006_v1", "recording": "SYN_T0016", "kind": "transcript", "utterance": 6, "topic": "relative", "text": "mage ayya Isuru Pathirana th ekka enawa."}
+{"doc_id": "SYN_T0016_c2_u006_en_v1", "recording": "SYN_T0016", "kind": "en", "utterance": 6, "topic": "relative", "text": "My brother Isuru Pathirana will come with me."}
+{"doc_id": "SYN_T0016_c2_u006_si_v1", "recording": "SYN_T0016", "kind": "si", "utterance": 6, "topic": "relative", "text": "මගේ අයියා ඉසුරු පතිරණ මා සමඟ එනවා."}
+{"doc_id": "SYN_T0016_transcript_u007_v1", "recording": "SYN_T0016", "kind": "transcript", "utterance": 7, "topic": "address", "text": "letters ewanna 108/4, මහනුවර පාර, බදුල්ල ta."}
+{"doc_id": "SYN_T0016_c2_u007_en_v1", "recording": "SYN_T0016", "kind": "en", "utterance": 7, "topic": "address", "text": "Please send letters to No. 108/4, Kandy Road, Badulla."}
+{"doc_id": "SYN_T0016_c2_u007_si_v1", "recording": "SYN_T0016", "kind": "si", "utterance": 7, "topic": "address", "text": "ලියුම් 108/4, මහනුවර පාර, බදුල්ල වෙත එවන්න."}
+{"doc_id": "SYN_T0016_c2_summary_en_v1", "recording": "SYN_T0016", "kind": "summary", "utterance": null, "topic": "summary", "text": "Shanika of Seylan Bank handled a call from Madhavi Ranasinghe. Identity number provided: 845826172V. A transfer of Rs. 12,000 was reported. The Ratnapura office was referenced. Isuru Pathirana was mentioned as a family member. Residential address: No. 108/4, Kandy Road, Badulla."}

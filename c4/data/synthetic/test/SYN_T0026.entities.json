@@ -1,0 +1,191 @@
+{
+  "recording": "SYN_T0026",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0026_e001",
+      "canonical": "Seylan Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Seylan Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Seylan Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලාන් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0026_e002",
+      "canonical": "Yasodha",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Yasodha"
+        },
+        {
+          "script": "SINHALA",
+          "form": "යශෝධා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0026_e003",
+      "canonical": "Yasodha Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "යශෝධා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Yasodha"
+        },
+        {
+          "script": "LATIN",
+          "form": "Yasodha Kumara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0026_e004",
+      "canonical": "0110838273",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0110838273",
+      "redact": false,
+      "value": "0110838273",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai ekai ekai binduwai atai thunai atai dekai hathai thuna"
+        },
+        {
+          "script": "LATIN",
+          "form": "0110838273"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0110838273"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0026_e005",
+      "canonical": "1961-04-22",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1961-04-22",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "April 22st 1961"
+        },
+        {
+          "script": "LATIN",
+          "form": "1961-04-22"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1961.04.22"
+        },
+        {
+          "script": "LATIN",
+          "form": "22nd of April 1961"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0026_e006",
+      "canonical": "Janaka Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ජනක වීරසිංහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka Weerasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0026_e007",
+      "canonical": "No. 244, Circular Road, Panadura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 244, Circular Road, Panadura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "244, වටරවුම් පාර, පානදුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0026_e008",
+      "canonical": "Chilaw",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Chilaw",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Chilaw"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හලාවත"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0026_e009",
+      "canonical": "196161319201",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "196161319201",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "one nine six, one six one, three one nine, two zero one"
+        },
+        {
+          "script": "LATIN",
+          "form": "196161319201"
+        },
+        {
+          "script": "SINHALA",
+          "form": "196161319201"
+        }
+      ]
+    }
+  ]
+}

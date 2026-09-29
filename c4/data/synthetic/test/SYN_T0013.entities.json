@@ -1,0 +1,207 @@
+{
+  "recording": "SYN_T0013",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0013_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0013_e002",
+      "canonical": "Isuru",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Isuru"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0013_e003",
+      "canonical": "Buddhika Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බුද්ධික රණසිංහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Buddhika Ranasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0013_e004",
+      "canonical": "282953664167",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "282953664167",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "two eight two, nine five three, six six four, one six seven"
+        },
+        {
+          "script": "LATIN",
+          "form": "282953664167"
+        },
+        {
+          "script": "SINHALA",
+          "form": "282953664167"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0013_e005",
+      "canonical": "Chilaw",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Chilaw",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "හලාවත"
+        },
+        {
+          "script": "LATIN",
+          "form": "Chilaw"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0013_e006",
+      "canonical": "buddhika.ranasinghe93@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "buddhika.ranasinghe93@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "buddhika.ranasinghe93@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "buddhika.ranasinghe93@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0013_e007",
+      "canonical": "1963-10-06",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1963-10-06",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "6th October 1963"
+        },
+        {
+          "script": "LATIN",
+          "form": "6th of October 1963"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1963.10.06"
+        },
+        {
+          "script": "LATIN",
+          "form": "6 October 1963"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0013_e008",
+      "canonical": "0115410920",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0115410920",
+      "redact": false,
+      "value": "0115410920",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0115410920"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0115410920"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0013_e009",
+      "canonical": "Saman Samarakoon",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Saman Samarakoon"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සමන් සමරකෝන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0013_e010",
+      "canonical": "0760548660",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0760548660",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හැත්තෑහයයි බිංදුවයි පනස්හතරයි අටයි හැටහයයි බිංදුව"
+        },
+        {
+          "script": "LATIN",
+          "form": "0760548660"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0760548660"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "recording": "SYN_T0051",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0051_e001",
+      "canonical": "Hutch",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Hutch",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hutch"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හච්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0051_e002",
+      "canonical": "Shanika",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "shanika"
+        },
+        {
+          "script": "LATIN",
+          "form": "Shanika"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශානිකා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0051_e003",
+      "canonical": "Buddhika Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "buddhika weerasinghe"
+        },
+        {
+          "script": "LATIN",
+          "form": "Buddhika Weerasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "බුද්ධික වීරසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0051_e004",
+      "canonical": "0113302862",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0113302862",
+      "redact": false,
+      "value": "0113302862",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero one one, three three zero, two eight six, two"
+        },
+        {
+          "script": "LATIN",
+          "form": "0113302862"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0113302862"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0051_e005",
+      "canonical": "Isuru Pathirana",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු පතිරණ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru Pathirana"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0051_e006",
+      "canonical": "1955-07-13",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1955-07-13",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "13nd July 1955"
+        },
+        {
+          "script": "LATIN",
+          "form": "1955-07-13"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1955 ජූලි 13"
+        },
+        {
+          "script": "LATIN",
+          "form": "July 13, 1955"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0051_e007",
+      "canonical": "Anuradhapura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Anuradhapura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Anuradhapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අනුරාධපුරය"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0051_e008",
+      "canonical": "No. 203/1, Market Road, Badulla",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "203/1, Market Road, Badulla"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 203/1, Market Road, Badulla"
+        },
+        {
+          "script": "SINHALA",
+          "form": "203/1, වෙළඳපොළ පාර, බදුල්ල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0051_e009",
+      "canonical": "0741054946",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0741054946",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0741054946"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0741054946"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0051_e010",
+      "canonical": "551957327V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "551957327V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "551 957 327"
+        },
+        {
+          "script": "LATIN",
+          "form": "551957327V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "551957327V"
+        }
+      ]
+    }
+  ]
+}

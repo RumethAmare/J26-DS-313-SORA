@@ -1,0 +1,222 @@
+{
+  "recording": "SYN_T0019",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0019_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0019_e002",
+      "canonical": "Janaka",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "janaka"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0019_e003",
+      "canonical": "Shanika Samarakoon",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Shanika Samarakoon"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශානිකා සමරකෝන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0019_e004",
+      "canonical": "0723270945",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0723270945",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0723 2709 45"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 72 327 0945"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0723270945"
+        },
+        {
+          "script": "LATIN",
+          "form": "0723270945"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0019_e005",
+      "canonical": "1990-01-26",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1990-01-26",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "26th January 1990"
+        },
+        {
+          "script": "LATIN",
+          "form": "1990-01-26"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1990 ජනවාරි 26"
+        },
+        {
+          "script": "LATIN",
+          "form": "January 26, 1990"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0019_e006",
+      "canonical": "No. 187, Park Avenue, Badulla",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "187, Park Avenue, Badulla"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 187, Park Avenue, Badulla"
+        },
+        {
+          "script": "SINHALA",
+          "form": "187, උද්‍යාන මාවත, බදුල්ල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0019_e007",
+      "canonical": "Isuru Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "isuru kumara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru Kumara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු කුමාර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0019_e008",
+      "canonical": "shanika.samarakoon41@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "shanika.samarakoon41@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "shanika.samarakoon41@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "shanika.samarakoon41@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0019_e009",
+      "canonical": "0118193369",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0118193369",
+      "redact": false,
+      "value": "0118193369",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai ekai ekai atai ekai namayai thunai thunai hayai namaya"
+        },
+        {
+          "script": "LATIN",
+          "form": "0118193369"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0118193369"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0019_e010",
+      "canonical": "Anuradhapura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Anuradhapura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අනුරාධපුරය"
+        },
+        {
+          "script": "LATIN",
+          "form": "Anuradhapura"
+        }
+      ]
+    }
+  ]
+}

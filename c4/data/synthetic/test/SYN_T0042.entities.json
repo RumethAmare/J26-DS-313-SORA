@@ -1,0 +1,154 @@
+{
+  "recording": "SYN_T0042",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0042_e001",
+      "canonical": "NSB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "NSB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "NSB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජාතික ඉතිරිකිරීමේ බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0042_e002",
+      "canonical": "Yasodha",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "යශෝධා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Yasodha"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0042_e003",
+      "canonical": "Janaka Abeysekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Janaka"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka Abeysekara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0042_e004",
+      "canonical": "Gayan Abeysekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ගයාන් අබේසේකර"
+        },
+        {
+          "script": "LATIN",
+          "form": "Gayan Abeysekara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0042_e005",
+      "canonical": "1984-04-16",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1984-04-16",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1984 April 16th"
+        },
+        {
+          "script": "LATIN",
+          "form": "16th of April 1984"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1984.04.16"
+        },
+        {
+          "script": "LATIN",
+          "form": "1984-04-16"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0042_e006",
+      "canonical": "No. 183/2, Circular Road, Kalutara",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "183/2, Circular Road, Kalutara"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 183/2, Circular Road, Kalutara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "183/2, වටරවුම් පාර, කළුතර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0042_e007",
+      "canonical": "0117617691",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0117617691",
+      "redact": false,
+      "value": "0117617691",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "zero බිංදුවයි එකයි එකයි හත්සිය හැට එකයි හතයි හයසිය අනූ එක"
+        },
+        {
+          "script": "LATIN",
+          "form": "0117617691"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0117617691"
+        }
+      ]
+    }
+  ]
+}

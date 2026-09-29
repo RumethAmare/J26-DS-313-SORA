@@ -16,23 +16,56 @@ import pytest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from numerals import decode_number_words  # noqa: E402
-from synthetic import generate, make_nic, nic_day_of_year  # noqa: E402
+from synthetic import LEXICONS, generate, make_nic, nic_day_of_year  # noqa: E402
 from validate import validate_recording  # noqa: E402
 
 CORPUS = list(generate(40, seed=13))
+TEST_CORPUS = list(generate(40, seed=29, split="test"))
 HAS_WORDS = re.compile(r"[a-z඀-෿]{3}")
 
 
-@pytest.mark.parametrize("rid,docs,rows,registry", CORPUS, ids=[c[0] for c in CORPUS])
+@pytest.mark.parametrize("rid,docs,rows,registry", CORPUS + TEST_CORPUS,
+                         ids=[c[0] for c in CORPUS + TEST_CORPUS])
 def test_every_recording_passes_the_validator(rid, docs, rows, registry):
     rep = validate_recording(rows, {d["doc_id"]: d["text"] for d in docs}, registry)
     assert rep.ok, rep.errors
     assert not rep.warnings, "synthetic data must use the current schema only"
 
 
-def test_generation_is_deterministic():
-    assert list(generate(3, seed=13)) == list(generate(3, seed=13))
-    assert list(generate(3, seed=13)) != list(generate(3, seed=14))
+@pytest.mark.parametrize("split", ["train", "test"])
+def test_generation_is_deterministic(split):
+    assert list(generate(3, 13, split)) == list(generate(3, 13, split))
+    assert list(generate(3, 13, split)) != list(generate(3, 14, split))
+
+
+# --- Test split: held out from train ------------------------------------------
+
+def test_test_split_lexicon_is_disjoint_from_train():
+    """No train name, place or organisation may reach the test split."""
+    for key in LEXICONS["train"]:
+        train = {x[0] for x in LEXICONS["train"][key]} | {x[1] for x in LEXICONS["train"][key]}
+        test = {x[0] for x in LEXICONS["test"][key]} | {x[1] for x in LEXICONS["test"][key]}
+        assert not train & test, (key, train & test)
+
+
+def test_test_split_never_uses_train_templates():
+    train_texts = {d["text"] for _, docs, _, _ in CORPUS for d in docs}
+    test_texts = {d["text"] for _, docs, _, _ in TEST_CORPUS for d in docs}
+    assert not train_texts & test_texts
+
+
+def test_test_split_has_keywordless_answer_turns():
+    """Question in one utterance, identifier in the next with no keyword."""
+    answers = [d["text"] for _, docs, _, _ in TEST_CORPUS for d in docs
+               if d["kind"] == "transcript" and d["topic"] == "dob"
+               and not re.search(r"upan|birth|ipadune", d["text"])]
+    assert answers
+
+
+def test_test_split_noise_is_recorded_on_the_span():
+    kinds = {n for _, _, rows, _ in TEST_CORPUS for r in rows for n in r.get("noise", [])}
+    assert {"nic_letter_dropped", "digit_repeated", "restatement", "ordinal_error"} <= kinds
+    assert not any("noise" in r for _, _, rows, _ in CORPUS for r in rows)
 
 
 def test_every_row_is_marked_synthetic():

@@ -1,0 +1,178 @@
+{
+  "recording": "SYN_T0034",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0034_e001",
+      "canonical": "Hutch",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Hutch",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hutch"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හච්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0034_e002",
+      "canonical": "Madhavi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Madhavi"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මාධවී"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0034_e003",
+      "canonical": "Isuru Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru Weerasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0034_e004",
+      "canonical": "1974-09-16",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1974-09-16",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1974 September 16th"
+        },
+        {
+          "script": "LATIN",
+          "form": "September 16, 1974"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1974.09.16"
+        },
+        {
+          "script": "LATIN",
+          "form": "16th of September 1974"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0034_e005",
+      "canonical": "0114641901",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0114641901",
+      "redact": false,
+      "value": "0114641901",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 464 1901"
+        },
+        {
+          "script": "LATIN",
+          "form": "0114641901"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0114641901"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0034_e006",
+      "canonical": "Anuradhapura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Anuradhapura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Anuradhapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අනුරාධපුරය"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0034_e007",
+      "canonical": "197426036148",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "197426036148",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "one nine seven, four two six, zero three six, one four eight"
+        },
+        {
+          "script": "LATIN",
+          "form": "197426036148"
+        },
+        {
+          "script": "SINHALA",
+          "form": "197426036148"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0034_e008",
+      "canonical": "0701532979",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0701532979",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "070 153 2979"
+        },
+        {
+          "script": "LATIN",
+          "form": "0701532979"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0701532979"
+        }
+      ]
+    }
+  ]
+}

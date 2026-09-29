@@ -1,0 +1,202 @@
+{
+  "recording": "SYN_T0037",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0037_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0037_e002",
+      "canonical": "Janaka",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Janaka"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0037_e003",
+      "canonical": "Isuru Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Isuru Ranasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු රණසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0037_e004",
+      "canonical": "No. 18, Kandy Road, Kalutara",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 18, Kandy Road, Kalutara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "18, මහනුවර පාර, කළුතර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0037_e005",
+      "canonical": "113935010389",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "113935010389",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1139 3501 0389"
+        },
+        {
+          "script": "LATIN",
+          "form": "113935010389"
+        },
+        {
+          "script": "SINHALA",
+          "form": "113935010389"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0037_e006",
+      "canonical": "0743662370",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0743662370",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 4 3 6 6 2 3 7 0"
+        },
+        {
+          "script": "LATIN",
+          "form": "0743662370"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0743662370"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0037_e007",
+      "canonical": "isuru.ranasinghe58@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "isuru.ranasinghe58@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "isuru.ranasinghe58@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "isuru.ranasinghe58@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0037_e008",
+      "canonical": "961500929V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "961500929V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "961 500 929 v"
+        },
+        {
+          "script": "LATIN",
+          "form": "961500929V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "961500929V"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0037_e009",
+      "canonical": "Kalutara",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Kalutara",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kalutara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කළුතර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0037_e010",
+      "canonical": "Saman Ekanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සමන් ඒකනායක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Saman Ekanayake"
+        }
+      ]
+    }
+  ]
+}

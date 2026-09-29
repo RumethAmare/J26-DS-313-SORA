@@ -1,0 +1,151 @@
+{
+  "recording": "SYN_T0023",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0023_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0023_e002",
+      "canonical": "Janaka",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "janaka"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0023_e003",
+      "canonical": "Rashmi Liyanage",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Rashmi"
+        },
+        {
+          "script": "SINHALA",
+          "form": "රශ්මි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Rashmi Liyanage"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0023_e004",
+      "canonical": "1976-03-26",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1976-03-26",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1976 March 26th"
+        },
+        {
+          "script": "LATIN",
+          "form": "March 26, 1976"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1976.03.26"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0023_e005",
+      "canonical": "0114561942",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0114561942",
+      "redact": false,
+      "value": "0114561942",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 4561 942"
+        },
+        {
+          "script": "LATIN",
+          "form": "0114561942"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0114561942"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0023_e006",
+      "canonical": "rashmi.liyanage16@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "rashmi.liyanage16@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "rashmi.liyanage16@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "rashmi.liyanage16@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0023_e007",
+      "canonical": "Gayan Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ගයාන් කුමාර"
+        },
+        {
+          "script": "LATIN",
+          "form": "Gayan Kumara"
+        }
+      ]
+    }
+  ]
+}

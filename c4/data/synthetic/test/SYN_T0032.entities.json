@@ -1,0 +1,160 @@
+{
+  "recording": "SYN_T0032",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0032_e001",
+      "canonical": "Hutch",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Hutch",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hutch"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හච්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0032_e002",
+      "canonical": "Isuru",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0032_e003",
+      "canonical": "Janaka Samarakoon",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Janaka"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka Samarakoon"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0032_e004",
+      "canonical": "495336988269",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "495336988269",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "four nine five, three three six, nine eight eight, two six nine"
+        },
+        {
+          "script": "LATIN",
+          "form": "495336988269"
+        },
+        {
+          "script": "SINHALA",
+          "form": "495336988269"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0032_e005",
+      "canonical": "198219557435",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "198219557435",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ekai namayai atai dekai ekai namayai pahai pahai hathai hatharai thunai paha"
+        },
+        {
+          "script": "LATIN",
+          "form": "198219557435"
+        },
+        {
+          "script": "SINHALA",
+          "form": "198219557435"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0032_e006",
+      "canonical": "1982-07-13",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1982-07-13",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "1982 ජූලි 13"
+        },
+        {
+          "script": "LATIN",
+          "form": "13 July 1982"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1982.07.13"
+        },
+        {
+          "script": "LATIN",
+          "form": "July 13, 1982"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0032_e007",
+      "canonical": "0116285573",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0116285573",
+      "redact": false,
+      "value": "0116285573",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0116285573"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 628 5573"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0116285573"
+        }
+      ]
+    }
+  ]
+}

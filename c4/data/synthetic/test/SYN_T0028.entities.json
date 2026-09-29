@@ -1,0 +1,156 @@
+{
+  "recording": "SYN_T0028",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0028_e001",
+      "canonical": "Hutch",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Hutch",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hutch"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හච්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0028_e002",
+      "canonical": "Janaka",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ජනක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0028_e003",
+      "canonical": "Isuru Pathirana",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru Pathirana"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0028_e004",
+      "canonical": "1998-03-22",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1998-03-22",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "1998 මාර්තු 22"
+        },
+        {
+          "script": "LATIN",
+          "form": "22 March 1998"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1998.03.22"
+        },
+        {
+          "script": "LATIN",
+          "form": "22nd of March 1998"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0028_e005",
+      "canonical": "199808283492",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "199808283492",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1 9 9 8 0 8 2 8 3 4 9 2"
+        },
+        {
+          "script": "LATIN",
+          "form": "199808283492"
+        },
+        {
+          "script": "SINHALA",
+          "form": "199808283492"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0028_e006",
+      "canonical": "isuru.pathirana32@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "isuru.pathirana32@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "isuru.pathirana32@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "isuru.pathirana32@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0028_e007",
+      "canonical": "0766388365",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0766388365",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai hathai hayai hayai thunai atai atai thunai hayai paha"
+        },
+        {
+          "script": "LATIN",
+          "form": "0766388365"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0766388365"
+        }
+      ]
+    }
+  ]
+}

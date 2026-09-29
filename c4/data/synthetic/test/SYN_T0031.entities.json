@@ -1,0 +1,155 @@
+{
+  "recording": "SYN_T0031",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0031_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0031_e002",
+      "canonical": "Yasodha",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "yasodha"
+        },
+        {
+          "script": "LATIN",
+          "form": "Yasodha"
+        },
+        {
+          "script": "SINHALA",
+          "form": "යශෝධා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0031_e003",
+      "canonical": "Amal Pathirana",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "amal"
+        },
+        {
+          "script": "LATIN",
+          "form": "Amal"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අමල්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Amal Pathirana"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0031_e004",
+      "canonical": "1956-03-22",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1956-03-22",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "1956 මාර්තු 22"
+        },
+        {
+          "script": "LATIN",
+          "form": "March 22, 1956"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0031_e005",
+      "canonical": "195608264224",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "195608264224",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "one nine five, six zero eight, two six four, two two four"
+        },
+        {
+          "script": "LATIN",
+          "form": "195608264224"
+        },
+        {
+          "script": "SINHALA",
+          "form": "195608264224"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0031_e006",
+      "canonical": "0113859958",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0113859958",
+      "redact": false,
+      "value": "0113859958",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි එකයි දහතුනයි අසූ පහයි අනූ නවයයි පනස් අට"
+        },
+        {
+          "script": "LATIN",
+          "form": "0113859958"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0113859958"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0031_e007",
+      "canonical": "Gayan Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Gayan Kumara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ගයාන් කුමාර"
+        }
+      ]
+    }
+  ]
+}

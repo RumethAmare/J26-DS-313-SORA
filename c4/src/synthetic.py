@@ -28,7 +28,13 @@ What is realistic by construction:
 What it cannot give you: the disfluency, ASR errors and unpredictable phrasing
 of real speech. A model trained only on this learns the templates.
 
-    python synthetic.py --out ../data/synthetic --recordings 50 --seed 13
+Two splits, both written by default:
+
+    train   the templates above; used to build and to train
+    test    held-out templates, held-out names/places/organisations,
+            question-and-answer turns and speech noise; used only to score
+
+    python synthetic.py                  # -> data/synthetic/{train,test}/
 """
 from __future__ import annotations
 
@@ -85,6 +91,42 @@ ORGS = [  # public organisation names: ORG is not personal data
     ("Bank of Ceylon", "ලංකා බැංකුව"), ("People's Bank", "මහජන බැංකුව"),
     ("Dialog", "ඩයලොග්"), ("Mobitel", "මොබිටෙල්"), ("HNB", "එච්එන්බී"),
 ]
+
+# Held-out lexicon for the test split: no name, place or organisation here
+# occurs in the train split, so a model scored on synthetic-test cannot pass
+# by memorising train entities.
+TEST_FIRST_NAMES = [
+    ("Amal", "අමල්", "M"), ("Saman", "සමන්", "M"), ("Gayan", "ගයාන්", "M"),
+    ("Buddhika", "බුද්ධික", "M"), ("Isuru", "ඉසුරු", "M"), ("Janaka", "ජනක", "M"),
+    ("Madhavi", "මාධවී", "F"), ("Piumi", "පියුමි", "F"), ("Shanika", "ශානිකා", "F"),
+    ("Yasodha", "යශෝධා", "F"), ("Rashmi", "රශ්මි", "F"), ("Anjali", "අංජලී", "F"),
+]
+TEST_SURNAMES = [
+    ("Ranasinghe", "රණසිංහ"), ("Samarakoon", "සමරකෝන්"), ("Weerasinghe", "වීරසිංහ"),
+    ("Abeysekara", "අබේසේකර"), ("Liyanage", "ලියනගේ"), ("Kumara", "කුමාර"),
+    ("Pathirana", "පතිරණ"), ("Ekanayake", "ඒකනායක"),
+]
+TEST_TOWNS = [
+    ("Panadura", "පානදුර"), ("Kalutara", "කළුතර"), ("Anuradhapura", "අනුරාධපුරය"),
+    ("Ratnapura", "රත්නපුර"), ("Badulla", "බදුල්ල"), ("Jaffna", "යාපනය"),
+    ("Chilaw", "හලාවත"), ("Homagama", "හෝමාගම"),
+]
+TEST_STREETS = [
+    ("Kandy Road", "මහනුවර පාර"), ("Church Street", "පල්ලිය වීදිය"),
+    ("Market Road", "වෙළඳපොළ පාර"), ("Circular Road", "වටරවුම් පාර"),
+    ("Park Avenue", "උද්‍යාන මාවත"),
+]
+TEST_ORGS = [
+    ("Seylan Bank", "සෙලාන් බැංකුව"), ("NSB", "ජාතික ඉතිරිකිරීමේ බැංකුව"),
+    ("SLT", "ශ්‍රී ලංකා ටෙලිකොම්"), ("Hutch", "හච්"),
+    ("Ceylinco Insurance", "සෙලින්කෝ රක්ෂණ"),
+]
+
+LEXICONS = {
+    "train": dict(first=FIRST_NAMES, surname=SURNAMES, town=TOWNS, street=STREETS, org=ORGS),
+    "test": dict(first=TEST_FIRST_NAMES, surname=TEST_SURNAMES, town=TEST_TOWNS,
+                 street=TEST_STREETS, org=TEST_ORGS),
+}
 
 MONTHS_EN = ["January", "February", "March", "April", "May", "June", "July",
              "August", "September", "October", "November", "December"]
@@ -186,6 +228,111 @@ TEMPLATES = {
 
 OPTIONAL_TOPICS = ["nic", "phone", "account", "dob", "address", "email",
                    "relative", "branch", "payment", "hotline"]
+
+# Test-split templates: phrasings that never occur in TEMPLATES. A tuple is a
+# question turn followed by an answer turn -- the answer carries no keyword,
+# which is how real callers reply. Every kind in a variant has the same arity,
+# so the three renderings stay utterance-aligned.
+TEST_TEMPLATES = {
+    "greet": [
+        {"transcript": "ayubowan, {ORG} eken {AGENT} kiyala kenek kathaa karanne.",
+         "en": "Good afternoon, {AGENT} here from {ORG}.",
+         "si": "සුබ දවසක්, මම {ORG} ආයතනයෙන් {AGENT}."},
+        {"transcript": "{ORG} ekata call kalata thanks, mage nama {AGENT}.",
+         "en": "Thank you for calling {ORG}, my name is {AGENT}.",
+         "si": "{ORG} ඇමතීම ගැන ස්තූතියි, මගේ නම {AGENT}."},
+    ],
+    "name": [
+        {"transcript": ("oyaage nama mokakda?", "{CUST_FULL} thamai."),
+         "en": ("May I have your name?", "It is {CUST_FULL}."),
+         "si": ("ඔබගේ නම කුමක්ද?", "{CUST_FULL}.")},
+        {"transcript": "mama {CUST}, account holder.",
+         "en": "I am {CUST}, the account holder.",
+         "si": "මම {CUST}, ගිණුම් හිමියා."},
+    ],
+    "nic": [
+        {"transcript": ("ID eke number eka kiyanna puluwanda?", "ow, {NIC}."),
+         "en": ("Could you read out your ID number?", "Sure, {NIC}."),
+         "si": ("ඔබගේ හැඳුනුම්පත් අංකය කියන්න.", "{NIC}.")},
+        {"transcript": "identity card eke thiyenne {NIC}.",
+         "en": "The number on my identity card is {NIC}.",
+         "si": "මගේ හැඳුනුම්පතේ අංකය {NIC}."},
+    ],
+    "phone": [
+        {"transcript": ("oyaawa contact karanna number ekak denna.", "{PHONE} ta gahanna."),
+         "en": ("What is the best number to contact you on?", "Please call {PHONE}."),
+         "si": ("ඔබව සම්බන්ධ කරගන්න අංකයක් දෙන්න.", "{PHONE} අමතන්න.")},
+        {"transcript": "whatsapp karanna {PHONE} ekata.",
+         "en": "Message me on WhatsApp at {PHONE}.",
+         "si": "{PHONE} අංකයට WhatsApp කරන්න."},
+    ],
+    "account": [
+        {"transcript": ("salli daanna one account eka?", "{ACCOUNT}."),
+         "en": ("Which account should the money go to?", "{ACCOUNT}."),
+         "si": ("මුදල් බැර කළ යුතු ගිණුම කුමක්ද?", "{ACCOUNT}.")},
+        {"transcript": "savings eke number eka {ACCOUNT}.",
+         "en": "My savings number is {ACCOUNT}.",
+         "si": "මගේ ඉතුරුම් අංකය {ACCOUNT}."},
+    ],
+    "dob": [
+        {"transcript": ("upan dinaya kiyanna puluwanda?", "{DOB}."),
+         "en": ("Can you confirm your date of birth?", "Yes, {DOB}."),
+         "si": ("ඔබේ උපන් දිනය තහවුරු කරන්න.", "{DOB}.")},
+        {"transcript": "mama ipadune {DOB}.",
+         "en": "My birthday falls on {DOB}.",
+         "si": "මම ඉපදුණේ {DOB}."},
+    ],
+    "address": [
+        {"transcript": ("dan inne koheda?", "{ADDRESS}."),
+         "en": ("Where are you living now?", "{ADDRESS}."),
+         "si": ("දැන් පදිංචිය කොහේද?", "{ADDRESS}.")},
+        {"transcript": "letters ewanna {ADDRESS} ta.",
+         "en": "Please send letters to {ADDRESS}.",
+         "si": "ලියුම් {ADDRESS} වෙත එවන්න."},
+    ],
+    "email": [
+        {"transcript": ("email ekak thiyenawada?", "ow, {EMAIL}."),
+         "en": ("Do you have an email address?", "Yes, {EMAIL}."),
+         "si": ("ඊමේල් ලිපිනයක් තිබේද?", "ඔව්, {EMAIL}.")},
+    ],
+    "relative": [
+        {"transcript": "mage ayya {REL} th ekka enawa.",
+         "en": "My brother {REL} will come with me.",
+         "si": "මගේ අයියා {REL} මා සමඟ එනවා."},
+    ],
+    "branch": [
+        {"transcript": "{BRANCH} office eke idala thamai call karanne.",
+         "en": "I am calling from near the {BRANCH} office.",
+         "si": "මම {BRANCH} කාර්යාලය අසල සිට කතා කරන්නේ."},
+    ],
+    "payment": [
+        {"transcript": "{TXDATE} {AMOUNT} ක් bill eka gewwa.",
+         "en": "On {TXDATE} I transferred {AMOUNT} rupees.",
+         "si": "{TXDATE} දින රුපියල් {AMOUNT} ක් මාරු කළා."},
+    ],
+    "hotline": [
+        {"transcript": "prashnayak thiyenam {HOTLINE} ta call karanna.",
+         "en": "For any issue, call {HOTLINE}.",
+         "si": "ගැටලුවක් ඇත්නම් {HOTLINE} අමතන්න."},
+    ],
+}
+
+TEST_SUMMARY = {
+    "greet": "{AGENT} of {ORG} handled a call from {CUST_FULL}.",
+    "nic": "Identity number provided: {NIC}.",
+    "phone": "Callback number: {PHONE}.",
+    "account": "Funds are to be credited to {ACCOUNT}.",
+    "dob": "Customer born {DOB}.",
+    "address": "Residential address: {ADDRESS}.",
+    "email": "Email: {EMAIL}.",
+    "relative": "{REL} was mentioned as a family member.",
+    "branch": "The {BRANCH} office was referenced.",
+    "payment": "A transfer of Rs. {AMOUNT} was reported.",
+}
+
+_FILLERS = ["uh, ", "ammo, ", "ah ", "hmm, ", "ane "]
+_EN_DIGIT_WORDS = ["zero", "one", "two", "three", "four", "five", "six", "seven",
+                   "eight", "nine"]
 
 # ---------------------------------------------------------------------------
 # Data model
@@ -334,30 +481,36 @@ def script_of(surface: str, kind: str) -> str:
 
 
 class Recording:
-    def __init__(self, rid: str, rng: random.Random):
+    def __init__(self, rid: str, rng: random.Random, split: str = "train"):
         self.rid = rid
         self.rng = rng
+        self.split = split
+        self.noisy = split == "test"
+        self.lex = LEXICONS[split]
         self.entities: dict[str, Entity] = {}
         self.docs: list[dict] = []
         self.rows: list[dict] = []
         self._pseudo: dict[str, int] = {}
         self._utt: dict[str, object] = {}  # distractor values of the current utterance
+        self._noise: list[str] = []        # noise applied to the slot being rendered
+        self._lower = False                # lowercase the literal text of this utterance
 
         self.customer = self._person()
-        self.agent_first = rng.choice(FIRST_NAMES)
+        self.agent_first = rng.choice(self.lex["first"])
         self.relative = self._person(male=True)
-        self.org = rng.choice(ORGS)
-        self.branch = rng.choice(TOWNS)
-        self.home = (rng.randint(1, 250), rng.choice(STREETS),
-                     rng.choice(TOWNS), rng.random() < 0.3)
+        self.org = rng.choice(self.lex["org"])
+        self.branch = rng.choice(self.lex["town"])
+        self.home = (rng.randint(1, 250), rng.choice(self.lex["street"]),
+                     rng.choice(self.lex["town"]), rng.random() < 0.3)
         self.old_nic = self.customer.dob.year < 2000 and rng.random() < 0.5
 
     # -- entity registry ----------------------------------------------------
 
     def _person(self, male: bool = False) -> Person:
-        firsts = [f for f in FIRST_NAMES if f[2] == "M"] if male else FIRST_NAMES
+        names = self.lex["first"]
+        firsts = [f for f in names if f[2] == "M"] if male else names
         born = dt.date(1955, 1, 1) + dt.timedelta(days=self.rng.randint(0, 18250))
-        return Person(self.rng.choice(firsts), self.rng.choice(SURNAMES), born)
+        return Person(self.rng.choice(firsts), self.rng.choice(self.lex["surname"]), born)
 
     def entity(self, key: str, label: str, role: str, canonical: str, **kw) -> Entity:
         if key not in self.entities:
@@ -426,7 +579,7 @@ class Recording:
                 value = make_nic(c.dob, c.first[2], rng, self.old_nic)
                 self.entity("nic", "NIC", "PRIVATE_INDIVIDUAL", value, value=value)
             ent = self.entities["nic"]
-            return (spoken_digits(ent.value, rng) if kind == "transcript"
+            return (self._spoken(ent.value) if kind == "transcript"
                     else ent.value), ent
 
         if slot in ("PHONE", "HOTLINE"):
@@ -437,7 +590,7 @@ class Recording:
                 self.entity(key, "PHONE", role, value, value=value)
             ent = self.entities[key]
             if kind == "transcript":
-                return spoken_digits(ent.value, rng), ent
+                return self._spoken(ent.value), ent
             if kind == "en" and rng.random() < 0.3:
                 return f"+94 {ent.value[1:3]} {ent.value[3:6]} {ent.value[6:]}", ent
             return ent.value, ent
@@ -447,13 +600,13 @@ class Recording:
                 value = make_account(rng)
                 self.entity("account", "ACCOUNT", "PRIVATE_INDIVIDUAL", value, value=value)
             ent = self.entities["account"]
-            return (spoken_digits(ent.value, rng) if kind == "transcript"
+            return (self._spoken(ent.value) if kind == "transcript"
                     else ent.value), ent
 
         if slot == "DOB":
             ent = self.entity("dob", "DOB", "PRIVATE_INDIVIDUAL", c.dob.isoformat(),
                               value=c.dob.isoformat())
-            return dob_surface(c.dob, kind, rng), ent
+            return self._dob(c.dob, kind), ent
 
         if slot == "ADDRESS":
             num, street, town, sub = self.home
@@ -493,6 +646,7 @@ class Recording:
         text, pos = [], 0
         for part in re.split(r"(\{[A-Z_]+\})", template):
             if part.startswith("{") and part.endswith("}"):
+                self._noise = []
                 surface, ent = self.resolve(part[1:-1], kind)
                 if ent is not None:
                     script = script_of(surface, kind)
@@ -511,8 +665,11 @@ class Recording:
                         "role": ent.role,
                         "redact": expected_redact(ent.label, ent.role),
                         "annotation_source": "synthetic",
+                        **({"noise": list(self._noise)} if self._noise else {}),
                     })
                 part = surface
+            elif self._lower:
+                part = part.lower()
             text.append(part)
             pos += len(part)
         return "".join(text)
@@ -524,6 +681,9 @@ class Recording:
         # rendered in all three utterance documents.
         topics = ["greet", "name"] + rng.sample(OPTIONAL_TOPICS, rng.randint(4, 8))
         topics[2:] = sorted(topics[2:], key=lambda _: rng.random())
+
+        if self.split == "test":
+            return self._build_test(topics)
 
         summary_parts = []
         for n, topic in enumerate(topics, start=1):
@@ -546,6 +706,96 @@ class Recording:
                           "utterance": None, "topic": "summary", "text": text})
         return self
 
+    def _build_test(self, topics: list[str]) -> "Recording":
+        """Test split: held-out templates, question/answer turns, speech noise."""
+        rng = self.rng
+        n = 0
+        for topic in topics:
+            self._utt = {}
+            variant = rng.choice(TEST_TEMPLATES[topic])
+            turns = {k: v if isinstance(v, tuple) else (v,) for k, v in variant.items()}
+            for i in range(len(turns["transcript"])):
+                n += 1
+                for kind, doc_id in (("transcript", f"{self.rid}_transcript_u{n:03d}_v1"),
+                                     ("en", f"{self.rid}_c2_u{n:03d}_en_v1"),
+                                     ("si", f"{self.rid}_c2_u{n:03d}_si_v1")):
+                    template = turns[kind][i]
+                    if kind == "transcript":
+                        # Transcripts are speech: fillers and no capitalisation.
+                        if rng.random() < 0.3:
+                            template = rng.choice(_FILLERS) + template
+                        self._lower = rng.random() < 0.3
+                    text = self.render(template, doc_id, kind)
+                    self._lower = False
+                    self.docs.append({"doc_id": doc_id, "recording": self.rid,
+                                      "kind": kind, "utterance": n, "topic": topic,
+                                      "text": text})
+
+        self._utt = {}
+        doc_id = f"{self.rid}_c2_summary_en_v1"
+        summary = " ".join(TEST_SUMMARY[t] for t in topics if t in TEST_SUMMARY)
+        text = self.render(summary, doc_id, "summary")
+        self.docs.append({"doc_id": doc_id, "recording": self.rid, "kind": "summary",
+                          "utterance": None, "topic": "summary", "text": text})
+        return self
+
+    # -- speech noise (test split, transcripts only) ------------------------
+
+    def _spoken(self, value: str) -> str:
+        """Transcript rendering of a digit identifier; noisy in the test split."""
+        rng = self.rng
+        if not self.noisy:
+            return spoken_digits(value, rng)
+
+        digits = re.sub(r"\D", "", value)
+        letter = value[-1].lower() if value[-1].isalpha() else ""
+        if letter and rng.random() < 0.5:
+            letter = ""                       # the V is not said, or not heard
+            self._noise.append("nic_letter_dropped")
+        if rng.random() < 0.08:
+            k = rng.randrange(len(digits))    # a digit said twice
+            digits = digits[:k] + digits[k] + digits[k:]
+            self._noise.append("digit_repeated")
+
+        forms = ["compact", "spaced", "grouped"]
+        if not letter:
+            forms += ["sinhala_words", "romanized_words", "english_words"]
+        form = rng.choice(forms)
+        if form == "compact":
+            return digits + letter.upper()
+        if form == "spaced":
+            return " ".join(digits + letter)
+        if form == "grouped":
+            return _chunked(digits, rng) + (f" {letter}" if letter else "")
+        if form == "english_words":
+            words = [_EN_DIGIT_WORDS[int(d)] for d in digits]
+            chunks = [" ".join(words[i : i + 3]) for i in range(0, len(words), 3)]
+            return ", ".join(chunks)
+        if form == "romanized_words":
+            spoken = encode_number_words(digits, romanized=True)
+        else:
+            spoken = encode_number_words(digits, _random_groups(digits, rng),
+                                         joined=rng.random() < 0.4)
+        if digits[0] == "0" and rng.random() < 0.3:
+            spoken = "zero " + spoken         # "zero binduwai ...": said twice
+            self._noise.append("restatement")
+        return spoken
+
+    def _dob(self, d: dt.date, kind: str) -> str:
+        rng = self.rng
+        if not (self.noisy and kind == "transcript"):
+            return dob_surface(d, kind, rng)
+        month = MONTHS_EN[d.month - 1]
+        suffix = ordinal(d.day)[len(str(d.day)):]
+        if rng.random() < 0.25:
+            # ASR writes the wrong ordinal suffix: "9rd", "21th".
+            suffix = rng.choice([x for x in ("st", "nd", "rd", "th") if x != suffix])
+            self._noise.append("ordinal_error")
+        return rng.choice([f"{month} {d.day}{suffix} {d.year}",
+                           f"{d.day}{suffix} {month} {d.year}",
+                           f"{d.year} {month} {d.day}{suffix}",
+                           f"{d.year} {MONTHS_SI[d.month - 1]} {d.day}"])
+
     def registry(self) -> dict:
         entities = []
         for ent in self.entities.values():
@@ -563,28 +813,37 @@ class Recording:
                 "entities": entities}
 
 
-def generate(n_recordings: int, seed: int = 13):
+# split -> (recording id prefix, default size, default seed)
+SPLITS = {"train": ("SYN_R", 50, 13), "test": ("SYN_T", 60, 29)}
+
+
+def generate(n_recordings: int, seed: int = 13, split: str = "train"):
     """Yield (recording_id, docs, rows, registry) for each synthetic recording."""
+    prefix = SPLITS[split][0]
     for i in range(1, n_recordings + 1):
-        rid = f"SYN_R{i:04d}"
-        rec = Recording(rid, random.Random(f"{seed}:{rid}")).build()
+        rid = f"{prefix}{i:04d}"
+        rec = Recording(rid, random.Random(f"{seed}:{rid}"), split).build()
         yield rid, rec.docs, rec.rows, rec.registry()
 
 
-def write_corpus(out_dir: Path, n_recordings: int, seed: int = 13) -> int:
+def write_corpus(out_dir: Path, n_recordings: int, seed: int = 13,
+                 split: str = "train") -> int:
     """Write <rid>.docs.jsonl / .pii.jsonl / .entities.json; returns span count."""
     out_dir.mkdir(parents=True, exist_ok=True)
+    for old in out_dir.glob("SYN_*"):
+        old.unlink()                     # a smaller rerun must not leave stale files
     total = 0
-    for rid, docs, rows, registry in generate(n_recordings, seed):
+    for rid, docs, rows, registry in generate(n_recordings, seed, split):
         report = validate_recording(rows, {d["doc_id"]: d["text"] for d in docs},
                                     registry)
         if not report.ok:
             raise AssertionError(f"{rid} failed validation:\n" + "\n".join(report.errors))
-        with open(out_dir / f"{rid}.docs.jsonl", "w", encoding="utf-8") as f:
+        # newline="\n": identical bytes on every OS, so a regenerated set diffs clean.
+        with open(out_dir / f"{rid}.docs.jsonl", "w", encoding="utf-8", newline="\n") as f:
             f.writelines(json.dumps(d, ensure_ascii=False) + "\n" for d in docs)
-        with open(out_dir / f"{rid}.pii.jsonl", "w", encoding="utf-8") as f:
+        with open(out_dir / f"{rid}.pii.jsonl", "w", encoding="utf-8", newline="\n") as f:
             f.writelines(json.dumps(r, ensure_ascii=False) + "\n" for r in rows)
-        with open(out_dir / f"{rid}.entities.json", "w", encoding="utf-8") as f:
+        with open(out_dir / f"{rid}.entities.json", "w", encoding="utf-8", newline="\n") as f:
             json.dump(registry, f, ensure_ascii=False, indent=2)
         total += len(rows)
     return total
@@ -594,11 +853,15 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--out", type=Path,
                     default=Path(__file__).resolve().parents[1] / "data" / "synthetic")
-    ap.add_argument("--recordings", type=int, default=50)
-    ap.add_argument("--seed", type=int, default=13)
+    ap.add_argument("--split", choices=["train", "test", "both"], default="both")
+    ap.add_argument("--recordings", type=int, help="default: 50 train, 60 test")
+    ap.add_argument("--seed", type=int, help="default: 13 train, 29 test")
     args = ap.parse_args()
-    spans = write_corpus(args.out, args.recordings, args.seed)
-    print(f"wrote {args.recordings} recordings, {spans} spans -> {args.out}")
+    for split in (["train", "test"] if args.split == "both" else [args.split]):
+        _, size, seed = SPLITS[split]
+        n = args.recordings or size
+        spans = write_corpus(args.out / split, n, args.seed or seed, split)
+        print(f"{split}: wrote {n} recordings, {spans} spans -> {args.out / split}")
 
 
 if __name__ == "__main__":

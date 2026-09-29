@@ -1,0 +1,170 @@
+{
+  "recording": "SYN_T0018",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0018_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0018_e002",
+      "canonical": "Shanika",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Shanika"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශානිකා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0018_e003",
+      "canonical": "Saman Samarakoon",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සමන් සමරකෝන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Saman Samarakoon"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0018_e004",
+      "canonical": "Buddhika Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Buddhika Weerasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "බුද්ධික වීරසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0018_e005",
+      "canonical": "1964-05-14",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1964-05-14",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "14th May 1964"
+        },
+        {
+          "script": "LATIN",
+          "form": "14th of May 1964"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1964 මැයි 14"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0018_e006",
+      "canonical": "0741304402",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0741304402",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero seven four, one three zero, four four zero, two"
+        },
+        {
+          "script": "LATIN",
+          "form": "0741304402"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0741304402"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0018_e007",
+      "canonical": "116003803155",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "116003803155",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "එකයි දහසයයි බිංදුවයි බිංදුවයි තුන්සිය අසූවයි තිස්එකයි පහයි පහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "116003803155"
+        },
+        {
+          "script": "SINHALA",
+          "form": "116003803155"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0018_e008",
+      "canonical": "0111562669",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0111562669",
+      "redact": false,
+      "value": "0111562669",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero one one, one five six, two six six, nine"
+        },
+        {
+          "script": "LATIN",
+          "form": "0111562669"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0111562669"
+        }
+      ]
+    }
+  ]
+}

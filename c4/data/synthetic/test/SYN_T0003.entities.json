@@ -1,0 +1,166 @@
+{
+  "recording": "SYN_T0003",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0003_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0003_e002",
+      "canonical": "Isuru",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0003_e003",
+      "canonical": "Piumi Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Piumi Kumara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "පියුමි කුමාර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0003_e004",
+      "canonical": "1993-04-14",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1993-04-14",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "1993 අප්‍රේල් 14"
+        },
+        {
+          "script": "LATIN",
+          "form": "1993-04-14"
+        },
+        {
+          "script": "LATIN",
+          "form": "14 April 1993"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0003_e005",
+      "canonical": "No. 124, Circular Road, Anuradhapura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "124, වටරවුම් පාර, අනුරාධපුරය"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 124, Circular Road, Anuradhapura"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0003_e006",
+      "canonical": "84968521700532",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "84968521700532",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "8496 852 1700 532"
+        },
+        {
+          "script": "LATIN",
+          "form": "84968521700532"
+        },
+        {
+          "script": "SINHALA",
+          "form": "84968521700532"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0003_e007",
+      "canonical": "piumi.kumara54@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "piumi.kumara54@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "piumi.kumara54@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "piumi.kumara54@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0003_e008",
+      "canonical": "0116943733",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0116943733",
+      "redact": false,
+      "value": "0116943733",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0116943733"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 694 3733"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0116943733"
+        }
+      ]
+    }
+  ]
+}

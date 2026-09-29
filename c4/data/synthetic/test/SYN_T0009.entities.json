@@ -1,0 +1,177 @@
+{
+  "recording": "SYN_T0009",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0009_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0009_e002",
+      "canonical": "Madhavi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "මාධවී"
+        },
+        {
+          "script": "LATIN",
+          "form": "Madhavi"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0009_e003",
+      "canonical": "Buddhika Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බුද්ධික"
+        },
+        {
+          "script": "LATIN",
+          "form": "Buddhika"
+        },
+        {
+          "script": "LATIN",
+          "form": "Buddhika Ranasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0009_e004",
+      "canonical": "920847711X",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "920847711X",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අනූ දෙකයි බිංදුවයි අටසිය හතළිස් හතයි හත්සිය එකොළහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "920847711X"
+        },
+        {
+          "script": "SINHALA",
+          "form": "920847711X"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0009_e005",
+      "canonical": "Homagama",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Homagama",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "homagama"
+        },
+        {
+          "script": "LATIN",
+          "form": "Homagama"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හෝමාගම"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0009_e006",
+      "canonical": "Buddhika Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Buddhika Weerasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "බුද්ධික වීරසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0009_e007",
+      "canonical": "1992-03-24",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1992-03-24",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "March 24th 1992"
+        },
+        {
+          "script": "LATIN",
+          "form": "24th of March 1992"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1992.03.24"
+        },
+        {
+          "script": "LATIN",
+          "form": "24 March 1992"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0009_e008",
+      "canonical": "0713677295",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0713677295",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero binduwai hathai ekai thunai hayai hathai hathai dekai namayai paha"
+        },
+        {
+          "script": "LATIN",
+          "form": "0713677295"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0713677295"
+        }
+      ]
+    }
+  ]
+}

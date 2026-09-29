@@ -1,0 +1,201 @@
+{
+  "recording": "SYN_T0011",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0011_e001",
+      "canonical": "Hutch",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Hutch",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hutch"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හච්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0011_e002",
+      "canonical": "Rashmi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Rashmi"
+        },
+        {
+          "script": "SINHALA",
+          "form": "රශ්මි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0011_e003",
+      "canonical": "Piumi Abeysekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Piumi"
+        },
+        {
+          "script": "SINHALA",
+          "form": "පියුමි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Piumi Abeysekara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0011_e004",
+      "canonical": "No. 143, Kandy Road, Chilaw",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "143, Kandy Road, Chilaw"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 143, Kandy Road, Chilaw"
+        },
+        {
+          "script": "SINHALA",
+          "form": "143, මහනුවර පාර, හලාවත"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0011_e005",
+      "canonical": "1968-07-24",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1968-07-24",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "1968 ජූලි 24"
+        },
+        {
+          "script": "LATIN",
+          "form": "1968-07-24"
+        },
+        {
+          "script": "LATIN",
+          "form": "July 24, 1968"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0011_e006",
+      "canonical": "0741703032",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0741703032",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0741 703 032"
+        },
+        {
+          "script": "LATIN",
+          "form": "0741703032"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0741703032"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0011_e007",
+      "canonical": "196870616279",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "196870616279",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1968 7061 6279"
+        },
+        {
+          "script": "LATIN",
+          "form": "196870616279"
+        },
+        {
+          "script": "SINHALA",
+          "form": "196870616279"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0011_e008",
+      "canonical": "883614234894",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "883614234894",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "8 8 3 6 1 4 2 3 4 8 9 4"
+        },
+        {
+          "script": "LATIN",
+          "form": "883614234894"
+        },
+        {
+          "script": "SINHALA",
+          "form": "883614234894"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0011_e009",
+      "canonical": "0115988690",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0115988690",
+      "redact": false,
+      "value": "0115988690",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai ekai ekai pahai namayai atai atai hayai namayai binduwa"
+        },
+        {
+          "script": "LATIN",
+          "form": "0115988690"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0115988690"
+        }
+      ]
+    }
+  ]
+}

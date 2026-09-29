@@ -1,0 +1,147 @@
+{
+  "recording": "SYN_T0027",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0027_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0027_e002",
+      "canonical": "Anjali",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "anjali"
+        },
+        {
+          "script": "LATIN",
+          "form": "Anjali"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අංජලී"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0027_e003",
+      "canonical": "Gayan Ekanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Gayan Ekanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ගයාන් ඒකනායක"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0027_e004",
+      "canonical": "1957-06-16",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1957-06-16",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "1957 ජූනි 16"
+        },
+        {
+          "script": "LATIN",
+          "form": "1957-06-16"
+        },
+        {
+          "script": "LATIN",
+          "form": "16th of June 1957"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0027_e005",
+      "canonical": "474257935151",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "474257935151",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "4 7 4 2 5 7 9 3 5 1 5 1"
+        },
+        {
+          "script": "LATIN",
+          "form": "474257935151"
+        },
+        {
+          "script": "SINHALA",
+          "form": "474257935151"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0027_e006",
+      "canonical": "Isuru Ekanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Isuru Ekanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු ඒකනායක"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0027_e007",
+      "canonical": "gayan.ekanayake99@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "gayan.ekanayake99@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "gayan.ekanayake99@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "gayan.ekanayake99@gmail.com"
+        }
+      ]
+    }
+  ]
+}

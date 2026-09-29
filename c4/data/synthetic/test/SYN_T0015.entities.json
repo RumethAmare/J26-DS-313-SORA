@@ -1,0 +1,192 @@
+{
+  "recording": "SYN_T0015",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0015_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0015_e002",
+      "canonical": "Amal",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "amal"
+        },
+        {
+          "script": "LATIN",
+          "form": "Amal"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අමල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0015_e003",
+      "canonical": "Isuru Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru Ranasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0015_e004",
+      "canonical": "1973-08-24",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1973-08-24",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "24th August 1973"
+        },
+        {
+          "script": "LATIN",
+          "form": "24th of August 1973"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1973 අගෝස්තු 24"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0015_e005",
+      "canonical": "No. 56, Market Road, Ratnapura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "56, වෙළඳපොළ පාර, රත්නපුර"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 56, Market Road, Ratnapura"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0015_e006",
+      "canonical": "0785642702",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0785642702",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0785642702"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0785642702"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0015_e007",
+      "canonical": "0114204266",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0114204266",
+      "redact": false,
+      "value": "0114204266",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "zero බිංදුවයි එකොළහයි හතරයි විස්සයි හතළිස්දෙකයි හැටහය"
+        },
+        {
+          "script": "LATIN",
+          "form": "0114204266"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0114204266"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0015_e008",
+      "canonical": "979941260638",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "979941260638",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "නවයයි හැත්තෑ නවයයි නවසිය හතළිස් එකයි දෙසිය හැටයි හැට තුනයි අට"
+        },
+        {
+          "script": "LATIN",
+          "form": "979941260638"
+        },
+        {
+          "script": "SINHALA",
+          "form": "979941260638"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0015_e009",
+      "canonical": "Isuru Ekanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Isuru Ekanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු ඒකනායක"
+        }
+      ]
+    }
+  ]
+}

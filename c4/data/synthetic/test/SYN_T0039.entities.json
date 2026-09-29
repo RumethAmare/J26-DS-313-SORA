@@ -1,0 +1,174 @@
+{
+  "recording": "SYN_T0039",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0039_e001",
+      "canonical": "Seylan Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Seylan Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Seylan Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලාන් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0039_e002",
+      "canonical": "Janaka",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "janaka"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0039_e003",
+      "canonical": "Buddhika Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Buddhika Kumara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "බුද්ධික කුමාර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0039_e004",
+      "canonical": "135115381718",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "135115381718",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "එකසිය තිස් පහයි එකොළහයි පන්සිය තිස් අටයි දහහතයි දහඅට"
+        },
+        {
+          "script": "LATIN",
+          "form": "135115381718"
+        },
+        {
+          "script": "SINHALA",
+          "form": "135115381718"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0039_e005",
+      "canonical": "No. 202, Kandy Road, Panadura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "202, Kandy Road, Panadura"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 202, Kandy Road, Panadura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "202, මහනුවර පාර, පානදුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0039_e006",
+      "canonical": "buddhika.kumara61@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "buddhika.kumara61@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "buddhika.kumara61@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "buddhika.kumara61@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0039_e007",
+      "canonical": "0715903523",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0715903523",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0771 590 3523"
+        },
+        {
+          "script": "LATIN",
+          "form": "0715903523"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0715903523"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0039_e008",
+      "canonical": "0118059145",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0118059145",
+      "redact": false,
+      "value": "0118059145",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 805 9145"
+        },
+        {
+          "script": "LATIN",
+          "form": "0118059145"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0118059145"
+        }
+      ]
+    }
+  ]
+}

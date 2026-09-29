@@ -1,0 +1,22 @@
+{"doc_id": "SYN_T0059_transcript_u001_v1", "recording": "SYN_T0059", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "ayubowan, Seylan Bank eken Anjali kiyala kenek kathaa karanne."}
+{"doc_id": "SYN_T0059_c2_u001_en_v1", "recording": "SYN_T0059", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good afternoon, Anjali here from Seylan Bank."}
+{"doc_id": "SYN_T0059_c2_u001_si_v1", "recording": "SYN_T0059", "kind": "si", "utterance": 1, "topic": "greet", "text": "සුබ දවසක්, මම සෙලාන් බැංකුව ආයතනයෙන් අංජලී."}
+{"doc_id": "SYN_T0059_transcript_u002_v1", "recording": "SYN_T0059", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ah mama Janaka, account holder."}
+{"doc_id": "SYN_T0059_c2_u002_en_v1", "recording": "SYN_T0059", "kind": "en", "utterance": 2, "topic": "name", "text": "I am Janaka, the account holder."}
+{"doc_id": "SYN_T0059_c2_u002_si_v1", "recording": "SYN_T0059", "kind": "si", "utterance": 2, "topic": "name", "text": "මම ජනක, ගිණුම් හිමියා."}
+{"doc_id": "SYN_T0059_transcript_u003_v1", "recording": "SYN_T0059", "kind": "transcript", "utterance": 3, "topic": "nic", "text": "identity card eke thiyenne hayai hathai dekai binduwai thunai ekai dekai atai atai binduwa."}
+{"doc_id": "SYN_T0059_c2_u003_en_v1", "recording": "SYN_T0059", "kind": "en", "utterance": 3, "topic": "nic", "text": "The number on my identity card is 672031280V."}
+{"doc_id": "SYN_T0059_c2_u003_si_v1", "recording": "SYN_T0059", "kind": "si", "utterance": 3, "topic": "nic", "text": "මගේ හැඳුනුම්පතේ අංකය 672031280V."}
+{"doc_id": "SYN_T0059_transcript_u004_v1", "recording": "SYN_T0059", "kind": "transcript", "utterance": 4, "topic": "relative", "text": "mage ayya Amal Ekanayake th ekka enawa."}
+{"doc_id": "SYN_T0059_c2_u004_en_v1", "recording": "SYN_T0059", "kind": "en", "utterance": 4, "topic": "relative", "text": "My brother Amal Ekanayake will come with me."}
+{"doc_id": "SYN_T0059_c2_u004_si_v1", "recording": "SYN_T0059", "kind": "si", "utterance": 4, "topic": "relative", "text": "මගේ අයියා අමල් ඒකනායක මා සමඟ එනවා."}
+{"doc_id": "SYN_T0059_transcript_u005_v1", "recording": "SYN_T0059", "kind": "transcript", "utterance": 5, "topic": "email", "text": "ammo, email ekak thiyenawada?"}
+{"doc_id": "SYN_T0059_c2_u005_en_v1", "recording": "SYN_T0059", "kind": "en", "utterance": 5, "topic": "email", "text": "Do you have an email address?"}
+{"doc_id": "SYN_T0059_c2_u005_si_v1", "recording": "SYN_T0059", "kind": "si", "utterance": 5, "topic": "email", "text": "ඊමේල් ලිපිනයක් තිබේද?"}
+{"doc_id": "SYN_T0059_transcript_u006_v1", "recording": "SYN_T0059", "kind": "transcript", "utterance": 6, "topic": "email", "text": "ow, janaka.kumara39@yahoo.com."}
+{"doc_id": "SYN_T0059_c2_u006_en_v1", "recording": "SYN_T0059", "kind": "en", "utterance": 6, "topic": "email", "text": "Yes, janaka.kumara39@yahoo.com."}
+{"doc_id": "SYN_T0059_c2_u006_si_v1", "recording": "SYN_T0059", "kind": "si", "utterance": 6, "topic": "email", "text": "ඔව්, janaka.kumara39@yahoo.com."}
+{"doc_id": "SYN_T0059_transcript_u007_v1", "recording": "SYN_T0059", "kind": "transcript", "utterance": 7, "topic": "phone", "text": "whatsapp karanna zero බිංදුවයි හැත්තෑ හතයි හැත්තෑ හතයි බිංදුවයි හයයි දහඅටයි නවය ekata."}
+{"doc_id": "SYN_T0059_c2_u007_en_v1", "recording": "SYN_T0059", "kind": "en", "utterance": 7, "topic": "phone", "text": "Message me on WhatsApp at +94 77 770 6189."}
+{"doc_id": "SYN_T0059_c2_u007_si_v1", "recording": "SYN_T0059", "kind": "si", "utterance": 7, "topic": "phone", "text": "0777706189 අංකයට WhatsApp කරන්න."}
+{"doc_id": "SYN_T0059_c2_summary_en_v1", "recording": "SYN_T0059", "kind": "summary", "utterance": null, "topic": "summary", "text": "Anjali of Seylan Bank handled a call from Janaka Kumara. Identity number provided: 672031280V. Amal Ekanayake was mentioned as a family member. Email: janaka.kumara39@yahoo.com. Callback number: 0777706189."}

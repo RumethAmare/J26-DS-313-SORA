@@ -1,0 +1,136 @@
+{
+  "recording": "SYN_T0012",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0012_e001",
+      "canonical": "Hutch",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Hutch",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hutch"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හච්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0012_e002",
+      "canonical": "Gayan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ගයාන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Gayan"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0012_e003",
+      "canonical": "Yasodha Ekanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "yasodha"
+        },
+        {
+          "script": "LATIN",
+          "form": "Yasodha"
+        },
+        {
+          "script": "SINHALA",
+          "form": "යශෝධා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Yasodha Ekanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0012_e004",
+      "canonical": "1997-11-08",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1997-11-08",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "8th November 1997"
+        },
+        {
+          "script": "LATIN",
+          "form": "8 November 1997"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1997 නොවැම්බර් 8"
+        },
+        {
+          "script": "LATIN",
+          "form": "1997-11-08"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0012_e005",
+      "canonical": "yasodha.ekanayake40@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "yasodha.ekanayake40@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "yasodha.ekanayake40@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "yasodha.ekanayake40@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0012_e006",
+      "canonical": "No. 154, Park Avenue, Anuradhapura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "154, Park Avenue, Anuradhapura"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 154, Park Avenue, Anuradhapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "154, උද්‍යාන මාවත, අනුරාධපුරය"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "recording": "SYN_T0022",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0022_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0022_e002",
+      "canonical": "Gayan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Gayan"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ගයාන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0022_e003",
+      "canonical": "Gayan Samarakoon",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Gayan Samarakoon"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ගයාන් සමරකෝන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0022_e004",
+      "canonical": "gayan.samarakoon12@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "gayan.samarakoon12@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "gayan.samarakoon12@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "gayan.samarakoon12@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0022_e005",
+      "canonical": "115151990915",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "115151990915",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "එකයි එකසිය පනස් එකයි පන්සිය දහනවයයි අනූවයි නවසිය පහළොව"
+        },
+        {
+          "script": "LATIN",
+          "form": "115151990915"
+        },
+        {
+          "script": "SINHALA",
+          "form": "115151990915"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0022_e006",
+      "canonical": "1956-02-15",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1956-02-15",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "15th February 1956"
+        },
+        {
+          "script": "LATIN",
+          "form": "February 15, 1956"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1956.02.15"
+        },
+        {
+          "script": "LATIN",
+          "form": "1956-02-15"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0022_e007",
+      "canonical": "0115460863",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0115460863",
+      "redact": false,
+      "value": "0115460863",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0115460863"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0115460863"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0022_e008",
+      "canonical": "Ratnapura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Ratnapura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ratnapura"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ratnapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "රත්නපුර"
+        }
+      ]
+    }
+  ]
+}

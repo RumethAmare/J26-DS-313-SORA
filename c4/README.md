@@ -85,7 +85,19 @@ generated from Sri Lankan identifier formats. Synthetic data is used for
 development and unit tests only; every reported metric comes from the real
 held-out recordings.
 
-    python src/synthetic.py --recordings 50 --seed 13    # -> data/synthetic/
+    python src/synthetic.py        # -> data/synthetic/train/ and data/synthetic/test/
+
+| Split | Recordings | Used for |
+|---|---|---|
+| `train` | 50 | building rules, training models |
+| `test` | 60 | scoring only; frozen, never tuned against |
+
+The test split is held out from train in three ways: its sentence templates
+never occur in train, its names/places/organisations never occur in train,
+and it adds what real speech does — answers in a separate turn with no
+keyword, fillers, lowercase, a dropped NIC `V`, a repeated digit, "zero
+binduwai" restatements and ASR ordinal errors (`9rd`). Each noisy span
+records the noise applied, so errors can be attributed.
 
 Each synthetic recording follows the corpus layout (transcript, clean English,
 clean Sinhala, summary), is marked `annotation_source: "synthetic"`, and must
