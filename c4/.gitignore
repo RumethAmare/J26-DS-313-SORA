@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# ── NFR2: THIS BLOCK IS A SECURITY CONTROL, NOT A CONVENIENCE ──────────────
+# The re-identification map reverses redaction. Committing one publishes the
+# exact personal data the component exists to remove, and git history is
+# permanent -- deleting the file later does NOT remove it from the repo.
+# These live in local encrypted storage with access control. Never here.
+reid_map/
+*.reid.json
+*.reidmap.json
+*_reidentification*.json
+
+# Un-redacted corpus material copied out of SORA_Dataset for local work.
+# The shared dataset repo is the single source of truth and is read-only to
+# this component; a second copy here is an uncontrolled disclosure surface.
+data/corpus_copy/
+data/unredacted/
+
+# ── Model artefacts ───────────────────────────────────────────────────────
+# Fine-tuned checkpoints. xlm-roberta-base is ~1.1 GB per checkpoint; set up
+# Git LFS before committing any of these or the repo bloats permanently.
+models/
+*.safetensors
+*.bin
+
+# Regenerable outputs
+.venv/
