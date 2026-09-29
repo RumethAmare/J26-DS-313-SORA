@@ -1,0 +1,4 @@
+# Keep LF line endings in the working copy on every OS. Synthetic data and
+# evaluation reports are generated with LF, so without this Git on Windows
+# warns on every file and a regenerated set shows spurious diffs.
+* text=auto eol=lf
