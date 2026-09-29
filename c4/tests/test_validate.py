@@ -84,5 +84,18 @@ def test_legacy_role_is_a_warning_not_a_guess():
     assert rep.ok and any("legacy role" in w for w in rep.warnings)
 
 
+def test_missing_recording_is_a_warning_and_checks_still_run():
+    """Legacy rows lack `recording`; it is derivable, the offsets are not."""
+    legacy = {k: v for k, v in row(end_char=14).items() if k != "recording"}
+    rep = check([legacy, row(**SINHALA)])
+    assert any("derivable" in w for w in rep.warnings)
+    assert "[4]" in codes(rep), "offset check must still run on the legacy row"
+
+
+def test_missing_offsets_is_an_error():
+    broken = {k: v for k, v in row().items() if k != "start_char"}
+    assert "[1]" in codes(check([broken, row(**SINHALA)]))
+
+
 def test_unknown_label_is_an_error():
     assert "[2]" in codes(check([row(label="NAME"), row(label="NAME", **SINHALA)]))

@@ -40,8 +40,11 @@ _ROLE_AS_LABEL = {"PRIVATE_INDIVIDUAL", "ORGANISATION_REP"}
 # owner would put an unverified claim into the data.
 LEGACY_ROLES = {"person", "organization", "identifier"}
 
-REQUIRED = ("ann_id", "recording", "doc_id", "entity_id", "label",
+REQUIRED = ("ann_id", "doc_id", "entity_id", "label",
             "start_char", "end_char", "surface", "script", "role", "redact")
+# Required by the schema but derivable from doc_id, so its absence is reported
+# without blocking the checks that matter (525 legacy rows lack it).
+DERIVABLE = ("recording",)
 
 
 def normalise_label(row: dict) -> dict:
@@ -92,6 +95,9 @@ def validate_recording(rows: list[dict], texts: dict[str, str],
         if missing:
             rep.errors.append(f"[1] {aid}: missing fields {missing}")
             continue
+        for k in DERIVABLE:
+            if k not in raw:
+                rep.warnings.append(f"[1] {aid}: missing derivable field {k!r}")
 
         if raw["label"] in _ROLE_AS_LABEL:
             rep.warnings.append(f"[2] {aid}: role value {raw['label']!r} in label "
