@@ -48,6 +48,24 @@ def test_romanized_sinhala_numerals():
     assert ambiguous, "romanized 'hata' is 7/60 ambiguous and must be flagged"
 
 
+def test_english_digit_words():
+    """Real corpus form: a phone number read out in English words."""
+    spoken = "zero seven six, eight nine zero, one two three four"
+    assert decode_number_words(spoken)[0] == "0768901234"
+
+
+def test_cross_language_restatement_counts_once():
+    """'zero binduwai' is one zero restated; 'binduwai binduwai' is two."""
+    digits, ambiguous = decode_number_words("zero binduwai hatai")
+    assert digits == "07" and ambiguous
+    assert decode_number_words("binduwai binduwai hata")[0] == "007"
+
+
+def test_english_digits_each_close_their_own_group():
+    """'seven six' is 76. Summing it as an additive group would give 13."""
+    assert decode_number_words("seven six")[0] == "76"
+
+
 # --- Numeral system rules ---------------------------------------------------
 
 def test_hundreds_are_multiplicative_not_additive():
@@ -93,6 +111,22 @@ def test_find_runs_returns_exact_offsets():
     # The offset contract the whole pipeline depends on.
     assert text[start:end].startswith("බිංදුවයි")
     assert "අට" in text[start:end]
+
+
+def test_find_runs_excludes_sentence_final_punctuation():
+    """Span boundary rule: the full stop ending the sentence is not the number."""
+    text = "Contact number එක බිංදුවයි හතයි එකයි විසිතුනයි හතළිස්පහයි හයයි හතයි අට."
+    start, end, _, _ = next(find_number_word_runs(text))
+    assert text[start:end].endswith("අට")
+    assert end == len(text) - 1
+
+
+def test_case_suffix_on_final_numeral_is_excluded():
+    """Real corpus form: 'නමයට' is nine + dative -ට ('call ... nine')."""
+    text = "හරි බිංදුවයි හැත්තෑ හයයි පනස් හතරයි තිස් දෙකයි එකසිය නමයට කෝල් කරන්න."
+    start, end, digits, _ = next(find_number_word_runs(text))
+    assert digits == "0765432109"
+    assert text[start:end].endswith("එකසිය නමය")
 
 
 def test_short_counting_words_are_not_identifiers():

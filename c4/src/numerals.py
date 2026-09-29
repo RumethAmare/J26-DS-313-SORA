@@ -114,8 +114,17 @@ _LATIN = {
     "dedahasa": 2000, "dedas": 2000,
 }
 
+# English digit words. Speakers switch to English mid-number ("zero seven six,
+# eight nine zero"), and English has no conjunctive suffix, so each English
+# digit closes its own group -- "seven six" is 76, never 7+6 = 13.
+_ENGLISH_DIGITS = {"zero": 0, "one": 1, "two": 2, "three": 3, "four": 4,
+                   "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9}
+_LATIN.update(_ENGLISH_DIGITS)
+
 # Conjunctive suffixes marking the end of a group, longest first.
 _SUFFIX_SI = ("යි",)
+# Case suffixes that attach to the final numeral of a spoken identifier.
+_CASE_SI = ("ට",)
 _SUFFIX_LA = ("yi", "ai", "i")
 
 # Constituents that are ambiguous under romanization; decoding one lowers
@@ -130,6 +139,8 @@ _AMBIGUOUS_LATIN = {"hata", "hath", "asu", "anu", "de", "ek"}
 # The conjunctive form (එකයි / ekai) is never the classifier, so only the BARE
 # form is trimmed, and only from the START of a run, where the classifier sits.
 _CLASSIFIER_BARE = {"එක", "eka"}
+
+_EDGE_PUNCT = ",.‘’'\"?!;:"
 
 _SI_KEYS = sorted(_SINHALA, key=len, reverse=True)
 _LA_KEYS = sorted(_LATIN, key=len, reverse=True)
@@ -155,6 +166,27 @@ def _suffix_candidates(token: str, sinhala: bool):
         if len(token) > len(suf) and token.endswith(suf):
             yield token[: -len(suf)], True
     yield token, False
+    # Last resort: a case suffix on the final numeral ("නමයට", to ... nine).
+    # It is grammar, not part of the number -- see case_suffix_len.
+    if sinhala:
+        for suf in _CASE_SI:
+            if len(token) > len(suf) and token.endswith(suf):
+                yield token[: -len(suf)], True
+
+
+def case_suffix_len(token: str) -> int:
+    """
+    Length of a Sinhala case suffix to trim from the end of a numeral token.
+
+    "…එකසිය නමයට කෝල් කරන්න" is "call 0765432109": the dative -ට attaches to
+    the last digit word. The number ends before it, and so does the span.
+    """
+    cleaned = token.strip(_EDGE_PUNCT)
+    for suf in _CASE_SI:
+        if (cleaned.endswith(suf) and _decompose(cleaned, True) is None
+                and _token_value(cleaned[: -len(suf)]) is not None):
+            return len(suf)
+    return 0
 
 
 def _decompose(stem: str, sinhala: bool) -> list[int] | None:
@@ -195,7 +227,7 @@ def _token_value(token: str) -> tuple[list[int], bool, bool] | None:
         ambiguous = (not sinhala) and any(
             stem == a or stem.startswith(a) for a in _AMBIGUOUS_LATIN
         )
-        return values, had_suffix, ambiguous
+        return values, had_suffix or stem in _ENGLISH_DIGITS, ambiguous
     return None
 
 
@@ -216,6 +248,7 @@ def decode_number_words(phrase: str) -> tuple[str, bool] | None:
     group: list[int] = []
     ambiguous = False
     decoded_any = False
+    english_before: int | None = None   # value of the previous token, if English
 
     for token in tokens:
         decoded = _token_value(token)
@@ -224,6 +257,17 @@ def decode_number_words(phrase: str) -> tuple[str, bool] | None:
         values, ends_group, tok_ambiguous = decoded
         decoded_any = True
         ambiguous = ambiguous or tok_ambiguous
+
+        # Code-switch restatement: "zero binduwai" is one zero said in English
+        # and repeated in Sinhala, not two zeros. Only a cross-language repeat
+        # of the same digit collapses, so a genuine "binduwai binduwai" stays
+        # 00; the decode is flagged so a human confirms it.
+        is_english = token.strip(_EDGE_PUNCT).lower() in _ENGLISH_DIGITS
+        if english_before is not None and not is_english and values == [english_before]:
+            english_before = None
+            ambiguous = True
+            continue
+        english_before = values[0] if is_english else None
 
         for value in values:
             # An additive group runs in non-increasing magnitude: 500, 50, 5.
@@ -363,8 +407,14 @@ def find_number_word_runs(text: str, min_digits: int = 6):
             else:
                 break
 
-        run_text = text[spans[start_idx][0] : spans[j - 1][1]]
-        decoded = decode_number_words(run_text)
+        # Punctuation attached to the edge tokens ("අට." ending a sentence) is
+        # not part of the identifier, per the span boundary convention.
+        first, last = spans[start_idx][2], spans[j - 1][2]
+        start = spans[start_idx][0] + len(first) - len(first.lstrip(_EDGE_PUNCT))
+        end = spans[j - 1][1] - (len(last) - len(last.rstrip(_EDGE_PUNCT)))
+        end -= case_suffix_len(last)
+
+        decoded = decode_number_words(text[start:end])
         if decoded and len(decoded[0]) >= min_digits:
-            yield spans[start_idx][0], spans[j - 1][1], decoded[0], decoded[1]
+            yield start, end, decoded[0], decoded[1]
         i = j
