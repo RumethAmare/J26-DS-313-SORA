@@ -129,10 +129,16 @@ Predictor = Callable[[str, str], list]   # (text, preceding) -> objects with sta
 
 
 def predicted_spans(rec: Recording, predict: Predictor, labels: Iterable[str]) -> list[Span]:
-    previous = preceding_texts(rec.texts)
+    # A recording-level system (one that looks across documents, such as
+    # propagation) exposes .recording(texts) -> {doc_id: detections}.
+    if hasattr(predict, "recording"):
+        per_doc = predict.recording(rec.texts)
+    else:
+        previous = preceding_texts(rec.texts)
+        per_doc = {d: predict(t, previous[d]) for d, t in rec.texts.items()}
     spans = []
     for doc_id, text in rec.texts.items():
-        for p in predict(text, previous[doc_id]):
+        for p in per_doc[doc_id]:
             if p.label in labels:
                 surface = text[p.start:p.end]
                 spans.append(Span(doc_id, p.start, p.end, p.label, surface,
@@ -267,6 +273,12 @@ def get_system(name: str) -> Predictor:
     if name == "rules":
         from rules import detect
         return detect
+    if name == "rules+propagation":
+        from redact import detect_recording
+
+        class Propagating:
+            recording = staticmethod(detect_recording)
+        return Propagating()
     raise SystemExit(f"unknown system {name!r}")
 
 

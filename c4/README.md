@@ -104,6 +104,17 @@ clean Sinhala, summary), is marked `annotation_source: "synthetic"`, and must
 pass `src/validate.py` before it is written. The set is deterministic for a
 given seed.
 
+## Running it
+
+    python src/redact.py --text "mage NIC eka 953201456V, number eka 0771234567"
+    python src/redact.py --synthetic SYN_T0002 --all-docs --save-map
+    python src/evaluate.py --source synthetic-test --system rules+propagation
+    python src/evaluate.py --source real-eval --labels proposal --save
+
+One entity gets one placeholder across transcript, clean_en, clean_si and
+summary. The re-identification map is written only to the git-ignored
+`reid_map/`; `write_reid_map` refuses any path git would commit (NFR2).
+
 ## Setup
 
     python -m pip install -r requirements.txt
