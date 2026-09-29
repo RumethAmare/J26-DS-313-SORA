@@ -1,0 +1,165 @@
+{
+  "recording": "SYN_R0007",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0007_e001",
+      "canonical": "Nadeesha",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "nadeesha"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nadeesha"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නදීෂා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0007_e002",
+      "canonical": "Dialog",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Dialog",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dialog"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඩයලොග්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0007_e003",
+      "canonical": "Sachini Perera",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sachini"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sachini Perera"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සචිනි පෙරේරා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0007_e004",
+      "canonical": "630378134350",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "630378134350",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "6 3 0 3 7 8 1 3 4 3 5 0"
+        },
+        {
+          "script": "LATIN",
+          "form": "630378134350"
+        },
+        {
+          "script": "SINHALA",
+          "form": "630378134350"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0007_e005",
+      "canonical": "sachini.perera74@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "sachini.perera74@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "sachini.perera74@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "sachini.perera74@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0007_e006",
+      "canonical": "0719693877",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0719693877",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0719693877"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0719693877"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0007_e007",
+      "canonical": "No. 140/1, Main Street, Colombo",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 140/1, Main Street, Colombo"
+        },
+        {
+          "script": "SINHALA",
+          "form": "140/1, ප්‍රධාන වීදිය, කොළඹ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0007_e008",
+      "canonical": "Kandy",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Kandy",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kandy"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මහනුවර"
+        }
+      ]
+    }
+  ]
+}

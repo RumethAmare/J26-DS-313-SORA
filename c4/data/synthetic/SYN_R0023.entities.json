@@ -1,0 +1,164 @@
+{
+  "recording": "SYN_R0023",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0023_e001",
+      "canonical": "HNB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "HNB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "HNB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "එච්එන්බී"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0023_e002",
+      "canonical": "Ruwan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ruwan"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ruwan"
+        },
+        {
+          "script": "SINHALA",
+          "form": "රුවන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0023_e003",
+      "canonical": "Nadeesha Fernando",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "නදීෂා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nadeesha Fernando"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0023_e004",
+      "canonical": "Sampath Wickramasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sampath Wickramasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත් වික්‍රමසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0023_e005",
+      "canonical": "No. 234, Main Street, Kandy",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 234, Main Street, Kandy"
+        },
+        {
+          "script": "SINHALA",
+          "form": "234, ප්‍රධාන වීදිය, මහනුවර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0023_e006",
+      "canonical": "199566050414",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "199566050414",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ekai namayai namayai pahai hayai hayai binduwai pahai binduwai hatharai ekai hathara"
+        },
+        {
+          "script": "LATIN",
+          "form": "199566050414"
+        },
+        {
+          "script": "SINHALA",
+          "form": "199566050414"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0023_e007",
+      "canonical": "0110994012",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0110994012",
+      "redact": false,
+      "value": "0110994012",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai ekai ekai binduwai namayai namayai hatharai binduwai ekai deka"
+        },
+        {
+          "script": "LATIN",
+          "form": "0110994012"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0110994012"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0023_e008",
+      "canonical": "Kurunegala",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Kurunegala",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kurunegala"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කුරුණෑගල"
+        }
+      ]
+    }
+  ]
+}

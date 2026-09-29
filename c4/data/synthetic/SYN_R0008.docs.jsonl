@@ -1,0 +1,19 @@
+{"doc_id": "SYN_R0008_transcript_u001_v1", "recording": "SYN_R0008", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම Kasun, People's Bank එකෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0008_c2_u001_en_v1", "recording": "SYN_R0008", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good morning, People's Bank customer service, Kasun speaking."}
+{"doc_id": "SYN_R0008_c2_u001_si_v1", "recording": "SYN_R0008", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම කසුන්, මහජන බැංකුව ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0008_transcript_u002_v1", "recording": "SYN_R0008", "kind": "transcript", "utterance": 2, "topic": "name", "text": "මගේ නම Nethmi Perera."}
+{"doc_id": "SYN_R0008_c2_u002_en_v1", "recording": "SYN_R0008", "kind": "en", "utterance": 2, "topic": "name", "text": "My name is Nethmi Perera."}
+{"doc_id": "SYN_R0008_c2_u002_si_v1", "recording": "SYN_R0008", "kind": "si", "utterance": 2, "topic": "name", "text": "මගේ නම නෙත්මි පෙරේරා."}
+{"doc_id": "SYN_R0008_transcript_u003_v1", "recording": "SYN_R0008", "kind": "transcript", "utterance": 3, "topic": "email", "text": "email eka nethmi.perera90@yahoo.com."}
+{"doc_id": "SYN_R0008_c2_u003_en_v1", "recording": "SYN_R0008", "kind": "en", "utterance": 3, "topic": "email", "text": "My email address is nethmi.perera90@yahoo.com."}
+{"doc_id": "SYN_R0008_c2_u003_si_v1", "recording": "SYN_R0008", "kind": "si", "utterance": 3, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය nethmi.perera90@yahoo.com."}
+{"doc_id": "SYN_R0008_transcript_u004_v1", "recording": "SYN_R0008", "kind": "transcript", "utterance": 4, "topic": "account", "text": "account number eka 3 4 1 8 3 6 1 6 5 0."}
+{"doc_id": "SYN_R0008_c2_u004_en_v1", "recording": "SYN_R0008", "kind": "en", "utterance": 4, "topic": "account", "text": "My account number is 3418361650."}
+{"doc_id": "SYN_R0008_c2_u004_si_v1", "recording": "SYN_R0008", "kind": "si", "utterance": 4, "topic": "account", "text": "මගේ ගිණුම් අංකය 3418361650."}
+{"doc_id": "SYN_R0008_transcript_u005_v1", "recording": "SYN_R0008", "kind": "transcript", "utterance": 5, "topic": "nic", "text": "NIC එක 197084672259."}
+{"doc_id": "SYN_R0008_c2_u005_en_v1", "recording": "SYN_R0008", "kind": "en", "utterance": 5, "topic": "nic", "text": "My NIC number is 197084672259."}
+{"doc_id": "SYN_R0008_c2_u005_si_v1", "recording": "SYN_R0008", "kind": "si", "utterance": 5, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 197084672259."}
+{"doc_id": "SYN_R0008_transcript_u006_v1", "recording": "SYN_R0008", "kind": "transcript", "utterance": 6, "topic": "relative", "text": "mage thaththage nama Nuwan Mendis."}
+{"doc_id": "SYN_R0008_c2_u006_en_v1", "recording": "SYN_R0008", "kind": "en", "utterance": 6, "topic": "relative", "text": "My father's name is Nuwan Mendis."}
+{"doc_id": "SYN_R0008_c2_u006_si_v1", "recording": "SYN_R0008", "kind": "si", "utterance": 6, "topic": "relative", "text": "මගේ තාත්තාගේ නම නුවන් මෙන්ඩිස්."}
+{"doc_id": "SYN_R0008_c2_summary_en_v1", "recording": "SYN_R0008", "kind": "summary", "utterance": null, "topic": "summary", "text": "Nethmi Perera called People's Bank and spoke to Kasun. The email address on file is nethmi.perera90@yahoo.com. The account number is 3418361650. The customer's NIC number is 197084672259. The nominee is Nuwan Mendis."}

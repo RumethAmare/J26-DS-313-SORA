@@ -1,0 +1,132 @@
+{
+  "recording": "SYN_R0028",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0028_e001",
+      "canonical": "Dialog",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Dialog",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dialog"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඩයලොග්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0028_e002",
+      "canonical": "Sampath",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sampath"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0028_e003",
+      "canonical": "Lahiru Senanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Lahiru"
+        },
+        {
+          "script": "LATIN",
+          "form": "Mr. Senanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ලහිරු සේනානායක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Lahiru Senanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0028_e004",
+      "canonical": "lahiru.senanayake5@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "lahiru.senanayake5@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "lahiru.senanayake5@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "lahiru.senanayake5@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0028_e005",
+      "canonical": "No. 206, Temple Road, Maharagama",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "206, Temple Road, Maharagama"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 206, Temple Road, Maharagama"
+        },
+        {
+          "script": "SINHALA",
+          "form": "206, පන්සල් පාර, මහරගම"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0028_e006",
+      "canonical": "0781539825",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0781539825",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 8 1 5 3 9 8 2 5"
+        },
+        {
+          "script": "LATIN",
+          "form": "0781539825"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0781539825"
+        }
+      ]
+    }
+  ]
+}

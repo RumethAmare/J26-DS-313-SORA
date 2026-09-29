@@ -1,0 +1,19 @@
+{"doc_id": "SYN_R0009_transcript_u001_v1", "recording": "SYN_R0009", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "hello, mama සචිනි, Mobitel call centre eken kathaa karanne."}
+{"doc_id": "SYN_R0009_c2_u001_en_v1", "recording": "SYN_R0009", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good morning, Mobitel customer service, Sachini speaking."}
+{"doc_id": "SYN_R0009_c2_u001_si_v1", "recording": "SYN_R0009", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම සචිනි, මොබිටෙල් ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0009_transcript_u002_v1", "recording": "SYN_R0009", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ow miss, mama kasun."}
+{"doc_id": "SYN_R0009_c2_u002_en_v1", "recording": "SYN_R0009", "kind": "en", "utterance": 2, "topic": "name", "text": "Yes, this is Mr. Rathnayake."}
+{"doc_id": "SYN_R0009_c2_u002_si_v1", "recording": "SYN_R0009", "kind": "si", "utterance": 2, "topic": "name", "text": "මගේ නම කසුන් රත්නායක."}
+{"doc_id": "SYN_R0009_transcript_u003_v1", "recording": "SYN_R0009", "kind": "transcript", "utterance": 3, "topic": "dob", "text": "date of birth eka 29/11/1997."}
+{"doc_id": "SYN_R0009_c2_u003_en_v1", "recording": "SYN_R0009", "kind": "en", "utterance": 3, "topic": "dob", "text": "My date of birth is 29 November 1997."}
+{"doc_id": "SYN_R0009_c2_u003_si_v1", "recording": "SYN_R0009", "kind": "si", "utterance": 3, "topic": "dob", "text": "මගේ උපන් දිනය 1997 නොවැම්බර් 29."}
+{"doc_id": "SYN_R0009_transcript_u004_v1", "recording": "SYN_R0009", "kind": "transcript", "utterance": 4, "topic": "nic", "text": "NIC එක 973349210V."}
+{"doc_id": "SYN_R0009_c2_u004_en_v1", "recording": "SYN_R0009", "kind": "en", "utterance": 4, "topic": "nic", "text": "My NIC number is 973349210V."}
+{"doc_id": "SYN_R0009_c2_u004_si_v1", "recording": "SYN_R0009", "kind": "si", "utterance": 4, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 973349210V."}
+{"doc_id": "SYN_R0009_transcript_u005_v1", "recording": "SYN_R0009", "kind": "transcript", "utterance": 5, "topic": "address", "text": "mama inne No. 34, School Lane, Maharagama."}
+{"doc_id": "SYN_R0009_c2_u005_en_v1", "recording": "SYN_R0009", "kind": "en", "utterance": 5, "topic": "address", "text": "My address is No. 34, School Lane, Maharagama."}
+{"doc_id": "SYN_R0009_c2_u005_si_v1", "recording": "SYN_R0009", "kind": "si", "utterance": 5, "topic": "address", "text": "මගේ ලිපිනය 34, පාසල් පටුමග, මහරගම."}
+{"doc_id": "SYN_R0009_transcript_u006_v1", "recording": "SYN_R0009", "kind": "transcript", "utterance": 6, "topic": "email", "text": "mage email එක kasun.rathnayake92@yahoo.com."}
+{"doc_id": "SYN_R0009_c2_u006_en_v1", "recording": "SYN_R0009", "kind": "en", "utterance": 6, "topic": "email", "text": "My email address is kasun.rathnayake92@yahoo.com."}
+{"doc_id": "SYN_R0009_c2_u006_si_v1", "recording": "SYN_R0009", "kind": "si", "utterance": 6, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය kasun.rathnayake92@yahoo.com."}
+{"doc_id": "SYN_R0009_c2_summary_en_v1", "recording": "SYN_R0009", "kind": "summary", "utterance": null, "topic": "summary", "text": "Kasun Rathnayake called Mobitel and spoke to Sachini. The date of birth given was 29 November 1997. The customer's NIC number is 973349210V. The customer lives at No. 34, School Lane, Maharagama. The email address on file is kasun.rathnayake92@yahoo.com."}

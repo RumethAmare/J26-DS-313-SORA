@@ -1,0 +1,25 @@
+{"doc_id": "SYN_R0040_transcript_u001_v1", "recording": "SYN_R0040", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "good morning, People's Bank customer service, mama lahiru."}
+{"doc_id": "SYN_R0040_c2_u001_en_v1", "recording": "SYN_R0040", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good morning, People's Bank customer service, Lahiru speaking."}
+{"doc_id": "SYN_R0040_c2_u001_si_v1", "recording": "SYN_R0040", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම ලහිරු, මහජන බැංකුව ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0040_transcript_u002_v1", "recording": "SYN_R0040", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ow miss, mama තරුෂි."}
+{"doc_id": "SYN_R0040_c2_u002_en_v1", "recording": "SYN_R0040", "kind": "en", "utterance": 2, "topic": "name", "text": "My name is Tharushi Wickramasinghe."}
+{"doc_id": "SYN_R0040_c2_u002_si_v1", "recording": "SYN_R0040", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔව්, මම තරුෂි."}
+{"doc_id": "SYN_R0040_transcript_u003_v1", "recording": "SYN_R0040", "kind": "transcript", "utterance": 3, "topic": "phone", "text": "call karanna puluwan 0 7 5 8 9 0 1 6 3 3 ta."}
+{"doc_id": "SYN_R0040_c2_u003_en_v1", "recording": "SYN_R0040", "kind": "en", "utterance": 3, "topic": "phone", "text": "You can reach me on 0758901633."}
+{"doc_id": "SYN_R0040_c2_u003_si_v1", "recording": "SYN_R0040", "kind": "si", "utterance": 3, "topic": "phone", "text": "මගේ දුරකථන අංකය 0758901633."}
+{"doc_id": "SYN_R0040_transcript_u004_v1", "recording": "SYN_R0040", "kind": "transcript", "utterance": 4, "topic": "nic", "text": "mage NIC number eka 707 744 402 x."}
+{"doc_id": "SYN_R0040_c2_u004_en_v1", "recording": "SYN_R0040", "kind": "en", "utterance": 4, "topic": "nic", "text": "My NIC number is 707744402X."}
+{"doc_id": "SYN_R0040_c2_u004_si_v1", "recording": "SYN_R0040", "kind": "si", "utterance": 4, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 707744402X."}
+{"doc_id": "SYN_R0040_transcript_u005_v1", "recording": "SYN_R0040", "kind": "transcript", "utterance": 5, "topic": "address", "text": "mama inne 228, පාසල් පටුමග, මාතර."}
+{"doc_id": "SYN_R0040_c2_u005_en_v1", "recording": "SYN_R0040", "kind": "en", "utterance": 5, "topic": "address", "text": "My address is No. 228, School Lane, Matara."}
+{"doc_id": "SYN_R0040_c2_u005_si_v1", "recording": "SYN_R0040", "kind": "si", "utterance": 5, "topic": "address", "text": "මගේ ලිපිනය 228, පාසල් පටුමග, මාතර."}
+{"doc_id": "SYN_R0040_transcript_u006_v1", "recording": "SYN_R0040", "kind": "transcript", "utterance": 6, "topic": "account", "text": "මගේ account එක 737 650 579 145."}
+{"doc_id": "SYN_R0040_c2_u006_en_v1", "recording": "SYN_R0040", "kind": "en", "utterance": 6, "topic": "account", "text": "My account number is 737650579145."}
+{"doc_id": "SYN_R0040_c2_u006_si_v1", "recording": "SYN_R0040", "kind": "si", "utterance": 6, "topic": "account", "text": "මගේ ගිණුම් අංකය 737650579145."}
+{"doc_id": "SYN_R0040_transcript_u007_v1", "recording": "SYN_R0040", "kind": "transcript", "utterance": 7, "topic": "payment", "text": "last month 12000 rupees debit una, deka parak."}
+{"doc_id": "SYN_R0040_c2_u007_en_v1", "recording": "SYN_R0040", "kind": "en", "utterance": 7, "topic": "payment", "text": "I paid Rs. 12,000 on 27th of January."}
+{"doc_id": "SYN_R0040_c2_u007_si_v1", "recording": "SYN_R0040", "kind": "si", "utterance": 7, "topic": "payment", "text": "මම ජනවාරි 27 රුපියල් 12,000 ක් ගෙව්වා."}
+{"doc_id": "SYN_R0040_transcript_u008_v1", "recording": "SYN_R0040", "kind": "transcript", "utterance": 8, "topic": "dob", "text": "mage birthday eka 30/09/1970."}
+{"doc_id": "SYN_R0040_c2_u008_en_v1", "recording": "SYN_R0040", "kind": "en", "utterance": 8, "topic": "dob", "text": "My date of birth is 1970-09-30."}
+{"doc_id": "SYN_R0040_c2_u008_si_v1", "recording": "SYN_R0040", "kind": "si", "utterance": 8, "topic": "dob", "text": "මගේ උපන් දිනය 1970.09.30."}
+{"doc_id": "SYN_R0040_c2_summary_en_v1", "recording": "SYN_R0040", "kind": "summary", "utterance": null, "topic": "summary", "text": "Tharushi Wickramasinghe called People's Bank and spoke to Lahiru. The contact number is 0758901633. The customer's NIC number is 707744402X. The customer lives at No. 228, School Lane, Matara. The account number is 737650579145. A payment of Rs. 150,000 was discussed. The date of birth given was 1970-09-30."}

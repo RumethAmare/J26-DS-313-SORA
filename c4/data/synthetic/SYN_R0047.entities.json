@@ -1,0 +1,143 @@
+{
+  "recording": "SYN_R0047",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0047_e001",
+      "canonical": "Dialog",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Dialog",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dialog"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඩයලොග්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0047_e002",
+      "canonical": "Chamari",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Chamari"
+        },
+        {
+          "script": "SINHALA",
+          "form": "චමරි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0047_e003",
+      "canonical": "Chathura Fernando",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "චතුර ප්‍රනාන්දු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Chathura Fernando"
+        },
+        {
+          "script": "SINHALA",
+          "form": "චතුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0047_e004",
+      "canonical": "Dinesh Herath",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dinesh Herath"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දිනේෂ් හේරත්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0047_e005",
+      "canonical": "198333764395",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "198333764395",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "198333764395"
+        },
+        {
+          "script": "SINHALA",
+          "form": "198333764395"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0047_e006",
+      "canonical": "chathura.fernando42@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "chathura.fernando42@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "chathura.fernando42@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "chathura.fernando42@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0047_e007",
+      "canonical": "1983-12-02",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1983-12-02",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "December 2, 1983"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1983.12.02"
+        },
+        {
+          "script": "LATIN",
+          "form": "2nd of December 1983"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "recording": "SYN_R0030",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0030_e001",
+      "canonical": "Dinesh",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "දිනේෂ්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Dinesh"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0030_e002",
+      "canonical": "People's Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "People's Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "People's Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මහජන බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0030_e003",
+      "canonical": "Kamal Karunaratne",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "කමල් කරුණාරත්න"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kamal Karunaratne"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කමල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0030_e004",
+      "canonical": "0757351338",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0757351338",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai hathai pahai hathai thunai pahai ekai thunai thunai ata"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 75 735 1338"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0757351338"
+        },
+        {
+          "script": "LATIN",
+          "form": "0757351338"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0030_e005",
+      "canonical": "0114698635",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0114698635",
+      "redact": false,
+      "value": "0114698635",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0114698635"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 469 8635"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0114698635"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0030_e006",
+      "canonical": "1958-06-01",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1958-06-01",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1st of June 1958"
+        },
+        {
+          "script": "LATIN",
+          "form": "1958-06-01"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1958 ජූනි 1"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0030_e007",
+      "canonical": "kamal.karunaratne72@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "kamal.karunaratne72@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "kamal.karunaratne72@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "kamal.karunaratne72@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0030_e008",
+      "canonical": "1028478547",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "1028478547",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1028478547"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1028478547"
+        }
+      ]
+    }
+  ]
+}

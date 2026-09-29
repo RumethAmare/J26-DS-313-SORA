@@ -1,0 +1,31 @@
+{"doc_id": "SYN_R0004_transcript_u001_v1", "recording": "SYN_R0004", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "hello, mama සම්පත්, Bank of Ceylon call centre eken kathaa karanne."}
+{"doc_id": "SYN_R0004_c2_u001_en_v1", "recording": "SYN_R0004", "kind": "en", "utterance": 1, "topic": "greet", "text": "Hello, this is Sampath from the Bank of Ceylon call centre."}
+{"doc_id": "SYN_R0004_c2_u001_si_v1", "recording": "SYN_R0004", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම සම්පත්, ලංකා බැංකුව ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0004_transcript_u002_v1", "recording": "SYN_R0004", "kind": "transcript", "utterance": 2, "topic": "name", "text": "mage nama නිමල්."}
+{"doc_id": "SYN_R0004_c2_u002_en_v1", "recording": "SYN_R0004", "kind": "en", "utterance": 2, "topic": "name", "text": "My name is Nimal Dissanayake."}
+{"doc_id": "SYN_R0004_c2_u002_si_v1", "recording": "SYN_R0004", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔව්, මම නිමල්."}
+{"doc_id": "SYN_R0004_transcript_u003_v1", "recording": "SYN_R0004", "kind": "transcript", "utterance": 3, "topic": "payment", "text": "last month 12000 rupees debit una, deka parak."}
+{"doc_id": "SYN_R0004_c2_u003_en_v1", "recording": "SYN_R0004", "kind": "en", "utterance": 3, "topic": "payment", "text": "I paid Rs. 12,000 on 19th of December."}
+{"doc_id": "SYN_R0004_c2_u003_si_v1", "recording": "SYN_R0004", "kind": "si", "utterance": 3, "topic": "payment", "text": "මම දෙසැම්බර් 19 රුපියල් 12,000 ක් ගෙව්වා."}
+{"doc_id": "SYN_R0004_transcript_u004_v1", "recording": "SYN_R0004", "kind": "transcript", "utterance": 4, "topic": "relative", "text": "account eke nominee nuwan gunawardena."}
+{"doc_id": "SYN_R0004_c2_u004_en_v1", "recording": "SYN_R0004", "kind": "en", "utterance": 4, "topic": "relative", "text": "My father's name is Nuwan Gunawardena."}
+{"doc_id": "SYN_R0004_c2_u004_si_v1", "recording": "SYN_R0004", "kind": "si", "utterance": 4, "topic": "relative", "text": "මගේ තාත්තාගේ නම නුවන් ගුණවර්ධන."}
+{"doc_id": "SYN_R0004_transcript_u005_v1", "recording": "SYN_R0004", "kind": "transcript", "utterance": 5, "topic": "email", "text": "mage email එක nimal.dissanayake70@yahoo.com."}
+{"doc_id": "SYN_R0004_c2_u005_en_v1", "recording": "SYN_R0004", "kind": "en", "utterance": 5, "topic": "email", "text": "My email address is nimal.dissanayake70@yahoo.com."}
+{"doc_id": "SYN_R0004_c2_u005_si_v1", "recording": "SYN_R0004", "kind": "si", "utterance": 5, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය nimal.dissanayake70@yahoo.com."}
+{"doc_id": "SYN_R0004_transcript_u006_v1", "recording": "SYN_R0004", "kind": "transcript", "utterance": 6, "topic": "dob", "text": "mage birthday eka August 17, 1958."}
+{"doc_id": "SYN_R0004_c2_u006_en_v1", "recording": "SYN_R0004", "kind": "en", "utterance": 6, "topic": "dob", "text": "I was born on August 17, 1958."}
+{"doc_id": "SYN_R0004_c2_u006_si_v1", "recording": "SYN_R0004", "kind": "si", "utterance": 6, "topic": "dob", "text": "මගේ උපන් දිනය 1958.08.17."}
+{"doc_id": "SYN_R0004_transcript_u007_v1", "recording": "SYN_R0004", "kind": "transcript", "utterance": 7, "topic": "branch", "text": "mama iye Negombo branch ekata giya."}
+{"doc_id": "SYN_R0004_c2_u007_en_v1", "recording": "SYN_R0004", "kind": "en", "utterance": 7, "topic": "branch", "text": "I visited the Negombo branch yesterday."}
+{"doc_id": "SYN_R0004_c2_u007_si_v1", "recording": "SYN_R0004", "kind": "si", "utterance": 7, "topic": "branch", "text": "මම ඊයේ මීගමුව ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0004_transcript_u008_v1", "recording": "SYN_R0004", "kind": "transcript", "utterance": 8, "topic": "address", "text": "mama inne 235, Main Street, Colombo."}
+{"doc_id": "SYN_R0004_c2_u008_en_v1", "recording": "SYN_R0004", "kind": "en", "utterance": 8, "topic": "address", "text": "My address is No. 235, Main Street, Colombo."}
+{"doc_id": "SYN_R0004_c2_u008_si_v1", "recording": "SYN_R0004", "kind": "si", "utterance": 8, "topic": "address", "text": "මගේ ලිපිනය 235, ප්‍රධාන වීදිය, කොළඹ."}
+{"doc_id": "SYN_R0004_transcript_u009_v1", "recording": "SYN_R0004", "kind": "transcript", "utterance": 9, "topic": "nic", "text": "mage NIC number eka 1 9 5 8 2 3 0 1 4 2 0 9."}
+{"doc_id": "SYN_R0004_c2_u009_en_v1", "recording": "SYN_R0004", "kind": "en", "utterance": 9, "topic": "nic", "text": "My NIC number is 195823014209."}
+{"doc_id": "SYN_R0004_c2_u009_si_v1", "recording": "SYN_R0004", "kind": "si", "utterance": 9, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 195823014209."}
+{"doc_id": "SYN_R0004_transcript_u010_v1", "recording": "SYN_R0004", "kind": "transcript", "utterance": 10, "topic": "account", "text": "මගේ account එක 53881054886781."}
+{"doc_id": "SYN_R0004_c2_u010_en_v1", "recording": "SYN_R0004", "kind": "en", "utterance": 10, "topic": "account", "text": "My account number is 53881054886781."}
+{"doc_id": "SYN_R0004_c2_u010_si_v1", "recording": "SYN_R0004", "kind": "si", "utterance": 10, "topic": "account", "text": "මගේ ගිණුම් අංකය 53881054886781."}
+{"doc_id": "SYN_R0004_c2_summary_en_v1", "recording": "SYN_R0004", "kind": "summary", "utterance": null, "topic": "summary", "text": "Nimal Dissanayake called Bank of Ceylon and spoke to Sampath. A payment of Rs. 12,000 was discussed. The nominee is Nuwan Gunawardena. The email address on file is nimal.dissanayake70@yahoo.com. The date of birth given was 1958-08-17. The customer had visited the Negombo branch. The customer lives at No. 235, Main Street, Colombo. The customer's NIC number is 195823014209. The account number is 53881054886781."}

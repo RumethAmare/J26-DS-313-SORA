@@ -1,0 +1,19 @@
+{"doc_id": "SYN_R0022_transcript_u001_v1", "recording": "SYN_R0022", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "good morning, HNB customer service, mama සඳුනි."}
+{"doc_id": "SYN_R0022_c2_u001_en_v1", "recording": "SYN_R0022", "kind": "en", "utterance": 1, "topic": "greet", "text": "Hello, this is Sanduni from the HNB call centre."}
+{"doc_id": "SYN_R0022_c2_u001_si_v1", "recording": "SYN_R0022", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම සඳුනි, එච්එන්බී ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0022_transcript_u002_v1", "recording": "SYN_R0022", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ow miss, mama Hiruni."}
+{"doc_id": "SYN_R0022_c2_u002_en_v1", "recording": "SYN_R0022", "kind": "en", "utterance": 2, "topic": "name", "text": "Yes, this is Ms. Rathnayake."}
+{"doc_id": "SYN_R0022_c2_u002_si_v1", "recording": "SYN_R0022", "kind": "si", "utterance": 2, "topic": "name", "text": "මගේ නම හිරුනි රත්නායක."}
+{"doc_id": "SYN_R0022_transcript_u003_v1", "recording": "SYN_R0022", "kind": "transcript", "utterance": 3, "topic": "phone", "text": "mage mobile number eka බිංදුවයි හත්සිය හැත්තෑඑකයි හයයි හතළිහයි විසිඅටයි අට."}
+{"doc_id": "SYN_R0022_c2_u003_en_v1", "recording": "SYN_R0022", "kind": "en", "utterance": 3, "topic": "phone", "text": "You can reach me on 0771640288."}
+{"doc_id": "SYN_R0022_c2_u003_si_v1", "recording": "SYN_R0022", "kind": "si", "utterance": 3, "topic": "phone", "text": "මගේ දුරකථන අංකය 0771640288."}
+{"doc_id": "SYN_R0022_transcript_u004_v1", "recording": "SYN_R0022", "kind": "transcript", "utterance": 4, "topic": "nic", "text": "ow, ID number eka 7 5 7 7 5 8 3 4 0 v."}
+{"doc_id": "SYN_R0022_c2_u004_en_v1", "recording": "SYN_R0022", "kind": "en", "utterance": 4, "topic": "nic", "text": "My NIC number is 757758340V."}
+{"doc_id": "SYN_R0022_c2_u004_si_v1", "recording": "SYN_R0022", "kind": "si", "utterance": 4, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 757758340V."}
+{"doc_id": "SYN_R0022_transcript_u005_v1", "recording": "SYN_R0022", "kind": "transcript", "utterance": 5, "topic": "account", "text": "account number eka තිස්එකයි බිංදුවයි නවයයි බිංදුවයි විසිදෙකයි හතළිස්දෙකයි විසිතුනයි හය."}
+{"doc_id": "SYN_R0022_c2_u005_en_v1", "recording": "SYN_R0022", "kind": "en", "utterance": 5, "topic": "account", "text": "My account number is 310902242236."}
+{"doc_id": "SYN_R0022_c2_u005_si_v1", "recording": "SYN_R0022", "kind": "si", "utterance": 5, "topic": "account", "text": "මගේ ගිණුම් අංකය 310902242236."}
+{"doc_id": "SYN_R0022_transcript_u006_v1", "recording": "SYN_R0022", "kind": "transcript", "utterance": 6, "topic": "branch", "text": "Dehiwala branch එකට ගියා."}
+{"doc_id": "SYN_R0022_c2_u006_en_v1", "recording": "SYN_R0022", "kind": "en", "utterance": 6, "topic": "branch", "text": "I visited the Dehiwala branch yesterday."}
+{"doc_id": "SYN_R0022_c2_u006_si_v1", "recording": "SYN_R0022", "kind": "si", "utterance": 6, "topic": "branch", "text": "මම ඊයේ දෙහිවල ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0022_c2_summary_en_v1", "recording": "SYN_R0022", "kind": "summary", "utterance": null, "topic": "summary", "text": "Hiruni Rathnayake called HNB and spoke to Sanduni. The contact number is 0771640288. The customer's NIC number is 757758340V. The account number is 310902242236. The customer had visited the Dehiwala branch."}

@@ -1,0 +1,22 @@
+{"doc_id": "SYN_R0041_transcript_u001_v1", "recording": "SYN_R0041", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම තරුෂි, HNB එකෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0041_c2_u001_en_v1", "recording": "SYN_R0041", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good morning, HNB customer service, Tharushi speaking."}
+{"doc_id": "SYN_R0041_c2_u001_si_v1", "recording": "SYN_R0041", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම තරුෂි, එච්එන්බී ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0041_transcript_u002_v1", "recording": "SYN_R0041", "kind": "transcript", "utterance": 2, "topic": "name", "text": "මගේ නම නදීෂා හේරත්."}
+{"doc_id": "SYN_R0041_c2_u002_en_v1", "recording": "SYN_R0041", "kind": "en", "utterance": 2, "topic": "name", "text": "Yes, this is Ms. Herath."}
+{"doc_id": "SYN_R0041_c2_u002_si_v1", "recording": "SYN_R0041", "kind": "si", "utterance": 2, "topic": "name", "text": "මගේ නම නදීෂා හේරත්."}
+{"doc_id": "SYN_R0041_transcript_u003_v1", "recording": "SYN_R0041", "kind": "transcript", "utterance": 3, "topic": "relative", "text": "mage thaththage nama Tharindu Wijesinghe."}
+{"doc_id": "SYN_R0041_c2_u003_en_v1", "recording": "SYN_R0041", "kind": "en", "utterance": 3, "topic": "relative", "text": "The nominee on the account is Tharindu Wijesinghe."}
+{"doc_id": "SYN_R0041_c2_u003_si_v1", "recording": "SYN_R0041", "kind": "si", "utterance": 3, "topic": "relative", "text": "මගේ තාත්තාගේ නම තරිඳු විජේසිංහ."}
+{"doc_id": "SYN_R0041_transcript_u004_v1", "recording": "SYN_R0041", "kind": "transcript", "utterance": 4, "topic": "account", "text": "account number eka pahai pahai namayai namayai pahai pahai dekai thunai thunai hayai dekai hatharai binduwai haya."}
+{"doc_id": "SYN_R0041_c2_u004_en_v1", "recording": "SYN_R0041", "kind": "en", "utterance": 4, "topic": "account", "text": "My account number is 55995523362406."}
+{"doc_id": "SYN_R0041_c2_u004_si_v1", "recording": "SYN_R0041", "kind": "si", "utterance": 4, "topic": "account", "text": "මගේ ගිණුම් අංකය 55995523362406."}
+{"doc_id": "SYN_R0041_transcript_u005_v1", "recording": "SYN_R0041", "kind": "transcript", "utterance": 5, "topic": "phone", "text": "mage mobile number eka 0747 919 863."}
+{"doc_id": "SYN_R0041_c2_u005_en_v1", "recording": "SYN_R0041", "kind": "en", "utterance": 5, "topic": "phone", "text": "You can reach me on 0747919863."}
+{"doc_id": "SYN_R0041_c2_u005_si_v1", "recording": "SYN_R0041", "kind": "si", "utterance": 5, "topic": "phone", "text": "මගේ දුරකථන අංකය 0747919863."}
+{"doc_id": "SYN_R0041_transcript_u006_v1", "recording": "SYN_R0041", "kind": "transcript", "utterance": 6, "topic": "address", "text": "mage address eka 28/1, දුම්රියපොළ පාර, මාතර."}
+{"doc_id": "SYN_R0041_c2_u006_en_v1", "recording": "SYN_R0041", "kind": "en", "utterance": 6, "topic": "address", "text": "I live at No. 28/1, Station Road, Matara."}
+{"doc_id": "SYN_R0041_c2_u006_si_v1", "recording": "SYN_R0041", "kind": "si", "utterance": 6, "topic": "address", "text": "මගේ ලිපිනය 28/1, දුම්රියපොළ පාර, මාතර."}
+{"doc_id": "SYN_R0041_transcript_u007_v1", "recording": "SYN_R0041", "kind": "transcript", "utterance": 7, "topic": "email", "text": "email eka nadeesha.herath22@yahoo.com."}
+{"doc_id": "SYN_R0041_c2_u007_en_v1", "recording": "SYN_R0041", "kind": "en", "utterance": 7, "topic": "email", "text": "My email address is nadeesha.herath22@yahoo.com."}
+{"doc_id": "SYN_R0041_c2_u007_si_v1", "recording": "SYN_R0041", "kind": "si", "utterance": 7, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය nadeesha.herath22@yahoo.com."}
+{"doc_id": "SYN_R0041_c2_summary_en_v1", "recording": "SYN_R0041", "kind": "summary", "utterance": null, "topic": "summary", "text": "Nadeesha Herath called HNB and spoke to Tharushi. The nominee is Tharindu Wijesinghe. The account number is 55995523362406. The contact number is 0747919863. The customer lives at No. 28/1, Station Road, Matara. The email address on file is nadeesha.herath22@yahoo.com."}

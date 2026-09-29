@@ -1,0 +1,204 @@
+{
+  "recording": "SYN_R0033",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0033_e001",
+      "canonical": "Nimal",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "nimal"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nimal"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නිමල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0033_e002",
+      "canonical": "HNB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "HNB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "HNB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "එච්එන්බී"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0033_e003",
+      "canonical": "Sunil Dissanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සුනිල්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Mr. Dissanayake"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sunil Dissanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0033_e004",
+      "canonical": "Negombo",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Negombo",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "මීගමුව"
+        },
+        {
+          "script": "LATIN",
+          "form": "Negombo"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0033_e005",
+      "canonical": "0764464165",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0764464165",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හැත්තෑ හයයි හතළිස් හතරයි හැට හතරයි දහසයයි පහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 76 446 4165"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0764464165"
+        },
+        {
+          "script": "LATIN",
+          "form": "0764464165"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0033_e006",
+      "canonical": "2788085141",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "2788085141",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "278 808 5141"
+        },
+        {
+          "script": "LATIN",
+          "form": "2788085141"
+        },
+        {
+          "script": "SINHALA",
+          "form": "2788085141"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0033_e007",
+      "canonical": "1981-07-31",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1981-07-31",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "31 July 1981"
+        },
+        {
+          "script": "LATIN",
+          "form": "1981-07-31"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1981 ජූලි 31"
+        },
+        {
+          "script": "LATIN",
+          "form": "July 31, 1981"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0033_e008",
+      "canonical": "198121333421",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "198121333421",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "එකසිය අනූ අටයි දොළහයි එකසිය තිස් තුනයි තිස් හතරයි විසි එක"
+        },
+        {
+          "script": "LATIN",
+          "form": "198121333421"
+        },
+        {
+          "script": "SINHALA",
+          "form": "198121333421"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0033_e009",
+      "canonical": "Dinesh Mendis",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "දිනේෂ් මෙන්ඩිස්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Dinesh Mendis"
+        }
+      ]
+    }
+  ]
+}

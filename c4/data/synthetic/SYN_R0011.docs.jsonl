@@ -1,0 +1,25 @@
+{"doc_id": "SYN_R0011_transcript_u001_v1", "recording": "SYN_R0011", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "good morning, Bank of Ceylon customer service, mama Nuwan."}
+{"doc_id": "SYN_R0011_c2_u001_en_v1", "recording": "SYN_R0011", "kind": "en", "utterance": 1, "topic": "greet", "text": "Hello, this is Nuwan from the Bank of Ceylon call centre."}
+{"doc_id": "SYN_R0011_c2_u001_si_v1", "recording": "SYN_R0011", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම නුවන්, ලංකා බැංකුව ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0011_transcript_u002_v1", "recording": "SYN_R0011", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ow, mage nama Tharindu Silva."}
+{"doc_id": "SYN_R0011_c2_u002_en_v1", "recording": "SYN_R0011", "kind": "en", "utterance": 2, "topic": "name", "text": "My name is Tharindu Silva."}
+{"doc_id": "SYN_R0011_c2_u002_si_v1", "recording": "SYN_R0011", "kind": "si", "utterance": 2, "topic": "name", "text": "මගේ නම තරිඳු සිල්වා."}
+{"doc_id": "SYN_R0011_transcript_u003_v1", "recording": "SYN_R0011", "kind": "transcript", "utterance": 3, "topic": "email", "text": "email eka tharindu.silva84@gmail.com."}
+{"doc_id": "SYN_R0011_c2_u003_en_v1", "recording": "SYN_R0011", "kind": "en", "utterance": 3, "topic": "email", "text": "My email address is tharindu.silva84@gmail.com."}
+{"doc_id": "SYN_R0011_c2_u003_si_v1", "recording": "SYN_R0011", "kind": "si", "utterance": 3, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය tharindu.silva84@gmail.com."}
+{"doc_id": "SYN_R0011_transcript_u004_v1", "recording": "SYN_R0011", "kind": "transcript", "utterance": 4, "topic": "phone", "text": "mage mobile number eka බිංදුවයි හැත්තෑ හතයි හැත්තෑ අටයි දෙසිය හතළිස් හතයි විසි දෙක."}
+{"doc_id": "SYN_R0011_c2_u004_en_v1", "recording": "SYN_R0011", "kind": "en", "utterance": 4, "topic": "phone", "text": "You can reach me on 0777824722."}
+{"doc_id": "SYN_R0011_c2_u004_si_v1", "recording": "SYN_R0011", "kind": "si", "utterance": 4, "topic": "phone", "text": "මගේ දුරකථන අංකය 0777824722."}
+{"doc_id": "SYN_R0011_transcript_u005_v1", "recording": "SYN_R0011", "kind": "transcript", "utterance": 5, "topic": "relative", "text": "mage thaththage nama Tharindu Mendis."}
+{"doc_id": "SYN_R0011_c2_u005_en_v1", "recording": "SYN_R0011", "kind": "en", "utterance": 5, "topic": "relative", "text": "My father's name is Tharindu Mendis."}
+{"doc_id": "SYN_R0011_c2_u005_si_v1", "recording": "SYN_R0011", "kind": "si", "utterance": 5, "topic": "relative", "text": "මගේ තාත්තාගේ නම තරිඳු මෙන්ඩිස්."}
+{"doc_id": "SYN_R0011_transcript_u006_v1", "recording": "SYN_R0011", "kind": "transcript", "utterance": 6, "topic": "nic", "text": "mage NIC number eka 800 947 909 x."}
+{"doc_id": "SYN_R0011_c2_u006_en_v1", "recording": "SYN_R0011", "kind": "en", "utterance": 6, "topic": "nic", "text": "My national identity card number is 800947909X."}
+{"doc_id": "SYN_R0011_c2_u006_si_v1", "recording": "SYN_R0011", "kind": "si", "utterance": 6, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 800947909X."}
+{"doc_id": "SYN_R0011_transcript_u007_v1", "recording": "SYN_R0011", "kind": "transcript", "utterance": 7, "topic": "dob", "text": "date of birth eka April 3, 1980."}
+{"doc_id": "SYN_R0011_c2_u007_en_v1", "recording": "SYN_R0011", "kind": "en", "utterance": 7, "topic": "dob", "text": "My date of birth is April 3, 1980."}
+{"doc_id": "SYN_R0011_c2_u007_si_v1", "recording": "SYN_R0011", "kind": "si", "utterance": 7, "topic": "dob", "text": "මගේ උපන් දිනය 1980 අප්‍රේල් 3."}
+{"doc_id": "SYN_R0011_transcript_u008_v1", "recording": "SYN_R0011", "kind": "transcript", "utterance": 8, "topic": "payment", "text": "last month 150000 rupees debit una, hathara parak."}
+{"doc_id": "SYN_R0011_c2_u008_en_v1", "recording": "SYN_R0011", "kind": "en", "utterance": 8, "topic": "payment", "text": "I paid Rs. 150,000 on 21st of October."}
+{"doc_id": "SYN_R0011_c2_u008_si_v1", "recording": "SYN_R0011", "kind": "si", "utterance": 8, "topic": "payment", "text": "මම ඔක්තෝබර් 21 රුපියල් 150,000 ක් ගෙව්වා."}
+{"doc_id": "SYN_R0011_c2_summary_en_v1", "recording": "SYN_R0011", "kind": "summary", "utterance": null, "topic": "summary", "text": "Tharindu Silva called Bank of Ceylon and spoke to Nuwan. The email address on file is tharindu.silva84@gmail.com. The contact number is 0777824722. The nominee is Tharindu Mendis. The customer's NIC number is 800947909X. The date of birth given was 3 April 1980. A payment of Rs. 25,000 was discussed."}

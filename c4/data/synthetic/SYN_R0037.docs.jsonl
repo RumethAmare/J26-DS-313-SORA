@@ -1,0 +1,31 @@
+{"doc_id": "SYN_R0037_transcript_u001_v1", "recording": "SYN_R0037", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "good morning, Bank of Ceylon customer service, mama Nuwan."}
+{"doc_id": "SYN_R0037_c2_u001_en_v1", "recording": "SYN_R0037", "kind": "en", "utterance": 1, "topic": "greet", "text": "Hello, this is Nuwan from the Bank of Ceylon call centre."}
+{"doc_id": "SYN_R0037_c2_u001_si_v1", "recording": "SYN_R0037", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම නුවන්, ලංකා බැංකුව ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0037_transcript_u002_v1", "recording": "SYN_R0037", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ow, mage nama Chamari Fernando."}
+{"doc_id": "SYN_R0037_c2_u002_en_v1", "recording": "SYN_R0037", "kind": "en", "utterance": 2, "topic": "name", "text": "Yes, this is Ms. Fernando."}
+{"doc_id": "SYN_R0037_c2_u002_si_v1", "recording": "SYN_R0037", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔව්, මම චමරි."}
+{"doc_id": "SYN_R0037_transcript_u003_v1", "recording": "SYN_R0037", "kind": "transcript", "utterance": 3, "topic": "payment", "text": "mama 10th of August rupiyal 150000 gewwa."}
+{"doc_id": "SYN_R0037_c2_u003_en_v1", "recording": "SYN_R0037", "kind": "en", "utterance": 3, "topic": "payment", "text": "I paid Rs. 150,000 on 10th of August."}
+{"doc_id": "SYN_R0037_c2_u003_si_v1", "recording": "SYN_R0037", "kind": "si", "utterance": 3, "topic": "payment", "text": "මම අගෝස්තු 10 රුපියල් 150,000 ක් ගෙව්වා."}
+{"doc_id": "SYN_R0037_transcript_u004_v1", "recording": "SYN_R0037", "kind": "transcript", "utterance": 4, "topic": "phone", "text": "contact number එක බිංදුවයි හැත්තෑදෙකයි බිංදුවයි හයයි හතළිස්අටයි පහයි හැටදෙක."}
+{"doc_id": "SYN_R0037_c2_u004_en_v1", "recording": "SYN_R0037", "kind": "en", "utterance": 4, "topic": "phone", "text": "You can reach me on 0720648562."}
+{"doc_id": "SYN_R0037_c2_u004_si_v1", "recording": "SYN_R0037", "kind": "si", "utterance": 4, "topic": "phone", "text": "මගේ දුරකථන අංකය 0720648562."}
+{"doc_id": "SYN_R0037_transcript_u005_v1", "recording": "SYN_R0037", "kind": "transcript", "utterance": 5, "topic": "account", "text": "account number eka atai ekai atai hayai binduwai atai atai thunai thunai atai hayai deka."}
+{"doc_id": "SYN_R0037_c2_u005_en_v1", "recording": "SYN_R0037", "kind": "en", "utterance": 5, "topic": "account", "text": "My account number is 818608833862."}
+{"doc_id": "SYN_R0037_c2_u005_si_v1", "recording": "SYN_R0037", "kind": "si", "utterance": 5, "topic": "account", "text": "මගේ ගිණුම් අංකය 818608833862."}
+{"doc_id": "SYN_R0037_transcript_u006_v1", "recording": "SYN_R0037", "kind": "transcript", "utterance": 6, "topic": "dob", "text": "date of birth eka 23/04/1988."}
+{"doc_id": "SYN_R0037_c2_u006_en_v1", "recording": "SYN_R0037", "kind": "en", "utterance": 6, "topic": "dob", "text": "I was born on 23 April 1988."}
+{"doc_id": "SYN_R0037_c2_u006_si_v1", "recording": "SYN_R0037", "kind": "si", "utterance": 6, "topic": "dob", "text": "මගේ උපන් දිනය 1988 අප්‍රේල් 23."}
+{"doc_id": "SYN_R0037_transcript_u007_v1", "recording": "SYN_R0037", "kind": "transcript", "utterance": 7, "topic": "hotline", "text": "Bank of Ceylon hotline eka 011 609 1059."}
+{"doc_id": "SYN_R0037_c2_u007_en_v1", "recording": "SYN_R0037", "kind": "en", "utterance": 7, "topic": "hotline", "text": "You can call the Bank of Ceylon hotline on 0116091059."}
+{"doc_id": "SYN_R0037_c2_u007_si_v1", "recording": "SYN_R0037", "kind": "si", "utterance": 7, "topic": "hotline", "text": "ලංකා බැංකුව ක්ෂණික ඇමතුම් අංකය 0116091059."}
+{"doc_id": "SYN_R0037_transcript_u008_v1", "recording": "SYN_R0037", "kind": "transcript", "utterance": 8, "topic": "nic", "text": "ow, ID number eka 198861431547."}
+{"doc_id": "SYN_R0037_c2_u008_en_v1", "recording": "SYN_R0037", "kind": "en", "utterance": 8, "topic": "nic", "text": "My national identity card number is 198861431547."}
+{"doc_id": "SYN_R0037_c2_u008_si_v1", "recording": "SYN_R0037", "kind": "si", "utterance": 8, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 198861431547."}
+{"doc_id": "SYN_R0037_transcript_u009_v1", "recording": "SYN_R0037", "kind": "transcript", "utterance": 9, "topic": "branch", "text": "mama iye Kegalle branch ekata giya."}
+{"doc_id": "SYN_R0037_c2_u009_en_v1", "recording": "SYN_R0037", "kind": "en", "utterance": 9, "topic": "branch", "text": "I visited the Kegalle branch yesterday."}
+{"doc_id": "SYN_R0037_c2_u009_si_v1", "recording": "SYN_R0037", "kind": "si", "utterance": 9, "topic": "branch", "text": "මම ඊයේ කෑගල්ල ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0037_transcript_u010_v1", "recording": "SYN_R0037", "kind": "transcript", "utterance": 10, "topic": "relative", "text": "account eke nominee Chathura Jayasinghe."}
+{"doc_id": "SYN_R0037_c2_u010_en_v1", "recording": "SYN_R0037", "kind": "en", "utterance": 10, "topic": "relative", "text": "The nominee on the account is Chathura Jayasinghe."}
+{"doc_id": "SYN_R0037_c2_u010_si_v1", "recording": "SYN_R0037", "kind": "si", "utterance": 10, "topic": "relative", "text": "මගේ තාත්තාගේ නම චතුර ජයසිංහ."}
+{"doc_id": "SYN_R0037_c2_summary_en_v1", "recording": "SYN_R0037", "kind": "summary", "utterance": null, "topic": "summary", "text": "Chamari Fernando called Bank of Ceylon and spoke to Nuwan. A payment of Rs. 1,500 was discussed. The contact number is 0720648562. The account number is 818608833862. The date of birth given was 23 April 1988. The customer's NIC number is 198861431547. The customer had visited the Kegalle branch. The nominee is Chathura Jayasinghe."}

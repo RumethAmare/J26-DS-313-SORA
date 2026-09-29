@@ -1,0 +1,218 @@
+{
+  "recording": "SYN_R0012",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0012_e001",
+      "canonical": "Nethmi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nethmi"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නෙත්මි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0012_e002",
+      "canonical": "Sampath Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Sampath Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sampath Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0012_e003",
+      "canonical": "Dinesh Mendis",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dinesh"
+        },
+        {
+          "script": "LATIN",
+          "form": "Mr. Mendis"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දිනේෂ් මෙන්ඩිස්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Dinesh Mendis"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0012_e004",
+      "canonical": "Nimal Fernando",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "නිමල් ප්‍රනාන්දු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nimal Fernando"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0012_e005",
+      "canonical": "No. 48, Lake Road, Negombo",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "48, Lake Road, Negombo"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 48, Lake Road, Negombo"
+        },
+        {
+          "script": "SINHALA",
+          "form": "48, වැව් පාර, මීගමුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0012_e006",
+      "canonical": "195531247323",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "195531247323",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "195531247323"
+        },
+        {
+          "script": "SINHALA",
+          "form": "195531247323"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0012_e007",
+      "canonical": "dinesh.mendis45@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "dinesh.mendis45@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "dinesh.mendis45@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "dinesh.mendis45@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0012_e008",
+      "canonical": "1955-11-07",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1955-11-07",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "7 November 1955"
+        },
+        {
+          "script": "LATIN",
+          "form": "November 7, 1955"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1955.11.07"
+        },
+        {
+          "script": "LATIN",
+          "form": "7th of November 1955"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0012_e009",
+      "canonical": "0763013408",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0763013408",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හතයි හයසිය තිහයි එකසිය තිස් හතරයි බිංදුවයි අට"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 76 301 3408"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0763013408"
+        },
+        {
+          "script": "LATIN",
+          "form": "0763013408"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0012_e010",
+      "canonical": "Nugegoda",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Nugegoda",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nugegoda"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නුගේගොඩ"
+        }
+      ]
+    }
+  ]
+}

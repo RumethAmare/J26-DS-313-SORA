@@ -1,0 +1,151 @@
+{
+  "recording": "SYN_R0017",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0017_e001",
+      "canonical": "Kamal",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kamal"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කමල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0017_e002",
+      "canonical": "Sampath Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Sampath Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sampath Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0017_e003",
+      "canonical": "Sachini Jayasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සචිනි ජයසිංහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sachini Jayasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සචිනි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0017_e004",
+      "canonical": "sachini.jayasinghe56@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "sachini.jayasinghe56@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "sachini.jayasinghe56@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "sachini.jayasinghe56@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0017_e005",
+      "canonical": "747872055V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "747872055V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "7478 720 55 v"
+        },
+        {
+          "script": "LATIN",
+          "form": "747872055V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "747872055V"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0017_e006",
+      "canonical": "Dinesh Karunaratne",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "dinesh karunaratne"
+        },
+        {
+          "script": "LATIN",
+          "form": "Dinesh Karunaratne"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දිනේෂ් කරුණාරත්න"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0017_e007",
+      "canonical": "1974-10-13",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1974-10-13",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "October 13, 1974"
+        },
+        {
+          "script": "LATIN",
+          "form": "1974-10-13"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1974 ඔක්තෝබර් 13"
+        }
+      ]
+    }
+  ]
+}

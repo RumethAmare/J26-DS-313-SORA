@@ -1,0 +1,22 @@
+{"doc_id": "SYN_R0021_transcript_u001_v1", "recording": "SYN_R0021", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "hello, mama ඉෂාරා, People's Bank call centre eken kathaa karanne."}
+{"doc_id": "SYN_R0021_c2_u001_en_v1", "recording": "SYN_R0021", "kind": "en", "utterance": 1, "topic": "greet", "text": "Hello, this is Ishara from the People's Bank call centre."}
+{"doc_id": "SYN_R0021_c2_u001_si_v1", "recording": "SYN_R0021", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම ඉෂාරා, මහජන බැංකුව ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0021_transcript_u002_v1", "recording": "SYN_R0021", "kind": "transcript", "utterance": 2, "topic": "name", "text": "mage nama sampath."}
+{"doc_id": "SYN_R0021_c2_u002_en_v1", "recording": "SYN_R0021", "kind": "en", "utterance": 2, "topic": "name", "text": "My name is Sampath Senanayake."}
+{"doc_id": "SYN_R0021_c2_u002_si_v1", "recording": "SYN_R0021", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔව්, මම සම්පත්."}
+{"doc_id": "SYN_R0021_transcript_u003_v1", "recording": "SYN_R0021", "kind": "transcript", "utterance": 3, "topic": "address", "text": "mama inne No. 89/6, Galle Road, Kurunegala."}
+{"doc_id": "SYN_R0021_c2_u003_en_v1", "recording": "SYN_R0021", "kind": "en", "utterance": 3, "topic": "address", "text": "My address is No. 89/6, Galle Road, Kurunegala."}
+{"doc_id": "SYN_R0021_c2_u003_si_v1", "recording": "SYN_R0021", "kind": "si", "utterance": 3, "topic": "address", "text": "මගේ ලිපිනය 89/6, ගාලු පාර, කුරුණෑගල."}
+{"doc_id": "SYN_R0021_transcript_u004_v1", "recording": "SYN_R0021", "kind": "transcript", "utterance": 4, "topic": "hotline", "text": "oyata 011 0217 294 ta call karanna puluwan."}
+{"doc_id": "SYN_R0021_c2_u004_en_v1", "recording": "SYN_R0021", "kind": "en", "utterance": 4, "topic": "hotline", "text": "You can call the People's Bank hotline on 0110217294."}
+{"doc_id": "SYN_R0021_c2_u004_si_v1", "recording": "SYN_R0021", "kind": "si", "utterance": 4, "topic": "hotline", "text": "මහජන බැංකුව ක්ෂණික ඇමතුම් අංකය 0110217294."}
+{"doc_id": "SYN_R0021_transcript_u005_v1", "recording": "SYN_R0021", "kind": "transcript", "utterance": 5, "topic": "branch", "text": "dehiwala branch එකට ගියා."}
+{"doc_id": "SYN_R0021_c2_u005_en_v1", "recording": "SYN_R0021", "kind": "en", "utterance": 5, "topic": "branch", "text": "I visited the Dehiwala branch yesterday."}
+{"doc_id": "SYN_R0021_c2_u005_si_v1", "recording": "SYN_R0021", "kind": "si", "utterance": 5, "topic": "branch", "text": "මම ඊයේ දෙහිවල ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0021_transcript_u006_v1", "recording": "SYN_R0021", "kind": "transcript", "utterance": 6, "topic": "email", "text": "mage email එක sampath.senanayake88@gmail.com."}
+{"doc_id": "SYN_R0021_c2_u006_en_v1", "recording": "SYN_R0021", "kind": "en", "utterance": 6, "topic": "email", "text": "My email address is sampath.senanayake88@gmail.com."}
+{"doc_id": "SYN_R0021_c2_u006_si_v1", "recording": "SYN_R0021", "kind": "si", "utterance": 6, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය sampath.senanayake88@gmail.com."}
+{"doc_id": "SYN_R0021_transcript_u007_v1", "recording": "SYN_R0021", "kind": "transcript", "utterance": 7, "topic": "account", "text": "මගේ account එක 713130231487."}
+{"doc_id": "SYN_R0021_c2_u007_en_v1", "recording": "SYN_R0021", "kind": "en", "utterance": 7, "topic": "account", "text": "My account number is 713130231487."}
+{"doc_id": "SYN_R0021_c2_u007_si_v1", "recording": "SYN_R0021", "kind": "si", "utterance": 7, "topic": "account", "text": "මගේ ගිණුම් අංකය 713130231487."}
+{"doc_id": "SYN_R0021_c2_summary_en_v1", "recording": "SYN_R0021", "kind": "summary", "utterance": null, "topic": "summary", "text": "Sampath Senanayake called People's Bank and spoke to Ishara. The customer lives at No. 89/6, Galle Road, Kurunegala. The customer had visited the Dehiwala branch. The email address on file is sampath.senanayake88@gmail.com. The account number is 713130231487."}

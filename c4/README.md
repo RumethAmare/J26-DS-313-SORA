@@ -85,6 +85,13 @@ generated from Sri Lankan identifier formats. Synthetic data is used for
 development and unit tests only; every reported metric comes from the real
 held-out recordings.
 
+    python src/synthetic.py --recordings 50 --seed 13    # -> data/synthetic/
+
+Each synthetic recording follows the corpus layout (transcript, clean English,
+clean Sinhala, summary), is marked `annotation_source: "synthetic"`, and must
+pass `src/validate.py` before it is written. The set is deterministic for a
+given seed.
+
 ## Setup
 
     python -m pip install -r requirements.txt

@@ -1,0 +1,175 @@
+{
+  "recording": "SYN_R0027",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0027_e001",
+      "canonical": "Chathura",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "chathura"
+        },
+        {
+          "script": "LATIN",
+          "form": "Chathura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "චතුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0027_e002",
+      "canonical": "Mobitel",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Mobitel",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Mobitel"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මොබිටෙල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0027_e003",
+      "canonical": "Lahiru Wickramasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Lahiru Wickramasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ලහිරු වික්‍රමසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0027_e004",
+      "canonical": "0110779362",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0110779362",
+      "redact": false,
+      "value": "0110779362",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai ekai ekai binduwai hathai hathai namayai thunai hayai deka"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 077 9362"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0110779362"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0027_e005",
+      "canonical": "lahiru.wickramasinghe68@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "lahiru.wickramasinghe68@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "lahiru.wickramasinghe68@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "lahiru.wickramasinghe68@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0027_e006",
+      "canonical": "191005811460",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "191005811460",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "එකයි නවසිය දහයයි බිංදුවයි පහයි අටයි එකයි එකයි හතළිස් හයයි බිංදුව"
+        },
+        {
+          "script": "LATIN",
+          "form": "191005811460"
+        },
+        {
+          "script": "SINHALA",
+          "form": "191005811460"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0027_e007",
+      "canonical": "0719817957",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0719817957",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හත්සිය දහනවයයි අටයි එකයි හැත්තෑ නවයයි පහයි හත"
+        },
+        {
+          "script": "LATIN",
+          "form": "0719817957"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0719817957"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0027_e008",
+      "canonical": "1988-12-12",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1988-12-12",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "12/12/1988"
+        },
+        {
+          "script": "LATIN",
+          "form": "December 12, 1988"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1988.12.12"
+        }
+      ]
+    }
+  ]
+}

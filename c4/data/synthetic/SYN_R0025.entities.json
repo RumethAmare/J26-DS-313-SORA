@@ -1,0 +1,132 @@
+{
+  "recording": "SYN_R0025",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0025_e001",
+      "canonical": "Ishara",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉෂාරා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ishara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0025_e002",
+      "canonical": "People's Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "People's Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "People's Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මහජන බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0025_e003",
+      "canonical": "Ishara Fernando",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ishara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ishara Fernando"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉෂාරා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0025_e004",
+      "canonical": "No. 218/2, Flower Road, Galle",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "218/2, මල් පාර, ගාල්ල"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 218/2, Flower Road, Galle"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0025_e005",
+      "canonical": "0701069886",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0701069886",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai hathai binduwai ekai binduwai hayai namayai atai atai haya"
+        },
+        {
+          "script": "LATIN",
+          "form": "0701069886"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0701069886"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0025_e006",
+      "canonical": "1981-11-21",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1981-11-21",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "November 21, 1981"
+        },
+        {
+          "script": "LATIN",
+          "form": "21 November 1981"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1981 නොවැම්බර් 21"
+        },
+        {
+          "script": "LATIN",
+          "form": "21st of November 1981"
+        }
+      ]
+    }
+  ]
+}

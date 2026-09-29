@@ -1,0 +1,28 @@
+{"doc_id": "SYN_R0033_transcript_u001_v1", "recording": "SYN_R0033", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "hello, mama nimal, HNB call centre eken kathaa karanne."}
+{"doc_id": "SYN_R0033_c2_u001_en_v1", "recording": "SYN_R0033", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good morning, HNB customer service, Nimal speaking."}
+{"doc_id": "SYN_R0033_c2_u001_si_v1", "recording": "SYN_R0033", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම නිමල්, එච්එන්බී ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0033_transcript_u002_v1", "recording": "SYN_R0033", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ow miss, mama සුනිල්."}
+{"doc_id": "SYN_R0033_c2_u002_en_v1", "recording": "SYN_R0033", "kind": "en", "utterance": 2, "topic": "name", "text": "Yes, this is Mr. Dissanayake."}
+{"doc_id": "SYN_R0033_c2_u002_si_v1", "recording": "SYN_R0033", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔව්, මම සුනිල්."}
+{"doc_id": "SYN_R0033_transcript_u003_v1", "recording": "SYN_R0033", "kind": "transcript", "utterance": 3, "topic": "branch", "text": "mama iye මීගමුව branch ekata giya."}
+{"doc_id": "SYN_R0033_c2_u003_en_v1", "recording": "SYN_R0033", "kind": "en", "utterance": 3, "topic": "branch", "text": "I visited the Negombo branch yesterday."}
+{"doc_id": "SYN_R0033_c2_u003_si_v1", "recording": "SYN_R0033", "kind": "si", "utterance": 3, "topic": "branch", "text": "මම ඊයේ මීගමුව ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0033_transcript_u004_v1", "recording": "SYN_R0033", "kind": "transcript", "utterance": 4, "topic": "payment", "text": "mama 2nd of January rupiyal 25000 gewwa."}
+{"doc_id": "SYN_R0033_c2_u004_en_v1", "recording": "SYN_R0033", "kind": "en", "utterance": 4, "topic": "payment", "text": "I paid Rs. 25,000 on 2nd of January."}
+{"doc_id": "SYN_R0033_c2_u004_si_v1", "recording": "SYN_R0033", "kind": "si", "utterance": 4, "topic": "payment", "text": "මම ජනවාරි 2 රුපියල් 25,000 ක් ගෙව්වා."}
+{"doc_id": "SYN_R0033_transcript_u005_v1", "recording": "SYN_R0033", "kind": "transcript", "utterance": 5, "topic": "phone", "text": "mage mobile number eka බිංදුවයි හැත්තෑ හයයි හතළිස් හතරයි හැට හතරයි දහසයයි පහ."}
+{"doc_id": "SYN_R0033_c2_u005_en_v1", "recording": "SYN_R0033", "kind": "en", "utterance": 5, "topic": "phone", "text": "My mobile number is +94 76 446 4165."}
+{"doc_id": "SYN_R0033_c2_u005_si_v1", "recording": "SYN_R0033", "kind": "si", "utterance": 5, "topic": "phone", "text": "මගේ දුරකථන අංකය 0764464165."}
+{"doc_id": "SYN_R0033_transcript_u006_v1", "recording": "SYN_R0033", "kind": "transcript", "utterance": 6, "topic": "account", "text": "මගේ account එක 278 808 5141."}
+{"doc_id": "SYN_R0033_c2_u006_en_v1", "recording": "SYN_R0033", "kind": "en", "utterance": 6, "topic": "account", "text": "My account number is 2788085141."}
+{"doc_id": "SYN_R0033_c2_u006_si_v1", "recording": "SYN_R0033", "kind": "si", "utterance": 6, "topic": "account", "text": "මගේ ගිණුම් අංකය 2788085141."}
+{"doc_id": "SYN_R0033_transcript_u007_v1", "recording": "SYN_R0033", "kind": "transcript", "utterance": 7, "topic": "dob", "text": "date of birth eka 31 July 1981."}
+{"doc_id": "SYN_R0033_c2_u007_en_v1", "recording": "SYN_R0033", "kind": "en", "utterance": 7, "topic": "dob", "text": "My date of birth is 1981-07-31."}
+{"doc_id": "SYN_R0033_c2_u007_si_v1", "recording": "SYN_R0033", "kind": "si", "utterance": 7, "topic": "dob", "text": "මගේ උපන් දිනය 1981 ජූලි 31."}
+{"doc_id": "SYN_R0033_transcript_u008_v1", "recording": "SYN_R0033", "kind": "transcript", "utterance": 8, "topic": "nic", "text": "NIC එක එකසිය අනූ අටයි දොළහයි එකසිය තිස් තුනයි තිස් හතරයි විසි එක."}
+{"doc_id": "SYN_R0033_c2_u008_en_v1", "recording": "SYN_R0033", "kind": "en", "utterance": 8, "topic": "nic", "text": "My national identity card number is 198121333421."}
+{"doc_id": "SYN_R0033_c2_u008_si_v1", "recording": "SYN_R0033", "kind": "si", "utterance": 8, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 198121333421."}
+{"doc_id": "SYN_R0033_transcript_u009_v1", "recording": "SYN_R0033", "kind": "transcript", "utterance": 9, "topic": "relative", "text": "mage thaththage nama දිනේෂ් මෙන්ඩිස්."}
+{"doc_id": "SYN_R0033_c2_u009_en_v1", "recording": "SYN_R0033", "kind": "en", "utterance": 9, "topic": "relative", "text": "My father's name is Dinesh Mendis."}
+{"doc_id": "SYN_R0033_c2_u009_si_v1", "recording": "SYN_R0033", "kind": "si", "utterance": 9, "topic": "relative", "text": "මගේ තාත්තාගේ නම දිනේෂ් මෙන්ඩිස්."}
+{"doc_id": "SYN_R0033_c2_summary_en_v1", "recording": "SYN_R0033", "kind": "summary", "utterance": null, "topic": "summary", "text": "Sunil Dissanayake called HNB and spoke to Nimal. The customer had visited the Negombo branch. A payment of Rs. 1,500 was discussed. The contact number is 0764464165. The account number is 2788085141. The date of birth given was July 31, 1981. The customer's NIC number is 198121333421. The nominee is Dinesh Mendis."}

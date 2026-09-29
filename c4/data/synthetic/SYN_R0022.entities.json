@@ -1,0 +1,155 @@
+{
+  "recording": "SYN_R0022",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0022_e001",
+      "canonical": "HNB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "HNB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "HNB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "එච්එන්බී"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0022_e002",
+      "canonical": "Sanduni",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සඳුනි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sanduni"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0022_e003",
+      "canonical": "Hiruni Rathnayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hiruni"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ms. Rathnayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හිරුනි රත්නායක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Hiruni Rathnayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0022_e004",
+      "canonical": "0771640288",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0771640288",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හත්සිය හැත්තෑඑකයි හයයි හතළිහයි විසිඅටයි අට"
+        },
+        {
+          "script": "LATIN",
+          "form": "0771640288"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0771640288"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0022_e005",
+      "canonical": "757758340V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "757758340V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "7 5 7 7 5 8 3 4 0 v"
+        },
+        {
+          "script": "LATIN",
+          "form": "757758340V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "757758340V"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0022_e006",
+      "canonical": "310902242236",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "310902242236",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "තිස්එකයි බිංදුවයි නවයයි බිංදුවයි විසිදෙකයි හතළිස්දෙකයි විසිතුනයි හය"
+        },
+        {
+          "script": "LATIN",
+          "form": "310902242236"
+        },
+        {
+          "script": "SINHALA",
+          "form": "310902242236"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0022_e007",
+      "canonical": "Dehiwala",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Dehiwala",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dehiwala"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දෙහිවල"
+        }
+      ]
+    }
+  ]
+}

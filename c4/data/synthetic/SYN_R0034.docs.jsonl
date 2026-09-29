@@ -1,0 +1,22 @@
+{"doc_id": "SYN_R0034_transcript_u001_v1", "recording": "SYN_R0034", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "hello, mama ishara, Sampath Bank call centre eken kathaa karanne."}
+{"doc_id": "SYN_R0034_c2_u001_en_v1", "recording": "SYN_R0034", "kind": "en", "utterance": 1, "topic": "greet", "text": "Hello, this is Ishara from the Sampath Bank call centre."}
+{"doc_id": "SYN_R0034_c2_u001_si_v1", "recording": "SYN_R0034", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම ඉෂාරා, සම්පත් බැංකුව ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0034_transcript_u002_v1", "recording": "SYN_R0034", "kind": "transcript", "utterance": 2, "topic": "name", "text": "මගේ නම Pradeep Wijesinghe."}
+{"doc_id": "SYN_R0034_c2_u002_en_v1", "recording": "SYN_R0034", "kind": "en", "utterance": 2, "topic": "name", "text": "My name is Pradeep Wijesinghe."}
+{"doc_id": "SYN_R0034_c2_u002_si_v1", "recording": "SYN_R0034", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔව්, මම ප්‍රදීප්."}
+{"doc_id": "SYN_R0034_transcript_u003_v1", "recording": "SYN_R0034", "kind": "transcript", "utterance": 3, "topic": "branch", "text": "Nugegoda branch එකට ගියා."}
+{"doc_id": "SYN_R0034_c2_u003_en_v1", "recording": "SYN_R0034", "kind": "en", "utterance": 3, "topic": "branch", "text": "I visited the Nugegoda branch yesterday."}
+{"doc_id": "SYN_R0034_c2_u003_si_v1", "recording": "SYN_R0034", "kind": "si", "utterance": 3, "topic": "branch", "text": "මම ඊයේ නුගේගොඩ ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0034_transcript_u004_v1", "recording": "SYN_R0034", "kind": "transcript", "utterance": 4, "topic": "dob", "text": "date of birth eka January 10, 1974."}
+{"doc_id": "SYN_R0034_c2_u004_en_v1", "recording": "SYN_R0034", "kind": "en", "utterance": 4, "topic": "dob", "text": "I was born on 10th of January 1974."}
+{"doc_id": "SYN_R0034_c2_u004_si_v1", "recording": "SYN_R0034", "kind": "si", "utterance": 4, "topic": "dob", "text": "මගේ උපන් දිනය 1974.01.10."}
+{"doc_id": "SYN_R0034_transcript_u005_v1", "recording": "SYN_R0034", "kind": "transcript", "utterance": 5, "topic": "email", "text": "email eka pradeep.wijesinghe59@gmail.com."}
+{"doc_id": "SYN_R0034_c2_u005_en_v1", "recording": "SYN_R0034", "kind": "en", "utterance": 5, "topic": "email", "text": "My email address is pradeep.wijesinghe59@gmail.com."}
+{"doc_id": "SYN_R0034_c2_u005_si_v1", "recording": "SYN_R0034", "kind": "si", "utterance": 5, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය pradeep.wijesinghe59@gmail.com."}
+{"doc_id": "SYN_R0034_transcript_u006_v1", "recording": "SYN_R0034", "kind": "transcript", "utterance": 6, "topic": "hotline", "text": "Sampath Bank hotline eka 011 362 8704."}
+{"doc_id": "SYN_R0034_c2_u006_en_v1", "recording": "SYN_R0034", "kind": "en", "utterance": 6, "topic": "hotline", "text": "You can call the Sampath Bank hotline on 0113628704."}
+{"doc_id": "SYN_R0034_c2_u006_si_v1", "recording": "SYN_R0034", "kind": "si", "utterance": 6, "topic": "hotline", "text": "සම්පත් බැංකුව ක්ෂණික ඇමතුම් අංකය 0113628704."}
+{"doc_id": "SYN_R0034_transcript_u007_v1", "recording": "SYN_R0034", "kind": "transcript", "utterance": 7, "topic": "nic", "text": "ow, ID number eka ekai namayai hathai hatharai binduwai ekai binduwai dekai dekai hayai pahai ata."}
+{"doc_id": "SYN_R0034_c2_u007_en_v1", "recording": "SYN_R0034", "kind": "en", "utterance": 7, "topic": "nic", "text": "My national identity card number is 197401022658."}
+{"doc_id": "SYN_R0034_c2_u007_si_v1", "recording": "SYN_R0034", "kind": "si", "utterance": 7, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 197401022658."}
+{"doc_id": "SYN_R0034_c2_summary_en_v1", "recording": "SYN_R0034", "kind": "summary", "utterance": null, "topic": "summary", "text": "Pradeep Wijesinghe called Sampath Bank and spoke to Ishara. The customer had visited the Nugegoda branch. The date of birth given was 10th of January 1974. The email address on file is pradeep.wijesinghe59@gmail.com. The customer's NIC number is 197401022658."}

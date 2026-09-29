@@ -1,0 +1,241 @@
+{
+  "recording": "SYN_R0020",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0020_e001",
+      "canonical": "Hiruni",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hiruni"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හිරුනි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0020_e002",
+      "canonical": "Mobitel",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Mobitel",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Mobitel"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මොබිටෙල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0020_e003",
+      "canonical": "Dulani Dissanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dulani"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ms. Dissanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දුලානි දිසානායක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Dulani Dissanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0020_e004",
+      "canonical": "Dehiwala",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Dehiwala",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "දෙහිවල"
+        },
+        {
+          "script": "LATIN",
+          "form": "Dehiwala"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0020_e005",
+      "canonical": "0119732078",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0119732078",
+      "redact": false,
+      "value": "0119732078",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 973 2078"
+        },
+        {
+          "script": "LATIN",
+          "form": "0119732078"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0119732078"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0020_e006",
+      "canonical": "Kasun Wickramasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "කසුන් වික්‍රමසිංහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kasun Wickramasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0020_e007",
+      "canonical": "dulani.dissanayake26@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "dulani.dissanayake26@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "dulani.dissanayake26@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "dulani.dissanayake26@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0020_e008",
+      "canonical": "1974-06-04",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1974-06-04",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "4th of June 1974"
+        },
+        {
+          "script": "LATIN",
+          "form": "4 June 1974"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1974 ජූනි 4"
+        },
+        {
+          "script": "LATIN",
+          "form": "June 4, 1974"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0020_e009",
+      "canonical": "7088080507",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "7088080507",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "hathai binduwai atai atai binduwai atai binduwai pahai binduwai hatha"
+        },
+        {
+          "script": "LATIN",
+          "form": "7088080507"
+        },
+        {
+          "script": "SINHALA",
+          "form": "7088080507"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0020_e010",
+      "canonical": "197465664723",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "197465664723",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ekai namayai hathai hatharai hayai pahai hayai hayai hatharai hathai dekai thuna"
+        },
+        {
+          "script": "LATIN",
+          "form": "197465664723"
+        },
+        {
+          "script": "SINHALA",
+          "form": "197465664723"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0020_e011",
+      "canonical": "No. 191, School Lane, Kegalle",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "191, School Lane, Kegalle"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 191, School Lane, Kegalle"
+        },
+        {
+          "script": "SINHALA",
+          "form": "191, පාසල් පටුමග, කෑගල්ල"
+        }
+      ]
+    }
+  ]
+}

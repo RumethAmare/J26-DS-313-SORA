@@ -1,0 +1,165 @@
+{
+  "recording": "SYN_R0021",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0021_e001",
+      "canonical": "Ishara",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉෂාරා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ishara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0021_e002",
+      "canonical": "People's Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "People's Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "People's Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මහජන බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0021_e003",
+      "canonical": "Sampath Senanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "sampath"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sampath Senanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0021_e004",
+      "canonical": "No. 89/6, Galle Road, Kurunegala",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 89/6, Galle Road, Kurunegala"
+        },
+        {
+          "script": "SINHALA",
+          "form": "89/6, ගාලු පාර, කුරුණෑගල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0021_e005",
+      "canonical": "0110217294",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0110217294",
+      "redact": false,
+      "value": "0110217294",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 0217 294"
+        },
+        {
+          "script": "LATIN",
+          "form": "0110217294"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0110217294"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0021_e006",
+      "canonical": "Dehiwala",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Dehiwala",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "dehiwala"
+        },
+        {
+          "script": "LATIN",
+          "form": "Dehiwala"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දෙහිවල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0021_e007",
+      "canonical": "sampath.senanayake88@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "sampath.senanayake88@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "sampath.senanayake88@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "sampath.senanayake88@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0021_e008",
+      "canonical": "713130231487",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "713130231487",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "713130231487"
+        },
+        {
+          "script": "SINHALA",
+          "form": "713130231487"
+        }
+      ]
+    }
+  ]
+}

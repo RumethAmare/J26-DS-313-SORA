@@ -1,0 +1,147 @@
+{
+  "recording": "SYN_R0050",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0050_e001",
+      "canonical": "Sachini",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sachini"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සචිනි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0050_e002",
+      "canonical": "Mobitel",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Mobitel",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Mobitel"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මොබිටෙල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0050_e003",
+      "canonical": "Ruwan Fernando",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "රුවන් ප්‍රනාන්දු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ruwan Fernando"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0050_e004",
+      "canonical": "0702901406",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0702901406",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හැත්තෑවයි විසිනවයයි බිංදුවයි එකයි හතළිහයි හය"
+        },
+        {
+          "script": "LATIN",
+          "form": "0702901406"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0702901406"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0050_e005",
+      "canonical": "1955-01-22",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1955-01-22",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "22 January 1955"
+        },
+        {
+          "script": "LATIN",
+          "form": "January 22, 1955"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1955 ජනවාරි 22"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0050_e006",
+      "canonical": "No. 123/5, Temple Road, Dehiwala",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 123/5, Temple Road, Dehiwala"
+        },
+        {
+          "script": "SINHALA",
+          "form": "123/5, පන්සල් පාර, දෙහිවල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0050_e007",
+      "canonical": "0111282332",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0111282332",
+      "redact": false,
+      "value": "0111282332",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි එකයි එකොළහයි දෙකයි අසූ දෙකයි තුනයි තිස් දෙක"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 128 2332"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0111282332"
+        }
+      ]
+    }
+  ]
+}

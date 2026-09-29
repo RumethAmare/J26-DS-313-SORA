@@ -1,0 +1,151 @@
+{
+  "recording": "SYN_R0003",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0003_e001",
+      "canonical": "Nuwan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nuwan"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නුවන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0003_e002",
+      "canonical": "Sampath Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Sampath Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sampath Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0003_e003",
+      "canonical": "Nethmi Rathnayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "නෙත්මි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ms. Rathnayake"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nethmi Rathnayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0003_e004",
+      "canonical": "Galle",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Galle",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Galle"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ගාල්ල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0003_e005",
+      "canonical": "0112698776",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0112698776",
+      "redact": false,
+      "value": "0112698776",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai ekai ekai dekai hayai namayai atai hathai hathai haya"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 269 8776"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0112698776"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0003_e006",
+      "canonical": "0774624138",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0774624138",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හතයි හැත්තෑ හතරයි හැට දෙකයි හතළිස් එකයි තිස් අට"
+        },
+        {
+          "script": "LATIN",
+          "form": "0774624138"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0774624138"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0003_e007",
+      "canonical": "520747520146",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "520747520146",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "පහයි දෙකයි බිංදුවයි හතයි හාරසිය හැත්තෑ පහයි විස්සයි එකයි හතළිස් හය"
+        },
+        {
+          "script": "LATIN",
+          "form": "520747520146"
+        },
+        {
+          "script": "SINHALA",
+          "form": "520747520146"
+        }
+      ]
+    }
+  ]
+}

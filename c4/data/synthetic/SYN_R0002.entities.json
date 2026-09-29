@@ -1,0 +1,227 @@
+{
+  "recording": "SYN_R0002",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0002_e001",
+      "canonical": "Nethmi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "nethmi"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nethmi"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නෙත්මි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0002_e002",
+      "canonical": "Bank of Ceylon",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Bank of Ceylon",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Bank of Ceylon"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ලංකා බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0002_e003",
+      "canonical": "Nethmi Mendis",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "නෙත්මි මෙන්ඩිස්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ms. Mendis"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නෙත්මි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nethmi Mendis"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0002_e004",
+      "canonical": "Moratuwa",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Moratuwa",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "moratuwa"
+        },
+        {
+          "script": "LATIN",
+          "form": "Moratuwa"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මොරටුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0002_e005",
+      "canonical": "nethmi.mendis95@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "nethmi.mendis95@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "nethmi.mendis95@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "nethmi.mendis95@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0002_e006",
+      "canonical": "925114837149",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "925114837149",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අනූදෙකයි පන්සිය එකොළහයි හතරයි අටයි තිස්හතයි දාහතරයි නවය"
+        },
+        {
+          "script": "LATIN",
+          "form": "925114837149"
+        },
+        {
+          "script": "SINHALA",
+          "form": "925114837149"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0002_e007",
+      "canonical": "1966-03-22",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1966-03-22",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "March 22, 1966"
+        },
+        {
+          "script": "LATIN",
+          "form": "22 March 1966"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1966.03.22"
+        },
+        {
+          "script": "LATIN",
+          "form": "22nd of March 1966"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0002_e008",
+      "canonical": "0115754099",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0115754099",
+      "redact": false,
+      "value": "0115754099",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0115 754 099"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 575 4099"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0115754099"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0002_e009",
+      "canonical": "Tharindu Wickramasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Tharindu Wickramasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "තරිඳු වික්‍රමසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0002_e010",
+      "canonical": "0754834202",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0754834202",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai hathai pahai hatharai atai thunai hatharai dekai binduwai deka"
+        },
+        {
+          "script": "LATIN",
+          "form": "0754834202"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0754834202"
+        }
+      ]
+    }
+  ]
+}

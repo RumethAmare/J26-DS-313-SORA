@@ -1,0 +1,223 @@
+{
+  "recording": "SYN_R0001",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0001_e001",
+      "canonical": "Nimal",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "නිමල්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nimal"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0001_e002",
+      "canonical": "Dialog",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Dialog",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dialog"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඩයලොග්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0001_e003",
+      "canonical": "Kasun Wickramasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kasun Wickramasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කසුන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0001_e004",
+      "canonical": "0119879510",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0119879510",
+      "redact": false,
+      "value": "0119879510",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 987 9510"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 987 9510"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0119879510"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0001_e005",
+      "canonical": "Kegalle",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Kegalle",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "kegalle"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kegalle"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කෑගල්ල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0001_e006",
+      "canonical": "1983-04-07",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1983-04-07",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "April 7, 1983"
+        },
+        {
+          "script": "LATIN",
+          "form": "7 April 1983"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1983 අප්‍රේල් 7"
+        },
+        {
+          "script": "LATIN",
+          "form": "7th of April 1983"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0001_e007",
+      "canonical": "276602001617",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "276602001617",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "විසි හතයි හැට හයයි බිංදුවයි දෙකයි බිංදුවයි බිංදුවයි දහසයයි එකයි හත"
+        },
+        {
+          "script": "LATIN",
+          "form": "276602001617"
+        },
+        {
+          "script": "SINHALA",
+          "form": "276602001617"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0001_e008",
+      "canonical": "0710800937",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0710800937",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 1 0 8 0 0 9 3 7"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 71 080 0937"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0710800937"
+        },
+        {
+          "script": "LATIN",
+          "form": "0710800937"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0001_e009",
+      "canonical": "kasun.wickramasinghe53@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "kasun.wickramasinghe53@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "kasun.wickramasinghe53@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "kasun.wickramasinghe53@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0001_e010",
+      "canonical": "No. 210, Hospital Road, Galle",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "210, Hospital Road, Galle"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 210, Hospital Road, Galle"
+        },
+        {
+          "script": "SINHALA",
+          "form": "210, රෝහල් පාර, ගාල්ල"
+        }
+      ]
+    }
+  ]
+}

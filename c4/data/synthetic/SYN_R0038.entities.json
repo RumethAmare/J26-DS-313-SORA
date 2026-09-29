@@ -1,0 +1,191 @@
+{
+  "recording": "SYN_R0038",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0038_e001",
+      "canonical": "Sampath",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "sampath"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sampath"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0038_e002",
+      "canonical": "Mobitel",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Mobitel",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Mobitel"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මොබිටෙල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0038_e003",
+      "canonical": "Dulani Karunaratne",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dulani Karunaratne"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ms. Karunaratne"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දුලානි කරුණාරත්න"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0038_e004",
+      "canonical": "No. 92, Flower Road, Nugegoda",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "92, මල් පාර, නුගේගොඩ"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 92, Flower Road, Nugegoda"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0038_e005",
+      "canonical": "Kurunegala",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Kurunegala",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "කුරුණෑගල"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kurunegala"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0038_e006",
+      "canonical": "0788525979",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0788525979",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හැත්තෑඅටයි අසූපහයි විසිපහයි නවසිය හැත්තෑනවය"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 78 852 5979"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0788525979"
+        },
+        {
+          "script": "LATIN",
+          "form": "0788525979"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0038_e007",
+      "canonical": "dulani.karunaratne49@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "dulani.karunaratne49@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "dulani.karunaratne49@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "dulani.karunaratne49@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0038_e008",
+      "canonical": "2004-09-12",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "2004-09-12",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "12th of September 2004"
+        },
+        {
+          "script": "SINHALA",
+          "form": "2004.09.12"
+        },
+        {
+          "script": "LATIN",
+          "form": "12 September 2004"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0038_e009",
+      "canonical": "Lahiru Rathnayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ලහිරු රත්නායක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Lahiru Rathnayake"
+        }
+      ]
+    }
+  ]
+}

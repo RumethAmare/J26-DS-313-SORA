@@ -1,0 +1,210 @@
+{
+  "recording": "SYN_R0024",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0024_e001",
+      "canonical": "Sunil",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sunil"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සුනිල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0024_e002",
+      "canonical": "Dialog",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Dialog",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dialog"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඩයලොග්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0024_e003",
+      "canonical": "Kamal Wickramasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kamal Wickramasinghe"
+        },
+        {
+          "script": "LATIN",
+          "form": "Mr. Wickramasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කමල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0024_e004",
+      "canonical": "Negombo",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Negombo",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Negombo"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මීගමුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0024_e005",
+      "canonical": "Dinesh Rathnayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dinesh Rathnayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දිනේෂ් රත්නායක"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0024_e006",
+      "canonical": "kamal.wickramasinghe40@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "kamal.wickramasinghe40@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "kamal.wickramasinghe40@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "kamal.wickramasinghe40@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0024_e007",
+      "canonical": "No. 96, Temple Road, Moratuwa",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "96, පන්සල් පාර, මොරටුව"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 96, Temple Road, Moratuwa"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0024_e008",
+      "canonical": "0116161568",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0116161568",
+      "redact": false,
+      "value": "0116161568",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි එකයි එකයි හැට එකයි හැට එකයි පන්සිය හැට අට"
+        },
+        {
+          "script": "LATIN",
+          "form": "0116161568"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0116161568"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0024_e009",
+      "canonical": "197536495466",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "197536495466",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "එකයි නවයයි හත්සිය පනස්තුනයි හයයි හතළිස්නවයයි පහයි හතළිස්හයයි හය"
+        },
+        {
+          "script": "LATIN",
+          "form": "197536495466"
+        },
+        {
+          "script": "SINHALA",
+          "form": "197536495466"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0024_e010",
+      "canonical": "0710613941",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0710613941",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හතයි දහයයි හැටඑකයි තිස්නවයයි හතරයි එක"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 71 061 3941"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0710613941"
+        },
+        {
+          "script": "LATIN",
+          "form": "0710613941"
+        }
+      ]
+    }
+  ]
+}

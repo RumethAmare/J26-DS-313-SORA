@@ -1,0 +1,200 @@
+{
+  "recording": "SYN_R0026",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0026_e001",
+      "canonical": "Dulani",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dulani"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දුලානි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0026_e002",
+      "canonical": "Sampath Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Sampath Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sampath Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0026_e003",
+      "canonical": "Pradeep Silva",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Pradeep"
+        },
+        {
+          "script": "LATIN",
+          "form": "Mr. Silva"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ප්‍රදීප්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Pradeep Silva"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0026_e004",
+      "canonical": "0785016763",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0785016763",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "078 501 6763"
+        },
+        {
+          "script": "LATIN",
+          "form": "0785016763"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0785016763"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0026_e005",
+      "canonical": "8186944107",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "8186944107",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "atai ekai atai hayai namayai hatharai hatharai ekai binduwai hatha"
+        },
+        {
+          "script": "LATIN",
+          "form": "8186944107"
+        },
+        {
+          "script": "SINHALA",
+          "form": "8186944107"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0026_e006",
+      "canonical": "199807261465",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "199807261465",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "199 807 2614 65"
+        },
+        {
+          "script": "LATIN",
+          "form": "199807261465"
+        },
+        {
+          "script": "SINHALA",
+          "form": "199807261465"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0026_e007",
+      "canonical": "1998-03-12",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1998-03-12",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "March 12, 1998"
+        },
+        {
+          "script": "LATIN",
+          "form": "12 March 1998"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1998.03.12"
+        },
+        {
+          "script": "LATIN",
+          "form": "1998-03-12"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0026_e008",
+      "canonical": "No. 106, Lake Road, Dehiwala",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "106, වැව් පාර, දෙහිවල"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 106, Lake Road, Dehiwala"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0026_e009",
+      "canonical": "Maharagama",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Maharagama",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Maharagama"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මහරගම"
+        }
+      ]
+    }
+  ]
+}

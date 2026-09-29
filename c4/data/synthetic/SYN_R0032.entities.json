@@ -1,0 +1,200 @@
+{
+  "recording": "SYN_R0032",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0032_e001",
+      "canonical": "Chathura",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "chathura"
+        },
+        {
+          "script": "LATIN",
+          "form": "Chathura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "චතුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0032_e002",
+      "canonical": "Bank of Ceylon",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Bank of Ceylon",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Bank of Ceylon"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ලංකා බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0032_e003",
+      "canonical": "Nuwan Perera",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "නුවන් පෙරේරා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Mr. Perera"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නුවන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nuwan Perera"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0032_e004",
+      "canonical": "0702830882",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0702830882",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 0 2 8 3 0 8 8 2"
+        },
+        {
+          "script": "LATIN",
+          "form": "0702830882"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0702830882"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0032_e005",
+      "canonical": "1988-06-14",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1988-06-14",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "June 14, 1988"
+        },
+        {
+          "script": "LATIN",
+          "form": "14th of June 1988"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1988.06.14"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0032_e006",
+      "canonical": "Pradeep Wickramasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ප්‍රදීප් වික්‍රමසිංහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Pradeep Wickramasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0032_e007",
+      "canonical": "370843816902",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "370843816902",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "තුනයි හත්සිය අටයි හතරයි තුනයි අසූඑකයි හැටනවයයි බිංදුවයි දෙක"
+        },
+        {
+          "script": "LATIN",
+          "form": "370843816902"
+        },
+        {
+          "script": "SINHALA",
+          "form": "370843816902"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0032_e008",
+      "canonical": "0110276692",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0110276692",
+      "redact": false,
+      "value": "0110276692",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 027 6692"
+        },
+        {
+          "script": "LATIN",
+          "form": "0110276692"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0110276692"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0032_e009",
+      "canonical": "Colombo",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Colombo",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Colombo"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කොළඹ"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "recording": "SYN_R0005",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0005_e001",
+      "canonical": "People's Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "People's Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "People's Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මහජන බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0005_e002",
+      "canonical": "Sachini",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "sachini"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sachini"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සචිනි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0005_e003",
+      "canonical": "Ishara Dissanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ishara dissanayake"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ms. Dissanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉෂාරා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ishara Dissanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0005_e004",
+      "canonical": "750804642197",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "750804642197",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "750 8046 421 97"
+        },
+        {
+          "script": "LATIN",
+          "form": "750804642197"
+        },
+        {
+          "script": "SINHALA",
+          "form": "750804642197"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0005_e005",
+      "canonical": "0115205293",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0115205293",
+      "redact": false,
+      "value": "0115205293",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 520 5293"
+        },
+        {
+          "script": "LATIN",
+          "form": "0115205293"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0115205293"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0005_e006",
+      "canonical": "No. 90, School Lane, Moratuwa",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "90, School Lane, Moratuwa"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 90, School Lane, Moratuwa"
+        },
+        {
+          "script": "SINHALA",
+          "form": "90, පාසල් පටුමග, මොරටුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0005_e007",
+      "canonical": "Kasun Fernando",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kasun Fernando"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කසුන් ප්‍රනාන්දු"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0005_e008",
+      "canonical": "ishara.dissanayake9@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "ishara.dissanayake9@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ishara.dissanayake9@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ishara.dissanayake9@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0005_e009",
+      "canonical": "0768600724",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0768600724",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හතයි හයසිය අසූ හයයි බිංදුවයි බිංදුවයි හත්සිය විසි හතර"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 76 860 0724"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0768600724"
+        },
+        {
+          "script": "LATIN",
+          "form": "0768600724"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0005_e010",
+      "canonical": "948504993V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "948504993V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "948504993V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "948504993V"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0005_e011",
+      "canonical": "1994-12-15",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1994-12-15",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "15/12/1994"
+        },
+        {
+          "script": "LATIN",
+          "form": "15 December 1994"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1994 දෙසැම්බර් 15"
+        },
+        {
+          "script": "LATIN",
+          "form": "December 15, 1994"
+        }
+      ]
+    }
+  ]
+}

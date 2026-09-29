@@ -1,0 +1,151 @@
+{
+  "recording": "SYN_R0045",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0045_e001",
+      "canonical": "People's Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "People's Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "People's Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මහජන බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0045_e002",
+      "canonical": "Dilani",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dilani"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දිලානි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0045_e003",
+      "canonical": "Nimal Bandara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "නිමල් බණ්ඩාර"
+        },
+        {
+          "script": "LATIN",
+          "form": "Mr. Bandara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නිමල්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nimal Bandara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0045_e004",
+      "canonical": "0720126624",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0720126624",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai hathai dekai binduwai ekai dekai hayai hayai dekai hathara"
+        },
+        {
+          "script": "LATIN",
+          "form": "0720126624"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0720126624"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0045_e005",
+      "canonical": "199104722544",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "199104722544",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "දහනවයයි අනූ එකයි බිංදුවයි හතළිස් හතයි දෙකයි විසි පහයි හතළිස් හතර"
+        },
+        {
+          "script": "LATIN",
+          "form": "199104722544"
+        },
+        {
+          "script": "SINHALA",
+          "form": "199104722544"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0045_e006",
+      "canonical": "No. 1, Main Street, Negombo",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "1, ප්‍රධාන වීදිය, මීගමුව"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 1, Main Street, Negombo"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0045_e007",
+      "canonical": "nimal.bandara80@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "nimal.bandara80@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "nimal.bandara80@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "nimal.bandara80@gmail.com"
+        }
+      ]
+    }
+  ]
+}

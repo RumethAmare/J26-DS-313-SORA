@@ -1,0 +1,31 @@
+{"doc_id": "SYN_R0002_transcript_u001_v1", "recording": "SYN_R0002", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම nethmi, Bank of Ceylon එකෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0002_c2_u001_en_v1", "recording": "SYN_R0002", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good morning, Bank of Ceylon customer service, Nethmi speaking."}
+{"doc_id": "SYN_R0002_c2_u001_si_v1", "recording": "SYN_R0002", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම නෙත්මි, ලංකා බැංකුව ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0002_transcript_u002_v1", "recording": "SYN_R0002", "kind": "transcript", "utterance": 2, "topic": "name", "text": "මගේ නම නෙත්මි මෙන්ඩිස්."}
+{"doc_id": "SYN_R0002_c2_u002_en_v1", "recording": "SYN_R0002", "kind": "en", "utterance": 2, "topic": "name", "text": "Yes, this is Ms. Mendis."}
+{"doc_id": "SYN_R0002_c2_u002_si_v1", "recording": "SYN_R0002", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔව්, මම නෙත්මි."}
+{"doc_id": "SYN_R0002_transcript_u003_v1", "recording": "SYN_R0002", "kind": "transcript", "utterance": 3, "topic": "payment", "text": "last month 150000 rupees debit una, deka parak."}
+{"doc_id": "SYN_R0002_c2_u003_en_v1", "recording": "SYN_R0002", "kind": "en", "utterance": 3, "topic": "payment", "text": "I paid Rs. 150,000 on 24th of January."}
+{"doc_id": "SYN_R0002_c2_u003_si_v1", "recording": "SYN_R0002", "kind": "si", "utterance": 3, "topic": "payment", "text": "මම ජනවාරි 24 රුපියල් 150,000 ක් ගෙව්වා."}
+{"doc_id": "SYN_R0002_transcript_u004_v1", "recording": "SYN_R0002", "kind": "transcript", "utterance": 4, "topic": "branch", "text": "mama iye moratuwa branch ekata giya."}
+{"doc_id": "SYN_R0002_c2_u004_en_v1", "recording": "SYN_R0002", "kind": "en", "utterance": 4, "topic": "branch", "text": "I visited the Moratuwa branch yesterday."}
+{"doc_id": "SYN_R0002_c2_u004_si_v1", "recording": "SYN_R0002", "kind": "si", "utterance": 4, "topic": "branch", "text": "මම ඊයේ මොරටුව ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0002_transcript_u005_v1", "recording": "SYN_R0002", "kind": "transcript", "utterance": 5, "topic": "email", "text": "email eka nethmi.mendis95@yahoo.com."}
+{"doc_id": "SYN_R0002_c2_u005_en_v1", "recording": "SYN_R0002", "kind": "en", "utterance": 5, "topic": "email", "text": "My email address is nethmi.mendis95@yahoo.com."}
+{"doc_id": "SYN_R0002_c2_u005_si_v1", "recording": "SYN_R0002", "kind": "si", "utterance": 5, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය nethmi.mendis95@yahoo.com."}
+{"doc_id": "SYN_R0002_transcript_u006_v1", "recording": "SYN_R0002", "kind": "transcript", "utterance": 6, "topic": "account", "text": "account number eka අනූදෙකයි පන්සිය එකොළහයි හතරයි අටයි තිස්හතයි දාහතරයි නවය."}
+{"doc_id": "SYN_R0002_c2_u006_en_v1", "recording": "SYN_R0002", "kind": "en", "utterance": 6, "topic": "account", "text": "My account number is 925114837149."}
+{"doc_id": "SYN_R0002_c2_u006_si_v1", "recording": "SYN_R0002", "kind": "si", "utterance": 6, "topic": "account", "text": "මගේ ගිණුම් අංකය 925114837149."}
+{"doc_id": "SYN_R0002_transcript_u007_v1", "recording": "SYN_R0002", "kind": "transcript", "utterance": 7, "topic": "dob", "text": "mage birthday eka March 22, 1966."}
+{"doc_id": "SYN_R0002_c2_u007_en_v1", "recording": "SYN_R0002", "kind": "en", "utterance": 7, "topic": "dob", "text": "I was born on 22 March 1966."}
+{"doc_id": "SYN_R0002_c2_u007_si_v1", "recording": "SYN_R0002", "kind": "si", "utterance": 7, "topic": "dob", "text": "මගේ උපන් දිනය 1966.03.22."}
+{"doc_id": "SYN_R0002_transcript_u008_v1", "recording": "SYN_R0002", "kind": "transcript", "utterance": 8, "topic": "hotline", "text": "oyata 0115 754 099 ta call karanna puluwan."}
+{"doc_id": "SYN_R0002_c2_u008_en_v1", "recording": "SYN_R0002", "kind": "en", "utterance": 8, "topic": "hotline", "text": "You can call the Bank of Ceylon hotline on +94 11 575 4099."}
+{"doc_id": "SYN_R0002_c2_u008_si_v1", "recording": "SYN_R0002", "kind": "si", "utterance": 8, "topic": "hotline", "text": "ලංකා බැංකුව ක්ෂණික ඇමතුම් අංකය 0115754099."}
+{"doc_id": "SYN_R0002_transcript_u009_v1", "recording": "SYN_R0002", "kind": "transcript", "utterance": 9, "topic": "relative", "text": "mage thaththage nama Tharindu Wickramasinghe."}
+{"doc_id": "SYN_R0002_c2_u009_en_v1", "recording": "SYN_R0002", "kind": "en", "utterance": 9, "topic": "relative", "text": "The nominee on the account is Tharindu Wickramasinghe."}
+{"doc_id": "SYN_R0002_c2_u009_si_v1", "recording": "SYN_R0002", "kind": "si", "utterance": 9, "topic": "relative", "text": "මගේ තාත්තාගේ නම තරිඳු වික්‍රමසිංහ."}
+{"doc_id": "SYN_R0002_transcript_u010_v1", "recording": "SYN_R0002", "kind": "transcript", "utterance": 10, "topic": "phone", "text": "contact number එක binduwai hathai pahai hatharai atai thunai hatharai dekai binduwai deka."}
+{"doc_id": "SYN_R0002_c2_u010_en_v1", "recording": "SYN_R0002", "kind": "en", "utterance": 10, "topic": "phone", "text": "My mobile number is 0754834202."}
+{"doc_id": "SYN_R0002_c2_u010_si_v1", "recording": "SYN_R0002", "kind": "si", "utterance": 10, "topic": "phone", "text": "මගේ දුරකථන අංකය 0754834202."}
+{"doc_id": "SYN_R0002_c2_summary_en_v1", "recording": "SYN_R0002", "kind": "summary", "utterance": null, "topic": "summary", "text": "Nethmi Mendis called Bank of Ceylon and spoke to Nethmi. A payment of Rs. 25,000 was discussed. The customer had visited the Moratuwa branch. The email address on file is nethmi.mendis95@yahoo.com. The account number is 925114837149. The date of birth given was 22nd of March 1966. The nominee is Tharindu Wickramasinghe. The contact number is 0754834202."}

@@ -1,0 +1,170 @@
+{
+  "recording": "SYN_R0034",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0034_e001",
+      "canonical": "Ishara",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ishara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ishara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉෂාරා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0034_e002",
+      "canonical": "Sampath Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Sampath Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sampath Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0034_e003",
+      "canonical": "Pradeep Wijesinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Pradeep Wijesinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ප්‍රදීප්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0034_e004",
+      "canonical": "Nugegoda",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Nugegoda",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nugegoda"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නුගේගොඩ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0034_e005",
+      "canonical": "1974-01-10",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1974-01-10",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "January 10, 1974"
+        },
+        {
+          "script": "LATIN",
+          "form": "10th of January 1974"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1974.01.10"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0034_e006",
+      "canonical": "pradeep.wijesinghe59@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "pradeep.wijesinghe59@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "pradeep.wijesinghe59@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "pradeep.wijesinghe59@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0034_e007",
+      "canonical": "0113628704",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0113628704",
+      "redact": false,
+      "value": "0113628704",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 362 8704"
+        },
+        {
+          "script": "LATIN",
+          "form": "0113628704"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0113628704"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0034_e008",
+      "canonical": "197401022658",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "197401022658",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ekai namayai hathai hatharai binduwai ekai binduwai dekai dekai hayai pahai ata"
+        },
+        {
+          "script": "LATIN",
+          "form": "197401022658"
+        },
+        {
+          "script": "SINHALA",
+          "form": "197401022658"
+        }
+      ]
+    }
+  ]
+}

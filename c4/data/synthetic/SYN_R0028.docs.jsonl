@@ -1,0 +1,19 @@
+{"doc_id": "SYN_R0028_transcript_u001_v1", "recording": "SYN_R0028", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "good morning, Dialog customer service, mama Sampath."}
+{"doc_id": "SYN_R0028_c2_u001_en_v1", "recording": "SYN_R0028", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good morning, Dialog customer service, Sampath speaking."}
+{"doc_id": "SYN_R0028_c2_u001_si_v1", "recording": "SYN_R0028", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම සම්පත්, ඩයලොග් ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0028_transcript_u002_v1", "recording": "SYN_R0028", "kind": "transcript", "utterance": 2, "topic": "name", "text": "mage nama Lahiru."}
+{"doc_id": "SYN_R0028_c2_u002_en_v1", "recording": "SYN_R0028", "kind": "en", "utterance": 2, "topic": "name", "text": "Yes, this is Mr. Senanayake."}
+{"doc_id": "SYN_R0028_c2_u002_si_v1", "recording": "SYN_R0028", "kind": "si", "utterance": 2, "topic": "name", "text": "මගේ නම ලහිරු සේනානායක."}
+{"doc_id": "SYN_R0028_transcript_u003_v1", "recording": "SYN_R0028", "kind": "transcript", "utterance": 3, "topic": "email", "text": "email eka lahiru.senanayake5@yahoo.com."}
+{"doc_id": "SYN_R0028_c2_u003_en_v1", "recording": "SYN_R0028", "kind": "en", "utterance": 3, "topic": "email", "text": "My email address is lahiru.senanayake5@yahoo.com."}
+{"doc_id": "SYN_R0028_c2_u003_si_v1", "recording": "SYN_R0028", "kind": "si", "utterance": 3, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය lahiru.senanayake5@yahoo.com."}
+{"doc_id": "SYN_R0028_transcript_u004_v1", "recording": "SYN_R0028", "kind": "transcript", "utterance": 4, "topic": "address", "text": "mage address eka 206, Temple Road, Maharagama."}
+{"doc_id": "SYN_R0028_c2_u004_en_v1", "recording": "SYN_R0028", "kind": "en", "utterance": 4, "topic": "address", "text": "I live at No. 206, Temple Road, Maharagama."}
+{"doc_id": "SYN_R0028_c2_u004_si_v1", "recording": "SYN_R0028", "kind": "si", "utterance": 4, "topic": "address", "text": "මගේ ලිපිනය 206, පන්සල් පාර, මහරගම."}
+{"doc_id": "SYN_R0028_transcript_u005_v1", "recording": "SYN_R0028", "kind": "transcript", "utterance": 5, "topic": "payment", "text": "mama 22nd of December rupiyal 12000 gewwa."}
+{"doc_id": "SYN_R0028_c2_u005_en_v1", "recording": "SYN_R0028", "kind": "en", "utterance": 5, "topic": "payment", "text": "I paid Rs. 12,000 on 22nd of December."}
+{"doc_id": "SYN_R0028_c2_u005_si_v1", "recording": "SYN_R0028", "kind": "si", "utterance": 5, "topic": "payment", "text": "මම දෙසැම්බර් 22 රුපියල් 12,000 ක් ගෙව්වා."}
+{"doc_id": "SYN_R0028_transcript_u006_v1", "recording": "SYN_R0028", "kind": "transcript", "utterance": 6, "topic": "phone", "text": "contact number එක 0 7 8 1 5 3 9 8 2 5."}
+{"doc_id": "SYN_R0028_c2_u006_en_v1", "recording": "SYN_R0028", "kind": "en", "utterance": 6, "topic": "phone", "text": "My mobile number is 0781539825."}
+{"doc_id": "SYN_R0028_c2_u006_si_v1", "recording": "SYN_R0028", "kind": "si", "utterance": 6, "topic": "phone", "text": "මගේ දුරකථන අංකය 0781539825."}
+{"doc_id": "SYN_R0028_c2_summary_en_v1", "recording": "SYN_R0028", "kind": "summary", "utterance": null, "topic": "summary", "text": "Lahiru Senanayake called Dialog and spoke to Sampath. The email address on file is lahiru.senanayake5@yahoo.com. The customer lives at No. 206, Temple Road, Maharagama. A payment of Rs. 25,000 was discussed. The contact number is 0781539825."}

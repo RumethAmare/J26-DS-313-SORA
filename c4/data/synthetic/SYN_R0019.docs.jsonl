@@ -1,0 +1,19 @@
+{"doc_id": "SYN_R0019_transcript_u001_v1", "recording": "SYN_R0019", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම සඳුනි, Dialog එකෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0019_c2_u001_en_v1", "recording": "SYN_R0019", "kind": "en", "utterance": 1, "topic": "greet", "text": "Hello, this is Sanduni from the Dialog call centre."}
+{"doc_id": "SYN_R0019_c2_u001_si_v1", "recording": "SYN_R0019", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම සඳුනි, ඩයලොග් ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0019_transcript_u002_v1", "recording": "SYN_R0019", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ow miss, mama pradeep."}
+{"doc_id": "SYN_R0019_c2_u002_en_v1", "recording": "SYN_R0019", "kind": "en", "utterance": 2, "topic": "name", "text": "My name is Pradeep Senanayake."}
+{"doc_id": "SYN_R0019_c2_u002_si_v1", "recording": "SYN_R0019", "kind": "si", "utterance": 2, "topic": "name", "text": "මගේ නම ප්‍රදීප් සේනානායක."}
+{"doc_id": "SYN_R0019_transcript_u003_v1", "recording": "SYN_R0019", "kind": "transcript", "utterance": 3, "topic": "branch", "text": "Moratuwa branch එකට ගියා."}
+{"doc_id": "SYN_R0019_c2_u003_en_v1", "recording": "SYN_R0019", "kind": "en", "utterance": 3, "topic": "branch", "text": "I visited the Moratuwa branch yesterday."}
+{"doc_id": "SYN_R0019_c2_u003_si_v1", "recording": "SYN_R0019", "kind": "si", "utterance": 3, "topic": "branch", "text": "මම ඊයේ මොරටුව ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0019_transcript_u004_v1", "recording": "SYN_R0019", "kind": "transcript", "utterance": 4, "topic": "nic", "text": "mage NIC number eka 952271310X."}
+{"doc_id": "SYN_R0019_c2_u004_en_v1", "recording": "SYN_R0019", "kind": "en", "utterance": 4, "topic": "nic", "text": "My NIC number is 952271310X."}
+{"doc_id": "SYN_R0019_c2_u004_si_v1", "recording": "SYN_R0019", "kind": "si", "utterance": 4, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 952271310X."}
+{"doc_id": "SYN_R0019_transcript_u005_v1", "recording": "SYN_R0019", "kind": "transcript", "utterance": 5, "topic": "hotline", "text": "oyata 011 731 6777 ta call karanna puluwan."}
+{"doc_id": "SYN_R0019_c2_u005_en_v1", "recording": "SYN_R0019", "kind": "en", "utterance": 5, "topic": "hotline", "text": "You can call the Dialog hotline on 0117316777."}
+{"doc_id": "SYN_R0019_c2_u005_si_v1", "recording": "SYN_R0019", "kind": "si", "utterance": 5, "topic": "hotline", "text": "ඩයලොග් ක්ෂණික ඇමතුම් අංකය 0117316777."}
+{"doc_id": "SYN_R0019_transcript_u006_v1", "recording": "SYN_R0019", "kind": "transcript", "utterance": 6, "topic": "dob", "text": "mage birthday eka 14/08/1995."}
+{"doc_id": "SYN_R0019_c2_u006_en_v1", "recording": "SYN_R0019", "kind": "en", "utterance": 6, "topic": "dob", "text": "My date of birth is August 14, 1995."}
+{"doc_id": "SYN_R0019_c2_u006_si_v1", "recording": "SYN_R0019", "kind": "si", "utterance": 6, "topic": "dob", "text": "මගේ උපන් දිනය 1995.08.14."}
+{"doc_id": "SYN_R0019_c2_summary_en_v1", "recording": "SYN_R0019", "kind": "summary", "utterance": null, "topic": "summary", "text": "Pradeep Senanayake called Dialog and spoke to Sanduni. The customer had visited the Moratuwa branch. The customer's NIC number is 952271310X. The date of birth given was 14 August 1995."}

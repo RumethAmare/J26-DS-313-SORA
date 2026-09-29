@@ -1,0 +1,206 @@
+{
+  "recording": "SYN_R0004",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0004_e001",
+      "canonical": "Sampath",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සම්පත්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sampath"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0004_e002",
+      "canonical": "Bank of Ceylon",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Bank of Ceylon",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Bank of Ceylon"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ලංකා බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0004_e003",
+      "canonical": "Nimal Dissanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "නිමල්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nimal Dissanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0004_e004",
+      "canonical": "Nuwan Gunawardena",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "nuwan gunawardena"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nuwan Gunawardena"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නුවන් ගුණවර්ධන"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0004_e005",
+      "canonical": "nimal.dissanayake70@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "nimal.dissanayake70@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "nimal.dissanayake70@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "nimal.dissanayake70@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0004_e006",
+      "canonical": "1958-08-17",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1958-08-17",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "August 17, 1958"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1958.08.17"
+        },
+        {
+          "script": "LATIN",
+          "form": "1958-08-17"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0004_e007",
+      "canonical": "Negombo",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Negombo",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Negombo"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මීගමුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0004_e008",
+      "canonical": "No. 235, Main Street, Colombo",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "235, Main Street, Colombo"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 235, Main Street, Colombo"
+        },
+        {
+          "script": "SINHALA",
+          "form": "235, ප්‍රධාන වීදිය, කොළඹ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0004_e009",
+      "canonical": "195823014209",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "195823014209",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1 9 5 8 2 3 0 1 4 2 0 9"
+        },
+        {
+          "script": "LATIN",
+          "form": "195823014209"
+        },
+        {
+          "script": "SINHALA",
+          "form": "195823014209"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0004_e010",
+      "canonical": "53881054886781",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "53881054886781",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "53881054886781"
+        },
+        {
+          "script": "SINHALA",
+          "form": "53881054886781"
+        }
+      ]
+    }
+  ]
+}

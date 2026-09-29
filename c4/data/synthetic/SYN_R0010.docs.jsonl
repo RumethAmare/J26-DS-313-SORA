@@ -1,0 +1,19 @@
+{"doc_id": "SYN_R0010_transcript_u001_v1", "recording": "SYN_R0010", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම Sampath, HNB එකෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0010_c2_u001_en_v1", "recording": "SYN_R0010", "kind": "en", "utterance": 1, "topic": "greet", "text": "Hello, this is Sampath from the HNB call centre."}
+{"doc_id": "SYN_R0010_c2_u001_si_v1", "recording": "SYN_R0010", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම සම්පත්, එච්එන්බී ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0010_transcript_u002_v1", "recording": "SYN_R0010", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ow, mage nama Kasun Jayasinghe."}
+{"doc_id": "SYN_R0010_c2_u002_en_v1", "recording": "SYN_R0010", "kind": "en", "utterance": 2, "topic": "name", "text": "My name is Kasun Jayasinghe."}
+{"doc_id": "SYN_R0010_c2_u002_si_v1", "recording": "SYN_R0010", "kind": "si", "utterance": 2, "topic": "name", "text": "මගේ නම කසුන් ජයසිංහ."}
+{"doc_id": "SYN_R0010_transcript_u003_v1", "recording": "SYN_R0010", "kind": "transcript", "utterance": 3, "topic": "hotline", "text": "HNB hotline eka 011 220 6685."}
+{"doc_id": "SYN_R0010_c2_u003_en_v1", "recording": "SYN_R0010", "kind": "en", "utterance": 3, "topic": "hotline", "text": "You can call the HNB hotline on 0112206685."}
+{"doc_id": "SYN_R0010_c2_u003_si_v1", "recording": "SYN_R0010", "kind": "si", "utterance": 3, "topic": "hotline", "text": "එච්එන්බී ක්ෂණික ඇමතුම් අංකය 0112206685."}
+{"doc_id": "SYN_R0010_transcript_u004_v1", "recording": "SYN_R0010", "kind": "transcript", "utterance": 4, "topic": "nic", "text": "mage NIC number eka 7 6 0 3 3 0 1 6 0 x."}
+{"doc_id": "SYN_R0010_c2_u004_en_v1", "recording": "SYN_R0010", "kind": "en", "utterance": 4, "topic": "nic", "text": "My national identity card number is 760330160X."}
+{"doc_id": "SYN_R0010_c2_u004_si_v1", "recording": "SYN_R0010", "kind": "si", "utterance": 4, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 760330160X."}
+{"doc_id": "SYN_R0010_transcript_u005_v1", "recording": "SYN_R0010", "kind": "transcript", "utterance": 5, "topic": "account", "text": "මගේ account එක 2602620487."}
+{"doc_id": "SYN_R0010_c2_u005_en_v1", "recording": "SYN_R0010", "kind": "en", "utterance": 5, "topic": "account", "text": "My account number is 2602620487."}
+{"doc_id": "SYN_R0010_c2_u005_si_v1", "recording": "SYN_R0010", "kind": "si", "utterance": 5, "topic": "account", "text": "මගේ ගිණුම් අංකය 2602620487."}
+{"doc_id": "SYN_R0010_transcript_u006_v1", "recording": "SYN_R0010", "kind": "transcript", "utterance": 6, "topic": "email", "text": "email eka kasun.jayasinghe54@yahoo.com."}
+{"doc_id": "SYN_R0010_c2_u006_en_v1", "recording": "SYN_R0010", "kind": "en", "utterance": 6, "topic": "email", "text": "My email address is kasun.jayasinghe54@yahoo.com."}
+{"doc_id": "SYN_R0010_c2_u006_si_v1", "recording": "SYN_R0010", "kind": "si", "utterance": 6, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය kasun.jayasinghe54@yahoo.com."}
+{"doc_id": "SYN_R0010_c2_summary_en_v1", "recording": "SYN_R0010", "kind": "summary", "utterance": null, "topic": "summary", "text": "Kasun Jayasinghe called HNB and spoke to Sampath. The customer's NIC number is 760330160X. The account number is 2602620487. The email address on file is kasun.jayasinghe54@yahoo.com."}

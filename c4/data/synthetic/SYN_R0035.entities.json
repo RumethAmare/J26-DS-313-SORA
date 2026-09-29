@@ -1,0 +1,146 @@
+{
+  "recording": "SYN_R0035",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0035_e001",
+      "canonical": "Hiruni",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "හිරුනි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Hiruni"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0035_e002",
+      "canonical": "Sampath Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Sampath Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sampath Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0035_e003",
+      "canonical": "Kasun Mendis",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "කසුන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kasun Mendis"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කසුන් මෙන්ඩිස්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0035_e004",
+      "canonical": "No. 119, Galle Road, Kegalle",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "119, ගාලු පාර, කෑගල්ල"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 119, Galle Road, Kegalle"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0035_e005",
+      "canonical": "Dinesh Senanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dinesh Senanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දිනේෂ් සේනානායක"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0035_e006",
+      "canonical": "266000452997",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "266000452997",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "2660 0045 2997"
+        },
+        {
+          "script": "LATIN",
+          "form": "266000452997"
+        },
+        {
+          "script": "SINHALA",
+          "form": "266000452997"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0035_e007",
+      "canonical": "1988-09-27",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1988-09-27",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "27/09/1988"
+        },
+        {
+          "script": "LATIN",
+          "form": "27 September 1988"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1988 සැප්තැම්බර් 27"
+        }
+      ]
+    }
+  ]
+}

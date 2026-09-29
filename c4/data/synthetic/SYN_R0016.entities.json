@@ -1,0 +1,215 @@
+{
+  "recording": "SYN_R0016",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0016_e001",
+      "canonical": "Kasun",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "කසුන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kasun"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0016_e002",
+      "canonical": "Mobitel",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Mobitel",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Mobitel"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මොබිටෙල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0016_e003",
+      "canonical": "Chathura Gunawardena",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Chathura Gunawardena"
+        },
+        {
+          "script": "LATIN",
+          "form": "Mr. Gunawardena"
+        },
+        {
+          "script": "SINHALA",
+          "form": "චතුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0016_e004",
+      "canonical": "0715201164",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0715201164",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 1 5 2 0 1 1 6 4"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 71 520 1164"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0715201164"
+        },
+        {
+          "script": "LATIN",
+          "form": "0715201164"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0016_e005",
+      "canonical": "811767679832",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "811767679832",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අසූඑකයි එකයි හැත්තෑහයයි හතයි හැටහතයි නවයයි අටයි තුනයි දෙක"
+        },
+        {
+          "script": "LATIN",
+          "form": "811767679832"
+        },
+        {
+          "script": "SINHALA",
+          "form": "811767679832"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0016_e006",
+      "canonical": "Sampath Karunaratne",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sampath Karunaratne"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත් කරුණාරත්න"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0016_e007",
+      "canonical": "Negombo",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Negombo",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Negombo"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මීගමුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0016_e008",
+      "canonical": "chathura.gunawardena50@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "chathura.gunawardena50@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "chathura.gunawardena50@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "chathura.gunawardena50@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0016_e009",
+      "canonical": "2002-04-22",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "2002-04-22",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "April 22, 2002"
+        },
+        {
+          "script": "SINHALA",
+          "form": "2002.04.22"
+        },
+        {
+          "script": "LATIN",
+          "form": "2002-04-22"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0016_e010",
+      "canonical": "0114042124",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0114042124",
+      "redact": false,
+      "value": "0114042124",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai ekai ekai hatharai binduwai hatharai dekai ekai dekai hathara"
+        },
+        {
+          "script": "LATIN",
+          "form": "0114042124"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0114042124"
+        }
+      ]
+    }
+  ]
+}
