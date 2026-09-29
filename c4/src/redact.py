@@ -151,9 +151,35 @@ class Redaction:
         }
 
 
+def link_names(detections: dict[str, list]) -> dict[str, list]:
+    """
+    Cross-script resolution (Contribution 2): give every PERSON mention of one
+    individual the same entity_id, so "Nimal Perera" and "නිමල් පෙරේරා" share
+    one placeholder.
+    """
+    from resolve import Mention, resolve
+
+    mentions, where = [], {}
+    for doc_id, dets in detections.items():
+        for i, d in enumerate(dets):
+            if d.label == "PERSON":
+                mid = f"{doc_id}#{i}"
+                mentions.append(Mention(mid, d.surface))
+                where[mid] = (doc_id, i)
+    if not mentions:
+        return detections
+    linked = {doc_id: list(dets) for doc_id, dets in detections.items()}
+    for mid, cluster in resolve(mentions).items():
+        doc_id, i = where[mid]
+        linked[doc_id][i] = replace(linked[doc_id][i], entity_id=f"person{cluster}")
+    return linked
+
+
 def redact_recording(texts: dict[str, str], rid: str = "", detect: Detector = rule_detect,
-                     propagate: bool = True) -> Redaction:
+                     propagate: bool = True, resolve_names: bool = True) -> Redaction:
     detections = detect_recording(texts, detect, propagate)
+    if resolve_names:
+        detections = link_names(detections)
     order = {doc_id: i for i, doc_id in enumerate(texts)}
 
     # Group mentions into entities; number placeholders by first appearance.

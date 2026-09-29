@@ -110,6 +110,7 @@ given seed.
     python src/redact.py --synthetic SYN_T0002 --all-docs --save-map
     python src/evaluate.py --source synthetic-test --system rules+propagation
     python src/evaluate.py --source real-eval --labels proposal --save
+    python src/resolve.py --source real-eval --save      # cross-script linking + ablation
 
 One entity gets one placeholder across transcript, clean_en, clean_si and
 summary. The re-identification map is written only to the git-ignored

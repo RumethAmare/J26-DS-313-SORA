@@ -47,6 +47,7 @@ class Detection:
     role: str = "PRIVATE_INDIVIDUAL"
     ambiguous: bool = False         # route to human verification
     source: str = "rule"
+    entity_id: str = ""             # set by cross-script resolution (PERSON)
 
     @property
     def redact(self) -> bool:
