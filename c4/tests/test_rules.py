@@ -145,6 +145,34 @@ def test_answer_in_the_next_utterance_uses_the_question_as_context():
     assert (d.label, d.value) == ("DOB", "2013-03-12")
 
 
+def test_answer_with_a_second_sentence_is_still_an_answer():
+    d = only("17th of August. I need to be home on that day.",
+             preceding="When is your mother's birthday?")
+    assert d.surface == "17th of August"
+
+
+def test_previous_utterance_is_ignored_when_this_is_not_an_answer():
+    """A long turn about something else must not inherit the last keyword."""
+    text = "On 7th of June I transferred the money to my brother."
+    assert detect(text, preceding="My birthday is in June.") == []
+
+
+def test_keyword_after_the_number_sinhala_verb_final():
+    """Sinhala is verb-final: 'call' comes after the number."""
+    assert only("ගැටලුවක් ඇත්නම් 0112345678 අමතන්න.").label == "PHONE"
+    assert only("prashnayak thiyenam 0112345678 ta call karanna.").label == "PHONE"
+
+
+def test_amount_keyword_does_not_carry_into_the_next_turn():
+    d = only("0112345678.", preceding="mama rupiyal 1500 gewwa")
+    assert d.label == "PHONE"
+
+
+def test_misspoken_eleven_digit_landline_is_a_phone():
+    d = only("prashnayak thiyenam 01123456789 ta call karanna.")
+    assert d.label == "PHONE" and d.ambiguous
+
+
 def test_spoken_sinhala_date():
     text = "දෙදාස් දහතුනේ මාර්තු දොළහ."
     d = only(text, preceding="උපන් දිනය?")

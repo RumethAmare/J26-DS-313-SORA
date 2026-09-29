@@ -66,7 +66,7 @@ _CONTEXT = [
     ("ACCOUNT", r"\baccount\b|\bacc\.? ?no\b|\bcard\b|\breference\b|\bref\b|\bpolicy\b"
                 r"|\bcustomer (?:id|number)\b|\bbill\b|ගිණුම්|ගිණුම"),
     ("PHONE", r"\bphone\b|\bmobile\b|\bcontact\b|\bcall\b|\btel\b|\bwhatsapp\b"
-              r"|\bhotline\b|දුරකථන|ඇමතුම්|කෝල්"),
+              r"|\bhotline\b|දුරකථන|ඇමතුම්|කෝල්|අමතන්න"),
     ("DOB", r"\bbirth|\bborn\b|\bdob\b|\bbirthday\b|උපන්"),
     ("AMOUNT", r"\brs\b\.?|\brupees\b|\brupiyal\b|රුපියල්|\blkr\b|\bamount\b|\bpaid\b"
                r"|\bpayment\b|\bgewwa\b|ගෙව්වා|\bdebit\b|\bcredit\b|\btransaction\b"),
@@ -87,23 +87,57 @@ def _nearest_keyword(left: str) -> str | None:
     return best[2] if best else None
 
 
-def context_class(text: str, start: int, window: int = CONTEXT_WINDOW,
-                  preceding: str = "") -> str | None:
-    """
-    Class of the nearest keyword in the `window` characters before `start`.
+RIGHT_WINDOW = 25
+# An utterance is an answer turn when little besides the identifier is said:
+# "ow, 199512345678." / "Yes, December 15th 1984." / "2013 මාර්තු 12."
+ANSWER_TURN_MAX_WORDS = 3
 
-    If the utterance itself has none, the end of the previous utterance is
-    searched: in conversation the question and the answer are separate turns
-    ("Date of birth?" / "2013 මාර්තු 12"), and the answer carries no keyword.
+
+def _first_keyword(right: str) -> str | None:
+    best: tuple[int, int, str] | None = None
+    for cls, rx in _CONTEXT_RE:
+        for m in rx.finditer(right):
+            key = (m.start(), -(m.end() - m.start()), cls)
+            if best is None or key[:2] < best[:2]:
+                best = key
+    return best[2] if best else None
+
+
+def context_class(text: str, start: int, window: int = CONTEXT_WINDOW,
+                  preceding: str = "", end: int | None = None) -> str | None:
+    """
+    Class of the keyword that describes the candidate at text[start:end].
+
+    1. The nearest keyword before it in the same utterance.
+    2. Otherwise the first keyword just after it: Sinhala is verb-final, so
+       "0112345678 ta call karanna" / "0112345678 අමතන්න" put it last.
+    3. Otherwise, only for an answer turn, the end of the previous utterance:
+       "Date of birth?" / "2013 මාර්තු 12" split question and answer. An
+       amount keyword never carries over -- it cannot veto a later turn.
     """
     left = text[max(0, start - window) : start]
     # A keyword describes the next number only: in "NIC eka 953201456V, number
     # eka 0771234567" the NIC keyword must not reach past the NIC to the phone.
     cut = max((i for i, ch in enumerate(left) if ch.isdigit()), default=-1)
     local = _nearest_keyword(left[cut + 1 :])
-    if local is None and preceding and cut < 0:
-        return _nearest_keyword(preceding[-window:])
-    return local
+    if local is not None or end is None:
+        return local
+
+    right = text[end : end + RIGHT_WINDOW]
+    right = right[: next((i for i, ch in enumerate(right) if ch.isdigit()), len(right))]
+    after = _first_keyword(right)
+    if after is not None:
+        return after
+
+    # Words in the candidate's own sentence: "17th of August. I need to be
+    # home that day." is still an answer -- the second sentence is not.
+    before = re.split(r"[.?!](?:\s|$)", text[:start])[-1]
+    after = re.split(r"[.?!](?:\s|$)", text[end:])[0]
+    other_words = len(before.split()) + len(after.split())
+    if preceding and cut < 0 and other_words <= ANSWER_TURN_MAX_WORDS:
+        carried = _nearest_keyword(preceding[-window:])
+        return None if carried == "AMOUNT" else carried
+    return None
 
 
 def _is_hotline(text: str, start: int) -> bool:
@@ -171,8 +205,8 @@ def classify_digits(digits: str, ctx: str | None, letter: str = "") -> tuple[str
         return "PHONE", phone, False
     if phone:
         return "PHONE", phone, ctx is None
-    if n == 11 and digits[:2] == "07":
-        # A mobile number with one digit too many -- misspoken, still a phone.
+    if n == 11 and digits[0] == "0" and digits[1] != "0":
+        # A phone number with one digit said twice -- misspoken, still a phone.
         return "PHONE", digits, True
     if is_new_nic(digits):
         return "NIC", digits, ctx is not None
@@ -258,10 +292,10 @@ def _date_ok(day: int, month: int, year: int | None) -> bool:
     return year is None or 1900 <= year <= _TODAY.year
 
 
-def _is_birth_date(text: str, start: int, year: int | None,
+def _is_birth_date(text: str, start: int, end: int, year: int | None,
                    preceding: str = "") -> tuple[bool, bool]:
     """(is DOB, ambiguous). A dated sentence about a payment is not a birth date."""
-    ctx = context_class(text, start, window=80, preceding=preceding)
+    ctx = context_class(text, start, window=80, preceding=preceding, end=end)
     if ctx == "DOB":
         return True, False
     if year is None or ctx == "AMOUNT":
@@ -278,13 +312,14 @@ def _detect_dates(text: str, preceding: str = "") -> list[Detection]:
             year = int(g["year"]) if g.get("year") else None
             if not _date_ok(int(g["day"]), month, year):
                 continue
-            is_dob, ambiguous = _is_birth_date(text, m.start(), year, preceding)
+            is_dob, ambiguous = _is_birth_date(text, m.start(), m.end(), year, preceding)
             if is_dob:
                 value = f"{year or '????'}-{month:02d}-{int(g['day']):02d}"
                 found.append(Detection(m.start(), m.end(), "DOB", m.group(), value,
                                        ambiguous=ambiguous))
     for m in _LONE_ORDINAL.finditer(text):
-        if context_class(text, m.start(), window=80, preceding=preceding) == "DOB":
+        if context_class(text, m.start(), window=80, preceding=preceding,
+                         end=m.end()) == "DOB":
             found.append(Detection(m.start(), m.end(), "DOB", m.group(),
                                    f"????-??-{int(m['day']):02d}", ambiguous=True))
     found.extend(_detect_spoken_sinhala_dates(text, preceding))
@@ -328,7 +363,7 @@ def _detect_spoken_sinhala_dates(text: str, preceding: str = "") -> list[Detecti
 
         if year is None or day is None:
             continue
-        is_dob, _ = _is_birth_date(text, start, year, preceding)
+        is_dob, _ = _is_birth_date(text, start, end, year, preceding)
         if is_dob:
             found.append(Detection(start, end, "DOB", text[start:end],
                                    f"{year}-{month:02d}-{day:02d}", ambiguous=True))
@@ -378,7 +413,7 @@ def _numeric_detections(text: str, preceding: str = "") -> list[Detection]:
             continue
         if len(digits) < 6:
             continue
-        ctx = context_class(text, start, preceding=preceding)
+        ctx = context_class(text, start, preceding=preceding, end=end)
         result = classify_digits(digits, ctx, letter)
         if result is None:
             continue
