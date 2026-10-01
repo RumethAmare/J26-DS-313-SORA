@@ -115,6 +115,10 @@ given seed.
     python src/evaluate.py --source real-eval --system hybrid:both --labels proposal
     python src/redact.py --synthetic SYN_T0002 --model both
 
+Presidio comparison (SO2) — needs `python -m spacy download en_core_web_lg` once:
+
+    python src/evaluate.py --source real-eval --system presidio --labels proposal --save
+
 Models are written to the git-ignored `models/` and rebuilt from `ner.py` and
 its seed; `--data real|synthetic|both` selects the training data.
 

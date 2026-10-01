@@ -279,6 +279,9 @@ def get_system(name: str) -> Predictor:
         class Propagating:
             recording = staticmethod(detect_recording)
         return Propagating()
+    if name == "presidio":
+        from presidio_baseline import PresidioDetector
+        return PresidioDetector()
     # model:<data> / hybrid:<data>, where <data> is real, synthetic or both
     if name.startswith(("model:", "hybrid:")):
         from ner import HybridDetector, ModelDetector
