@@ -279,6 +279,11 @@ def get_system(name: str) -> Predictor:
         class Propagating:
             recording = staticmethod(detect_recording)
         return Propagating()
+    # model:<data> / hybrid:<data>, where <data> is real, synthetic or both
+    if name.startswith(("model:", "hybrid:")):
+        from ner import HybridDetector, ModelDetector
+        kind, data = name.split(":", 1)
+        return ModelDetector(data) if kind == "model" else HybridDetector(data)
     raise SystemExit(f"unknown system {name!r}")
 
 
@@ -364,7 +369,8 @@ def main() -> None:
     report = run(args.source, args.system, args.labels, args.lenient)
     print(format_report(report))
     if args.save:
-        out = C4_ROOT / "eval" / (f"{args.system}_{args.source}_{args.labels}"
+        # ":" is not a legal filename character on Windows (model:both -> model-both).
+        out = C4_ROOT / "eval" / (f"{args.system.replace(':', '-')}_{args.source}_{args.labels}"
                                   f"{'_lenient' if args.lenient else ''}.json")
         out.parent.mkdir(exist_ok=True)
         with open(out, "w", encoding="utf-8", newline="\n") as f:
