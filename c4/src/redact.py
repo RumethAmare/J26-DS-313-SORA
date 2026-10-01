@@ -314,6 +314,8 @@ def main() -> None:
     ap.add_argument("--split", default="test", choices=["train", "test"])
     ap.add_argument("--all-docs", action="store_true",
                     help="show clean_en, clean_si and summary too, not just the transcript")
+    ap.add_argument("--model", metavar="DATA", choices=["real", "synthetic", "both"],
+                    help="also detect names/addresses with the trained model (hybrid)")
     ap.add_argument("--save-map", action="store_true",
                     help="write the re-identification map to reid_map/ (git-ignored)")
     args = ap.parse_args()
@@ -326,7 +328,11 @@ def main() -> None:
             sys.exit(f"no synthetic recording {args.synthetic} in split {args.split}")
         texts, rid = recs[args.synthetic].texts, args.synthetic
 
-    result = redact_recording(texts, rid)
+    detector = rule_detect
+    if args.model:
+        from ner import HybridDetector
+        detector = HybridDetector(args.model)
+    result = redact_recording(texts, rid, detect=detector)
     kinds = ("",) if args.all_docs or args.text else ("_transcript_", "_summary_")
     _print_side_by_side(texts, result, kinds)
 

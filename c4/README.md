@@ -111,6 +111,12 @@ given seed.
     python src/evaluate.py --source synthetic-test --system rules+propagation
     python src/evaluate.py --source real-eval --labels proposal --save
     python src/resolve.py --source real-eval --save      # cross-script linking + ablation
+    python src/ner.py train --data both                  # PERSON/ADDRESS/ORG model (~5 min, CPU)
+    python src/evaluate.py --source real-eval --system hybrid:both --labels proposal
+    python src/redact.py --synthetic SYN_T0002 --model both
+
+Models are written to the git-ignored `models/` and rebuilt from `ner.py` and
+its seed; `--data real|synthetic|both` selects the training data.
 
 One entity gets one placeholder across transcript, clean_en, clean_si and
 summary. The re-identification map is written only to the git-ignored
