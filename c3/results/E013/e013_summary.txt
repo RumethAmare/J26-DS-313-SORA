@@ -1,0 +1,15 @@
+===== E013 - community-1 clustering tuned on the 49 non-TEST clips; TEST (IRD 2) scored once =====
+shipped parameters: {'segmentation': {'min_duration_off': 0.0}, 'clustering': {'threshold': 0.6, 'Fa': 0.07, 'Fb': 0.8}}
+winning parameters: {'segmentation': {'min_duration_off': 0.0}, 'clustering': {'threshold': 0.6, 'Fa': 0.07, 'Fb': 0.4}}
+configurations tried: 43
+
+TUNING SET (49 clips, blind, collar 0.0)    DER    miss     fa   conf  count ok  under  over
+  shipped                                 18.51   3.22   2.90  12.39      26/49    21     2
+  tuned                                   17.05   3.22   2.90  10.93      33/49    10     6
+
+TEST (frozen), collar 0.0                   DER    miss     fa   conf   per clip
+  community-1 shipped                       7.50   1.48   1.51   4.51   {"IRD_Harshana_Silva": 27.9885, "IRD_Recording_2_IIT": 4.867}
+  community-1 tuned (E013)                 10.40   1.48   1.51   7.41   {"IRD_Harshana_Silva": 27.9885, "IRD_Recording_2_IIT": 8.1405}
+  collar 0.25: shipped 6.66 -> tuned 9.62
+
+VERDICT (pre-registered): HURT  (TEST 7.50 -> 10.40, +2.90 pp; worse by >0.5 pp on: IRD_Recording_2_IIT)

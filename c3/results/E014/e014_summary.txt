@@ -1,0 +1,20 @@
+===== E014 - gentle fine-tune (lr 1e-4) on SYNTHETIC ONLY, community-1, TEST (IRD 2), collar 0.0 =====
+
+arm                          seed     DER   miss     fa   conf   per clip
+community-1 untouched           -    7.50   1.48   1.51   4.51   {"IRD_Harshana_Silva": 27.9885, "IRD_Recording_2_IIT": 4.867}
+E010 synth-only (1e-3)          0   15.93   4.47   4.77   6.70   {"IRD_Harshana_Silva": 30.1124, "IRD_Recording_2_IIT": 14.1097}
+E010 synth-only (1e-3)          1   17.20   4.65   5.00   7.56   {"IRD_Harshana_Silva": 30.3986, "IRD_Recording_2_IIT": 15.5068}
+E010 synth-only (1e-3)          2   13.64   4.76   3.13   5.75   {"IRD_Harshana_Silva": 26.2229, "IRD_Recording_2_IIT": 12.0188}
+E010 synth-only (1e-3) MEAN         15.59   4.62   4.30   6.67   range 13.64-17.20
+E011 synth+real (1e-4)          0   14.47   4.08   3.63   6.75   {"IRD_Harshana_Silva": 34.5495, "IRD_Recording_2_IIT": 11.8884}
+E011 synth+real (1e-4)          1   13.32   4.01   2.58   6.74   {"IRD_Harshana_Silva": 33.5952, "IRD_Recording_2_IIT": 10.7206}
+E011 synth+real (1e-4)          2   14.41   4.14   3.63   6.63   {"IRD_Harshana_Silva": 34.9791, "IRD_Recording_2_IIT": 11.7643}
+E011 synth+real (1e-4) MEAN         14.07   4.08   3.28   6.71   range 13.32-14.47
+E014 synth-only (1e-4)          0   13.27   4.58   2.07   6.61   {"IRD_Harshana_Silva": 30.2317, "IRD_Recording_2_IIT": 11.0871}
+E014 synth-only (1e-4)          1   13.18   4.53   1.98   6.67   {"IRD_Harshana_Silva": 30.1123, "IRD_Recording_2_IIT": 11.0078}
+E014 synth-only (1e-4)          2   13.99   4.49   2.57   6.94   {"IRD_Harshana_Silva": 30.8033, "IRD_Recording_2_IIT": 11.8354}
+E014 synth-only (1e-4) MEAN         13.48   4.54   2.21   6.74   range 13.18-13.99
+
+R1 (pre-registered, vs E011): NO DETECTABLE DIFFERENCE
+R2 (pre-registered, vs E010 synth-only): NO DETECTABLE DIFFERENCE
+R3: E014 does NOT beat the untouched model (13.18-13.99 vs 7.50)

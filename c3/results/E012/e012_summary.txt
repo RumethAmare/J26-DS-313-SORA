@@ -1,0 +1,17 @@
+===== E012 - panel-style synthetic + real, community-1, TEST (IRD 2), collar 0.0 =====
+panel-style set: {'conversations': 76, 'hours': 5.07, 'overlap_pct': 13.31, 'speaker_count_distribution': {'2': 6, '3': 17, '4': 14, '5': 23, '6': 16}, 'reverb_share': 0.86, 'noise_share': 0.88, 'source_clips': 45, 'seed': 1, 'minutes_taken': 1.7}
+
+arm                        seed     DER   miss     fa   conf  IIT 6-spk  Harshana
+community-1 untouched         -    7.50   1.48   1.51   4.51       4.87     27.99
+E009-B big (real only)        0   15.57   3.60   3.06   8.91      13.59     30.97
+E009-B big (real only)        1   14.29   3.69   2.91   7.68      12.07     31.59
+E009-B big (real only)        2   18.30   4.05   3.24  11.01      16.63     31.25
+E010 synth+real               0   17.76   4.03   5.96   7.78      15.47     35.55
+E010 synth+real               1   16.34   4.23   4.87   7.24      14.05     34.17
+E010 synth+real               2   17.80   3.81   6.32   7.67      15.68     34.31
+E012 panel-synth+real         0   17.05   2.92   5.99   8.14      15.49     29.16
+E012 panel-synth+real         1   13.97   2.83   4.06   7.08      12.13     28.30
+E012 panel-synth+real         2   16.75   5.06   3.96   7.72      15.30     28.03
+
+R1 (pre-registered): NO DETECTABLE DIFFERENCE vs E010
+R2: E012 does NOT beat the untouched model (13.97-17.05 vs 7.50)
