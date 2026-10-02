@@ -1,0 +1,32 @@
+===== E010 - synthetic conversations, community-1 segmentation fine-tuned, TEST (IRD 2), collar 0.0 =====
+synthetic set: {'conversations': 74, 'hours': 5.02, 'overlap_pct': 8.92, 'speaker_count_distribution': {'2': 13, '3': 24, '4': 21, '5': 11, '6': 5}, 'reverb_share': 0.8, 'noise_share': 0.88, 'source_clips': 45, 'seed': 0, 'minutes_taken': 1.4}
+
+arm                    seed     DER   miss     fa   conf   per clip
+community-1 untouched     -    7.50   1.48   1.51   4.51   {"IRD_Harshana_Silva": 27.9885, "IRD_Recording_2_IIT": 4.867}
+E009-B small (36 min)     0   14.73   3.61   1.65   9.48   {"IRD_Harshana_Silva": 28.1334, "IRD_Recording_2_IIT": 13.0125}
+E009-B small (36 min)     1   14.07   3.28   2.42   8.36   {"IRD_Harshana_Silva": 28.4657, "IRD_Recording_2_IIT": 12.2157}
+E009-B small (36 min)     2   16.27   4.46   1.60  10.20   {"IRD_Harshana_Silva": 28.1304, "IRD_Recording_2_IIT": 14.7453}
+E009-B small (36 min) MEAN        15.02   3.78   1.89   9.35   range 14.07-16.27
+E009-B big (115 min)      0   15.57   3.60   3.06   8.91   {"IRD_Harshana_Silva": 30.9736, "IRD_Recording_2_IIT": 13.5912}
+E009-B big (115 min)      1   14.29   3.69   2.91   7.68   {"IRD_Harshana_Silva": 31.5924, "IRD_Recording_2_IIT": 12.066}
+E009-B big (115 min)      2   18.30   4.05   3.24  11.01   {"IRD_Harshana_Silva": 31.2474, "IRD_Recording_2_IIT": 16.6332}
+E009-B big (115 min) MEAN        16.05   3.78   3.07   9.20   range 14.29-18.30
+E010 synth only (5 h)     0   15.93   4.47   4.77   6.70   {"IRD_Harshana_Silva": 30.1124, "IRD_Recording_2_IIT": 14.1097}
+E010 synth only (5 h)     1   17.20   4.65   5.00   7.56   {"IRD_Harshana_Silva": 30.3986, "IRD_Recording_2_IIT": 15.5068}
+E010 synth only (5 h)     2   13.64   4.76   3.13   5.75   {"IRD_Harshana_Silva": 26.2229, "IRD_Recording_2_IIT": 12.0188}
+E010 synth only (5 h) MEAN        15.59   4.62   4.30   6.67   range 13.64-17.20
+E010 synth + real         0   17.76   4.03   5.96   7.78   {"IRD_Harshana_Silva": 35.5537, "IRD_Recording_2_IIT": 15.4739}
+E010 synth + real         1   16.34   4.23   4.87   7.24   {"IRD_Harshana_Silva": 34.1689, "IRD_Recording_2_IIT": 14.0548}
+E010 synth + real         2   17.80   3.81   6.32   7.67   {"IRD_Harshana_Silva": 34.3129, "IRD_Recording_2_IIT": 15.6823}
+E010 synth + real MEAN        17.30   4.02   5.72   7.56   range 16.34-17.80
+
+R1 (pre-registered): NO DETECTABLE DIFFERENCE vs E009-B big (seed ranges overlap);  mean change vs big +1.25 pp
+R2 synth_real: does NOT beat the untouched model (16.34-17.80 vs 7.50)
+R2 synth: does NOT beat the untouched model (13.64-17.20 vs 7.50)
+
+DEV (leakage-inflated, sanity only), collar 0.0:
+  community-1 untouched  mean  22.46 (n=1)
+  E009-B small (36 min)  mean   7.36 (n=3)
+  E009-B big (115 min)   mean   8.75 (n=3)
+  E010 synth only (5 h)  mean  11.14 (n=3)
+  E010 synth + real      mean   6.79 (n=3)
