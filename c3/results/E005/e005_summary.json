@@ -1,0 +1,14 @@
+{
+ "experiment": "E005",
+ "design": "tune scripted (n=25) / test real IRD (n=2)",
+ "model": "pyannote/speaker-diarization-community-1",
+ "tuned_params": {
+  "group": "clustering",
+  "threshold": 0.4,
+  "min_cluster_size": ""
+ },
+ "defaults": "{'segmentation': {'min_duration_off': 0.0}, 'clustering': {'threshold': 0.6, 'Fa': 0.07, 'Fb': 0.8}}",
+ "protocol": "v1: no speaker count, overlap included, explicit UEM, collars 0.0/0.25",
+ "pyannote.audio": "4.0.7",
+ "pyannote.metrics": "4.1"
+}
