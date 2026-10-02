@@ -1,0 +1,11 @@
+# Versions used for every result in this folder (also recorded per run in versions.json)
+pyannote.audio==4.0.7
+pyannote.metrics==4.1
+pyannote.core==6.0.1
+torch==2.11.0
+numpy
+pandas
+matplotlib
+soundfile
+pyroomacoustics      # synthetic data (simconv.py)
+gradio               # demo app
