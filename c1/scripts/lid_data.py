@@ -12,18 +12,14 @@ import json
 import os
 import re
 
+import corpus
 import lid_rules
 
-DATASET_ROOT = "/mnt/F/SLIIT/Research/SORA_Dataset"
-GOLD_DIR = os.path.join(DATASET_ROOT, "annotations", "c1")
+DATASET_ROOT = corpus.DATASET_ROOT
+GOLD_DIR = corpus.GOLD_DIR
 
-# Excluded from all Task 3 train/eval sets per the Section D data-quality
-# audit (docs/DATA_QUALITY_NOTES.md):
-#   R0017 -- every token tagged EN including obvious romanized Sinhala
-#   R0008 -- token file structurally malformed (junk in timestamps)
-# Both are gold-data bugs, so training on them teaches the wrong thing rather
-# than merely adding noise.
-EXCLUDED_RECORDINGS = {"J26DS313_R0017", "J26DS313_R0008"}
+# Gold-data bugs excluded from all train/eval sets; reasons live in corpus.py.
+EXCLUDED_RECORDINGS = set(corpus.EXCLUDED_RECORDINGS)
 
 LABELS = ["SI", "EN", "OTHER"]
 
@@ -92,13 +88,10 @@ def load_gold_tokens(exclude=True):
     Each dict carries the original fields plus 'recording' and 'script'.
     """
     out = []
-    for fname in sorted(os.listdir(GOLD_DIR)):
-        if not fname.endswith(".tokens.jsonl"):
-            continue
-        rid = fname[: -len(".tokens.jsonl")]
+    for rid, path in corpus.gold_token_files():
         if exclude and rid in EXCLUDED_RECORDINGS:
             continue
-        with open(os.path.join(GOLD_DIR, fname), encoding="utf-8") as fh:
+        with open(path, encoding="utf-8") as fh:
             for line in fh:
                 line = line.strip()
                 if not line:

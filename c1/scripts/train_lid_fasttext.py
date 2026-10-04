@@ -188,6 +188,11 @@ def main():
     print("  leakage check: every recording appears in exactly one fold — OK")
 
     heur_all, hyb_all, ft_latin, heur_latin = [], [], [], []
+    # Numerals are scored separately because gold has no consistent convention
+    # for them: the first batch tags them mostly EN, R0031-R0049 tag every one
+    # OTHER, R0050 onward EN again. No token-level model can match that, so
+    # the all-token figure partly measures which annotator labelled a recording.
+    heur_nonnum, hyb_nonnum = [], []
     workdir = tempfile.mkdtemp(prefix="c1_lid_")
 
     for i, test_recs in enumerate(folds):
@@ -209,6 +214,12 @@ def main():
             [(t["lang"], predict_ft(model, t["token"])[0]) for t in test_latin]))
         heur_latin.append(lid_data.per_class_metrics(
             [(t["lang"], lid_rules.predict(t["token"])[0]) for t in test_latin]))
+        test_nonnum = [t for t in test_tokens if t["script"] != "numeric"]
+        heur_nonnum.append(lid_data.per_class_metrics(
+            [(t["lang"], lid_rules.predict(t["token"])[0]) for t in test_nonnum]))
+        hyb_nonnum.append(lid_data.per_class_metrics(
+            [(t["lang"], hybrid_predict(model, t["token"], t["script"]))
+             for t in test_nonnum]))
 
         print(f"  fold {i}: train_latin={len(train_latin):4} test_latin={len(test_latin):4}"
               f"  heuristic_acc={heur_all[-1]['_accuracy']:.4f}"
@@ -219,6 +230,8 @@ def main():
         "method_b_fasttext_latin_only": summarize(ft_latin),
         "heuristic_latin_only": summarize(heur_latin),
         "hybrid_all_tokens": summarize(hyb_all),
+        "heuristic_non_numeric": summarize(heur_nonnum),
+        "hybrid_non_numeric": summarize(hyb_nonnum),
     }
 
     def show(name, s, note=""):
@@ -242,6 +255,9 @@ def main():
     print("\n--- Latin-script subset only (where the two methods actually differ) ---")
     show("  heuristic", results["heuristic_latin_only"])
     show("  METHOD B — fastText", results["method_b_fasttext_latin_only"])
+    print("\n--- Excluding numerals (gold's numeral convention is inconsistent) ---")
+    show("  heuristic", results["heuristic_non_numeric"])
+    show("  HYBRID", results["hybrid_non_numeric"])
 
     # Paired per-fold comparison. Comparing mean +/- std across folds
     # understates the evidence here: the two methods are evaluated on the
@@ -287,8 +303,12 @@ def main():
             "note": "Folded by recording, not token, so no conversation appears in "
                     "both train and test. fastText sees Latin-script tokens only; "
                     "Sinhala/Tamil script and numerics are handled by deterministic "
-                    "rules. OTHER F1 near zero is a property of the labels (15 "
-                    "Latin-script examples, incoherent membership), not the model.",
+                    "rules. OTHER F1 near zero is a property of the labels (~22 "
+                    "Latin-script examples, incoherent membership; ~97% of OTHER is "
+                    "numerals tagged under an inconsistent convention), not the "
+                    "model. *_non_numeric results drop numerals for that reason.",
+            "partial_mislabel_recordings_excluded": sorted(
+                lid_data.EXCLUDED_RECORDINGS & lid_data.corpus.PARTIAL_MISLABEL),
             "n_tokens": len(tokens),
             "n_recordings": len(recordings),
             "excluded_recordings": sorted(lid_data.EXCLUDED_RECORDINGS),

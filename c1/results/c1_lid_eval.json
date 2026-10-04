@@ -1,46 +1,87 @@
 {
-  "note": "Folded by recording, not token, so no conversation appears in both train and test. fastText sees Latin-script tokens only; Sinhala/Tamil script and numerics are handled by deterministic rules. OTHER F1 near zero is a property of the labels (15 Latin-script examples, incoherent membership), not the model.",
-  "n_tokens": 5545,
-  "n_recordings": 25,
+  "note": "Folded by recording, not token, so no conversation appears in both train and test. fastText sees Latin-script tokens only; Sinhala/Tamil script and numerics are handled by deterministic rules. OTHER F1 near zero is a property of the labels (~22 Latin-script examples, incoherent membership; ~97% of OTHER is numerals tagged under an inconsistent convention), not the model. *_non_numeric results drop numerals for that reason.",
+  "partial_mislabel_recordings_excluded": [
+    "J26DS313_R0051",
+    "J26DS313_R0062",
+    "J26DS313_R0063",
+    "J26DS313_R0064",
+    "J26DS313_R0065"
+  ],
+  "n_tokens": 14010,
+  "n_recordings": 48,
   "excluded_recordings": [
     "J26DS313_R0008",
-    "J26DS313_R0017"
+    "J26DS313_R0017",
+    "J26DS313_R0051",
+    "J26DS313_R0053",
+    "J26DS313_R0054",
+    "J26DS313_R0055",
+    "J26DS313_R0056",
+    "J26DS313_R0058",
+    "J26DS313_R0059",
+    "J26DS313_R0062",
+    "J26DS313_R0063",
+    "J26DS313_R0064",
+    "J26DS313_R0065"
   ],
   "folds": [
     [
       "J26DS313_R0009",
-      "J26DS313_R0018",
-      "J26DS313_R0022",
-      "J26DS313_R0015",
-      "J26DS313_R0019"
+      "J26DS313_R0052",
+      "J26DS313_R0050",
+      "J26DS313_R0049",
+      "J26DS313_R0005",
+      "J26DS313_R0026",
+      "J26DS313_R0032",
+      "J26DS313_R0042",
+      "J26DS313_R0043"
     ],
     [
       "J26DS313_R0004",
       "J26DS313_R0024",
-      "J26DS313_R0027",
-      "J26DS313_R0011",
-      "J26DS313_R0020"
+      "J26DS313_R0018",
+      "J26DS313_R0036",
+      "J26DS313_R0006",
+      "J26DS313_R0025",
+      "J26DS313_R0033",
+      "J26DS313_R0041",
+      "J26DS313_R0044"
     ],
     [
       "J26DS313_R0007",
       "J26DS313_R0002",
-      "J26DS313_R0016",
+      "J26DS313_R0022",
+      "J26DS313_R0012",
       "J26DS313_R0010",
-      "J26DS313_R0021"
+      "J26DS313_R0021",
+      "J26DS313_R0034",
+      "J26DS313_R0040",
+      "J26DS313_R0045",
+      "J26DS313_R0061"
     ],
     [
       "J26DS313_R0028",
       "J26DS313_R0003",
+      "J26DS313_R0027",
       "J26DS313_R0013",
-      "J26DS313_R0006",
-      "J26DS313_R0025"
+      "J26DS313_R0011",
+      "J26DS313_R0020",
+      "J26DS313_R0035",
+      "J26DS313_R0039",
+      "J26DS313_R0046",
+      "J26DS313_R0060"
     ],
     [
       "J26DS313_R0023",
       "J26DS313_R0014",
-      "J26DS313_R0012",
-      "J26DS313_R0005",
-      "J26DS313_R0026"
+      "J26DS313_R0016",
+      "J26DS313_R0031",
+      "J26DS313_R0015",
+      "J26DS313_R0019",
+      "J26DS313_R0037",
+      "J26DS313_R0038",
+      "J26DS313_R0048",
+      "J26DS313_R0057"
     ]
   ],
   "fasttext_params": {
@@ -59,143 +100,197 @@
   "results": {
     "method_a_heuristic_all_tokens": {
       "SI": {
-        "f1_mean": 0.9251,
-        "f1_std": 0.0274,
-        "precision_mean": 0.8989,
-        "recall_mean": 0.9536,
-        "support_total": 3320
+        "f1_mean": 0.9437,
+        "f1_std": 0.0117,
+        "precision_mean": 0.9134,
+        "recall_mean": 0.9761,
+        "support_total": 8241
       },
       "EN": {
-        "f1_mean": 0.8705,
-        "f1_std": 0.0417,
-        "precision_mean": 0.9007,
-        "recall_mean": 0.8443,
-        "support_total": 2147
+        "f1_mean": 0.8397,
+        "f1_std": 0.021,
+        "precision_mean": 0.8263,
+        "recall_mean": 0.8539,
+        "support_total": 5026
       },
       "OTHER": {
         "f1_mean": 0.0,
         "f1_std": 0.0,
         "precision_mean": 0.0,
         "recall_mean": 0.0,
-        "support_total": 78
+        "support_total": 743
       },
-      "_accuracy_mean": 0.8994,
-      "_accuracy_std": 0.0319,
-      "_macro_f1_mean": 0.5985,
-      "_macro_f1_std": 0.0209
+      "_accuracy_mean": 0.8807,
+      "_accuracy_std": 0.0208,
+      "_macro_f1_mean": 0.5944,
+      "_macro_f1_std": 0.0094
     },
     "method_b_fasttext_latin_only": {
       "SI": {
-        "f1_mean": 0.8553,
-        "f1_std": 0.0739,
-        "precision_mean": 0.8646,
-        "recall_mean": 0.8545,
-        "support_total": 764
+        "f1_mean": 0.8709,
+        "f1_std": 0.0802,
+        "precision_mean": 0.9018,
+        "recall_mean": 0.845,
+        "support_total": 1098
       },
       "EN": {
-        "f1_mean": 0.9393,
-        "f1_std": 0.0418,
-        "precision_mean": 0.9281,
-        "recall_mean": 0.9527,
-        "support_total": 1895
+        "f1_mean": 0.9715,
+        "f1_std": 0.0165,
+        "precision_mean": 0.9628,
+        "recall_mean": 0.9806,
+        "support_total": 4696
       },
       "OTHER": {
-        "f1_mean": 0.0,
-        "f1_std": 0.0,
-        "precision_mean": 0.0,
-        "recall_mean": 0.0,
-        "support_total": 15
+        "f1_mean": 0.3431,
+        "f1_std": 0.245,
+        "precision_mean": 0.4,
+        "recall_mean": 0.3393,
+        "support_total": 22
       },
-      "_accuracy_mean": 0.915,
-      "_accuracy_std": 0.0508,
-      "_macro_f1_mean": 0.5982,
-      "_macro_f1_std": 0.0365
+      "_accuracy_mean": 0.9535,
+      "_accuracy_std": 0.027,
+      "_macro_f1_mean": 0.7285,
+      "_macro_f1_std": 0.0629
     },
     "heuristic_latin_only": {
       "SI": {
-        "f1_mean": 0.7465,
-        "f1_std": 0.0596,
-        "precision_mean": 0.6857,
-        "recall_mean": 0.8244,
-        "support_total": 764
+        "f1_mean": 0.6543,
+        "f1_std": 0.1147,
+        "precision_mean": 0.5481,
+        "recall_mean": 0.8363,
+        "support_total": 1098
       },
       "EN": {
-        "f1_mean": 0.8848,
-        "f1_std": 0.0501,
-        "precision_mean": 0.9187,
-        "recall_mean": 0.8547,
-        "support_total": 1895
+        "f1_mean": 0.9033,
+        "f1_std": 0.0151,
+        "precision_mean": 0.9574,
+        "recall_mean": 0.8556,
+        "support_total": 4696
       },
       "OTHER": {
         "f1_mean": 0.0,
         "f1_std": 0.0,
         "precision_mean": 0.0,
         "recall_mean": 0.0,
-        "support_total": 15
+        "support_total": 22
       },
-      "_accuracy_mean": 0.8442,
-      "_accuracy_std": 0.05,
-      "_macro_f1_mean": 0.5438,
-      "_macro_f1_std": 0.0272
+      "_accuracy_mean": 0.8487,
+      "_accuracy_std": 0.0271,
+      "_macro_f1_mean": 0.5192,
+      "_macro_f1_std": 0.0414
     },
     "hybrid_all_tokens": {
       "SI": {
-        "f1_mean": 0.951,
-        "f1_std": 0.0341,
-        "precision_mean": 0.9495,
-        "recall_mean": 0.9545,
-        "support_total": 3320
+        "f1_mean": 0.9789,
+        "f1_std": 0.0118,
+        "precision_mean": 0.981,
+        "recall_mean": 0.9769,
+        "support_total": 8241
       },
       "EN": {
-        "f1_mean": 0.9183,
-        "f1_std": 0.0374,
-        "precision_mean": 0.9102,
-        "recall_mean": 0.9306,
-        "support_total": 2147
+        "f1_mean": 0.9027,
+        "f1_std": 0.0209,
+        "precision_mean": 0.844,
+        "recall_mean": 0.9706,
+        "support_total": 5026
+      },
+      "OTHER": {
+        "f1_mean": 0.0168,
+        "f1_std": 0.0179,
+        "precision_mean": 0.4,
+        "recall_mean": 0.0087,
+        "support_total": 743
+      },
+      "_accuracy_mean": 0.9232,
+      "_accuracy_std": 0.0218,
+      "_macro_f1_mean": 0.6328,
+      "_macro_f1_std": 0.0079
+    },
+    "heuristic_non_numeric": {
+      "SI": {
+        "f1_mean": 0.9444,
+        "f1_std": 0.0115,
+        "precision_mean": 0.9134,
+        "recall_mean": 0.9776,
+        "support_total": 8230
+      },
+      "EN": {
+        "f1_mean": 0.8977,
+        "f1_std": 0.012,
+        "precision_mean": 0.9574,
+        "recall_mean": 0.8453,
+        "support_total": 4751
       },
       "OTHER": {
         "f1_mean": 0.0,
         "f1_std": 0.0,
         "precision_mean": 0.0,
         "recall_mean": 0.0,
-        "support_total": 78
+        "support_total": 27
       },
-      "_accuracy_mean": 0.9317,
-      "_accuracy_std": 0.0386,
-      "_macro_f1_mean": 0.6231,
-      "_macro_f1_std": 0.0236
+      "_accuracy_mean": 0.9276,
+      "_accuracy_std": 0.0119,
+      "_macro_f1_mean": 0.614,
+      "_macro_f1_std": 0.0064
+    },
+    "hybrid_non_numeric": {
+      "SI": {
+        "f1_mean": 0.9796,
+        "f1_std": 0.0117,
+        "precision_mean": 0.981,
+        "recall_mean": 0.9784,
+        "support_total": 8230
+      },
+      "EN": {
+        "f1_mean": 0.9658,
+        "f1_std": 0.016,
+        "precision_mean": 0.9628,
+        "recall_mean": 0.969,
+        "support_total": 4751
+      },
+      "OTHER": {
+        "f1_mean": 0.3089,
+        "f1_std": 0.2064,
+        "precision_mean": 0.4,
+        "recall_mean": 0.2917,
+        "support_total": 27
+      },
+      "_accuracy_mean": 0.9735,
+      "_accuracy_std": 0.0143,
+      "_macro_f1_mean": 0.7514,
+      "_macro_f1_std": 0.0678
     },
     "paired_fold_comparison": {
       "heuristic_accuracy_per_fold": [
-        0.9165,
-        0.9064,
-        0.9241,
-        0.9062,
-        0.844
+        0.874,
+        0.8542,
+        0.9067,
+        0.8961,
+        0.8725
       ],
       "hybrid_accuracy_per_fold": [
-        0.9343,
-        0.9602,
-        0.9575,
-        0.941,
-        0.8654
+        0.9163,
+        0.8992,
+        0.9486,
+        0.9436,
+        0.9085
       ],
       "delta_per_fold": [
-        0.0178,
-        0.0538,
-        0.0334,
-        0.0348,
-        0.0214
+        0.0423,
+        0.045,
+        0.0419,
+        0.0475,
+        0.036
       ],
       "folds_won_by_hybrid": 5,
-      "mean_delta": 0.0322,
-      "min_delta": 0.0178,
-      "max_delta": 0.0538
+      "mean_delta": 0.0425,
+      "min_delta": 0.036,
+      "max_delta": 0.0475
     }
   },
   "final_model": {
-    "path": "/mnt/F/SLIIT/Research/J26-DS-313-SORA/c1/models/lid_latin.ftz",
-    "size_kb": 1309.3,
-    "n_train_tokens": 2674
+    "path": "F:\\SLIIT\\Y4 S1\\Research\\J26-DS-313-SORA\\c1\\models\\lid_latin.ftz",
+    "size_kb": 1333.6,
+    "n_train_tokens": 5816
   }
 }

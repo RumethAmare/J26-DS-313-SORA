@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Regenerable audio: c1/scripts/make_noisy_variants.py rebuilds these from
+# the dataset audio, and at ~120MB per sweep they do not belong in git.
+c1/predictions/noisy_audio/

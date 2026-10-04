@@ -109,3 +109,67 @@ else:
 Both the `DATA_CONTRACT.md` paragraph and the `validate.py` check are left
 as proposed text/code here rather than applied directly to `SORA_Dataset`,
 per project convention — apply when a teammate has reviewed the rule.
+
+## D.4 — October 2026 batch (R0029–R0065)
+
+The batch pulled on 2026-10-04 added C1 gold for 34 recordings (R0031–R0065;
+R0029, R0030, R0047 have C3 only), taking the corpus from 5,818 to 17,782 gold
+tokens. `c1/scripts/audit_gold.py` now checks every gold file automatically
+(report: `c1/results/c1_gold_audit.md`). `validate.py` passes all of these
+problems, because it checks files against each other, not labels against
+language.
+
+**Label errors — 11 more recordings excluded** (the full list, with reasons,
+is `EXCLUDED_RECORDINGS` in `c1/scripts/corpus.py`):
+
+| problem | recordings | evidence |
+|---|---|---|
+| bulk EN (R0017 pattern) | R0053, R0054, R0055, R0056, R0059 | every token EN, zero switches, in code-mixed speech (`ekata/EN kohomada/EN sahaya/EN`) |
+| bulk SI | R0058 | 369/373 SI, incl. `Customer service desk` |
+| partial | R0051, R0062, R0063, R0064, R0065 | 14–51% of unambiguous Sinhala function words (`eka`, `mata`, `oyata`) tagged EN; R0051 also tags English (`billing`, `documents`, `sir`) SI |
+
+Draft corrections for all 12 label-error recordings (these 11 plus R0017) are
+in `c1/predictions/pretag/` (`c1/scripts/pretag_relabel.py`): the Task 3
+hybrid LID's labels, with the original kept as `lang_original` and a
+`needs_review` flag. They are drafts — a person must check them before they
+replace anything in `SORA_Dataset`. The model never predicts OTHER, so Tamil
+tokens must be fixed by hand.
+
+**Duplicate.** R0053 is a near-duplicate of R0052 (94% sequence similarity) —
+the same conversation annotated twice. One of the two should be removed from
+the dataset.
+
+**Numeral convention flipped twice (D.3, much worse).**
+
+| recordings | numerals tagged EN | OTHER | SI |
+|---|---|---|---|
+| R0002–R0028 | 197 | 58 | 1 |
+| R0031–R0049 | 0 | 654 | 0 |
+| R0050–R0061 | 78 | 4 | 10 |
+
+One annotator group tags every digit OTHER. This is now the largest source of
+LID "error" (~5% of all tokens) and makes `OTHER` 97% numerals. Note that the
+proposed check [7] above would **not** catch it: a phone number tagged OTHER
+digit by digit has OTHER neighbours on both sides. The check should compare a
+numeral run against the nearest *non-numeric* tokens either side instead.
+
+**Tamil tagged inconsistently.** `Vanakkam` is OTHER in R0050/R0051, SI in
+R0052, EN in R0053/R0064; `වනක්කම්`, `රොම්බ`, `නන්ද්‍රි` (R0049) are SI.
+Curated Tamil ground truth: `c1/data/tamil_ground_truth.json`.
+
+**Bookkeeping** (blocks joins, not labels):
+
+- **No audio** for 33 of the 34 new recordings (only R0049's WAV is
+  committed), so Tasks 1, 2 and 6 cannot use them yet.
+- **Not in the manifest:** none of R0029–R0065 are in
+  `recordings_current.csv`, so `rerun_validate_all.py` does not see them.
+- **No prefix:** R0062–R0065 are named `R0062.*` rather than
+  `J26DS313_R0062.*` in C1, C2 and C4 (and their `utt_id`s lack it too).
+  `c1/scripts/corpus.canonical_rid()` papers over this on read.
+- **Null timestamps:** R0052 (185/375 tokens), R0045 (114), R0035 (85),
+  R0046 (13), R0043 (1).
+- **Script convention** is still mixed, per recording: in the new batch
+  R0050–R0052, R0058 and R0062–R0065 write Sinhala romanized and the rest use
+  Sinhala Unicode (the first batch is split the same way — see
+  `sinhala_script_convention` in `c1_gold_audit.csv`). R0057 writes English
+  words in Sinhala script (`කස්ටමර් සර්විස්`) and tags them SI.

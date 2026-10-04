@@ -62,7 +62,8 @@ import jiwer  # noqa: E402
 
 import script_normalize as sn  # noqa: E402
 
-DATASET_ROOT = "/mnt/F/SLIIT/Research/SORA_Dataset"
+import corpus  # noqa: E402
+DATASET_ROOT = corpus.DATASET_ROOT
 C1_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUDIO_DIR = os.path.join(DATASET_ROOT, "processed", "audio")
 GOLD_DIR = os.path.join(DATASET_ROOT, "annotations", "c1")

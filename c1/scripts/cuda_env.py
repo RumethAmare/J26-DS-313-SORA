@@ -27,21 +27,38 @@ import glob
 _GUARD = "_C1_CUDA_ENV_REEXEC"
 
 
-def nvidia_lib_dirs():
-    """Every site-packages/nvidia/*/lib directory for the running interpreter."""
+def nvidia_lib_dirs(subdir="lib"):
+    """Every site-packages/nvidia/*/<subdir> directory for the running interpreter."""
     dirs = []
     for site_dir in sys.path:
-        pattern = os.path.join(site_dir, "nvidia", "*", "lib")
+        pattern = os.path.join(site_dir, "nvidia", "*", subdir)
         dirs.extend(d for d in glob.glob(pattern) if os.path.isdir(d))
     return sorted(set(dirs))
+
+
+def _ensure_windows_dlls():
+    """Windows: the pip wheels put DLLs in nvidia/*/bin, and LoadLibrary reads
+    PATH at call time, so prepending in-process is enough -- no re-exec."""
+    dirs = nvidia_lib_dirs("bin")
+    for d in dirs:
+        os.add_dll_directory(d)
+    current = os.environ.get("PATH", "")
+    present = set(current.split(os.pathsep))
+    missing = [d for d in dirs if d not in present]
+    if missing:
+        os.environ["PATH"] = os.pathsep.join(missing + [current])
 
 
 def ensure_cuda_libs():
     """Re-exec with LD_LIBRARY_PATH covering the venv's CUDA libs, once.
 
     No-op if there are no such directories (CPU-only install) or if this
-    process is already the re-exec'd child.
+    process is already the re-exec'd child. On Windows the DLL directories are
+    added in-process instead.
     """
+    if sys.platform == "win32":
+        _ensure_windows_dlls()
+        return
     if os.environ.get(_GUARD):
         return
     dirs = nvidia_lib_dirs()

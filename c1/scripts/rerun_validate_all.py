@@ -16,6 +16,9 @@ data + tooling source.
 Usage:
     python3 rerun_validate_all.py
     python3 rerun_validate_all.py --dataset-root /mnt/F/SLIIT/Research/SORA_Dataset
+
+Only recordings listed in the manifest are checked; audit_gold.py covers gold
+files the manifest does not know about yet.
 """
 import argparse
 import csv
@@ -24,7 +27,9 @@ import re
 import subprocess
 import sys
 
-DEFAULT_DATASET_ROOT = "/mnt/F/SLIIT/Research/SORA_Dataset"
+import corpus
+
+DEFAULT_DATASET_ROOT = corpus.DATASET_ROOT
 DEFAULT_OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "results", "validate_status_audit.csv")
 
 FAIL_RE = re.compile(r"^\s*\[FAIL\]\s*(.+)$", re.MULTILINE)

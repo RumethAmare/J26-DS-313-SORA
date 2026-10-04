@@ -37,7 +37,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import script_normalize as sn
 
-DATASET_ROOT = "/mnt/F/SLIIT/Research/SORA_Dataset"
+import corpus  # noqa: E402
+DATASET_ROOT = corpus.DATASET_ROOT
 C1_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GOLD_DIR = os.path.join(DATASET_ROOT, "annotations", "c1")
 RESULTS_DIR = os.path.join(C1_ROOT, "results")

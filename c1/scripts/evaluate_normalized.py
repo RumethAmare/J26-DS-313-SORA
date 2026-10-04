@@ -36,18 +36,18 @@ import jiwer
 
 import script_normalize
 
-DATASET_ROOT = "/mnt/F/SLIIT/Research/SORA_Dataset"
+import corpus  # noqa: E402
+DATASET_ROOT = corpus.DATASET_ROOT
 C1_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GOLD_DIR = os.path.join(DATASET_ROOT, "annotations", "c1")
 MANIFEST_PATH = os.path.join(DATASET_ROOT, "manifests", "recordings_current.csv")
 PRED_ROOT = os.path.join(C1_ROOT, "predictions")
 RESULTS_DIR = os.path.join(C1_ROOT, "results")
 
-# Recordings excluded from C1 modelling per Section D of the data-quality
-# audit: R0017's tokens are entirely mislabeled EN, R0008's token file is
-# structurally malformed. Their *transcripts* are still scored here (ASR
-# doesn't read the token layer) but they are flagged in the output.
-D_EXCLUDED = {"J26DS313_R0017", "J26DS313_R0008"}
+# Recordings excluded from C1 modelling (reasons in corpus.py). Their
+# *transcripts* are still scored here (ASR doesn't read the token layer) but
+# they are flagged in the output.
+D_EXCLUDED = set(corpus.EXCLUDED_RECORDINGS)
 
 _SIN = re.compile(r"[඀-෿]")
 _LAT = re.compile(r"[A-Za-z]")

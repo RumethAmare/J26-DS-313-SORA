@@ -1,0 +1,290 @@
+{
+  "note": "Folded by recording, not token, so no conversation appears in both train and test. fastText sees Latin-script tokens only; Sinhala/Tamil script and numerics are handled by deterministic rules. OTHER F1 near zero is a property of the labels (~22 Latin-script examples, incoherent membership; ~97% of OTHER is numerals tagged under an inconsistent convention), not the model. *_non_numeric results drop numerals for that reason.",
+  "partial_mislabel_recordings_excluded": [],
+  "n_tokens": 15474,
+  "n_recordings": 53,
+  "excluded_recordings": [
+    "J26DS313_R0008",
+    "J26DS313_R0017",
+    "J26DS313_R0053",
+    "J26DS313_R0054",
+    "J26DS313_R0055",
+    "J26DS313_R0056",
+    "J26DS313_R0058",
+    "J26DS313_R0059"
+  ],
+  "folds": [
+    [
+      "J26DS313_R0009",
+      "J26DS313_R0024",
+      "J26DS313_R0052",
+      "J26DS313_R0016",
+      "J26DS313_R0031",
+      "J26DS313_R0015",
+      "J26DS313_R0019",
+      "J26DS313_R0037",
+      "J26DS313_R0038",
+      "J26DS313_R0048",
+      "J26DS313_R0057"
+    ],
+    [
+      "J26DS313_R0004",
+      "J26DS313_R0002",
+      "J26DS313_R0050",
+      "J26DS313_R0027",
+      "J26DS313_R0013",
+      "J26DS313_R0011",
+      "J26DS313_R0020",
+      "J26DS313_R0035",
+      "J26DS313_R0039",
+      "J26DS313_R0046",
+      "J26DS313_R0060"
+    ],
+    [
+      "J26DS313_R0007",
+      "J26DS313_R0003",
+      "J26DS313_R0018",
+      "J26DS313_R0022",
+      "J26DS313_R0012",
+      "J26DS313_R0010",
+      "J26DS313_R0021",
+      "J26DS313_R0034",
+      "J26DS313_R0040",
+      "J26DS313_R0045",
+      "J26DS313_R0061"
+    ],
+    [
+      "J26DS313_R0051",
+      "J26DS313_R0014",
+      "J26DS313_R0065",
+      "J26DS313_R0063",
+      "J26DS313_R0036",
+      "J26DS313_R0006",
+      "J26DS313_R0025",
+      "J26DS313_R0033",
+      "J26DS313_R0041",
+      "J26DS313_R0044"
+    ],
+    [
+      "J26DS313_R0028",
+      "J26DS313_R0023",
+      "J26DS313_R0062",
+      "J26DS313_R0064",
+      "J26DS313_R0049",
+      "J26DS313_R0005",
+      "J26DS313_R0026",
+      "J26DS313_R0032",
+      "J26DS313_R0042",
+      "J26DS313_R0043"
+    ]
+  ],
+  "fasttext_params": {
+    "epoch": 50,
+    "lr": 0.5,
+    "dim": 50,
+    "minn": 2,
+    "maxn": 5,
+    "wordNgrams": 1,
+    "minCount": 1,
+    "loss": "softmax",
+    "seed": 13,
+    "thread": 1,
+    "bucket": 50000
+  },
+  "results": {
+    "method_a_heuristic_all_tokens": {
+      "SI": {
+        "f1_mean": 0.9096,
+        "f1_std": 0.0497,
+        "precision_mean": 0.8701,
+        "recall_mean": 0.9533,
+        "support_total": 8764
+      },
+      "EN": {
+        "f1_mean": 0.808,
+        "f1_std": 0.0663,
+        "precision_mean": 0.8126,
+        "recall_mean": 0.8036,
+        "support_total": 5966
+      },
+      "OTHER": {
+        "f1_mean": 0.0,
+        "f1_std": 0.0,
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "support_total": 744
+      },
+      "_accuracy_mean": 0.8484,
+      "_accuracy_std": 0.0608,
+      "_macro_f1_mean": 0.5725,
+      "_macro_f1_std": 0.0383
+    },
+    "method_b_fasttext_latin_only": {
+      "SI": {
+        "f1_mean": 0.752,
+        "f1_std": 0.0937,
+        "precision_mean": 0.789,
+        "recall_mean": 0.7282,
+        "support_total": 1621
+      },
+      "EN": {
+        "f1_mean": 0.9218,
+        "f1_std": 0.0524,
+        "precision_mean": 0.9181,
+        "recall_mean": 0.9267,
+        "support_total": 5597
+      },
+      "OTHER": {
+        "f1_mean": 0.2215,
+        "f1_std": 0.2057,
+        "precision_mean": 0.28,
+        "recall_mean": 0.1833,
+        "support_total": 23
+      },
+      "_accuracy_mean": 0.8818,
+      "_accuracy_std": 0.0705,
+      "_macro_f1_mean": 0.6318,
+      "_macro_f1_std": 0.0894
+    },
+    "heuristic_latin_only": {
+      "SI": {
+        "f1_mean": 0.6376,
+        "f1_std": 0.0748,
+        "precision_mean": 0.5347,
+        "recall_mean": 0.7925,
+        "support_total": 1621
+      },
+      "EN": {
+        "f1_mean": 0.8573,
+        "f1_std": 0.0648,
+        "precision_mean": 0.9234,
+        "recall_mean": 0.8009,
+        "support_total": 5597
+      },
+      "OTHER": {
+        "f1_mean": 0.0,
+        "f1_std": 0.0,
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "support_total": 23
+      },
+      "_accuracy_mean": 0.7958,
+      "_accuracy_std": 0.0772,
+      "_macro_f1_mean": 0.4983,
+      "_macro_f1_std": 0.0462
+    },
+    "hybrid_all_tokens": {
+      "SI": {
+        "f1_mean": 0.9426,
+        "f1_std": 0.0427,
+        "precision_mean": 0.9406,
+        "recall_mean": 0.9452,
+        "support_total": 8764
+      },
+      "EN": {
+        "f1_mean": 0.8684,
+        "f1_std": 0.0547,
+        "precision_mean": 0.8216,
+        "recall_mean": 0.9214,
+        "support_total": 5966
+      },
+      "OTHER": {
+        "f1_mean": 0.0099,
+        "f1_std": 0.0104,
+        "precision_mean": 0.28,
+        "recall_mean": 0.0051,
+        "support_total": 744
+      },
+      "_accuracy_mean": 0.8892,
+      "_accuracy_std": 0.0519,
+      "_macro_f1_mean": 0.607,
+      "_macro_f1_std": 0.0335
+    },
+    "heuristic_non_numeric": {
+      "SI": {
+        "f1_mean": 0.91,
+        "f1_std": 0.0501,
+        "precision_mean": 0.8701,
+        "recall_mean": 0.9543,
+        "support_total": 8753
+      },
+      "EN": {
+        "f1_mean": 0.8531,
+        "f1_std": 0.0646,
+        "precision_mean": 0.9234,
+        "recall_mean": 0.7935,
+        "support_total": 5652
+      },
+      "OTHER": {
+        "f1_mean": 0.0,
+        "f1_std": 0.0,
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "support_total": 28
+      },
+      "_accuracy_mean": 0.8882,
+      "_accuracy_std": 0.0567,
+      "_macro_f1_mean": 0.5877,
+      "_macro_f1_std": 0.038
+    },
+    "hybrid_non_numeric": {
+      "SI": {
+        "f1_mean": 0.9431,
+        "f1_std": 0.043,
+        "precision_mean": 0.9406,
+        "recall_mean": 0.9462,
+        "support_total": 8753
+      },
+      "EN": {
+        "f1_mean": 0.9177,
+        "f1_std": 0.0528,
+        "precision_mean": 0.9181,
+        "recall_mean": 0.9183,
+        "support_total": 5652
+      },
+      "OTHER": {
+        "f1_mean": 0.2044,
+        "f1_std": 0.2002,
+        "precision_mean": 0.28,
+        "recall_mean": 0.1641,
+        "support_total": 28
+      },
+      "_accuracy_mean": 0.932,
+      "_accuracy_std": 0.0473,
+      "_macro_f1_mean": 0.6884,
+      "_macro_f1_std": 0.0728
+    },
+    "paired_fold_comparison": {
+      "heuristic_accuracy_per_fold": [
+        0.8812,
+        0.8966,
+        0.8998,
+        0.7828,
+        0.7818
+      ],
+      "hybrid_accuracy_per_fold": [
+        0.9223,
+        0.9295,
+        0.9295,
+        0.8303,
+        0.8346
+      ],
+      "delta_per_fold": [
+        0.0411,
+        0.0329,
+        0.0297,
+        0.0475,
+        0.0528
+      ],
+      "folds_won_by_hybrid": 5,
+      "mean_delta": 0.0408,
+      "min_delta": 0.0297,
+      "max_delta": 0.0528
+    }
+  },
+  "final_model": {
+    "path": "F:\\SLIIT\\Y4 S1\\Research\\J26-DS-313-SORA\\c1\\models\\lid_latin.ftz",
+    "size_kb": 1342.5,
+    "n_train_tokens": 7241
+  }
+}

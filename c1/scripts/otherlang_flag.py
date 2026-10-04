@@ -46,8 +46,8 @@ Three signals are combined:
 The plan's outlier variant (low likelihood under BOTH SI and EN) is also
 implemented and reported side by side, since it needs no Tamil lexicon at all.
 
-EVALUATION USES RAW COUNTS, NOT F1. With 9 positives, an F1 moves ~0.1 per
-token and communicates false precision.
+EVALUATION USES RAW COUNTS, NOT F1. With 14 positives (9 before the October
+2026 batch), an F1 moves ~0.07 per token and communicates false precision.
 
 Usage:
     python3 otherlang_flag.py
@@ -272,7 +272,7 @@ def main():
     all_tokens = lid_data.load_gold_tokens()
 
     # --- calibrate thresholds on NON-target tokens only ---------------------
-    # Thresholds must not be tuned on the 9 positives, or the evaluation is
+    # Thresholds must not be tuned on the positives, or the evaluation is
     # circular. They are set from the negative distribution: allow roughly 1%
     # of ordinary corpus tokens through as false positives.
     calib = TamilFlagger(lexicon, si_words, en_words)
@@ -291,12 +291,12 @@ def main():
     print(f"  tamil_margin >= {margin_threshold:+.4f}")
     print(f"  native_max   <= {outlier_threshold:+.4f}  (plan's outlier rule)\n")
 
-    # --- leave-one-out evaluation on the 9 positives ------------------------
+    # --- leave-one-out evaluation on the positives ---------------------------
     # Each target token is scored by a detector whose Tamil lexicon and n-gram
     # model have had that word (and its normalized form) removed. Without this
     # the gazetteer trivially recognises every positive, since common Tamil
     # words are exactly what a hand-written lexicon contains.
-    print("LEAVE-ONE-OUT detection on the 9 genuinely-Tamil tokens")
+    print(f"LEAVE-ONE-OUT detection on the {len(tamil_tokens)} genuinely-Tamil tokens")
     print(f"  {'token':22} {'script':12} {'norm':12} {'margin':>8} {'flagged by':14}")
     loo_hits = []
     for entry in gt["genuinely_tamil"]:
@@ -330,7 +330,7 @@ def main():
         print(f"    {tok!r:24} gold={lang:6} via {reason:14} margin={sig['tamil_margin']:+.3f}")
 
     # --- operating curve ----------------------------------------------------
-    # One threshold is not a useful summary when there are 9 positives. Sweeping
+    # One threshold is not a useful summary with this few positives. Sweeping
     # it shows whether the misses are near the boundary (worth tuning) or far
     # from it (needs more lexicon, not a different threshold).
     print("\nOPERATING CURVE — margin threshold vs recall / false positives")
@@ -353,7 +353,7 @@ def main():
                       "loo_recall": loo_r, "full_lexicon_recall": full_r,
                       "false_positives": n_fp,
                       "fp_pct": round(100 * n_fp / len(all_tokens), 3)})
-        print(f"  {pct:>7.3f} {thr:>+10.3f} {loo_r:>8}/9 {full_r:>7}/9 "
+        print(f"  {pct:>7.3f} {thr:>+10.3f} {loo_r:>8}/{len(tamil_tokens)} {full_r:>7}/{len(tamil_tokens)} "
               f"{n_fp:>10} {100 * n_fp / len(all_tokens):>6.2f}%")
     print("  LOO = the word is absent from the lexicon (pessimistic bound)")
     print("  full-lex = the word is present, as it would be with a real Tamil")
@@ -380,8 +380,9 @@ def main():
     with open(out_path, "w", encoding="utf-8") as fh:
         json.dump({
             "note": "Evaluated against curated ground truth (data/tamil_ground_truth.json), "
-                    "NOT the gold OTHER label, which is 88% non-Tamil. Raw counts are "
-                    "reported instead of F1 because there are only 9 positives.",
+                    "NOT the gold OTHER label, which is ~98% non-Tamil and misses most "
+                    "Tamil. Raw counts are reported instead of F1 because positives "
+                    "are few.",
             "n_ground_truth_tamil": len(tamil_tokens),
             "tamil_by_script": gt["counts"]["tamil_by_script"],
             "lexicon_size": len(lexicon),

@@ -14,9 +14,10 @@ The predictor Tasks 4, 5 and 8 should import. Routing:
     Latin script    -> fastText        (the only genuinely ambiguous case)
 
 Measured by 5-fold cross-validation folded by recording
-(`train_lid_fasttext.py`), this lifts overall token accuracy from
-0.8994 +/- 0.0319 to 0.9318 +/- 0.0378, and Latin-script accuracy from
-0.8442 to 0.9150.
+(`train_lid_fasttext.py`, 48 recordings), this lifts overall token accuracy
+from 0.8807 +/- 0.0208 to 0.9232 +/- 0.0218 (0.9276 -> 0.9735 excluding
+numerals, whose gold convention is inconsistent), and Latin-script accuracy
+from 0.8487 to 0.9535.
 
 It keeps the same `(lang, confidence, method)` signature as lid_rules.predict,
 so it is a drop-in replacement in build_token_stream.py.
@@ -25,12 +26,11 @@ ON `OTHER`
 ----------
 This predictor will essentially never return OTHER, and that is a property of
 the training data rather than a bug to fix later. See
-results/c1_lid_eval.json and docs/TOKEN_SCHEMA.md: after the Section D
-exclusions there are 78 OTHER tokens, 58 of them purely numeric annotation
-drift, and only 15 in Latin script -- spread across identifiers
-(`LN2024NG00445`, `hasitha.94@gmail.com.`), English ordinals (`21st,`, `No.`)
-and a handful of Tamil words. There is no coherent class to learn. OTHER F1 is
-0.00 for every method tried, including the heuristic.
+results/c1_lid_report.md: of 743 OTHER tokens, ~720 are numerals tagged under
+an inconsistent convention, and only ~22 are in Latin script -- spread across
+identifiers (`LN2024NG00445`, `hasitha.94@gmail.com.`), ordinals (`21st,`,
+`No.`) and a handful of Tamil words. There is no coherent class to learn;
+Tamil detection is Task 5's job (otherlang_flag.py).
 
 Usage:
     from lid_hybrid import HybridLID

@@ -111,7 +111,7 @@ def cmi(labels, exclude_numeric_tokens=None):
 
     `exclude_numeric_tokens` optionally drops purely-numeric tokens. That
     matters here: Section D.3 found gold's numeric tagging is inconsistent
-    (192 EN, 61 OTHER, 1 SI for the same kinds of token), so numerics inject
+    (by annotator: mostly EN in some recordings, all OTHER in others), so numerics inject
     arbitrary label mass into the mix. Both variants are reported.
     """
     if exclude_numeric_tokens is not None:
@@ -127,6 +127,11 @@ def cmi(labels, exclude_numeric_tokens=None):
 
 
 # --- end-to-end alignment ----------------------------------------------------
+
+def has_times(tok):
+    return (isinstance(tok.get("start"), (int, float))
+            and isinstance(tok.get("end"), (int, float)))
+
 
 def align_by_time(gold_tokens, pred_tokens):
     """Match predicted tokens to gold tokens by maximum temporal overlap.
@@ -331,7 +336,10 @@ def main():
                 continue
             preds = [json.loads(l) for l in open(path, encoding="utf-8") if l.strip()]
             preds.sort(key=lambda t: t["start"])
-            toks = sorted(by_rec[rid], key=lambda t: t["start"])
+            # Time alignment needs gold timestamps; some newer gold files
+            # carry null start/end (see audit_gold.py), so skip those tokens.
+            toks = sorted((t for t in by_rec[rid] if has_times(t)),
+                          key=lambda t: t["start"])
             matched = align_by_time(toks, preds)
             n_gold += len(toks)
             n_matched += sum(1 for m in matched if m is not None)
@@ -367,26 +375,34 @@ def main():
         }, fh, indent=2, ensure_ascii=False)
     print(f"\nWrote {out_path}")
 
-    write_report(results, cmi_summary, per_rec_cmi, e2e, amplification)
+    write_report(results, cmi_summary, per_rec_cmi, e2e, amplification,
+                 n_tokens=len(tokens), n_recordings=len(recordings))
 
 
-def write_report(results, cmi_summary, per_rec_cmi, e2e, amplification=None):
+def write_report(results, cmi_summary, per_rec_cmi, e2e, amplification=None,
+                 n_tokens=0, n_recordings=0):
     L = []
     L.append("# Task 4 — Switch-point detection and code-mixing index\n\n")
     L.append("Produced by `scripts/switch_detection_eval.py`.\n\n")
 
+    L.append(f"Scope: **{n_tokens:,} gold tokens across {n_recordings} recordings**, "
+             f"after excluding {len(lid_data.EXCLUDED_RECORDINGS)} recordings with "
+             "unusable labels (reasons in `scripts/corpus.py`, evidence in "
+             "`results/c1_gold_audit.md`).\n\n")
     L.append("## Two deviations from the plan, both forced by the data\n\n")
     L.append("**Gold switches are re-derived from gold `lang`, not read from the\n")
     L.append("annotated `switch` field.** The plan expected that field to serve as the\n")
-    L.append("target. It cannot: at utterance boundaries where the language actually\n")
-    L.append("changes, gold marks `switch=true` 102 times and `switch=false` 100 times,\n")
-    L.append("plus 27 tokens flagged as switches with no language change at all. Scoring\n")
-    L.append("against it would measure annotator inconsistency. Full analysis in\n")
+    L.append("target. It cannot: in the audit of the original 27 recordings, at utterance\n")
+    L.append("boundaries where the language actually changes, gold marks `switch=true`\n")
+    L.append("102 times and `switch=false` 100 times, plus 27 tokens flagged as switches\n")
+    L.append("with no language change at all. Scoring against it would measure annotator\n")
+    L.append("inconsistency. Full analysis in\n")
     L.append("[SWITCH_FIELD_AUDIT.md](../docs/SWITCH_FIELD_AUDIT.md).\n\n")
     L.append("**The primary metric is computed on gold tokens.** End-to-end switch F1 is\n")
-    L.append("bounded by the ASR before switch detection contributes anything — the\n")
-    L.append("baseline emits 1,280 tokens against gold's 5,818. It is reported below,\n")
-    L.append("separately and labelled, so an ASR failure is not attributed to this task.\n\n")
+    L.append("bounded by the ASR before switch detection contributes anything — on the\n")
+    L.append("original recordings the baseline emits 1,280 tokens against gold's 5,818.\n")
+    L.append("It is reported below, separately and labelled, so an ASR failure is not\n")
+    L.append("attributed to this task.\n\n")
 
     L.append("## Switch-point F1 on gold tokens\n\n")
     L.append("Positions, not token labels: a sequence can be 90% correct token-wise and\n")
@@ -414,23 +430,33 @@ def write_report(results, cmi_summary, per_rec_cmi, e2e, amplification=None):
         L.append("token in the middle of a monolingual run creates **two** spurious\n")
         L.append("switches, one entering the error and one leaving it.\n\n")
         L.append("The LID accuracies below are pooled over all tokens, so they differ\n")
-        L.append("slightly from `c1_lid_report.md`'s 0.8994 / 0.9318, which average the\n")
-        L.append("five per-fold accuracies. Same predictions, micro vs macro averaging.\n\n")
+        L.append("slightly from `c1_lid_report.md`'s fold-averaged figures. Same\n")
+        L.append("predictions, micro vs macro averaging.\n\n")
         L.append("| method | LID token accuracy | switch F1 | gap |\n")
         L.append("|---|---|---|---|\n")
+        gaps = {}
         for m in ("heuristic", "hybrid"):
             acc = a["lid_accuracy"][m]
             f1 = results[f"{m}__within_utterance"]["overall"]["f1"]
+            gaps[m] = acc - f1
             L.append(f"| {m} | {acc:.4f} | {f1:.4f} | {acc - f1:+.4f} |\n")
-        L.append(f"\nSwitch F1 sits roughly 6–11 points below LID accuracy for both\n")
-        L.append(f"methods, and the amplification cuts both ways: improving LID accuracy\n")
+        L.append("\nToken accuracy here includes numerals, whose gold convention is\n")
+        L.append("inconsistent across annotators (EN in some recordings, OTHER in others).\n")
+        L.append("Those errors come in contiguous runs — a phone number read digit by\n")
+        L.append("digit — so they cost token accuracy on every digit but switch F1 only\n")
+        L.append("at the run's two edges. That is why the gap is narrower than LID\n")
+        L.append(f"accuracy alone would suggest (heuristic {gaps['heuristic']:+.4f}, "
+                 f"hybrid {gaps['hybrid']:+.4f}).\n\n")
+        L.append(f"The amplification still cuts both ways: improving LID accuracy\n")
         L.append(f"by **{a['lid_accuracy_delta']:+.4f}** moved switch F1 by\n")
         L.append(f"**{a['switch_f1_delta']:+.4f}** — about **{a['amplification_ratio']}×**\n")
         L.append("the token-level gain.\n\n")
         L.append("That ratio is the practical argument for Task 3's classifier. Judged on\n")
-        L.append("token accuracy alone the hybrid looks like a modest three-point\n")
+        L.append("token accuracy alone the hybrid looks like a modest "
+                 f"{100 * a['lid_accuracy_delta']:.0f}-point\n")
         L.append("improvement; judged on the switch points that actually define\n")
-        L.append("code-switching, it is worth several times that. Switch F1, not token\n")
+        L.append(f"code-switching, it is worth about {a['amplification_ratio']}× that. "
+                 "Switch F1, not token\n")
         L.append("accuracy, is the honest headline metric for this sub-objective.\n\n")
 
     L.append("## Code-mixing index (corpus characterization)\n\n")
@@ -447,8 +473,9 @@ def write_report(results, cmi_summary, per_rec_cmi, e2e, amplification=None):
     L.append(f"- utterances with CMI > 25: "
              f"**{cmi_summary['pct_utterances_cmi_over_25']:.1f}%**\n\n")
     L.append("Both variants are given because Section D.3 found gold's numeric tagging\n")
-    L.append("inconsistent (192 EN / 61 OTHER / 1 SI for comparable tokens), so numerics\n")
-    L.append("inject arbitrary label mass into the mix.\n\n")
+    L.append("inconsistent, and the October 2026 batch made it worse: the first batch\n")
+    L.append("tags numerals mostly EN, R0031–R0049 tag every one OTHER, R0050 onward\n")
+    L.append("EN again. Numerals therefore inject arbitrary label mass into the mix.\n\n")
 
     L.append("### Most and least code-mixed recordings\n\n")
     ranked = [r for r in per_rec_cmi if r["mean_cmi"] is not None]
@@ -467,15 +494,20 @@ def write_report(results, cmi_summary, per_rec_cmi, e2e, amplification=None):
     if e2e:
         L.append("## End-to-end (ASR → LID → switch) — ASR-bounded\n\n")
         L.append("Predicted tokens are aligned to gold by maximum temporal overlap, since\n")
-        L.append("the two sequences differ in length and content.\n\n")
+        L.append("the two sequences differ in length and content. Only recordings with\n")
+        L.append("both an ASR token stream and gold timestamps contribute — currently the\n")
+        L.append("original batch, since the new recordings have no audio in the dataset\n")
+        L.append("repo yet.\n\n")
         L.append(f"- gold tokens matched to any ASR token: "
                  f"**{e2e['gold_tokens_matched_to_asr']}/{e2e['gold_tokens']} "
                  f"({e2e['pct_gold_tokens_matched']:.1f}%)**\n")
         L.append(f"- precision {e2e['precision']:.4f}, recall {e2e['recall']:.4f}, "
                  f"**F1 {e2e['f1']:.4f}**\n\n")
-        L.append("This number describes the ASR, not the switch-detection logic. Roughly\n")
-        L.append("four fifths of gold tokens have no corresponding ASR token at all, so\n")
-        L.append("most gold switches are unreachable regardless of how good the LID is.\n")
+        L.append("This number describes the ASR, not the switch-detection logic. "
+                 f"{100 - e2e['pct_gold_tokens_matched']:.0f}% of gold tokens\n")
+        L.append("overlap no ASR token at all, and an overlapping token is usually not the\n")
+        L.append("right word, so most gold switches are unreachable regardless of how good\n")
+        L.append("the LID is.\n")
         L.append("Read the gold-token table above for the quality of this task's own\n")
         L.append("contribution, and `c1_report.md` for why the ASR is the bottleneck.\n\n")
 
@@ -484,9 +516,9 @@ def write_report(results, cmi_summary, per_rec_cmi, e2e, amplification=None):
     L.append("of the language sequence, so its accuracy is entirely inherited from LID.\n")
     L.append("That makes it a useful diagnostic rather than a component to optimise: it\n")
     L.append("amplifies LID errors, because one mislabelled token in a monolingual run\n")
-    L.append("creates *two* spurious switches. That amplification is why switch F1 sits\n")
-    L.append("well below LID token accuracy and is the honest metric to quote for\n")
-    L.append("code-switching capability.\n")
+    L.append("creates *two* spurious switches. That amplification is why switch F1,\n")
+    L.append("not token accuracy, is the honest metric to quote for code-switching\n")
+    L.append("capability.\n")
 
     out = os.path.join(RESULTS_DIR, "c1_switch_report.md")
     with open(out, "w", encoding="utf-8") as fh:

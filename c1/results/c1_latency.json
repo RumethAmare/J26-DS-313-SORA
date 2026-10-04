@@ -1,0 +1,55 @@
+{
+  "environment": {
+    "gpu": "NVIDIA GeForce RTX 5050 Laptop GPU, 8151 MiB",
+    "cpu": "AMD64 Family 25 Model 124 Stepping 0, AuthenticAMD",
+    "cpu_threads": 12,
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.13",
+    "faster_whisper": "1.2.1",
+    "ctranslate2": "4.8.1"
+  },
+  "recordings": [
+    "J26DS313_R0002",
+    "J26DS313_R0009",
+    "J26DS313_R0014",
+    "J26DS313_R0019",
+    "J26DS313_R0023"
+  ],
+  "asr": null,
+  "fasttext": {
+    "n_recordings": 48,
+    "folds": 5,
+    "params": {
+      "epoch": 50,
+      "lr": 0.5,
+      "dim": 50,
+      "minn": 2,
+      "maxn": 5,
+      "wordNgrams": 1,
+      "minCount": 1,
+      "loss": "softmax",
+      "seed": 13,
+      "thread": 1,
+      "bucket": 50000
+    },
+    "accuracy_full": [
+      0.9535,
+      0.027
+    ],
+    "accuracy_quantized": [
+      0.9537,
+      0.0251
+    ],
+    "accuracy_delta_per_fold": [
+      -0.0008,
+      -0.0008,
+      -0.002,
+      0.001,
+      0.0037
+    ],
+    "size_full_mb": 9.81,
+    "size_quantized_mb": 1.29,
+    "predict_us_per_token_full": 4.23,
+    "predict_us_per_token_quantized": 5.89
+  }
+}

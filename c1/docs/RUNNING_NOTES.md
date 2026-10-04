@@ -62,6 +62,31 @@ copies keeps runs reproducible rather than dependent on system-wide installs.
 for the three language-forcing configs. Comfortably within budget for the
 noise-robustness sweep in Task 6, which re-runs this pipeline per SNR tier.
 
+## Running on Windows (from October 2026)
+
+The scripts now also run natively on Windows; the WSL distro the earlier
+runs used is gone.
+
+- **Dataset path** is resolved by `scripts/corpus.py`: `$SORA_DATASET_ROOT`,
+  else `/mnt/F/SLIIT/Research/SORA_Dataset`, else
+  `F:/SLIIT/Research/SORA_Dataset`. No script hardcodes it any more.
+- **venv:** `uv venv --python 3.12 c1/.venv` then
+  `uv pip install --python c1/.venv/Scripts/python.exe -r c1/requirements.txt`.
+- **CUDA DLLs:** on Windows the pip wheels put them in `nvidia/*/bin`, and
+  `LoadLibrary` reads `PATH` at call time, so `cuda_env.ensure_cuda_libs()`
+  adds those directories in-process instead of re-exec'ing.
+- **PyAV must be 18.x.** faster-whisper 1.2.1 calls
+  `av.open(metadata_errors=...)`, which PyAV 19 removed; the failure appears
+  only at decode time. Now pinned in `requirements.txt`.
+- **Network:** this host *does* reach HuggingFace (~3 MB/s), so `small` and
+  `medium` are now both cached in `~/.cache/huggingface`. Task 1's medium
+  ablation arm is no longer blocked.
+- **Console encoding:** set `PYTHONIOENCODING=utf-8`, or any script that
+  prints Sinhala dies with `UnicodeEncodeError` on the cp1252 console.
+- `results/c1_noise_manifest.json` stores `/mnt/...` paths, so re-running
+  `noise_robustness_eval.py` on Windows needs `make_noisy_variants.py` re-run
+  first (the noisy WAVs are no longer in git; regeneration is seeded).
+
 ## 3. `cuda_env` re-exec drops interpreter flags (fixed)
 
 `cuda_env.ensure_cuda_libs()` restarts the interpreter with

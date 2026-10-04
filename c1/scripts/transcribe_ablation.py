@@ -38,7 +38,8 @@ import cuda_env  # noqa: E402  (must run before faster_whisper touches CUDA)
 
 cuda_env.ensure_cuda_libs()
 
-DATASET_ROOT = "/mnt/F/SLIIT/Research/SORA_Dataset"
+import corpus  # noqa: E402
+DATASET_ROOT = corpus.DATASET_ROOT
 C1_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUDIO_DIR = os.path.join(DATASET_ROOT, "processed", "audio")
 GOLD_DIR = os.path.join(DATASET_ROOT, "annotations", "c1")

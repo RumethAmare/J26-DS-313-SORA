@@ -1,6 +1,8 @@
 # ASR
 faster-whisper==1.2.1
 ctranslate2==4.8.1
+av==18.1.0            # faster-whisper 1.2.1 passes av.open(metadata_errors=...),
+                      # which PyAV 19 removed -- unpinned installs fail on decode
 nvidia-cublas-cu12
 nvidia-cudnn-cu12==9.*
 

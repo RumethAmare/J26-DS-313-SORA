@@ -21,8 +21,34 @@
     {"recording": "J26DS313_R0016", "token": "sari", "script": "latin",
      "gloss": "sari - 'ok/right'", "context": "sari sari. මම try එකක් try කරන්නම්"},
     {"recording": "J26DS313_R0016", "token": "sari.", "script": "latin",
-     "gloss": "sari - 'ok/right'", "context": "sari sari. මම try එකක් try කරන්නම්"}
+     "gloss": "sari - 'ok/right'", "context": "sari sari. මම try එකක් try කරන්නම්"},
+
+    {"recording": "J26DS313_R0049", "token": "වනක්කම්", "script": "sinhala", "gold_lang": "SI",
+     "gloss": "vanakkam - greeting", "context": "Good morning miss වනක්කම් මම ආවේ අලුත් priority"},
+    {"recording": "J26DS313_R0049", "token": "රොම්බ", "script": "sinhala", "gold_lang": "SI",
+     "gloss": "romba - 'very'", "context": "හරි හරි රොම්බ thank you miss"},
+    {"recording": "J26DS313_R0049", "token": "නන්ද්‍රි", "script": "sinhala", "gold_lang": "SI",
+     "gloss": "nandri - 'thanks'", "context": "මේ ටික විතරයි නන්ද්‍රි ඔයාගේ support එකට"},
+    {"recording": "J26DS313_R0050", "token": "wanakkam", "script": "latin", "gold_lang": "OTHER",
+     "gloss": "vanakkam - greeting", "context": "good afternoon miss wanakkam mama awa"},
+    {"recording": "J26DS313_R0052", "token": "Vanakkam.", "script": "latin", "gold_lang": "SI",
+     "gloss": "vanakkam - greeting", "context": "Good morning miss. Vanakkam. Mage car eka"}
   ],
+
+  "tamil_in_excluded_recordings": [
+    {"recording": "J26DS313_R0051", "token": "Vanakkam.", "script": "latin", "gold_lang": "OTHER",
+     "gloss": "vanakkam - greeting", "context": "Good morning sister. Vanakkam. Mama awa"},
+    {"recording": "J26DS313_R0053", "token": "Vanakkam.", "script": "latin", "gold_lang": "EN",
+     "gloss": "vanakkam - greeting", "context": "near-duplicate of the R0052 occurrence"},
+    {"recording": "J26DS313_R0064", "token": "Vanakkam,", "script": "latin", "gold_lang": "EN",
+     "gloss": "vanakkam - greeting", "context": "Good morning madam. Vanakkam, oh madam."},
+    {"recording": "J26DS313_R0065", "token": "nalla", "script": "latin", "gold_lang": "EN",
+     "gloss": "nalla - 'good'", "context": "Eka nam nalla visayam miss."},
+    {"recording": "J26DS313_R0065", "token": "visayam", "script": "latin", "gold_lang": "EN",
+     "gloss": "vishayam - 'matter/thing'", "context": "Eka nam nalla visayam miss."}
+  ],
+
+  "batch_2_note": "Entries from R0049 onward were added after the October 2026 data batch (R0029-R0065). Only 1 of the 5 usable new entries is labelled OTHER in gold; the rest are labelled SI, so gold OTHER now misses much of the Tamil as well as being mostly numerals. Tamil in recordings excluded from C1 (corpus.EXCLUDED_RECORDINGS) is kept separately under tamil_in_excluded_recordings and is not scored, so positives and negatives come from the same recordings. Common Sinhala words that collide with Tamil lexicon entries (nama, nan, ne, enna, anna) were checked in context and are Sinhala.",
 
   "tamil_sentence_in_sinhala_script": {
     "recording": "J26DS313_R0015",
@@ -47,6 +73,16 @@
   ],
 
   "counts": {
+    "scope": "48 usable recordings (corpus.EXCLUDED_RECORDINGS removed)",
+    "other_tokens_total": 743,
+    "numeric": 722,
+    "identifiers_and_ordinals": 11,
+    "genuinely_tamil_labelled_other": 10,
+    "genuinely_tamil": 14,
+    "genuinely_tamil_labelled_si_or_en": 4,
+    "tamil_by_script": {"sinhala": 8, "latin": 5, "other": 1, "tamil_script": 0}
+  },
+  "counts_batch_1_only": {
     "other_tokens_total": 78,
     "numeric": 58,
     "identifiers_and_ordinals": 11,

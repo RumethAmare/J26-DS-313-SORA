@@ -32,7 +32,8 @@ import os
 import sys
 
 C1_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATASET_ROOT = "/mnt/F/SLIIT/Research/SORA_Dataset"
+import corpus  # noqa: E402
+DATASET_ROOT = corpus.DATASET_ROOT
 PRED_DIR = os.path.join(C1_ROOT, "predictions", "token_stream")
 GOLD_DIR = os.path.join(DATASET_ROOT, "annotations", "c1")
 
