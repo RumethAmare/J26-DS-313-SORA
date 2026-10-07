@@ -66,31 +66,31 @@
       "SYN_T0059",
       "SYN_T0060"
     ],
-    "commit": "192e0dd",
-    "date": "2026-10-01"
+    "commit": "8a8c289",
+    "date": "2026-10-07"
   },
   "micro": {
-    "precision": 0.906,
-    "recall": 0.5844,
-    "f1": 0.7105,
-    "tp": 945,
-    "fp": 98,
-    "fn": 672,
+    "precision": 0.9103,
+    "recall": 0.6463,
+    "f1": 0.7559,
+    "tp": 1045,
+    "fp": 103,
+    "fn": 572,
     "support": 1617
   },
   "macro": {
-    "precision": 0.8861,
-    "recall": 0.7181,
-    "f1": 0.7664
+    "precision": 0.9057,
+    "recall": 0.7645,
+    "f1": 0.8148
   },
   "per_label": {
     "PERSON": {
-      "precision": 0.7972,
-      "recall": 0.3608,
-      "f1": 0.4967,
-      "tp": 228,
-      "fp": 58,
-      "fn": 404,
+      "precision": 0.9026,
+      "recall": 0.4399,
+      "f1": 0.5915,
+      "tp": 278,
+      "fp": 30,
+      "fn": 354,
       "support": 632
     },
     "NIC": {
@@ -112,21 +112,21 @@
       "support": 221
     },
     "ADDRESS": {
-      "precision": 0.9744,
-      "recall": 0.6333,
-      "f1": 0.7677,
-      "tp": 76,
-      "fp": 2,
-      "fn": 44,
+      "precision": 1.0,
+      "recall": 0.7083,
+      "f1": 0.8293,
+      "tp": 85,
+      "fp": 0,
+      "fn": 35,
       "support": 120
     },
     "ORG": {
-      "precision": 0.5283,
-      "recall": 0.1167,
-      "f1": 0.1911,
-      "tp": 28,
-      "fp": 25,
-      "fn": 212,
+      "precision": 0.5349,
+      "recall": 0.2875,
+      "f1": 0.374,
+      "tp": 69,
+      "fp": 60,
+      "fn": 171,
       "support": 240
     },
     "ACCOUNT": {
@@ -150,59 +150,59 @@
   },
   "per_script": {
     "LATIN": {
-      "precision": 0.9089,
-      "recall": 0.6215,
-      "f1": 0.7382,
-      "tp": 688,
-      "fp": 69,
-      "fn": 419,
+      "precision": 0.9189,
+      "recall": 0.6856,
+      "f1": 0.7853,
+      "tp": 759,
+      "fp": 67,
+      "fn": 348,
       "support": 1107
     },
     "SINHALA": {
-      "precision": 0.8986,
-      "recall": 0.5039,
-      "f1": 0.6457,
-      "tp": 257,
-      "fp": 29,
-      "fn": 253,
+      "precision": 0.8882,
+      "recall": 0.5608,
+      "f1": 0.6875,
+      "tp": 286,
+      "fp": 36,
+      "fn": 224,
       "support": 510
     }
   },
   "per_doc_kind": {
     "clean_en": {
-      "precision": 0.9572,
-      "recall": 0.7063,
-      "f1": 0.8128,
-      "tp": 291,
-      "fp": 13,
-      "fn": 121,
+      "precision": 0.9809,
+      "recall": 0.7476,
+      "f1": 0.8485,
+      "tp": 308,
+      "fp": 6,
+      "fn": 104,
       "support": 412
     },
     "clean_si": {
-      "precision": 0.8782,
-      "recall": 0.5073,
-      "f1": 0.6431,
-      "tp": 209,
-      "fp": 29,
-      "fn": 203,
+      "precision": 0.8764,
+      "recall": 0.568,
+      "f1": 0.6892,
+      "tp": 234,
+      "fp": 33,
+      "fn": 178,
       "support": 412
     },
     "summary": {
-      "precision": 0.84,
-      "recall": 0.5512,
-      "f1": 0.6656,
-      "tp": 210,
-      "fp": 40,
-      "fn": 171,
+      "precision": 0.8212,
+      "recall": 0.5906,
+      "f1": 0.687,
+      "tp": 225,
+      "fp": 49,
+      "fn": 156,
       "support": 381
     },
     "transcript": {
-      "precision": 0.9363,
-      "recall": 0.5704,
-      "f1": 0.7089,
-      "tp": 235,
-      "fp": 16,
-      "fn": 177,
+      "precision": 0.9488,
+      "recall": 0.6748,
+      "f1": 0.7887,
+      "tp": 278,
+      "fp": 15,
+      "fn": 134,
       "support": 412
     }
   },
@@ -245,15 +245,9 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0001_transcript_u006_v1",
-        "label": "ADDRESS",
-        "gold": "242/5, Park Avenue, Chilaw",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0001_c2_u006_si_v1",
-        "label": "ADDRESS",
-        "gold": "242/5, උද්‍යාන මාවත, හලාවත",
+        "doc_id": "SYN_T0001_c2_u002_en_v1",
+        "label": "PERSON",
+        "gold": "Piumi",
         "predicted": []
       },
       {
@@ -294,16 +288,8 @@
       },
       {
         "doc_id": "SYN_T0002_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Buddhika",
-        "predicted": [
-          "ORG:Buddhika of Hutch"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0003_transcript_u001_v1",
         "label": "ORG",
-        "gold": "Ceylinco Insurance",
+        "gold": "Hutch",
         "predicted": []
       },
       {
@@ -319,21 +305,15 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0003_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0003_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0003_c2_u001_si_v1",
         "label": "PERSON",
         "gold": "ඉසුරු",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0003_c2_u003_si_v1",
+        "label": "PERSON",
+        "gold": "පියුමි කුමාර",
         "predicted": []
       },
       {
@@ -355,9 +335,27 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0003_c2_summary_en_v1",
+        "doc_id": "SYN_T0004_transcript_u001_v1",
         "label": "ORG",
-        "gold": "Ceylinco Insurance",
+        "gold": "Seylan Bank",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0004_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0004_c2_u001_en_v1",
+        "label": "PERSON",
+        "gold": "Piumi",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0004_c2_u001_si_v1",
+        "label": "PERSON",
+        "gold": "පියුමි",
         "predicted": []
       },
       {
@@ -367,23 +365,17 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0004_c2_u003_si_v1",
-        "label": "PERSON",
-        "gold": "යශෝධා අබේසේකර",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0004_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Seylan Bank",
+        "label": "PERSON",
+        "gold": "Piumi",
         "predicted": [
-          "PERSON:Piumi of Seylan"
+          "ORG:Piumi of Seylan Bank"
         ]
       },
       {
-        "doc_id": "SYN_T0005_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
+        "doc_id": "SYN_T0004_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Yasodha Abeysekara",
         "predicted": []
       },
       {
@@ -393,27 +385,9 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0005_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0005_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0005_c2_u001_si_v1",
+        "doc_id": "SYN_T0005_transcript_u003_v1",
         "label": "PERSON",
-        "gold": "ශානිකා",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0005_c2_u003_si_v1",
-        "label": "PERSON",
-        "gold": "පියුමි පතිරණ",
+        "gold": "Piumi Pathirana",
         "predicted": []
       },
       {
@@ -438,13 +412,9 @@
         "doc_id": "SYN_T0005_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Shanika",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0005_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
+        "predicted": [
+          "ORG:Shanika of Ceylinco Insurance"
+        ]
       },
       {
         "doc_id": "SYN_T0005_c2_summary_en_v1",
@@ -459,30 +429,24 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0006_c2_summary_en_v1",
+        "doc_id": "SYN_T0006_transcript_u001_v1",
         "label": "ORG",
         "gold": "Seylan Bank",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0006_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0006_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Saman",
         "predicted": [
-          "PERSON:Saman of Seylan"
+          "ORG:Saman of Seylan Bank"
         ]
-      },
-      {
-        "doc_id": "SYN_T0007_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0007_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0007_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
-        "predicted": []
       },
       {
         "doc_id": "SYN_T0007_c2_u001_si_v1",
@@ -491,12 +455,30 @@
         "predicted": []
       },
       {
+        "doc_id": "SYN_T0007_c2_u002_en_v1",
+        "label": "PERSON",
+        "gold": "Piumi",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0007_c2_u005_si_v1",
+        "label": "PERSON",
+        "gold": "ගයාන් කුමාර",
+        "predicted": []
+      },
+      {
         "doc_id": "SYN_T0007_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Madhavi",
         "predicted": [
-          "ORG:Madhavi of Ceylinco"
+          "ORG:Madhavi of Ceylinco Insurance"
         ]
+      },
+      {
+        "doc_id": "SYN_T0007_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Piumi Samarakoon",
+        "predicted": []
       },
       {
         "doc_id": "SYN_T0008_transcript_u001_v1",
@@ -535,15 +517,9 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0008_transcript_u012_v1",
+        "doc_id": "SYN_T0008_c2_u003_si_v1",
         "label": "PERSON",
-        "gold": "Janaka Ekanayake",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0008_c2_u012_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka Ekanayake",
+        "gold": "ගයාන් වීරසිංහ",
         "predicted": []
       },
       {
@@ -571,27 +547,9 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0008_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka Ekanayake",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0009_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0009_transcript_u001_v1",
         "label": "PERSON",
         "gold": "මාධවී",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0009_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
         "predicted": []
       },
       {
@@ -607,21 +565,9 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0009_c2_u002_en_v1",
-        "label": "PERSON",
-        "gold": "Buddhika",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0009_c2_u002_si_v1",
         "label": "PERSON",
         "gold": "බුද්ධික",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0009_transcript_u006_v1",
-        "label": "PERSON",
-        "gold": "Buddhika Weerasinghe",
         "predicted": []
       },
       {
@@ -632,14 +578,14 @@
       },
       {
         "doc_id": "SYN_T0009_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
+        "label": "PERSON",
+        "gold": "Madhavi",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0009_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Buddhika Weerasinghe",
+        "label": "ORG",
+        "gold": "SLT",
         "predicted": []
       },
       {
@@ -652,12 +598,6 @@
         "doc_id": "SYN_T0010_transcript_u001_v1",
         "label": "PERSON",
         "gold": "buddhika",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0010_c2_u001_en_v1",
-        "label": "PERSON",
-        "gold": "Buddhika",
         "predicted": []
       },
       {
@@ -692,12 +632,6 @@
       },
       {
         "doc_id": "SYN_T0010_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Buddhika",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0010_c2_summary_en_v1",
         "label": "ORG",
         "gold": "NSB",
         "predicted": []
@@ -727,6 +661,12 @@
         "predicted": []
       },
       {
+        "doc_id": "SYN_T0011_c2_u002_en_v1",
+        "label": "PERSON",
+        "gold": "Piumi",
+        "predicted": []
+      },
+      {
         "doc_id": "SYN_T0011_transcript_u004_v1",
         "label": "ADDRESS",
         "gold": "143, Kandy Road, Chilaw",
@@ -742,9 +682,7 @@
         "doc_id": "SYN_T0011_c2_summary_en_v1",
         "label": "ORG",
         "gold": "Hutch",
-        "predicted": [
-          "PERSON:Rashmi of Hutch"
-        ]
+        "predicted": []
       },
       {
         "doc_id": "SYN_T0012_transcript_u001_v1",
@@ -798,13 +736,9 @@
         "doc_id": "SYN_T0012_transcript_u008_v1",
         "label": "ADDRESS",
         "gold": "154, Park Avenue, Anuradhapura",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0012_c2_u008_si_v1",
-        "label": "ADDRESS",
-        "gold": "154, උද්‍යාන මාවත, අනුරාධපුරය",
-        "predicted": []
+        "predicted": [
+          "PERSON:Avenue"
+        ]
       },
       {
         "doc_id": "SYN_T0012_c2_summary_en_v1",
@@ -815,9 +749,9 @@
         ]
       },
       {
-        "doc_id": "SYN_T0013_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
+        "doc_id": "SYN_T0012_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Yasodha Ekanayake",
         "predicted": []
       },
       {
@@ -828,20 +762,8 @@
       },
       {
         "doc_id": "SYN_T0013_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0013_c2_u001_en_v1",
         "label": "PERSON",
         "gold": "Isuru",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0013_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
         "predicted": []
       },
       {
@@ -869,18 +791,6 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0013_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0014_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0014_transcript_u001_v1",
         "label": "PERSON",
         "gold": "ඉසුරු",
@@ -890,18 +800,6 @@
         "doc_id": "SYN_T0014_c2_u001_en_v1",
         "label": "PERSON",
         "gold": "Isuru",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0014_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0014_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
         "predicted": []
       },
       {
@@ -917,18 +815,10 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0014_c2_u003_si_v1",
+        "doc_id": "SYN_T0014_c2_u003_en_v1",
         "label": "PERSON",
-        "gold": "යශෝධා පතිරණ",
+        "gold": "Yasodha Pathirana",
         "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0014_transcript_u008_v1",
-        "label": "ADDRESS",
-        "gold": "250, Circular Road, Panadura",
-        "predicted": [
-          "PERSON:Panadura"
-        ]
       },
       {
         "doc_id": "SYN_T0014_c2_u008_si_v1",
@@ -940,12 +830,6 @@
         "doc_id": "SYN_T0014_transcript_u010_v1",
         "label": "PERSON",
         "gold": "janaka ranasinghe",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0014_c2_u010_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka Ranasinghe",
         "predicted": []
       },
       {
@@ -962,32 +846,14 @@
       },
       {
         "doc_id": "SYN_T0014_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0014_c2_summary_en_v1",
         "label": "PERSON",
-        "gold": "Janaka Ranasinghe",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0015_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
+        "gold": "Yasodha Pathirana",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0015_transcript_u001_v1",
         "label": "PERSON",
         "gold": "amal",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0015_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
         "predicted": []
       },
       {
@@ -1052,12 +918,6 @@
       },
       {
         "doc_id": "SYN_T0015_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0015_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Isuru Ranasinghe",
         "predicted": []
@@ -1069,15 +929,9 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0016_transcript_u001_v1",
-        "label": "PERSON",
-        "gold": "ශානිකා",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0016_c2_u001_si_v1",
-        "label": "PERSON",
-        "gold": "ශානිකා",
+        "doc_id": "SYN_T0016_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": []
       },
       {
@@ -1114,7 +968,9 @@
         "doc_id": "SYN_T0016_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Shanika",
-        "predicted": []
+        "predicted": [
+          "ORG:Shanika of Seylan Bank"
+        ]
       },
       {
         "doc_id": "SYN_T0016_c2_summary_en_v1",
@@ -1126,18 +982,6 @@
         "doc_id": "SYN_T0017_transcript_u001_v1",
         "label": "ORG",
         "gold": "NSB",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0017_transcript_u001_v1",
-        "label": "PERSON",
-        "gold": "Buddhika",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0017_c2_u001_en_v1",
-        "label": "PERSON",
-        "gold": "Buddhika",
         "predicted": []
       },
       {
@@ -1171,18 +1015,6 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0017_transcript_u005_v1",
-        "label": "PERSON",
-        "gold": "Janaka Ranasinghe",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0017_c2_u005_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka Ranasinghe",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0017_c2_u005_si_v1",
         "label": "PERSON",
         "gold": "ජනක රණසිංහ",
@@ -1196,44 +1028,8 @@
       },
       {
         "doc_id": "SYN_T0017_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Buddhika",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0017_c2_summary_en_v1",
         "label": "ORG",
         "gold": "NSB",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0017_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka Ranasinghe",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0018_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0018_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0018_c2_u001_si_v1",
-        "label": "PERSON",
-        "gold": "ශානිකා",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0018_transcript_u004_v1",
-        "label": "PERSON",
-        "gold": "Buddhika Weerasinghe",
         "predicted": []
       },
       {
@@ -1250,26 +1046,8 @@
       },
       {
         "doc_id": "SYN_T0018_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0018_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Buddhika Weerasinghe",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0018_c2_summary_en_v1",
         "label": "ACCOUNT",
         "gold": "116003803155",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0019_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
         "predicted": []
       },
       {
@@ -1280,50 +1058,14 @@
       },
       {
         "doc_id": "SYN_T0019_c2_u001_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0019_c2_u001_en_v1",
         "label": "ORG",
         "gold": "SLT",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0019_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0019_c2_u001_si_v1",
         "label": "PERSON",
         "gold": "ජනක",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0019_transcript_u003_v1",
-        "label": "PERSON",
-        "gold": "Shanika Samarakoon",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0019_c2_u003_si_v1",
-        "label": "PERSON",
-        "gold": "ශානිකා සමරකෝන්",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0019_transcript_u008_v1",
-        "label": "ADDRESS",
-        "gold": "187, Park Avenue, Badulla",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0019_c2_u008_si_v1",
-        "label": "ADDRESS",
-        "gold": "187, උද්‍යාන මාවත, බදුල්ල",
         "predicted": []
       },
       {
@@ -1346,15 +1088,11 @@
       },
       {
         "doc_id": "SYN_T0019_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0019_c2_summary_en_v1",
         "label": "ORG",
         "gold": "SLT",
-        "predicted": []
+        "predicted": [
+          "PERSON:Janaka of SLT"
+        ]
       },
       {
         "doc_id": "SYN_T0019_c2_summary_en_v1",
@@ -1364,20 +1102,8 @@
       },
       {
         "doc_id": "SYN_T0020_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0020_transcript_u001_v1",
         "label": "PERSON",
         "gold": "බුද්ධික",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0020_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
         "predicted": []
       },
       {
@@ -1387,58 +1113,26 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0020_transcript_u003_v1",
-        "label": "PERSON",
-        "gold": "රශ්මි ඒකනායක",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0020_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Buddhika",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0020_c2_summary_en_v1",
         "label": "ORG",
         "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0021_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0021_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
+        "predicted": [
+          "PERSON:Buddhika of SLT"
+        ]
       },
       {
         "doc_id": "SYN_T0021_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
+        "label": "PERSON",
+        "gold": "ගයාන්",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0021_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Gayan",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0021_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0022_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
+        "predicted": [
+          "ORG:Gayan of Ceylinco Insurance"
+        ]
       },
       {
         "doc_id": "SYN_T0022_transcript_u001_v1",
@@ -1454,38 +1148,24 @@
       },
       {
         "doc_id": "SYN_T0022_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0022_c2_u001_si_v1",
         "label": "PERSON",
         "gold": "ගයාන්",
-        "predicted": []
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් ගයාන්"
+        ]
       },
       {
         "doc_id": "SYN_T0022_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Gayan",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0022_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
+        "predicted": [
+          "ORG:Gayan of SLT"
+        ]
       },
       {
         "doc_id": "SYN_T0022_c2_summary_en_v1",
         "label": "ACCOUNT",
         "gold": "115151990915",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0023_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
         "predicted": []
       },
       {
@@ -1496,20 +1176,8 @@
       },
       {
         "doc_id": "SYN_T0023_c2_u001_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0023_c2_u001_en_v1",
         "label": "ORG",
         "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0023_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
         "predicted": []
       },
       {
@@ -1525,21 +1193,23 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0023_c2_summary_en_v1",
+        "doc_id": "SYN_T0023_c2_u008_si_v1",
         "label": "PERSON",
-        "gold": "Janaka",
+        "gold": "ගයාන් කුමාර",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0023_c2_summary_en_v1",
         "label": "ORG",
         "gold": "SLT",
-        "predicted": []
+        "predicted": [
+          "PERSON:Janaka of SLT"
+        ]
       },
       {
-        "doc_id": "SYN_T0023_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Gayan Kumara",
+        "doc_id": "SYN_T0024_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": []
       },
       {
@@ -1550,14 +1220,20 @@
       },
       {
         "doc_id": "SYN_T0024_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0024_c2_u001_en_v1",
         "label": "PERSON",
         "gold": "Amal",
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0024_c2_u003_si_v1",
-        "label": "PERSON",
-        "gold": "පියුමි වීරසිංහ",
+        "doc_id": "SYN_T0024_transcript_u005_v1",
+        "label": "ADDRESS",
+        "gold": "149, Kandy Road, Ratnapura",
         "predicted": []
       },
       {
@@ -1576,20 +1252,12 @@
         "doc_id": "SYN_T0024_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Amal",
-        "predicted": [
-          "ORG:Amal of Seylan Bank"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0024_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Gayan Weerasinghe",
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0025_transcript_u001_v1",
+        "doc_id": "SYN_T0024_c2_summary_en_v1",
         "label": "ORG",
-        "gold": "SLT",
+        "gold": "Seylan Bank",
         "predicted": []
       },
       {
@@ -1606,15 +1274,11 @@
       },
       {
         "doc_id": "SYN_T0025_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0025_c2_u001_si_v1",
         "label": "PERSON",
         "gold": "රශ්මි",
-        "predicted": []
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් රශ්මි"
+        ]
       },
       {
         "doc_id": "SYN_T0025_transcript_u003_v1",
@@ -1623,15 +1287,15 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0025_transcript_u004_v1",
+        "doc_id": "SYN_T0025_c2_u003_en_v1",
         "label": "PERSON",
-        "gold": "janaka kumara",
+        "gold": "Amal Kumara",
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0025_c2_u004_en_v1",
+        "doc_id": "SYN_T0025_transcript_u004_v1",
         "label": "PERSON",
-        "gold": "Janaka Kumara",
+        "gold": "janaka kumara",
         "predicted": []
       },
       {
@@ -1654,26 +1318,28 @@
       },
       {
         "doc_id": "SYN_T0025_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Rashmi",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0025_c2_summary_en_v1",
         "label": "ORG",
         "gold": "SLT",
-        "predicted": []
+        "predicted": [
+          "PERSON:Rashmi of SLT"
+        ]
       },
       {
         "doc_id": "SYN_T0025_c2_summary_en_v1",
         "label": "PERSON",
-        "gold": "Janaka Kumara",
+        "gold": "Amal Kumara",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0025_c2_summary_en_v1",
         "label": "ACCOUNT",
         "gold": "78950862601139",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0026_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": []
       },
       {
@@ -1686,6 +1352,12 @@
         "doc_id": "SYN_T0026_c2_u001_en_v1",
         "label": "PERSON",
         "gold": "Yasodha",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0026_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": []
       },
       {
@@ -1719,12 +1391,6 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0026_c2_u006_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka Weerasinghe",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0026_c2_u006_si_v1",
         "label": "PERSON",
         "gold": "ජනක වීරසිංහ",
@@ -1740,18 +1406,14 @@
         "doc_id": "SYN_T0026_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Yasodha",
-        "predicted": []
+        "predicted": [
+          "ORG:Yasodha of Seylan Bank"
+        ]
       },
       {
         "doc_id": "SYN_T0026_c2_summary_en_v1",
         "label": "PERSON",
-        "gold": "Janaka Weerasinghe",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0027_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
+        "gold": "Yasodha Kumara",
         "predicted": []
       },
       {
@@ -1774,15 +1436,11 @@
       },
       {
         "doc_id": "SYN_T0027_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0027_c2_u001_si_v1",
         "label": "PERSON",
         "gold": "අංජලී",
-        "predicted": []
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් අංජලී"
+        ]
       },
       {
         "doc_id": "SYN_T0027_c2_u003_si_v1",
@@ -1816,12 +1474,6 @@
       },
       {
         "doc_id": "SYN_T0027_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0027_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Isuru Ekanayake",
         "predicted": []
@@ -1842,12 +1494,6 @@
         "doc_id": "SYN_T0028_c2_u001_en_v1",
         "label": "ORG",
         "gold": "Hutch",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0028_c2_u001_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
         "predicted": []
       },
       {
@@ -1882,12 +1528,6 @@
       },
       {
         "doc_id": "SYN_T0028_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0028_c2_summary_en_v1",
         "label": "ORG",
         "gold": "Hutch",
         "predicted": []
@@ -1905,9 +1545,9 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0029_transcript_u003_v1",
-        "label": "PERSON",
-        "gold": "rashmi ranasinghe",
+        "doc_id": "SYN_T0029_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": []
       },
       {
@@ -1931,6 +1571,12 @@
         "predicted": []
       },
       {
+        "doc_id": "SYN_T0030_transcript_u001_v1",
+        "label": "PERSON",
+        "gold": "ගයාන්",
+        "predicted": []
+      },
+      {
         "doc_id": "SYN_T0030_c2_u001_en_v1",
         "label": "ORG",
         "gold": "NSB",
@@ -1943,9 +1589,9 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0030_c2_u002_si_v1",
+        "doc_id": "SYN_T0030_c2_u001_si_v1",
         "label": "PERSON",
-        "gold": "ශානිකා",
+        "gold": "ගයාන්",
         "predicted": []
       },
       {
@@ -1970,25 +1616,9 @@
         "doc_id": "SYN_T0030_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Gayan",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0030_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "NSB",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0030_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Isuru Abeysekara",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0031_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
+        "predicted": [
+          "ORG:Gayan of NSB handled a call"
+        ]
       },
       {
         "doc_id": "SYN_T0031_transcript_u001_v1",
@@ -2000,18 +1630,6 @@
         "doc_id": "SYN_T0031_c2_u001_en_v1",
         "label": "PERSON",
         "gold": "Yasodha",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0031_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0031_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
         "predicted": []
       },
       {
@@ -2033,21 +1651,23 @@
         "predicted": []
       },
       {
+        "doc_id": "SYN_T0031_c2_u008_si_v1",
+        "label": "PERSON",
+        "gold": "ගයාන් කුමාර",
+        "predicted": []
+      },
+      {
         "doc_id": "SYN_T0031_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Yasodha",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0031_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
+        "predicted": [
+          "ORG:Yasodha of Ceylinco Insurance"
+        ]
       },
       {
         "doc_id": "SYN_T0031_c2_summary_en_v1",
         "label": "PERSON",
-        "gold": "Gayan Kumara",
+        "gold": "Amal Pathirana",
         "predicted": []
       },
       {
@@ -2087,18 +1707,6 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0032_transcript_u002_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0032_c2_u002_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0032_c2_u002_si_v1",
         "label": "PERSON",
         "gold": "ජනක",
@@ -2114,12 +1722,6 @@
         "doc_id": "SYN_T0032_c2_summary_en_v1",
         "label": "ORG",
         "gold": "Hutch",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0032_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka Samarakoon",
         "predicted": []
       },
       {
@@ -2180,9 +1782,19 @@
         "doc_id": "SYN_T0033_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Amal",
-        "predicted": [
-          "ORG:Amal of Hutch"
-        ]
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0033_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0033_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Isuru Weerasinghe",
+        "predicted": []
       },
       {
         "doc_id": "SYN_T0034_transcript_u001_v1",
@@ -2228,16 +1840,22 @@
       },
       {
         "doc_id": "SYN_T0034_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Hutch",
+        "label": "PERSON",
+        "gold": "Madhavi",
         "predicted": [
-          "PERSON:Madhavi of Hutch"
+          "ORG:Madhavi of"
         ]
       },
       {
-        "doc_id": "SYN_T0035_transcript_u001_v1",
+        "doc_id": "SYN_T0034_c2_summary_en_v1",
         "label": "ORG",
-        "gold": "SLT",
+        "gold": "Hutch",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0034_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Isuru Weerasinghe",
         "predicted": []
       },
       {
@@ -2254,20 +1872,16 @@
       },
       {
         "doc_id": "SYN_T0035_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0035_c2_u001_si_v1",
         "label": "PERSON",
         "gold": "ගයාන්",
-        "predicted": []
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් ගයාන්"
+        ]
       },
       {
-        "doc_id": "SYN_T0035_transcript_u003_v1",
+        "doc_id": "SYN_T0035_c2_u003_en_v1",
         "label": "PERSON",
-        "gold": "අමල් ඒකනායක",
+        "gold": "Amal Ekanayake",
         "predicted": []
       },
       {
@@ -2283,12 +1897,6 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0035_c2_u012_si_v1",
-        "label": "PERSON",
-        "gold": "අමල් සමරකෝන්",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0035_c2_u014_si_v1",
         "label": "ADDRESS",
         "gold": "207, මහනුවර පාර, යාපනය",
@@ -2298,42 +1906,20 @@
         "doc_id": "SYN_T0035_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Gayan",
-        "predicted": []
+        "predicted": [
+          "ORG:Gayan of SLT"
+        ]
       },
       {
         "doc_id": "SYN_T0035_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
+        "label": "PERSON",
+        "gold": "Amal Ekanayake",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0035_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Amal Samarakoon",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0036_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0036_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0036_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0036_transcript_u003_v1",
-        "label": "PERSON",
-        "gold": "Janaka Weerasinghe",
         "predicted": []
       },
       {
@@ -2362,44 +1948,16 @@
       },
       {
         "doc_id": "SYN_T0036_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0036_c2_summary_en_v1",
         "label": "PERSON",
-        "gold": "Janaka Weerasinghe",
-        "predicted": []
+        "gold": "Saman",
+        "predicted": [
+          "ORG:Saman of Ceylinco Insurance"
+        ]
       },
       {
         "doc_id": "SYN_T0036_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Isuru Ranasinghe",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0037_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0037_transcript_u001_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0037_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0037_c2_u001_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
         "predicted": []
       },
       {
@@ -2410,6 +1968,12 @@
       },
       {
         "doc_id": "SYN_T0037_transcript_u003_v1",
+        "label": "PERSON",
+        "gold": "Isuru Ranasinghe",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0037_c2_u003_en_v1",
         "label": "PERSON",
         "gold": "Isuru Ranasinghe",
         "predicted": []
@@ -2427,22 +1991,18 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0037_transcript_u015_v1",
+        "doc_id": "SYN_T0037_c2_u015_si_v1",
         "label": "PERSON",
         "gold": "සමන් ඒකනායක",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0037_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0037_c2_summary_en_v1",
         "label": "ORG",
         "gold": "SLT",
-        "predicted": []
+        "predicted": [
+          "PERSON:Janaka of SLT"
+        ]
       },
       {
         "doc_id": "SYN_T0037_c2_summary_en_v1",
@@ -2457,12 +2017,6 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0038_transcript_u001_v1",
-        "label": "PERSON",
-        "gold": "අංජලී",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0038_c2_u001_en_v1",
         "label": "ORG",
         "gold": "NSB",
@@ -2472,18 +2026,6 @@
         "doc_id": "SYN_T0038_c2_u001_si_v1",
         "label": "ORG",
         "gold": "ජාතික ඉතිරිකිරීමේ බැංකුව",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0038_transcript_u003_v1",
-        "label": "PERSON",
-        "gold": "රශ්මි ලියනගේ",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0038_c2_u003_si_v1",
-        "label": "PERSON",
-        "gold": "රශ්මි ලියනගේ",
         "predicted": []
       },
       {
@@ -2500,14 +2042,20 @@
       },
       {
         "doc_id": "SYN_T0039_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0039_transcript_u001_v1",
         "label": "PERSON",
         "gold": "janaka",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0039_c2_u001_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": []
       },
       {
@@ -2517,12 +2065,16 @@
         "predicted": []
       },
       {
+        "doc_id": "SYN_T0039_c2_u003_si_v1",
+        "label": "PERSON",
+        "gold": "බුද්ධික කුමාර",
+        "predicted": []
+      },
+      {
         "doc_id": "SYN_T0039_transcript_u007_v1",
         "label": "ADDRESS",
         "gold": "202, Kandy Road, Panadura",
-        "predicted": [
-          "PERSON:Panadura"
-        ]
+        "predicted": []
       },
       {
         "doc_id": "SYN_T0039_c2_u007_si_v1",
@@ -2532,38 +2084,16 @@
       },
       {
         "doc_id": "SYN_T0039_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
+        "label": "ORG",
+        "gold": "Seylan Bank",
+        "predicted": [
+          "PERSON:Janaka of Seylan"
+        ]
       },
       {
         "doc_id": "SYN_T0039_c2_summary_en_v1",
         "label": "PHONE",
         "gold": "0715903523",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0040_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0040_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0040_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0040_transcript_u002_v1",
-        "label": "PERSON",
-        "gold": "Yasodha",
         "predicted": []
       },
       {
@@ -2604,8 +2134,16 @@
       },
       {
         "doc_id": "SYN_T0040_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
+        "label": "PERSON",
+        "gold": "Saman",
+        "predicted": [
+          "ORG:Saman of Ceylinco Insurance"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0040_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Yasodha Abeysekara",
         "predicted": []
       },
       {
@@ -2616,8 +2154,20 @@
       },
       {
         "doc_id": "SYN_T0041_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0041_transcript_u001_v1",
         "label": "PERSON",
         "gold": "මාධවී",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0041_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": []
       },
       {
@@ -2651,11 +2201,17 @@
         "predicted": []
       },
       {
+        "doc_id": "SYN_T0041_c2_u003_si_v1",
+        "label": "PERSON",
+        "gold": "සමන් කුමාර",
+        "predicted": []
+      },
+      {
         "doc_id": "SYN_T0041_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Seylan Bank",
+        "label": "PERSON",
+        "gold": "Madhavi",
         "predicted": [
-          "PERSON:Madhavi of Seylan"
+          "ORG:Madhavi of Seylan Bank"
         ]
       },
       {
@@ -2701,18 +2257,6 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0042_transcript_u002_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0042_c2_u002_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0042_c2_u002_si_v1",
         "label": "PERSON",
         "gold": "ජනක",
@@ -2731,20 +2275,6 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0042_transcript_u006_v1",
-        "label": "ADDRESS",
-        "gold": "183/2, Circular Road, Kalutara",
-        "predicted": [
-          "PERSON:Kalutara"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0042_c2_u006_si_v1",
-        "label": "ADDRESS",
-        "gold": "183/2, වටරවුම් පාර, කළුතර",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0042_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Yasodha",
@@ -2757,15 +2287,21 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0042_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Gayan Abeysekara",
+        "doc_id": "SYN_T0043_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0043_transcript_u001_v1",
         "label": "PERSON",
         "gold": "යශෝධා",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0043_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": []
       },
       {
@@ -2781,25 +2317,45 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0043_transcript_u003_v1",
-        "label": "PERSON",
-        "gold": "ශානිකා වීරසිංහ",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0043_c2_u003_si_v1",
-        "label": "PERSON",
-        "gold": "ශානිකා වීරසිංහ",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0043_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Yasodha",
+        "predicted": [
+          "ORG:Yasodha of Seylan Bank"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0044_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0044_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0044_c2_u001_en_v1",
+        "label": "PERSON",
+        "gold": "Piumi",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0044_c2_u001_si_v1",
+        "label": "PERSON",
+        "gold": "පියුමි",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0044_transcript_u003_v1",
+        "label": "PERSON",
+        "gold": "Amal Ranasinghe",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0044_c2_u003_en_v1",
         "label": "PERSON",
         "gold": "Amal Ranasinghe",
         "predicted": []
@@ -2818,16 +2374,16 @@
       },
       {
         "doc_id": "SYN_T0044_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Seylan Bank",
+        "label": "PERSON",
+        "gold": "Piumi",
         "predicted": [
-          "PERSON:Piumi of Seylan"
+          "ORG:Piumi of Seylan Bank"
         ]
       },
       {
-        "doc_id": "SYN_T0045_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
+        "doc_id": "SYN_T0044_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Amal Ranasinghe",
         "predicted": []
       },
       {
@@ -2844,14 +2400,22 @@
       },
       {
         "doc_id": "SYN_T0045_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "label": "PERSON",
+        "gold": "ගයාන්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් ගයාන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0045_transcript_u005_v1",
+        "label": "ADDRESS",
+        "gold": "240/3, උද්‍යාන මාවත, යාපනය",
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0045_c2_u001_si_v1",
-        "label": "PERSON",
-        "gold": "ගයාන්",
+        "doc_id": "SYN_T0045_c2_u005_si_v1",
+        "label": "ADDRESS",
+        "gold": "240/3, උද්‍යාන මාවත, යාපනය",
         "predicted": []
       },
       {
@@ -2867,16 +2431,18 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0045_c2_summary_en_v1",
+        "doc_id": "SYN_T0045_c2_u008_si_v1",
         "label": "PERSON",
-        "gold": "Gayan",
+        "gold": "අමල් රණසිංහ",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0045_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
+        "label": "PERSON",
+        "gold": "Gayan",
+        "predicted": [
+          "ORG:Gayan of SLT"
+        ]
       },
       {
         "doc_id": "SYN_T0045_c2_summary_en_v1",
@@ -2886,14 +2452,8 @@
       },
       {
         "doc_id": "SYN_T0046_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0046_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
+        "label": "PERSON",
+        "gold": "Yasodha",
         "predicted": []
       },
       {
@@ -2909,15 +2469,9 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0046_transcript_u003_v1",
+        "doc_id": "SYN_T0046_c2_u003_en_v1",
         "label": "PERSON",
-        "gold": "පියුමි සමරකෝන්",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0046_c2_u003_si_v1",
-        "label": "PERSON",
-        "gold": "පියුමි සමරකෝන්",
+        "gold": "Piumi Samarakoon",
         "predicted": []
       },
       {
@@ -2928,8 +2482,8 @@
       },
       {
         "doc_id": "SYN_T0046_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
+        "label": "PERSON",
+        "gold": "Piumi Samarakoon",
         "predicted": []
       },
       {
@@ -2948,12 +2502,6 @@
         "doc_id": "SYN_T0047_c2_u001_en_v1",
         "label": "ORG",
         "gold": "Hutch",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0047_c2_u001_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
         "predicted": []
       },
       {
@@ -2969,15 +2517,15 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0047_c2_u008_si_v1",
-        "label": "ADDRESS",
-        "gold": "156, පල්ලිය වීදිය, යාපනය",
+        "doc_id": "SYN_T0047_c2_u002_si_v1",
+        "label": "PERSON",
+        "gold": "ගයාන්",
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0047_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
+        "doc_id": "SYN_T0047_c2_u008_si_v1",
+        "label": "ADDRESS",
+        "gold": "156, පල්ලිය වීදිය, යාපනය",
         "predicted": []
       },
       {
@@ -3017,18 +2565,6 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0048_transcript_u002_v1",
-        "label": "PERSON",
-        "gold": "Buddhika",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0048_c2_u002_en_v1",
-        "label": "PERSON",
-        "gold": "Buddhika",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0048_c2_u002_si_v1",
         "label": "PERSON",
         "gold": "බුද්ධික",
@@ -3038,14 +2574,6 @@
         "doc_id": "SYN_T0048_c2_summary_en_v1",
         "label": "ORG",
         "gold": "Hutch",
-        "predicted": [
-          "PERSON:Rashmi of Hutch"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0049_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
         "predicted": []
       },
       {
@@ -3055,39 +2583,9 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0049_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0049_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
-        "predicted": []
-      },
-      {
         "doc_id": "SYN_T0049_c2_u001_si_v1",
         "label": "PERSON",
         "gold": "මාධවී",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0049_transcript_u003_v1",
-        "label": "PERSON",
-        "gold": "අංජලී ලියනගේ",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0049_c2_u003_si_v1",
-        "label": "PERSON",
-        "gold": "අංජලී ලියනගේ",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0049_transcript_u005_v1",
-        "label": "ADDRESS",
-        "gold": "215, වටරවුම් පාර, කළුතර",
         "predicted": []
       },
       {
@@ -3113,7 +2611,7 @@
         "label": "PERSON",
         "gold": "Madhavi",
         "predicted": [
-          "ORG:Madhavi of Ceylinco"
+          "ORG:Madhavi of Ceylinco Insurance"
         ]
       },
       {
@@ -3124,50 +2622,14 @@
       },
       {
         "doc_id": "SYN_T0050_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0050_transcript_u001_v1",
         "label": "PERSON",
         "gold": "ජනක",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0050_c2_u001_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0050_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0050_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0050_c2_u001_si_v1",
         "label": "PERSON",
         "gold": "ජනක",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0050_transcript_u003_v1",
-        "label": "PERSON",
-        "gold": "janaka liyanage",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0050_c2_u003_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka Liyanage",
         "predicted": []
       },
       {
@@ -3184,21 +2646,11 @@
       },
       {
         "doc_id": "SYN_T0050_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0050_c2_summary_en_v1",
         "label": "ORG",
         "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0050_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka Liyanage",
-        "predicted": []
+        "predicted": [
+          "PERSON:Janaka of Ceylinco Insurance"
+        ]
       },
       {
         "doc_id": "SYN_T0051_transcript_u001_v1",
@@ -3222,12 +2674,6 @@
         "doc_id": "SYN_T0051_c2_u001_si_v1",
         "label": "ORG",
         "gold": "හච්",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0051_c2_u001_si_v1",
-        "label": "PERSON",
-        "gold": "ශානිකා",
         "predicted": []
       },
       {
@@ -3270,7 +2716,9 @@
         "doc_id": "SYN_T0051_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Shanika",
-        "predicted": []
+        "predicted": [
+          "ORG:Shanika of"
+        ]
       },
       {
         "doc_id": "SYN_T0051_c2_summary_en_v1",
@@ -3286,38 +2734,26 @@
       },
       {
         "doc_id": "SYN_T0052_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0052_transcript_u001_v1",
         "label": "PERSON",
         "gold": "Isuru",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0052_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0052_c2_u001_en_v1",
         "label": "PERSON",
         "gold": "Isuru",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0052_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0052_c2_u001_si_v1",
         "label": "PERSON",
         "gold": "ඉසුරු",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0052_c2_u002_en_v1",
+        "label": "PERSON",
+        "gold": "Piumi",
         "predicted": []
       },
       {
@@ -3346,14 +2782,32 @@
       },
       {
         "doc_id": "SYN_T0052_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
+        "label": "PERSON",
+        "gold": "Piumi Ekanayake",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0052_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Isuru Pathirana",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0053_transcript_u001_v1",
+        "label": "PERSON",
+        "gold": "ගයාන්",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0053_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0053_c2_u001_si_v1",
+        "label": "PERSON",
+        "gold": "ගයාන්",
         "predicted": []
       },
       {
@@ -3389,15 +2843,17 @@
         ]
       },
       {
-        "doc_id": "SYN_T0053_c2_summary_en_v1",
+        "doc_id": "SYN_T0054_transcript_u001_v1",
         "label": "PERSON",
-        "gold": "Gayan Weerasinghe",
-        "predicted": []
+        "gold": "Piumi",
+        "predicted": [
+          "ORG:SLT eken Piumi"
+        ]
       },
       {
-        "doc_id": "SYN_T0054_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
+        "doc_id": "SYN_T0054_c2_u001_en_v1",
+        "label": "PERSON",
+        "gold": "Piumi",
         "predicted": []
       },
       {
@@ -3408,44 +2864,16 @@
       },
       {
         "doc_id": "SYN_T0054_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0054_c2_u001_si_v1",
         "label": "PERSON",
         "gold": "පියුමි",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0054_transcript_u002_v1",
-        "label": "PERSON",
-        "gold": "Anjali",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0054_c2_u002_en_v1",
-        "label": "PERSON",
-        "gold": "Anjali",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0054_c2_u002_si_v1",
-        "label": "PERSON",
-        "gold": "අංජලී",
-        "predicted": []
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් පියුමි"
+        ]
       },
       {
         "doc_id": "SYN_T0054_transcript_u011_v1",
         "label": "PERSON",
         "gold": "gayan liyanage",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0054_c2_u011_en_v1",
-        "label": "PERSON",
-        "gold": "Gayan Liyanage",
         "predicted": []
       },
       {
@@ -3456,38 +2884,14 @@
       },
       {
         "doc_id": "SYN_T0054_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0054_c2_summary_en_v1",
         "label": "PERSON",
-        "gold": "Gayan Liyanage",
+        "gold": "Piumi",
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0055_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0055_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0055_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0055_c2_u003_si_v1",
+        "doc_id": "SYN_T0055_transcript_u003_v1",
         "label": "PERSON",
-        "gold": "පියුමි ලියනගේ",
+        "gold": "Piumi Liyanage",
         "predicted": []
       },
       {
@@ -3516,9 +2920,11 @@
       },
       {
         "doc_id": "SYN_T0055_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
-        "predicted": []
+        "label": "PERSON",
+        "gold": "Saman",
+        "predicted": [
+          "ORG:Saman of Ceylinco Insurance"
+        ]
       },
       {
         "doc_id": "SYN_T0055_c2_summary_en_v1",
@@ -3528,32 +2934,8 @@
       },
       {
         "doc_id": "SYN_T0056_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0056_transcript_u001_v1",
         "label": "PERSON",
         "gold": "anjali",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0056_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0056_transcript_u002_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0056_c2_u002_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
         "predicted": []
       },
       {
@@ -3588,18 +2970,6 @@
       },
       {
         "doc_id": "SYN_T0056_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "SLT",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0056_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka Liyanage",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0056_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Isuru Pathirana",
         "predicted": []
@@ -3623,20 +2993,6 @@
         "predicted": []
       },
       {
-        "doc_id": "SYN_T0057_c2_u003_si_v1",
-        "label": "PERSON",
-        "gold": "ශානිකා අබේසේකර",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0057_transcript_u005_v1",
-        "label": "ADDRESS",
-        "gold": "166, Circular Road, Kalutara",
-        "predicted": [
-          "PERSON:Kalutara"
-        ]
-      },
-      {
         "doc_id": "SYN_T0057_c2_u005_si_v1",
         "label": "ADDRESS",
         "gold": "166, වටරවුම් පාර, කළුතර",
@@ -3656,12 +3012,6 @@
       },
       {
         "doc_id": "SYN_T0058_transcript_u001_v1",
-        "label": "PERSON",
-        "gold": "Shanika",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0058_c2_u001_en_v1",
         "label": "PERSON",
         "gold": "Shanika",
         "predicted": []
@@ -3727,6 +3077,18 @@
         "predicted": []
       },
       {
+        "doc_id": "SYN_T0058_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Yasodha Pathirana",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0059_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
+        "predicted": []
+      },
+      {
         "doc_id": "SYN_T0059_transcript_u001_v1",
         "label": "PERSON",
         "gold": "Anjali",
@@ -3739,21 +3101,15 @@
         "predicted": []
       },
       {
+        "doc_id": "SYN_T0059_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
+        "predicted": []
+      },
+      {
         "doc_id": "SYN_T0059_c2_u001_si_v1",
         "label": "PERSON",
         "gold": "අංජලී",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0059_transcript_u002_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0059_c2_u002_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka",
         "predicted": []
       },
       {
@@ -3791,31 +3147,13 @@
       {
         "doc_id": "SYN_T0059_c2_summary_en_v1",
         "label": "PERSON",
-        "gold": "Janaka Kumara",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0059_c2_summary_en_v1",
-        "label": "PERSON",
         "gold": "Amal Ekanayake",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0060_transcript_u001_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
         "predicted": []
       },
       {
         "doc_id": "SYN_T0060_transcript_u001_v1",
         "label": "PERSON",
         "gold": "ඉසුරු",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0060_c2_u001_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
         "predicted": []
       },
       {
@@ -3826,20 +3164,8 @@
       },
       {
         "doc_id": "SYN_T0060_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලින්කෝ රක්ෂණ",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0060_c2_u001_si_v1",
         "label": "PERSON",
         "gold": "ඉසුරු",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0060_transcript_u002_v1",
-        "label": "PERSON",
-        "gold": "madhavi",
         "predicted": []
       },
       {
@@ -3861,27 +3187,31 @@
         "predicted": []
       },
       {
+        "doc_id": "SYN_T0060_c2_u003_si_v1",
+        "label": "PERSON",
+        "gold": "අමල් කුමාර",
+        "predicted": []
+      },
+      {
         "doc_id": "SYN_T0060_transcript_u004_v1",
         "label": "ADDRESS",
         "gold": "134, Park Avenue, Anuradhapura",
-        "predicted": []
+        "predicted": [
+          "PERSON:Avenue"
+        ]
       },
       {
         "doc_id": "SYN_T0060_c2_u004_si_v1",
         "label": "ADDRESS",
         "gold": "134, උද්‍යාන මාවත, අනුරාධපුරය",
-        "predicted": []
+        "predicted": [
+          "ORG:උද්‍යාන මාවත, අනුරාධපුරය"
+        ]
       },
       {
         "doc_id": "SYN_T0060_c2_summary_en_v1",
         "label": "PERSON",
         "gold": "Isuru",
-        "predicted": []
-      },
-      {
-        "doc_id": "SYN_T0060_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Ceylinco Insurance",
         "predicted": []
       },
       {
@@ -3894,26 +3224,58 @@
     "boundary": [
       {
         "doc_id": "SYN_T0002_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "Hutch",
+        "label": "PERSON",
+        "gold": "Buddhika",
         "predicted": [
-          "ORG:Buddhika of Hutch"
+          "PERSON:Buddhika of"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0003_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ"
         ]
       },
       {
         "doc_id": "SYN_T0004_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Piumi",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": [
-          "PERSON:Piumi of Seylan"
+          "ORG:Piumi of Seylan Bank"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0005_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0005_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Ceylinco Insurance",
+        "predicted": [
+          "ORG:Shanika of Ceylinco Insurance"
         ]
       },
       {
         "doc_id": "SYN_T0006_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Saman",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": [
-          "PERSON:Saman of Seylan"
+          "ORG:Saman of Seylan Bank"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0007_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ"
         ]
       },
       {
@@ -3921,7 +3283,7 @@
         "label": "ORG",
         "gold": "Ceylinco Insurance",
         "predicted": [
-          "ORG:Madhavi of Ceylinco"
+          "ORG:Madhavi of Ceylinco Insurance"
         ]
       },
       {
@@ -3929,47 +3291,15 @@
         "label": "ORG",
         "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
         "predicted": [
-          "ORG:ලංකා ටෙලිකොම්"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0009_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Madhavi",
-        "predicted": [
-          "PERSON:Madhavi of"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0010_transcript_u009_v1",
-        "label": "PERSON",
-        "gold": "Saman Liyanage",
-        "predicted": [
-          "PERSON:Saman"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0010_c2_u009_en_v1",
-        "label": "PERSON",
-        "gold": "Saman Liyanage",
-        "predicted": [
-          "PERSON:Saman"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0010_c2_u009_si_v1",
-        "label": "PERSON",
-        "gold": "සමන් ලියනගේ",
-        "predicted": [
-          "PERSON:සමන්"
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ඇමතීම ගැන"
         ]
       },
       {
         "doc_id": "SYN_T0010_c2_summary_en_v1",
         "label": "PERSON",
-        "gold": "Saman Liyanage",
+        "gold": "Buddhika",
         "predicted": [
-          "PERSON:Saman"
+          "PERSON:Buddhika of"
         ]
       },
       {
@@ -3977,7 +3307,7 @@
         "label": "PERSON",
         "gold": "Rashmi",
         "predicted": [
-          "PERSON:Rashmi of Hutch"
+          "PERSON:Rashmi of"
         ]
       },
       {
@@ -3989,11 +3319,19 @@
         ]
       },
       {
-        "doc_id": "SYN_T0013_c2_u013_si_v1",
-        "label": "PERSON",
-        "gold": "සමන් සමරකෝන්",
+        "doc_id": "SYN_T0013_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
         "predicted": [
-          "PERSON:සමන්"
+          "ORG:සෙලින්කෝ"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0014_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ"
         ]
       },
       {
@@ -4001,31 +3339,23 @@
         "label": "ORG",
         "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
         "predicted": [
-          "ORG:ලංකා ටෙලිකොම්"
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ඇමතීම ගැන"
         ]
       },
       {
-        "doc_id": "SYN_T0016_c2_u007_si_v1",
-        "label": "ADDRESS",
-        "gold": "108/4, මහනුවර පාර, බදුල්ල",
+        "doc_id": "SYN_T0016_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": [
-          "ADDRESS:108/4, මහනුවර පාර, බදුල්ල වෙත එවන්න"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0017_c2_u003_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka Abeysekara",
-        "predicted": [
-          "PERSON:Abeysekara"
+          "ORG:Shanika of Seylan Bank"
         ]
       },
       {
         "doc_id": "SYN_T0017_c2_summary_en_v1",
         "label": "PERSON",
-        "gold": "Janaka Abeysekara",
+        "gold": "Buddhika",
         "predicted": [
-          "PERSON:Abeysekara"
+          "PERSON:Buddhika of"
         ]
       },
       {
@@ -4033,7 +3363,23 @@
         "label": "ORG",
         "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
         "predicted": [
-          "ORG:ලංකා ටෙලිකොම්"
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ඇමතීම ගැන"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0019_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0019_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Janaka",
+        "predicted": [
+          "PERSON:Janaka of SLT"
         ]
       },
       {
@@ -4041,15 +3387,119 @@
         "label": "ORG",
         "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
         "predicted": [
-          "ORG:ලංකා ටෙලිකොම්"
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ඇමතීම ගැන"
         ]
       },
       {
-        "doc_id": "SYN_T0024_c2_summary_en_v1",
+        "doc_id": "SYN_T0020_transcript_u003_v1",
+        "label": "PERSON",
+        "gold": "රශ්මි ඒකනායක",
+        "predicted": [
+          "PERSON:රශ්මි"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0020_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Buddhika",
+        "predicted": [
+          "PERSON:Buddhika of SLT"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0021_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0021_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Ceylinco Insurance",
+        "predicted": [
+          "ORG:Gayan of Ceylinco Insurance"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0022_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් ගයාන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0022_c2_u003_si_v1",
+        "label": "PERSON",
+        "gold": "ගයාන් සමරකෝන්",
+        "predicted": [
+          "PERSON:සමරකෝන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0022_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "SLT",
+        "predicted": [
+          "ORG:Gayan of SLT"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0023_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0023_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Janaka",
+        "predicted": [
+          "PERSON:Janaka of SLT"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0025_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් රශ්මි"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0025_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Rashmi",
+        "predicted": [
+          "PERSON:Rashmi of SLT"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0026_c2_summary_en_v1",
         "label": "ORG",
         "gold": "Seylan Bank",
         "predicted": [
-          "ORG:Amal of Seylan Bank"
+          "ORG:Yasodha of Seylan Bank"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0027_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් අංජලී"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0028_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Janaka",
+        "predicted": [
+          "PERSON:Janaka of"
         ]
       },
       {
@@ -4061,27 +3511,75 @@
         ]
       },
       {
-        "doc_id": "SYN_T0033_c2_summary_en_v1",
+        "doc_id": "SYN_T0030_c2_summary_en_v1",
         "label": "ORG",
-        "gold": "Hutch",
+        "gold": "NSB",
         "predicted": [
-          "ORG:Amal of Hutch"
+          "ORG:Gayan of NSB handled a call"
         ]
       },
       {
-        "doc_id": "SYN_T0034_c2_summary_en_v1",
+        "doc_id": "SYN_T0030_c2_summary_en_v1",
         "label": "PERSON",
-        "gold": "Madhavi",
+        "gold": "Isuru Abeysekara",
         "predicted": [
-          "PERSON:Madhavi of Hutch"
+          "PERSON:Abeysekara"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0031_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0031_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Ceylinco Insurance",
+        "predicted": [
+          "ORG:Yasodha of Ceylinco Insurance"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0035_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් ගයාන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0035_transcript_u003_v1",
+        "label": "PERSON",
+        "gold": "අමල් ඒකනායක",
+        "predicted": [
+          "PERSON:අමල්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0035_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "SLT",
+        "predicted": [
+          "ORG:Gayan of SLT"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0036_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ"
         ]
       },
       {
         "doc_id": "SYN_T0036_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Saman",
+        "label": "ORG",
+        "gold": "Ceylinco Insurance",
         "predicted": [
-          "PERSON:Saman of"
+          "ORG:Saman of Ceylinco Insurance"
         ]
       },
       {
@@ -4089,11 +3587,11 @@
         "label": "ORG",
         "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
         "predicted": [
-          "ORG:ලංකා ටෙලිකොම්"
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ඇමතීම ගැන"
         ]
       },
       {
-        "doc_id": "SYN_T0037_c2_u015_si_v1",
+        "doc_id": "SYN_T0037_transcript_u015_v1",
         "label": "PERSON",
         "gold": "සමන් ඒකනායක",
         "predicted": [
@@ -4101,83 +3599,75 @@
         ]
       },
       {
-        "doc_id": "SYN_T0038_c2_u005_si_v1",
+        "doc_id": "SYN_T0037_c2_summary_en_v1",
         "label": "PERSON",
-        "gold": "සමන් වීරසිංහ",
+        "gold": "Janaka",
         "predicted": [
-          "PERSON:සමන්"
+          "PERSON:Janaka of SLT"
         ]
       },
       {
-        "doc_id": "SYN_T0038_c2_u007_si_v1",
-        "label": "ADDRESS",
-        "gold": "240/3, වටරවුම් පාර, අනුරාධපුරය",
+        "doc_id": "SYN_T0039_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Janaka",
         "predicted": [
-          "ADDRESS:240/3, වටරවුම් පාර, අනුරාධපුරය වෙත එවන්න"
+          "PERSON:Janaka of Seylan"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0040_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ"
         ]
       },
       {
         "doc_id": "SYN_T0040_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Saman",
+        "label": "ORG",
+        "gold": "Ceylinco Insurance",
         "predicted": [
-          "PERSON:Saman of"
+          "ORG:Saman of Ceylinco Insurance"
         ]
       },
       {
         "doc_id": "SYN_T0041_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Madhavi",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": [
-          "PERSON:Madhavi of Seylan"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0042_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Janaka Abeysekara",
-        "predicted": [
-          "PERSON:Abeysekara"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0043_transcript_u005_v1",
-        "label": "PERSON",
-        "gold": "Saman Liyanage",
-        "predicted": [
-          "PERSON:Saman"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0043_c2_u005_en_v1",
-        "label": "PERSON",
-        "gold": "Saman Liyanage",
-        "predicted": [
-          "PERSON:Saman"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0043_c2_u005_si_v1",
-        "label": "PERSON",
-        "gold": "සමන් ලියනගේ",
-        "predicted": [
-          "PERSON:සමන්"
+          "ORG:Madhavi of Seylan Bank"
         ]
       },
       {
         "doc_id": "SYN_T0043_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Saman Liyanage",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": [
-          "PERSON:Saman"
+          "ORG:Yasodha of Seylan Bank"
         ]
       },
       {
         "doc_id": "SYN_T0044_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Piumi",
+        "label": "ORG",
+        "gold": "Seylan Bank",
         "predicted": [
-          "PERSON:Piumi of Seylan"
+          "ORG:Piumi of Seylan Bank"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0045_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් ගයාන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0045_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "SLT",
+        "predicted": [
+          "ORG:Gayan of SLT"
         ]
       },
       {
@@ -4185,15 +3675,15 @@
         "label": "ORG",
         "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
         "predicted": [
-          "ORG:ලංකා ටෙලිකොම්"
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ඇමතීම ගැන"
         ]
       },
       {
-        "doc_id": "SYN_T0047_c2_u006_si_v1",
+        "doc_id": "SYN_T0047_c2_summary_en_v1",
         "label": "PERSON",
-        "gold": "සමන් වීරසිංහ",
+        "gold": "Janaka",
         "predicted": [
-          "PERSON:සමන්"
+          "PERSON:Janaka of"
         ]
       },
       {
@@ -4201,15 +3691,15 @@
         "label": "PERSON",
         "gold": "Rashmi",
         "predicted": [
-          "PERSON:Rashmi of Hutch"
+          "PERSON:Rashmi of"
         ]
       },
       {
-        "doc_id": "SYN_T0049_c2_u008_si_v1",
-        "label": "PERSON",
-        "gold": "අමල් පතිරණ",
+        "doc_id": "SYN_T0049_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
         "predicted": [
-          "PERSON:අමල්"
+          "ORG:සෙලින්කෝ"
         ]
       },
       {
@@ -4217,7 +3707,31 @@
         "label": "ORG",
         "gold": "Ceylinco Insurance",
         "predicted": [
-          "ORG:Madhavi of Ceylinco"
+          "ORG:Madhavi of Ceylinco Insurance"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0050_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0050_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Janaka",
+        "predicted": [
+          "PERSON:Janaka of Ceylinco Insurance"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0052_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ"
         ]
       },
       {
@@ -4229,19 +3743,35 @@
         ]
       },
       {
-        "doc_id": "SYN_T0054_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Piumi",
+        "doc_id": "SYN_T0054_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "SLT",
         "predicted": [
-          "PERSON:Piumi of"
+          "ORG:SLT eken Piumi"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0054_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන් පියුමි"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0055_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ"
         ]
       },
       {
         "doc_id": "SYN_T0055_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Saman",
+        "label": "ORG",
+        "gold": "Ceylinco Insurance",
         "predicted": [
-          "PERSON:Saman of"
+          "ORG:Saman of Ceylinco Insurance"
         ]
       },
       {
@@ -4249,7 +3779,7 @@
         "label": "ORG",
         "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
         "predicted": [
-          "ORG:ලංකා ටෙලිකොම්"
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ඇමතීම ගැන"
         ]
       },
       {
@@ -4267,23 +3797,23 @@
         "predicted": [
           "ORG:Anjali of Seylan Bank"
         ]
+      },
+      {
+        "doc_id": "SYN_T0060_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ"
+        ]
       }
     ],
     "label": [
       {
-        "doc_id": "SYN_T0004_c2_u001_si_v1",
+        "doc_id": "SYN_T0003_c2_u001_en_v1",
         "label": "ORG",
-        "gold": "සෙලාන් බැංකුව",
+        "gold": "Ceylinco Insurance",
         "predicted": [
-          "PERSON:සෙලාන් බැංකුව"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0006_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලාන් බැංකුව",
-        "predicted": [
-          "PERSON:සෙලාන් බැංකුව"
+          "PERSON:Ceylinco Insurance"
         ]
       },
       {
@@ -4303,11 +3833,11 @@
         ]
       },
       {
-        "doc_id": "SYN_T0016_c2_u001_si_v1",
+        "doc_id": "SYN_T0014_c2_u001_en_v1",
         "label": "ORG",
-        "gold": "සෙලාන් බැංකුව",
+        "gold": "Ceylinco Insurance",
         "predicted": [
-          "PERSON:සෙලාන් බැංකුව"
+          "PERSON:Ceylinco Insurance"
         ]
       },
       {
@@ -4319,35 +3849,11 @@
         ]
       },
       {
-        "doc_id": "SYN_T0024_c2_u001_si_v1",
+        "doc_id": "SYN_T0031_c2_u001_en_v1",
         "label": "ORG",
-        "gold": "සෙලාන් බැංකුව",
+        "gold": "Ceylinco Insurance",
         "predicted": [
-          "PERSON:සෙලාන් බැංකුව"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0026_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලාන් බැංකුව",
-        "predicted": [
-          "PERSON:සෙලාන් බැංකුව"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0029_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලාන් බැංකුව",
-        "predicted": [
-          "PERSON:සෙලාන් බැංකුව"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0031_c2_summary_en_v1",
-        "label": "PERSON",
-        "gold": "Amal Pathirana",
-        "predicted": [
-          "ORG:Amal Pathirana"
+          "PERSON:Ceylinco Insurance"
         ]
       },
       {
@@ -4359,35 +3865,11 @@
         ]
       },
       {
-        "doc_id": "SYN_T0039_c2_u001_si_v1",
+        "doc_id": "SYN_T0040_c2_u001_en_v1",
         "label": "ORG",
-        "gold": "සෙලාන් බැංකුව",
+        "gold": "Ceylinco Insurance",
         "predicted": [
-          "PERSON:සෙලාන් බැංකුව"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0041_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලාන් බැංකුව",
-        "predicted": [
-          "PERSON:සෙලාන් බැංකුව"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0043_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලාන් බැංකුව",
-        "predicted": [
-          "PERSON:සෙලාන් බැංකුව"
-        ]
-      },
-      {
-        "doc_id": "SYN_T0044_c2_u001_si_v1",
-        "label": "ORG",
-        "gold": "සෙලාන් බැංකුව",
-        "predicted": [
-          "PERSON:සෙලාන් බැංකුව"
+          "PERSON:Ceylinco Insurance"
         ]
       },
       {
@@ -4399,19 +3881,19 @@
         ]
       },
       {
-        "doc_id": "SYN_T0053_c2_u001_si_v1",
+        "doc_id": "SYN_T0049_c2_u001_en_v1",
         "label": "ORG",
-        "gold": "සෙලාන් බැංකුව",
+        "gold": "Ceylinco Insurance",
         "predicted": [
-          "PERSON:සෙලාන් බැංකුව"
+          "PERSON:Ceylinco Insurance"
         ]
       },
       {
-        "doc_id": "SYN_T0059_c2_u001_si_v1",
+        "doc_id": "SYN_T0050_c2_u001_en_v1",
         "label": "ORG",
-        "gold": "සෙලාන් බැංකුව",
+        "gold": "Ceylinco Insurance",
         "predicted": [
-          "PERSON:සෙලාන් බැංකුව"
+          "PERSON:Ceylinco Insurance"
         ]
       }
     ],
@@ -4422,29 +3904,9 @@
         "predicted": "150000"
       },
       {
-        "doc_id": "SYN_T0002_c2_u008_en_v1",
-        "label": "PERSON",
-        "predicted": "Panadura office"
-      },
-      {
         "doc_id": "SYN_T0005_transcript_u005_v1",
         "label": "ACCOUNT",
         "predicted": "150000"
-      },
-      {
-        "doc_id": "SYN_T0008_c2_u009_en_v1",
-        "label": "ORG",
-        "predicted": "Kalutara office"
-      },
-      {
-        "doc_id": "SYN_T0010_c2_u010_en_v1",
-        "label": "ORG",
-        "predicted": "Badulla office"
-      },
-      {
-        "doc_id": "SYN_T0013_c2_summary_en_v1",
-        "label": "PERSON",
-        "predicted": "Callback"
       },
       {
         "doc_id": "SYN_T0015_transcript_u003_v1",
@@ -4452,29 +3914,14 @@
         "predicted": "150000"
       },
       {
-        "doc_id": "SYN_T0017_c2_summary_en_v1",
-        "label": "PERSON",
-        "predicted": "Callback"
-      },
-      {
-        "doc_id": "SYN_T0019_c2_summary_en_v1",
-        "label": "PERSON",
-        "predicted": "Callback"
+        "doc_id": "SYN_T0020_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "The Ratnapura office"
       },
       {
         "doc_id": "SYN_T0024_transcript_u006_v1",
         "label": "ACCOUNT",
         "predicted": "150000"
-      },
-      {
-        "doc_id": "SYN_T0025_c2_summary_en_v1",
-        "label": "PERSON",
-        "predicted": "Callback"
-      },
-      {
-        "doc_id": "SYN_T0029_c2_u010_en_v1",
-        "label": "ORG",
-        "predicted": "Kalutara office"
       },
       {
         "doc_id": "SYN_T0032_transcript_u008_v1",
@@ -4487,54 +3934,24 @@
         "predicted": "150000"
       },
       {
-        "doc_id": "SYN_T0033_c2_summary_en_v1",
-        "label": "PERSON",
-        "predicted": "Callback"
-      },
-      {
         "doc_id": "SYN_T0037_transcript_u014_v1",
         "label": "PERSON",
         "predicted": "Kalutara"
       },
       {
-        "doc_id": "SYN_T0037_c2_u014_en_v1",
-        "label": "ORG",
-        "predicted": "Kalutara office"
-      },
-      {
-        "doc_id": "SYN_T0041_c2_u006_en_v1",
-        "label": "ORG",
-        "predicted": "Kalutara office"
-      },
-      {
-        "doc_id": "SYN_T0041_c2_summary_en_v1",
+        "doc_id": "SYN_T0037_c2_u015_si_v1",
         "label": "PERSON",
-        "predicted": "Callback"
+        "predicted": "අයියා"
       },
       {
-        "doc_id": "SYN_T0043_c2_u004_en_v1",
+        "doc_id": "SYN_T0043_c2_summary_en_v1",
         "label": "ORG",
-        "predicted": "Badulla office"
+        "predicted": "The Badulla office"
       },
       {
-        "doc_id": "SYN_T0045_c2_u006_en_v1",
-        "label": "PERSON",
-        "predicted": "Panadura office"
-      },
-      {
-        "doc_id": "SYN_T0047_transcript_u003_v1",
+        "doc_id": "SYN_T0047_c2_summary_en_v1",
         "label": "ORG",
-        "predicted": "Badulla office"
-      },
-      {
-        "doc_id": "SYN_T0047_c2_u003_en_v1",
-        "label": "ORG",
-        "predicted": "Badulla office"
-      },
-      {
-        "doc_id": "SYN_T0048_c2_summary_en_v1",
-        "label": "PERSON",
-        "predicted": "Callback"
+        "predicted": "The Badulla office"
       },
       {
         "doc_id": "SYN_T0049_transcript_u004_v1",
@@ -4542,30 +3959,20 @@
         "predicted": "150000"
       },
       {
+        "doc_id": "SYN_T0050_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "The Ratnapura office"
+      },
+      {
         "doc_id": "SYN_T0051_transcript_u013_v1",
         "label": "ACCOUNT",
         "predicted": "150000"
-      },
-      {
-        "doc_id": "SYN_T0052_c2_u004_en_v1",
-        "label": "PERSON",
-        "predicted": "Panadura office"
-      },
-      {
-        "doc_id": "SYN_T0052_c2_summary_en_v1",
-        "label": "PERSON",
-        "predicted": "Callback"
-      },
-      {
-        "doc_id": "SYN_T0055_c2_summary_en_v1",
-        "label": "PERSON",
-        "predicted": "Callback"
       }
     ]
   },
   "recall_by_noise": {
     "clean": {
-      "recall": 0.5766,
+      "recall": 0.6396,
       "support": 1587
     },
     "digit_repeated": {

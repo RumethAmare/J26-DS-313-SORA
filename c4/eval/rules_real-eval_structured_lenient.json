@@ -11,22 +11,22 @@
       "J26DS313_R0022",
       "J26DS313_R0023"
     ],
-    "commit": "ccb771d",
-    "date": "2026-09-29"
+    "commit": "8a8c289",
+    "date": "2026-10-07"
   },
   "micro": {
-    "precision": 0.7156,
-    "recall": 0.8764,
-    "f1": 0.7879,
-    "tp": 78,
-    "fp": 31,
-    "fn": 11,
+    "precision": 0.7431,
+    "recall": 0.9101,
+    "f1": 0.8182,
+    "tp": 81,
+    "fp": 28,
+    "fn": 8,
     "support": 89
   },
   "macro": {
-    "precision": 0.8485,
-    "recall": 0.9135,
-    "f1": 0.8752
+    "precision": 0.8788,
+    "recall": 0.9451,
+    "f1": 0.9044
   },
   "per_label": {
     "NIC": {
@@ -49,12 +49,12 @@
     },
     "ACCOUNT": {
       "precision": 0.4583,
-      "recall": 0.6875,
-      "f1": 0.55,
+      "recall": 0.7586,
+      "f1": 0.5714,
       "tp": 22,
       "fp": 26,
-      "fn": 10,
-      "support": 32
+      "fn": 7,
+      "support": 29
     },
     "DOB": {
       "precision": 1.0,
@@ -66,52 +66,52 @@
       "support": 12
     },
     "EMAIL": {
-      "precision": 0.0,
-      "recall": 0.0,
-      "f1": 0.0,
-      "tp": 0,
-      "fp": 3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 3,
+      "fp": 0,
       "fn": 0,
-      "support": 0
+      "support": 3
     }
   },
   "per_script": {
     "LATIN": {
-      "precision": 0.7073,
-      "recall": 0.8657,
-      "f1": 0.7785,
-      "tp": 58,
-      "fp": 24,
-      "fn": 9,
+      "precision": 0.7349,
+      "recall": 0.9104,
+      "f1": 0.8133,
+      "tp": 61,
+      "fp": 22,
+      "fn": 6,
       "support": 67
     },
     "SINHALA": {
-      "precision": 0.7407,
+      "precision": 0.7692,
       "recall": 0.9091,
-      "f1": 0.8163,
+      "f1": 0.8333,
       "tp": 20,
-      "fp": 7,
+      "fp": 6,
       "fn": 2,
       "support": 22
     }
   },
   "per_doc_kind": {
     "clean_en": {
-      "precision": 0.7576,
-      "recall": 0.8621,
-      "f1": 0.8065,
-      "tp": 25,
-      "fp": 8,
-      "fn": 4,
-      "support": 29
-    },
-    "clean_si": {
       "precision": 0.7879,
       "recall": 0.8966,
       "f1": 0.8387,
       "tp": 26,
       "fp": 7,
       "fn": 3,
+      "support": 29
+    },
+    "clean_si": {
+      "precision": 0.8182,
+      "recall": 0.931,
+      "f1": 0.871,
+      "tp": 27,
+      "fp": 6,
+      "fn": 2,
       "support": 29
     },
     "summary": {
@@ -124,12 +124,12 @@
       "support": 5
     },
     "transcript": {
-      "precision": 0.7188,
-      "recall": 0.8846,
-      "f1": 0.7931,
-      "tp": 23,
-      "fp": 9,
-      "fn": 3,
+      "precision": 0.75,
+      "recall": 0.9231,
+      "f1": 0.8276,
+      "tp": 24,
+      "fp": 8,
+      "fn": 2,
       "support": 26
     }
   },
@@ -141,30 +141,6 @@
         "gold": "9999999999",
         "predicted": [
           "ACCOUNT:9999999999"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0021_transcript_u016_v1",
-        "label": "ACCOUNT",
-        "gold": "xxxxxxx.x99@xxxxx.xxx",
-        "predicted": [
-          "EMAIL:xxxxxxx.x99@xxxxx.xxx"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0021_c2_u016_en_v1",
-        "label": "ACCOUNT",
-        "gold": "xxxxxxx.x99@xxxxx.xxx",
-        "predicted": [
-          "EMAIL:xxxxxxx.x99@xxxxx.xxx"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0021_c2_u016_si_v1",
-        "label": "ACCOUNT",
-        "gold": "xxxxxxx.x99@xxxxx.xxx",
-        "predicted": [
-          "EMAIL:xxxxxxx.x99@xxxxx.xxx"
         ]
       }
     ],

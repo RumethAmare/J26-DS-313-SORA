@@ -11,32 +11,32 @@
       "J26DS313_R0022",
       "J26DS313_R0023"
     ],
-    "commit": "a396940",
-    "date": "2026-10-01"
+    "commit": "8a8c289",
+    "date": "2026-10-07"
   },
   "micro": {
-    "precision": 0.1917,
-    "recall": 0.2814,
-    "f1": 0.228,
-    "tp": 83,
-    "fp": 350,
-    "fn": 212,
-    "support": 295
+    "precision": 0.1963,
+    "recall": 0.2941,
+    "f1": 0.2355,
+    "tp": 85,
+    "fp": 348,
+    "fn": 204,
+    "support": 289
   },
   "macro": {
-    "precision": 0.2213,
-    "recall": 0.222,
-    "f1": 0.1754
+    "precision": 0.2242,
+    "recall": 0.2478,
+    "f1": 0.1824
   },
   "per_label": {
     "PERSON": {
       "precision": 0.4701,
-      "recall": 0.3526,
-      "f1": 0.4029,
+      "recall": 0.3595,
+      "f1": 0.4074,
       "tp": 55,
       "fp": 62,
-      "fn": 101,
-      "support": 156
+      "fn": 98,
+      "support": 153
     },
     "NIC": {
       "precision": 0.0,
@@ -76,61 +76,61 @@
     },
     "ACCOUNT": {
       "precision": 0.25,
-      "recall": 0.0625,
-      "f1": 0.1,
+      "recall": 0.069,
+      "f1": 0.1081,
       "tp": 2,
       "fp": 6,
-      "fn": 30,
-      "support": 32
+      "fn": 27,
+      "support": 29
     },
     "DOB": {
-      "precision": 0.0606,
-      "recall": 0.5,
-      "f1": 0.1081,
-      "tp": 6,
-      "fp": 93,
-      "fn": 6,
+      "precision": 0.0808,
+      "recall": 0.6667,
+      "f1": 0.1441,
+      "tp": 8,
+      "fp": 91,
+      "fn": 4,
       "support": 12
     }
   },
   "per_script": {
     "LATIN": {
-      "precision": 0.2797,
-      "recall": 0.4061,
-      "f1": 0.3313,
-      "tp": 80,
-      "fp": 206,
-      "fn": 117,
-      "support": 197
+      "precision": 0.2867,
+      "recall": 0.4249,
+      "f1": 0.3424,
+      "tp": 82,
+      "fp": 204,
+      "fn": 111,
+      "support": 193
     },
     "SINHALA": {
       "precision": 0.0204,
-      "recall": 0.0306,
-      "f1": 0.0245,
+      "recall": 0.0312,
+      "f1": 0.0247,
       "tp": 3,
       "fp": 144,
-      "fn": 95,
-      "support": 98
+      "fn": 93,
+      "support": 96
     }
   },
   "per_doc_kind": {
     "clean_en": {
-      "precision": 0.3386,
-      "recall": 0.4778,
-      "f1": 0.3963,
-      "tp": 43,
-      "fp": 84,
-      "fn": 47,
-      "support": 90
+      "precision": 0.3465,
+      "recall": 0.5,
+      "f1": 0.4093,
+      "tp": 44,
+      "fp": 83,
+      "fn": 44,
+      "support": 88
     },
     "clean_si": {
       "precision": 0.0761,
-      "recall": 0.0787,
-      "f1": 0.0773,
+      "recall": 0.0805,
+      "f1": 0.0782,
       "tp": 7,
       "fp": 85,
-      "fn": 82,
-      "support": 89
+      "fn": 80,
+      "support": 87
     },
     "summary": {
       "precision": 0.1831,
@@ -142,13 +142,13 @@
       "support": 29
     },
     "transcript": {
-      "precision": 0.1399,
-      "recall": 0.2299,
-      "f1": 0.1739,
-      "tp": 20,
-      "fp": 123,
-      "fn": 67,
-      "support": 87
+      "precision": 0.1469,
+      "recall": 0.2471,
+      "f1": 0.1842,
+      "tp": 21,
+      "fp": 122,
+      "fn": 64,
+      "support": 85
     }
   },
   "errors": {
@@ -539,6 +539,46 @@
       },
       {
         "doc_id": "J26DS313_R0023_transcript_u010_v1",
+        "label": "PHONE",
+        "gold": "99999999999",
+        "predicted": [
+          "DOB:99999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_u010_en_v1",
+        "label": "PHONE",
+        "gold": "99999999999",
+        "predicted": [
+          "DOB:99999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_u010_si_v1",
+        "label": "PHONE",
+        "gold": "99999999999",
+        "predicted": [
+          "DOB:99999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0023_transcript_u014_v1",
+        "label": "PHONE",
+        "gold": "99999999999",
+        "predicted": [
+          "DOB:99999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_u014_en_v1",
+        "label": "PHONE",
+        "gold": "99999999999",
+        "predicted": [
+          "DOB:99999999999"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0023_c2_u014_si_v1",
         "label": "PHONE",
         "gold": "99999999999",
         "predicted": [
@@ -942,24 +982,6 @@
         "predicted": []
       },
       {
-        "doc_id": "J26DS313_R0021_transcript_u016_v1",
-        "label": "ACCOUNT",
-        "gold": "xxxxxxx.x99@xxxxx.xxx",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0021_c2_u016_en_v1",
-        "label": "ACCOUNT",
-        "gold": "xxxxxxx.x99@xxxxx.xxx",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0021_c2_u016_si_v1",
-        "label": "ACCOUNT",
-        "gold": "xxxxxxx.x99@xxxxx.xxx",
-        "predicted": []
-      },
-      {
         "doc_id": "J26DS313_R0021_transcript_u019_v1",
         "label": "PERSON",
         "gold": "සසසසස",
@@ -981,26 +1003,6 @@
         "doc_id": "J26DS313_R0021_c2_u022_si_v1",
         "label": "PERSON",
         "gold": "සසසසසස සසසසසසස",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0021_transcript_u022_v1",
-        "label": "PERSON",
-        "gold": "සසසසසස",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0021_c2_u022_en_v1",
-        "label": "PERSON",
-        "gold": "xxxxxxx",
-        "predicted": [
-          "ORG:xxxxxxx xxxxxxxxxx"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0021_c2_u022_si_v1",
-        "label": "PERSON",
-        "gold": "සසසසසස",
         "predicted": []
       },
       {
@@ -1326,7 +1328,7 @@
       {
         "doc_id": "J26DS313_R0023_transcript_u008_v1",
         "label": "ADDRESS",
-        "gold": "xx. 9, xx xxxx, xxxxxxxx.",
+        "gold": "xx. 9, xx xxxx, xxxxxxxx",
         "predicted": [
           "ORG:xx xxxx",
           "PERSON:xxxxxxxx"
@@ -1335,7 +1337,7 @@
       {
         "doc_id": "J26DS313_R0023_c2_u008_en_v1",
         "label": "ADDRESS",
-        "gold": "xx. 9, xx xxxx, xxxxxxxx.",
+        "gold": "xx. 9, xx xxxx, xxxxxxxx",
         "predicted": [
           "ORG:xx xxxx",
           "PERSON:xxxxxxxx"
@@ -1344,25 +1346,9 @@
       {
         "doc_id": "J26DS313_R0023_c2_u008_si_v1",
         "label": "ADDRESS",
-        "gold": "සසස 9, xx සසස, සසසසසස.",
+        "gold": "සසස 9, xx සසස, සසසසසස",
         "predicted": [
           "ORG:xx"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0023_c2_u010_en_v1",
-        "label": "PHONE",
-        "gold": "99999999999.",
-        "predicted": [
-          "DOB:99999999999"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0023_c2_u010_si_v1",
-        "label": "PHONE",
-        "gold": "99999999999.",
-        "predicted": [
-          "DOB:99999999999"
         ]
       },
       {
@@ -1370,30 +1356,6 @@
         "label": "PERSON",
         "gold": "සසසසසස සසසසසසස",
         "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0023_transcript_u014_v1",
-        "label": "PHONE",
-        "gold": "99999999999.",
-        "predicted": [
-          "DOB:99999999999"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0023_c2_u014_en_v1",
-        "label": "PHONE",
-        "gold": "99999999999.",
-        "predicted": [
-          "DOB:99999999999"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0023_c2_u014_si_v1",
-        "label": "PHONE",
-        "gold": "99999999999.",
-        "predicted": [
-          "DOB:99999999999"
-        ]
       },
       {
         "doc_id": "J26DS313_R0023_c2_u017_si_v1",
@@ -1593,25 +1555,9 @@
         ]
       },
       {
-        "doc_id": "J26DS313_R0023_transcript_u007_v1",
-        "label": "DOB",
-        "gold": "xxxx 99, 9999.",
-        "predicted": [
-          "DOB:xxxx 99, 9999"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0023_c2_u007_en_v1",
-        "label": "DOB",
-        "gold": "xxxx 99, 9999.",
-        "predicted": [
-          "DOB:xxxx 99, 9999"
-        ]
-      },
-      {
         "doc_id": "J26DS313_R0023_c2_u007_si_v1",
         "label": "DOB",
-        "gold": "9999 සසසස 99.",
+        "gold": "9999 සසසස 99",
         "predicted": [
           "DOB:9999"
         ]

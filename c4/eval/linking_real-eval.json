@@ -118,8 +118,8 @@
       "entities": 15,
       "pairwise": {
         "precision": 1.0,
-        "recall": 0.5207,
-        "f1": 0.6848
+        "recall": 0.5217,
+        "f1": 0.6857
       },
       "failures": [
         {
@@ -185,8 +185,8 @@
       "entities": 15,
       "pairwise": {
         "precision": 1.0,
-        "recall": 0.983,
-        "f1": 0.9914
+        "recall": 0.9821,
+        "f1": 0.991
       },
       "failures": [
         {
