@@ -37,6 +37,9 @@ EVAL_RECORDINGS = frozenset({
 })
 
 
+USABLE_ROW_FIELDS = ("doc_id", "start_char", "end_char", "label", "surface", "entity_id")
+
+
 def dataset_root() -> Path:
     return Path(os.environ.get("SORA_DATASET_ROOT", C4_ROOT.parents[1] / "SORA_Dataset"))
 
@@ -75,18 +78,53 @@ def load_texts(rid: str, root: Path | None = None) -> dict[str, str]:
 
     translation = ann / "c2" / f"{rid}.translation.json"
     if translation.exists():
-        for u in _read_json(translation)["utterance_records"]:
+        for u in translation_records(_read_json(translation)):
             utt = _utt_suffix(u["utt_id"], rid)
             texts[f"{rid}_c2_{utt}_en_v1"] = u.get("clean_en") or ""
             texts[f"{rid}_c2_{utt}_si_v1"] = u.get("clean_si") or ""
 
     summary = ann / "c2" / f"{rid}.summary.json"
     if summary.exists():
-        summaries = _read_json(summary).get("summaries", {})
-        for lang in ("en", "si"):
-            if summaries.get(lang, {}).get("text"):
-                texts[f"{rid}_c2_summary_{lang}_v1"] = summaries[lang]["text"]
+        for lang, text in summary_texts(_read_json(summary)).items():
+            texts[f"{rid}_c2_summary_{lang}_v1"] = text
     return texts
+
+
+# C2's output format has drifted between recordings. Every shape found in the
+# corpus is read here, so C4 consumes all of it (FR1); the drift itself is a
+# data-contract issue reported to the team, not something C4 should mask by
+# guessing -- an unrecognised shape yields no text, and the validator then
+# reports every span on it.
+
+def translation_records(data) -> list[dict]:
+    """
+    {"utterance_records": [...]}  /  {"utterances": [...]}  /  [...]
+    (with or without recording / recording_id / output_version keys)
+    """
+    if isinstance(data, list):
+        return data
+    return data.get("utterance_records") or data.get("utterances") or []
+
+
+def summary_texts(data: dict) -> dict[str, str]:
+    """
+    {"summaries": {"en": {"text": ...}}}    {"summaries": {"en": "..."}}
+    {"summaries": [{"lang": "en", "text": ...}]}
+    {"summary": "...", "summary_si": "..."}
+    """
+    out: dict[str, str] = {}
+    summaries = data.get("summaries")
+    if isinstance(summaries, dict):
+        for lang, value in summaries.items():
+            out[lang] = value.get("text", "") if isinstance(value, dict) else value
+    elif isinstance(summaries, list):
+        for item in summaries:
+            out[item.get("lang", "en")] = item.get("text", "")
+    else:
+        for key, lang in (("summary", "en"), ("summary_si", "si")):
+            value = data.get(key)
+            out[lang] = value.get("text", "") if isinstance(value, dict) else value
+    return {lang: text for lang, text in out.items() if lang in ("en", "si") and text}
 
 
 _UTT_DOC = re.compile(r"^(?P<stream>.+?_(?:transcript|c2))_u(?P<n>\d+)(?P<tail>_(?:en_|si_)?v\d+)$")
@@ -118,10 +156,15 @@ def real_recording_ids(root: Path | None = None) -> list[str]:
 def load_real(rid: str, root: Path | None = None) -> Recording:
     c4 = (root or dataset_root()) / "annotations" / "c4"
     registry_path = c4 / f"{rid}.entities.json"
+    # A row without a document and character offsets cannot be scored or
+    # trained on (R0061 uses token offsets). It is dropped here; validate.py
+    # still reports it, since it reads the raw file.
+    rows = [normalise_label(r) for r in _read_jsonl(c4 / f"{rid}.pii.jsonl")
+            if all(k in r for k in USABLE_ROW_FIELDS)]
     return Recording(
         rid=rid,
         texts=load_texts(rid, root),
-        rows=[normalise_label(r) for r in _read_jsonl(c4 / f"{rid}.pii.jsonl")],
+        rows=rows,
         registry=_read_json(registry_path) if registry_path.exists() else None,
     )
 
