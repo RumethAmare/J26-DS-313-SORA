@@ -57,8 +57,8 @@ def canonical_rid(rid):
 EXCLUDED_RECORDINGS = {
     "J26DS313_R0008": "token file structurally malformed (junk in timestamps)",
     "J26DS313_R0017": "every token tagged EN, including obvious romanized Sinhala",
-    "J26DS313_R0053": "every token tagged EN despite code-mixed speech; "
-                      "also a near-duplicate of R0052",
+    # R0053 (bulk EN, near-duplicate of R0052) was re-annotated 2026-10-04
+    # and passes audit_gold.py; no longer excluded.
     "J26DS313_R0054": "every token tagged EN despite code-mixed speech",
     "J26DS313_R0055": "every token tagged EN despite code-mixed speech",
     "J26DS313_R0056": "290/291 tokens tagged EN despite code-mixed speech",

@@ -5,9 +5,9 @@
   "genuinely_tamil": [
     {"recording": "J26DS313_R0012", "token": "puriyam.", "script": "latin",
      "gloss": "puriyum - 'understand'", "context": "Hari puriyam. We will file an immediate injunction order"},
-    {"recording": "J26DS313_R0013", "token": "ಪುರಿಯമ്.", "script": "other",
+    {"recording": "J26DS313_R0013", "token": "ಪುരിയമ്.", "script": "other",
      "gloss": "puriyum - 'understand', written in Kannada+Malayalam codepoints",
-     "context": "සරි ಪುರಿಯമ്. We will find an injunction order immediately"},
+     "context": "සරි ಪುരിയമ്. We will find an injunction order immediately"},
     {"recording": "J26DS313_R0015", "token": "ඉදු", "script": "sinhala",
      "gloss": "idhu - 'this'", "context": "part of a full Tamil sentence in Sinhala script"},
     {"recording": "J26DS313_R0015", "token": "ඔරුව", "script": "sinhala",
@@ -31,15 +31,17 @@
      "gloss": "nandri - 'thanks'", "context": "මේ ටික විතරයි නන්ද්‍රි ඔයාගේ support එකට"},
     {"recording": "J26DS313_R0050", "token": "wanakkam", "script": "latin", "gold_lang": "OTHER",
      "gloss": "vanakkam - greeting", "context": "good afternoon miss wanakkam mama awa"},
-    {"recording": "J26DS313_R0052", "token": "Vanakkam.", "script": "latin", "gold_lang": "SI",
-     "gloss": "vanakkam - greeting", "context": "Good morning miss. Vanakkam. Mage car eka"}
+    {"recording": "J26DS313_R0052", "token": "Vanakkam.", "script": "latin", "gold_lang": "OTHER",
+     "gloss": "vanakkam - greeting", "context": "Good afternoon miss. Vanakkam. මම aava මගේ"},
+    {"recording": "J26DS313_R0052", "token": "Rombha", "script": "latin", "gold_lang": "SI",
+     "gloss": "romba - 'very'", "context": "details tik gaththa. Rombha thank you miss."},
+    {"recording": "J26DS313_R0053", "token": "Vanakkam", "script": "latin", "gold_lang": "OTHER",
+     "gloss": "vanakkam - greeting", "context": "Good morning miss Vanakkam මගේ ka එක"}
   ],
 
   "tamil_in_excluded_recordings": [
     {"recording": "J26DS313_R0051", "token": "Vanakkam.", "script": "latin", "gold_lang": "OTHER",
      "gloss": "vanakkam - greeting", "context": "Good morning sister. Vanakkam. Mama awa"},
-    {"recording": "J26DS313_R0053", "token": "Vanakkam.", "script": "latin", "gold_lang": "EN",
-     "gloss": "vanakkam - greeting", "context": "near-duplicate of the R0052 occurrence"},
     {"recording": "J26DS313_R0064", "token": "Vanakkam,", "script": "latin", "gold_lang": "EN",
      "gloss": "vanakkam - greeting", "context": "Good morning madam. Vanakkam, oh madam."},
     {"recording": "J26DS313_R0065", "token": "nalla", "script": "latin", "gold_lang": "EN",
@@ -48,7 +50,7 @@
      "gloss": "vishayam - 'matter/thing'", "context": "Eka nam nalla visayam miss."}
   ],
 
-  "batch_2_note": "Entries from R0049 onward were added after the October 2026 data batch (R0029-R0065). Only 1 of the 5 usable new entries is labelled OTHER in gold; the rest are labelled SI, so gold OTHER now misses much of the Tamil as well as being mostly numerals. Tamil in recordings excluded from C1 (corpus.EXCLUDED_RECORDINGS) is kept separately under tamil_in_excluded_recordings and is not scored, so positives and negatives come from the same recordings. Common Sinhala words that collide with Tamil lexicon entries (nama, nan, ne, enna, anna) were checked in context and are Sinhala.",
+  "batch_2_note": "Entries from R0049 onward were added after the October 2026 data batches (R0029-R0105). R0052 and R0053 were re-annotated on 2026-10-04: both now tag Vanakkam OTHER, but R0052 tags Rombha SI. R0068-R0075 and R0100-R0105 were scanned against the lexicon and contain no Tamil it recognises (hits such as thani and amma are Sinhala in context); Tamil outside the lexicon could still be present. Tamil in recordings excluded from C1 (corpus.EXCLUDED_RECORDINGS) is kept separately under tamil_in_excluded_recordings and is not scored, so positives and negatives come from the same recordings. Common Sinhala words that collide with Tamil lexicon entries (nama, nan, ne, enna, anna) were checked in context and are Sinhala.",
 
   "tamil_sentence_in_sinhala_script": {
     "recording": "J26DS313_R0015",
@@ -73,14 +75,14 @@
   ],
 
   "counts": {
-    "scope": "48 usable recordings (corpus.EXCLUDED_RECORDINGS removed)",
-    "other_tokens_total": 743,
-    "numeric": 722,
+    "scope": "66 usable recordings, 25,582 tokens (corpus.EXCLUDED_RECORDINGS removed), as of 2026-10-05",
+    "other_tokens_total": 1064,
+    "numeric": 1041,
     "identifiers_and_ordinals": 11,
-    "genuinely_tamil_labelled_other": 10,
-    "genuinely_tamil": 14,
+    "genuinely_tamil_labelled_other": 12,
+    "genuinely_tamil": 16,
     "genuinely_tamil_labelled_si_or_en": 4,
-    "tamil_by_script": {"sinhala": 8, "latin": 5, "other": 1, "tamil_script": 0}
+    "tamil_by_script": {"sinhala": 8, "latin": 7, "other": 1, "tamil_script": 0}
   },
   "counts_batch_1_only": {
     "other_tokens_total": 78,

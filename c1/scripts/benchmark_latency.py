@@ -10,8 +10,19 @@ Two parts:
    faster), peak GPU memory, peak process RAM and on-disk model size.
 
    Decoding uses the token-stream pipeline's settings (beam 5, VAD, word
-   timestamps), so the latency is what C1 actually pays, not a stripped-down
-   best case.
+   timestamps, auto language) in two modes:
+
+     pipeline  faster-whisper's default temperature fallback -- what C1
+               actually pays today.
+     fixed     temperature=0 only. Deterministic.
+
+   The split exists because on this corpus the pipeline's cost is dominated
+   by the ASR failing: Sinhala segments produce rejected output, which
+   triggers up to five re-decodes with random sampling. Measured on R0009
+   with `small`: RTF 0.09 when forced to English, 0.19 at temperature 0,
+   0.40-0.97 with fallback (varying run to run). So pipeline RTF measures the
+   failure rate as much as the hardware, and only `fixed` gives a fair
+   compute-type comparison and a drift figure free of sampling noise.
 
    WHY NOT WER: clean-audio WER is ~0.99 (c1_report.md), so it cannot
    register the small damage quantization does. Each quantized transcript is
@@ -60,6 +71,12 @@ BENCH_RECORDINGS = ["J26DS313_R0002", "J26DS313_R0009", "J26DS313_R0014",
 GPU_CONFIGS = [(size, ct) for size in ("small", "medium")
                for ct in ("float16", "int8_float16", "int8")]
 CPU_CONFIGS = [("small", "int8"), ("medium", "int8")]
+
+# decode mode -> extra transcribe() kwargs (see module docstring)
+DECODE_MODES = {"pipeline": {}, "fixed": {"temperature": 0.0}}
+# The CPU arm runs `fixed` only: with fallback, `medium` on CPU would take
+# hours on this subset and the number would mostly measure re-decodes.
+CPU_MODES = ("fixed",)
 
 
 # --- resource sampling -------------------------------------------------------
@@ -120,13 +137,15 @@ def model_dir_size_mb(size):
 
 # --- ASR sweep ---------------------------------------------------------------
 
-def transcribe_text(model, audio):
+def transcribe_text(model, audio, decode_kwargs):
     segments, info = model.transcribe(
-        audio, beam_size=5, vad_filter=True, language=None, word_timestamps=True)
+        audio, beam_size=5, vad_filter=True, language=None, word_timestamps=True,
+        **decode_kwargs)
     return " ".join(s.text.strip() for s in segments), info
 
 
-def run_config(size, compute_type, device, audio_by_rid):
+def run_config(size, compute_type, device, mode, audio_by_rid):
+    decode_kwargs = DECODE_MODES[mode]
     from faster_whisper import WhisperModel
 
     gc.collect()
@@ -143,14 +162,14 @@ def run_config(size, compute_type, device, audio_by_rid):
         # for GPUs newer than the CUDA build) are paid once per process and
         # are not decoding speed.
         first = audio_by_rid[BENCH_RECORDINGS[0]]
-        transcribe_text(model, first[: 16000 * 10])
+        transcribe_text(model, first[: 16000 * 10], decode_kwargs)
 
         per_rec, texts = [], {}
         for rid in BENCH_RECORDINGS:
             audio = audio_by_rid[rid]
             dur = len(audio) / 16000
             t0 = time.perf_counter()
-            text, info = transcribe_text(model, audio)
+            text, info = transcribe_text(model, audio, decode_kwargs)
             wall = time.perf_counter() - t0
             texts[rid] = text
             per_rec.append({"recording": rid, "audio_s": round(dur, 2),
@@ -165,6 +184,7 @@ def run_config(size, compute_type, device, audio_by_rid):
     wall_total = sum(r["wall_s"] for r in per_rec)
     return {
         "model": size, "compute_type": compute_type, "device": device,
+        "decode_mode": mode,
         "load_s": round(load_s, 2),
         "audio_s": round(audio_total, 1),
         "wall_s": round(wall_total, 1),
@@ -191,29 +211,45 @@ def drift(ref_texts, hyp_texts):
     return round(jiwer.wer(refs, hyps), 4) if refs else None
 
 
-def asr_sweep():
+def _key(res):
+    return (res["model"], res["compute_type"], res["device"], res["decode_mode"])
+
+
+def asr_sweep(prior=None, save=None):
+    """Run every configuration not already in `prior`, calling save() after
+    each one so an interrupted sweep keeps what it finished and resumes."""
     from faster_whisper import decode_audio
 
     audio_by_rid = {rid: decode_audio(os.path.join(corpus.AUDIO_DIR, f"{rid}.wav"))
                     for rid in BENCH_RECORDINGS}
-    configs = [(s, c, "cuda") for s, c in GPU_CONFIGS] + \
-              [(s, c, "cpu") for s, c in CPU_CONFIGS]
+    configs = [(s, c, "cuda", m) for m in DECODE_MODES for s, c in GPU_CONFIGS] + \
+              [(s, c, "cpu", m) for m in CPU_MODES for s, c in CPU_CONFIGS]
 
-    results, texts = [], {}
-    for size, ct, dev in configs:
-        print(f"\n== {size} / {ct} / {dev}", flush=True)
-        res, txt = run_config(size, ct, dev, audio_by_rid)
+    results = [r for r in (prior or []) if "texts" in r and "decode_mode" in r]
+    done = {_key(r) for r in results}
+    for size, ct, dev, mode in configs:
+        if (size, ct, dev, mode) in done:
+            print(f"== {size} / {ct} / {dev} / {mode}: already done", flush=True)
+            continue
+        print(f"\n== {size} / {ct} / {dev} / {mode}", flush=True)
+        res, txt = run_config(size, ct, dev, mode, audio_by_rid)
         res["disk_mb"] = model_dir_size_mb(size)
+        res["texts"] = txt
         results.append(res)
-        texts[(size, ct, dev)] = txt
         print(f"   load {res['load_s']}s  RTF {res['rtf']}  "
               f"GPU {res['peak_gpu_mib']} MiB  RSS {res['peak_rss_mib']} MiB", flush=True)
-
-    for res in results:
-        ref = texts[(res["model"], "float16", "cuda")]
-        hyp = texts[(res["model"], res["compute_type"], res["device"])]
-        res["drift_vs_float16"] = drift(ref, hyp)
+        _add_drift(results)
+        if save:
+            save(results)
     return results
+
+
+def _add_drift(results):
+    """Drift against the same model's GPU float16 run in the same decode mode."""
+    by_key = {_key(r): r for r in results}
+    for r in results:
+        ref = by_key.get((r["model"], "float16", "cuda", r["decode_mode"]))
+        r["drift_vs_float16"] = drift(ref["texts"], r["texts"]) if ref else None
 
 
 # --- fastText ----------------------------------------------------------------
@@ -302,16 +338,20 @@ def write_report(asr, ft, env, path):
         L += ["## ASR (faster-whisper / CTranslate2)\n\n",
               f"{len(BENCH_RECORDINGS)} recordings, {audio_min:.1f} minutes of audio, "
               "decoded with the token-stream settings (beam 5, VAD, word timestamps, "
-              "auto language). One untimed 10-second warm-up per configuration.\n\n",
-              "| model | compute type | device | load (s) | RTF | × real-time "
+              "auto language). One untimed 10-second warm-up per configuration. "
+              "`pipeline` = default temperature fallback (what C1 pays today); "
+              "`fixed` = temperature 0 (deterministic; the fair basis for comparing "
+              "compute types). See the script docstring for why both are needed.\n\n",
+              "| mode | model | compute type | device | load (s) | RTF | × real-time "
               "| peak GPU (MiB) | peak RAM (MiB) | disk (MB) | drift vs fp16 |\n",
-              "|---|---|---|---|---|---|---|---|---|---|\n"]
+              "|---|---|---|---|---|---|---|---|---|---|---|\n"]
         for r in asr:
             gpu = r["peak_gpu_mib"] if r["peak_gpu_mib"] is not None else "—"
-            d = r["drift_vs_float16"]
+            d = r.get("drift_vs_float16")
             d = "ref" if (r["compute_type"] == "float16" and r["device"] == "cuda") else (
                 f"{d:.3f}" if d is not None else "—")
-            L.append(f"| {r['model']} | {r['compute_type']} | {r['device']} "
+            L.append(f"| {r.get('decode_mode', 'pipeline')} "
+                     f"| {r['model']} | {r['compute_type']} | {r['device']} "
                      f"| {r['load_s']:.1f} | {r['rtf']:.3f} | {1 / r['rtf']:.1f}× "
                      f"| {gpu} | {r['peak_rss_mib']} | {r['disk_mb']:.0f} | {d} |\n")
         L += ["\n- **RTF** = wall time ÷ audio duration; below 1 is faster than "
@@ -365,6 +405,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--skip-asr", action="store_true")
     ap.add_argument("--skip-fasttext", action="store_true")
+    ap.add_argument("--fresh", action="store_true",
+                    help="ignore ASR results already in c1_latency.json")
     a = ap.parse_args()
 
     env = environment()
@@ -375,18 +417,23 @@ def main():
             prev = json.load(fh)
 
     asr = prev.get("asr")
-    if not a.skip_asr:
-        asr = asr_sweep()
     ft = prev.get("fasttext")
+    os.makedirs(RESULTS_DIR, exist_ok=True)
+
+    def save(asr_results, ft_results=None):
+        with open(out_json, "w", encoding="utf-8") as fh:
+            json.dump({"environment": env, "recordings": BENCH_RECORDINGS,
+                       "asr": asr_results, "fasttext": ft_results or ft},
+                      fh, indent=2, ensure_ascii=False)
+        write_report(asr_results, ft_results or ft, env,
+                     os.path.join(RESULTS_DIR, "c1_latency_report.md"))
+
+    if not a.skip_asr:
+        asr = asr_sweep(prior=None if a.fresh else asr, save=save)
     if not a.skip_fasttext:
         print("\n== fastText quantization", flush=True)
         ft = fasttext_quantization()
-
-    os.makedirs(RESULTS_DIR, exist_ok=True)
-    with open(out_json, "w", encoding="utf-8") as fh:
-        json.dump({"environment": env, "recordings": BENCH_RECORDINGS,
-                   "asr": asr, "fasttext": ft}, fh, indent=2, ensure_ascii=False)
-    write_report(asr, ft, env, os.path.join(RESULTS_DIR, "c1_latency_report.md"))
+    save(asr, ft)
     print(f"\nWrote {out_json}")
 
 

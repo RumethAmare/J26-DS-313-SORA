@@ -3,7 +3,6 @@
   "excluded_recordings": [
     "J26DS313_R0008",
     "J26DS313_R0017",
-    "J26DS313_R0053",
     "J26DS313_R0054",
     "J26DS313_R0055",
     "J26DS313_R0056",
@@ -13,14 +12,14 @@
   "switch_f1_gold_tokens": {
     "heuristic__within_utterance": {
       "overall": {
-        "tp": 4170,
-        "fp": 934,
-        "fn": 1121,
-        "precision": 0.817,
-        "recall": 0.7881,
-        "f1": 0.8023,
-        "n_gold_switches": 5291,
-        "n_pred_switches": 5104
+        "tp": 7007,
+        "fp": 1312,
+        "fn": 1964,
+        "precision": 0.8423,
+        "recall": 0.7811,
+        "f1": 0.8105,
+        "n_gold_switches": 8971,
+        "n_pred_switches": 8319
       },
       "per_recording": [
         {
@@ -299,6 +298,28 @@
           "n_pred_switches": 33
         },
         {
+          "recording": "J26DS313_R0029",
+          "tp": 90,
+          "fp": 9,
+          "fn": 41,
+          "precision": 0.9091,
+          "recall": 0.687,
+          "f1": 0.7826,
+          "n_gold_switches": 131,
+          "n_pred_switches": 99
+        },
+        {
+          "recording": "J26DS313_R0030",
+          "tp": 97,
+          "fp": 4,
+          "fn": 31,
+          "precision": 0.9604,
+          "recall": 0.7578,
+          "f1": 0.8472,
+          "n_gold_switches": 128,
+          "n_pred_switches": 101
+        },
+        {
           "recording": "J26DS313_R0031",
           "tp": 208,
           "fp": 15,
@@ -475,6 +496,17 @@
           "n_pred_switches": 229
         },
         {
+          "recording": "J26DS313_R0047",
+          "tp": 281,
+          "fp": 47,
+          "fn": 89,
+          "precision": 0.8567,
+          "recall": 0.7595,
+          "f1": 0.8052,
+          "n_gold_switches": 370,
+          "n_pred_switches": 328
+        },
+        {
           "recording": "J26DS313_R0048",
           "tp": 60,
           "fp": 1,
@@ -520,14 +552,25 @@
         },
         {
           "recording": "J26DS313_R0052",
-          "tp": 125,
-          "fp": 30,
-          "fn": 43,
-          "precision": 0.8065,
-          "recall": 0.744,
-          "f1": 0.774,
-          "n_gold_switches": 168,
-          "n_pred_switches": 155
+          "tp": 149,
+          "fp": 32,
+          "fn": 39,
+          "precision": 0.8232,
+          "recall": 0.7926,
+          "f1": 0.8076,
+          "n_gold_switches": 188,
+          "n_pred_switches": 181
+        },
+        {
+          "recording": "J26DS313_R0053",
+          "tp": 112,
+          "fp": 20,
+          "fn": 35,
+          "precision": 0.8485,
+          "recall": 0.7619,
+          "f1": 0.8029,
+          "n_gold_switches": 147,
+          "n_pred_switches": 132
         },
         {
           "recording": "J26DS313_R0057",
@@ -605,53 +648,207 @@
           "f1": 0.5316,
           "n_gold_switches": 140,
           "n_pred_switches": 176
+        },
+        {
+          "recording": "J26DS313_R0068",
+          "tp": 171,
+          "fp": 34,
+          "fn": 50,
+          "precision": 0.8341,
+          "recall": 0.7738,
+          "f1": 0.8028,
+          "n_gold_switches": 221,
+          "n_pred_switches": 205
+        },
+        {
+          "recording": "J26DS313_R0069",
+          "tp": 165,
+          "fp": 32,
+          "fn": 52,
+          "precision": 0.8376,
+          "recall": 0.7604,
+          "f1": 0.7971,
+          "n_gold_switches": 217,
+          "n_pred_switches": 197
+        },
+        {
+          "recording": "J26DS313_R0070",
+          "tp": 147,
+          "fp": 32,
+          "fn": 56,
+          "precision": 0.8212,
+          "recall": 0.7241,
+          "f1": 0.7696,
+          "n_gold_switches": 203,
+          "n_pred_switches": 179
+        },
+        {
+          "recording": "J26DS313_R0071",
+          "tp": 205,
+          "fp": 37,
+          "fn": 50,
+          "precision": 0.8471,
+          "recall": 0.8039,
+          "f1": 0.8249,
+          "n_gold_switches": 255,
+          "n_pred_switches": 242
+        },
+        {
+          "recording": "J26DS313_R0072",
+          "tp": 129,
+          "fp": 19,
+          "fn": 34,
+          "precision": 0.8716,
+          "recall": 0.7914,
+          "f1": 0.8296,
+          "n_gold_switches": 163,
+          "n_pred_switches": 148
+        },
+        {
+          "recording": "J26DS313_R0073",
+          "tp": 193,
+          "fp": 22,
+          "fn": 62,
+          "precision": 0.8977,
+          "recall": 0.7569,
+          "f1": 0.8213,
+          "n_gold_switches": 255,
+          "n_pred_switches": 215
+        },
+        {
+          "recording": "J26DS313_R0074",
+          "tp": 261,
+          "fp": 45,
+          "fn": 110,
+          "precision": 0.8529,
+          "recall": 0.7035,
+          "f1": 0.771,
+          "n_gold_switches": 371,
+          "n_pred_switches": 306
+        },
+        {
+          "recording": "J26DS313_R0075",
+          "tp": 167,
+          "fp": 26,
+          "fn": 42,
+          "precision": 0.8653,
+          "recall": 0.799,
+          "f1": 0.8308,
+          "n_gold_switches": 209,
+          "n_pred_switches": 193
+        },
+        {
+          "recording": "J26DS313_R0100",
+          "tp": 99,
+          "fp": 19,
+          "fn": 36,
+          "precision": 0.839,
+          "recall": 0.7333,
+          "f1": 0.7826,
+          "n_gold_switches": 135,
+          "n_pred_switches": 118
+        },
+        {
+          "recording": "J26DS313_R0101",
+          "tp": 131,
+          "fp": 13,
+          "fn": 29,
+          "precision": 0.9097,
+          "recall": 0.8187,
+          "f1": 0.8618,
+          "n_gold_switches": 160,
+          "n_pred_switches": 144
+        },
+        {
+          "recording": "J26DS313_R0102",
+          "tp": 115,
+          "fp": 7,
+          "fn": 41,
+          "precision": 0.9426,
+          "recall": 0.7372,
+          "f1": 0.8273,
+          "n_gold_switches": 156,
+          "n_pred_switches": 122
+        },
+        {
+          "recording": "J26DS313_R0103",
+          "tp": 119,
+          "fp": 4,
+          "fn": 29,
+          "precision": 0.9675,
+          "recall": 0.8041,
+          "f1": 0.8782,
+          "n_gold_switches": 148,
+          "n_pred_switches": 123
+        },
+        {
+          "recording": "J26DS313_R0104",
+          "tp": 147,
+          "fp": 5,
+          "fn": 27,
+          "precision": 0.9671,
+          "recall": 0.8448,
+          "f1": 0.9018,
+          "n_gold_switches": 174,
+          "n_pred_switches": 152
+        },
+        {
+          "recording": "J26DS313_R0105",
+          "tp": 184,
+          "fp": 1,
+          "fn": 33,
+          "precision": 0.9946,
+          "recall": 0.8479,
+          "f1": 0.9154,
+          "n_gold_switches": 217,
+          "n_pred_switches": 185
         }
       ]
     },
     "hybrid__within_utterance": {
       "overall": {
-        "tp": 4618,
-        "fp": 680,
-        "fn": 673,
-        "precision": 0.8716,
-        "recall": 0.8728,
-        "f1": 0.8722,
-        "n_gold_switches": 5291,
-        "n_pred_switches": 5298
+        "tp": 8131,
+        "fp": 696,
+        "fn": 840,
+        "precision": 0.9212,
+        "recall": 0.9064,
+        "f1": 0.9137,
+        "n_gold_switches": 8971,
+        "n_pred_switches": 8827
       },
       "per_recording": [
         {
           "recording": "J26DS313_R0002",
-          "tp": 27,
+          "tp": 24,
           "fp": 8,
-          "fn": 6,
-          "precision": 0.7714,
-          "recall": 0.8182,
-          "f1": 0.7941,
+          "fn": 9,
+          "precision": 0.75,
+          "recall": 0.7273,
+          "f1": 0.7385,
           "n_gold_switches": 33,
-          "n_pred_switches": 35
+          "n_pred_switches": 32
         },
         {
           "recording": "J26DS313_R0003",
-          "tp": 16,
-          "fp": 8,
-          "fn": 5,
-          "precision": 0.6667,
-          "recall": 0.7619,
-          "f1": 0.7111,
+          "tp": 11,
+          "fp": 12,
+          "fn": 10,
+          "precision": 0.4783,
+          "recall": 0.5238,
+          "f1": 0.5,
           "n_gold_switches": 21,
-          "n_pred_switches": 24
+          "n_pred_switches": 23
         },
         {
           "recording": "J26DS313_R0004",
-          "tp": 9,
-          "fp": 24,
-          "fn": 6,
-          "precision": 0.2727,
-          "recall": 0.6,
-          "f1": 0.375,
+          "tp": 8,
+          "fp": 23,
+          "fn": 7,
+          "precision": 0.2581,
+          "recall": 0.5333,
+          "f1": 0.3478,
           "n_gold_switches": 15,
-          "n_pred_switches": 33
+          "n_pred_switches": 31
         },
         {
           "recording": "J26DS313_R0005",
@@ -677,14 +874,14 @@
         },
         {
           "recording": "J26DS313_R0007",
-          "tp": 27,
-          "fp": 19,
-          "fn": 5,
-          "precision": 0.587,
-          "recall": 0.8438,
-          "f1": 0.6923,
+          "tp": 18,
+          "fp": 26,
+          "fn": 14,
+          "precision": 0.4091,
+          "recall": 0.5625,
+          "f1": 0.4737,
           "n_gold_switches": 32,
-          "n_pred_switches": 46
+          "n_pred_switches": 44
         },
         {
           "recording": "J26DS313_R0009",
@@ -710,45 +907,45 @@
         },
         {
           "recording": "J26DS313_R0011",
-          "tp": 82,
+          "tp": 84,
           "fp": 2,
-          "fn": 2,
-          "precision": 0.9762,
-          "recall": 0.9762,
-          "f1": 0.9762,
+          "fn": 0,
+          "precision": 0.9767,
+          "recall": 1.0,
+          "f1": 0.9882,
           "n_gold_switches": 84,
-          "n_pred_switches": 84
+          "n_pred_switches": 86
         },
         {
           "recording": "J26DS313_R0012",
-          "tp": 75,
+          "tp": 74,
           "fp": 3,
-          "fn": 1,
-          "precision": 0.9615,
-          "recall": 0.9868,
-          "f1": 0.974,
+          "fn": 2,
+          "precision": 0.961,
+          "recall": 0.9737,
+          "f1": 0.9673,
           "n_gold_switches": 76,
-          "n_pred_switches": 78
+          "n_pred_switches": 77
         },
         {
           "recording": "J26DS313_R0013",
           "tp": 79,
-          "fp": 2,
+          "fp": 3,
           "fn": 1,
-          "precision": 0.9753,
+          "precision": 0.9634,
           "recall": 0.9875,
-          "f1": 0.9814,
+          "f1": 0.9753,
           "n_gold_switches": 80,
-          "n_pred_switches": 81
+          "n_pred_switches": 82
         },
         {
           "recording": "J26DS313_R0014",
-          "tp": 52,
-          "fp": 29,
-          "fn": 12,
-          "precision": 0.642,
-          "recall": 0.8125,
-          "f1": 0.7172,
+          "tp": 45,
+          "fp": 36,
+          "fn": 19,
+          "precision": 0.5556,
+          "recall": 0.7031,
+          "f1": 0.6207,
           "n_gold_switches": 64,
           "n_pred_switches": 81
         },
@@ -765,91 +962,91 @@
         },
         {
           "recording": "J26DS313_R0016",
-          "tp": 97,
+          "tp": 99,
           "fp": 2,
-          "fn": 5,
-          "precision": 0.9798,
-          "recall": 0.951,
-          "f1": 0.9652,
+          "fn": 3,
+          "precision": 0.9802,
+          "recall": 0.9706,
+          "f1": 0.9754,
           "n_gold_switches": 102,
-          "n_pred_switches": 99
+          "n_pred_switches": 101
         },
         {
           "recording": "J26DS313_R0018",
-          "tp": 67,
-          "fp": 17,
-          "fn": 31,
-          "precision": 0.7976,
-          "recall": 0.6837,
-          "f1": 0.7363,
+          "tp": 60,
+          "fp": 16,
+          "fn": 38,
+          "precision": 0.7895,
+          "recall": 0.6122,
+          "f1": 0.6897,
           "n_gold_switches": 98,
-          "n_pred_switches": 84
+          "n_pred_switches": 76
         },
         {
           "recording": "J26DS313_R0019",
           "tp": 119,
-          "fp": 12,
+          "fp": 8,
           "fn": 9,
-          "precision": 0.9084,
+          "precision": 0.937,
           "recall": 0.9297,
-          "f1": 0.9189,
+          "f1": 0.9333,
           "n_gold_switches": 128,
-          "n_pred_switches": 131
+          "n_pred_switches": 127
         },
         {
           "recording": "J26DS313_R0020",
           "tp": 103,
-          "fp": 2,
+          "fp": 0,
           "fn": 0,
-          "precision": 0.981,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1": 0.9904,
+          "f1": 1.0,
           "n_gold_switches": 103,
-          "n_pred_switches": 105
+          "n_pred_switches": 103
         },
         {
           "recording": "J26DS313_R0021",
-          "tp": 116,
-          "fp": 1,
-          "fn": 1,
-          "precision": 0.9915,
-          "recall": 0.9915,
-          "f1": 0.9915,
+          "tp": 117,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
           "n_gold_switches": 117,
           "n_pred_switches": 117
         },
         {
           "recording": "J26DS313_R0022",
-          "tp": 95,
-          "fp": 4,
-          "fn": 11,
-          "precision": 0.9596,
-          "recall": 0.8962,
-          "f1": 0.9268,
+          "tp": 96,
+          "fp": 3,
+          "fn": 10,
+          "precision": 0.9697,
+          "recall": 0.9057,
+          "f1": 0.9366,
           "n_gold_switches": 106,
           "n_pred_switches": 99
         },
         {
           "recording": "J26DS313_R0023",
-          "tp": 19,
-          "fp": 68,
-          "fn": 29,
-          "precision": 0.2184,
-          "recall": 0.3958,
-          "f1": 0.2815,
+          "tp": 17,
+          "fp": 67,
+          "fn": 31,
+          "precision": 0.2024,
+          "recall": 0.3542,
+          "f1": 0.2576,
           "n_gold_switches": 48,
-          "n_pred_switches": 87
+          "n_pred_switches": 84
         },
         {
           "recording": "J26DS313_R0024",
-          "tp": 74,
-          "fp": 26,
-          "fn": 41,
-          "precision": 0.74,
-          "recall": 0.6435,
-          "f1": 0.6884,
+          "tp": 63,
+          "fp": 34,
+          "fn": 52,
+          "precision": 0.6495,
+          "recall": 0.5478,
+          "f1": 0.5943,
           "n_gold_switches": 115,
-          "n_pred_switches": 100
+          "n_pred_switches": 97
         },
         {
           "recording": "J26DS313_R0025",
@@ -875,36 +1072,58 @@
         },
         {
           "recording": "J26DS313_R0027",
-          "tp": 151,
-          "fp": 3,
-          "fn": 8,
-          "precision": 0.9805,
-          "recall": 0.9497,
-          "f1": 0.9649,
+          "tp": 152,
+          "fp": 2,
+          "fn": 7,
+          "precision": 0.987,
+          "recall": 0.956,
+          "f1": 0.9712,
           "n_gold_switches": 159,
           "n_pred_switches": 154
         },
         {
           "recording": "J26DS313_R0028",
-          "tp": 17,
-          "fp": 12,
-          "fn": 7,
-          "precision": 0.5862,
-          "recall": 0.7083,
-          "f1": 0.6415,
+          "tp": 16,
+          "fp": 13,
+          "fn": 8,
+          "precision": 0.5517,
+          "recall": 0.6667,
+          "f1": 0.6038,
           "n_gold_switches": 24,
           "n_pred_switches": 29
         },
         {
-          "recording": "J26DS313_R0031",
-          "tp": 238,
-          "fp": 3,
+          "recording": "J26DS313_R0029",
+          "tp": 123,
+          "fp": 0,
+          "fn": 8,
+          "precision": 1.0,
+          "recall": 0.9389,
+          "f1": 0.9685,
+          "n_gold_switches": 131,
+          "n_pred_switches": 123
+        },
+        {
+          "recording": "J26DS313_R0030",
+          "tp": 119,
+          "fp": 0,
           "fn": 9,
-          "precision": 0.9876,
-          "recall": 0.9636,
-          "f1": 0.9754,
+          "precision": 1.0,
+          "recall": 0.9297,
+          "f1": 0.9636,
+          "n_gold_switches": 128,
+          "n_pred_switches": 119
+        },
+        {
+          "recording": "J26DS313_R0031",
+          "tp": 243,
+          "fp": 0,
+          "fn": 4,
+          "precision": 1.0,
+          "recall": 0.9838,
+          "f1": 0.9918,
           "n_gold_switches": 247,
-          "n_pred_switches": 241
+          "n_pred_switches": 243
         },
         {
           "recording": "J26DS313_R0032",
@@ -963,12 +1182,12 @@
         },
         {
           "recording": "J26DS313_R0037",
-          "tp": 105,
-          "fp": 3,
-          "fn": 15,
-          "precision": 0.9722,
-          "recall": 0.875,
-          "f1": 0.9211,
+          "tp": 106,
+          "fp": 2,
+          "fn": 14,
+          "precision": 0.9815,
+          "recall": 0.8833,
+          "f1": 0.9298,
           "n_gold_switches": 120,
           "n_pred_switches": 108
         },
@@ -985,58 +1204,58 @@
         },
         {
           "recording": "J26DS313_R0039",
-          "tp": 93,
+          "tp": 95,
           "fp": 0,
-          "fn": 6,
+          "fn": 4,
           "precision": 1.0,
-          "recall": 0.9394,
-          "f1": 0.9688,
+          "recall": 0.9596,
+          "f1": 0.9794,
           "n_gold_switches": 99,
-          "n_pred_switches": 93
+          "n_pred_switches": 95
         },
         {
           "recording": "J26DS313_R0040",
-          "tp": 81,
-          "fp": 1,
-          "fn": 11,
-          "precision": 0.9878,
-          "recall": 0.8804,
-          "f1": 0.931,
+          "tp": 84,
+          "fp": 0,
+          "fn": 8,
+          "precision": 1.0,
+          "recall": 0.913,
+          "f1": 0.9545,
           "n_gold_switches": 92,
-          "n_pred_switches": 82
+          "n_pred_switches": 84
         },
         {
           "recording": "J26DS313_R0041",
-          "tp": 128,
-          "fp": 0,
-          "fn": 11,
-          "precision": 1.0,
-          "recall": 0.9209,
-          "f1": 0.9588,
+          "tp": 127,
+          "fp": 1,
+          "fn": 12,
+          "precision": 0.9922,
+          "recall": 0.9137,
+          "f1": 0.9513,
           "n_gold_switches": 139,
           "n_pred_switches": 128
         },
         {
           "recording": "J26DS313_R0042",
-          "tp": 117,
-          "fp": 2,
-          "fn": 12,
-          "precision": 0.9832,
-          "recall": 0.907,
-          "f1": 0.9435,
+          "tp": 119,
+          "fp": 0,
+          "fn": 10,
+          "precision": 1.0,
+          "recall": 0.9225,
+          "f1": 0.9597,
           "n_gold_switches": 129,
           "n_pred_switches": 119
         },
         {
           "recording": "J26DS313_R0043",
-          "tp": 107,
+          "tp": 109,
           "fp": 0,
-          "fn": 7,
+          "fn": 5,
           "precision": 1.0,
-          "recall": 0.9386,
-          "f1": 0.9683,
+          "recall": 0.9561,
+          "f1": 0.9776,
           "n_gold_switches": 114,
-          "n_pred_switches": 107
+          "n_pred_switches": 109
         },
         {
           "recording": "J26DS313_R0044",
@@ -1051,25 +1270,36 @@
         },
         {
           "recording": "J26DS313_R0045",
-          "tp": 136,
-          "fp": 2,
-          "fn": 14,
-          "precision": 0.9855,
-          "recall": 0.9067,
-          "f1": 0.9444,
+          "tp": 137,
+          "fp": 1,
+          "fn": 13,
+          "precision": 0.9928,
+          "recall": 0.9133,
+          "f1": 0.9514,
           "n_gold_switches": 150,
           "n_pred_switches": 138
         },
         {
           "recording": "J26DS313_R0046",
-          "tp": 224,
-          "fp": 2,
-          "fn": 27,
-          "precision": 0.9912,
-          "recall": 0.8924,
-          "f1": 0.9392,
+          "tp": 225,
+          "fp": 1,
+          "fn": 26,
+          "precision": 0.9956,
+          "recall": 0.8964,
+          "f1": 0.9434,
           "n_gold_switches": 251,
           "n_pred_switches": 226
+        },
+        {
+          "recording": "J26DS313_R0047",
+          "tp": 335,
+          "fp": 9,
+          "fn": 35,
+          "precision": 0.9738,
+          "recall": 0.9054,
+          "f1": 0.9384,
+          "n_gold_switches": 370,
+          "n_pred_switches": 344
         },
         {
           "recording": "J26DS313_R0048",
@@ -1084,58 +1314,69 @@
         },
         {
           "recording": "J26DS313_R0049",
-          "tp": 192,
+          "tp": 203,
           "fp": 0,
-          "fn": 15,
+          "fn": 4,
           "precision": 1.0,
-          "recall": 0.9275,
-          "f1": 0.9624,
+          "recall": 0.9807,
+          "f1": 0.9902,
           "n_gold_switches": 207,
-          "n_pred_switches": 192
+          "n_pred_switches": 203
         },
         {
           "recording": "J26DS313_R0050",
-          "tp": 101,
-          "fp": 28,
-          "fn": 27,
-          "precision": 0.7829,
-          "recall": 0.7891,
-          "f1": 0.786,
+          "tp": 96,
+          "fp": 36,
+          "fn": 32,
+          "precision": 0.7273,
+          "recall": 0.75,
+          "f1": 0.7385,
           "n_gold_switches": 128,
-          "n_pred_switches": 129
+          "n_pred_switches": 132
         },
         {
           "recording": "J26DS313_R0051",
-          "tp": 43,
-          "fp": 117,
-          "fn": 36,
-          "precision": 0.2687,
-          "recall": 0.5443,
-          "f1": 0.3598,
+          "tp": 41,
+          "fp": 110,
+          "fn": 38,
+          "precision": 0.2715,
+          "recall": 0.519,
+          "f1": 0.3565,
           "n_gold_switches": 79,
-          "n_pred_switches": 160
+          "n_pred_switches": 151
         },
         {
           "recording": "J26DS313_R0052",
-          "tp": 152,
-          "fp": 24,
-          "fn": 16,
-          "precision": 0.8636,
-          "recall": 0.9048,
-          "f1": 0.8837,
-          "n_gold_switches": 168,
-          "n_pred_switches": 176
+          "tp": 142,
+          "fp": 31,
+          "fn": 46,
+          "precision": 0.8208,
+          "recall": 0.7553,
+          "f1": 0.7867,
+          "n_gold_switches": 188,
+          "n_pred_switches": 173
+        },
+        {
+          "recording": "J26DS313_R0053",
+          "tp": 147,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n_gold_switches": 147,
+          "n_pred_switches": 147
         },
         {
           "recording": "J26DS313_R0057",
-          "tp": 25,
+          "tp": 27,
           "fp": 4,
-          "fn": 2,
-          "precision": 0.8621,
-          "recall": 0.9259,
-          "f1": 0.8929,
+          "fn": 0,
+          "precision": 0.871,
+          "recall": 1.0,
+          "f1": 0.931,
           "n_gold_switches": 27,
-          "n_pred_switches": 29
+          "n_pred_switches": 31
         },
         {
           "recording": "J26DS313_R0060",
@@ -1161,60 +1402,214 @@
         },
         {
           "recording": "J26DS313_R0062",
-          "tp": 34,
-          "fp": 53,
-          "fn": 43,
-          "precision": 0.3908,
-          "recall": 0.4416,
-          "f1": 0.4146,
+          "tp": 49,
+          "fp": 51,
+          "fn": 28,
+          "precision": 0.49,
+          "recall": 0.6364,
+          "f1": 0.5537,
           "n_gold_switches": 77,
-          "n_pred_switches": 87
+          "n_pred_switches": 100
         },
         {
           "recording": "J26DS313_R0063",
-          "tp": 43,
-          "fp": 55,
-          "fn": 20,
-          "precision": 0.4388,
-          "recall": 0.6825,
-          "f1": 0.5342,
+          "tp": 46,
+          "fp": 48,
+          "fn": 17,
+          "precision": 0.4894,
+          "recall": 0.7302,
+          "f1": 0.586,
           "n_gold_switches": 63,
-          "n_pred_switches": 98
+          "n_pred_switches": 94
         },
         {
           "recording": "J26DS313_R0064",
           "tp": 53,
-          "fp": 35,
+          "fp": 34,
           "fn": 15,
-          "precision": 0.6023,
+          "precision": 0.6092,
           "recall": 0.7794,
-          "f1": 0.6795,
+          "f1": 0.6839,
           "n_gold_switches": 68,
-          "n_pred_switches": 88
+          "n_pred_switches": 87
         },
         {
           "recording": "J26DS313_R0065",
-          "tp": 100,
-          "fp": 95,
-          "fn": 40,
-          "precision": 0.5128,
-          "recall": 0.7143,
-          "f1": 0.597,
+          "tp": 111,
+          "fp": 82,
+          "fn": 29,
+          "precision": 0.5751,
+          "recall": 0.7929,
+          "f1": 0.6667,
           "n_gold_switches": 140,
+          "n_pred_switches": 193
+        },
+        {
+          "recording": "J26DS313_R0068",
+          "tp": 207,
+          "fp": 1,
+          "fn": 14,
+          "precision": 0.9952,
+          "recall": 0.9367,
+          "f1": 0.965,
+          "n_gold_switches": 221,
+          "n_pred_switches": 208
+        },
+        {
+          "recording": "J26DS313_R0069",
+          "tp": 209,
+          "fp": 0,
+          "fn": 8,
+          "precision": 1.0,
+          "recall": 0.9631,
+          "f1": 0.9812,
+          "n_gold_switches": 217,
+          "n_pred_switches": 209
+        },
+        {
+          "recording": "J26DS313_R0070",
+          "tp": 192,
+          "fp": 3,
+          "fn": 11,
+          "precision": 0.9846,
+          "recall": 0.9458,
+          "f1": 0.9648,
+          "n_gold_switches": 203,
           "n_pred_switches": 195
+        },
+        {
+          "recording": "J26DS313_R0071",
+          "tp": 236,
+          "fp": 2,
+          "fn": 19,
+          "precision": 0.9916,
+          "recall": 0.9255,
+          "f1": 0.9574,
+          "n_gold_switches": 255,
+          "n_pred_switches": 238
+        },
+        {
+          "recording": "J26DS313_R0072",
+          "tp": 148,
+          "fp": 4,
+          "fn": 15,
+          "precision": 0.9737,
+          "recall": 0.908,
+          "f1": 0.9397,
+          "n_gold_switches": 163,
+          "n_pred_switches": 152
+        },
+        {
+          "recording": "J26DS313_R0073",
+          "tp": 250,
+          "fp": 0,
+          "fn": 5,
+          "precision": 1.0,
+          "recall": 0.9804,
+          "f1": 0.9901,
+          "n_gold_switches": 255,
+          "n_pred_switches": 250
+        },
+        {
+          "recording": "J26DS313_R0074",
+          "tp": 361,
+          "fp": 0,
+          "fn": 10,
+          "precision": 1.0,
+          "recall": 0.973,
+          "f1": 0.9863,
+          "n_gold_switches": 371,
+          "n_pred_switches": 361
+        },
+        {
+          "recording": "J26DS313_R0075",
+          "tp": 197,
+          "fp": 4,
+          "fn": 12,
+          "precision": 0.9801,
+          "recall": 0.9426,
+          "f1": 0.961,
+          "n_gold_switches": 209,
+          "n_pred_switches": 201
+        },
+        {
+          "recording": "J26DS313_R0100",
+          "tp": 133,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.9852,
+          "f1": 0.9925,
+          "n_gold_switches": 135,
+          "n_pred_switches": 133
+        },
+        {
+          "recording": "J26DS313_R0101",
+          "tp": 160,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n_gold_switches": 160,
+          "n_pred_switches": 160
+        },
+        {
+          "recording": "J26DS313_R0102",
+          "tp": 156,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n_gold_switches": 156,
+          "n_pred_switches": 156
+        },
+        {
+          "recording": "J26DS313_R0103",
+          "tp": 148,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n_gold_switches": 148,
+          "n_pred_switches": 148
+        },
+        {
+          "recording": "J26DS313_R0104",
+          "tp": 174,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n_gold_switches": 174,
+          "n_pred_switches": 174
+        },
+        {
+          "recording": "J26DS313_R0105",
+          "tp": 217,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n_gold_switches": 217,
+          "n_pred_switches": 217
         }
       ]
     },
     "heuristic__cross_utterance": {
       "overall": {
-        "tp": 4577,
-        "fp": 1013,
-        "fn": 1270,
-        "precision": 0.8188,
-        "recall": 0.7828,
-        "f1": 0.8004,
-        "n_gold_switches": 5847,
-        "n_pred_switches": 5590
+        "tp": 7554,
+        "fp": 1399,
+        "fn": 2160,
+        "precision": 0.8437,
+        "recall": 0.7776,
+        "f1": 0.8093,
+        "n_gold_switches": 9714,
+        "n_pred_switches": 8953
       },
       "per_recording": [
         {
@@ -1493,6 +1888,28 @@
           "n_pred_switches": 35
         },
         {
+          "recording": "J26DS313_R0029",
+          "tp": 94,
+          "fp": 9,
+          "fn": 43,
+          "precision": 0.9126,
+          "recall": 0.6861,
+          "f1": 0.7833,
+          "n_gold_switches": 137,
+          "n_pred_switches": 103
+        },
+        {
+          "recording": "J26DS313_R0030",
+          "tp": 98,
+          "fp": 5,
+          "fn": 36,
+          "precision": 0.9515,
+          "recall": 0.7313,
+          "f1": 0.827,
+          "n_gold_switches": 134,
+          "n_pred_switches": 103
+        },
+        {
           "recording": "J26DS313_R0031",
           "tp": 229,
           "fp": 15,
@@ -1669,6 +2086,17 @@
           "n_pred_switches": 246
         },
         {
+          "recording": "J26DS313_R0047",
+          "tp": 304,
+          "fp": 50,
+          "fn": 100,
+          "precision": 0.8588,
+          "recall": 0.7525,
+          "f1": 0.8021,
+          "n_gold_switches": 404,
+          "n_pred_switches": 354
+        },
+        {
           "recording": "J26DS313_R0048",
           "tp": 66,
           "fp": 1,
@@ -1714,14 +2142,25 @@
         },
         {
           "recording": "J26DS313_R0052",
-          "tp": 137,
-          "fp": 37,
-          "fn": 49,
-          "precision": 0.7874,
-          "recall": 0.7366,
-          "f1": 0.7611,
-          "n_gold_switches": 186,
-          "n_pred_switches": 174
+          "tp": 155,
+          "fp": 33,
+          "fn": 44,
+          "precision": 0.8245,
+          "recall": 0.7789,
+          "f1": 0.801,
+          "n_gold_switches": 199,
+          "n_pred_switches": 188
+        },
+        {
+          "recording": "J26DS313_R0053",
+          "tp": 120,
+          "fp": 22,
+          "fn": 37,
+          "precision": 0.8451,
+          "recall": 0.7643,
+          "f1": 0.8027,
+          "n_gold_switches": 157,
+          "n_pred_switches": 142
         },
         {
           "recording": "J26DS313_R0057",
@@ -1799,53 +2238,207 @@
           "f1": 0.5435,
           "n_gold_switches": 166,
           "n_pred_switches": 202
+        },
+        {
+          "recording": "J26DS313_R0068",
+          "tp": 192,
+          "fp": 35,
+          "fn": 59,
+          "precision": 0.8458,
+          "recall": 0.7649,
+          "f1": 0.8033,
+          "n_gold_switches": 251,
+          "n_pred_switches": 227
+        },
+        {
+          "recording": "J26DS313_R0069",
+          "tp": 174,
+          "fp": 34,
+          "fn": 54,
+          "precision": 0.8365,
+          "recall": 0.7632,
+          "f1": 0.7982,
+          "n_gold_switches": 228,
+          "n_pred_switches": 208
+        },
+        {
+          "recording": "J26DS313_R0070",
+          "tp": 160,
+          "fp": 36,
+          "fn": 60,
+          "precision": 0.8163,
+          "recall": 0.7273,
+          "f1": 0.7692,
+          "n_gold_switches": 220,
+          "n_pred_switches": 196
+        },
+        {
+          "recording": "J26DS313_R0071",
+          "tp": 219,
+          "fp": 37,
+          "fn": 52,
+          "precision": 0.8555,
+          "recall": 0.8081,
+          "f1": 0.8311,
+          "n_gold_switches": 271,
+          "n_pred_switches": 256
+        },
+        {
+          "recording": "J26DS313_R0072",
+          "tp": 141,
+          "fp": 20,
+          "fn": 37,
+          "precision": 0.8758,
+          "recall": 0.7921,
+          "f1": 0.8319,
+          "n_gold_switches": 178,
+          "n_pred_switches": 161
+        },
+        {
+          "recording": "J26DS313_R0073",
+          "tp": 202,
+          "fp": 22,
+          "fn": 66,
+          "precision": 0.9018,
+          "recall": 0.7537,
+          "f1": 0.8211,
+          "n_gold_switches": 268,
+          "n_pred_switches": 224
+        },
+        {
+          "recording": "J26DS313_R0074",
+          "tp": 264,
+          "fp": 45,
+          "fn": 111,
+          "precision": 0.8544,
+          "recall": 0.704,
+          "f1": 0.7719,
+          "n_gold_switches": 375,
+          "n_pred_switches": 309
+        },
+        {
+          "recording": "J26DS313_R0075",
+          "tp": 174,
+          "fp": 26,
+          "fn": 43,
+          "precision": 0.87,
+          "recall": 0.8018,
+          "f1": 0.8345,
+          "n_gold_switches": 217,
+          "n_pred_switches": 200
+        },
+        {
+          "recording": "J26DS313_R0100",
+          "tp": 105,
+          "fp": 19,
+          "fn": 37,
+          "precision": 0.8468,
+          "recall": 0.7394,
+          "f1": 0.7895,
+          "n_gold_switches": 142,
+          "n_pred_switches": 124
+        },
+        {
+          "recording": "J26DS313_R0101",
+          "tp": 131,
+          "fp": 13,
+          "fn": 29,
+          "precision": 0.9097,
+          "recall": 0.8187,
+          "f1": 0.8618,
+          "n_gold_switches": 160,
+          "n_pred_switches": 144
+        },
+        {
+          "recording": "J26DS313_R0102",
+          "tp": 123,
+          "fp": 7,
+          "fn": 41,
+          "precision": 0.9462,
+          "recall": 0.75,
+          "f1": 0.8367,
+          "n_gold_switches": 164,
+          "n_pred_switches": 130
+        },
+        {
+          "recording": "J26DS313_R0103",
+          "tp": 121,
+          "fp": 4,
+          "fn": 30,
+          "precision": 0.968,
+          "recall": 0.8013,
+          "f1": 0.8768,
+          "n_gold_switches": 151,
+          "n_pred_switches": 125
+        },
+        {
+          "recording": "J26DS313_R0104",
+          "tp": 149,
+          "fp": 5,
+          "fn": 27,
+          "precision": 0.9675,
+          "recall": 0.8466,
+          "f1": 0.903,
+          "n_gold_switches": 176,
+          "n_pred_switches": 154
+        },
+        {
+          "recording": "J26DS313_R0105",
+          "tp": 188,
+          "fp": 1,
+          "fn": 33,
+          "precision": 0.9947,
+          "recall": 0.8507,
+          "f1": 0.9171,
+          "n_gold_switches": 221,
+          "n_pred_switches": 189
         }
       ]
     },
     "hybrid__cross_utterance": {
       "overall": {
-        "tp": 5092,
-        "fp": 746,
-        "fn": 755,
-        "precision": 0.8722,
-        "recall": 0.8709,
-        "f1": 0.8715,
-        "n_gold_switches": 5847,
-        "n_pred_switches": 5838
+        "tp": 8767,
+        "fp": 761,
+        "fn": 947,
+        "precision": 0.9201,
+        "recall": 0.9025,
+        "f1": 0.9112,
+        "n_gold_switches": 9714,
+        "n_pred_switches": 9528
       },
       "per_recording": [
         {
           "recording": "J26DS313_R0002",
-          "tp": 31,
-          "fp": 13,
-          "fn": 6,
-          "precision": 0.7045,
-          "recall": 0.8378,
-          "f1": 0.7654,
+          "tp": 28,
+          "fp": 12,
+          "fn": 9,
+          "precision": 0.7,
+          "recall": 0.7568,
+          "f1": 0.7273,
           "n_gold_switches": 37,
-          "n_pred_switches": 44
+          "n_pred_switches": 40
         },
         {
           "recording": "J26DS313_R0003",
-          "tp": 21,
-          "fp": 10,
-          "fn": 6,
-          "precision": 0.6774,
-          "recall": 0.7778,
-          "f1": 0.7241,
+          "tp": 15,
+          "fp": 12,
+          "fn": 12,
+          "precision": 0.5556,
+          "recall": 0.5556,
+          "f1": 0.5556,
           "n_gold_switches": 27,
-          "n_pred_switches": 31
+          "n_pred_switches": 27
         },
         {
           "recording": "J26DS313_R0004",
-          "tp": 10,
-          "fp": 30,
-          "fn": 6,
+          "tp": 9,
+          "fp": 27,
+          "fn": 7,
           "precision": 0.25,
-          "recall": 0.625,
-          "f1": 0.3571,
+          "recall": 0.5625,
+          "f1": 0.3462,
           "n_gold_switches": 16,
-          "n_pred_switches": 40
+          "n_pred_switches": 36
         },
         {
           "recording": "J26DS313_R0005",
@@ -1871,14 +2464,14 @@
         },
         {
           "recording": "J26DS313_R0007",
-          "tp": 31,
-          "fp": 21,
-          "fn": 5,
-          "precision": 0.5962,
-          "recall": 0.8611,
-          "f1": 0.7045,
+          "tp": 21,
+          "fp": 29,
+          "fn": 15,
+          "precision": 0.42,
+          "recall": 0.5833,
+          "f1": 0.4884,
           "n_gold_switches": 36,
-          "n_pred_switches": 52
+          "n_pred_switches": 50
         },
         {
           "recording": "J26DS313_R0009",
@@ -1904,45 +2497,45 @@
         },
         {
           "recording": "J26DS313_R0011",
-          "tp": 86,
+          "tp": 88,
           "fp": 3,
-          "fn": 3,
-          "precision": 0.9663,
-          "recall": 0.9663,
-          "f1": 0.9663,
+          "fn": 1,
+          "precision": 0.967,
+          "recall": 0.9888,
+          "f1": 0.9778,
           "n_gold_switches": 89,
-          "n_pred_switches": 89
+          "n_pred_switches": 91
         },
         {
           "recording": "J26DS313_R0012",
-          "tp": 80,
+          "tp": 78,
           "fp": 3,
-          "fn": 3,
-          "precision": 0.9639,
-          "recall": 0.9639,
-          "f1": 0.9639,
+          "fn": 5,
+          "precision": 0.963,
+          "recall": 0.9398,
+          "f1": 0.9512,
           "n_gold_switches": 83,
-          "n_pred_switches": 83
+          "n_pred_switches": 81
         },
         {
           "recording": "J26DS313_R0013",
-          "tp": 83,
-          "fp": 2,
-          "fn": 1,
-          "precision": 0.9765,
-          "recall": 0.9881,
-          "f1": 0.9822,
+          "tp": 82,
+          "fp": 3,
+          "fn": 2,
+          "precision": 0.9647,
+          "recall": 0.9762,
+          "f1": 0.9704,
           "n_gold_switches": 84,
           "n_pred_switches": 85
         },
         {
           "recording": "J26DS313_R0014",
-          "tp": 58,
-          "fp": 32,
-          "fn": 14,
-          "precision": 0.6444,
-          "recall": 0.8056,
-          "f1": 0.716,
+          "tp": 51,
+          "fp": 39,
+          "fn": 21,
+          "precision": 0.5667,
+          "recall": 0.7083,
+          "f1": 0.6296,
           "n_gold_switches": 72,
           "n_pred_switches": 90
         },
@@ -1959,91 +2552,91 @@
         },
         {
           "recording": "J26DS313_R0016",
-          "tp": 101,
+          "tp": 103,
           "fp": 2,
-          "fn": 8,
-          "precision": 0.9806,
-          "recall": 0.9266,
-          "f1": 0.9528,
+          "fn": 6,
+          "precision": 0.981,
+          "recall": 0.945,
+          "f1": 0.9626,
           "n_gold_switches": 109,
-          "n_pred_switches": 103
+          "n_pred_switches": 105
         },
         {
           "recording": "J26DS313_R0018",
-          "tp": 76,
-          "fp": 20,
-          "fn": 36,
-          "precision": 0.7917,
-          "recall": 0.6786,
-          "f1": 0.7308,
+          "tp": 67,
+          "fp": 19,
+          "fn": 45,
+          "precision": 0.7791,
+          "recall": 0.5982,
+          "f1": 0.6768,
           "n_gold_switches": 112,
-          "n_pred_switches": 96
+          "n_pred_switches": 86
         },
         {
           "recording": "J26DS313_R0019",
           "tp": 133,
-          "fp": 12,
+          "fp": 8,
           "fn": 9,
-          "precision": 0.9172,
+          "precision": 0.9433,
           "recall": 0.9366,
-          "f1": 0.9268,
+          "f1": 0.9399,
           "n_gold_switches": 142,
-          "n_pred_switches": 145
+          "n_pred_switches": 141
         },
         {
           "recording": "J26DS313_R0020",
           "tp": 112,
-          "fp": 2,
+          "fp": 0,
           "fn": 0,
-          "precision": 0.9825,
+          "precision": 1.0,
           "recall": 1.0,
-          "f1": 0.9912,
+          "f1": 1.0,
           "n_gold_switches": 112,
-          "n_pred_switches": 114
+          "n_pred_switches": 112
         },
         {
           "recording": "J26DS313_R0021",
-          "tp": 129,
-          "fp": 1,
-          "fn": 1,
-          "precision": 0.9923,
-          "recall": 0.9923,
-          "f1": 0.9923,
+          "tp": 130,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
           "n_gold_switches": 130,
           "n_pred_switches": 130
         },
         {
           "recording": "J26DS313_R0022",
-          "tp": 101,
-          "fp": 4,
-          "fn": 12,
-          "precision": 0.9619,
-          "recall": 0.8938,
-          "f1": 0.9266,
+          "tp": 102,
+          "fp": 3,
+          "fn": 11,
+          "precision": 0.9714,
+          "recall": 0.9027,
+          "f1": 0.9358,
           "n_gold_switches": 113,
           "n_pred_switches": 105
         },
         {
           "recording": "J26DS313_R0023",
-          "tp": 26,
+          "tp": 22,
           "fp": 70,
-          "fn": 37,
-          "precision": 0.2708,
-          "recall": 0.4127,
-          "f1": 0.327,
+          "fn": 41,
+          "precision": 0.2391,
+          "recall": 0.3492,
+          "f1": 0.2839,
           "n_gold_switches": 63,
-          "n_pred_switches": 96
+          "n_pred_switches": 92
         },
         {
           "recording": "J26DS313_R0024",
-          "tp": 82,
-          "fp": 28,
-          "fn": 46,
-          "precision": 0.7455,
-          "recall": 0.6406,
-          "f1": 0.6891,
+          "tp": 66,
+          "fp": 38,
+          "fn": 62,
+          "precision": 0.6346,
+          "recall": 0.5156,
+          "f1": 0.569,
           "n_gold_switches": 128,
-          "n_pred_switches": 110
+          "n_pred_switches": 104
         },
         {
           "recording": "J26DS313_R0025",
@@ -2069,36 +2662,58 @@
         },
         {
           "recording": "J26DS313_R0027",
-          "tp": 161,
-          "fp": 4,
-          "fn": 8,
-          "precision": 0.9758,
-          "recall": 0.9527,
-          "f1": 0.9641,
+          "tp": 162,
+          "fp": 3,
+          "fn": 7,
+          "precision": 0.9818,
+          "recall": 0.9586,
+          "f1": 0.9701,
           "n_gold_switches": 169,
           "n_pred_switches": 165
         },
         {
           "recording": "J26DS313_R0028",
-          "tp": 18,
-          "fp": 14,
-          "fn": 7,
-          "precision": 0.5625,
-          "recall": 0.72,
-          "f1": 0.6316,
+          "tp": 17,
+          "fp": 15,
+          "fn": 8,
+          "precision": 0.5312,
+          "recall": 0.68,
+          "f1": 0.5965,
           "n_gold_switches": 25,
           "n_pred_switches": 32
         },
         {
-          "recording": "J26DS313_R0031",
-          "tp": 261,
-          "fp": 3,
+          "recording": "J26DS313_R0029",
+          "tp": 129,
+          "fp": 0,
+          "fn": 8,
+          "precision": 1.0,
+          "recall": 0.9416,
+          "f1": 0.9699,
+          "n_gold_switches": 137,
+          "n_pred_switches": 129
+        },
+        {
+          "recording": "J26DS313_R0030",
+          "tp": 125,
+          "fp": 0,
           "fn": 9,
-          "precision": 0.9886,
-          "recall": 0.9667,
-          "f1": 0.9775,
+          "precision": 1.0,
+          "recall": 0.9328,
+          "f1": 0.9653,
+          "n_gold_switches": 134,
+          "n_pred_switches": 125
+        },
+        {
+          "recording": "J26DS313_R0031",
+          "tp": 266,
+          "fp": 0,
+          "fn": 4,
+          "precision": 1.0,
+          "recall": 0.9852,
+          "f1": 0.9925,
           "n_gold_switches": 270,
-          "n_pred_switches": 264
+          "n_pred_switches": 266
         },
         {
           "recording": "J26DS313_R0032",
@@ -2179,58 +2794,58 @@
         },
         {
           "recording": "J26DS313_R0039",
-          "tp": 102,
+          "tp": 104,
           "fp": 0,
-          "fn": 6,
+          "fn": 4,
           "precision": 1.0,
-          "recall": 0.9444,
-          "f1": 0.9714,
+          "recall": 0.963,
+          "f1": 0.9811,
           "n_gold_switches": 108,
-          "n_pred_switches": 102
+          "n_pred_switches": 104
         },
         {
           "recording": "J26DS313_R0040",
-          "tp": 92,
-          "fp": 1,
-          "fn": 13,
-          "precision": 0.9892,
-          "recall": 0.8762,
-          "f1": 0.9293,
+          "tp": 95,
+          "fp": 0,
+          "fn": 10,
+          "precision": 1.0,
+          "recall": 0.9048,
+          "f1": 0.95,
           "n_gold_switches": 105,
-          "n_pred_switches": 93
+          "n_pred_switches": 95
         },
         {
           "recording": "J26DS313_R0041",
-          "tp": 138,
-          "fp": 0,
-          "fn": 12,
-          "precision": 1.0,
-          "recall": 0.92,
-          "f1": 0.9583,
+          "tp": 137,
+          "fp": 1,
+          "fn": 13,
+          "precision": 0.9928,
+          "recall": 0.9133,
+          "f1": 0.9514,
           "n_gold_switches": 150,
           "n_pred_switches": 138
         },
         {
           "recording": "J26DS313_R0042",
-          "tp": 130,
-          "fp": 2,
-          "fn": 12,
-          "precision": 0.9848,
-          "recall": 0.9155,
-          "f1": 0.9489,
+          "tp": 132,
+          "fp": 0,
+          "fn": 10,
+          "precision": 1.0,
+          "recall": 0.9296,
+          "f1": 0.9635,
           "n_gold_switches": 142,
           "n_pred_switches": 132
         },
         {
           "recording": "J26DS313_R0043",
-          "tp": 116,
+          "tp": 118,
           "fp": 0,
-          "fn": 8,
+          "fn": 6,
           "precision": 1.0,
-          "recall": 0.9355,
-          "f1": 0.9667,
+          "recall": 0.9516,
+          "f1": 0.9752,
           "n_gold_switches": 124,
-          "n_pred_switches": 116
+          "n_pred_switches": 118
         },
         {
           "recording": "J26DS313_R0044",
@@ -2245,25 +2860,36 @@
         },
         {
           "recording": "J26DS313_R0045",
-          "tp": 142,
-          "fp": 2,
-          "fn": 14,
-          "precision": 0.9861,
-          "recall": 0.9103,
-          "f1": 0.9467,
+          "tp": 143,
+          "fp": 1,
+          "fn": 13,
+          "precision": 0.9931,
+          "recall": 0.9167,
+          "f1": 0.9533,
           "n_gold_switches": 156,
           "n_pred_switches": 144
         },
         {
           "recording": "J26DS313_R0046",
-          "tp": 242,
-          "fp": 2,
-          "fn": 29,
-          "precision": 0.9918,
-          "recall": 0.893,
-          "f1": 0.9398,
+          "tp": 243,
+          "fp": 1,
+          "fn": 28,
+          "precision": 0.9959,
+          "recall": 0.8967,
+          "f1": 0.9437,
           "n_gold_switches": 271,
           "n_pred_switches": 244
+        },
+        {
+          "recording": "J26DS313_R0047",
+          "tp": 366,
+          "fp": 9,
+          "fn": 38,
+          "precision": 0.976,
+          "recall": 0.9059,
+          "f1": 0.9397,
+          "n_gold_switches": 404,
+          "n_pred_switches": 375
         },
         {
           "recording": "J26DS313_R0048",
@@ -2278,58 +2904,69 @@
         },
         {
           "recording": "J26DS313_R0049",
-          "tp": 210,
+          "tp": 221,
           "fp": 0,
-          "fn": 15,
+          "fn": 4,
           "precision": 1.0,
-          "recall": 0.9333,
-          "f1": 0.9655,
+          "recall": 0.9822,
+          "f1": 0.991,
           "n_gold_switches": 225,
-          "n_pred_switches": 210
+          "n_pred_switches": 221
         },
         {
           "recording": "J26DS313_R0050",
-          "tp": 113,
-          "fp": 30,
-          "fn": 29,
-          "precision": 0.7902,
-          "recall": 0.7958,
-          "f1": 0.793,
+          "tp": 105,
+          "fp": 39,
+          "fn": 37,
+          "precision": 0.7292,
+          "recall": 0.7394,
+          "f1": 0.7343,
           "n_gold_switches": 142,
-          "n_pred_switches": 143
+          "n_pred_switches": 144
         },
         {
           "recording": "J26DS313_R0051",
-          "tp": 50,
-          "fp": 122,
-          "fn": 40,
-          "precision": 0.2907,
-          "recall": 0.5556,
-          "f1": 0.3817,
+          "tp": 48,
+          "fp": 115,
+          "fn": 42,
+          "precision": 0.2945,
+          "recall": 0.5333,
+          "f1": 0.3794,
           "n_gold_switches": 90,
-          "n_pred_switches": 172
+          "n_pred_switches": 163
         },
         {
           "recording": "J26DS313_R0052",
-          "tp": 165,
-          "fp": 26,
-          "fn": 21,
-          "precision": 0.8639,
-          "recall": 0.8871,
-          "f1": 0.8753,
-          "n_gold_switches": 186,
-          "n_pred_switches": 191
+          "tp": 153,
+          "fp": 34,
+          "fn": 46,
+          "precision": 0.8182,
+          "recall": 0.7688,
+          "f1": 0.7927,
+          "n_gold_switches": 199,
+          "n_pred_switches": 187
+        },
+        {
+          "recording": "J26DS313_R0053",
+          "tp": 157,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n_gold_switches": 157,
+          "n_pred_switches": 157
         },
         {
           "recording": "J26DS313_R0057",
-          "tp": 30,
+          "tp": 32,
           "fp": 4,
-          "fn": 2,
-          "precision": 0.8824,
-          "recall": 0.9375,
-          "f1": 0.9091,
+          "fn": 0,
+          "precision": 0.8889,
+          "recall": 1.0,
+          "f1": 0.9412,
           "n_gold_switches": 32,
-          "n_pred_switches": 34
+          "n_pred_switches": 36
         },
         {
           "recording": "J26DS313_R0060",
@@ -2355,60 +2992,214 @@
         },
         {
           "recording": "J26DS313_R0062",
-          "tp": 42,
+          "tp": 58,
           "fp": 61,
-          "fn": 51,
-          "precision": 0.4078,
-          "recall": 0.4516,
-          "f1": 0.4286,
+          "fn": 35,
+          "precision": 0.4874,
+          "recall": 0.6237,
+          "f1": 0.5472,
           "n_gold_switches": 93,
-          "n_pred_switches": 103
+          "n_pred_switches": 119
         },
         {
           "recording": "J26DS313_R0063",
-          "tp": 52,
-          "fp": 58,
-          "fn": 24,
-          "precision": 0.4727,
-          "recall": 0.6842,
-          "f1": 0.5591,
+          "tp": 55,
+          "fp": 49,
+          "fn": 21,
+          "precision": 0.5288,
+          "recall": 0.7237,
+          "f1": 0.6111,
           "n_gold_switches": 76,
-          "n_pred_switches": 110
+          "n_pred_switches": 104
         },
         {
           "recording": "J26DS313_R0064",
-          "tp": 61,
-          "fp": 42,
-          "fn": 21,
-          "precision": 0.5922,
-          "recall": 0.7439,
-          "f1": 0.6595,
+          "tp": 62,
+          "fp": 40,
+          "fn": 20,
+          "precision": 0.6078,
+          "recall": 0.7561,
+          "f1": 0.6739,
           "n_gold_switches": 82,
-          "n_pred_switches": 103
+          "n_pred_switches": 102
         },
         {
           "recording": "J26DS313_R0065",
-          "tp": 118,
-          "fp": 104,
-          "fn": 48,
-          "precision": 0.5315,
-          "recall": 0.7108,
-          "f1": 0.6082,
+          "tp": 131,
+          "fp": 89,
+          "fn": 35,
+          "precision": 0.5955,
+          "recall": 0.7892,
+          "f1": 0.6788,
           "n_gold_switches": 166,
-          "n_pred_switches": 222
+          "n_pred_switches": 220
+        },
+        {
+          "recording": "J26DS313_R0068",
+          "tp": 231,
+          "fp": 1,
+          "fn": 20,
+          "precision": 0.9957,
+          "recall": 0.9203,
+          "f1": 0.9565,
+          "n_gold_switches": 251,
+          "n_pred_switches": 232
+        },
+        {
+          "recording": "J26DS313_R0069",
+          "tp": 219,
+          "fp": 0,
+          "fn": 9,
+          "precision": 1.0,
+          "recall": 0.9605,
+          "f1": 0.9799,
+          "n_gold_switches": 228,
+          "n_pred_switches": 219
+        },
+        {
+          "recording": "J26DS313_R0070",
+          "tp": 206,
+          "fp": 3,
+          "fn": 14,
+          "precision": 0.9856,
+          "recall": 0.9364,
+          "f1": 0.9604,
+          "n_gold_switches": 220,
+          "n_pred_switches": 209
+        },
+        {
+          "recording": "J26DS313_R0071",
+          "tp": 252,
+          "fp": 2,
+          "fn": 19,
+          "precision": 0.9921,
+          "recall": 0.9299,
+          "f1": 0.96,
+          "n_gold_switches": 271,
+          "n_pred_switches": 254
+        },
+        {
+          "recording": "J26DS313_R0072",
+          "tp": 162,
+          "fp": 4,
+          "fn": 16,
+          "precision": 0.9759,
+          "recall": 0.9101,
+          "f1": 0.9419,
+          "n_gold_switches": 178,
+          "n_pred_switches": 166
+        },
+        {
+          "recording": "J26DS313_R0073",
+          "tp": 262,
+          "fp": 0,
+          "fn": 6,
+          "precision": 1.0,
+          "recall": 0.9776,
+          "f1": 0.9887,
+          "n_gold_switches": 268,
+          "n_pred_switches": 262
+        },
+        {
+          "recording": "J26DS313_R0074",
+          "tp": 365,
+          "fp": 0,
+          "fn": 10,
+          "precision": 1.0,
+          "recall": 0.9733,
+          "f1": 0.9865,
+          "n_gold_switches": 375,
+          "n_pred_switches": 365
+        },
+        {
+          "recording": "J26DS313_R0075",
+          "tp": 203,
+          "fp": 4,
+          "fn": 14,
+          "precision": 0.9807,
+          "recall": 0.9355,
+          "f1": 0.9575,
+          "n_gold_switches": 217,
+          "n_pred_switches": 207
+        },
+        {
+          "recording": "J26DS313_R0100",
+          "tp": 140,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.9859,
+          "f1": 0.9929,
+          "n_gold_switches": 142,
+          "n_pred_switches": 140
+        },
+        {
+          "recording": "J26DS313_R0101",
+          "tp": 160,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n_gold_switches": 160,
+          "n_pred_switches": 160
+        },
+        {
+          "recording": "J26DS313_R0102",
+          "tp": 164,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n_gold_switches": 164,
+          "n_pred_switches": 164
+        },
+        {
+          "recording": "J26DS313_R0103",
+          "tp": 151,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n_gold_switches": 151,
+          "n_pred_switches": 151
+        },
+        {
+          "recording": "J26DS313_R0104",
+          "tp": 176,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n_gold_switches": 176,
+          "n_pred_switches": 176
+        },
+        {
+          "recording": "J26DS313_R0105",
+          "tp": 221,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "n_gold_switches": 221,
+          "n_pred_switches": 221
         }
       ]
     }
   },
   "cmi": {
     "summary": {
-      "n_utterances": 1456,
-      "mean_cmi": 26.63,
-      "median_cmi": 28.57,
+      "n_utterances": 1976,
+      "mean_cmi": 27.58,
+      "median_cmi": 30.0,
       "std_cmi": 17.22,
-      "mean_cmi_excl_numeric": 24.99,
-      "pct_monolingual_utterances": 18.6,
-      "pct_utterances_cmi_over_25": 54.2
+      "mean_cmi_excl_numeric": 25.83,
+      "pct_monolingual_utterances": 17.1,
+      "pct_utterances_cmi_over_25": 56.9
     },
     "per_recording": [
       {
@@ -2587,6 +3378,20 @@
         "pct_monolingual_utterances": 14.3
       },
       {
+        "recording": "J26DS313_R0029",
+        "n_utterances": 19,
+        "mean_cmi": 29.31,
+        "mean_cmi_excl_numeric": 29.17,
+        "pct_monolingual_utterances": 21.1
+      },
+      {
+        "recording": "J26DS313_R0030",
+        "n_utterances": 19,
+        "mean_cmi": 34.17,
+        "mean_cmi_excl_numeric": 30.23,
+        "pct_monolingual_utterances": 5.3
+      },
+      {
         "recording": "J26DS313_R0031",
         "n_utterances": 42,
         "mean_cmi": 31.21,
@@ -2699,6 +3504,13 @@
         "pct_monolingual_utterances": 19.7
       },
       {
+        "recording": "J26DS313_R0047",
+        "n_utterances": 70,
+        "mean_cmi": 31.1,
+        "mean_cmi_excl_numeric": 29.09,
+        "pct_monolingual_utterances": 14.3
+      },
+      {
         "recording": "J26DS313_R0048",
         "n_utterances": 15,
         "mean_cmi": 29.5,
@@ -2728,10 +3540,17 @@
       },
       {
         "recording": "J26DS313_R0052",
-        "n_utterances": 42,
-        "mean_cmi": 37.14,
-        "mean_cmi_excl_numeric": 36.46,
-        "pct_monolingual_utterances": 4.8
+        "n_utterances": 25,
+        "mean_cmi": 39.54,
+        "mean_cmi_excl_numeric": 39.91,
+        "pct_monolingual_utterances": 0.0
+      },
+      {
+        "recording": "J26DS313_R0053",
+        "n_utterances": 29,
+        "mean_cmi": 30.7,
+        "mean_cmi_excl_numeric": 31.79,
+        "pct_monolingual_utterances": 6.9
       },
       {
         "recording": "J26DS313_R0057",
@@ -2781,6 +3600,104 @@
         "mean_cmi": 23.45,
         "mean_cmi_excl_numeric": 23.85,
         "pct_monolingual_utterances": 13.2
+      },
+      {
+        "recording": "J26DS313_R0068",
+        "n_utterances": 62,
+        "mean_cmi": 30.33,
+        "mean_cmi_excl_numeric": 30.53,
+        "pct_monolingual_utterances": 22.6
+      },
+      {
+        "recording": "J26DS313_R0069",
+        "n_utterances": 44,
+        "mean_cmi": 31.21,
+        "mean_cmi_excl_numeric": 26.41,
+        "pct_monolingual_utterances": 9.1
+      },
+      {
+        "recording": "J26DS313_R0070",
+        "n_utterances": 47,
+        "mean_cmi": 39.34,
+        "mean_cmi_excl_numeric": 34.77,
+        "pct_monolingual_utterances": 6.4
+      },
+      {
+        "recording": "J26DS313_R0071",
+        "n_utterances": 35,
+        "mean_cmi": 36.52,
+        "mean_cmi_excl_numeric": 31.2,
+        "pct_monolingual_utterances": 8.6
+      },
+      {
+        "recording": "J26DS313_R0072",
+        "n_utterances": 42,
+        "mean_cmi": 31.84,
+        "mean_cmi_excl_numeric": 31.63,
+        "pct_monolingual_utterances": 11.9
+      },
+      {
+        "recording": "J26DS313_R0073",
+        "n_utterances": 49,
+        "mean_cmi": 32.63,
+        "mean_cmi_excl_numeric": 29.9,
+        "pct_monolingual_utterances": 4.1
+      },
+      {
+        "recording": "J26DS313_R0074",
+        "n_utterances": 19,
+        "mean_cmi": 40.23,
+        "mean_cmi_excl_numeric": 38.23,
+        "pct_monolingual_utterances": 5.3
+      },
+      {
+        "recording": "J26DS313_R0075",
+        "n_utterances": 22,
+        "mean_cmi": 37.86,
+        "mean_cmi_excl_numeric": 32.97,
+        "pct_monolingual_utterances": 9.1
+      },
+      {
+        "recording": "J26DS313_R0100",
+        "n_utterances": 19,
+        "mean_cmi": 15.25,
+        "mean_cmi_excl_numeric": 15.25,
+        "pct_monolingual_utterances": 21.1
+      },
+      {
+        "recording": "J26DS313_R0101",
+        "n_utterances": 5,
+        "mean_cmi": 14.94,
+        "mean_cmi_excl_numeric": 14.94,
+        "pct_monolingual_utterances": 0.0
+      },
+      {
+        "recording": "J26DS313_R0102",
+        "n_utterances": 17,
+        "mean_cmi": 10.41,
+        "mean_cmi_excl_numeric": 10.41,
+        "pct_monolingual_utterances": 35.3
+      },
+      {
+        "recording": "J26DS313_R0103",
+        "n_utterances": 13,
+        "mean_cmi": 11.59,
+        "mean_cmi_excl_numeric": 11.59,
+        "pct_monolingual_utterances": 30.8
+      },
+      {
+        "recording": "J26DS313_R0104",
+        "n_utterances": 17,
+        "mean_cmi": 11.38,
+        "mean_cmi_excl_numeric": 11.38,
+        "pct_monolingual_utterances": 23.5
+      },
+      {
+        "recording": "J26DS313_R0105",
+        "n_utterances": 9,
+        "mean_cmi": 23.86,
+        "mean_cmi_excl_numeric": 23.86,
+        "pct_monolingual_utterances": 0.0
       }
     ]
   },
@@ -2799,11 +3716,11 @@
   },
   "lid_to_switch_amplification": {
     "lid_accuracy": {
-      "heuristic": 0.8515,
-      "hybrid": 0.8919
+      "heuristic": 0.8788,
+      "hybrid": 0.9238
     },
-    "lid_accuracy_delta": 0.0404,
-    "switch_f1_delta": 0.0699,
-    "amplification_ratio": 1.73
+    "lid_accuracy_delta": 0.045,
+    "switch_f1_delta": 0.1032,
+    "amplification_ratio": 2.29
   }
 }

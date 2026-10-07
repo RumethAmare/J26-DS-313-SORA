@@ -95,6 +95,9 @@ def gold_tokens(rid):
             line = line.strip()
             if line:
                 out.append(json.loads(line))
+    # Some newer gold files carry null start/end (see audit_gold.py); they
+    # cannot contribute a timing measurement, so leave them out here.
+    out = [t for t in out if isinstance(t.get("start"), (int, float))]
     return sorted(out, key=lambda t: t["start"])
 
 
@@ -144,7 +147,10 @@ def main():
     ap.add_argument("--compute-type", default="float16")
     ap.add_argument("--report-only", action="store_true",
                     help="regenerate the markdown from the saved JSON without "
-                         "re-running the (40 minute) sweep")
+                         "re-running the sweep")
+    ap.add_argument("--resume", action="store_true",
+                    help="keep (config, condition) blocks already in the saved "
+                         "JSON for the same recordings, run only the rest")
     a = ap.parse_args()
 
     if a.report_only:
@@ -172,10 +178,34 @@ def main():
     gold_text_by_rid = {r: gold_text(r) for r in rids}
     gold_toks_by_rid = {r: gold_tokens(r) for r in rids}
 
+    out_json = os.path.join(RESULTS_DIR, "c1_noise_robustness.json")
     results = {}
+    if a.resume and os.path.exists(out_json):
+        with open(out_json, encoding="utf-8") as fh:
+            saved = json.load(fh)
+        if saved.get("recordings") == rids:
+            results = saved["results"]
+            print(f"resuming: {len(results)} block(s) already done")
+
+    def save():
+        os.makedirs(RESULTS_DIR, exist_ok=True)
+        with open(out_json, "w", encoding="utf-8") as fh:
+            json.dump({
+                "note": "Synthetic pink noise at exact SNR (see c1_noise_manifest.json). "
+                        "WER is pinned near its ceiling on clean audio already, so the "
+                        "informative columns are words recovered, output ratio and "
+                        "language-detection stability.",
+                "n_recordings": len(rids),
+                "recordings": rids,
+                "conditions": CONDITIONS,
+                "results": results,
+            }, fh, indent=2)
+
     for config in a.configs:
         lang_code = None if config == "auto" else config
         for condition in CONDITIONS:
+            if f"{config}__{condition}" in results:
+                continue
             refs, hyps, ts_errs, ts_n = [], [], [], 0
             detected, probs = [], []
             t0 = time.time()
@@ -216,21 +246,10 @@ def main():
             print(f"  {config:5} {condition:7} WER={r['wer']:.4f} "
                   f"recovered={r['words_recovered']:5} ({100 * r['recall_of_ref_words']:5.1f}%) "
                   f"out={r['output_ratio']:.2f}x langP={r['mean_language_probability']:.3f} "
-                  f"ts={r['median_timestamp_error_s']} ({r['wall_s']:.0f}s)")
+                  f"ts={r['median_timestamp_error_s']} ({r['wall_s']:.0f}s)", flush=True)
+            save()
 
-    os.makedirs(RESULTS_DIR, exist_ok=True)
-    out_json = os.path.join(RESULTS_DIR, "c1_noise_robustness.json")
-    with open(out_json, "w", encoding="utf-8") as fh:
-        json.dump({
-            "note": "Synthetic pink noise at exact SNR (see c1_noise_manifest.json). "
-                    "WER is pinned near its ceiling on clean audio already, so the "
-                    "informative columns are words recovered, output ratio and "
-                    "language-detection stability.",
-            "n_recordings": len(rids),
-            "recordings": rids,
-            "conditions": CONDITIONS,
-            "results": results,
-        }, fh, indent=2)
+    save()
     print(f"\nWrote {out_json}")
     write_report(results, rids, manifest)
 

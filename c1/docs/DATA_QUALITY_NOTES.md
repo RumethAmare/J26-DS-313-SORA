@@ -173,3 +173,25 @@ Curated Tamil ground truth: `c1/data/tamil_ground_truth.json`.
   Sinhala Unicode (the first batch is split the same way — see
   `sinhala_script_convention` in `c1_gold_audit.csv`). R0057 writes English
   words in Sinhala script (`කස්ටමර් සර්විස්`) and tags them SI.
+
+## D.5 — Status after the 2026-10-05 update
+
+Pulled 2026-10-05: re-annotated R0052/R0053, C1 gold for R0029, R0030, R0047,
+R0068–R0075 and R0100–R0105, and audio for R0029–R0049 and the new
+recordings. Corpus now 78 gold files; **66 usable, 25,582 tokens**.
+
+| D.4 item | status |
+|---|---|
+| R0052 / R0053 duplicate + R0053 bulk EN | **fixed** — both re-annotated, no longer near-duplicates; R0053 back in |
+| `Vanakkam` tagged inconsistently | **fixed** in R0052/R0053 (now OTHER); R0049 Sinhala-script Tamil and R0052 `Rombha` still SI |
+| bulk mislabel R0054, R0055, R0056, R0058, R0059 | open — unchanged, still excluded |
+| partial mislabel R0051, R0062–R0065 | open — unchanged, still excluded |
+| numeral convention | open — every new recording tags digits OTHER, so OTHER is now the majority (1,019 of 1,315); R0002–R0028 and R0050–R0061 still tag EN |
+| no audio | mostly fixed — 61 WAVs; R0050–R0065 (and R0007) still missing |
+| not in manifest | open — no rows for R0029 onward |
+| no prefix R0062–R0065 | open |
+| null timestamps | open, with new cases: R0073 (217/690), R0103 (172), R0075 (161), R0045 (114), R0035 (85), R0101 (80), R0068 (25), R0046 (13), R0043 (1) |
+
+The new recordings pass the label checks (no bulk or partial mislabelling).
+R0100–R0105 are Sinhala-heavy (~85% SI) and write numbers as words, so they
+contain no digit tokens.

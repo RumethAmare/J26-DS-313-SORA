@@ -66,6 +66,7 @@ and mixed-provenance output is otherwise unauditable.
 | `numeric` | token is purely numeric |
 | `wordfreq_en` | Latin script, English by corpus frequency |
 | `fallback_si` | Latin script, no English evidence — assumed romanized Sinhala |
+| `fasttext_latin` | Latin script, labelled by Task 3's fastText classifier (`lid_hybrid.py`, the default for `build_token_stream.py` since 2026-10-07); confidence is the model's softmax probability |
 
 ## How `lang_confidence` is calibrated for the heuristic
 
@@ -79,6 +80,7 @@ and a single flat confidence would hide that.
 | `numeric` | 0.50 | Deliberately low. Gold itself is inconsistent here — `"8"`→EN but `"075"`→OTHER — so this is annotation-guideline drift, not a confident prediction. Section D of the plan flags it; the confidence should say so rather than paper over it. |
 | `wordfreq_en` | 0.50–0.95 | Scaled by how far the word's English frequency sits above the 1e-5 threshold, in decades. A word barely over the line gets ~0.5; a common word two decades above gets 0.95. |
 | `fallback_si` | 0.50–0.90 | Negative evidence only — "not recognisably English". Scaled by how far *below* threshold, and capped lower than the EN ceiling because absence of English evidence is weaker than presence of Sinhala script. |
+| `fasttext_latin` | model probability | fastText's top-class softmax probability. Not calibrated against held-out data; treat values below ~0.8 as uncertain (the threshold `pretag_relabel.py` uses for review). |
 
 ### Known miscalibration
 

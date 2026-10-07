@@ -46,8 +46,8 @@ Three signals are combined:
 The plan's outlier variant (low likelihood under BOTH SI and EN) is also
 implemented and reported side by side, since it needs no Tamil lexicon at all.
 
-EVALUATION USES RAW COUNTS, NOT F1. With 14 positives (9 before the October
-2026 batch), an F1 moves ~0.07 per token and communicates false precision.
+EVALUATION USES RAW COUNTS, NOT F1. With 16 positives (9 before the October
+2026 batches), an F1 moves ~0.06 per token and communicates false precision.
 
 Usage:
     python3 otherlang_flag.py

@@ -40,7 +40,7 @@ REPORT_PATH = os.path.join(C1_ROOT, "results", "c1_pretag_summary.md")
 # Only recordings whose problem is the *labels*. R0008's labels are fine (its
 # timestamps are the problem), so a label draft would not help it.
 PRETAG_RECORDINGS = [
-    "J26DS313_R0017", "J26DS313_R0053", "J26DS313_R0054", "J26DS313_R0055",
+    "J26DS313_R0017", "J26DS313_R0054", "J26DS313_R0055",
     "J26DS313_R0056", "J26DS313_R0058", "J26DS313_R0059",
     # partial mislabelling -- here the draft mostly flags the slipped tokens
     "J26DS313_R0051", "J26DS313_R0062", "J26DS313_R0063", "J26DS313_R0064",

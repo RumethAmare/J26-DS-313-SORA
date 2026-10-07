@@ -68,6 +68,18 @@ DEFAULT_SUBSET = [
     "J26DS313_R0015",   # MIXED
     "J26DS313_R0019",   # MIXED
     "J26DS313_R0025",   # MIXED
+    # Added 2026-10-07 from the October batches. Every new recording falls in
+    # the MIXED bucket, so these add size rather than script coverage. Picked
+    # across the batches, skipping recordings with null gold timestamps or
+    # excluded labels.
+    "J26DS313_R0031",
+    "J26DS313_R0038",
+    "J26DS313_R0044",
+    "J26DS313_R0049",
+    "J26DS313_R0069",
+    "J26DS313_R0072",
+    "J26DS313_R0102",   # Sinhala-heavy (~85% SI tokens)
+    "J26DS313_R0104",   # Sinhala-heavy
 ]
 
 

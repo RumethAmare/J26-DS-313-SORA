@@ -62,6 +62,10 @@ def gold_recording_ids():
     return sorted(ids)
 
 
+# (lang, confidence, method) predictor; main() swaps in the hybrid by default.
+PREDICT = lid_rules.predict
+
+
 def build_tokens_for_segment(rid, seg_index, words):
     """Turn one Whisper segment's words into extended-schema token dicts."""
     utt_id = f"{rid}_u{seg_index:03d}"
@@ -71,7 +75,7 @@ def build_tokens_for_segment(rid, seg_index, words):
         surface = word.word.strip()
         if not surface:
             continue
-        lang, lang_conf, method = lid_rules.predict(surface)
+        lang, lang_conf, method = PREDICT(surface)
         # switch is derived, never predicted: it is a property of the label
         # sequence. First token of an utterance is always False -- there is no
         # preceding token to switch away from.
@@ -102,7 +106,17 @@ def main():
                     help="force a language code (e.g. si, en); default auto-detect")
     ap.add_argument("--compute-type", default="float16")
     ap.add_argument("--recordings", nargs="+", default=None)
+    ap.add_argument("--lid", choices=["hybrid", "rules"], default="hybrid",
+                    help="hybrid = Task 3's rules + fastText (default); "
+                         "rules = the original heuristic only")
+    ap.add_argument("--resume", action="store_true",
+                    help="skip recordings whose token file already exists")
     a = ap.parse_args()
+
+    global PREDICT
+    if a.lid == "hybrid":
+        from lid_hybrid import HybridLID
+        PREDICT = HybridLID().predict
 
     from faster_whisper import WhisperModel
 
@@ -116,6 +130,14 @@ def main():
     print(f"Building token stream for {len(rids)} recording(s) "
           f"(model={a.model_size}, language={a.language or 'auto'})")
 
+    # Per-recording summaries are saved as they finish, so --resume can rebuild
+    # the corpus totals without re-decoding recordings done by an earlier run.
+    progress_path = os.path.join(OUT_DIR, "_progress.json")
+    progress = {}
+    if a.resume and os.path.exists(progress_path):
+        with open(progress_path, encoding="utf-8") as fh:
+            progress = json.load(fh)
+
     model = WhisperModel(a.model_size, device="cuda", compute_type=a.compute_type)
 
     summary = []
@@ -123,6 +145,18 @@ def main():
     method_counts = {}
 
     for i, rid in enumerate(rids, 1):
+        if a.resume and rid in progress and os.path.exists(
+                os.path.join(OUT_DIR, f"{rid}.tokens.jsonl")):
+            row = progress[rid]
+            summary.append(row["summary"])
+            totals["tokens"] += row["summary"]["n_tokens"]
+            totals["switches"] += row["summary"]["n_switches"]
+            for l in ("SI", "EN", "OTHER"):
+                totals[l] += row["summary"]["lang_counts"][l]
+            for m, n in row["methods"].items():
+                method_counts[m] = method_counts.get(m, 0) + n
+            print(f"  [{i:2}/{len(rids)}] {rid}  already done")
+            continue
         t0 = time.time()
         segments, info = model.transcribe(
             os.path.join(AUDIO_DIR, f"{rid}.wav"),
@@ -146,8 +180,11 @@ def main():
         n_switch = sum(1 for t in all_tokens if t["switch"])
         langs = {l: sum(1 for t in all_tokens if t["lang"] == l)
                  for l in ("SI", "EN", "OTHER")}
+        rec_methods = {}
         for t in all_tokens:
-            method_counts[t["lang_method"]] = method_counts.get(t["lang_method"], 0) + 1
+            rec_methods[t["lang_method"]] = rec_methods.get(t["lang_method"], 0) + 1
+        for m, n in rec_methods.items():
+            method_counts[m] = method_counts.get(m, 0) + n
 
         totals["tokens"] += len(all_tokens)
         totals["switches"] += n_switch
@@ -167,11 +204,17 @@ def main():
             "lang_counts": langs,
             "mean_asr_confidence": round(mean_asr, 4),
             "mean_lang_confidence": round(mean_lang, 4),
+            "audio_duration_s": round(info.duration, 2),
+            "wall_s": round(time.time() - t0, 2),
         })
+        progress[rid] = {"summary": summary[-1], "methods": rec_methods}
+        with open(progress_path, "w", encoding="utf-8") as fh:
+            json.dump(progress, fh, ensure_ascii=False)
 
         print(f"  [{i:2}/{len(rids)}] {rid}  {len(all_tokens):4} tokens  "
               f"{n_switch:3} switches  SI={langs['SI']:4} EN={langs['EN']:4} "
-              f"OTHER={langs['OTHER']:3}  asrConf={mean_asr:.2f}  {time.time() - t0:5.1f}s")
+              f"OTHER={langs['OTHER']:3}  asrConf={mean_asr:.2f}  {time.time() - t0:5.1f}s",
+              flush=True)
 
     print(f"\nTotal: {totals['tokens']} tokens, {totals['switches']} switch points")
     print(f"  language mix: SI={totals['SI']} EN={totals['EN']} OTHER={totals['OTHER']}")
@@ -188,6 +231,7 @@ def main():
                     "source for that.",
             "model_size": a.model_size,
             "language_setting": a.language or "auto",
+            "lid": a.lid,
             "totals": totals,
             "lang_method_counts": method_counts,
             "per_recording": summary,

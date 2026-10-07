@@ -473,9 +473,10 @@ def write_report(results, cmi_summary, per_rec_cmi, e2e, amplification=None,
     L.append(f"- utterances with CMI > 25: "
              f"**{cmi_summary['pct_utterances_cmi_over_25']:.1f}%**\n\n")
     L.append("Both variants are given because Section D.3 found gold's numeric tagging\n")
-    L.append("inconsistent, and the October 2026 batch made it worse: the first batch\n")
-    L.append("tags numerals mostly EN, R0031–R0049 tag every one OTHER, R0050 onward\n")
-    L.append("EN again. Numerals therefore inject arbitrary label mass into the mix.\n\n")
+    L.append("inconsistent, and the October 2026 batches made it worse: R0002–R0028 and\n")
+    L.append("R0050–R0061 tag numerals mostly EN, while R0029–R0049 and R0068–R0075 tag\n")
+    L.append("every one OTHER (see `c1_lid_report.md`). Numerals therefore inject\n")
+    L.append("arbitrary label mass into the mix.\n\n")
 
     L.append("### Most and least code-mixed recordings\n\n")
     ranked = [r for r in per_rec_cmi if r["mean_cmi"] is not None]

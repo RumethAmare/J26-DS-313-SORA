@@ -2,8 +2,8 @@
 
 Produced by `scripts/otherlang_flag.py`; machine-readable numbers in
 `c1_otherlang_eval.json`; curated ground truth in `data/tamil_ground_truth.json`.
-Scope: 14,010 gold tokens across the 48 usable recordings (original batch plus
-the October 2026 batch; exclusions in `scripts/corpus.py`).
+Scope: 25,582 gold tokens across the 66 usable recordings (data as of
+2026-10-05; exclusions in `scripts/corpus.py`).
 
 `OTHER` denotes **Tamil specifically** (a national language of Sri Lanka
 alongside Sinhala), not a generic "not-SI-and-not-EN" bucket. The annotations
@@ -18,27 +18,26 @@ token as candidate-OTHER if its likelihood under both is below a percentile
 threshold."*
 
 **1. There is no native-script Tamil.** Zero tokens in the Tamil Unicode block
-across all 14,010 tokens. The rule being "kept as-is" never fires; its ~100%
+across all 25,582 tokens. The rule being "kept as-is" never fires; its ~100%
 precision is vacuous.
 
-**2. Tamil in Sinhala script is the most common form.** Of 14 genuinely-Tamil
-tokens, **8 are written in Sinhala script**, 5 are romanized and 1 uses
-Kannada/Malayalam codepoints. Five of the eight are one sentence in R0015:
+**2. Tamil in Sinhala script is as common as romanized Tamil.** Of 16
+genuinely-Tamil tokens, **8 are written in Sinhala script**, 7 are romanized
+and 1 uses Kannada/Malayalam codepoints. Five of the eight are one sentence in
+R0015:
 
 > `ඉදු ඔරුව පෙරිය ප්‍රචන ඉල්ලයි`
 > → *idhu oru periya pirachanai illai* → "this is not a big problem"
 
-The new batch adds three more — `වනක්කම්` (*vanakkam*), `රොම්බ` (*romba*,
-"very") and `නන්ද්‍රි` (*nandri*, "thanks") in R0049. The plan does not
-consider this case at all.
+R0049 adds `වනක්කම්` (*vanakkam*), `රොම්බ` (*romba*, "very") and `නන්ද්‍රි`
+(*nandri*, "thanks"). The plan does not consider this case at all.
 
-**3. Gold `OTHER` is not a usable evaluation target, and the new batch made it
-worse.** Of 743 `OTHER` tokens, **722 are numerals** (one annotator group tags
-every digit OTHER — see `c1_lid_report.md`) and **11 are identifiers or
-ordinals** (`8812304567V.`, `LN2024NG00445`, `21st,`, `No.`). Only **10** are
-Tamil — 1.3% of the class. And gold misses Tamil in the other direction too:
-4 of the 14 Tamil tokens are labelled SI. Ground truth is therefore curated
-manually.
+**3. Gold `OTHER` is not a usable evaluation target.** Of 1,064 `OTHER`
+tokens, **1,041 are numerals** (most annotators now tag every digit OTHER —
+see `c1_lid_report.md`) and **11 are identifiers or ordinals**
+(`8812304567V.`, `LN2024NG00445`, `21st,`, `No.`). Only **12** are Tamil —
+1.1% of the class — and gold labels 4 more Tamil tokens SI. Ground truth is
+therefore curated manually.
 
 ## Design: romanize first, detect second
 
@@ -54,37 +53,36 @@ SI/EN). The plan's outlier rule is implemented too, for comparison.
 
 ## Results
 
-Evaluation uses **raw counts, not F1** — with 14 positives an F1 moves ~0.07
+Evaluation uses **raw counts, not F1** — with 16 positives an F1 moves ~0.06
 per token and would communicate false precision.
 
 | threshold pct | LOO recall | full-lexicon | false positives | FP rate |
 |---|---|---|---|---|
-| 99.9 | 2/14 | 9/14 | 9 | 0.06% |
-| **99.0** | **3/14** | **10/14** | **37** | **0.26%** |
-| 98.0 | 3/14 | 10/14 | 40 | 0.29% |
-| 95.0 | 5/14 | 10/14 | 108 | 0.77% |
-| 90.0 | 6/14 | 10/14 | 341 | 2.43% |
+| 99.9 | 2/16 | 11/16 | 29 | 0.11% |
+| **99.0** | **3/16** | **12/16** | **57** | **0.22%** |
+| 98.0 | 3/16 | 12/16 | 73 | 0.29% |
+| 95.0 | 3/16 | 12/16 | 221 | 0.86% |
+| 90.0 | 5/16 | 12/16 | 463 | 1.81% |
 
 *LOO* removes the target word from the lexicon — a pessimistic bound.
 *full-lexicon* keeps it, which is what a real Tamil dictionary would do, since
 these are all common Tamil words.
 
-**At the 99th percentile the detector finds 10 of 14 Tamil tokens while
-flagging 0.26% of the corpus** — on the first batch alone it managed 5/9 at
-0.34%. Most of the recall gain is that the five new positives are common
-greetings and courtesies already in the lexicon, not a better detector; the
-false-positive *rate* is slightly lower at every threshold, though the raw
-count is higher on a corpus 2.5× the size.
+**At the 99th percentile the detector finds 12 of 16 Tamil tokens while
+flagging 0.22% of the corpus.** On the first batch alone it managed 5/9 at
+0.34%. Most of the recall gain is that the new positives are common greetings
+and courtesies already in the lexicon, not a better detector; the
+false-positive *rate* has fallen as the SI and EN models gained data.
 
-The LOO column is harsher than it looks: `vanakkam` accounts for 3 of the 14
-tokens, so removing it from the lexicon loses all three at once. LOO is a
-bound on unseen *words*, and these are mostly a few common greetings.
+The LOO column is harsher than it looks: `vanakkam` accounts for 4 of the 16
+tokens, so removing it from the lexicon loses all four at once. LOO is a bound
+on unseen *words*, and these are mostly a few common greetings.
 
-**The plan's outlier-only rule recovers 1/14 with 1,571 false positives (11.2%
+**The plan's outlier-only rule recovers 1/16 with 2,294 false positives (9.0%
 of the corpus).** Framing the problem as "Tamil vs the others" rather than
-"unlike SI and EN" is worth about two orders of magnitude in false-positive
-rate — the outlier signal fires on any unusual token (`you`, `much`, `zero`),
-and most unusual tokens are not Tamil.
+"unlike SI and EN" is worth about forty times in false-positive rate — the
+outlier signal fires on any unusual token (`you`, `much`, `zero`, `aiyo`), and
+most unusual tokens are not Tamil.
 
 ### Two bugs found while building this detector
 
@@ -112,14 +110,14 @@ The same Tamil word is labelled differently depending on script and annotator:
 |---|---|---|---|
 | R0013 | `සරි` | Sinhala | **SI** |
 | R0016 | `sari`, `sari.` | Latin | **OTHER** |
-| R0050 | `wanakkam` | Latin | **OTHER** |
-| R0052 | `Vanakkam.` | Latin | **SI** |
+| R0050, R0052, R0053 | `wanakkam`, `Vanakkam` | Latin | **OTHER** |
 | R0049 | `වනක්කම්` | Sinhala | **SI** |
+| R0049 / R0052 | `රොම්බ` / `Rombha` | Sinhala / Latin | **SI** |
 
-The gazetteer prunes entries that collide with corpus SI/EN words, and 11 were
-pruned this run (`sari`, `nala`, `nama`, `nan`, `ne`, …). `sari` is pruned
-because of the R0013 token, which is why full-lexicon recall caps at 10/14:
-the detector is penalised by a labelling error.
+The gazetteer prunes entries that collide with corpus SI/EN words (12 this
+run: `sari`, `nala`, `nama`, `nan`, `ne`, …). `sari` is pruned because of the
+R0013 token, which is why full-lexicon recall caps at 12/16: the detector is
+penalised by a labelling error.
 
 **More serious for downstream consumers:** all 8 Sinhala-script Tamil tokens
 are labelled `SI` at **0.99 confidence** by the `unicode_sinhala` rule.
@@ -142,20 +140,21 @@ collision with `nala`) and `visayam` (absent) in R0065. A real romanized-Tamil
 word list would help far more than a larger model;
 `data/tamil_romanized_lexicon.txt` is hand-written and small.
 
-**Fourteen positives is still not enough to validate anything.** These numbers
-indicate direction, not performance, and five of the fourteen are two words
-(`vanakkam`, `sari`).
+**Sixteen positives is still not enough to validate anything.** These numbers
+indicate direction, not performance, and six of the sixteen are two words
+(`vanakkam`, `sari`). The newest recordings (R0068–R0075, R0100–R0105) were
+scanned against the lexicon and contain no Tamil it recognises; Tamil outside
+the lexicon could still be there.
 
-**The detector cannot run end-to-end.** Whisper never emits romanized Tamil and
-the new recordings have no audio in the dataset repo yet, so this is scoped to
-gold/human-transcribed text.
+**The detector cannot run end-to-end.** Whisper never emits romanized Tamil,
+so this is scoped to gold/human-transcribed text.
 
 ## Recommended follow-ups
 
-1. **Agree one numeral rule** and relabel. 722 of 743 `OTHER` tokens are
+1. **Agree one numeral rule** and relabel. 1,041 of 1,064 `OTHER` tokens are
    numerals; until that is fixed every metric on the class is contaminated.
 2. **Tag Tamil as OTHER consistently** — `vanakkam`, `romba`, `nandri`,
-   `sari` are currently SI in some recordings and OTHER in others.
+   `sari` are SI in some recordings and OTHER in others.
 3. **Expand the Tamil lexicon**, including inflected forms and Sinhala-script
    Tamil spellings.
 4. **Lower `unicode_sinhala` confidence** when a token also scores as Tamil, so

@@ -62,7 +62,7 @@ def model_is_local(size):
     return os.path.isdir(os.path.join(cache, f"models--Systran--faster-whisper-{size}"))
 
 
-def run_config(size, lang_name, lang_code, rids, compute_type):
+def run_config(size, lang_name, lang_code, rids, compute_type, resume=False):
     from faster_whisper import WhisperModel
 
     config_name = f"{size}_{lang_name}"
@@ -71,16 +71,22 @@ def run_config(size, lang_name, lang_code, rids, compute_type):
 
     print(f"\n{'=' * 62}")
     print(f"config: {config_name}  (size={size}, language={lang_code or 'auto-detect'})")
-    print(f"{'=' * 62}")
+    print(f"{'=' * 62}", flush=True)
 
-    load_start = time.time()
-    model = WhisperModel(size, device="cuda", compute_type=compute_type)
-    print(f"model loaded in {time.time() - load_start:.1f}s")
+    # --resume skips recordings already transcribed, so a multi-hour run that
+    # is interrupted picks up where it stopped instead of starting over.
+    todo = [r for r in rids if not (resume and os.path.exists(
+        os.path.join(out_dir, f"{r}.transcript.json")))]
+    if len(todo) < len(rids):
+        print(f"resuming: {len(rids) - len(todo)} already done, {len(todo)} to go")
 
-    total_audio = 0.0
-    total_wall = 0.0
+    model = None
+    if todo:
+        load_start = time.time()
+        model = WhisperModel(size, device="cuda", compute_type=compute_type)
+        print(f"model loaded in {time.time() - load_start:.1f}s", flush=True)
 
-    for i, rid in enumerate(rids, 1):
+    for i, rid in enumerate(todo, 1):
         audio_path = os.path.join(AUDIO_DIR, f"{rid}.wav")
         t0 = time.time()
         segments, info = model.transcribe(
@@ -95,8 +101,6 @@ def run_config(size, lang_name, lang_code, rids, compute_type):
                 "text": seg.text.strip(),
             })
         elapsed = time.time() - t0
-        total_wall += elapsed
-        total_audio += info.duration
 
         out = {
             "recording": rid,
@@ -112,9 +116,17 @@ def run_config(size, lang_name, lang_code, rids, compute_type):
         with open(os.path.join(out_dir, f"{rid}.transcript.json"), "w", encoding="utf-8") as fh:
             json.dump(out, fh, ensure_ascii=False, indent=2)
 
-        print(f"  [{i:2}/{len(rids)}] {rid}  {len(utterances):3} segs  "
-              f"detected={info.language}  {elapsed:5.1f}s")
+        print(f"  [{i:2}/{len(todo)}] {rid}  {len(utterances):3} segs  "
+              f"detected={info.language}  {elapsed:5.1f}s", flush=True)
 
+    # Totals come from the saved files, so they cover every recording in the
+    # config even when part of it was transcribed by an earlier, resumed run.
+    total_audio = total_wall = 0.0
+    for rid in rids:
+        with open(os.path.join(out_dir, f"{rid}.transcript.json"), encoding="utf-8") as fh:
+            saved = json.load(fh)
+        total_audio += saved["audio_duration_s"]
+        total_wall += saved["transcribe_wall_s"]
     rtf = total_wall / total_audio if total_audio else float("nan")
     print(f"  -> {len(rids)} recordings, {total_audio:.0f}s audio, "
           f"{total_wall:.0f}s wall, RTF={rtf:.3f}")
@@ -142,6 +154,8 @@ def main():
     ap.add_argument("--configs", nargs="+", default=None,
                     help="explicit config names to run, e.g. small_auto small_si")
     ap.add_argument("--compute-type", default="float16")
+    ap.add_argument("--resume", action="store_true",
+                    help="skip recordings whose prediction file already exists")
     a = ap.parse_args()
 
     all_ids = gold_recording_ids()
@@ -164,12 +178,19 @@ def main():
             name = f"{size}_{lang_name}"
             if a.configs and name not in a.configs:
                 continue
-            metas.append(run_config(size, lang_name, lang_code, rids, a.compute_type))
+            metas.append(run_config(size, lang_name, lang_code, rids, a.compute_type,
+                                    resume=a.resume))
 
     os.makedirs(os.path.join(C1_ROOT, "results"), exist_ok=True)
     out = os.path.join(C1_ROOT, "results", "c1_ablation_runs.json")
+    # Merge by config name so configs run in separate invocations accumulate.
+    merged = {}
+    if os.path.exists(out):
+        with open(out, encoding="utf-8") as fh:
+            merged = {m["config"]: m for m in json.load(fh).get("configs", [])}
+    merged.update({m["config"]: m for m in metas})
     with open(out, "w", encoding="utf-8") as fh:
-        json.dump({"configs": metas}, fh, indent=2)
+        json.dump({"configs": [merged[k] for k in sorted(merged)]}, fh, indent=2)
     print(f"\nRan {len(metas)} config(s). Wrote {out}")
 
 

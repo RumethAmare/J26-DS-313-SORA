@@ -1,131 +1,150 @@
 {
   "note": "Evaluated against curated ground truth (data/tamil_ground_truth.json), NOT the gold OTHER label, which is ~98% non-Tamil and misses most Tamil. Raw counts are reported instead of F1 because positives are few.",
-  "n_ground_truth_tamil": 14,
+  "n_ground_truth_tamil": 16,
   "tamil_by_script": {
     "sinhala": 8,
-    "latin": 5,
+    "latin": 7,
     "other": 1,
     "tamil_script": 0
   },
-  "lexicon_size": 130,
+  "lexicon_size": 128,
   "thresholds": {
-    "tamil_margin": 1.207,
-    "native_max_outlier": -8.1031,
+    "tamil_margin": 1.4745,
+    "native_max_outlier": -8.2988,
     "calibrated_on": "non-target corpus tokens only"
   },
   "leave_one_out": {
     "recovered": 3,
-    "total": 14,
+    "total": 16,
     "detail": [
       {
         "token": "puriyam.",
         "flagged": true,
         "reason": "ngram_margin",
-        "margin": 1.579,
+        "margin": 1.642,
         "script": "latin"
       },
       {
-        "token": "ಪುರಿಯമ്.",
+        "token": "ಪುരിയമ്.",
         "flagged": true,
         "reason": "foreign_script",
-        "margin": 2.1588,
+        "margin": 2.6015,
         "script": "other_script"
       },
       {
         "token": "ඉදු",
         "flagged": true,
         "reason": "ngram_margin",
-        "margin": 2.1235,
+        "margin": 2.3505,
         "script": "sinhala"
       },
       {
         "token": "ඔරුව",
         "flagged": false,
         "reason": "none",
-        "margin": 0.6067,
+        "margin": 0.8229,
         "script": "sinhala"
       },
       {
         "token": "පෙරිය",
         "flagged": false,
         "reason": "none",
-        "margin": 0.8522,
+        "margin": 0.9089,
         "script": "sinhala"
       },
       {
         "token": "ප්‍රචන",
         "flagged": false,
         "reason": "none",
-        "margin": 0.9921,
+        "margin": 0.7307,
         "script": "sinhala"
       },
       {
         "token": "ඉල්ලයි.",
         "flagged": false,
         "reason": "none",
-        "margin": 0.0358,
+        "margin": 0.2235,
         "script": "sinhala"
       },
       {
         "token": "sari",
         "flagged": false,
         "reason": "none",
-        "margin": -0.0344,
+        "margin": 0.1171,
         "script": "latin"
       },
       {
         "token": "sari.",
         "flagged": false,
         "reason": "none",
-        "margin": -0.0344,
+        "margin": 0.1171,
         "script": "latin"
       },
       {
         "token": "වනක්කම්",
         "flagged": false,
         "reason": "none",
-        "margin": 0.2694,
+        "margin": 0.177,
         "script": "sinhala"
       },
       {
         "token": "රොම්බ",
         "flagged": false,
         "reason": "none",
-        "margin": 0.9403,
+        "margin": 1.0739,
         "script": "sinhala"
       },
       {
         "token": "නන්ද්‍රි",
         "flagged": false,
         "reason": "none",
-        "margin": 1.0908,
+        "margin": 0.9824,
         "script": "sinhala"
       },
       {
         "token": "wanakkam",
         "flagged": false,
         "reason": "none",
-        "margin": 0.2694,
+        "margin": 0.177,
         "script": "latin"
       },
       {
         "token": "Vanakkam.",
         "flagged": false,
         "reason": "none",
-        "margin": 0.2694,
+        "margin": 0.177,
+        "script": "latin"
+      },
+      {
+        "token": "Rombha",
+        "flagged": false,
+        "reason": "none",
+        "margin": 1.0739,
+        "script": "latin"
+      },
+      {
+        "token": "Vanakkam",
+        "flagged": false,
+        "reason": "none",
+        "margin": 0.177,
         "script": "latin"
       }
     ]
   },
   "false_positives": {
-    "count": 172,
-    "pct_of_corpus": 1.228,
+    "count": 276,
+    "pct_of_corpus": 1.079,
     "by_trigger": {
-      "outlier": 135,
-      "ngram_margin": 36,
-      "foreign_script": 1
+      "outlier": 219,
+      "ngram_margin": 57
     },
     "examples": [
+      {
+        "recording": "J26DS313_R0002",
+        "token": "aiyo",
+        "gold_lang": "SI",
+        "reason": "outlier"
+      },
       {
         "recording": "J26DS313_R0002",
         "token": "you",
@@ -152,32 +171,26 @@
       },
       {
         "recording": "J26DS313_R0004",
-        "token": "machan",
+        "token": "Aiyo",
         "gold_lang": "SI",
-        "reason": "ngram_margin"
+        "reason": "outlier"
       },
       {
         "recording": "J26DS313_R0006",
-        "token": "මචං",
-        "gold_lang": "SI",
-        "reason": "ngram_margin"
-      },
-      {
-        "recording": "J26DS313_R0006",
-        "token": "මචං",
-        "gold_lang": "SI",
-        "reason": "ngram_margin"
-      },
-      {
-        "recording": "J26DS313_R0006",
-        "token": "මචං",
-        "gold_lang": "SI",
-        "reason": "ngram_margin"
+        "token": "ගාඩ්න්",
+        "gold_lang": "EN",
+        "reason": "outlier"
       },
       {
         "recording": "J26DS313_R0007",
         "token": "zero",
         "gold_lang": "EN",
+        "reason": "outlier"
+      },
+      {
+        "recording": "J26DS313_R0007",
+        "token": "aiyo,",
+        "gold_lang": "SI",
         "reason": "outlier"
       },
       {
@@ -205,28 +218,10 @@
         "reason": "ngram_margin"
       },
       {
-        "recording": "J26DS313_R0011",
-        "token": "SMS",
-        "gold_lang": "EN",
-        "reason": "outlier"
-      },
-      {
-        "recording": "J26DS313_R0013",
-        "token": "ಪುരിയമ്.",
-        "gold_lang": "OTHER",
-        "reason": "foreign_script"
-      },
-      {
         "recording": "J26DS313_R0014",
         "token": "Owu,",
         "gold_lang": "SI",
         "reason": "outlier"
-      },
-      {
-        "recording": "J26DS313_R0014",
-        "token": "podi",
-        "gold_lang": "SI",
-        "reason": "ngram_margin"
       },
       {
         "recording": "J26DS313_R0014",
@@ -255,12 +250,6 @@
       {
         "recording": "J26DS313_R0015",
         "token": "එපා.",
-        "gold_lang": "SI",
-        "reason": "ngram_margin"
-      },
-      {
-        "recording": "J26DS313_R0016",
-        "token": "අප්පා,",
         "gold_lang": "SI",
         "reason": "ngram_margin"
       },
@@ -338,6 +327,18 @@
       },
       {
         "recording": "J26DS313_R0019",
+        "token": "Yeah",
+        "gold_lang": "EN",
+        "reason": "outlier"
+      },
+      {
+        "recording": "J26DS313_R0019",
+        "token": "yeah,",
+        "gold_lang": "EN",
+        "reason": "outlier"
+      },
+      {
+        "recording": "J26DS313_R0019",
         "token": "you",
         "gold_lang": "EN",
         "reason": "outlier"
@@ -365,63 +366,75 @@
         "token": "much",
         "gold_lang": "EN",
         "reason": "outlier"
+      },
+      {
+        "recording": "J26DS313_R0019",
+        "token": "you",
+        "gold_lang": "EN",
+        "reason": "outlier"
+      },
+      {
+        "recording": "J26DS313_R0019",
+        "token": "you",
+        "gold_lang": "EN",
+        "reason": "outlier"
       }
     ]
   },
   "operating_curve": [
     {
       "percentile": 0.999,
-      "threshold": 1.7926,
+      "threshold": 2.1609,
       "loo_recall": 2,
-      "full_lexicon_recall": 9,
-      "false_positives": 9,
-      "fp_pct": 0.064
+      "full_lexicon_recall": 11,
+      "false_positives": 29,
+      "fp_pct": 0.113
     },
     {
       "percentile": 0.99,
-      "threshold": 1.207,
+      "threshold": 1.4745,
       "loo_recall": 3,
-      "full_lexicon_recall": 10,
-      "false_positives": 37,
-      "fp_pct": 0.264
+      "full_lexicon_recall": 12,
+      "false_positives": 57,
+      "fp_pct": 0.223
     },
     {
       "percentile": 0.98,
-      "threshold": 1.1665,
+      "threshold": 1.3262,
       "loo_recall": 3,
-      "full_lexicon_recall": 10,
-      "false_positives": 40,
-      "fp_pct": 0.286
+      "full_lexicon_recall": 12,
+      "false_positives": 73,
+      "fp_pct": 0.285
     },
     {
       "percentile": 0.95,
-      "threshold": 0.9134,
-      "loo_recall": 5,
-      "full_lexicon_recall": 10,
-      "false_positives": 108,
-      "fp_pct": 0.771
+      "threshold": 1.0622,
+      "loo_recall": 3,
+      "full_lexicon_recall": 12,
+      "false_positives": 221,
+      "fp_pct": 0.864
     },
     {
       "percentile": 0.9,
-      "threshold": 0.7106,
-      "loo_recall": 6,
-      "full_lexicon_recall": 10,
-      "false_positives": 341,
-      "fp_pct": 2.434
+      "threshold": 0.8084,
+      "loo_recall": 5,
+      "full_lexicon_recall": 12,
+      "false_positives": 463,
+      "fp_pct": 1.81
     },
     {
       "percentile": 0.8,
-      "threshold": 0.4456,
+      "threshold": 0.5204,
       "loo_recall": 6,
-      "full_lexicon_recall": 10,
-      "false_positives": 520,
-      "fp_pct": 3.712
+      "full_lexicon_recall": 12,
+      "false_positives": 956,
+      "fp_pct": 3.737
     }
   ],
   "plan_outlier_only_variant": {
     "recovered": 1,
-    "total": 14,
-    "false_positives": 1571,
-    "pct_of_corpus": 11.213
+    "total": 16,
+    "false_positives": 2294,
+    "pct_of_corpus": 8.967
   }
 }

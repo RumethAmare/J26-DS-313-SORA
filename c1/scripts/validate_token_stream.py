@@ -47,6 +47,7 @@ METHOD_IMPLIES = {
     "numeric": "EN",
     "wordfreq_en": "EN",
     "fallback_si": "SI",
+    "fasttext_latin": None,     # Task 3 classifier: any label is legitimate
 }
 
 
@@ -86,7 +87,8 @@ def validate_file(path, require_extended):
             method = tok.get("lang_method")
             if method not in METHOD_IMPLIES:
                 errors.append(f"line {lineno}: unknown lang_method {method!r}")  # [7]
-            elif METHOD_IMPLIES[method] != tok.get("lang"):
+            elif (METHOD_IMPLIES[method] is not None
+                  and METHOD_IMPLIES[method] != tok.get("lang")):
                 errors.append(f"line {lineno}: lang_method {method!r} implies "
                               f"{METHOD_IMPLIES[method]} but lang is {tok.get('lang')!r}")
         tokens.append(tok)
