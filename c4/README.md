@@ -111,7 +111,7 @@ given seed.
     python src/evaluate.py --source synthetic-test --system rules+propagation
     python src/evaluate.py --source real-eval --labels proposal --save
     python src/resolve.py --source real-eval --save      # cross-script linking + ablation
-    python src/ner.py train --data both                  # PERSON/ADDRESS/ORG model (~5 min, CPU)
+    python src/ner.py train --data both                  # PERSON/ADDRESS/ORG model (~20 min, CPU)
     python src/evaluate.py --source real-eval --system hybrid:both --labels proposal
     python src/redact.py --synthetic SYN_T0002 --model both
 
