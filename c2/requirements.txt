@@ -1,0 +1,26 @@
+# Component 2 — normalization, translation and summarization
+#
+# Phase 0 (corpus loader, audit, normalizer, commitment detector, copy
+# baselines and scoring) needs only the first block. The transformer block is
+# installed when model work opens; run it on Colab or a CUDA machine.
+
+# --- Phase 0: data, rules, scoring -------------------------------------------
+sacrebleu>=2.4.0          # BLEU and chrF++, the standard implementations
+pytest>=8.0.0
+
+# --- Phase 1: baseline translator (NLLB) and fine-tuning (mT5 / NLLB) --------
+# For a local CUDA build, do NOT rely on the default index -- plain
+# `pip install torch` yields a +cpu wheel that silently ignores the GPU:
+#     pip install torch --index-url https://download.pytorch.org/whl/cu128
+torch>=2.4.0
+transformers>=4.44.0
+sentencepiece>=0.2.0
+accelerate>=0.26.0
+datasets>=2.20.0
+
+# --- Phase 2: QLoRA summarizer on a small open LLM ---------------------------
+peft>=0.12.0
+bitsandbytes>=0.43.0
+
+# --- Phase 3: learned translation metric -------------------------------------
+# unbabel-comet          # COMET; ~2 GB model download, install when needed

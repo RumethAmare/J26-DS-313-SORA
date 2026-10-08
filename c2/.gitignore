@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Model predictions: regenerable from `python src/evaluate.py`. Scored results
+# live in eval/*.json, which IS committed.
+predictions/
+
+# Fine-tuned checkpoints (mT5 / NLLB / QLoRA adapters). Set up Git LFS before
+# committing any of these, or the repo bloats permanently.
+models/
+*.safetensors
+*.bin
+*.pt
+
+# Corpus text copied out of SORA_Dataset. The shared dataset repo is the single
+# source of truth and is read-only to this component; transcripts carry
+# un-redacted PII, so a second copy here is an uncontrolled disclosure surface.
+data/corpus_copy/
+
+.venv/
