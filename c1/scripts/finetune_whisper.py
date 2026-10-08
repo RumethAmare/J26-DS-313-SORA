@@ -36,7 +36,7 @@ fixed prompt; the model learns to emit the code-mixed transcript as written.
 Outputs:
   c1/models/whisper_lora/<model>/            best adapter (by val loss)
   c1/results/c1_asr_finetune_<model>.json    metrics, curves, config
-  c1/predictions/finetune/<model>_{base,ft}_test.jsonl   test transcripts
+  c1/predictions/finetune/<model>_{base,ft}_test.json   test transcripts
 """
 import argparse
 import json
@@ -193,12 +193,13 @@ def save_adapter(model, out_dir, attempts=10, wait_s=3.0):
 
 def save_predictions(name, rows, hyps):
     os.makedirs(PRED_DIR, exist_ok=True)
+    # One JSON array per file (not JSON Lines), readable as a single document.
+    out = [{"recording": r["recording"], "clip": r["clip"],
+            "start": r["start"], "end": r["end"],
+            "reference": r["text"], "hypothesis": h} for r, h in zip(rows, hyps)]
     with open(os.path.join(PRED_DIR, name), "w", encoding="utf-8") as fh:
-        for r, h in zip(rows, hyps):
-            fh.write(json.dumps({"recording": r["recording"], "clip": r["clip"],
-                                 "start": r["start"], "end": r["end"],
-                                 "reference": r["text"], "hypothesis": h},
-                                ensure_ascii=False) + "\n")
+        json.dump(out, fh, ensure_ascii=False, indent=2)
+        fh.write("\n")
 
 
 def main():
@@ -257,7 +258,7 @@ def main():
         hyps = transcribe(model, processor, test, audio, micro * 2, a.language)
         result["baseline_test"] = score([r["text"] for r in test], hyps)
         result["baseline_test"]["decode_s"] = round(time.time() - t0, 1)
-        save_predictions(f"{run_name}_base_test.jsonl", test, hyps)
+        save_predictions(f"{run_name}_base_test.json", test, hyps)
         log(f"BASELINE test: {result['baseline_test']}", logf)
 
     # --- LoRA ---------------------------------------------------------------
@@ -343,7 +344,7 @@ def main():
     hyps = transcribe(model, processor, test, audio, micro * 2, a.language)
     result["finetuned_test"] = score([r["text"] for r in test], hyps)
     result["finetuned_test"]["decode_s"] = round(time.time() - t0, 1)
-    save_predictions(f"{run_name}_ft_test.jsonl", test, hyps)
+    save_predictions(f"{run_name}_ft_test.json", test, hyps)
     log(f"FINE-TUNED test: {result['finetuned_test']}", logf)
 
     with open(os.path.join(RESULTS_DIR, f"c1_asr_finetune_{run_name}.json"), "w",
