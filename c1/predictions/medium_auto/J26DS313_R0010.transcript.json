@@ -1,0 +1,42 @@
+{
+  "recording": "J26DS313_R0010",
+  "config": "medium_auto",
+  "model_size": "medium",
+  "language_setting": "auto",
+  "detected_language": "si",
+  "language_probability": 0.952,
+  "audio_duration_s": 40.38,
+  "transcribe_wall_s": 56.08,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0010_w001",
+      "start": 0.08,
+      "end": 5.7,
+      "text": "ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් ස් සඊ ස් දිරිතාම් බිවය සි඗ිර්ලින් අවණුළු තුරි."
+    },
+    {
+      "utt_id": "J26DS313_R0010_w002",
+      "start": 5.7,
+      "end": 10.77,
+      "text": "කැප ඩිය ව෧් කිරීමති අපි හි විකෙෂ කෝන්ටයලා."
+    },
+    {
+      "utt_id": "J26DS313_R0010_w003",
+      "start": 10.77,
+      "end": 15.21,
+      "text": "tx4 i ż Kop."
+    },
+    {
+      "utt_id": "J26DS313_R0010_w004",
+      "start": 15.83,
+      "end": 19.95,
+      "text": "වේළැුළ, අයිි Ste."
+    },
+    {
+      "utt_id": "J26DS313_R0010_w005",
+      "start": 19.95,
+      "end": 36.84,
+      "text": "අව්තක ඉස්ස්න් මමින්ලික් කිරි එකතු දියකෝ අවශ්ස්ස් දා හැර්යක් මින්ලික් වටන් ගන්නවයක වලඩියේ් තමනු කිරියක දිර්න් කතුරාන අවශ්තකක් හැ�"
+    }
+  ]
+}

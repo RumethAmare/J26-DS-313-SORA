@@ -1,6 +1,6 @@
 # Task 6 — Noise robustness
 
-Produced by `scripts/noise_robustness_eval.py` over 8 recordings, stratified across the LATIN / MIXED / SINHALA gold-script buckets.
+Produced by `scripts/noise_robustness_eval.py` over 16 recordings, stratified across the LATIN / MIXED / SINHALA gold-script buckets.
 
 ## Setup
 
@@ -16,21 +16,21 @@ WER is already ~0.996 on **clean** audio (Task 1), so it is pinned against its c
 
 | condition | WER | words recovered | % of ref | output ratio | mean lang P | detected | median ts err |
 |---|---|---|---|---|---|---|---|
-| clean | 0.9961 | 7 | 0.4% | 0.29× | 0.761 | si×8 | 56.995s |
-| snr15 | 0.9905 | 17 | 0.9% | 0.13× | 0.622 | ml×1, si×7 | 45.88s |
-| snr5 | 0.9893 | 19 | 1.1% | 0.22× | 0.615 | ml×1, si×7 | 14.725s |
-| snr0 | 0.9961 | 7 | 0.4% | 0.12× | 0.572 | ml×1, si×7 | 84.76s |
-| reverb | 0.9933 | 12 | 0.7% | 0.19× | 0.736 | ml×1, si×7 | 18.335s |
+| clean | 0.9953 | 30 | 0.5% | 0.16× | 0.785 | si×16 | 78.525s |
+| snr15 | 0.9966 | 22 | 0.3% | 0.16× | 0.701 | si×16 | 100.11s |
+| snr5 | 0.9938 | 42 | 0.7% | 0.18× | 0.628 | ml×1, ms×1, si×14 | 65.95s |
+| snr0 | 0.9938 | 42 | 0.7% | 0.17× | 0.517 | en×1, ml×1, ms×1, si×13 | 55.73s |
+| reverb | 0.9841 | 107 | 1.7% | 0.23× | 0.691 | en×1, ml×2, si×13 | 77.48s |
 
 ### Decode config: `en`
 
 | condition | WER | words recovered | % of ref | output ratio | mean lang P | detected | median ts err |
 |---|---|---|---|---|---|---|---|
-| clean | 0.9343 | 397 | 22.3% | 1.10× | 1.000 | en×8 | 0.385s |
-| snr15 | 0.9624 | 271 | 15.2% | 0.98× | 1.000 | en×8 | 0.308s |
-| snr5 | 0.9444 | 267 | 15.0% | 0.95× | 1.000 | en×8 | 0.282s |
-| snr0 | 0.9573 | 198 | 11.1% | 0.81× | 1.000 | en×8 | 0.672s |
-| reverb | 0.9624 | 227 | 12.8% | 0.90× | 1.000 | en×8 | 0.35s |
+| clean | 0.9295 | 847 | 13.2% | 0.80× | 1.000 | en×16 | 0.428s |
+| snr15 | 0.9465 | 837 | 13.1% | 0.90× | 1.000 | en×16 | 0.48s |
+| snr5 | 0.9451 | 634 | 9.9% | 0.84× | 1.000 | en×16 | 0.505s |
+| snr0 | 0.9629 | 405 | 6.3% | 0.60× | 1.000 | en×16 | 1.165s |
+| reverb | 0.9601 | 555 | 8.7% | 0.73× | 1.000 | en×16 | 1.96s |
 
 ## Reading the curves
 

@@ -2,9 +2,9 @@
 
 Produced by `scripts/audit_gold.py`. Report only; nothing is modified.
 
-- gold token files: **78** (28,974 tokens)
+- gold token files: **78** (28,979 tokens)
 - usable after exclusions: **66** (25,582 tokens)
-- with audio: **61**
+- with audio: **74**
 - not in manifest: **51**
 
 ## Excluded recordings
@@ -61,18 +61,18 @@ None found.
 | J26DS313_R0047 | 852 | 447 | 369 | 36 | 370 | 0% (0) | 0 | unicode | NOT_IN_MANIFEST |
 | J26DS313_R0048 | 214 | 149 | 61 | 4 | 70 | 0% (0) | 0 | unicode | NOT_IN_MANIFEST |
 | J26DS313_R0049 | 445 | 225 | 192 | 28 | 207 | 0% (0) | 0 | unicode | NOT_IN_MANIFEST |
-| J26DS313_R0050 | 356 | 157 | 198 | 1 | 128 | 0% (72) | 0 | romanized | NO_AUDIO NOT_IN_MANIFEST |
-| J26DS313_R0051 | 310 | 231 | 78 | 1 | 79 | 14% (74) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL NO_AUDIO NOT_IN_MANIFEST |
-| J26DS313_R0052 | 411 | 186 | 223 | 2 | 188 | 0% (34) | 0 | mixed | NO_AUDIO NOT_IN_MANIFEST |
-| J26DS313_R0053 | 369 | 208 | 160 | 1 | 147 | 0% (0) | 0 | unicode | NO_AUDIO NOT_IN_MANIFEST |
-| J26DS313_R0054 | 426 | 0 | 426 | 0 | 0 | 100% (93) | 0 | none | EXCLUDED BULK_LABEL NO_AUDIO NOT_IN_MANIFEST |
-| J26DS313_R0055 | 392 | 0 | 392 | 0 | 0 | 100% (91) | 0 | none | EXCLUDED BULK_LABEL NO_AUDIO NOT_IN_MANIFEST |
-| J26DS313_R0056 | 291 | 1 | 290 | 0 | 2 | 100% (51) | 0 | romanized | EXCLUDED BULK_LABEL NO_AUDIO NOT_IN_MANIFEST |
-| J26DS313_R0057 | 162 | 132 | 26 | 4 | 27 | 100% (3) | 0 | unicode | NO_AUDIO NOT_IN_MANIFEST |
-| J26DS313_R0058 | 373 | 369 | 4 | 0 | 2 | 0% (99) | 0 | romanized | EXCLUDED BULK_LABEL NO_AUDIO NOT_IN_MANIFEST |
-| J26DS313_R0059 | 173 | 0 | 173 | 0 | 0 | 100% (50) | 0 | none | EXCLUDED BULK_LABEL NO_AUDIO NOT_IN_MANIFEST |
-| J26DS313_R0060 | 208 | 161 | 47 | 0 | 45 | 0% (0) | 0 | unicode | NO_AUDIO NOT_IN_MANIFEST |
-| J26DS313_R0061 | 298 | 194 | 104 | 0 | 122 | 0% (0) | 0 | unicode | NO_AUDIO NOT_IN_MANIFEST |
+| J26DS313_R0050 | 356 | 157 | 198 | 1 | 128 | 0% (72) | 0 | romanized | NOT_IN_MANIFEST |
+| J26DS313_R0051 | 310 | 231 | 78 | 1 | 79 | 14% (74) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL NOT_IN_MANIFEST |
+| J26DS313_R0052 | 411 | 186 | 223 | 2 | 188 | 0% (34) | 0 | mixed | NOT_IN_MANIFEST |
+| J26DS313_R0053 | 369 | 208 | 160 | 1 | 147 | 0% (0) | 0 | unicode | NOT_IN_MANIFEST |
+| J26DS313_R0054 | 431 | 234 | 194 | 3 | 184 | 0% (0) | 0 | unicode | EXCLUDED NOT_IN_MANIFEST |
+| J26DS313_R0055 | 392 | 0 | 392 | 0 | 0 | 100% (91) | 0 | none | EXCLUDED BULK_LABEL NOT_IN_MANIFEST |
+| J26DS313_R0056 | 291 | 1 | 290 | 0 | 2 | 100% (51) | 0 | romanized | EXCLUDED BULK_LABEL NOT_IN_MANIFEST |
+| J26DS313_R0057 | 162 | 132 | 26 | 4 | 27 | 100% (3) | 0 | unicode | NOT_IN_MANIFEST |
+| J26DS313_R0058 | 373 | 369 | 4 | 0 | 2 | 0% (99) | 0 | romanized | EXCLUDED BULK_LABEL NOT_IN_MANIFEST |
+| J26DS313_R0059 | 173 | 0 | 173 | 0 | 0 | 100% (50) | 0 | none | EXCLUDED BULK_LABEL NOT_IN_MANIFEST |
+| J26DS313_R0060 | 208 | 161 | 47 | 0 | 45 | 0% (0) | 0 | unicode | NOT_IN_MANIFEST |
+| J26DS313_R0061 | 298 | 194 | 104 | 0 | 122 | 0% (0) | 0 | unicode | NOT_IN_MANIFEST |
 | J26DS313_R0062 | 255 | 66 | 189 | 0 | 77 | 51% (67) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL NO_PREFIX NO_AUDIO NOT_IN_MANIFEST |
 | J26DS313_R0063 | 233 | 56 | 177 | 0 | 63 | 35% (49) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL NO_PREFIX NO_AUDIO NOT_IN_MANIFEST |
 | J26DS313_R0064 | 243 | 57 | 186 | 0 | 68 | 22% (50) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL NO_PREFIX NO_AUDIO NOT_IN_MANIFEST |

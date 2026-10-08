@@ -1,0 +1,18 @@
+{
+  "recording": "J26DS313_R0004",
+  "config": "medium_auto",
+  "model_size": "medium",
+  "language_setting": "auto",
+  "detected_language": "si",
+  "language_probability": 0.951,
+  "audio_duration_s": 41.15,
+  "transcribe_wall_s": 27.88,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0004_w001",
+      "start": 0.69,
+      "end": 33.89,
+      "text": "මෙනුම්ති පාල්රායකලෝය මින්රම්දාවීම ඇරනා ඗මකි බින්නිවය මෙන්තාවීම පාල්හාය නිත් ලෙල්දානාවිය මෙන්තා කිශ්රියකරයකත්තියකරන් ඇදය කිහි�"
+    }
+  ]
+}

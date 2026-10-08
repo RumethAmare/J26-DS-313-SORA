@@ -1,0 +1,30 @@
+17:07:47 model=small language=en train=479 val=63 test=101 clips; batch 8x2
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights:  16%|█▋        | 79/479 [00:00<00:00, 775.13it/s]Loading weights:  33%|███▎      | 157/479 [00:00<00:00, 701.99it/s]Loading weights:  48%|████▊     | 228/479 [00:00<00:00, 693.71it/s]Loading weights:  62%|██████▏   | 298/479 [00:00<00:00, 678.21it/s]Loading weights:  76%|███████▋  | 366/479 [00:00<00:00, 639.74it/s]Loading weights:  90%|████████▉ | 431/479 [00:00<00:00, 634.95it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 657.31it/s]
+17:07:51 trainable params 12,976,128 / 254,711,040 (5.09%)
+17:07:55 epoch 0 val_loss 2.3954
+F:\SLIIT\Y4 S1\Research\J26-DS-313-SORA\c1\scripts\finetune_whisper.py:304: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  running += float(out.loss)
+17:10:04 epoch 1 train_loss 1.8524 val_loss 1.7477 (2.2 min, peak GPU 4.2 GiB)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+17:12:15 epoch 2 train_loss 1.1498 val_loss 1.2956 (4.3 min, peak GPU 4.2 GiB)
+17:14:32 epoch 3 train_loss 0.7387 val_loss 1.1334 (6.6 min, peak GPU 4.2 GiB)
+17:16:44 epoch 4 train_loss 0.5332 val_loss 1.1034 (8.8 min, peak GPU 4.2 GiB)
+17:18:57 epoch 5 train_loss 0.4219 val_loss 1.1090 (11.0 min, peak GPU 4.2 GiB)
+17:21:06 epoch 6 train_loss 0.3233 val_loss 1.1257 (13.2 min, peak GPU 4.2 GiB)
+17:24:57 epoch 7 train_loss 0.2593 val_loss 1.1598 (17.0 min, peak GPU 4.2 GiB)
+17:24:57 early stop: no val improvement for 3 epochs
+Could not reach the Hub ([Errno 11001] getaddrinfo failed). Using cached commit hash for 'openai/whisper-small'.
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights:  14%|█▎        | 65/479 [00:00<00:00, 642.47it/s]Loading weights:  27%|██▋       | 130/479 [00:00<00:00, 628.17it/s]Loading weights:  40%|████      | 193/479 [00:00<00:00, 610.98it/s]Loading weights:  53%|█████▎    | 255/479 [00:00<00:00, 603.13it/s]Loading weights:  66%|██████▌   | 316/479 [00:00<00:00, 577.21it/s]Loading weights:  78%|███████▊  | 374/479 [00:00<00:00, 555.25it/s]Loading weights:  90%|████████▉ | 430/479 [00:00<00:00, 555.77it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 576.01it/s]
+[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] The attention mask is not set with a batched input, and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+17:26:59 FINE-TUNED test: {'norm_wer': 0.8261, 'raw_wer': 0.8572, 'norm_cer': 0.5087, 'words_recovered': 1693, 'n_ref_words': 3490, 'recall_of_ref_words': 0.4851, 'output_ratio': 1.191, 'substitutions': 1379, 'deletions': 418, 'insertions': 1086, 'decode_s': 120.2}
+17:26:59 wrote results/c1_asr_finetune_small_lr3e-4.json

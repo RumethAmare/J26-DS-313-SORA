@@ -1,6 +1,6 @@
 {
   "note": "Synthetic pink noise at exact SNR (see c1_noise_manifest.json). WER is pinned near its ceiling on clean audio already, so the informative columns are words recovered, output ratio and language-detection stability.",
-  "n_recordings": 8,
+  "n_recordings": 16,
   "recordings": [
     "J26DS313_R0002",
     "J26DS313_R0014",
@@ -9,7 +9,15 @@
     "J26DS313_R0009",
     "J26DS313_R0015",
     "J26DS313_R0019",
-    "J26DS313_R0025"
+    "J26DS313_R0025",
+    "J26DS313_R0031",
+    "J26DS313_R0038",
+    "J26DS313_R0044",
+    "J26DS313_R0049",
+    "J26DS313_R0069",
+    "J26DS313_R0072",
+    "J26DS313_R0102",
+    "J26DS313_R0104"
   ],
   "conditions": [
     "clean",
@@ -22,196 +30,199 @@
     "auto__clean": {
       "config": "auto",
       "condition": "clean",
-      "wer": 0.9961,
-      "words_recovered": 7,
-      "n_ref_words": 1781,
-      "recall_of_ref_words": 0.0039,
-      "output_ratio": 0.289,
-      "substitutions": 507,
-      "deletions": 1267,
+      "wer": 0.9953,
+      "words_recovered": 30,
+      "n_ref_words": 6410,
+      "recall_of_ref_words": 0.0047,
+      "output_ratio": 0.161,
+      "substitutions": 999,
+      "deletions": 5381,
       "insertions": 0,
       "detected_languages": {
-        "si": 8
+        "si": 16
       },
-      "mean_language_probability": 0.7607,
-      "median_timestamp_error_s": 56.995,
-      "n_timestamp_matches": 9,
-      "wall_s": 237.9
+      "mean_language_probability": 0.7854,
+      "median_timestamp_error_s": 78.525,
+      "n_timestamp_matches": 21,
+      "wall_s": 1015.0
     },
     "auto__snr15": {
       "config": "auto",
       "condition": "snr15",
-      "wer": 0.9905,
-      "words_recovered": 17,
-      "n_ref_words": 1781,
-      "recall_of_ref_words": 0.0095,
-      "output_ratio": 0.132,
-      "substitutions": 218,
-      "deletions": 1546,
+      "wer": 0.9966,
+      "words_recovered": 22,
+      "n_ref_words": 6410,
+      "recall_of_ref_words": 0.0034,
+      "output_ratio": 0.162,
+      "substitutions": 1014,
+      "deletions": 5374,
       "insertions": 0,
       "detected_languages": {
-        "ml": 1,
-        "si": 7
+        "si": 16
       },
-      "mean_language_probability": 0.622,
-      "median_timestamp_error_s": 45.88,
-      "n_timestamp_matches": 20,
-      "wall_s": 205.4
+      "mean_language_probability": 0.7007,
+      "median_timestamp_error_s": 100.11,
+      "n_timestamp_matches": 18,
+      "wall_s": 1049.6
     },
     "auto__snr5": {
       "config": "auto",
       "condition": "snr5",
-      "wer": 0.9893,
-      "words_recovered": 19,
-      "n_ref_words": 1781,
-      "recall_of_ref_words": 0.0107,
-      "output_ratio": 0.216,
-      "substitutions": 366,
-      "deletions": 1396,
-      "insertions": 0,
+      "wer": 0.9938,
+      "words_recovered": 42,
+      "n_ref_words": 6410,
+      "recall_of_ref_words": 0.0066,
+      "output_ratio": 0.18,
+      "substitutions": 1107,
+      "deletions": 5261,
+      "insertions": 2,
       "detected_languages": {
         "ml": 1,
-        "si": 7
+        "ms": 1,
+        "si": 14
       },
-      "mean_language_probability": 0.6153,
-      "median_timestamp_error_s": 14.725,
-      "n_timestamp_matches": 22,
-      "wall_s": 208.2
+      "mean_language_probability": 0.6282,
+      "median_timestamp_error_s": 65.95,
+      "n_timestamp_matches": 31,
+      "wall_s": 1034.1
     },
     "auto__snr0": {
       "config": "auto",
       "condition": "snr0",
-      "wer": 0.9961,
-      "words_recovered": 7,
-      "n_ref_words": 1781,
-      "recall_of_ref_words": 0.0039,
-      "output_ratio": 0.125,
-      "substitutions": 216,
-      "deletions": 1558,
-      "insertions": 0,
+      "wer": 0.9938,
+      "words_recovered": 42,
+      "n_ref_words": 6410,
+      "recall_of_ref_words": 0.0066,
+      "output_ratio": 0.165,
+      "substitutions": 1011,
+      "deletions": 5357,
+      "insertions": 2,
       "detected_languages": {
+        "en": 1,
         "ml": 1,
-        "si": 7
+        "ms": 1,
+        "si": 13
       },
-      "mean_language_probability": 0.5722,
-      "median_timestamp_error_s": 84.76,
-      "n_timestamp_matches": 5,
-      "wall_s": 208.0
+      "mean_language_probability": 0.5168,
+      "median_timestamp_error_s": 55.73,
+      "n_timestamp_matches": 39,
+      "wall_s": 1011.3
     },
     "auto__reverb": {
       "config": "auto",
       "condition": "reverb",
-      "wer": 0.9933,
-      "words_recovered": 12,
-      "n_ref_words": 1781,
-      "recall_of_ref_words": 0.0067,
-      "output_ratio": 0.194,
-      "substitutions": 333,
-      "deletions": 1436,
-      "insertions": 0,
+      "wer": 0.9841,
+      "words_recovered": 107,
+      "n_ref_words": 6410,
+      "recall_of_ref_words": 0.0167,
+      "output_ratio": 0.226,
+      "substitutions": 1338,
+      "deletions": 4965,
+      "insertions": 5,
       "detected_languages": {
-        "ml": 1,
-        "si": 7
+        "en": 1,
+        "ml": 2,
+        "si": 13
       },
-      "mean_language_probability": 0.7363,
-      "median_timestamp_error_s": 18.335,
-      "n_timestamp_matches": 11,
-      "wall_s": 208.4
+      "mean_language_probability": 0.6911,
+      "median_timestamp_error_s": 77.48,
+      "n_timestamp_matches": 124,
+      "wall_s": 845.8
     },
     "en__clean": {
       "config": "en",
       "condition": "clean",
-      "wer": 0.9343,
-      "words_recovered": 397,
-      "n_ref_words": 1781,
-      "recall_of_ref_words": 0.2229,
-      "output_ratio": 1.1,
-      "substitutions": 1282,
-      "deletions": 102,
-      "insertions": 280,
+      "wer": 0.9295,
+      "words_recovered": 847,
+      "n_ref_words": 6410,
+      "recall_of_ref_words": 0.1321,
+      "output_ratio": 0.796,
+      "substitutions": 3862,
+      "deletions": 1701,
+      "insertions": 395,
       "detected_languages": {
-        "en": 8
+        "en": 16
       },
       "mean_language_probability": 1.0,
-      "median_timestamp_error_s": 0.385,
-      "n_timestamp_matches": 441,
-      "wall_s": 49.7
+      "median_timestamp_error_s": 0.428,
+      "n_timestamp_matches": 972,
+      "wall_s": 257.8
     },
     "en__snr15": {
       "config": "en",
       "condition": "snr15",
-      "wer": 0.9624,
-      "words_recovered": 271,
-      "n_ref_words": 1781,
-      "recall_of_ref_words": 0.1522,
-      "output_ratio": 0.979,
-      "substitutions": 1268,
-      "deletions": 242,
-      "insertions": 204,
+      "wer": 0.9465,
+      "words_recovered": 837,
+      "n_ref_words": 6410,
+      "recall_of_ref_words": 0.1306,
+      "output_ratio": 0.902,
+      "substitutions": 4450,
+      "deletions": 1123,
+      "insertions": 494,
       "detected_languages": {
-        "en": 8
+        "en": 16
       },
       "mean_language_probability": 1.0,
-      "median_timestamp_error_s": 0.308,
-      "n_timestamp_matches": 344,
-      "wall_s": 34.3
+      "median_timestamp_error_s": 0.48,
+      "n_timestamp_matches": 984,
+      "wall_s": 388.1
     },
     "en__snr5": {
       "config": "en",
       "condition": "snr5",
-      "wer": 0.9444,
-      "words_recovered": 267,
-      "n_ref_words": 1781,
-      "recall_of_ref_words": 0.1499,
-      "output_ratio": 0.949,
-      "substitutions": 1255,
-      "deletions": 259,
-      "insertions": 168,
+      "wer": 0.9451,
+      "words_recovered": 634,
+      "n_ref_words": 6410,
+      "recall_of_ref_words": 0.0989,
+      "output_ratio": 0.843,
+      "substitutions": 4489,
+      "deletions": 1287,
+      "insertions": 282,
       "detected_languages": {
-        "en": 8
+        "en": 16
       },
       "mean_language_probability": 1.0,
-      "median_timestamp_error_s": 0.282,
-      "n_timestamp_matches": 301,
-      "wall_s": 52.4
+      "median_timestamp_error_s": 0.505,
+      "n_timestamp_matches": 826,
+      "wall_s": 4408.3
     },
     "en__snr0": {
       "config": "en",
       "condition": "snr0",
-      "wer": 0.9573,
-      "words_recovered": 198,
-      "n_ref_words": 1781,
-      "recall_of_ref_words": 0.1112,
-      "output_ratio": 0.815,
-      "substitutions": 1132,
-      "deletions": 451,
-      "insertions": 122,
+      "wer": 0.9629,
+      "words_recovered": 405,
+      "n_ref_words": 6410,
+      "recall_of_ref_words": 0.0632,
+      "output_ratio": 0.6,
+      "substitutions": 3273,
+      "deletions": 2732,
+      "insertions": 167,
       "detected_languages": {
-        "en": 8
+        "en": 16
       },
       "mean_language_probability": 1.0,
-      "median_timestamp_error_s": 0.672,
-      "n_timestamp_matches": 216,
-      "wall_s": 57.3
+      "median_timestamp_error_s": 1.165,
+      "n_timestamp_matches": 537,
+      "wall_s": 2849.5
     },
     "en__reverb": {
       "config": "en",
       "condition": "reverb",
-      "wer": 0.9624,
-      "words_recovered": 227,
-      "n_ref_words": 1781,
-      "recall_of_ref_words": 0.1275,
-      "output_ratio": 0.901,
-      "substitutions": 1218,
-      "deletions": 336,
-      "insertions": 160,
+      "wer": 0.9601,
+      "words_recovered": 555,
+      "n_ref_words": 6410,
+      "recall_of_ref_words": 0.0866,
+      "output_ratio": 0.731,
+      "substitutions": 3831,
+      "deletions": 2024,
+      "insertions": 299,
       "detected_languages": {
-        "en": 8
+        "en": 16
       },
       "mean_language_probability": 1.0,
-      "median_timestamp_error_s": 0.35,
-      "n_timestamp_matches": 294,
-      "wall_s": 53.8
+      "median_timestamp_error_s": 1.96,
+      "n_timestamp_matches": 609,
+      "wall_s": 347.6
     }
   }
 }

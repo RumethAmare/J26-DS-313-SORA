@@ -1,0 +1,120 @@
+{
+  "seed": 20261008,
+  "max_clip_s": 25.0,
+  "skipped": {
+    "J26DS313_R0008": "excluded",
+    "J26DS313_R0017": "excluded",
+    "J26DS313_R0051": "excluded",
+    "J26DS313_R0052": "timestamps past end of audio",
+    "J26DS313_R0054": "excluded",
+    "J26DS313_R0055": "excluded",
+    "J26DS313_R0056": "excluded",
+    "J26DS313_R0057": "timestamps past end of audio",
+    "J26DS313_R0058": "excluded",
+    "J26DS313_R0059": "excluded",
+    "J26DS313_R0061": "timestamps past end of audio",
+    "J26DS313_R0062": "excluded",
+    "J26DS313_R0063": "excluded",
+    "J26DS313_R0064": "excluded",
+    "J26DS313_R0065": "excluded"
+  },
+  "splits": {
+    "train": {
+      "recordings": [
+        "J26DS313_R0002",
+        "J26DS313_R0003",
+        "J26DS313_R0004",
+        "J26DS313_R0005",
+        "J26DS313_R0006",
+        "J26DS313_R0009",
+        "J26DS313_R0010",
+        "J26DS313_R0011",
+        "J26DS313_R0012",
+        "J26DS313_R0014",
+        "J26DS313_R0015",
+        "J26DS313_R0020",
+        "J26DS313_R0021",
+        "J26DS313_R0022",
+        "J26DS313_R0023",
+        "J26DS313_R0024",
+        "J26DS313_R0025",
+        "J26DS313_R0026",
+        "J26DS313_R0027",
+        "J26DS313_R0028",
+        "J26DS313_R0029",
+        "J26DS313_R0031",
+        "J26DS313_R0032",
+        "J26DS313_R0034",
+        "J26DS313_R0035",
+        "J26DS313_R0036",
+        "J26DS313_R0037",
+        "J26DS313_R0038",
+        "J26DS313_R0039",
+        "J26DS313_R0040",
+        "J26DS313_R0041",
+        "J26DS313_R0042",
+        "J26DS313_R0043",
+        "J26DS313_R0044",
+        "J26DS313_R0045",
+        "J26DS313_R0046",
+        "J26DS313_R0049",
+        "J26DS313_R0060",
+        "J26DS313_R0068",
+        "J26DS313_R0069",
+        "J26DS313_R0071",
+        "J26DS313_R0072",
+        "J26DS313_R0074",
+        "J26DS313_R0100",
+        "J26DS313_R0101",
+        "J26DS313_R0103",
+        "J26DS313_R0104"
+      ],
+      "n_recordings": 47,
+      "n_clips": 479,
+      "hours": 1.587,
+      "scripts": {
+        "romanized": 7,
+        "unicode": 40
+      }
+    },
+    "val": {
+      "recordings": [
+        "J26DS313_R0048",
+        "J26DS313_R0050",
+        "J26DS313_R0053",
+        "J26DS313_R0070",
+        "J26DS313_R0102",
+        "J26DS313_R0105"
+      ],
+      "n_recordings": 6,
+      "n_clips": 63,
+      "hours": 0.228,
+      "scripts": {
+        "romanized": 1,
+        "unicode": 5
+      }
+    },
+    "test": {
+      "recordings": [
+        "J26DS313_R0007",
+        "J26DS313_R0013",
+        "J26DS313_R0016",
+        "J26DS313_R0018",
+        "J26DS313_R0019",
+        "J26DS313_R0030",
+        "J26DS313_R0033",
+        "J26DS313_R0047",
+        "J26DS313_R0073",
+        "J26DS313_R0075"
+      ],
+      "n_recordings": 10,
+      "n_clips": 101,
+      "hours": 0.395,
+      "scripts": {
+        "romanized": 2,
+        "unicode": 8
+      }
+    }
+  },
+  "dropped_utterances": 74
+}

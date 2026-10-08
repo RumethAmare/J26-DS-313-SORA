@@ -1,0 +1,30 @@
+{
+  "recording": "J26DS313_R0009",
+  "config": "medium_auto",
+  "model_size": "medium",
+  "language_setting": "auto",
+  "detected_language": "si",
+  "language_probability": 0.983,
+  "audio_duration_s": 42.86,
+  "transcribe_wall_s": 28.07,
+  "utterances": [
+    {
+      "utt_id": "J26DS313_R0009_w001",
+      "start": 0.62,
+      "end": 8.34,
+      "text": "අවනෙක් නානින් ක්රටමිතම් මු හා පිරහ්පලි."
+    },
+    {
+      "utt_id": "J26DS313_R0009_w002",
+      "start": 8.34,
+      "end": 17.58,
+      "text": "අවනෙක් බිතිතා නැහිලය ක්රණැන් සබා උහිරයි කිරීව."
+    },
+    {
+      "utt_id": "J26DS313_R0009_w003",
+      "start": 17.58,
+      "end": 42.85,
+      "text": "ඔවින අපි සතියෙන් කිරඹ්‍කර අඵි වලිේ අපි ගන්න ආබා අදි අපි කෙලින් යමෙන් වලි ඇති අපි අවශ්ර දා හෝ මිහවා පා කහ අිසා ඇති අපි අඳිළි මින්න කිරන් අ�"
+    }
+  ]
+}

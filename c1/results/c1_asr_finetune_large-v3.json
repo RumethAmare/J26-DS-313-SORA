@@ -1,0 +1,107 @@
+{
+  "model": "large-v3",
+  "hf_id": "openai/whisper-large-v3",
+  "language": "en",
+  "method": "LoRA",
+  "lora_r": 32,
+  "lr": 0.001,
+  "batch": {
+    "micro": 2,
+    "accum": 8
+  },
+  "seed": 13,
+  "data": {
+    "train": {
+      "n_recordings": 47,
+      "n_clips": 479,
+      "hours": 1.587,
+      "scripts": {
+        "romanized": 7,
+        "unicode": 40
+      }
+    },
+    "val": {
+      "n_recordings": 6,
+      "n_clips": 63,
+      "hours": 0.228,
+      "scripts": {
+        "romanized": 1,
+        "unicode": 5
+      }
+    },
+    "test": {
+      "n_recordings": 10,
+      "n_clips": 101,
+      "hours": 0.395,
+      "scripts": {
+        "romanized": 2,
+        "unicode": 8
+      }
+    }
+  },
+  "baseline_test": {
+    "norm_wer": 1.1,
+    "raw_wer": 1.1063,
+    "norm_cer": 0.8192,
+    "words_recovered": 638,
+    "n_ref_words": 3490,
+    "recall_of_ref_words": 0.1828,
+    "output_ratio": 0.881,
+    "substitutions": 1450,
+    "deletions": 1402,
+    "insertions": 987,
+    "decode_s": 104.4
+  },
+  "best_epoch": 3,
+  "curve": [
+    {
+      "epoch": 0,
+      "val_loss": 2.1337
+    },
+    {
+      "epoch": 1,
+      "train_loss": 1.2493,
+      "val_loss": 1.1452,
+      "elapsed_min": 28.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6488,
+      "val_loss": 1.0786,
+      "elapsed_min": 45.6
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.4482,
+      "val_loss": 1.0421,
+      "elapsed_min": 112.5
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3442,
+      "val_loss": 1.0471,
+      "elapsed_min": 135.2
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.2599,
+      "val_loss": 1.1038,
+      "elapsed_min": 200.1
+    }
+  ],
+  "train_minutes": 200.1,
+  "peak_gpu_gib": 4.71,
+  "finetuned_test": {
+    "norm_wer": 0.6633,
+    "raw_wer": 0.7095,
+    "norm_cer": 0.3835,
+    "words_recovered": 1857,
+    "n_ref_words": 3490,
+    "recall_of_ref_words": 0.5321,
+    "output_ratio": 1.078,
+    "substitutions": 1224,
+    "deletions": 409,
+    "insertions": 682,
+    "decode_s": 818.6
+  }
+}

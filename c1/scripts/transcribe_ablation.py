@@ -62,8 +62,77 @@ def model_is_local(size):
     return os.path.isdir(os.path.join(cache, f"models--Systran--faster-whisper-{size}"))
 
 
-def run_config(size, lang_name, lang_code, rids, compute_type, resume=False):
+def _decode_worker(size, compute_type, lang_code, in_q, out_q):
+    """Child process: load the model once, then decode recordings from in_q.
+
+    Decoding lives in a child so the parent can kill it. faster-whisper's
+    temperature fallback can loop on a single 30s window for over an hour
+    (medium_auto on R0014: 5,662s for 91s of audio), and that happens inside
+    one CTranslate2 call that nothing in-process can interrupt.
+    """
     from faster_whisper import WhisperModel
+    model = WhisperModel(size, device="cuda", compute_type=compute_type)
+    out_q.put(("ready", None))
+    while True:
+        rid = in_q.get()
+        if rid is None:
+            return
+        t0 = time.time()
+        segments, info = model.transcribe(
+            os.path.join(AUDIO_DIR, f"{rid}.wav"),
+            beam_size=5, vad_filter=True, language=lang_code)
+        utterances = [{"utt_id": f"{rid}_w{idx:03d}",
+                       "start": round(seg.start, 2), "end": round(seg.end, 2),
+                       "text": seg.text.strip()}
+                      for idx, seg in enumerate(segments, 1)]
+        out_q.put(("done", {
+            "detected_language": info.language,
+            "language_probability": round(info.language_probability, 3),
+            "audio_duration_s": round(info.duration, 2),
+            "transcribe_wall_s": round(time.time() - t0, 2),
+            "utterances": utterances,
+        }))
+
+
+class _Worker:
+    def __init__(self, size, compute_type, lang_code):
+        import multiprocessing as mp
+        ctx = mp.get_context("spawn")
+        self.in_q, self.out_q = ctx.Queue(), ctx.Queue()
+        self.proc = ctx.Process(target=_decode_worker, daemon=True,
+                                args=(size, compute_type, lang_code,
+                                      self.in_q, self.out_q))
+        import queue
+        t0 = time.time()
+        self.proc.start()
+        while True:                                 # wait for "ready"
+            try:
+                self.out_q.get(timeout=2)
+                break
+            except queue.Empty:
+                if not self.proc.is_alive():
+                    raise RuntimeError("decode worker died while loading the model")
+                if time.time() - t0 > 600:
+                    self.kill()
+                    raise RuntimeError("decode worker did not load the model in 600s")
+        print(f"model loaded in {time.time() - t0:.1f}s", flush=True)
+
+    def kill(self):
+        self.proc.kill()
+        self.proc.join()
+
+    def stop(self):
+        self.in_q.put(None)
+        self.proc.join(timeout=30)
+        if self.proc.is_alive():
+            self.kill()
+
+
+def run_config(size, lang_name, lang_code, rids, compute_type, resume=False,
+               timeout_factor=5.0, timeout_min_s=600.0):
+    import queue
+
+    import soundfile as sf
 
     config_name = f"{size}_{lang_name}"
     out_dir = os.path.join(PRED_ROOT, config_name)
@@ -80,53 +149,57 @@ def run_config(size, lang_name, lang_code, rids, compute_type, resume=False):
     if len(todo) < len(rids):
         print(f"resuming: {len(rids) - len(todo)} already done, {len(todo)} to go")
 
-    model = None
-    if todo:
-        load_start = time.time()
-        model = WhisperModel(size, device="cuda", compute_type=compute_type)
-        print(f"model loaded in {time.time() - load_start:.1f}s", flush=True)
+    worker = _Worker(size, compute_type, lang_code) if todo else None
 
     for i, rid in enumerate(todo, 1):
-        audio_path = os.path.join(AUDIO_DIR, f"{rid}.wav")
-        t0 = time.time()
-        segments, info = model.transcribe(
-            audio_path, beam_size=5, vad_filter=True, language=lang_code
-        )
-        utterances = []
-        for idx, seg in enumerate(segments, 1):
-            utterances.append({
-                "utt_id": f"{rid}_w{idx:03d}",
-                "start": round(seg.start, 2),
-                "end": round(seg.end, 2),
-                "text": seg.text.strip(),
-            })
-        elapsed = time.time() - t0
+        duration = sf.info(os.path.join(AUDIO_DIR, f"{rid}.wav")).duration
+        # Time cap per recording. Normal decodes run at 0.1-1.2x real time,
+        # so 5x (at least 10 min) only ever catches a runaway fallback loop.
+        cap = max(timeout_min_s, timeout_factor * duration) if timeout_factor else None
+        worker.in_q.put(rid)
+        try:
+            _, res = worker.out_q.get(timeout=cap)
+            timed_out = False
+        except queue.Empty:
+            worker.kill()
+            res = {"detected_language": None, "language_probability": 0.0,
+                   "audio_duration_s": round(duration, 2),
+                   "transcribe_wall_s": round(cap, 2), "utterances": []}
+            timed_out = True
+            if i < len(todo):
+                worker = _Worker(size, compute_type, lang_code)
 
         out = {
             "recording": rid,
             "config": config_name,
             "model_size": size,
             "language_setting": lang_code or "auto",
-            "detected_language": info.language,
-            "language_probability": round(info.language_probability, 3),
-            "audio_duration_s": round(info.duration, 2),
-            "transcribe_wall_s": round(elapsed, 2),
-            "utterances": utterances,
+            **{k: res[k] for k in ("detected_language", "language_probability",
+                                   "audio_duration_s", "transcribe_wall_s")},
+            "timed_out": timed_out,
+            "utterances": res["utterances"],
         }
         with open(os.path.join(out_dir, f"{rid}.transcript.json"), "w", encoding="utf-8") as fh:
             json.dump(out, fh, ensure_ascii=False, indent=2)
 
-        print(f"  [{i:2}/{len(todo)}] {rid}  {len(utterances):3} segs  "
-              f"detected={info.language}  {elapsed:5.1f}s", flush=True)
+        status = f"TIMED OUT after {cap:.0f}s" if timed_out else f"{res['transcribe_wall_s']:5.1f}s"
+        print(f"  [{i:2}/{len(todo)}] {rid}  {len(res['utterances']):3} segs  "
+              f"detected={res['detected_language']}  {status}", flush=True)
+
+    if worker is not None:
+        worker.stop()
 
     # Totals come from the saved files, so they cover every recording in the
     # config even when part of it was transcribed by an earlier, resumed run.
     total_audio = total_wall = 0.0
+    timed_out = []
     for rid in rids:
         with open(os.path.join(out_dir, f"{rid}.transcript.json"), encoding="utf-8") as fh:
             saved = json.load(fh)
         total_audio += saved["audio_duration_s"]
         total_wall += saved["transcribe_wall_s"]
+        if saved.get("timed_out"):
+            timed_out.append(rid)
     rtf = total_wall / total_audio if total_audio else float("nan")
     print(f"  -> {len(rids)} recordings, {total_audio:.0f}s audio, "
           f"{total_wall:.0f}s wall, RTF={rtf:.3f}")
@@ -140,11 +213,12 @@ def run_config(size, lang_name, lang_code, rids, compute_type, resume=False):
         "total_wall_s": round(total_wall, 2),
         "real_time_factor": round(rtf, 4),
         "compute_type": compute_type,
+        "timeout_rule": (f"max({timeout_min_s:.0f}s, {timeout_factor}x audio)"
+                         if timeout_factor else None),
+        "timed_out_recordings": timed_out,
     }
     with open(os.path.join(out_dir, "_config_meta.json"), "w", encoding="utf-8") as fh:
         json.dump(meta, fh, indent=2)
-
-    del model
     return meta
 
 
@@ -156,6 +230,9 @@ def main():
     ap.add_argument("--compute-type", default="float16")
     ap.add_argument("--resume", action="store_true",
                     help="skip recordings whose prediction file already exists")
+    ap.add_argument("--timeout-factor", type=float, default=5.0,
+                    help="kill a recording's decode after max(600s, N x audio "
+                         "length) and save it as timed out; 0 disables")
     a = ap.parse_args()
 
     all_ids = gold_recording_ids()
@@ -179,7 +256,7 @@ def main():
             if a.configs and name not in a.configs:
                 continue
             metas.append(run_config(size, lang_name, lang_code, rids, a.compute_type,
-                                    resume=a.resume))
+                                    resume=a.resume, timeout_factor=a.timeout_factor))
 
     os.makedirs(os.path.join(C1_ROOT, "results"), exist_ok=True)
     out = os.path.join(C1_ROOT, "results", "c1_ablation_runs.json")

@@ -1,0 +1,113 @@
+{
+  "model": "small",
+  "hf_id": "openai/whisper-small",
+  "language": "en",
+  "method": "LoRA",
+  "lora_r": 32,
+  "lr": 0.001,
+  "batch": {
+    "micro": 8,
+    "accum": 2
+  },
+  "seed": 13,
+  "data": {
+    "train": {
+      "n_recordings": 47,
+      "n_clips": 479,
+      "hours": 1.587,
+      "scripts": {
+        "romanized": 7,
+        "unicode": 40
+      }
+    },
+    "val": {
+      "n_recordings": 6,
+      "n_clips": 63,
+      "hours": 0.228,
+      "scripts": {
+        "romanized": 1,
+        "unicode": 5
+      }
+    },
+    "test": {
+      "n_recordings": 10,
+      "n_clips": 101,
+      "hours": 0.395,
+      "scripts": {
+        "romanized": 2,
+        "unicode": 8
+      }
+    }
+  },
+  "baseline_test": {
+    "norm_wer": 2.2556,
+    "raw_wer": 2.2548,
+    "norm_cer": 1.5111,
+    "words_recovered": 459,
+    "n_ref_words": 3490,
+    "recall_of_ref_words": 0.1315,
+    "output_ratio": 1.97,
+    "substitutions": 1577,
+    "deletions": 1454,
+    "insertions": 4841,
+    "decode_s": 33.9
+  },
+  "best_epoch": 4,
+  "curve": [
+    {
+      "epoch": 0,
+      "val_loss": 2.3954
+    },
+    {
+      "epoch": 1,
+      "train_loss": 1.5801,
+      "val_loss": 1.3972,
+      "elapsed_min": 2.5
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.8051,
+      "val_loss": 1.1254,
+      "elapsed_min": 4.9
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.5211,
+      "val_loss": 1.0772,
+      "elapsed_min": 6.5
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3717,
+      "val_loss": 1.0652,
+      "elapsed_min": 8.1
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.2786,
+      "val_loss": 1.0792,
+      "elapsed_min": 9.7
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.1922,
+      "val_loss": 1.1038,
+      "elapsed_min": 11.3
+    }
+  ],
+  "train_minutes": 11.3,
+  "peak_gpu_gib": 4.17,
+  "finetuned_test": {
+    "norm_wer": 0.9344,
+    "raw_wer": 0.9692,
+    "norm_cer": 0.5892,
+    "words_recovered": 1695,
+    "n_ref_words": 3490,
+    "recall_of_ref_words": 0.4857,
+    "output_ratio": 1.33,
+    "substitutions": 1480,
+    "deletions": 315,
+    "insertions": 1466,
+    "decode_s": 99.8
+  }
+}

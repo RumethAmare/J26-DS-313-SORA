@@ -1,0 +1,8 @@
+-- Fine tune the ASR
+
+cd "F:\SLIIT\Y4 S1\Research\J26-DS-313-SORA\c1\scripts"
+$env:PYTHONIOENCODING = "utf-8"
+
+..\.venv\Scripts\python.exe finetune_whisper.py --model small
+..\.venv\Scripts\python.exe finetune_whisper.py --model medium
+..\.venv\Scripts\python.exe finetune_whisper.py --model large-v3
