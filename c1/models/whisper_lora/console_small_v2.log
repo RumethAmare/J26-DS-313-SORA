@@ -1,0 +1,23 @@
+W1008 23:55:59.231000 20624 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+23:56:00 model=small language=en train=666 val=63 test=111 clips; batch 8x2
+Loading weights:   0%|          | 0/479 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 85/479 [00:00<00:00, 815.71it/s]Loading weights:  35%|███▍      | 167/479 [00:00<00:00, 735.17it/s]Loading weights:  50%|█████     | 241/479 [00:00<00:00, 722.04it/s]Loading weights:  66%|██████▌   | 314/479 [00:00<00:00, 652.34it/s]Loading weights:  80%|███████▉  | 381/479 [00:00<00:00, 574.21it/s]Loading weights:  92%|█████████▏| 440/479 [00:00<00:00, 540.51it/s]Loading weights: 100%|██████████| 479/479 [00:00<00:00, 603.88it/s]
+[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] The attention mask is not set with a batched input, and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Both `max_new_tokens` (=440) and `max_length`(=448) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+23:56:48 BASELINE test: {'norm_wer': 2.4734, 'raw_wer': 2.4717, 'norm_cer': 1.685, 'words_recovered': 488, 'n_ref_words': 3836, 'recall_of_ref_words': 0.1272, 'output_ratio': 2.193, 'substitutions': 1786, 'deletions': 1562, 'insertions': 6140, 'decode_s': 46.7}
+23:56:49 trainable params 12,976,128 / 254,711,040 (5.09%)
+23:56:53 epoch 0 val_loss 2.3954
+F:\SLIIT\Y4 S1\Research\J26-DS-313-SORA\c1\scripts\finetune_whisper.py:304: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  running += float(out.loss)
+23:59:01 epoch 1 train_loss 1.5543 val_loss 1.1814 (2.1 min, peak GPU 3.9 GiB)
+F:\SLIIT\Y4 S1\Research\J26-DS-313-SORA\c1\.venv\Lib\site-packages\peft\utils\save_and_load.py:313: UserWarning: Could not find a config file in openai/whisper-small - will assume that the vocabulary was not modified.
+  warnings.warn(
+00:01:06 epoch 2 train_loss 0.7837 val_loss 0.9724 (4.2 min, peak GPU 3.9 GiB)

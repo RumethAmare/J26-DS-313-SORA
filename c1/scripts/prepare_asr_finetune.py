@@ -17,8 +17,16 @@ Which recordings:
 
 Clips: consecutive utterances are merged while the span stays under
 MAX_CLIP_S, giving the model context and fewer, fuller training examples.
-Utterances with null timestamps or longer than Whisper's 30s window are
-dropped.
+Utterances with null timestamps are dropped.
+
+Utterances longer than Whisper's 30 s window cannot be used whole: the model
+only hears the first 30 s, so the rest of the transcript would teach it to
+invent words. In TRAIN recordings they are split at word boundaries using the
+C1 token timestamps -- recursively at the largest pause between consecutive
+words until every piece is <= MAX_CLIP_S -- and each piece keeps exactly its
+own words. In VAL/TEST recordings they are still dropped, so those sets stay
+identical to the ones earlier models were scored on. An utterance is only
+split if every one of its tokens has a timestamp.
 
 Split: by RECORDING, never by clip, so no conversation is in both training
 and test. Stratified by Sinhala script convention (Unicode vs romanized) so
@@ -58,19 +66,55 @@ TEST_FRAC, VAL_FRAC = 0.15, 0.10
 SEED = 20261008
 
 
-def load_utterances(rid):
-    path = corpus.gold_tokens_path(rid).replace(".tokens.jsonl", ".transcript.json")
-    with open(path, encoding="utf-8") as fh:
+def _timed(t):
+    return isinstance(t.get("start"), (int, float)) and isinstance(t.get("end"), (int, float))
+
+
+def split_long(tokens):
+    """Cut a token run into pieces of <= MAX_CLIP_S at the largest pauses.
+
+    Returns [(start, end, text), ...]. The cut goes where the gap between one
+    word's end and the next word's start is largest, so pieces break at
+    natural pauses rather than mid-phrase; recurse until every piece fits.
+    """
+    span = tokens[-1]["end"] - tokens[0]["start"]
+    if span <= MAX_CLIP_S or len(tokens) < 2:
+        return [(float(tokens[0]["start"]), float(tokens[-1]["end"]),
+                 " ".join(t["token"] for t in tokens))]
+    gaps = [(tokens[i + 1]["start"] - tokens[i]["end"], i) for i in range(len(tokens) - 1)]
+    _, cut = max(gaps)
+    return split_long(tokens[:cut + 1]) + split_long(tokens[cut + 1:])
+
+
+def load_utterances(rid, split_long_utts=False):
+    """(utterances, n_dropped, n_long_split). Long ones split only on request."""
+    tok_path = corpus.gold_tokens_path(rid)
+    with open(tok_path.replace(".tokens.jsonl", ".transcript.json"), encoding="utf-8") as fh:
         doc = json.load(fh)
-    good, dropped = [], 0
+    by_utt = {}
+    if split_long_utts:
+        with open(tok_path, encoding="utf-8") as fh:
+            for line in fh:
+                if line.strip():
+                    t = json.loads(line)
+                    by_utt.setdefault(t.get("utt_id"), []).append(t)
+    good, dropped, n_split = [], 0, 0
     for u in doc["utterances"]:
         s, e, text = u.get("start"), u.get("end"), (u.get("text") or "").strip()
         if (not isinstance(s, (int, float)) or not isinstance(e, (int, float))
-                or e <= s or e - s > WHISPER_WINDOW_S or not text):
+                or e <= s or not text):
             dropped += 1
             continue
+        if e - s > WHISPER_WINDOW_S:
+            toks = sorted(by_utt.get(u["utt_id"], []), key=lambda t: t.get("tok_id", 0))
+            if split_long_utts and toks and all(_timed(t) for t in toks):
+                good.extend(split_long(toks))
+                n_split += 1
+            else:
+                dropped += 1
+            continue
         good.append((float(s), float(e), text))
-    return sorted(good), dropped
+    return sorted(good), dropped, n_split
 
 
 def merge(utts):
@@ -99,14 +143,19 @@ def main():
             skipped[rid] = "no audio"
             continue
         dur = sf.info(wav).duration
-        utts, dropped = load_utterances(rid)
+        utts, dropped, _ = load_utterances(rid)
         if any(e > dur + MAX_OVERRUN_S for _, e, _ in utts):
             skipped[rid] = "timestamps past end of audio"
             continue
         utts = [u for u in utts if u[1] <= dur + END_TOLERANCE_S]
+        utts_s, dropped_s, n_split = load_utterances(rid, split_long_utts=True)
+        utts_s = [u for u in utts_s if u[1] <= dur + END_TOLERANCE_S]
         recs[rid] = {
-            "clips": merge(utts),
+            "clips": merge(utts),                 # val/test: long utterances dropped
+            "clips_split": merge(utts_s),         # train: long utterances split
             "dropped_utts": dropped,
+            "dropped_utts_split": dropped_s,
+            "long_split": n_split,
             "script": audit_gold.audit_file(rid, path, manifest_ids)[0]
             ["sinhala_script_convention"],
         }
@@ -137,8 +186,9 @@ def main():
     summary = {"seed": SEED, "max_clip_s": MAX_CLIP_S, "skipped": skipped, "splits": {}}
     for name in ("train", "val", "test"):
         rows = []
+        clip_key = "clips_split" if name == "train" else "clips"
         for rid in sorted(r for r, s in split.items() if s == name):
-            for k, c in enumerate(recs[rid]["clips"]):
+            for k, c in enumerate(recs[rid][clip_key]):
                 rows.append({"recording": rid, "clip": k,
                              "audio": os.path.join(corpus.AUDIO_DIR, f"{rid}.wav"),
                              "start": round(c["start"], 3), "end": round(c["end"], 3),
@@ -156,12 +206,22 @@ def main():
         }
         print(f"{name:5}: {len(rids):2} recordings, {len(rows):4} clips, "
               f"{secs / 3600:.2f} h speech  {summary['splits'][name]['scripts']}")
-    summary["dropped_utterances"] = sum(v["dropped_utts"] for v in recs.values())
+    in_train = [r for r, s in split.items() if s == "train"]
+    not_train = [r for r, s in split.items() if s != "train"]
+    summary["long_utterances_split_in_train"] = sum(recs[r]["long_split"] for r in in_train)
+    summary["dropped_utterances"] = (sum(recs[r]["dropped_utts_split"] for r in in_train)
+                                     + sum(recs[r]["dropped_utts"] for r in not_train))
+    summary["long_utterances_dropped_in_val_test"] = sum(
+        recs[r]["dropped_utts"] - recs[r]["dropped_utts_split"] for r in not_train)
     with open(os.path.join(OUT_DIR, "split_summary.json"), "w", encoding="utf-8") as fh:
         json.dump(summary, fh, indent=2)
     print(f"skipped {len(skipped)} recordings: "
           f"{sorted((r[-5:], why) for r, why in skipped.items())}")
-    print(f"dropped {summary['dropped_utterances']} utterances (null time / >30s / empty)")
+    print(f"split {summary['long_utterances_split_in_train']} long utterances in train; "
+          f"kept out {summary['long_utterances_dropped_in_val_test']} long ones in val/test "
+          f"so those sets stay unchanged")
+    print(f"dropped {summary['dropped_utterances']} utterances (null time / empty, "
+          f"plus the val/test long ones)")
 
 
 if __name__ == "__main__":

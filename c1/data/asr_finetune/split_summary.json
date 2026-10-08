@@ -1,12 +1,7 @@
 {
   "seed": 20261008,
   "max_clip_s": 25.0,
-  "skipped": {
-    "J26DS313_R0062": "no audio",
-    "J26DS313_R0063": "no audio",
-    "J26DS313_R0064": "no audio",
-    "J26DS313_R0065": "no audio"
-  },
+  "skipped": {},
   "splits": {
     "train": {
       "recordings": [
@@ -59,6 +54,10 @@
         "J26DS313_R0059",
         "J26DS313_R0060",
         "J26DS313_R0061",
+        "J26DS313_R0062",
+        "J26DS313_R0063",
+        "J26DS313_R0064",
+        "J26DS313_R0065",
         "J26DS313_R0068",
         "J26DS313_R0069",
         "J26DS313_R0071",
@@ -69,13 +68,13 @@
         "J26DS313_R0103",
         "J26DS313_R0104"
       ],
-      "n_recordings": 58,
-      "n_clips": 573,
-      "hours": 2.042,
+      "n_recordings": 62,
+      "n_clips": 666,
+      "hours": 2.556,
       "scripts": {
         "mixed": 1,
         "none": 3,
-        "romanized": 10,
+        "romanized": 14,
         "unicode": 44
       }
     },
@@ -110,13 +109,15 @@
         "J26DS313_R0075"
       ],
       "n_recordings": 10,
-      "n_clips": 101,
-      "hours": 0.395,
+      "n_clips": 111,
+      "hours": 0.443,
       "scripts": {
         "romanized": 2,
         "unicode": 8
       }
     }
   },
-  "dropped_utterances": 74
+  "long_utterances_split_in_train": 21,
+  "dropped_utterances": 27,
+  "long_utterances_dropped_in_val_test": 11
 }
