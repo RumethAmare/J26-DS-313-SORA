@@ -1,0 +1,118 @@
+{
+  "model": "small",
+  "run": "small_v3",
+  "epochs_max": 10,
+  "patience": 2,
+  "hf_id": "openai/whisper-small",
+  "language": "en",
+  "method": "LoRA",
+  "lora_r": 32,
+  "lr": 0.001,
+  "batch": {
+    "micro": 8,
+    "accum": 2
+  },
+  "seed": 13,
+  "data": {
+    "train": {
+      "n_recordings": 64,
+      "n_clips": 733,
+      "hours": 2.67,
+      "scripts": {
+        "mixed": 1,
+        "none": 3,
+        "romanized": 14,
+        "unicode": 46
+      }
+    },
+    "val": {
+      "n_recordings": 6,
+      "n_clips": 63,
+      "hours": 0.228,
+      "scripts": {
+        "romanized": 1,
+        "unicode": 5
+      }
+    },
+    "test": {
+      "n_recordings": 10,
+      "n_clips": 111,
+      "hours": 0.443,
+      "scripts": {
+        "romanized": 2,
+        "unicode": 8
+      }
+    }
+  },
+  "baseline_test": {
+    "norm_wer": 2.4734,
+    "raw_wer": 2.4717,
+    "norm_cer": 1.685,
+    "words_recovered": 488,
+    "n_ref_words": 3836,
+    "recall_of_ref_words": 0.1272,
+    "output_ratio": 2.193,
+    "substitutions": 1786,
+    "deletions": 1562,
+    "insertions": 6140,
+    "decode_s": 38.6
+  },
+  "best_epoch": 4,
+  "curve": [
+    {
+      "epoch": 0,
+      "val_loss": 2.3954
+    },
+    {
+      "epoch": 1,
+      "train_loss": 1.4947,
+      "val_loss": 1.1472,
+      "elapsed_min": 3.8
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.759,
+      "val_loss": 0.9428,
+      "elapsed_min": 7.9
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.5354,
+      "val_loss": 0.9156,
+      "elapsed_min": 12.0
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3839,
+      "val_loss": 0.8995,
+      "elapsed_min": 15.3
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.2863,
+      "val_loss": 0.9195,
+      "elapsed_min": 18.7
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.2082,
+      "val_loss": 0.9373,
+      "elapsed_min": 21.6
+    }
+  ],
+  "train_minutes": 21.6,
+  "peak_gpu_gib": 4.03,
+  "finetuned_test": {
+    "norm_wer": 0.7868,
+    "raw_wer": 0.8472,
+    "norm_cer": 0.5091,
+    "words_recovered": 2061,
+    "n_ref_words": 3836,
+    "recall_of_ref_words": 0.5373,
+    "output_ratio": 1.181,
+    "substitutions": 1225,
+    "deletions": 550,
+    "insertions": 1243,
+    "decode_s": 81.6
+  }
+}

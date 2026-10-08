@@ -1,1 +1,13 @@
 01:10:26 model=small language=en train=733 val=63 test=111 clips; batch 8x2
+01:11:07 BASELINE test: {'norm_wer': 2.4734, 'raw_wer': 2.4717, 'norm_cer': 1.685, 'words_recovered': 488, 'n_ref_words': 3836, 'recall_of_ref_words': 0.1272, 'output_ratio': 2.193, 'substitutions': 1786, 'deletions': 1562, 'insertions': 6140, 'decode_s': 38.6}
+01:11:07 trainable params 12,976,128 / 254,711,040 (5.09%)
+01:11:11 epoch 0 val_loss 2.3954
+01:15:02 epoch 1 train_loss 1.4947 val_loss 1.1472 (3.8 min, peak GPU 4.0 GiB)
+01:19:08 epoch 2 train_loss 0.7590 val_loss 0.9428 (7.9 min, peak GPU 4.0 GiB)
+01:23:10 epoch 3 train_loss 0.5354 val_loss 0.9156 (12.0 min, peak GPU 4.0 GiB)
+01:26:32 epoch 4 train_loss 0.3839 val_loss 0.8995 (15.3 min, peak GPU 4.0 GiB)
+01:29:55 epoch 5 train_loss 0.2863 val_loss 0.9195 (18.7 min, peak GPU 4.0 GiB)
+01:32:45 epoch 6 train_loss 0.2082 val_loss 0.9373 (21.6 min, peak GPU 4.0 GiB)
+01:32:45 early stop: no val improvement for 2 epochs
+01:34:08 FINE-TUNED test: {'norm_wer': 0.7868, 'raw_wer': 0.8472, 'norm_cer': 0.5091, 'words_recovered': 2061, 'n_ref_words': 3836, 'recall_of_ref_words': 0.5373, 'output_ratio': 1.181, 'substitutions': 1225, 'deletions': 550, 'insertions': 1243, 'decode_s': 81.6}
+01:34:08 wrote results/c1_asr_finetune_small_v3.json
