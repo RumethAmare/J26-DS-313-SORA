@@ -24,7 +24,9 @@ only hears the first 30 s, so the rest of the transcript would teach it to
 invent words. In TRAIN recordings they are split at word boundaries using the
 C1 token timestamps -- recursively at the largest pause between consecutive
 words until every piece is <= MAX_CLIP_S -- and each piece keeps exactly its
-own words. In VAL/TEST recordings they are still dropped, so those sets stay
+own words. TRAIN clips are also capped at MAX_TEXT_TOKENS of transcript
+(dense utterances split the same way, merging stops at the cap), so no
+training label is ever truncated by finetune_whisper.py. In VAL/TEST recordings they are still dropped, so those sets stay
 identical to the ones earlier models were scored on. An utterance is only
 split if every one of its tokens has a timestamp.
 
@@ -65,29 +67,55 @@ WHISPER_WINDOW_S = 30.0
 TEST_FRAC, VAL_FRAC = 0.15, 0.10
 SEED = 20261008
 
+# Token budget for a TRAIN clip's transcript. finetune_whisper.py truncates
+# labels at 440 tokens (start/language/task markers + text + end marker);
+# a truncated label loses its end-of-transcript marker and teaches the model
+# that text does not stop when the audio does, which shows up as repetition
+# loops. Sinhala costs ~35 tokens per second of speech, so a 25 s clip can
+# reach ~970 tokens. 400 text tokens leaves room for the markers and for
+# small differences between the small/medium/large-v3 tokenizers.
+MAX_TEXT_TOKENS = 400
+_TOKENIZER = None
+
+
+def n_tokens(text):
+    """Whisper text-token count (no special tokens)."""
+    global _TOKENIZER
+    if _TOKENIZER is None:
+        os.environ.setdefault("HF_HUB_OFFLINE", "1")
+        from transformers import WhisperTokenizer
+        _TOKENIZER = WhisperTokenizer.from_pretrained("openai/whisper-small")
+    return len(_TOKENIZER(text, add_special_tokens=False).input_ids)
+
 
 def _timed(t):
     return isinstance(t.get("start"), (int, float)) and isinstance(t.get("end"), (int, float))
 
 
 def split_long(tokens):
-    """Cut a token run into pieces of <= MAX_CLIP_S at the largest pauses.
+    """Cut a token run into pieces of <= MAX_CLIP_S and <= MAX_TEXT_TOKENS.
 
     Returns [(start, end, text), ...]. The cut goes where the gap between one
     word's end and the next word's start is largest, so pieces break at
     natural pauses rather than mid-phrase; recurse until every piece fits.
     """
     span = tokens[-1]["end"] - tokens[0]["start"]
-    if span <= MAX_CLIP_S or len(tokens) < 2:
-        return [(float(tokens[0]["start"]), float(tokens[-1]["end"]),
-                 " ".join(t["token"] for t in tokens))]
+    text = " ".join(t["token"] for t in tokens)
+    if len(tokens) < 2 or (span <= MAX_CLIP_S and n_tokens(text) <= MAX_TEXT_TOKENS):
+        return [(float(tokens[0]["start"]), float(tokens[-1]["end"]), text)]
     gaps = [(tokens[i + 1]["start"] - tokens[i]["end"], i) for i in range(len(tokens) - 1)]
     _, cut = max(gaps)
     return split_long(tokens[:cut + 1]) + split_long(tokens[cut + 1:])
 
 
 def load_utterances(rid, split_long_utts=False):
-    """(utterances, n_dropped, n_long_split). Long ones split only on request."""
+    """(utterances, n_dropped, n_long_split).
+
+    With split_long_utts (train only), utterances longer than Whisper's window
+    OR with more than MAX_TEXT_TOKENS of transcript are cut at word boundaries;
+    ones that cannot be cut (some token untimed) are dropped rather than kept
+    truncated.
+    """
     tok_path = corpus.gold_tokens_path(rid)
     with open(tok_path.replace(".tokens.jsonl", ".transcript.json"), encoding="utf-8") as fh:
         doc = json.load(fh)
@@ -105,10 +133,17 @@ def load_utterances(rid, split_long_utts=False):
                 or e <= s or not text):
             dropped += 1
             continue
-        if e - s > WHISPER_WINDOW_S:
+        too_dense = split_long_utts and n_tokens(text) > MAX_TEXT_TOKENS
+        if e - s > WHISPER_WINDOW_S or too_dense:
             toks = sorted(by_utt.get(u["utt_id"], []), key=lambda t: t.get("tok_id", 0))
             if split_long_utts and toks and all(_timed(t) for t in toks):
-                good.extend(split_long(toks))
+                pieces = split_long(toks)
+                # A piece still longer than a clip can only be one word the
+                # aligner stretched over a long span (R0063's phone numbers
+                # got 34 s and 42 s): its timing is wrong, so drop it.
+                fit = [pc for pc in pieces if pc[1] - pc[0] <= MAX_CLIP_S]
+                dropped += len(pieces) - len(fit)
+                good.extend(fit)
                 n_split += 1
             else:
                 dropped += 1
@@ -117,10 +152,13 @@ def load_utterances(rid, split_long_utts=False):
     return sorted(good), dropped, n_split
 
 
-def merge(utts):
+def merge(utts, token_cap=False):
+    """Merge consecutive utterances into clips <= MAX_CLIP_S (and, with
+    token_cap, <= MAX_TEXT_TOKENS of transcript)."""
     clips, cur = [], None
     for s, e, text in utts:
-        if cur and s - cur["end"] <= MAX_GAP_S and e - cur["start"] <= MAX_CLIP_S:
+        if (cur and s - cur["end"] <= MAX_GAP_S and e - cur["start"] <= MAX_CLIP_S
+                and (not token_cap or n_tokens(cur["text"] + " " + text) <= MAX_TEXT_TOKENS)):
             cur["end"] = e
             cur["text"] += " " + text
         else:
@@ -152,7 +190,7 @@ def main():
         utts_s = [u for u in utts_s if u[1] <= dur + END_TOLERANCE_S]
         recs[rid] = {
             "clips": merge(utts),                 # val/test: long utterances dropped
-            "clips_split": merge(utts_s),         # train: long utterances split
+            "clips_split": merge(utts_s, token_cap=True),  # train: long/dense split
             "dropped_utts": dropped,
             "dropped_utts_split": dropped_s,
             "long_split": n_split,
@@ -183,7 +221,8 @@ def main():
                 split[rid] = "test" if i < n_test else ("val" if i < n_test + n_val else "train")
 
     os.makedirs(OUT_DIR, exist_ok=True)
-    summary = {"seed": SEED, "max_clip_s": MAX_CLIP_S, "skipped": skipped, "splits": {}}
+    summary = {"seed": SEED, "max_clip_s": MAX_CLIP_S,
+               "max_text_tokens_train": MAX_TEXT_TOKENS, "skipped": skipped, "splits": {}}
     for name in ("train", "val", "test"):
         rows = []
         clip_key = "clips_split" if name == "train" else "clips"

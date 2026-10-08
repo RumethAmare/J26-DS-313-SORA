@@ -1,0 +1,6 @@
+23:56:00 model=small language=en train=666 val=63 test=111 clips; batch 8x2
+23:56:48 BASELINE test: {'norm_wer': 2.4734, 'raw_wer': 2.4717, 'norm_cer': 1.685, 'words_recovered': 488, 'n_ref_words': 3836, 'recall_of_ref_words': 0.1272, 'output_ratio': 2.193, 'substitutions': 1786, 'deletions': 1562, 'insertions': 6140, 'decode_s': 46.7}
+23:56:49 trainable params 12,976,128 / 254,711,040 (5.09%)
+23:56:53 epoch 0 val_loss 2.3954
+23:59:01 epoch 1 train_loss 1.5543 val_loss 1.1814 (2.1 min, peak GPU 3.9 GiB)
+00:01:06 epoch 2 train_loss 0.7837 val_loss 0.9724 (4.2 min, peak GPU 3.9 GiB)

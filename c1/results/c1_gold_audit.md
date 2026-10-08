@@ -2,9 +2,9 @@
 
 Produced by `scripts/audit_gold.py`. Report only; nothing is modified.
 
-- gold token files: **78** (28,979 tokens)
-- usable after exclusions: **66** (25,582 tokens)
-- with audio: **74**
+- gold token files: **80** (29,827 tokens)
+- usable after exclusions: **68** (26,430 tokens)
+- with audio: **80**
 - not in manifest: **0**
 
 ## Excluded recordings
@@ -50,10 +50,11 @@ None found.
 | J26DS313_R0056 | 291 | 1 | 290 | 0 | 2 | 100% (51) | 0 | romanized | EXCLUDED BULK_LABEL |
 | J26DS313_R0058 | 373 | 369 | 4 | 0 | 2 | 0% (99) | 0 | romanized | EXCLUDED BULK_LABEL |
 | J26DS313_R0059 | 173 | 0 | 173 | 0 | 0 | 100% (50) | 0 | none | EXCLUDED BULK_LABEL |
-| J26DS313_R0062 | 255 | 66 | 189 | 0 | 77 | 51% (67) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL NO_AUDIO |
-| J26DS313_R0063 | 233 | 56 | 177 | 0 | 63 | 35% (49) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL NO_AUDIO |
-| J26DS313_R0064 | 243 | 57 | 186 | 0 | 68 | 22% (50) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL NO_AUDIO |
-| J26DS313_R0065 | 423 | 113 | 310 | 0 | 140 | 26% (93) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL NO_AUDIO |
+| J26DS313_R0062 | 255 | 66 | 189 | 0 | 77 | 51% (67) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL |
+| J26DS313_R0063 | 233 | 56 | 177 | 0 | 63 | 35% (49) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL |
+| J26DS313_R0064 | 243 | 57 | 186 | 0 | 68 | 22% (50) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL |
+| J26DS313_R0065 | 423 | 113 | 310 | 0 | 140 | 26% (93) | 0 | romanized | EXCLUDED PARTIAL_MISLABEL |
+| J26DS313_R0066 | 379 | 146 | 208 | 25 | 139 | 0% (0) | 0 | unicode | SINHALA_SCRIPT_AS_EN |
 | J26DS313_R0068 | 616 | 336 | 244 | 36 | 221 | 0% (0) | 9 | unicode | NULL_TIMESTAMPS |
 | J26DS313_R0103 | 810 | 713 | 97 | 0 | 148 | 0% (0) | 172 | unicode | NULL_TIMESTAMPS |
 
@@ -61,4 +62,4 @@ None found.
 
 - mixed: 1
 - romanized: 10
-- unicode: 55
+- unicode: 57
