@@ -35,7 +35,7 @@ None found.
 | recording | tokens | SI | EN | OTHER | switches | SI fw→EN | null ts | SI script | issues |
 |---|---|---|---|---|---|---|---|---|---|
 | J26DS313_R0006 | 108 | 75 | 33 | 0 | 48 | 0% (0) | 0 | unicode | SINHALA_SCRIPT_AS_EN |
-| J26DS313_R0008 | 22 | 18 | 4 | 0 | 6 | 0% (0) | 22 | unicode | EXCLUDED NULL_TIMESTAMPS SINHALA_SCRIPT_AS_EN |
+| J26DS313_R0008 | 22 | 18 | 4 | 0 | 6 | 0% (0) | 0 | unicode | EXCLUDED SINHALA_SCRIPT_AS_EN |
 | J26DS313_R0009 | 67 | 53 | 14 | 0 | 26 | 0% (0) | 0 | unicode | SINHALA_SCRIPT_AS_EN |
 | J26DS313_R0010 | 62 | 44 | 18 | 0 | 27 | 0% (0) | 0 | unicode | SINHALA_SCRIPT_AS_EN |
 | J26DS313_R0015 | 278 | 177 | 96 | 5 | 116 | 0% (0) | 0 | unicode | SINHALA_SCRIPT_AS_EN |

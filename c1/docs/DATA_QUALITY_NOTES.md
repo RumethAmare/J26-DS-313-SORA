@@ -195,3 +195,37 @@ recordings. Corpus now 78 gold files; **66 usable, 25,582 tokens**.
 The new recordings pass the label checks (no bulk or partial mislabelling).
 R0100–R0105 are Sinhala-heavy (~85% SI) and write numbers as words, so they
 contain no digit tokens.
+
+## D.6 — ASR split and re-timed recordings (2026-10-08)
+
+**The language-ID exclusion list no longer applies to ASR.**
+`prepare_asr_finetune.py` used to skip everything in
+`corpus.EXCLUDED_RECORDINGS`. That list is about wrong SI/EN token labels,
+and ASR only uses the utterance text, which those recordings have right. The
+list still applies to every LID and switch-detection script.
+
+**Six recordings re-timed.** Their gold times ran past the end of the WAV, or
+were placeholders: R0008 (6 evenly spaced lines over 0–30 s, tokens
+`"PROVISIONAL"`), R0052, R0054, R0056, R0057 (draft whole-second times,
+40–120 s past the end) and R0061 (WhisperX times taken against an older 157 s
+cut). They were re-aligned with torchaudio MMS_FA forced alignment against the
+current WAV (`SORA_Dataset/tools/c1/realign_mms.py`). Only `start`/`end`
+changed; text, tokens and labels are untouched.
+
+Confidence is limited:
+- mean alignment score is 0.17–0.31
+- the speech is near-continuous, so turn boundaries may be off by a second or
+  two
+- a Whisper clip-vs-text check could not confirm or reject the boundaries
+  (Whisper transcribes this code-mixed speech too poorly)
+- R0008 has only 22 words for 62 s of audio, so its transcript may not cover
+  everything said
+
+Re-check these by ear before using their token times for LID timing work.
+
+**Split.** The hand-kept `TIMESTAMP_MISMATCH` list is replaced by a check
+against the WAV: a recording is skipped if its gold runs more than 5 s past
+the end. Val/test are now sticky across reruns, and new recordings go to
+train. Eleven recordings joined train (R0008, R0017, R0051, R0052, R0054, R0055,
+R0056, R0057, R0058, R0059, R0061): **+94 clips, +0.455 h**. Train is now 2.04 h; val (0.23 h)
+and test (0.40 h) are unchanged. Only R0062–R0065 are skipped (no audio).

@@ -2,21 +2,10 @@
   "seed": 20261008,
   "max_clip_s": 25.0,
   "skipped": {
-    "J26DS313_R0008": "excluded",
-    "J26DS313_R0017": "excluded",
-    "J26DS313_R0051": "excluded",
-    "J26DS313_R0052": "timestamps past end of audio",
-    "J26DS313_R0054": "excluded",
-    "J26DS313_R0055": "excluded",
-    "J26DS313_R0056": "excluded",
-    "J26DS313_R0057": "timestamps past end of audio",
-    "J26DS313_R0058": "excluded",
-    "J26DS313_R0059": "excluded",
-    "J26DS313_R0061": "timestamps past end of audio",
-    "J26DS313_R0062": "excluded",
-    "J26DS313_R0063": "excluded",
-    "J26DS313_R0064": "excluded",
-    "J26DS313_R0065": "excluded"
+    "J26DS313_R0062": "no audio",
+    "J26DS313_R0063": "no audio",
+    "J26DS313_R0064": "no audio",
+    "J26DS313_R0065": "no audio"
   },
   "splits": {
     "train": {
@@ -26,12 +15,14 @@
         "J26DS313_R0004",
         "J26DS313_R0005",
         "J26DS313_R0006",
+        "J26DS313_R0008",
         "J26DS313_R0009",
         "J26DS313_R0010",
         "J26DS313_R0011",
         "J26DS313_R0012",
         "J26DS313_R0014",
         "J26DS313_R0015",
+        "J26DS313_R0017",
         "J26DS313_R0020",
         "J26DS313_R0021",
         "J26DS313_R0022",
@@ -58,7 +49,16 @@
         "J26DS313_R0045",
         "J26DS313_R0046",
         "J26DS313_R0049",
+        "J26DS313_R0051",
+        "J26DS313_R0052",
+        "J26DS313_R0054",
+        "J26DS313_R0055",
+        "J26DS313_R0056",
+        "J26DS313_R0057",
+        "J26DS313_R0058",
+        "J26DS313_R0059",
         "J26DS313_R0060",
+        "J26DS313_R0061",
         "J26DS313_R0068",
         "J26DS313_R0069",
         "J26DS313_R0071",
@@ -69,12 +69,14 @@
         "J26DS313_R0103",
         "J26DS313_R0104"
       ],
-      "n_recordings": 47,
-      "n_clips": 479,
-      "hours": 1.587,
+      "n_recordings": 58,
+      "n_clips": 573,
+      "hours": 2.042,
       "scripts": {
-        "romanized": 7,
-        "unicode": 40
+        "mixed": 1,
+        "none": 3,
+        "romanized": 10,
+        "unicode": 44
       }
     },
     "val": {

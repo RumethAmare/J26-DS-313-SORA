@@ -6,6 +6,10 @@ av==18.1.0            # faster-whisper 1.2.1 passes av.open(metadata_errors=...)
 nvidia-cublas-cu12
 nvidia-cudnn-cu12==9.*
 
+# forced alignment (SORA_Dataset/tools/c1/realign_mms.py)
+torchaudio            # same version/CUDA build as torch (cu128 index)
+uroman
+
 # evaluation
 jiwer==4.0.0
 
