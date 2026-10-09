@@ -1,0 +1,565 @@
+{
+  "n_utterances": 12,
+  "transcript": "Good morning. Oyage nama mokakda? කොහොමද ඔයාට? Depositi, ok sir. Sepa sanipa kohomada? මම හොඳින් කොහොමද වැඩ කට යුතු? Oyata kawada? How was your flight? Was it good? කෑම හොඳද? හොඳයි හොඳයි",
+  "utterances": [
+    {
+      "utt_id": "live_u001",
+      "start": 14.69,
+      "end": 15.78,
+      "text": "Good morning.",
+      "tokens": [
+        {
+          "utt_id": "live_u001",
+          "tok_id": 0,
+          "token": "Good",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u001",
+          "tok_id": 1,
+          "token": "morning.",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.32,
+      "latency_after_speech_s": 0.92,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u002",
+      "start": 18.69,
+      "end": 20.22,
+      "text": "Oyage nama mokakda?",
+      "tokens": [
+        {
+          "utt_id": "live_u002",
+          "tok_id": 0,
+          "token": "Oyage",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9986,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u002",
+          "tok_id": 1,
+          "token": "nama",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9986,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u002",
+          "tok_id": 2,
+          "token": "mokakda?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9991,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.41,
+      "latency_after_speech_s": 1.01,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u003",
+      "start": 23.04,
+      "end": 24.32,
+      "text": "කොහොමද ඔයාට?",
+      "tokens": [
+        {
+          "utt_id": "live_u003",
+          "tok_id": 0,
+          "token": "කොහොමද",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 1,
+          "token": "ඔයාට?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.54,
+      "latency_after_speech_s": 1.14,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u004",
+      "start": 27.65,
+      "end": 29.22,
+      "text": "Depositi, ok sir.",
+      "tokens": [
+        {
+          "utt_id": "live_u004",
+          "tok_id": 0,
+          "token": "Depositi,",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9969,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 1,
+          "token": "ok",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9836,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 2,
+          "token": "sir.",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9867,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.4,
+      "latency_after_speech_s": 1.0,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u005",
+      "start": 31.36,
+      "end": 33.28,
+      "text": "Sepa sanipa kohomada?",
+      "tokens": [
+        {
+          "utt_id": "live_u005",
+          "tok_id": 0,
+          "token": "Sepa",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9977,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 1,
+          "token": "sanipa",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.6466,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 2,
+          "token": "kohomada?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.42,
+      "latency_after_speech_s": 1.02,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u006",
+      "start": 37.63,
+      "end": 38.82,
+      "text": "මම හොඳින්",
+      "tokens": [
+        {
+          "utt_id": "live_u006",
+          "tok_id": 0,
+          "token": "මම",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 1,
+          "token": "හොඳින්",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.49,
+      "latency_after_speech_s": 1.09,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u007",
+      "start": 43.3,
+      "end": 45.25,
+      "text": "කොහොමද වැඩ කට යුතු?",
+      "tokens": [
+        {
+          "utt_id": "live_u007",
+          "tok_id": 0,
+          "token": "කොහොමද",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 1,
+          "token": "වැඩ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 2,
+          "token": "කට",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 3,
+          "token": "යුතු?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.82,
+      "latency_after_speech_s": 1.42,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u008",
+      "start": 52.7,
+      "end": 54.14,
+      "text": "Oyata kawada?",
+      "tokens": [
+        {
+          "utt_id": "live_u008",
+          "tok_id": 0,
+          "token": "Oyata",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 1,
+          "token": "kawada?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9989,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.37,
+      "latency_after_speech_s": 0.97,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u009",
+      "start": 59.04,
+      "end": 60.58,
+      "text": "How was your flight?",
+      "tokens": [
+        {
+          "utt_id": "live_u009",
+          "tok_id": 0,
+          "token": "How",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.996,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 1,
+          "token": "was",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9464,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 2,
+          "token": "your",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 3,
+          "token": "flight?",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9994,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.4,
+      "latency_after_speech_s": 1.0,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u010",
+      "start": 62.66,
+      "end": 63.78,
+      "text": "Was it good?",
+      "tokens": [
+        {
+          "utt_id": "live_u010",
+          "tok_id": 0,
+          "token": "Was",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9876,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u010",
+          "tok_id": 1,
+          "token": "it",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u010",
+          "tok_id": 2,
+          "token": "good?",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.34,
+      "latency_after_speech_s": 0.94,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u011",
+      "start": 65.5,
+      "end": 66.78,
+      "text": "කෑම හොඳද?",
+      "tokens": [
+        {
+          "utt_id": "live_u011",
+          "tok_id": 0,
+          "token": "කෑම",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 1,
+          "token": "හොඳද?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.5,
+      "latency_after_speech_s": 1.1,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u012",
+      "start": 71.58,
+      "end": 72.74,
+      "text": "හොඳයි හොඳයි",
+      "tokens": [
+        {
+          "utt_id": "live_u012",
+          "tok_id": 0,
+          "token": "හොඳයි",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u012",
+          "tok_id": 1,
+          "token": "හොඳයි",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.54,
+      "latency_after_speech_s": 1.14,
+      "decode_action": "greedy"
+    }
+  ],
+  "session": {
+    "model": "large-v3_v4_aug",
+    "model_dir": "models\\ct2\\large-v3_v4_aug",
+    "source": "microphone (default)",
+    "started": "20261010-001849",
+    "audio_s": 86.6,
+    "decode_opts": {
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 1,
+      "temperature": 0.0,
+      "compression_ratio_threshold": null,
+      "log_prob_threshold": null,
+      "no_speech_threshold": null,
+      "condition_on_previous_text": false,
+      "without_timestamps": true,
+      "no_repeat_ngram_size": 0,
+      "word_timestamps": true,
+      "vad_filter": false
+    },
+    "endpointing": {
+      "silence_ms": 600,
+      "max_utterance_s": 25.0,
+      "vad": "silero (faster-whisper bundle), streaming"
+    },
+    "word_times": false,
+    "latency_after_speech_s": {
+      "median": 1.02,
+      "max": 1.42
+    }
+  }
+}

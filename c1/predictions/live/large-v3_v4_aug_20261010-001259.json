@@ -1,0 +1,313 @@
+{
+  "n_utterances": 6,
+  "transcript": "Hello. ඔව් එයාට කොහොම දෙන්නේ මොකද වෙන්නේ මොකද වෙන්නේ Ah, okay. Oyage namma mokakda? මම ආළා දින්නේ",
+  "utterances": [
+    {
+      "utt_id": "live_u001",
+      "start": 1.28,
+      "end": 2.21,
+      "text": "Hello.",
+      "tokens": [
+        {
+          "utt_id": "live_u001",
+          "tok_id": 0,
+          "token": "Hello.",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.61,
+      "latency_after_speech_s": 1.21,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u002",
+      "start": 2.72,
+      "end": 4.26,
+      "text": "ඔව් එයාට කොහොම දෙන්නේ",
+      "tokens": [
+        {
+          "utt_id": "live_u002",
+          "tok_id": 0,
+          "token": "ඔව්",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u002",
+          "tok_id": 1,
+          "token": "එයාට",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u002",
+          "tok_id": 2,
+          "token": "කොහොම",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u002",
+          "tok_id": 3,
+          "token": "දෙන්නේ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 1.01,
+      "latency_after_speech_s": 1.61,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u003",
+      "start": 9.5,
+      "end": 10.82,
+      "text": "මොකද වෙන්නේ මොකද වෙන්නේ",
+      "tokens": [
+        {
+          "utt_id": "live_u003",
+          "tok_id": 0,
+          "token": "මොකද",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 1,
+          "token": "වෙන්නේ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 2,
+          "token": "මොකද",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 3,
+          "token": "වෙන්නේ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 1.28,
+      "latency_after_speech_s": 1.88,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u004",
+      "start": 15.84,
+      "end": 16.67,
+      "text": "Ah, okay.",
+      "tokens": [
+        {
+          "utt_id": "live_u004",
+          "tok_id": 0,
+          "token": "Ah,",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.6506,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 1,
+          "token": "okay.",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.57,
+      "latency_after_speech_s": 1.17,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u005",
+      "start": 19.78,
+      "end": 21.63,
+      "text": "Oyage namma mokakda?",
+      "tokens": [
+        {
+          "utt_id": "live_u005",
+          "tok_id": 0,
+          "token": "Oyage",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9986,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 1,
+          "token": "namma",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9967,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 2,
+          "token": "mokakda?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9991,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.41,
+      "latency_after_speech_s": 1.01,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u006",
+      "start": 26.24,
+      "end": 27.78,
+      "text": "මම ආළා දින්නේ",
+      "tokens": [
+        {
+          "utt_id": "live_u006",
+          "tok_id": 0,
+          "token": "මම",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 1,
+          "token": "ආළා",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 2,
+          "token": "දින්නේ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.69,
+      "latency_after_speech_s": 1.29,
+      "decode_action": "greedy"
+    }
+  ],
+  "session": {
+    "model": "large-v3_v4_aug",
+    "model_dir": "models\\ct2\\large-v3_v4_aug",
+    "source": "microphone (default)",
+    "started": "20261010-001259",
+    "audio_s": 38.3,
+    "decode_opts": {
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 1,
+      "temperature": 0.0,
+      "compression_ratio_threshold": null,
+      "log_prob_threshold": null,
+      "no_speech_threshold": null,
+      "condition_on_previous_text": false,
+      "without_timestamps": true,
+      "no_repeat_ngram_size": 0,
+      "word_timestamps": true,
+      "vad_filter": false
+    },
+    "endpointing": {
+      "silence_ms": 600,
+      "max_utterance_s": 25.0,
+      "vad": "silero (faster-whisper bundle), streaming"
+    },
+    "word_times": false,
+    "latency_after_speech_s": {
+      "median": 1.25,
+      "max": 1.88
+    }
+  }
+}

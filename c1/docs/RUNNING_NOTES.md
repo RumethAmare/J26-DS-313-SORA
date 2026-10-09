@@ -104,3 +104,25 @@ high while the log file stays 0 bytes.
 
 Fixed by setting `PYTHONUNBUFFERED=1` in the environment handed to `execve`,
 which survives the re-exec regardless of how the caller invoked Python.
+
+## Live transcription (2026-10-09)
+
+The fine-tuned adapters run live through faster-whisper:
+
+```powershell
+cd c1\scripts
+..\.venv\Scripts\python.exe export_ct2.py --run medium_v4_aug      # once per model
+..\.venv\Scripts\python.exe export_ct2.py --run large-v3_v4_aug
+..\.venv\Scripts\python.exe live_transcribe.py --model medium      # or large-v3
+```
+
+- `export_ct2.py` merges the LoRA adapter into the base model and converts it
+  to CTranslate2 float16 in `c1/models/ct2/<run>/` (git-ignored). transformers 5
+  does not save `preprocessor_config.json`; the script copies it from the base
+  model, because large-v3 needs its 128 mel bands from that file.
+- Decoding settings live in `scripts/ct2_decode.py` and are shared by
+  `score_ct2.py` (test-set accuracy) and `live_transcribe.py`.
+- Text appears after each pause (default 600 ms, `--silence-ms`), not word by
+  word; provisional text shows while speaking (`--no-partials` to disable).
+- `--input-file x.wav --realtime` streams a file through the same pipeline.
+- Sessions save to `c1/predictions/live/`; `--save-audio` keeps the WAV.

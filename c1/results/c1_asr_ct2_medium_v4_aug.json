@@ -1,0 +1,52 @@
+{
+  "run": "medium_v4_aug",
+  "engine": "faster-whisper (CTranslate2, compute float16)",
+  "decode_opts": {
+    "language": "en",
+    "task": "transcribe",
+    "beam_size": 1,
+    "temperature": 0.0,
+    "compression_ratio_threshold": null,
+    "log_prob_threshold": null,
+    "no_speech_threshold": null,
+    "condition_on_previous_text": false,
+    "without_timestamps": true,
+    "no_repeat_ngram_size": 0,
+    "word_timestamps": true,
+    "vad_filter": false
+  },
+  "ct2_test": {
+    "norm_wer": 0.4583,
+    "raw_wer": 0.5273,
+    "norm_cer": 0.2872,
+    "words_recovered": 2436,
+    "n_ref_words": 3836,
+    "recall_of_ref_words": 0.635,
+    "output_ratio": 0.974,
+    "substitutions": 941,
+    "deletions": 459,
+    "insertions": 358,
+    "decode_s": 339.1,
+    "audio_s": 1593.1,
+    "rtf": 0.213,
+    "looping_after_decode": 0,
+    "actions": {
+      "beam + truncate": 1,
+      "beam re-decode": 24,
+      "greedy": 86
+    }
+  },
+  "hf_safeguard_test": {
+    "norm_wer": 0.4593,
+    "raw_wer": 0.5278,
+    "norm_cer": 0.2899,
+    "words_recovered": 2426,
+    "n_ref_words": 3836,
+    "recall_of_ref_words": 0.6324,
+    "output_ratio": 0.964,
+    "substitutions": 919,
+    "deletions": 491,
+    "insertions": 352,
+    "decode_s": 417.1
+  }
+}

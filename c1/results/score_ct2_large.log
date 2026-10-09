@@ -1,0 +1,1 @@
+large-v3_v4_aug: WER 0.441 (HF + safeguards: 0.426), CER 0.270, recovered 65.3%, extra words 361, still looping 0, actions {'beam re-decode': 20, 'greedy': 91}, 442s for 26.6 min audio (RTF 0.278)

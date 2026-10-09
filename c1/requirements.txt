@@ -31,6 +31,9 @@ scipy
 # benchmarking (Task 7)
 psutil
 
+# live transcription (live_transcribe.py)
+sounddevice           # microphone capture (PortAudio)
+
 # shared
 pandas
 numpy

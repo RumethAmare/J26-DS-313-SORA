@@ -202,6 +202,29 @@ def main():
                      f"| {g['deletions']:,} → {s['deletions']:,} |\n")
         L.append("\n")
 
+    # --- deployment engine: exported faster-whisper models (score_ct2.py) -------
+    ct = []
+    for path in sorted(glob.glob(os.path.join(RESULTS_DIR, "c1_asr_ct2_*.json"))):
+        with open(path, encoding="utf-8") as fh:
+            ct.append(json.load(fh))
+    if ct:
+        ct.sort(key=lambda d: d["ct2_test"]["norm_wer"])
+        L.append("## Deployment engine — exported faster-whisper models\n\n")
+        L.append("Adapters merged and converted to CTranslate2 float16 (`scripts/export_ct2.py`), "
+                 "scored by `scripts/score_ct2.py` with the decoding `live_transcribe.py` uses "
+                 "(`scripts/ct2_decode.py`: temperature fallback at compression ratio 3.0, "
+                 "then loop truncation). Same 111 test clips.\n\n")
+        L.append("| model | WER (faster-whisper) | WER (HF + safeguards) | char. error rate "
+                 "| words recovered | extra words | still looping | speed (× real time) |\n"
+                 "|---|---|---|---|---|---|---|---|\n")
+        for d in ct:
+            s, h = d["ct2_test"], d.get("hf_safeguard_test") or {}
+            L.append(f"| `{d['run']}` | **{s['norm_wer']:.3f}** "
+                     f"| {fmt(h.get('norm_wer'))} | {s['norm_cer']:.3f} "
+                     f"| {100 * s['recall_of_ref_words']:.1f}% | {s['insertions']:,} "
+                     f"| {s['looping_after_decode']} | {s['rtf']:.3f} |\n")
+        L.append("\n")
+
     # --- per-run detail (newest first) -------------------------------------------
     L.append("## Runs in detail (newest first)\n\n")
     for r in reversed(runs):

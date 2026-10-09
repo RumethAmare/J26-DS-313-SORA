@@ -1,0 +1,108 @@
+{
+  "run": "medium_v4_aug",
+  "max_utterance_s": 25.0,
+  "silence_ms": 600,
+  "mode": "as fast as possible",
+  "what": "whole test recordings streamed through live_transcribe.py; VAD finds the utterances; joined transcript scored against the full gold transcript",
+  "live_test": {
+    "norm_wer": 0.4073,
+    "raw_wer": 0.5297,
+    "norm_cer": 0.2283,
+    "words_recovered": 2725,
+    "n_ref_words": 3948,
+    "recall_of_ref_words": 0.6902,
+    "output_ratio": 1.007,
+    "substitutions": 865,
+    "deletions": 358,
+    "insertions": 385
+  },
+  "per_recording": [
+    {
+      "recording": "J26DS313_R0007",
+      "utterances": 17,
+      "wer": 0.7157,
+      "words_recovered": 0.3627,
+      "wall_s": 19.4,
+      "median_latency_s": 1.19
+    },
+    {
+      "recording": "J26DS313_R0013",
+      "utterances": 8,
+      "wer": 0.2316,
+      "words_recovered": 0.8579,
+      "wall_s": 10.3,
+      "median_latency_s": 1.12
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "utterances": 15,
+      "wer": 0.3431,
+      "words_recovered": 0.7155,
+      "wall_s": 17.5,
+      "median_latency_s": 1.4
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "utterances": 13,
+      "wer": 0.4532,
+      "words_recovered": 0.6517,
+      "wall_s": 28.8,
+      "median_latency_s": 1.01
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "utterances": 8,
+      "wer": 0.3618,
+      "words_recovered": 0.696,
+      "wall_s": 36.0,
+      "median_latency_s": 1.9
+    },
+    {
+      "recording": "J26DS313_R0030",
+      "utterances": 7,
+      "wer": 0.2518,
+      "words_recovered": 0.8085,
+      "wall_s": 27.0,
+      "median_latency_s": 2.34
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "utterances": 9,
+      "wer": 0.3886,
+      "words_recovered": 0.6606,
+      "wall_s": 18.9,
+      "median_latency_s": 1.99
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "utterances": 25,
+      "wer": 0.4269,
+      "words_recovered": 0.6854,
+      "wall_s": 69.7,
+      "median_latency_s": 1.55
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "utterances": 18,
+      "wer": 0.4729,
+      "words_recovered": 0.6425,
+      "wall_s": 60.3,
+      "median_latency_s": 1.83
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "utterances": 15,
+      "wer": 0.4288,
+      "words_recovered": 0.7268,
+      "wall_s": 37.0,
+      "median_latency_s": 2.35
+    }
+  ],
+  "latency_after_speech_s": {
+    "median": 1.35,
+    "p90": 3.99,
+    "n": 85
+  },
+  "wall_s": 325.1,
+  "clip_based_wer": 0.4583
+}

@@ -9,3 +9,6 @@ c1/predictions/noisy_audio/
 
 # Model weights: too large for GitHub (100 MB limit); rebuild with finetune_whisper.py
 c1/models/whisper_lora/*/adapter_model.safetensors
+
+# Exported faster-whisper models (1.4-2.9 GB each); rebuild with c1/scripts/export_ct2.py
+c1/models/ct2/
