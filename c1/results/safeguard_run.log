@@ -1,0 +1,5 @@
+18:16:16 gold check: 0 of the gold transcripts would be flagged
+18:16:21 medium_v4_aug: 24/111 clips flagged as looping
+18:23:18 medium_v4_aug: WER 0.790 -> 0.459, recovered 60.8% -> 63.2%, extra words 1524 -> 352; actions {'beam + truncate': 5, 'beam re-decode': 19, 'kept': 87}; non-looping unchanged=True; still looping 0
+18:23:18 large-v3_v4: 10/111 clips flagged as looping
+18:27:16 large-v3_v4: WER 0.586 -> 0.445, recovered 58.3% -> 61.6%, extra words 651 -> 231; actions {'beam + truncate': 4, 'beam re-decode': 6, 'kept': 101}; non-looping unchanged=True; still looping 0

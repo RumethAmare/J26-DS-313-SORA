@@ -1,0 +1,263 @@
+{
+  "run": "small_v4_aug",
+  "model": "small",
+  "experiment": "loop safeguards (decode-time)",
+  "thresholds": {
+    "compression_ratio": 3.0,
+    "word_run": 10,
+    "phrase_run": 5,
+    "char_run": 8,
+    "words_per_s": 10.0,
+    "word_slack": 5,
+    "fallback_beams": 5
+  },
+  "n_clips": 111,
+  "n_flagged": 17,
+  "actions": {
+    "beam + truncate": 5,
+    "beam re-decode": 12,
+    "kept": 94
+  },
+  "non_looping_clips_unchanged": true,
+  "still_looping_after": 0,
+  "greedy_test": {
+    "norm_wer": 0.7552,
+    "raw_wer": 0.8371,
+    "norm_cer": 0.5057,
+    "words_recovered": 2014,
+    "n_ref_words": 3836,
+    "recall_of_ref_words": 0.525,
+    "output_ratio": 1.136,
+    "substitutions": 1270,
+    "deletions": 552,
+    "insertions": 1075
+  },
+  "safeguard_test": {
+    "norm_wer": 0.5133,
+    "raw_wer": 0.5995,
+    "norm_cer": 0.3248,
+    "words_recovered": 2145,
+    "n_ref_words": 3836,
+    "recall_of_ref_words": 0.5592,
+    "output_ratio": 0.892,
+    "substitutions": 997,
+    "deletions": 694,
+    "insertions": 278,
+    "decode_s": 223.7
+  },
+  "flagged_clips": [
+    {
+      "recording": "J26DS313_R0007",
+      "clip": 0,
+      "reasons": [
+        "compression",
+        "1-word unit x20",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 40,
+      "words_after": 17,
+      "reference_words": 18
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "clip": 7,
+      "reasons": [
+        "compression",
+        "1-word unit x205",
+        "char loop",
+        "too long for audio"
+      ],
+      "action": "beam + truncate",
+      "words_before": 254,
+      "words_after": 35,
+      "reference_words": 71
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 1,
+      "reasons": [
+        "compression",
+        "1-word unit x15"
+      ],
+      "action": "beam re-decode",
+      "words_before": 27,
+      "words_after": 37,
+      "reference_words": 43
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 5,
+      "reasons": [
+        "compression",
+        "1-word unit x87",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 89,
+      "words_after": 29,
+      "reference_words": 41
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 8,
+      "reasons": [
+        "compression",
+        "1-word unit x16",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 43,
+      "words_after": 14,
+      "reference_words": 16
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 12,
+      "reasons": [
+        "1-word unit x23",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 57,
+      "words_after": 33,
+      "reference_words": 40
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 13,
+      "reasons": [
+        "compression"
+      ],
+      "action": "beam re-decode",
+      "words_before": 66,
+      "words_after": 41,
+      "reference_words": 42
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 15,
+      "reasons": [
+        "compression",
+        "char loop"
+      ],
+      "action": "beam + truncate",
+      "words_before": 40,
+      "words_after": 13,
+      "reference_words": 29
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 19,
+      "reasons": [
+        "compression",
+        "1-word unit x43",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 56,
+      "words_after": 42,
+      "reference_words": 49
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 21,
+      "reasons": [
+        "compression",
+        "1-word unit x32",
+        "char loop"
+      ],
+      "action": "beam + truncate",
+      "words_before": 47,
+      "words_after": 18,
+      "reference_words": 33
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 22,
+      "reasons": [
+        "1-word unit x13",
+        "char loop"
+      ],
+      "action": "beam + truncate",
+      "words_before": 45,
+      "words_after": 37,
+      "reference_words": 50
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 4,
+      "reasons": [
+        "1-word unit x11",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 46,
+      "words_after": 31,
+      "reference_words": 30
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 10,
+      "reasons": [
+        "compression",
+        "1-word unit x49",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 105,
+      "words_after": 48,
+      "reference_words": 46
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 15,
+      "reasons": [
+        "compression",
+        "1-word unit x428",
+        "char loop",
+        "too long for audio"
+      ],
+      "action": "beam re-decode",
+      "words_before": 438,
+      "words_after": 47,
+      "reference_words": 33
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 16,
+      "reasons": [
+        "compression",
+        "char loop"
+      ],
+      "action": "beam + truncate",
+      "words_before": 2,
+      "words_after": 3,
+      "reference_words": 30
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 4,
+      "reasons": [
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 26,
+      "words_after": 24,
+      "reference_words": 20
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 7,
+      "reasons": [
+        "compression",
+        "1-word unit x47",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 66,
+      "words_after": 39,
+      "reference_words": 60
+    }
+  ]
+}

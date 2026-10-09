@@ -171,6 +171,37 @@ def main():
             for m, b in sorted(bases.items())) + ".\n")
     L.append("\n")
 
+    # --- decoding experiment: loop safeguards (safeguard_decode.py) ------------
+    sg = []
+    for path in sorted(glob.glob(os.path.join(RESULTS_DIR, "c1_asr_safeguard_*.json"))):
+        with open(path, encoding="utf-8") as fh:
+            sg.append(json.load(fh))
+    if sg:
+        sg.sort(key=lambda d: d["safeguard_test"]["norm_wer"])
+        L.append("## Decoding experiment — loop safeguards\n\n")
+        L.append("Same trained adapters, re-scored by `scripts/safeguard_decode.py`. A clip "
+                 "counts as looping only if its output is more repetitive than any gold "
+                 "transcript (compression ratio > 3.0, a word repeated > 10 times or a "
+                 "phrase > 5 times in a row, or > 10 words per second); those clips are "
+                 "re-decoded with 5-beam search, and truncated at the repetition if still "
+                 "looping. Every other clip is left exactly as greedy decoding produced "
+                 "it; no gold transcript trips the thresholds. All 111 test clips are "
+                 "scored either way.\n\n")
+        L.append("| run | looping clips | WER greedy → safeguarded | char. error rate "
+                 "| words recovered | extra words | missed words |\n"
+                 "|---|---|---|---|---|---|---|\n")
+        for i, d in enumerate(sg):
+            g, s = d["greedy_test"], d["safeguard_test"]
+            b = "**" if i == 0 else ""
+            L.append(f"| {b}`{d['run']}`{b} | {d['n_flagged']}/{d['n_clips']} "
+                     f"| {g['norm_wer']:.3f} → {b}{s['norm_wer']:.3f}{b} "
+                     f"| {g['norm_cer']:.3f} → {s['norm_cer']:.3f} "
+                     f"| {100 * g['recall_of_ref_words']:.1f}% → "
+                     f"{100 * s['recall_of_ref_words']:.1f}% "
+                     f"| {g['insertions']:,} → {s['insertions']:,} "
+                     f"| {g['deletions']:,} → {s['deletions']:,} |\n")
+        L.append("\n")
+
     # --- per-run detail (newest first) -------------------------------------------
     L.append("## Runs in detail (newest first)\n\n")
     for r in reversed(runs):
