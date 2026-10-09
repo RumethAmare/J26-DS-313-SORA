@@ -1,200 +1,230 @@
 #!/usr/bin/env python3
 """
-report_finetune.py -- per-epoch report for the Whisper LoRA fine-tuning runs.
+report_finetune.py -- the Whisper fine-tuning TRAINING LOG.
 
-Reads results/c1_asr_finetune_<model>.json (written by finetune_whisper.py)
-and writes results/c1_asr_finetune_report.md. Re-run after any retraining.
+Rebuilds results/c1_asr_finetune_report.md from every
+results/c1_asr_finetune_<run>.json, newest run first in the log table, one
+section per run. finetune_whisper.py calls this automatically at the end of
+every training run, so the log never falls behind; it can also be run by hand:
 
-Each epoch was scored by validation LOSS during training; word error rate was
-measured once per model, on the best-epoch adapter (the only one saved). The
-report says so rather than implying per-epoch WER.
+    python report_finetune.py
+
+Human context for a run (why it was run, what changed) lives in RUN_NOTES
+below for older runs, and in the "note" field written by
+`finetune_whisper.py --note "..."` for new ones.
+
+Each epoch is scored by validation LOSS during training; WER is measured once
+per run, on the best-epoch adapter (the only one saved).
 """
+import glob
 import json
 import os
+from datetime import datetime
 
 C1_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS_DIR = os.path.join(C1_ROOT, "results")
-MODELS = ["small", "medium", "large-v3"]
+MODEL_DIR = os.path.join(C1_ROOT, "models", "whisper_lora")
+OUT = os.path.join(RESULTS_DIR, "c1_asr_finetune_report.md")
+
+# Context for runs made before finetune_whisper.py recorded a --note.
+RUN_NOTES = {
+    "small": "First run. Original training data (1.59 h). 18 training transcripts "
+             "were silently truncated at 440 tokens (found later).",
+    "medium": "First run, same data as `small`.",
+    "large-v3": "First run, same data as `small`.",
+    "small_lr3e-4": "Experiment: learning rate 3e-4 instead of 1e-3, up to 15 epochs, "
+                    "patience 3. Same data as `small`. Longer training did not help "
+                    "(still peaked at epoch 4) but output looped less.",
+    "small_v2": "Added the label-only exclusions, re-timed recordings, R0062-R0065 and "
+                "split long utterances (2.70 h). WORSE: 37 transcripts truncated at 440 "
+                "tokens taught the model not to stop -> heavy looping.",
+    "small_v3": "Same data as v2 with every training transcript capped at 400 tokens "
+                "(dense clips split, none truncated). Confirmed truncation caused the "
+                "v2 looping.",
+    "small_v4": "Current data (3.09 h, adds R0066-R0067 and R0076-R0080). Same data and "
+                "settings as medium_v4 / large-v3_v4.",
+    "medium_v4": "Current data (3.09 h), token-capped transcripts.",
+    "large-v3_v4": "Current data (3.09 h), token-capped transcripts.",
+}
 
 
-def load(model):
-    path = os.path.join(RESULTS_DIR, f"c1_asr_finetune_{model}.json")
-    if not os.path.exists(path):
-        return None
-    with open(path, encoding="utf-8") as fh:
-        return json.load(fh)
+def load_runs():
+    runs = []
+    for path in glob.glob(os.path.join(RESULTS_DIR, "c1_asr_finetune_*.json")):
+        with open(path, encoding="utf-8") as fh:
+            r = json.load(fh)
+        r["_run"] = r.get("run") or r["model"]
+        r["_file"] = os.path.basename(path)
+        r["_complete"] = "finetuned_test" in r
+        if r["_file"].endswith("_interrupted.json"):
+            r["_run"] += " (interrupted)"
+            r["_complete"] = False
+        fin = r.get("finished") or datetime.fromtimestamp(os.path.getmtime(path)).isoformat(timespec="minutes")
+        r["_finished"] = fin
+        runs.append(r)
+    runs.sort(key=lambda r: r["_finished"])
+    return runs
+
+
+def load_rescores():
+    out = {}
+    for path in glob.glob(os.path.join(RESULTS_DIR, "c1_asr_rescore_*.json")):
+        with open(path, encoding="utf-8") as fh:
+            r = json.load(fh)
+        out[r["run"]] = r
+    return out
+
+
+def best_val(r):
+    b = r.get("best_epoch")
+    return next((c["val_loss"] for c in r.get("curve", []) if c["epoch"] == b), None)
+
+
+def fmt(x, nd=3):
+    return "—" if x is None else f"{x:.{nd}f}"
+
+
+def test_n(r):
+    return r.get("data", {}).get("test", {}).get("n_clips")
 
 
 def epoch_table(r):
-    curve = r["curve"]
-    best = r.get("best_epoch")
-    L = ["| epoch | train loss | val loss | change in val loss | val − train gap "
-         "| epoch time | cumulative | |\n",
-         "|---|---|---|---|---|---|---|---|\n"]
-    prev_val, prev_t = None, 0.0
+    curve, best = r.get("curve", []), r.get("best_epoch")
+    L = ["| epoch | train loss | val loss | change | val − train | epoch time | |\n",
+         "|---|---|---|---|---|---|---|\n"]
+    prev_v, prev_t = None, 0.0
     for c in curve:
-        e, vl = c["epoch"], c["val_loss"]
-        tl = c.get("train_loss")
-        t = c.get("elapsed_min")
-        delta = f"{vl - prev_val:+.4f}" if prev_val is not None else "—"
-        gap = f"{vl - tl:+.3f}" if tl is not None else "—"
-        ep_t = f"{t - prev_t:.1f} min" if t is not None else "—"
-        cum = f"{t:.1f} min" if t is not None else "—"
-        if e == 0:
-            mark = "before training"
-        elif e == best:
-            mark = "**best — saved**"
-        elif prev_val is not None and vl > prev_val:
-            mark = "val worse"
-        else:
-            mark = ""
-        tl_s = f"{tl:.4f}" if tl is not None else "—"
-        vl_s = f"**{vl:.4f}**" if e == best else f"{vl:.4f}"
-        L.append(f"| {e} | {tl_s} | {vl_s} | {delta} | {gap} | {ep_t} | {cum} | {mark} |\n")
-        prev_val = vl
+        e, vl, tl, t = c["epoch"], c["val_loss"], c.get("train_loss"), c.get("elapsed_min")
+        mark = ("before training" if e == 0 else "**best — saved**" if e == best
+                else "val worse" if prev_v is not None and vl > prev_v else "")
+        L.append(f"| {e} | {fmt(tl, 4)} | {'**' if e == best else ''}{vl:.4f}"
+                 f"{'**' if e == best else ''} | "
+                 f"{'—' if prev_v is None else f'{vl - prev_v:+.4f}'} | "
+                 f"{'—' if tl is None else f'{vl - tl:+.3f}'} | "
+                 f"{'—' if t is None else f'{t - prev_t:.1f} min'} | {mark} |\n")
+        prev_v = vl
         if t is not None:
             prev_t = t
     return L
 
 
-def observations(r):
-    curve = r["curve"]
-    best = r.get("best_epoch")
-    v0 = curve[0]["val_loss"]
-    vb = next(c["val_loss"] for c in curve if c["epoch"] == best)
-    last = curve[-1]
-    first_gain = curve[1]["val_loss"] - v0
-    total_gain = vb - v0
-    obs = [f"- Validation loss fell from {v0:.3f} to {vb:.3f} at epoch {best} "
-           f"({100 * (v0 - vb) / v0:.0f}% lower). Epoch 1 alone delivered "
-           f"{100 * first_gain / total_gain:.0f}% of that drop.\n"]
-    after = [c for c in curve if c["epoch"] > best]
-    if after:
-        obs.append(f"- After epoch {best}, training loss kept falling "
-                   f"({next(c['train_loss'] for c in curve if c['epoch'] == best):.3f} → "
-                   f"{last['train_loss']:.3f}) while validation loss rose "
-                   f"({vb:.3f} → {last['val_loss']:.3f}): the model began memorising "
-                   f"the training clips. Early stopping ended the run at epoch "
-                   f"{last['epoch']} of 10.\n")
-    gap_best = vb - next(c["train_loss"] for c in curve if c["epoch"] == best)
-    obs.append(f"- Gap between validation and training loss at the best epoch: "
-               f"{gap_best:.2f}, widening to {last['val_loss'] - last['train_loss']:.2f} "
-               f"by the last epoch.\n")
-    times = []
-    prev = 0.0
-    for c in curve[1:]:
-        times.append(c["elapsed_min"] - prev)
-        prev = c["elapsed_min"]
-    if times and max(times) > 2 * min(times):
-        slow = max(range(len(times)), key=lambda i: times[i]) + 1
-        obs.append(f"- Epoch times varied from {min(times):.1f} to {max(times):.1f} min "
-                   f"(slowest: epoch {slow}). Every epoch does the same work, so the "
-                   f"variation is the laptop (GPU memory pressure from other apps, or "
-                   f"background load), not the training.\n")
-    return obs
-
-
 def main():
-    runs = {m: load(m) for m in MODELS}
-    runs = {m: r for m, r in runs.items() if r and "curve" in r}
-    any_r = next(iter(runs.values()))
-    d = any_r["data"]
+    runs = load_runs()
+    rescores = load_rescores()
+    done = [r for r in runs if r["_complete"]]
 
-    L = ["# Whisper fine-tuning — epoch-by-epoch report\n\n",
-         "Produced by `scripts/report_finetune.py` from "
-         "`results/c1_asr_finetune_<model>.json`. Training: "
-         "`scripts/finetune_whisper.py`.\n\n",
-         "## Setup\n\n",
-         f"- **Method:** LoRA (rank {any_r['lora_r']}) on attention and feed-forward "
-         f"layers; base weights frozen in bf16. Same for all three models.\n",
-         f"- **Language token:** `{any_r['language']}`. Learning rate {any_r['lr']}, "
-         "linear warm-up then decay, effective batch 16 clips.\n",
-         f"- **Data**, split by recording: train {d['train']['n_recordings']} recordings / "
-         f"{d['train']['n_clips']} clips / {d['train']['hours']:.2f} h of speech; "
-         f"validation {d['val']['n_recordings']} / {d['val']['n_clips']} / "
-         f"{d['val']['hours']:.2f} h; test {d['test']['n_recordings']} / "
-         f"{d['test']['n_clips']} / {d['test']['hours']:.2f} h.\n",
-         "- **Per epoch:** one pass over the training clips, then validation loss "
-         "(the model's average error at predicting the validation transcripts, "
-         "token by token; lower is better). The adapter is saved whenever validation "
-         "loss improves; training stops after 2 epochs without improvement (max 10).\n",
-         "- **Word error rate is not measured per epoch.** It was measured once per "
-         "model, on the saved best-epoch adapter, against the test set — see the "
-         "final section.\n\n"]
+    L = ["# Whisper fine-tuning — training log\n\n",
+         f"_Auto-generated by `scripts/report_finetune.py`; last updated "
+         f"{datetime.now().strftime('%Y-%m-%d %H:%M')}. Every training run updates this "
+         f"file. Do not edit by hand: add context with `finetune_whisper.py --note`._\n\n",
+         "**Method (all runs):** LoRA on attention + feed-forward layers, base weights "
+         "frozen in bf16, language token `en`, effective batch 16 clips, linear warm-up "
+         "then decay, early stopping on validation loss. Data is split by recording; "
+         "validation (6 recordings) and test (10 recordings) are fixed so runs stay "
+         "comparable. Scores are script-normalised (Sinhala Unicode vs romanized is not "
+         "penalised), greedy decoding.\n\n"]
 
-    L.append("## Validation loss by epoch, all models\n\n")
-    max_e = max(c["epoch"] for r in runs.values() for c in r["curve"])
-    L.append("| epoch | " + " | ".join(f"`{m}`" for m in runs) + " |\n")
-    L.append("|---|" + "---|" * len(runs) + "\n")
-    for e in range(max_e + 1):
-        cells = []
-        for m, r in runs.items():
-            c = next((c for c in r["curve"] if c["epoch"] == e), None)
-            if c is None:
-                cells.append("stopped")
-            elif e == r.get("best_epoch"):
-                cells.append(f"**{c['val_loss']:.4f}** ←best")
+    # --- log table -------------------------------------------------------------
+    L.append("## Run log (newest first)\n\n")
+    L.append("| finished | run | train data | lr | best epoch | best val loss "
+             "| test clips | WER | words recovered | extra words | train time |\n")
+    L.append("|---|---|---|---|---|---|---|---|---|---|---|\n")
+    for r in reversed(runs):
+        s = r.get("finetuned_test") or {}
+        d = r.get("data", {}).get("train", {})
+        recov = f"{100 * s['recall_of_ref_words']:.1f}%" if s else "—"
+        extra = f"{s['insertions']:,}" if s else "—"
+        mins = f"{r['train_minutes']:.0f} min" if r.get("train_minutes") else "—"
+        L.append(f"| {r['_finished'].replace('T', ' ')} | `{r['_run']}` "
+                 f"| {d.get('hours', 0):.2f} h / {d.get('n_recordings', '?')} rec "
+                 f"| {r.get('lr')} | {r.get('best_epoch', '—')} | {fmt(best_val(r))} "
+                 f"| {test_n(r) or '—'} | {fmt(s.get('norm_wer'))} | {recov} | {extra} "
+                 f"| {mins} |\n")
+    L.append("\nWER from runs with different test-clip counts (101 vs 111) is not "
+             "directly comparable; see the leaderboard for one common test set.\n\n")
+
+    # --- leaderboard on the current test set ---------------------------------------
+    cur_n = max((test_n(r) or 0) for r in done) if done else 0
+    board = []
+    for r in done:
+        if test_n(r) == cur_n:
+            board.append((r["_run"], r["finetuned_test"], r))
+    for run, rs in rescores.items():
+        if rs.get("test_split", {}).get("n_clips") == cur_n:
+            board.append((f"{run} (re-scored)", rs["finetuned_test"], None))
+    board.sort(key=lambda x: x[1]["norm_wer"])
+    L.append(f"## Leaderboard — current test set ({cur_n} clips)\n\n")
+    L.append("| rank | run | WER | char. error rate | words recovered | output ÷ ref "
+             "| extra words |\n|---|---|---|---|---|---|---|\n")
+    for i, (run, s, _) in enumerate(board, 1):
+        b = "**" if i == 1 else ""
+        L.append(f"| {i} | {b}`{run}`{b} | {b}{s['norm_wer']:.3f}{b} | {s['norm_cer']:.3f} "
+                 f"| {100 * s['recall_of_ref_words']:.1f}% | {s['output_ratio']:.2f}× "
+                 f"| {s['insertions']:,} |\n")
+    bases = {}
+    for r in done:
+        if test_n(r) == cur_n and "baseline_test" in r:
+            bases[r["model"]] = r["baseline_test"]
+    if bases:
+        L.append("\nOff-the-shelf on the same test set: " + "; ".join(
+            f"`{m}` WER {b['norm_wer']:.3f} ({100 * b['recall_of_ref_words']:.1f}% recovered)"
+            for m, b in sorted(bases.items())) + ".\n")
+    L.append("\n")
+
+    # --- per-run detail (newest first) -------------------------------------------
+    L.append("## Runs in detail (newest first)\n\n")
+    for r in reversed(runs):
+        L.append(f"### `{r['_run']}` — finished {r['_finished'].replace('T', ' ')}\n\n")
+        note = r.get("note") or RUN_NOTES.get(r.get("run") or r["model"])
+        if note:
+            L.append(f"{note}\n\n")
+        d = r.get("data", {})
+        tr = d.get("train", {})
+        L.append(f"- Model `{r['model']}`, lr {r.get('lr')}, LoRA rank {r.get('lora_r')}, "
+                 f"max {r.get('epochs_max', 10)} epochs, patience {r.get('patience', 2)}, "
+                 f"seed {r.get('seed')}.\n")
+        L.append(f"- Train {tr.get('n_recordings', '?')} recordings / {tr.get('n_clips', '?')} "
+                 f"clips / {tr.get('hours', 0):.2f} h; test {test_n(r) or '?'} clips.\n")
+        if not r["_complete"]:
+            L.append("- **Incomplete** — stopped before test scoring.\n\n")
+        else:
+            s, b = r["finetuned_test"], r.get("baseline_test")
+            if b:
+                L.append(f"- Off-the-shelf → fine-tuned: WER {b['norm_wer']:.3f} → "
+                         f"**{s['norm_wer']:.3f}**, words recovered "
+                         f"{100 * b['recall_of_ref_words']:.1f}% → "
+                         f"**{100 * s['recall_of_ref_words']:.1f}%**, extra words "
+                         f"{b['insertions']:,} → {s['insertions']:,}.\n")
             else:
-                cells.append(f"{c['val_loss']:.4f}")
-        L.append(f"| {e} | " + " | ".join(cells) + " |\n")
-    L.append("\nEpoch 0 is the off-the-shelf model before any training.\n\n")
-
-    for m, r in runs.items():
-        L.append(f"## `{m}`\n\n")
-        L.extend(epoch_table(r))
+                L.append(f"- Fine-tuned: WER **{s['norm_wer']:.3f}**, words recovered "
+                         f"**{100 * s['recall_of_ref_words']:.1f}%**, extra words "
+                         f"{s['insertions']:,}.\n")
+            L.append(f"- Best epoch {r.get('best_epoch')} (val loss {fmt(best_val(r), 4)}); "
+                     f"{fmt(r.get('train_minutes'), 0)} min training; peak GPU "
+                     f"{fmt(r.get('peak_gpu_gib'), 1)} GiB.\n")
+            rs = rescores.get(r.get("run") or r["model"])
+            if rs:
+                t = rs["finetuned_test"]
+                L.append(f"- Re-scored on the {rs['test_split']['n_clips']}-clip test set: "
+                         f"WER {t['norm_wer']:.3f}, words recovered "
+                         f"{100 * t['recall_of_ref_words']:.1f}%.\n")
         L.append("\n")
-        L.extend(observations(r))
-        L.append(f"- Total training time {r['train_minutes']:.0f} min; peak GPU memory "
-                 f"{r['peak_gpu_gib']:.1f} GiB.\n\n")
+        if r.get("curve"):
+            L.extend(epoch_table(r))
+            L.append("\n")
 
-    L.append("## Test-set result of each model's best epoch\n\n")
-    L.append("10 held-out recordings, 3,490 reference words. WER and character error "
-             "rate are script-normalised (Sinhala Unicode vs romanized is not "
-             "penalised). Greedy decoding, same settings before and after.\n\n")
-    L.append("| model | best epoch | | WER | char. error rate | words recovered "
-             "| output ÷ reference | extra words |\n|---|---|---|---|---|---|---|---|\n")
-    for m, r in runs.items():
-        for k, label in (("baseline_test", "off-the-shelf"), ("finetuned_test", "fine-tuned")):
-            s = r[k]
-            bold = "**" if k == "finetuned_test" else ""
-            L.append(f"| `{m}` | {r['best_epoch'] if k == 'finetuned_test' else '—'} | {label} "
-                     f"| {bold}{s['norm_wer']:.3f}{bold} | {s['norm_cer']:.3f} "
-                     f"| {100 * s['recall_of_ref_words']:.1f}% | {s['output_ratio']:.2f}× "
-                     f"| {s['insertions']:,} |\n")
+    L.append("## Reading the log\n\n")
+    L.append("- **Validation loss** picks the epoch within a run; it always feeds the "
+             "model the correct previous words, so it cannot see repetition loops. "
+             "**Test WER / words recovered / extra words** rank runs.\n")
+    L.append("- One training run per configuration and a 10-recording test set: "
+             "differences of a few points are within noise.\n")
+    L.append("- Predictions for each run (with these fine-tuning details at the end) "
+             "are in `predictions/finetune/<run>_{base,ft}_test.json`.\n")
 
-    L.append("\n## Reading across the three models\n\n")
-    bests = {m: (r["best_epoch"], next(c["val_loss"] for c in r["curve"]
-                                       if c["epoch"] == r["best_epoch"])) for m, r in runs.items()}
-    L.append("- **All three peaked early** — " +
-             ", ".join(f"`{m}` at epoch {b[0]}" for m, b in bests.items()) +
-             ". With 1.6 h of training speech the models extract most of what the "
-             "data offers in 3–4 passes, then start memorising it. More training "
-             "data, not more epochs, is what would move these numbers.\n")
-    L.append("- **Best validation losses are close** (" +
-             ", ".join(f"`{m}` {b[1]:.3f}" for m, b in bests.items()) +
-             "), yet test WER differs much more. Validation loss scores each next "
-             "token given the correct previous ones; WER scores free-running "
-             "transcription, where `large-v3` loops far less (682 extra words vs "
-             "1,466 for `small` and 1,758 for `medium`). Validation loss is the right "
-             "signal for choosing an epoch, not for ranking models.\n")
-    L.append("- **Bigger models started lower and fell less steeply.** `large-v3`'s "
-             "off-the-shelf validation loss was already the lowest (2.13 vs ~2.38), "
-             "consistent with its stronger multilingual pre-training.\n\n")
-
-    L.append("## Limitations\n\n")
-    L.append("- One run per model with one seed; no variance estimate. Small "
-             "differences (a few hundredths of validation loss, a few points of words "
-             "recovered) are within run-to-run noise.\n")
-    L.append("- The validation set is 6 recordings / 63 clips, so the best-epoch "
-             "choice itself is noisy: `large-v3`'s epochs 3 and 4 differ by 0.005.\n")
-    L.append("- Test WER uses greedy decoding on utterance clips, not faster-whisper "
-             "on full recordings, so it is not directly comparable with Task 1's "
-             "figures.\n")
-
-    out = os.path.join(RESULTS_DIR, "c1_asr_finetune_report.md")
-    with open(out, "w", encoding="utf-8") as fh:
+    with open(OUT, "w", encoding="utf-8") as fh:
         fh.writelines(L)
-    print(f"Wrote {out}")
+    print(f"Wrote {OUT}")
 
 
 if __name__ == "__main__":

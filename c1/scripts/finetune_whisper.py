@@ -222,6 +222,9 @@ def main():
     ap.add_argument("--tag", default="",
                     help="suffix for output names, so an experiment does not "
                          "overwrite the main run (e.g. --tag lr3e-4)")
+    ap.add_argument("--note", default="",
+                    help="why this run was made / what changed; shown in the "
+                         "training log (results/c1_asr_finetune_report.md)")
     a = ap.parse_args()
 
     from peft import LoraConfig, get_peft_model
@@ -249,7 +252,8 @@ def main():
     model.to("cuda")
     audio = AudioCache()
 
-    result = {"model": a.model, "run": run_name, "epochs_max": a.epochs,
+    result = {"model": a.model, "run": run_name, "note": a.note,
+              "started": time.strftime("%Y-%m-%dT%H:%M"), "epochs_max": a.epochs,
               "patience": a.patience, "hf_id": hf_id, "language": a.language,
               "method": "LoRA", "lora_r": a.lora_r, "lr": a.lr,
               "batch": {"micro": micro, "accum": accum}, "seed": a.seed,
@@ -358,10 +362,19 @@ def main():
                      fine_tuning={**result, "adapter": os.path.relpath(out_dir, C1_ROOT)})
     log(f"FINE-TUNED test: {result['finetuned_test']}", logf)
 
+    result["finished"] = time.strftime("%Y-%m-%dT%H:%M")
     with open(os.path.join(RESULTS_DIR, f"c1_asr_finetune_{run_name}.json"), "w",
               encoding="utf-8") as fh:
         json.dump(result, fh, indent=2, ensure_ascii=False)
     log(f"wrote results/c1_asr_finetune_{run_name}.json", logf)
+
+    # Keep the training log (results/c1_asr_finetune_report.md) current.
+    try:
+        import report_finetune
+        report_finetune.main()
+        log("updated results/c1_asr_finetune_report.md", logf)
+    except Exception as exc:                                  # noqa: BLE001
+        log(f"training log NOT updated ({exc}); run report_finetune.py", logf)
 
 
 if __name__ == "__main__":
