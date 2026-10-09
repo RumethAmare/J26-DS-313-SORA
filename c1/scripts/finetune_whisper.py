@@ -191,12 +191,18 @@ def save_adapter(model, out_dir, attempts=10, wait_s=3.0):
     shutil.rmtree(tmp, ignore_errors=True)
 
 
-def save_predictions(name, rows, hyps):
+def save_predictions(name, rows, hyps, fine_tuning=None):
+    """Write one JSON document (not JSON Lines): the per-clip predictions
+    first, then -- when given -- the fine-tuning details at the end (model,
+    settings, training data, epoch curve, scores), so the file documents the
+    run that produced it."""
     os.makedirs(PRED_DIR, exist_ok=True)
-    # One JSON array per file (not JSON Lines), readable as a single document.
-    out = [{"recording": r["recording"], "clip": r["clip"],
-            "start": r["start"], "end": r["end"],
-            "reference": r["text"], "hypothesis": h} for r, h in zip(rows, hyps)]
+    preds = [{"recording": r["recording"], "clip": r["clip"],
+              "start": r["start"], "end": r["end"],
+              "reference": r["text"], "hypothesis": h} for r, h in zip(rows, hyps)]
+    out = {"n_clips": len(preds), "predictions": preds}
+    if fine_tuning is not None:
+        out["fine_tuning"] = fine_tuning
     with open(os.path.join(PRED_DIR, name), "w", encoding="utf-8") as fh:
         json.dump(out, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
@@ -258,7 +264,11 @@ def main():
         hyps = transcribe(model, processor, test, audio, micro * 2, a.language)
         result["baseline_test"] = score([r["text"] for r in test], hyps)
         result["baseline_test"]["decode_s"] = round(time.time() - t0, 1)
-        save_predictions(f"{run_name}_base_test.json", test, hyps)
+        save_predictions(f"{run_name}_base_test.json", test, hyps,
+                         fine_tuning={"note": "off-the-shelf model, before fine-tuning",
+                                      "model": a.model, "hf_id": hf_id,
+                                      "language": a.language, "data": result["data"],
+                                      "baseline_test": result["baseline_test"]})
         log(f"BASELINE test: {result['baseline_test']}", logf)
 
     # --- LoRA ---------------------------------------------------------------
@@ -344,7 +354,8 @@ def main():
     hyps = transcribe(model, processor, test, audio, micro * 2, a.language)
     result["finetuned_test"] = score([r["text"] for r in test], hyps)
     result["finetuned_test"]["decode_s"] = round(time.time() - t0, 1)
-    save_predictions(f"{run_name}_ft_test.json", test, hyps)
+    save_predictions(f"{run_name}_ft_test.json", test, hyps,
+                     fine_tuning={**result, "adapter": os.path.relpath(out_dir, C1_ROOT)})
     log(f"FINE-TUNED test: {result['finetuned_test']}", logf)
 
     with open(os.path.join(RESULTS_DIR, f"c1_asr_finetune_{run_name}.json"), "w",

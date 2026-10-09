@@ -1,0 +1,13 @@
+10:07:01 model=medium language=en train=809 val=63 test=111 clips; batch 4x4
+10:08:07 BASELINE test: {'norm_wer': 1.2015, 'raw_wer': 1.204, 'norm_cer': 0.8862, 'words_recovered': 657, 'n_ref_words': 3836, 'recall_of_ref_words': 0.1713, 'output_ratio': 1.002, 'substitutions': 1755, 'deletions': 1424, 'insertions': 1430, 'decode_s': 61.6}
+10:08:08 trainable params 34,603,008 / 798,460,928 (4.33%)
+10:08:17 epoch 0 val_loss 2.3794
+10:15:04 epoch 1 train_loss 1.2496 val_loss 1.0446 (6.8 min, peak GPU 3.6 GiB)
+10:21:54 epoch 2 train_loss 0.6144 val_loss 0.9453 (13.6 min, peak GPU 3.6 GiB)
+10:28:55 epoch 3 train_loss 0.4344 val_loss 0.9119 (20.6 min, peak GPU 3.6 GiB)
+10:36:09 epoch 4 train_loss 0.3287 val_loss 0.9061 (27.9 min, peak GPU 3.6 GiB)
+10:43:43 epoch 5 train_loss 0.2357 val_loss 0.9079 (35.4 min, peak GPU 3.6 GiB)
+10:54:40 epoch 6 train_loss 0.1496 val_loss 0.9140 (46.4 min, peak GPU 3.6 GiB)
+10:54:40 early stop: no val improvement for 2 epochs
+11:00:03 FINE-TUNED test: {'norm_wer': 0.603, 'raw_wer': 0.6629, 'norm_cer': 0.3927, 'words_recovered': 2097, 'n_ref_words': 3836, 'recall_of_ref_words': 0.5467, 'output_ratio': 1.007, 'substitutions': 1192, 'deletions': 547, 'insertions': 574, 'decode_s': 317.1}
+11:00:03 wrote results/c1_asr_finetune_medium_v4.json

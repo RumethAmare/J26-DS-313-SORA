@@ -66,19 +66,24 @@
         "J26DS313_R0071",
         "J26DS313_R0072",
         "J26DS313_R0074",
+        "J26DS313_R0076",
+        "J26DS313_R0077",
+        "J26DS313_R0078",
+        "J26DS313_R0079",
+        "J26DS313_R0080",
         "J26DS313_R0100",
         "J26DS313_R0101",
         "J26DS313_R0103",
         "J26DS313_R0104"
       ],
-      "n_recordings": 64,
-      "n_clips": 733,
-      "hours": 2.67,
+      "n_recordings": 69,
+      "n_clips": 809,
+      "hours": 3.094,
       "scripts": {
         "mixed": 1,
         "none": 3,
         "romanized": 14,
-        "unicode": 46
+        "unicode": 51
       }
     },
     "val": {

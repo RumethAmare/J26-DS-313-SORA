@@ -1,0 +1,118 @@
+{
+  "model": "large-v3",
+  "run": "large-v3_v4",
+  "epochs_max": 10,
+  "patience": 2,
+  "hf_id": "openai/whisper-large-v3",
+  "language": "en",
+  "method": "LoRA",
+  "lora_r": 32,
+  "lr": 0.001,
+  "batch": {
+    "micro": 2,
+    "accum": 8
+  },
+  "seed": 13,
+  "data": {
+    "train": {
+      "n_recordings": 69,
+      "n_clips": 809,
+      "hours": 3.094,
+      "scripts": {
+        "mixed": 1,
+        "none": 3,
+        "romanized": 14,
+        "unicode": 51
+      }
+    },
+    "val": {
+      "n_recordings": 6,
+      "n_clips": 63,
+      "hours": 0.228,
+      "scripts": {
+        "romanized": 1,
+        "unicode": 5
+      }
+    },
+    "test": {
+      "n_recordings": 10,
+      "n_clips": 111,
+      "hours": 0.443,
+      "scripts": {
+        "romanized": 2,
+        "unicode": 8
+      }
+    }
+  },
+  "baseline_test": {
+    "norm_wer": 1.0837,
+    "raw_wer": 1.0894,
+    "norm_cer": 0.8074,
+    "words_recovered": 685,
+    "n_ref_words": 3836,
+    "recall_of_ref_words": 0.1786,
+    "output_ratio": 0.871,
+    "substitutions": 1649,
+    "deletions": 1502,
+    "insertions": 1006,
+    "decode_s": 93.1
+  },
+  "best_epoch": 4,
+  "curve": [
+    {
+      "epoch": 0,
+      "val_loss": 2.1337
+    },
+    {
+      "epoch": 1,
+      "train_loss": 1.1435,
+      "val_loss": 1.0118,
+      "elapsed_min": 14.8
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.6402,
+      "val_loss": 0.897,
+      "elapsed_min": 36.3
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.4607,
+      "val_loss": 0.8857,
+      "elapsed_min": 51.7
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3474,
+      "val_loss": 0.8456,
+      "elapsed_min": 69.1
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.2592,
+      "val_loss": 0.8683,
+      "elapsed_min": 87.9
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.1726,
+      "val_loss": 0.906,
+      "elapsed_min": 104.1
+    }
+  ],
+  "train_minutes": 104.1,
+  "peak_gpu_gib": 4.66,
+  "finetuned_test": {
+    "norm_wer": 0.5863,
+    "raw_wer": 0.6541,
+    "norm_cer": 0.3462,
+    "words_recovered": 2238,
+    "n_ref_words": 3836,
+    "recall_of_ref_words": 0.5834,
+    "output_ratio": 1.025,
+    "substitutions": 1044,
+    "deletions": 554,
+    "insertions": 651,
+    "decode_s": 1546.3
+  }
+}

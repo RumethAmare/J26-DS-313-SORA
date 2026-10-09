@@ -65,7 +65,11 @@ def main():
     t0 = time.time()
     hyps = fw.transcribe(model, processor, test, audio, micro * 2, language)
     out["finetuned_test"] = {**fw.score(refs, hyps), "decode_s": round(time.time() - t0, 1)}
-    fw.save_predictions(f"{a.run}_rescore_test.json", test, hyps)
+    fw.save_predictions(f"{a.run}_rescore_test.json", test, hyps,
+                        fine_tuning={**out, "adapter": os.path.relpath(adapter_dir, fw.C1_ROOT),
+                                     "trained_with": {k: trained.get(k) for k in (
+                                         "lr", "lora_r", "epochs_max", "patience", "batch",
+                                         "seed", "best_epoch", "curve", "train_minutes")}})
     fw.log(f"{a.run} FINE-TUNED on current test: {out['finetuned_test']}")
 
     path = os.path.join(fw.RESULTS_DIR, f"c1_asr_rescore_{a.run}.json")
