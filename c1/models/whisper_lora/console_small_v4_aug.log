@@ -1,0 +1,14 @@
+14:39:10 model=small language=en train=809 val=63 test=111 clips; batch 8x2
+14:39:12 trainable params 12,976,128 / 254,711,040 (5.09%)
+14:39:17 epoch 0 val_loss 2.3954
+14:42:33 epoch 1 train_loss 1.5155 val_loss 1.1194 (3.3 min, peak GPU 3.8 GiB)
+14:46:05 epoch 2 train_loss 0.8252 val_loss 0.9134 (6.8 min, peak GPU 3.8 GiB)
+14:49:28 epoch 3 train_loss 0.5944 val_loss 0.8767 (10.2 min, peak GPU 3.8 GiB)
+14:54:58 epoch 4 train_loss 0.4619 val_loss 0.8484 (15.7 min, peak GPU 3.8 GiB)
+15:00:10 epoch 5 train_loss 0.3604 val_loss 0.8535 (20.9 min, peak GPU 3.8 GiB)
+15:05:35 epoch 6 train_loss 0.2741 val_loss 0.8666 (26.3 min, peak GPU 3.8 GiB)
+15:05:35 early stop: no val improvement for 2 epochs
+15:07:41 FINE-TUNED test: {'norm_wer': 0.7552, 'raw_wer': 0.8371, 'norm_cer': 0.5057, 'words_recovered': 2014, 'n_ref_words': 3836, 'recall_of_ref_words': 0.525, 'output_ratio': 1.136, 'substitutions': 1270, 'deletions': 552, 'insertions': 1075, 'decode_s': 123.5}
+15:07:41 wrote results/c1_asr_finetune_small_v4_aug.json
+Wrote F:\SLIIT\Y4 S1\Research\J26-DS-313-SORA\c1\results\c1_asr_finetune_report.md
+15:07:41 updated results/c1_asr_finetune_report.md

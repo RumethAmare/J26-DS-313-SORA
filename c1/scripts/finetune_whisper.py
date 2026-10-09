@@ -96,9 +96,39 @@ class AudioCache:
         return a[int(row["start"] * SR): int(row["end"] * SR)]
 
 
-def make_batch(rows, processor, audio, with_labels=True):
+SPEED_FACTORS = (0.9, 1.0, 1.1)
+# Moderate masking. Features are 100 frames/s, 128 mel bands:
+#   time: ~5% of frames masked in spans of 10 frames (0.1 s), at least 2 spans
+#   frequency: one band of up to 10 mel channels (~8% of them) per clip
+SPEC_AUGMENT = {"mask_time_prob": 0.05, "mask_time_length": 10, "mask_time_min_masks": 2,
+                "mask_feature_prob": 0.05, "mask_feature_length": 10,
+                "mask_feature_min_masks": 1}
+
+
+def speed_perturb(wave, factor):
+    """Play a waveform `factor` times faster (pitch shifts with it, as in
+    Kaldi-style speed perturbation). Polyphase resampling: 1.1x -> 10/11 of
+    the samples, 0.9x -> 10/9."""
+    if factor == 1.0:
+        return wave
+    from fractions import Fraction
+    from scipy.signal import resample_poly
+    f = Fraction(factor).limit_denominator(20)
+    return resample_poly(wave, f.denominator, f.numerator).astype(np.float32)
+
+
+def make_batch(rows, processor, audio, with_labels=True, augment=False):
+    waves = [audio.clip(r) for r in rows]
+    if augment:
+        # A slowed clip must still fit Whisper's 30 s window, else its end
+        # (and the matching words) would be cut off.
+        out = []
+        for w in waves:
+            ok = [f for f in SPEED_FACTORS if len(w) / f <= 30 * SR]
+            out.append(speed_perturb(w, random.choice(ok)))
+        waves = out
     feats = processor.feature_extractor(
-        [audio.clip(r) for r in rows], sampling_rate=SR, return_tensors="pt").input_features
+        waves, sampling_rate=SR, return_tensors="pt").input_features
     if not with_labels:
         return feats, None
     ids = [processor.tokenizer(r["text"]).input_ids[:MAX_LABEL_TOKENS] for r in rows]
@@ -222,6 +252,10 @@ def main():
     ap.add_argument("--tag", default="",
                     help="suffix for output names, so an experiment does not "
                          "overwrite the main run (e.g. --tag lr3e-4)")
+    ap.add_argument("--augment", action="store_true",
+                    help="training-only data augmentation: speed perturbation "
+                         "(0.9/1.0/1.1x per clip per epoch) + SpecAugment "
+                         "(time and frequency masking). Val/test stay unaugmented.")
     ap.add_argument("--note", default="",
                     help="why this run was made / what changed; shown in the "
                          "training log (results/c1_asr_finetune_report.md)")
@@ -252,7 +286,9 @@ def main():
     model.to("cuda")
     audio = AudioCache()
 
-    result = {"model": a.model, "run": run_name, "note": a.note,
+    result = {"model": a.model, "run": run_name, "note": a.note, "augment": (
+                  {"speed": list(SPEED_FACTORS), "spec_augment": SPEC_AUGMENT}
+                  if a.augment else None),
               "started": time.strftime("%Y-%m-%dT%H:%M"), "epochs_max": a.epochs,
               "patience": a.patience, "hf_id": hf_id, "language": a.language,
               "method": "LoRA", "lora_r": a.lora_r, "lr": a.lr,
@@ -274,6 +310,13 @@ def main():
                                       "language": a.language, "data": result["data"],
                                       "baseline_test": result["baseline_test"]})
         log(f"BASELINE test: {result['baseline_test']}", logf)
+
+    # --- SpecAugment (applied by Whisper itself, only in training mode, so
+    # validation loss and test decoding never see masked input) -------------
+    if a.augment:
+        for k, v in SPEC_AUGMENT.items():
+            setattr(model.config, k, v)
+        model.config.apply_spec_augment = True
 
     # --- LoRA ---------------------------------------------------------------
     model.config.use_cache = False
@@ -311,7 +354,7 @@ def main():
         opt.zero_grad(set_to_none=True)
         for i in range(0, len(order), micro):
             chunk = [train[j] for j in order[i:i + micro]]
-            feats, labels = make_batch(chunk, processor, audio)
+            feats, labels = make_batch(chunk, processor, audio, augment=a.augment)
             with torch.autocast("cuda", dtype=torch.bfloat16):
                 out = model(input_features=feats.to("cuda", dtype=torch.bfloat16),
                             labels=labels.to("cuda"))

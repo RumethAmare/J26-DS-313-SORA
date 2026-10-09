@@ -1,0 +1,129 @@
+{
+  "model": "medium",
+  "run": "medium_v4_aug",
+  "note": "Augmentation on medium: speed 0.9/1.0/1.1x + SpecAugment (time 5%, 1 freq band). Same data and settings as medium_v4 (no-augmentation comparison). small_v4_aug improved WER 0.816 -> 0.755.",
+  "augment": {
+    "speed": [
+      0.9,
+      1.0,
+      1.1
+    ],
+    "spec_augment": {
+      "mask_time_prob": 0.05,
+      "mask_time_length": 10,
+      "mask_time_min_masks": 2,
+      "mask_feature_prob": 0.05,
+      "mask_feature_length": 10,
+      "mask_feature_min_masks": 1
+    }
+  },
+  "started": "2026-10-09T15:09",
+  "epochs_max": 10,
+  "patience": 2,
+  "hf_id": "openai/whisper-medium",
+  "language": "en",
+  "method": "LoRA",
+  "lora_r": 32,
+  "lr": 0.001,
+  "batch": {
+    "micro": 4,
+    "accum": 4
+  },
+  "seed": 13,
+  "data": {
+    "train": {
+      "n_recordings": 69,
+      "n_clips": 809,
+      "hours": 3.094,
+      "scripts": {
+        "mixed": 1,
+        "none": 3,
+        "romanized": 14,
+        "unicode": 51
+      }
+    },
+    "val": {
+      "n_recordings": 6,
+      "n_clips": 63,
+      "hours": 0.228,
+      "scripts": {
+        "romanized": 1,
+        "unicode": 5
+      }
+    },
+    "test": {
+      "n_recordings": 10,
+      "n_clips": 111,
+      "hours": 0.443,
+      "scripts": {
+        "romanized": 2,
+        "unicode": 8
+      }
+    }
+  },
+  "best_epoch": 5,
+  "curve": [
+    {
+      "epoch": 0,
+      "val_loss": 2.3794
+    },
+    {
+      "epoch": 1,
+      "train_loss": 1.314,
+      "val_loss": 1.0405,
+      "elapsed_min": 7.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7053,
+      "val_loss": 0.8901,
+      "elapsed_min": 13.7
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.5139,
+      "val_loss": 0.8698,
+      "elapsed_min": 20.3
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.3879,
+      "val_loss": 0.8675,
+      "elapsed_min": 27.0
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.2898,
+      "val_loss": 0.8432,
+      "elapsed_min": 33.6
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.2072,
+      "val_loss": 0.883,
+      "elapsed_min": 40.4
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.1348,
+      "val_loss": 0.9093,
+      "elapsed_min": 47.1
+    }
+  ],
+  "train_minutes": 47.1,
+  "peak_gpu_gib": 3.6,
+  "finetuned_test": {
+    "norm_wer": 0.7896,
+    "raw_wer": 0.8576,
+    "norm_cer": 0.5289,
+    "words_recovered": 2331,
+    "n_ref_words": 3836,
+    "recall_of_ref_words": 0.6077,
+    "output_ratio": 1.292,
+    "substitutions": 1101,
+    "deletions": 404,
+    "insertions": 1524,
+    "decode_s": 282.1
+  },
+  "finished": "2026-10-09T16:01"
+}
