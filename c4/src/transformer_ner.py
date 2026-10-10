@@ -137,6 +137,24 @@ def _load(path: str):
     return tok, model
 
 
+# Span post-processing. Each switch is a general rule about text, not about
+# any recording; each was kept only if it improved the development fold.
+POSTPROCESS = {
+    "whole_words": True,        # a span never ends or starts inside a word
+    "split_sentences": True,    # a name never runs across ". " (except Mr./Dr.)
+    "trim_case_endings": True,  # "නිමල්ට" -> "නිමල්", as in name propagation
+    # label -> minimum mean token confidence. Chosen on the development fold:
+    # F1 is flat for 0.8-0.9, so 0.85 is not a knife-edge value.
+    "min_score": {"PERSON": 0.85, "ADDRESS": 0.85},
+}
+_HONORIFIC_END = ("mr", "mrs", "ms", "dr", "prof", "rev", "st", "no")
+
+
+def _is_word_char(ch: str) -> bool:
+    import unicodedata
+    return unicodedata.category(ch)[0] in "LMN" or ch in "‍‌"
+
+
 class TransformerDetector:
     """PERSON / ADDRESS / ORG / LOCATION from the fine-tuned transformer."""
 
@@ -144,19 +162,22 @@ class TransformerDetector:
         self.path = MODEL_DIR / name
         if not self.path.exists():
             raise FileNotFoundError(f"no model at {self.path}")
+        self._cache: dict[str, list] = {}
 
-    def __call__(self, text: str, preceding: str = "") -> list[Detection]:
+    def raw_spans(self, text: str) -> list[list]:
+        """[start, end, label, confidence] straight from the model (cached)."""
+        if text in self._cache:
+            return self._cache[text]
         import torch
-        if not text.strip():
-            return []
         tok, model = _load(str(self.path))
         enc = tok(text, truncation=True, max_length=512, return_offsets_mapping=True,
                   return_tensors="pt")
         offsets = enc.pop("offset_mapping")[0].tolist()
         with torch.no_grad():
-            pred = model(**enc).logits[0].argmax(-1).tolist()
+            probs = model(**enc).logits[0].softmax(-1)
+        conf, pred = probs.max(-1)
         spans, cur = [], None
-        for (s, e), p in zip(offsets, pred):
+        for (s, e), p, c in zip(offsets, pred.tolist(), conf.tolist()):
             if s == e:
                 continue
             tag = LABELS[p]
@@ -167,18 +188,70 @@ class TransformerDetector:
             # A word piece continuing the current word, or an I- tag, extends it.
             if cur and cur[2] == label and (kind == "I" or s == cur[1]):
                 cur[1] = e
+                cur[4].append(c)
             else:
-                cur = [s, e, label]
+                cur = [s, e, label, None, [c]]
                 spans.append(cur)
+        out = [[s, e, label, sum(cs) / len(cs)] for s, e, label, _, cs in spans]
+        self._cache[text] = out
+        return out
+
+    def __call__(self, text: str, preceding: str = "") -> list[Detection]:
+        if not text.strip():
+            return []
+        cfg = POSTPROCESS
+        pieces = []
+        for s, e, label, score in self.raw_spans(text):
+            if score < cfg["min_score"].get(label, 0.0):
+                continue
+            if cfg["whole_words"]:
+                while s > 0 and _is_word_char(text[s - 1]) and _is_word_char(text[s]):
+                    s -= 1
+                while e < len(text) and _is_word_char(text[e - 1]) and _is_word_char(text[e]):
+                    e += 1
+            parts = [(s, e)]
+            if cfg["split_sentences"] and label == "PERSON":
+                parts = _split_at_sentence(text, s, e)
+            for ps, pe in parts:
+                pieces.append((ps, pe, label, score))
         out = []
-        for s, e, label in spans:
+        for s, e, label, score in pieces:
             while e > s and text[e - 1] in " .,;:?!":
                 e -= 1
             while s < e and text[s] == " ":
                 s += 1
-            if e > s:
-                out.append(Detection(s, e, label, text[s:e], role=ROLE_OF[label], source="xlmr"))
+            if cfg["trim_case_endings"] and label == "PERSON":
+                e = s + _without_case_ending(text[s:e])
+            if e > s and not any(s < o.end and o.start < e for o in out):
+                out.append(Detection(s, e, label, text[s:e], role=ROLE_OF[label],
+                                     source="xlmr", score=round(score, 4)))
         return out
+
+
+def _split_at_sentence(text: str, s: int, e: int) -> list[tuple[int, int]]:
+    """Split a name span at ". " unless the word before the stop is a title."""
+    parts, start = [], s
+    i = text.find(". ", s, e)
+    while i != -1:
+        word = text[start:i].split()[-1].lower() if text[start:i].split() else ""
+        if word not in _HONORIFIC_END:
+            parts.append((start, i))
+            start = i + 2
+        i = text.find(". ", i + 2, e)
+    parts.append((start, e))
+    return [p for p in parts if p[1] > p[0]]
+
+
+def _without_case_ending(span: str) -> int:
+    """Length of a Sinhala name span with a trailing case ending removed."""
+    from resolve import SINHALA_CASE_ENDINGS, _SINHALA
+    words = span.split(" ")
+    last = words[-1]
+    if _SINHALA.search(last):
+        for ending in SINHALA_CASE_ENDINGS:
+            if last.endswith(ending) and len(last) > len(ending) + 1:
+                return len(span) - len(ending)
+    return len(span)
 
 
 def main() -> None:

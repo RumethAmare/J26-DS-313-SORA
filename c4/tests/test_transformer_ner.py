@@ -50,3 +50,20 @@ def test_text_outside_spans_is_o(tokenizer):
 
 def test_label_set_is_bio_over_model_labels():
     assert LABELS[0] == "O" and len(LABELS) == 9
+
+
+# --- Span post-processing (general rules, no model needed) ---------------------
+
+from transformer_ner import _split_at_sentence, _without_case_ending  # noqa: E402
+
+
+def test_names_are_split_at_a_sentence_break_but_not_after_a_title():
+    text = "Perera. Nimal came. Dr. Silva"
+    parts = [text[s:e] for s, e in _split_at_sentence(text, 0, len(text))]
+    assert parts[0] == "Perera" and "Dr. Silva" in parts[-1]
+
+
+def test_sinhala_case_ending_is_trimmed_from_a_name():
+    span = "නිමල් පෙරේරාට"
+    assert span[:_without_case_ending(span)] == "නිමල් පෙරේරා"
+    assert _without_case_ending("Nimal") == len("Nimal")
