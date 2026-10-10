@@ -1,0 +1,11 @@
+E019 X3 — leave-one-set-out CV, collar 0.0, blind. 8 real panel clips.
+
+[R0_c1_shipped] CV pooled DER 21.27  (miss 3.83 fa 5.57 conf 11.86)  per set {'TEST': 7.5, 'TEST2': 24.08, 'TEST3': 23.15}
+   chosen per held-out set: {'TEST': '{"clustering": {"Fa": 0.07, "Fb": 0.8, "threshold": 0.6}, "segmentation": {"min_duration_off": 0.0}}', 'TEST2': '{"clustering": {"Fa": 0.07, "Fb": 0.8, "threshold": 0.6}, "segmentation": {"min_duration_off": 0.0}}', 'TEST3': '{"clustering": {"Fa": 0.07, "Fb": 0.8, "threshold": 0.6}, "segmentation": {"min_duration_off": 0.0}}'}
+   in-sample ORACLE (upper bound, not a result): 21.27 at {"clustering": {"Fa": 0.07, "Fb": 0.8, "threshold": 0.6}, "segmentation": {"min_duration_off": 0.0}}
+   CV per clip: {'IRD_Harshana_Silva': 27.99, 'IRD_Recording_2_IIT': 4.87, 'Yt01': 9.22, 'YT02': 26.09, 'YT03': 44.2, 'YT04': 2.82, 'YT05': 29.55, 'YT07': 22.05}
+
+[X3_c1_vbx_cv] CV pooled DER 21.04  (miss 3.83 fa 5.57 conf 11.63)  per set {'TEST': 10.4, 'TEST2': 23.69, 'TEST3': 22.07}
+   chosen per held-out set: {'TEST': '{"clustering": {"Fa": 0.07, "Fb": 0.4, "threshold": 0.5}, "segmentation": {"min_duration_off": 0.0}}', 'TEST2': '{"clustering": {"Fa": 0.07, "Fb": 0.4, "threshold": 0.75}, "segmentation": {"min_duration_off": 0.0}}', 'TEST3': '{"clustering": {"Fa": 0.07, "Fb": 0.2, "threshold": 0.8}, "segmentation": {"min_duration_off": 0.0}}'}
+   in-sample ORACLE (upper bound, not a result): 20.38 at {"clustering": {"Fa": 0.07, "Fb": 0.4, "threshold": 0.75}, "segmentation": {"min_duration_off": 0.0}}
+   CV per clip: {'IRD_Harshana_Silva': 27.99, 'IRD_Recording_2_IIT': 8.14, 'Yt01': 7.86, 'YT02': 24.3, 'YT03': 47.8, 'YT04': 2.82, 'YT05': 26.87, 'YT07': 22.3}
