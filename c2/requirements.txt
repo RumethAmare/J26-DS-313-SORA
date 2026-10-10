@@ -21,6 +21,7 @@ datasets>=2.20.0
 # --- Phase 2: QLoRA summarizer on a small open LLM ---------------------------
 peft>=0.12.0
 bitsandbytes>=0.43.0
+rouge_score>=0.1.2        # ROUGE-L for summaries
 
 # --- Phase 3: learned translation metric -------------------------------------
 # unbabel-comet          # COMET; ~2 GB model download, install when needed
