@@ -9,3 +9,4 @@ matplotlib
 soundfile
 pyroomacoustics      # synthetic data (simconv.py)
 gradio               # demo app
+pytest               # app unit tests
