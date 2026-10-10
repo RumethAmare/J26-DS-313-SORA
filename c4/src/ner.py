@@ -193,6 +193,18 @@ class ModelDetector:
         return out
 
 
+def default_model() -> str:
+    """The transformer when it has been trained, otherwise the spaCy model."""
+    return "xlmr_both" if (MODEL_DIR / "xlmr_both").exists() else "both"
+
+
+def _learned_model(name: str):
+    if name.startswith("xlmr"):
+        from transformer_ner import TransformerDetector
+        return TransformerDetector(name)
+    return ModelDetector(name)
+
+
 class HybridDetector:
     """
     Rules for structured identifiers, the model for everything else. Where the
@@ -201,7 +213,17 @@ class HybridDetector:
     """
 
     def __init__(self, name: str):
-        self.model = ModelDetector(name)
+        # "both" = spaCy model; "xlmr_both" = transformer; "a+b" = both models,
+        # their predictions combined (the longer span wins where they overlap).
+        self.models = [_learned_model(n) for n in name.split("+")]
+
+    def model(self, text: str, preceding: str = "") -> list[Detection]:
+        found = [d for m in self.models for d in m(text, preceding)]
+        kept: list[Detection] = []
+        for d in sorted(found, key=lambda d: -(d.end - d.start)):
+            if all(d.end <= k.start or d.start >= k.end for k in kept):
+                kept.append(d)
+        return kept
 
     def __call__(self, text: str, preceding: str = "") -> list[Detection]:
         ruled = rule_detect(text, preceding)
