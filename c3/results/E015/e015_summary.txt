@@ -1,0 +1,23 @@
+===== E015 - everything re-scored on TEST2 (Yt01, YT02, YT03; 13.8 min real), collar 0.0 =====
+community-1 zero-shot here: 24.08  (local drafts on 4 Oct: 24.08; a gap = version drift)
+
+part arm               seeds    mean     min     max   miss     fa   conf  per clip (mean)
+A big                      3   24.13   23.74   24.43   3.94   7.00  13.19  {'Yt01': 9.9, 'YT02': 27.3, 'YT03': 41.2}
+A pretrained               1   23.70   23.70   23.70   3.78   8.60  11.31  {'Yt01': 8.2, 'YT02': 25.9, 'YT03': 44.6}
+A small                    3   25.27   23.24   28.15   4.70   8.05  12.52  {'Yt01': 9.1, 'YT02': 26.8, 'YT03': 48.4}
+B big                      3   22.79   21.58   23.97   4.49   5.25  13.05  {'Yt01': 10.8, 'YT02': 26.4, 'YT03': 35.7}
+B c1_oracle                1   36.68   36.68   36.68   3.78   8.60  24.29  {'Yt01': 33.3, 'YT02': 31.1, 'YT03': 51.6}
+B c1_zeroshot              1   24.08   24.08   24.08   3.78   8.60  11.69  {'Yt01': 9.2, 'YT02': 26.1, 'YT03': 44.2}
+B small                    3   25.09   23.63   27.07   4.93   7.57  12.58  {'Yt01': 9.7, 'YT02': 27.1, 'YT03': 46.1}
+C synth                    3   29.30   28.40   29.78   4.64  10.71  13.95  {'Yt01': 9.6, 'YT02': 28.6, 'YT03': 61.7}
+C synth_real               3   27.21   26.78   27.71   3.77   9.58  13.86  {'Yt01': 9.9, 'YT02': 27.5, 'YT03': 54.2}
+D synth_real               4   25.09   24.39   26.28   3.72   8.96  12.40  {'Yt01': 9.2, 'YT02': 26.2, 'YT03': 48.4}
+E panel_real               3   26.45   25.47   27.08   4.32   8.36  13.77  {'Yt01': 9.5, 'YT02': 26.6, 'YT03': 53.2}
+F c1_tuned                 1   24.06   24.06   24.06   3.78   8.60  11.67  {'Yt01': 7.9, 'YT02': 24.3, 'YT03': 49.4}
+G synth                    3   25.54   25.26   25.95   4.72   8.71  12.11  {'Yt01': 9.3, 'YT02': 26.2, 'YT03': 50.1}
+
+Fine-tuned models below community-1: 6 of 28.
+R1 (pre-registered): OVERTURNED - every seed beats community-1 for: B big
+R2 (pre-registered, E011 vs E010 synth+real): REPLICATES - gentler is better (p = 0.05)
+R3 (pre-registered, E013 clustering re-tune): 24.06 vs 24.08 -> NO CHANGE
+D1 (ORACLE diagnostic, never a headline): told the true count -> 36.68 vs 24.08
