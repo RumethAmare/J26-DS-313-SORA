@@ -3,7 +3,7 @@ Live demonstration of C4 for the PP1 panel: a local web page, fully offline.
 
     python demo.py                 # then open http://127.0.0.1:8765
 
-Paste any Sinhala-English text, or load a synthetic recording, and see:
+Type or paste any Sinhala-English text and see:
   * every detected identifier highlighted by type
   * the redacted, shareable text
   * each entity with its placeholder, label and role -- one person keeps
@@ -18,11 +18,9 @@ import json
 import time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-from corpus import load_synthetic
 from redact import redact_recording
 
 _DETECTOR = None
-_RECORDINGS = {}
 
 
 def detector():
@@ -114,9 +112,6 @@ th{color:var(--mute);font-weight:600;font-size:12px;text-transform:uppercase}
   <textarea id="text" placeholder="Paste Singlish / Sinhala / English text here...">hello, mama Amal, Seylan Bank eken kathaa karanne. Mage nama Nimal Perera, NIC eka 953201456V, mobile number eka binduwai hatai hatai ekai dekai thunai hatharai pahai hayai hatha. මගේ නම නිමල් පෙරේරා, ලිපිනය 24, ගාලු පාර, දෙහිවල.</textarea>
   <div class="row">
     <button class="primary" id="b1" onclick="runText()">Redact this text</button>
-    <span style="color:var(--mute)">or a whole synthetic call (transcript + English + Sinhala + summary):</span>
-    <select id="rec" title="Synthetic test calls: invented people and numbers, never used in training"></select>
-    <button id="b2" onclick="runRec()">Load call &amp; redact</button>
     <span id="status" style="color:var(--mute)"></span>
   </div>
 </div>
@@ -137,7 +132,7 @@ function highlight(t,spans){let o="",c=0;for(const s of spans){if(s.start<c)cont
  return o+esc(t.slice(c))}
 function phs(t){return esc(t).replace(/\[[A-Z]+_\d+\]/g,m=>`<span class="ph">${m}</span>`)}
 async function post(body,title){
- const st=document.getElementById("status"),btns=[document.getElementById("b1"),document.getElementById("b2")];
+ const st=document.getElementById("status"),btns=[document.getElementById("b1")];
  btns.forEach(b=>b.disabled=true);st.className="";st.textContent="Working…";
  try{const r=await fetch("/api/redact",{method:"POST",body:JSON.stringify(body)});
   if(!r.ok)throw new Error(await r.text());
@@ -146,7 +141,6 @@ async function post(body,title){
  catch(e){st.className="bad";st.textContent="Error: "+e.message}
  finally{btns.forEach(b=>b.disabled=false)}}
 function runText(){post({text:document.getElementById("text").value},"Your text")}
-function runRec(){const r=document.getElementById("rec").value;post({recording:r},"Synthetic call "+r)}
 function show(d){
  document.getElementById("heading").textContent=`${d.title} — ${d.docs.length} document${d.docs.length>1?"s":""}`;
  const people=d.entities.filter(e=>e.label==="PERSON"),linked=people.filter(e=>e.scripts==="Latin + Sinhala").length;
@@ -155,7 +149,7 @@ function show(d){
  document.getElementById("ebody").innerHTML=d.entities.map((e,i)=>`<tr><td><span class="sw" style="background:${COLORS[i%COLORS.length]}"></span><span class="ph">${e.placeholder}</span></td><td>${LABEL[e.label]||e.label}</td><td>${e.role||"—"}</td><td>${e.scripts}</td><td>${e.mentions}</td></tr>`).join("");
  document.getElementById("dbody").innerHTML=d.docs.map(x=>`<div class="doc"><div class="kind">${x.kind}</div><div class="pane">${highlight(x.original,x.spans)}</div><div class="pane">${phs(x.redacted)}</div></div>`).join("");
  for(const id of["summary","entities","docs"])document.getElementById(id).hidden=false}
-fetch("/api/recordings").then(r=>r.json()).then(l=>{document.getElementById("rec").innerHTML=l.map(x=>`<option>${x}</option>`).join("")});
+
 </script></body></html>"""
 
 
@@ -170,8 +164,6 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == "/":
             self._send(200, PAGE.encode("utf-8"), "text/html; charset=utf-8")
-        elif self.path == "/api/recordings":
-            self._send(200, json.dumps(sorted(_RECORDINGS)).encode(), "application/json")
         else:
             self._send(404, b"not found", "text/plain")
 
@@ -179,11 +171,8 @@ class Handler(BaseHTTPRequestHandler):
         if self.path != "/api/redact":
             return self._send(404, b"not found", "text/plain")
         body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))) or b"{}")
-        if body.get("recording") in _RECORDINGS:
-            rid = body["recording"]
-            texts = _RECORDINGS[rid]
-        else:
-            rid, texts = "input", {"input_transcript_u001_v1": body.get("text", "")}
+        # Only the text typed on the page is processed; no stored data is loaded.
+        rid, texts = "input", {"input_transcript_u001_v1": body.get("text", "")}
         try:
             result = analyse(texts, rid)
         except Exception as exc:                      # shown on the page, not swallowed
@@ -200,8 +189,6 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="C4 live demo")
     ap.add_argument("--port", type=int, default=8765)
     args = ap.parse_args()
-    for rec in load_synthetic("test")[:20]:
-        _RECORDINGS[rec.rid] = rec.texts
     print("loading models (about a minute) ...")
     analyse({"warm_transcript_u001_v1": "mage nama Nimal Perera, NIC eka 953201456V."}, "warm-up")
     print(f"C4 demo running offline at http://127.0.0.1:{args.port}  (Ctrl+C to stop)")
