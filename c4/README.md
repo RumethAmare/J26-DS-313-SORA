@@ -106,12 +106,36 @@ given seed.
 
 ## Running it
 
+**Live demo for the panel** (offline, local web page):
+
+    python src/demo.py                                   # open http://127.0.0.1:8765
+
+**End to end — C2 output in, shareable output and re-identification map out**
+(FR1, FR9, FR8):
+
+    python src/pipeline.py --recording J26DS313_R0022 --offline-check --measure
+    python src/pipeline.py --c2-dir <dir> --c1-dir <dir> --rid <recording id>
+
+Writes `out/<rid>.redacted.json` and `out/<rid>.detections.jsonl` (both
+git-ignored: system output on real data may still hold a missed identifier)
+and `reid_map/<rid>.reid.json`. `--offline-check` blocks all network access
+(NFR1); `--measure` reports latency and peak memory (NFR4, NFR5).
+
+**Training** — complete real recordings only (C1, C2 and C4 present, at least
+95% of spans matching their text), plus the synthetic train split; the five
+held-out recordings are never used:
+
+    python src/ner.py train --data both                  # PERSON/ADDRESS/ORG model (~30 min, CPU)
+    python src/roles.py train                            # person-role classifier (FR7)
+    python src/roles.py evaluate
+
+**Individual parts:**
+
     python src/redact.py --text "mage NIC eka 953201456V, number eka 0771234567"
     python src/redact.py --synthetic SYN_T0002 --all-docs --save-map
     python src/evaluate.py --source synthetic-test --system rules+propagation
     python src/evaluate.py --source real-eval --labels proposal --save
     python src/resolve.py --source real-eval --save      # cross-script linking + ablation
-    python src/ner.py train --data both                  # PERSON/ADDRESS/ORG model (~20 min, CPU)
     python src/evaluate.py --source real-eval --system hybrid:both --labels proposal
     python src/redact.py --synthetic SYN_T0002 --model both
 
