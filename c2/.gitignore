@@ -19,3 +19,7 @@ models/
 data/corpus_copy/
 
 .venv/
+
+# Train/dev/test splits built by src/prepare_data.py. Rebuildable, and they
+# carry un-redacted transcripts (names, NICs, phone numbers), same as c4.
+data/*.jsonl
