@@ -1,0 +1,37 @@
+{
+  "batch": {
+    "IRD_Harshana_Silva": {
+      "audio_s": 37.6,
+      "proc_s": 37.5,
+      "rt": 1.0,
+      "speakers": 2,
+      "der": 27.99
+    },
+    "IRD_Recording_2_IIT": {
+      "audio_s": 266.1,
+      "proc_s": 345.6,
+      "rt": 0.77,
+      "speakers": 6,
+      "der": 4.87
+    },
+    "R0046": {
+      "audio_s": 396.4,
+      "proc_s": 499.6,
+      "rt": 0.79,
+      "speakers": 2,
+      "der": 21.95
+    }
+  },
+  "live": {
+    "5": {
+      "mean": 1.39,
+      "worst": 1.94,
+      "verdict": "yes, comfortably"
+    },
+    "10": {
+      "mean": 1.37,
+      "worst": 1.94,
+      "verdict": "yes, comfortably"
+    }
+  }
+}
