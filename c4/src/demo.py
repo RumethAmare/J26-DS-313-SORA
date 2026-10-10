@@ -89,6 +89,7 @@ main{max-width:1280px;margin:0 auto;padding:20px 28px 40px}
 textarea{width:100%;min-height:96px;border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit;resize:vertical}
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:10px}
 button,select{font:inherit;padding:8px 14px;border-radius:8px;border:1px solid var(--line);background:#fff;cursor:pointer}
+button:disabled{opacity:.55;cursor:wait}
 button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
 .stats{display:flex;gap:22px;flex-wrap:wrap;color:var(--mute);font-size:13px}
 .stats b{color:var(--ink);font-size:18px;display:block}
@@ -112,12 +113,15 @@ th{color:var(--mute);font-weight:600;font-size:12px;text-transform:uppercase}
 <div class="card">
   <textarea id="text" placeholder="Paste Singlish / Sinhala / English text here...">hello, mama Amal, Seylan Bank eken kathaa karanne. Mage nama Nimal Perera, NIC eka 953201456V, mobile number eka binduwai hatai hatai ekai dekai thunai hatharai pahai hayai hatha. මගේ නම නිමල් පෙරේරා, ලිපිනය 24, ගාලු පාර, දෙහිවල.</textarea>
   <div class="row">
-    <button class="primary" onclick="runText()">Redact text</button>
-    <span style="color:var(--mute)">or load a recording</span>
-    <select id="rec"></select><button onclick="runRec()">Load &amp; redact</button>
+    <button class="primary" id="b1" onclick="runText()">Redact this text</button>
+    <span style="color:var(--mute)">or a whole synthetic call (transcript + English + Sinhala + summary):</span>
+    <select id="rec" title="Synthetic test calls: invented people and numbers, never used in training"></select>
+    <button id="b2" onclick="runRec()">Load call &amp; redact</button>
+    <span id="status" style="color:var(--mute)"></span>
   </div>
 </div>
 <div class="card" id="summary" hidden>
+  <h2 id="heading" style="margin:0 0 10px;font-size:17px"></h2>
   <div class="stats" id="stats"></div>
   <div class="legend" id="legend" style="margin-top:10px"></div>
 </div>
@@ -132,10 +136,19 @@ function highlight(t,spans){let o="",c=0;for(const s of spans){if(s.start<c)cont
  o+=esc(t.slice(c,s.start))+`<span class="tag" style="background:${COLORS[s.entity%COLORS.length]}" title="${s.placeholder}">${esc(t.slice(s.start,s.end))}<sub>${s.label}</sub></span>`;c=s.end}
  return o+esc(t.slice(c))}
 function phs(t){return esc(t).replace(/\[[A-Z]+_\d+\]/g,m=>`<span class="ph">${m}</span>`)}
-async function post(body){const r=await fetch("/api/redact",{method:"POST",body:JSON.stringify(body)});show(await r.json())}
-function runText(){post({text:document.getElementById("text").value})}
-function runRec(){post({recording:document.getElementById("rec").value})}
+async function post(body,title){
+ const st=document.getElementById("status"),btns=[document.getElementById("b1"),document.getElementById("b2")];
+ btns.forEach(b=>b.disabled=true);st.className="";st.textContent="Working…";
+ try{const r=await fetch("/api/redact",{method:"POST",body:JSON.stringify(body)});
+  if(!r.ok)throw new Error(await r.text());
+  const d=await r.json();d.title=title;show(d);st.textContent="Done.";
+  document.getElementById("summary").scrollIntoView({behavior:"smooth"})}
+ catch(e){st.className="bad";st.textContent="Error: "+e.message}
+ finally{btns.forEach(b=>b.disabled=false)}}
+function runText(){post({text:document.getElementById("text").value},"Your text")}
+function runRec(){const r=document.getElementById("rec").value;post({recording:r},"Synthetic call "+r)}
 function show(d){
+ document.getElementById("heading").textContent=`${d.title} — ${d.docs.length} document${d.docs.length>1?"s":""}`;
  const people=d.entities.filter(e=>e.label==="PERSON"),linked=people.filter(e=>e.scripts==="Latin + Sinhala").length;
  document.getElementById("stats").innerHTML=`<div><b>${d.entities.length}</b>entities redacted</div><div><b>${people.length}</b>people</div><div><b>${linked}</b>linked across scripts</div><div><b>${d.docs.length}</b>documents</div><div><b>${d.ms} ms</b>processing</div><div><b class="${d.leaks?"bad":"ok"}">${d.leaks?d.leaks+" leak(s)":"0 leaks"}</b>leak check</div>`;
  document.getElementById("legend").innerHTML="Same colour = same entity, in every document and script.";
@@ -171,7 +184,12 @@ class Handler(BaseHTTPRequestHandler):
             texts = _RECORDINGS[rid]
         else:
             rid, texts = "input", {"input_transcript_u001_v1": body.get("text", "")}
-        self._send(200, json.dumps(analyse(texts, rid), ensure_ascii=False).encode("utf-8"),
+        try:
+            result = analyse(texts, rid)
+        except Exception as exc:                      # shown on the page, not swallowed
+            return self._send(500, f"{type(exc).__name__}: {exc}".encode("utf-8"),
+                              "text/plain; charset=utf-8")
+        self._send(200, json.dumps(result, ensure_ascii=False).encode("utf-8"),
                    "application/json; charset=utf-8")
 
     def log_message(self, *args):
@@ -184,8 +202,8 @@ def main() -> None:
     args = ap.parse_args()
     for rec in load_synthetic("test")[:20]:
         _RECORDINGS[rec.rid] = rec.texts
-    print("loading model ...")
-    detector()
+    print("loading models (about a minute) ...")
+    analyse({"warm_transcript_u001_v1": "mage nama Nimal Perera, NIC eka 953201456V."}, "warm-up")
     print(f"C4 demo running offline at http://127.0.0.1:{args.port}  (Ctrl+C to stop)")
     ThreadingHTTPServer(("127.0.0.1", args.port), Handler).serve_forever()
 
