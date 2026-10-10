@@ -48,6 +48,7 @@ class Detection:
     ambiguous: bool = False         # route to human verification
     source: str = "rule"
     entity_id: str = ""             # set by cross-script resolution (PERSON)
+    score: float = 1.0              # model confidence; rules are certain
 
     @property
     def redact(self) -> bool:
@@ -228,6 +229,21 @@ def classify_digits(digits: str, ctx: str | None, letter: str = "") -> tuple[str
 # optional trailing V/X (old NIC). Must not touch letters, slashes or a
 # decimal point, so dates (1995.08.12) and references (CEB/KW/12) are left
 # for their own patterns.
+_DOTTED = re.compile(r"(?<![\w.])\d{1,4}(?:\.\d{1,4}){2,}(?![\w]|\.\d)")
+
+
+def _looks_like_date(token: str) -> bool:
+    groups = token.split(".")
+    return len(groups) == 3 and any(len(g) == 4 for g in groups)
+
+
+def _read_out(span: str) -> bool:
+    """Spoken digit by digit: single digits or digit words, one per token."""
+    tokens = span.replace(",", " ").split()
+    return len(tokens) >= 7 and all(len(t) == 1 and t.isdigit() or not t.isdigit()
+                                    for t in tokens)
+
+
 _DIGIT_RUN = re.compile(
     r"(?<![\w/.\-+])(\+)?(\d+(?:[ \-]\d+)*)(?:( ?)([VvXx]))?(?![\w/\-]|[.,]\d)"
 )
@@ -403,6 +419,13 @@ def _numeric_detections(text: str, preceding: str = "") -> list[Detection]:
     for s, e, digits, ambiguous in find_number_word_runs(text, min_digits=4):
         candidates.append((s, e, digits, "", ambiguous))
 
+    # Dotted groups: "123.456.78.90". Dates are excluded (they have their own
+    # patterns and at most 8 digits in three groups with a year).
+    for m in _DOTTED.finditer(text):
+        digits = re.sub(r"\D", "", m.group())
+        if len(digits) >= 8 and not _looks_like_date(m.group()):
+            candidates.append((m.start(), m.end(), digits, "", False))
+
     for start, end, digits, letter, amb in candidates:
         prefix_start = _with_prefix(text, start)
         if prefix_start is not None and len(digits) >= 4:
@@ -416,6 +439,11 @@ def _numeric_detections(text: str, preceding: str = "") -> list[Detection]:
             continue
         ctx = context_class(text, start, preceding=preceding, end=end)
         result = classify_digits(digits, ctx, letter)
+        if result is None and ctx != "AMOUNT" and len(digits) >= 7 and _read_out(text[start:end]):
+            # People say amounts as numbers ("twenty-five thousand") but read an
+            # identifier out digit by digit. A digit-by-digit run is an
+            # identifier even with no keyword; ACCOUNT is the safe default.
+            result = ("ACCOUNT", digits, True)
         if result is None:
             continue
         label, value, ambiguous = result

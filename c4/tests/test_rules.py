@@ -229,3 +229,26 @@ def test_full_recall_on_synthetic_structured_identifiers():
                     if (r["start_char"], r["end_char"], r["label"]) not in pred:
                         missed.append((r["label"], r["surface"]))
     assert not missed, missed[:10]
+
+
+# --- Identifier formats added after development-fold error analysis -----------
+
+def test_dotted_account_number():
+    d = only("my account is 123.456.78.90 thamai")
+    assert (d.label, d.surface) == ("ACCOUNT", "123.456.78.90")
+
+
+def test_dotted_date_is_still_a_date():
+    assert only("date of birth 12.08.1995").label == "DOB"
+
+
+@pytest.mark.parametrize("text", ["eka 1 2 3 4 5 6 7 8 kiyala",
+                                  "hathara paha haya hatha ata namaya binduwa eka"])
+def test_number_read_out_digit_by_digit_is_an_identifier(text):
+    """Identifiers are read digit by digit; amounts are said as numbers."""
+    assert only(text).label == "ACCOUNT"
+
+
+@pytest.mark.parametrize("text", ["rupiyal 2 5 0 0 0 0 0 gewwa", "1,500,000 rupees"])
+def test_amounts_stay_visible(text):
+    assert detect(text) == []
