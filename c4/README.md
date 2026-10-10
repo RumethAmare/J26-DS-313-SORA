@@ -125,7 +125,8 @@ and `reid_map/<rid>.reid.json`. `--offline-check` blocks all network access
 95% of spans matching their text), plus the synthetic train split; the five
 held-out recordings are never used:
 
-    python src/ner.py train --data both                  # PERSON/ADDRESS/ORG model (~30 min, CPU)
+    python src/transformer_ner.py train --data both      # final XLM-RoBERTa model (~2 h, CPU, local only)
+    python src/ner.py train --data both                  # spaCy model: comparison / fallback (~30 min)
     python src/roles.py train                            # person-role classifier (FR7)
     python src/roles.py evaluate
 
@@ -136,7 +137,7 @@ held-out recordings are never used:
     python src/evaluate.py --source synthetic-test --system rules+propagation
     python src/evaluate.py --source real-eval --labels proposal --save
     python src/resolve.py --source real-eval --save      # cross-script linking + ablation
-    python src/evaluate.py --source real-eval --system pipeline:both --labels proposal
+    python src/evaluate.py --source real-eval --system pipeline:xlmr_both --labels proposal
     python src/redact.py --synthetic SYN_T0002 --model both
 
 Presidio comparison (SO2) — needs `python -m spacy download en_core_web_lg` once:

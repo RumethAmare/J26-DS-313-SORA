@@ -35,7 +35,7 @@ Run with: `python src/pipeline.py --recording <rid>`
 flowchart TB
     IN[C2 record + summary<br/>C1 transcript] --> LOAD[corpus.py<br/>reads every C2 format]
     LOAD --> RULES[rules.py + numerals.py<br/>NIC · PHONE · ACCOUNT · DOB · EMAIL<br/>spoken digits, number words]
-    LOAD --> NER[ner.py<br/>spaCy NER model<br/>PERSON · ADDRESS · ORG]
+    LOAD --> NER[transformer_ner.py<br/>XLM-RoBERTa, fine-tuned on CPU<br/>PERSON · ADDRESS · ORG]
     RULES --> HYB[Hybrid detector<br/>rules win on overlap]
     NER --> HYB
     HYB --> PROP[Propagation<br/>a known identifier is redacted<br/>wherever it recurs]
@@ -53,7 +53,8 @@ flowchart TB
 |---|---|---|
 | `numerals.py` | decode / encode spoken Sinhala, romanised and English numbers | FR3, FR4 |
 | `rules.py` | structured identifiers by format and keyword context | SO3, FR4, NFR7 |
-| `ner.py` | learned PERSON / ADDRESS / ORG detection; hybrid with the rules | SO4, FR2 |
+| `transformer_ner.py` | fine-tuned XLM-RoBERTa for PERSON / ADDRESS / ORG (the final model) | SO4, FR2 |
+| `ner.py` | spaCy model (comparison and fallback); hybrid detector combining model and rules | SO4, FR2 |
 | `resolve.py` | cross-script entity resolution | SO5, FR5 (Contribution 2) |
 | `roles.py` | person-role classification | FR7 |
 | `redact.py` | consistent placeholders, propagation (exact and cross-script names), leak check, re-id map | FR6, FR8, NFR2, NFR6 |
@@ -75,7 +76,8 @@ flowchart TB
 | Choice | Reason |
 |---|---|
 | **Rules for structured identifiers** | Fixed Sri Lankan formats (NIC, phone) are learnable without data and must be editable without retraining (NFR7). |
-| **spaCy CNN NER on CPU** | Trains in about 30 minutes on a laptop with no GPU. The proposal's xlm-roberta-base needed 110–130 s per step on CPU and stays the GPU upgrade path. |
+| **XLM-RoBERTa, fine-tuned on CPU** | Pre-trained on Sinhala; finds Sinhala names the spaCy CNN misses. Freezing the word-embedding table cut a training step from 75 s to 4 s, so it trains locally and no un-consented recording leaves the laptop. |
+| **spaCy CNN (comparison)** | Trains in about 30 minutes; kept as the fallback and for the synthetic-data ablation. |
 | **Transliteration + phonetic similarity** for linking | No parallel name data exists; a romaniser plus phonetic keys works offline with no training. |
 | **Logistic regression** for roles | Small labelled set (203 real people); interpretable features. |
 | **Python standard library web server** for the demo | No internet and no extra dependencies at PP1. |

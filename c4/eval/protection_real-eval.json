@@ -1,10 +1,11 @@
 {
+  "model": "xlmr_both",
   "gold_personal_spans": 258,
-  "fully_hidden": 212,
-  "partly_hidden": 10,
-  "fully_exposed": 36,
-  "protection_rate_full": 0.8217,
-  "protection_rate_full_or_partial": 0.8605,
+  "fully_hidden": 242,
+  "partly_hidden": 16,
+  "fully_exposed": 0,
+  "protection_rate_full": 0.938,
+  "protection_rate_full_or_partial": 1.0,
   "per_label": {
     "ACCOUNT": {
       "spans": 29,
@@ -13,7 +14,7 @@
     },
     "ADDRESS": {
       "spans": 16,
-      "fully_hidden": 13,
+      "fully_hidden": 16,
       "partly": 0
     },
     "DOB": {
@@ -33,8 +34,8 @@
     },
     "PERSON": {
       "spans": 153,
-      "fully_hidden": 117,
-      "partly": 3
+      "fully_hidden": 144,
+      "partly": 9
     },
     "PHONE": {
       "spans": 30,
