@@ -1,10 +1,10 @@
 {
   "gold_personal_spans": 258,
-  "fully_hidden": 178,
-  "partly_hidden": 7,
-  "fully_exposed": 73,
-  "protection_rate_full": 0.6899,
-  "protection_rate_full_or_partial": 0.7171,
+  "fully_hidden": 212,
+  "partly_hidden": 10,
+  "fully_exposed": 36,
+  "protection_rate_full": 0.8217,
+  "protection_rate_full_or_partial": 0.8605,
   "per_label": {
     "ACCOUNT": {
       "spans": 29,
@@ -33,8 +33,8 @@
     },
     "PERSON": {
       "spans": 153,
-      "fully_hidden": 83,
-      "partly": 0
+      "fully_hidden": 117,
+      "partly": 3
     },
     "PHONE": {
       "spans": 30,

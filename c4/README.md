@@ -136,7 +136,7 @@ held-out recordings are never used:
     python src/evaluate.py --source synthetic-test --system rules+propagation
     python src/evaluate.py --source real-eval --labels proposal --save
     python src/resolve.py --source real-eval --save      # cross-script linking + ablation
-    python src/evaluate.py --source real-eval --system hybrid:both --labels proposal
+    python src/evaluate.py --source real-eval --system pipeline:both --labels proposal
     python src/redact.py --synthetic SYN_T0002 --model both
 
 Presidio comparison (SO2) — needs `python -m spacy download en_core_web_lg` once:

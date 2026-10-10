@@ -39,7 +39,8 @@ flowchart TB
     RULES --> HYB[Hybrid detector<br/>rules win on overlap]
     NER --> HYB
     HYB --> PROP[Propagation<br/>a known identifier is redacted<br/>wherever it recurs]
-    PROP --> RES[resolve.py<br/>cross-script entity resolution<br/>Fernando = ප්‍රනාන්දු]
+    PROP --> NAMES[Cross-script name propagation<br/>a found name is found again in the<br/>other script, case or inflection]
+    NAMES --> RES[resolve.py<br/>cross-script entity resolution<br/>Fernando = ප්‍රනාන්දු]
     RES --> ROLE[roles.py<br/>private individual vs<br/>organisation representative]
     ROLE --> RED[redact.py<br/>one placeholder per entity]
     RED --> LEAK{Leak check}
@@ -55,7 +56,7 @@ flowchart TB
 | `ner.py` | learned PERSON / ADDRESS / ORG detection; hybrid with the rules | SO4, FR2 |
 | `resolve.py` | cross-script entity resolution | SO5, FR5 (Contribution 2) |
 | `roles.py` | person-role classification | FR7 |
-| `redact.py` | consistent placeholders, propagation, leak check, re-id map | FR6, FR8, NFR2, NFR6 |
+| `redact.py` | consistent placeholders, propagation (exact and cross-script names), leak check, re-id map | FR6, FR8, NFR2, NFR6 |
 | `pipeline.py` | end-to-end command; offline guard; latency and memory | FR1, FR9, NFR1, NFR4, NFR5 |
 | `demo.py` | local web demo for the panel | — |
 

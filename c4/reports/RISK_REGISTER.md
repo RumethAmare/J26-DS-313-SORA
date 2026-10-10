@@ -6,11 +6,11 @@ Likelihood and impact are rated High (H), Medium (M) or Low (L).
 
 | # | Risk | L | I | Mitigation | Status |
 |---|---|---|---|---|---|
-| 1 | **Missed identifier is disclosed** in shared output | M | H | Recall is the primary metric (NFR3). Known identifiers are propagated to every occurrence, a leak check runs on every output, and system output on real data is never committed. | Mitigated; PERSON recall 0.497 remains the main gap |
+| 1 | **Missed identifier is disclosed** in shared output | M | H | Recall is the primary metric (NFR3). Known identifiers are propagated to every occurrence, a leak check runs on every output, and system output on real data is never committed. | Mitigated; 82% of personal data hidden end to end, names 76% |
 | 2 | **Re-identification map leaks** (it reverses redaction) | L | H | Written only to git-ignored storage; the code refuses any path git would commit; `*.reid.json` is blocked repo-wide (NFR2). | Mitigated, tested |
-| 3 | **Real corpus too small or still being built** | H | H | Built synthetic-first with a frozen held-out synthetic test split. Trains on complete real recordings only. Synthetic + real beats real only by +0.109 F1. | Mitigated |
+| 3 | **Real corpus too small or still being built** | H | H | Built synthetic-first with a frozen held-out synthetic test split. Trains on complete real recordings only. Synthetic + real beats real only by +0.042 F1 (0.657 → 0.699). | Mitigated |
 | 4 | **Annotation quality** in the shared corpus | H | M | Validator with 9 checks; deterministic fix script for the C4 layer; open items reported to the team; a second-member review is required by the contract. | In progress |
-| 5 | **No GPU** for the proposal's transformer (SO4) | H | M | CPU spaCy model meets both F1 targets (0.699 overall, 0.639 PERSON). Transformer fine-tuning planned on Colab behind the same interface. | Mitigated for PP1 |
+| 5 | **No GPU** for the proposal's transformer (SO4) | H | M | CPU pipeline meets both F1 targets (0.755 overall, 0.757 PERSON). Transformer fine-tuning planned on Colab behind the same interface. | Mitigated for PP1 |
 | 6 | **Upstream format drift** (C2 output changes shape) | H | M | Loader reads all 7 translation and 5 summary layouts found; each layout has a test; unusable rows are reported, not guessed. | Mitigated |
 | 7 | **Small held-out set** (5 recordings, 289 spans) makes scores noisy | H | M | Strict matching, per-label and per-script reporting, cross-validation for roles; re-evaluate as the corpus grows. | Accepted; re-evaluate |
 | 8 | **Cross-script linking errors** merge two people | L | M | Weakest-token scoring, male/female name rule, shared-surname rule. Pair precision 1.000 on held-out and tuning data. | Mitigated |
