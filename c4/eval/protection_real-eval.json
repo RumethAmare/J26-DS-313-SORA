@@ -1,0 +1,45 @@
+{
+  "gold_personal_spans": 258,
+  "fully_hidden": 178,
+  "partly_hidden": 7,
+  "fully_exposed": 73,
+  "protection_rate_full": 0.6899,
+  "protection_rate_full_or_partial": 0.7171,
+  "per_label": {
+    "ACCOUNT": {
+      "spans": 29,
+      "fully_hidden": 22,
+      "partly": 7
+    },
+    "ADDRESS": {
+      "spans": 16,
+      "fully_hidden": 13,
+      "partly": 0
+    },
+    "DOB": {
+      "spans": 12,
+      "fully_hidden": 12,
+      "partly": 0
+    },
+    "EMAIL": {
+      "spans": 3,
+      "fully_hidden": 3,
+      "partly": 0
+    },
+    "NIC": {
+      "spans": 15,
+      "fully_hidden": 15,
+      "partly": 0
+    },
+    "PERSON": {
+      "spans": 153,
+      "fully_hidden": 83,
+      "partly": 0
+    },
+    "PHONE": {
+      "spans": 30,
+      "fully_hidden": 30,
+      "partly": 0
+    }
+  }
+}

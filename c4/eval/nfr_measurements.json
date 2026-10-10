@@ -1,0 +1,57 @@
+{
+  "nfr1_network_attempts": 0,
+  "nfr5_ms_per_document_median": 11.2,
+  "nfr5_ms_per_document_max": 15.0,
+  "nfr5_seconds_per_recording_median": 0.827,
+  "nfr4_peak_python_memory_mb_max": 2.2,
+  "nfr4_peak_process_memory_mb": 337.8,
+  "hardware": "consumer laptop, 8 CPU cores, no GPU",
+  "leaks_total": 0,
+  "per_recording": [
+    {
+      "recording": "J26DS313_R0011",
+      "documents": 50,
+      "entities_redacted": 8,
+      "leaks": 0,
+      "seconds_total": 0.752,
+      "ms_per_document": 15.0,
+      "peak_python_memory_mb": 1.4
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "documents": 104,
+      "entities_redacted": 13,
+      "leaks": 0,
+      "seconds_total": 1.162,
+      "ms_per_document": 11.2,
+      "peak_python_memory_mb": 1.9
+    },
+    {
+      "recording": "J26DS313_R0021",
+      "documents": 104,
+      "entities_redacted": 15,
+      "leaks": 0,
+      "seconds_total": 1.008,
+      "ms_per_document": 9.7,
+      "peak_python_memory_mb": 2.0
+    },
+    {
+      "recording": "J26DS313_R0022",
+      "documents": 68,
+      "entities_redacted": 9,
+      "leaks": 0,
+      "seconds_total": 0.472,
+      "ms_per_document": 6.9,
+      "peak_python_memory_mb": 1.6
+    },
+    {
+      "recording": "J26DS313_R0023",
+      "documents": 74,
+      "entities_redacted": 14,
+      "leaks": 0,
+      "seconds_total": 0.827,
+      "ms_per_document": 11.2,
+      "peak_python_memory_mb": 2.2
+    }
+  ]
+}

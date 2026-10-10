@@ -1,0 +1,13 @@
+{
+  "held_out": {
+    "people": 16,
+    "accuracy": 0.9375,
+    "macro_f1": 0.9352,
+    "majority_baseline_accuracy": 0.375
+  },
+  "cross_validation_real": {
+    "people": 203,
+    "accuracy": 0.8325,
+    "macro_f1": 0.829
+  }
+}

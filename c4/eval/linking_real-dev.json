@@ -56,6 +56,12 @@
     "J26DS313_R0059",
     "J26DS313_R0060",
     "J26DS313_R0061",
+    "J26DS313_R0062",
+    "J26DS313_R0063",
+    "J26DS313_R0064",
+    "J26DS313_R0065",
+    "J26DS313_R0066",
+    "J26DS313_R0067",
     "J26DS313_R0068",
     "J26DS313_R0069",
     "J26DS313_R0070",
@@ -64,23 +70,24 @@
     "J26DS313_R0073",
     "J26DS313_R0074",
     "J26DS313_R0075",
+    "J26DS313_R0076",
+    "J26DS313_R0077",
+    "J26DS313_R0078",
+    "J26DS313_R0079",
+    "J26DS313_R0080",
     "J26DS313_R0100",
     "J26DS313_R0101",
     "J26DS313_R0102",
     "J26DS313_R0103",
     "J26DS313_R0104",
-    "J26DS313_R0105",
-    "R0062",
-    "R0063",
-    "R0064",
-    "R0065"
+    "J26DS313_R0105"
   ],
   "results": [
     {
       "system": "exact",
       "threshold": 0.775,
       "cross_script_accuracy": 0.0,
-      "entities": 168,
+      "entities": 185,
       "pairwise": {
         "precision": 0.0,
         "recall": 0.0,
@@ -456,7 +463,7 @@
         {
           "recording": "J26DS313_R0031",
           "entity": "J26DS313_R0031_E002",
-          "clusters": 4,
+          "clusters": 3,
           "merged_with": 0
         },
         {
@@ -504,7 +511,7 @@
         {
           "recording": "J26DS313_R0033",
           "entity": "J26DS313_R0033_E012",
-          "clusters": 3,
+          "clusters": 2,
           "merged_with": 0
         },
         {
@@ -546,13 +553,13 @@
         {
           "recording": "J26DS313_R0036",
           "entity": "J26DS313_R0036_E004",
-          "clusters": 6,
+          "clusters": 4,
           "merged_with": 0
         },
         {
           "recording": "J26DS313_R0036",
           "entity": "J26DS313_R0036_E012",
-          "clusters": 4,
+          "clusters": 2,
           "merged_with": 0
         },
         {
@@ -564,7 +571,7 @@
         {
           "recording": "J26DS313_R0037",
           "entity": "J26DS313_R0037_E013",
-          "clusters": 5,
+          "clusters": 4,
           "merged_with": 0
         },
         {
@@ -684,7 +691,7 @@
         {
           "recording": "J26DS313_R0044",
           "entity": "J26DS313_R0044_E013",
-          "clusters": 3,
+          "clusters": 2,
           "merged_with": 0
         },
         {
@@ -762,7 +769,7 @@
         {
           "recording": "J26DS313_R0048",
           "entity": "J26DS313_R0048_E010",
-          "clusters": 3,
+          "clusters": 2,
           "merged_with": 0
         },
         {
@@ -847,6 +854,42 @@
           "recording": "J26DS313_R0060",
           "entity": "J26DS313_R0060_e002",
           "clusters": 4,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0066",
+          "entity": "J26DS313_R0066_e001",
+          "clusters": 4,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0066",
+          "entity": "J26DS313_R0066_e002",
+          "clusters": 4,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0066",
+          "entity": "J26DS313_R0066_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0067",
+          "entity": "J26DS313_R0067_e001",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0067",
+          "entity": "J26DS313_R0067_e002",
+          "clusters": 4,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0067",
+          "entity": "J26DS313_R0067_e003",
+          "clusters": 2,
           "merged_with": 0
         },
         {
@@ -1042,6 +1085,72 @@
           "merged_with": 0
         },
         {
+          "recording": "J26DS313_R0076",
+          "entity": "J26DS313_R0076_e001",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0076",
+          "entity": "J26DS313_R0076_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0076",
+          "entity": "J26DS313_R0076_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0077",
+          "entity": "J26DS313_R0077_e001",
+          "clusters": 6,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0077",
+          "entity": "J26DS313_R0077_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0078",
+          "entity": "J26DS313_R0078_e002",
+          "clusters": 8,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0078",
+          "entity": "J26DS313_R0078_e001",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0079",
+          "entity": "J26DS313_R0079_e001",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0079",
+          "entity": "J26DS313_R0079_e002",
+          "clusters": 6,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0080",
+          "entity": "J26DS313_R0080_e001",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0080",
+          "entity": "J26DS313_R0080_e002",
+          "clusters": 13,
+          "merged_with": 0
+        },
+        {
           "recording": "J26DS313_R0100",
           "entity": "J26DS313_R0100_E003",
           "clusters": 2,
@@ -1100,12 +1209,12 @@
     {
       "system": "translit-exact",
       "threshold": 0.775,
-      "cross_script_accuracy": 0.381,
-      "entities": 168,
+      "cross_script_accuracy": 0.427,
+      "entities": 185,
       "pairwise": {
         "precision": 1.0,
-        "recall": 0.5508,
-        "f1": 0.7104
+        "recall": 0.5762,
+        "f1": 0.7312
       },
       "failures": [
         {
@@ -1261,7 +1370,7 @@
         {
           "recording": "J26DS313_R0031",
           "entity": "J26DS313_R0031_E002",
-          "clusters": 4,
+          "clusters": 3,
           "merged_with": 0
         },
         {
@@ -1297,7 +1406,7 @@
         {
           "recording": "J26DS313_R0033",
           "entity": "J26DS313_R0033_E012",
-          "clusters": 3,
+          "clusters": 2,
           "merged_with": 0
         },
         {
@@ -1339,13 +1448,7 @@
         {
           "recording": "J26DS313_R0036",
           "entity": "J26DS313_R0036_E004",
-          "clusters": 6,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0036",
-          "entity": "J26DS313_R0036_E012",
-          "clusters": 3,
+          "clusters": 2,
           "merged_with": 0
         },
         {
@@ -1357,7 +1460,7 @@
         {
           "recording": "J26DS313_R0037",
           "entity": "J26DS313_R0037_E013",
-          "clusters": 4,
+          "clusters": 2,
           "merged_with": 0
         },
         {
@@ -1392,12 +1495,6 @@
         },
         {
           "recording": "J26DS313_R0041",
-          "entity": "J26DS313_R0041_E002",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0041",
           "entity": "J26DS313_R0041_E003",
           "clusters": 3,
           "merged_with": 0
@@ -1411,7 +1508,7 @@
         {
           "recording": "J26DS313_R0042",
           "entity": "J26DS313_R0042_E002",
-          "clusters": 3,
+          "clusters": 2,
           "merged_with": 0
         },
         {
@@ -1428,20 +1525,8 @@
         },
         {
           "recording": "J26DS313_R0043",
-          "entity": "J26DS313_R0043_E002",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0043",
           "entity": "J26DS313_R0043_E003",
           "clusters": 3,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0044",
-          "entity": "J26DS313_R0044_E002",
-          "clusters": 2,
           "merged_with": 0
         },
         {
@@ -1453,18 +1538,6 @@
         {
           "recording": "J26DS313_R0044",
           "entity": "J26DS313_R0044_E004",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0044",
-          "entity": "J26DS313_R0044_E013",
-          "clusters": 3,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0045",
-          "entity": "J26DS313_R0045_E002",
           "clusters": 2,
           "merged_with": 0
         },
@@ -1483,7 +1556,7 @@
         {
           "recording": "J26DS313_R0046",
           "entity": "J26DS313_R0046_E002",
-          "clusters": 3,
+          "clusters": 2,
           "merged_with": 0
         },
         {
@@ -1514,12 +1587,6 @@
           "recording": "J26DS313_R0048",
           "entity": "J26DS313_R0048_E003",
           "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0048",
-          "entity": "J26DS313_R0048_E010",
-          "clusters": 3,
           "merged_with": 0
         },
         {
@@ -1555,6 +1622,30 @@
         {
           "recording": "J26DS313_R0060",
           "entity": "J26DS313_R0060_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0066",
+          "entity": "J26DS313_R0066_e001",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0066",
+          "entity": "J26DS313_R0066_e002",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0066",
+          "entity": "J26DS313_R0066_e003",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0067",
+          "entity": "J26DS313_R0067_e002",
           "clusters": 2,
           "merged_with": 0
         },
@@ -1679,6 +1770,36 @@
           "merged_with": 0
         },
         {
+          "recording": "J26DS313_R0077",
+          "entity": "J26DS313_R0077_e001",
+          "clusters": 3,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0078",
+          "entity": "J26DS313_R0078_e002",
+          "clusters": 7,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0079",
+          "entity": "J26DS313_R0079_e001",
+          "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0079",
+          "entity": "J26DS313_R0079_e002",
+          "clusters": 4,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0080",
+          "entity": "J26DS313_R0080_e002",
+          "clusters": 7,
+          "merged_with": 0
+        },
+        {
           "recording": "J26DS313_R0100",
           "entity": "J26DS313_R0100_E003",
           "clusters": 2,
@@ -1737,26 +1858,14 @@
     {
       "system": "resolver",
       "threshold": 0.775,
-      "cross_script_accuracy": 0.8393,
-      "entities": 168,
+      "cross_script_accuracy": 0.9243,
+      "entities": 185,
       "pairwise": {
         "precision": 1.0,
-        "recall": 0.9414,
-        "f1": 0.9698
+        "recall": 0.9564,
+        "f1": 0.9777
       },
       "failures": [
-        {
-          "recording": "J26DS313_R0031",
-          "entity": "J26DS313_R0031_E002",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0033",
-          "entity": "J26DS313_R0033_E012",
-          "clusters": 2,
-          "merged_with": 0
-        },
         {
           "recording": "J26DS313_R0036",
           "entity": "J26DS313_R0036_E005",
@@ -1764,74 +1873,8 @@
           "merged_with": 0
         },
         {
-          "recording": "J26DS313_R0036",
-          "entity": "J26DS313_R0036_E004",
-          "clusters": 3,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0036",
-          "entity": "J26DS313_R0036_E012",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0037",
-          "entity": "J26DS313_R0037_E013",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
           "recording": "J26DS313_R0039",
           "entity": "J26DS313_R0039_E003",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0041",
-          "entity": "J26DS313_R0041_E002",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0042",
-          "entity": "J26DS313_R0042_E002",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0043",
-          "entity": "J26DS313_R0043_E002",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0044",
-          "entity": "J26DS313_R0044_E002",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0044",
-          "entity": "J26DS313_R0044_E013",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0045",
-          "entity": "J26DS313_R0045_E002",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0046",
-          "entity": "J26DS313_R0046_E002",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
-          "recording": "J26DS313_R0048",
-          "entity": "J26DS313_R0048_E010",
           "clusters": 2,
           "merged_with": 0
         },
@@ -1854,12 +1897,6 @@
           "merged_with": 0
         },
         {
-          "recording": "J26DS313_R0068",
-          "entity": "J26DS313_R0068_E013",
-          "clusters": 2,
-          "merged_with": 0
-        },
-        {
           "recording": "J26DS313_R0071",
           "entity": "J26DS313_R0071_E007",
           "clusters": 2,
@@ -1869,6 +1906,12 @@
           "recording": "J26DS313_R0071",
           "entity": "J26DS313_R0071_E008",
           "clusters": 2,
+          "merged_with": 0
+        },
+        {
+          "recording": "J26DS313_R0080",
+          "entity": "J26DS313_R0080_e002",
+          "clusters": 3,
           "merged_with": 0
         },
         {
