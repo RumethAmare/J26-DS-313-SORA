@@ -33,8 +33,15 @@ def score_summaries(hypotheses, references):
     return {"n": len(f), "rougeL": round(100 * sum(f) / max(len(f), 1), 2)}
 
 
+# Function words carry no meaning for matching "Confirm booking" against
+# "Call Suresh to confirm the booking".
+_STOP = {"a", "an", "the", "to", "and", "or", "of", "for", "in", "on", "at", "by",
+         "with", "from", "is", "be", "will", "it", "their", "his", "her", "s"}
+
+
 def _words(text):
-    return set("".join(c if c.isalnum() else " " for c in (text or "").lower()).split())
+    words = "".join(c if c.isalnum() else " " for c in (text or "").lower()).split()
+    return set(words) - _STOP
 
 
 def _overlap_f1(a, b):
