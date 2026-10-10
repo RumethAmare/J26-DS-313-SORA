@@ -6,7 +6,7 @@ Likelihood and impact are rated High (H), Medium (M) or Low (L).
 
 | # | Risk | L | I | Mitigation | Status |
 |---|---|---|---|---|---|
-| 1 | **Missed identifier is disclosed** in shared output | M | H | Recall is the primary metric (NFR3). Known identifiers are propagated to every occurrence, a leak check runs on every output, and system output on real data is never committed. | Mitigated; 93.8% of personal data fully hidden, 0 fully exposed (held-out) |
+| 1 | **Missed identifier is disclosed** in shared output | M | H | Recall is the primary metric (NFR3). Known identifiers are propagated to every occurrence, a leak check runs on every output, and system output on real data is never committed. | Mitigated; 95.7% of personal data fully hidden, 0 fully exposed (held-out) |
 | 2 | **Re-identification map leaks** (it reverses redaction) | L | H | Written only to git-ignored storage; the code refuses any path git would commit; `*.reid.json` is blocked repo-wide (NFR2). | Mitigated, tested |
 | 3 | **Real corpus too small or still being built** | H | H | Built synthetic-first with a frozen held-out synthetic test split. Trains on complete real recordings only. Synthetic + real beats real only by +0.042 F1 (0.657 → 0.699). | Mitigated |
 | 4 | **Annotation quality** in the shared corpus | H | M | Validator with 9 checks; deterministic fix script for the C4 layer; open items reported to the team; a second-member review is required by the contract. | In progress |

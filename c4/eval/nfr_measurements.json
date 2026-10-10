@@ -1,44 +1,43 @@
 {
-  "model": "xlmr_both (xlm-roberta-base, CPU) + rules + propagation",
+  "model": "xlmr_both + rules + propagation + post-processing (PERSON/ADDRESS confidence >= 0.85)",
   "nfr1_network_attempts": 0,
-  "nfr5_ms_per_document_median": 113.9,
-  "nfr5_ms_per_document_max": 128.8,
-  "nfr5_seconds_per_recording_median": 8.758,
-  "nfr4_peak_python_memory_mb_max": 0.3,
-  "nfr4_peak_process_memory_mb": 995.2,
+  "nfr5_ms_per_document_median": 99.3,
+  "nfr5_ms_per_document_max": 117.7,
+  "nfr5_seconds_per_recording_median": 7.277,
+  "nfr4_peak_process_memory_mb": 995.5,
   "hardware": "consumer laptop, 8 CPU cores, no GPU",
   "leaks_total": 0,
   "per_recording": [
     {
       "recording": "J26DS313_R0011",
       "documents": 50,
-      "entities_redacted": 10,
+      "entities_redacted": 7,
       "by_label": {
-        "ADDRESS": 3,
+        "ADDRESS": 2,
         "NIC": 1,
-        "PERSON": 5,
+        "PERSON": 3,
         "PHONE": 1
       },
       "leaks": 0,
-      "seconds_total": 6.23,
-      "ms_per_document": 124.6,
+      "seconds_total": 5.887,
+      "ms_per_document": 117.7,
       "peak_python_memory_mb": 0.3
     },
     {
       "recording": "J26DS313_R0019",
       "documents": 104,
-      "entities_redacted": 15,
+      "entities_redacted": 13,
       "by_label": {
         "ACCOUNT": 4,
         "ADDRESS": 2,
         "DOB": 1,
         "NIC": 1,
-        "PERSON": 5,
+        "PERSON": 3,
         "PHONE": 2
       },
       "leaks": 0,
-      "seconds_total": 10.945,
-      "ms_per_document": 105.2,
+      "seconds_total": 10.332,
+      "ms_per_document": 99.3,
       "peak_python_memory_mb": 0.1
     },
     {
@@ -55,8 +54,8 @@
         "PHONE": 2
       },
       "leaks": 0,
-      "seconds_total": 10.693,
-      "ms_per_document": 102.8,
+      "seconds_total": 9.528,
+      "ms_per_document": 91.6,
       "peak_python_memory_mb": 0.1
     },
     {
@@ -72,25 +71,25 @@
         "PHONE": 1
       },
       "leaks": 0,
-      "seconds_total": 8.758,
-      "ms_per_document": 128.8,
+      "seconds_total": 7.167,
+      "ms_per_document": 105.4,
       "peak_python_memory_mb": 0.1
     },
     {
       "recording": "J26DS313_R0023",
       "documents": 74,
-      "entities_redacted": 20,
+      "entities_redacted": 14,
       "by_label": {
         "ACCOUNT": 2,
-        "ADDRESS": 4,
+        "ADDRESS": 2,
         "DOB": 1,
         "NIC": 1,
-        "PERSON": 9,
+        "PERSON": 5,
         "PHONE": 3
       },
       "leaks": 0,
-      "seconds_total": 8.429,
-      "ms_per_document": 113.9,
+      "seconds_total": 7.277,
+      "ms_per_document": 98.3,
       "peak_python_memory_mb": 0.1
     }
   ]

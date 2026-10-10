@@ -21,31 +21,31 @@
       "J26DS313_R0079",
       "J26DS313_R0103"
     ],
-    "commit": "524d03a",
+    "commit": "0683512",
     "date": "2026-10-11"
   },
   "micro": {
-    "precision": 0.6934,
-    "recall": 0.824,
-    "f1": 0.7531,
-    "tp": 735,
-    "fp": 325,
-    "fn": 157,
+    "precision": 0.7404,
+    "recall": 0.8408,
+    "f1": 0.7874,
+    "tp": 750,
+    "fp": 263,
+    "fn": 142,
     "support": 892
   },
   "macro": {
-    "precision": 0.6863,
-    "recall": 0.7976,
-    "f1": 0.7339
+    "precision": 0.7271,
+    "recall": 0.8231,
+    "f1": 0.7714
   },
   "per_label": {
     "PERSON": {
-      "precision": 0.7224,
-      "recall": 0.9316,
-      "f1": 0.8138,
-      "tp": 354,
-      "fp": 136,
-      "fn": 26,
+      "precision": 0.7817,
+      "recall": 0.9237,
+      "f1": 0.8468,
+      "tp": 351,
+      "fp": 98,
+      "fn": 29,
       "support": 380
     },
     "NIC": {
@@ -67,30 +67,30 @@
       "support": 102
     },
     "ADDRESS": {
-      "precision": 0.4842,
-      "recall": 0.7667,
-      "f1": 0.5935,
-      "tp": 46,
-      "fp": 49,
-      "fn": 14,
+      "precision": 0.6575,
+      "recall": 0.8,
+      "f1": 0.7218,
+      "tp": 48,
+      "fp": 25,
+      "fn": 12,
       "support": 60
     },
     "ORG": {
-      "precision": 0.5508,
-      "recall": 0.5462,
-      "f1": 0.5485,
-      "tp": 65,
-      "fp": 53,
-      "fn": 54,
+      "precision": 0.5847,
+      "recall": 0.5798,
+      "f1": 0.5823,
+      "tp": 69,
+      "fp": 49,
+      "fn": 50,
       "support": 119
     },
     "ACCOUNT": {
-      "precision": 0.6146,
-      "recall": 0.59,
-      "f1": 0.602,
-      "tp": 59,
-      "fp": 37,
-      "fn": 41,
+      "precision": 0.6339,
+      "recall": 0.71,
+      "f1": 0.6698,
+      "tp": 71,
+      "fp": 41,
+      "fn": 29,
       "support": 100
     },
     "DOB": {
@@ -105,59 +105,59 @@
   },
   "per_script": {
     "LATIN": {
-      "precision": 0.785,
-      "recall": 0.84,
-      "f1": 0.8116,
-      "tp": 504,
-      "fp": 138,
-      "fn": 96,
+      "precision": 0.836,
+      "recall": 0.875,
+      "f1": 0.855,
+      "tp": 525,
+      "fp": 103,
+      "fn": 75,
       "support": 600
     },
     "SINHALA": {
-      "precision": 0.5526,
-      "recall": 0.7911,
-      "f1": 0.6507,
-      "tp": 231,
-      "fp": 187,
-      "fn": 61,
+      "precision": 0.5844,
+      "recall": 0.7705,
+      "f1": 0.6647,
+      "tp": 225,
+      "fp": 160,
+      "fn": 67,
       "support": 292
     }
   },
   "per_doc_kind": {
     "clean_en": {
-      "precision": 0.8294,
-      "recall": 0.8531,
-      "f1": 0.841,
-      "tp": 209,
-      "fp": 43,
-      "fn": 36,
+      "precision": 0.8785,
+      "recall": 0.8857,
+      "f1": 0.8821,
+      "tp": 217,
+      "fp": 30,
+      "fn": 28,
       "support": 245
     },
     "clean_si": {
-      "precision": 0.6882,
-      "recall": 0.7934,
-      "f1": 0.737,
-      "tp": 192,
-      "fp": 87,
-      "fn": 50,
+      "precision": 0.749,
+      "recall": 0.7893,
+      "f1": 0.7686,
+      "tp": 191,
+      "fp": 64,
+      "fn": 51,
       "support": 242
     },
     "summary": {
-      "precision": 0.4891,
-      "recall": 0.8824,
-      "f1": 0.6294,
-      "tp": 135,
-      "fp": 141,
-      "fn": 18,
+      "precision": 0.5321,
+      "recall": 0.9216,
+      "f1": 0.6746,
+      "tp": 141,
+      "fp": 124,
+      "fn": 12,
       "support": 153
     },
     "transcript": {
-      "precision": 0.7866,
-      "recall": 0.7897,
-      "f1": 0.7881,
-      "tp": 199,
-      "fp": 54,
-      "fn": 53,
+      "precision": 0.8171,
+      "recall": 0.7976,
+      "f1": 0.8072,
+      "tp": 201,
+      "fp": 45,
+      "fn": 51,
       "support": 252
     }
   },
@@ -188,11 +188,21 @@
         ]
       },
       {
-        "doc_id": "J26DS313_R0020_c2_u010_si_v1",
-        "label": "ORG",
-        "gold": "සසසසසසසස සසසස‍සසසසස",
+        "doc_id": "J26DS313_R0020_transcript_u006_v1",
+        "label": "PERSON",
+        "gold": "සසසසස සසසස‍සසසසසස",
         "predicted": [
-          "ORG:සසසසසසසස සසසස"
+          "PERSON:සසසසස",
+          "PERSON:සසසස‍සසසසසස"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0020_c2_u006_si_v1",
+        "label": "PERSON",
+        "gold": "සසසසස සසසස‍සසසසසස",
+        "predicted": [
+          "PERSON:සසසසස",
+          "PERSON:සසසස‍සසසසසස"
         ]
       },
       {
@@ -201,22 +211,6 @@
         "gold": "xxxxxx 99xx xxxxxxxx xxxx, xxxxxxx 9",
         "predicted": [
           "ADDRESS:99xx xxxxxxxx xxxx, xxxxxxx 9"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0020_c2_u019_en_v1",
-        "label": "PERSON",
-        "gold": "xxxxxxx",
-        "predicted": [
-          "PERSON:xxxxxxx. xxxxxxx"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0020_c2_u019_en_v1",
-        "label": "PERSON",
-        "gold": "xxxxxxx",
-        "predicted": [
-          "PERSON:xxxxxxx. xxxxxxx"
         ]
       },
       {
@@ -236,14 +230,6 @@
         ]
       },
       {
-        "doc_id": "J26DS313_R0029_transcript_u007_v1",
-        "label": "PERSON",
-        "gold": "සසසසස සසසසසස",
-        "predicted": [
-          "PERSON:සසසසස සසසසසසස"
-        ]
-      },
-      {
         "doc_id": "J26DS313_R0029_transcript_u014_v1",
         "label": "ADDRESS",
         "gold": "99 xxxx xxxx xxxxx",
@@ -257,6 +243,14 @@
         "gold": "99, xxxx xxxx, xxxxx",
         "predicted": [
           "ADDRESS:xx. 99, xxxx xxxx, xxxxx"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0029_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සසසසසස සස‍සසසසසසස",
+        "predicted": [
+          "ORG:සසසසසස"
         ]
       },
       {
@@ -285,20 +279,29 @@
         ]
       },
       {
-        "doc_id": "J26DS313_R0034_c2_u023_si_v1",
-        "label": "PERSON",
-        "gold": "සසසසසසස",
-        "predicted": [
-          "PERSON:සසස"
-        ]
-      },
-      {
         "doc_id": "J26DS313_R0034_c2_summary_en_v1",
         "label": "ORG",
         "gold": "xxxxxxxx xxxxx xxxx xx xxxxxxx",
         "predicted": [
-          "ORG:xxxxxxxx xxxxx xxxx",
-          "ADDRESS:xxx"
+          "ORG:xxxxxxxx xxxxx xxxx"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0039_transcript_u002_v1",
+        "label": "PERSON",
+        "gold": "සසසසස සස‍සසසසසසස",
+        "predicted": [
+          "PERSON:සසසසස",
+          "PERSON:සස‍සසසසසසස"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0039_transcript_u008_v1",
+        "label": "PERSON",
+        "gold": "සසසසස සස‍සසසසසසස",
+        "predicted": [
+          "PERSON:සසසසස",
+          "PERSON:සස‍සසසසසසස"
         ]
       },
       {
@@ -326,6 +329,24 @@
         ]
       },
       {
+        "doc_id": "J26DS313_R0039_c2_u002_si_v1",
+        "label": "PERSON",
+        "gold": "සසසසස සස‍සසසසසසස",
+        "predicted": [
+          "PERSON:සසසසස",
+          "PERSON:සස‍සසසසසසස"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0039_c2_u008_si_v1",
+        "label": "PERSON",
+        "gold": "සසසසස සස‍සසසසසසස",
+        "predicted": [
+          "PERSON:සසසසස",
+          "PERSON:සස‍සසසසසසස"
+        ]
+      },
+      {
         "doc_id": "J26DS313_R0039_c2_u010_si_v1",
         "label": "PERSON",
         "gold": "සසසසස සසසසසස",
@@ -342,11 +363,11 @@
         ]
       },
       {
-        "doc_id": "J26DS313_R0044_transcript_u026_v1",
-        "label": "PERSON",
-        "gold": "සසසසස",
+        "doc_id": "J26DS313_R0044_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "සසසසසස xxxxxxxxx xxxxxx",
         "predicted": [
-          "PERSON:සසසසසස"
+          "ORG:සසසසසස"
         ]
       },
       {
@@ -363,7 +384,6 @@
         "label": "PERSON",
         "gold": "xxxxxx සසසසසස සසසස‍සසසසසස",
         "predicted": [
-          "PERSON:xxxxxx",
           "PERSON:සසසසසස සසසස‍සසසසසස"
         ]
       },
@@ -377,11 +397,18 @@
         ]
       },
       {
+        "doc_id": "J26DS313_R0044_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සසසසසස සස‍සසස සස සසසසස සසස‍සසසසසසස",
+        "predicted": [
+          "ORG:සසසසසස"
+        ]
+      },
+      {
         "doc_id": "J26DS313_R0044_c2_u012_si_v1",
         "label": "ADDRESS",
         "gold": "සසස 99, සසසස සසස, සසසස 9",
         "predicted": [
-          "ADDRESS:සසස",
           "ADDRESS:99, සසසස සසස, සසසස 9"
         ]
       },
@@ -424,15 +451,7 @@
         "label": "ORG",
         "gold": "සසසසස සසසසසස සසසසස",
         "predicted": [
-          "ORG:සසසසස සසසසසස සසසසසස"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0055_transcript_u009_v1",
-        "label": "PERSON",
-        "gold": "xxxxxx xxxxxx",
-        "predicted": [
-          "PERSON:xxxxxx"
+          "ORG:සසසසස සසසසසස සසසසසසස"
         ]
       },
       {
@@ -444,52 +463,51 @@
         ]
       },
       {
-        "doc_id": "J26DS313_R0069_c2_u029_si_v1",
+        "doc_id": "J26DS313_R0069_c2_u039_si_v1",
         "label": "ORG",
-        "gold": "සසසසස සසසසසසසසස සසසසසසසස‍සස සසසසසසසසසසසසසසස",
+        "gold": "සස.සසස.සස",
         "predicted": [
-          "ORG:සසසසස සසසසසසසසස සසසසසසසස‍සස සසසසසසසසසසසසසස"
+          "ORG:සස"
         ]
       },
       {
-        "doc_id": "J26DS313_R0074_transcript_u002_v1",
-        "label": "ORG",
-        "gold": "xxxxxxxxx",
-        "predicted": [
-          "ORG:xxxxxx"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0074_transcript_u012_v1",
+        "doc_id": "J26DS313_R0074_transcript_u001_v1",
         "label": "PERSON",
-        "gold": "සසසසස සසසසසසස",
+        "gold": "සසසස",
         "predicted": [
-          "PERSON:සසසසස සසසසසසසස"
+          "PERSON:සස"
         ]
       },
       {
-        "doc_id": "J26DS313_R0074_transcript_u013_v1",
+        "doc_id": "J26DS313_R0074_transcript_u007_v1",
         "label": "PERSON",
-        "gold": "සසසසස",
+        "gold": "සසසස",
         "predicted": [
-          "PERSON:සසස"
+          "PERSON:සස"
         ]
       },
       {
-        "doc_id": "J26DS313_R0074_transcript_u017_v1",
+        "doc_id": "J26DS313_R0074_transcript_u007_v1",
+        "label": "ACCOUNT",
+        "gold": "999.999.99.99",
+        "predicted": [
+          "ACCOUNT:xx 999.999.99.99"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0074_transcript_u015_v1",
         "label": "PERSON",
-        "gold": "සසසසසස",
+        "gold": "සසසස",
         "predicted": [
-          "PERSON:සසසසසසස"
+          "PERSON:සස"
         ]
       },
       {
-        "doc_id": "J26DS313_R0074_c2_u003_en_v1",
-        "label": "ORG",
-        "gold": "xxxxxxxxx",
+        "doc_id": "J26DS313_R0074_c2_u007_en_v1",
+        "label": "ACCOUNT",
+        "gold": "999.999.99.99",
         "predicted": [
-          "ORG:xxxxx",
-          "ORG:xx"
+          "ACCOUNT:xx 999.999.99.99"
         ]
       },
       {
@@ -501,11 +519,19 @@
         ]
       },
       {
-        "doc_id": "J26DS313_R0074_c2_u008_si_v1",
-        "label": "ORG",
-        "gold": "සසසසසසස",
+        "doc_id": "J26DS313_R0074_c2_u001_si_v1",
+        "label": "PERSON",
+        "gold": "සසසස",
         "predicted": [
-          "ORG:සසසස"
+          "PERSON:සස"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0074_c2_u007_si_v1",
+        "label": "PERSON",
+        "gold": "සසසස",
+        "predicted": [
+          "PERSON:සස"
         ]
       },
       {
@@ -517,35 +543,19 @@
         ]
       },
       {
-        "doc_id": "J26DS313_R0074_c2_u011_si_v1",
+        "doc_id": "J26DS313_R0074_c2_u013_si_v1",
         "label": "PERSON",
-        "gold": "සස‍සසසසස සසසසසසස",
+        "gold": "සසසසස",
         "predicted": [
-          "PERSON:සසසසස සසසසසසස"
+          "PERSON:සසසස"
         ]
       },
       {
-        "doc_id": "J26DS313_R0074_c2_u012_si_v1",
+        "doc_id": "J26DS313_R0074_c2_u015_si_v1",
         "label": "PERSON",
-        "gold": "සසසසස සසසසසසස",
+        "gold": "සසසස",
         "predicted": [
-          "PERSON:සසසසස සසසසසසසස"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_u017_si_v1",
-        "label": "PERSON",
-        "gold": "සසසසසස",
-        "predicted": [
-          "PERSON:සසසසසසස"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_summary_en_v1",
-        "label": "ADDRESS",
-        "gold": "xxxxxx",
-        "predicted": [
-          "ADDRESS:xxxx"
+          "PERSON:සස"
         ]
       },
       {
@@ -608,6 +618,14 @@
         ]
       },
       {
+        "doc_id": "J26DS313_R0079_c2_u041_si_v1",
+        "label": "ORG",
+        "gold": "සසසස සසසසසසසස සසසසසස",
+        "predicted": [
+          "ORG:සසසස සසසසසසසස සසසසසසස"
+        ]
+      },
+      {
         "doc_id": "J26DS313_R0079_transcript_u052_v1",
         "label": "ORG",
         "gold": "xxxxx xxxxx",
@@ -632,11 +650,11 @@
         ]
       },
       {
-        "doc_id": "J26DS313_R0079_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "xxx",
+        "doc_id": "J26DS313_R0103_transcript_u010_v1",
+        "label": "PERSON",
+        "gold": "සසසසසස",
         "predicted": [
-          "ORG:x"
+          "PERSON:සසසස"
         ]
       },
       {
@@ -645,6 +663,14 @@
         "gold": "සසසසසසසසස",
         "predicted": [
           "ORG:සසසසසසසසස සසසසස"
+        ]
+      },
+      {
+        "doc_id": "J26DS313_R0103_c2_u010_si_v1",
+        "label": "PERSON",
+        "gold": "සසසසසස",
+        "predicted": [
+          "PERSON:සසසස"
         ]
       }
     ],
@@ -728,18 +754,6 @@
         "predicted": []
       },
       {
-        "doc_id": "J26DS313_R0074_transcript_u007_v1",
-        "label": "ACCOUNT",
-        "gold": "999.999.99.99",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0074_transcript_u007_v1",
-        "label": "ACCOUNT",
-        "gold": "999.999.99.99",
-        "predicted": []
-      },
-      {
         "doc_id": "J26DS313_R0074_transcript_u008_v1",
         "label": "ORG",
         "gold": "xxx",
@@ -758,27 +772,9 @@
         "predicted": []
       },
       {
-        "doc_id": "J26DS313_R0074_c2_u007_en_v1",
-        "label": "ACCOUNT",
-        "gold": "999.999.99.99",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_u007_en_v1",
-        "label": "ACCOUNT",
-        "gold": "999.999.99.99",
-        "predicted": []
-      },
-      {
         "doc_id": "J26DS313_R0074_c2_u008_en_v1",
         "label": "ORG",
         "gold": "xxx",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_u012_en_v1",
-        "label": "ADDRESS",
-        "gold": "xxxxxx",
         "predicted": []
       },
       {
@@ -812,18 +808,6 @@
         "predicted": []
       },
       {
-        "doc_id": "J26DS313_R0074_c2_u007_si_v1",
-        "label": "ACCOUNT",
-        "gold": "999.999.99.99",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_u007_si_v1",
-        "label": "ACCOUNT",
-        "gold": "999.999.99.99",
-        "predicted": []
-      },
-      {
         "doc_id": "J26DS313_R0074_c2_u012_si_v1",
         "label": "ADDRESS",
         "gold": "සසසස",
@@ -849,18 +833,6 @@
       },
       {
         "doc_id": "J26DS313_R0074_c2_summary_en_v1",
-        "label": "ACCOUNT",
-        "gold": "999.999.99.99",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_summary_en_v1",
-        "label": "ACCOUNT",
-        "gold": "999.999.99.99",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_summary_en_v1",
         "label": "ORG",
         "gold": "xxx",
         "predicted": []
@@ -870,14 +842,6 @@
         "label": "ORG",
         "gold": "xxxx සසසස xxxxxxx",
         "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0079_c2_u003_en_v1",
-        "label": "ORG",
-        "gold": "xxxx xxxxx xxxxxxx",
-        "predicted": [
-          "PERSON:xxxx xxxxx"
-        ]
       },
       {
         "doc_id": "J26DS313_R0079_transcript_u004_v1",
@@ -904,45 +868,15 @@
         "predicted": []
       },
       {
+        "doc_id": "J26DS313_R0079_c2_u016_en_v1",
+        "label": "ORG",
+        "gold": "xxxx xxxxx",
+        "predicted": []
+      },
+      {
         "doc_id": "J26DS313_R0079_transcript_u017_v1",
         "label": "ORG",
         "gold": "xxxxxxx xxxxx xxxxxxx xxxxxxx",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0079_transcript_u019_v1",
-        "label": "ACCOUNT",
-        "gold": "9 9 9 9 9 9 9 9",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0079_c2_u019_en_v1",
-        "label": "ACCOUNT",
-        "gold": "9 9 9 9 9 9 9 9",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0079_c2_u019_si_v1",
-        "label": "ACCOUNT",
-        "gold": "9 9 9 9 9 9 9 9",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0079_transcript_u023_v1",
-        "label": "ACCOUNT",
-        "gold": "9 9 9 9 9 9 9 9 9",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0079_c2_u023_en_v1",
-        "label": "ACCOUNT",
-        "gold": "9 9 9 9 9 9 9 9 9",
-        "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0079_c2_u023_si_v1",
-        "label": "ACCOUNT",
-        "gold": "9 9 9 9 9 9 9 9 9",
         "predicted": []
       },
       {
@@ -1001,6 +935,12 @@
       },
       {
         "doc_id": "J26DS313_R0079_transcript_u048_v1",
+        "label": "ACCOUNT",
+        "gold": "x x x",
+        "predicted": []
+      },
+      {
+        "doc_id": "J26DS313_R0079_c2_u048_en_v1",
         "label": "ACCOUNT",
         "gold": "x x x",
         "predicted": []
@@ -1074,24 +1014,8 @@
       {
         "doc_id": "J26DS313_R0079_c2_summary_en_v1",
         "label": "ORG",
-        "gold": "xxxx xxxxx xxxxxxx xxxxx",
-        "predicted": [
-          "PERSON:xxxx xxxxx"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0079_c2_summary_en_v1",
-        "label": "ORG",
         "gold": "xxx",
         "predicted": []
-      },
-      {
-        "doc_id": "J26DS313_R0079_c2_summary_en_v1",
-        "label": "ORG",
-        "gold": "xxxx xxxxx xxxxxxx xxxxx xxxxxxx xxxxxxx",
-        "predicted": [
-          "PERSON:xxxx xxxxx"
-        ]
       },
       {
         "doc_id": "J26DS313_R0079_c2_summary_en_v1",
@@ -1161,14 +1085,6 @@
         "gold": "xxxx",
         "predicted": [
           "PERSON:xxxx"
-        ]
-      },
-      {
-        "doc_id": "J26DS313_R0079_c2_u016_en_v1",
-        "label": "ORG",
-        "gold": "xxxx xxxxx",
-        "predicted": [
-          "PERSON:xxxx xxxxx"
         ]
       },
       {
@@ -1244,14 +1160,6 @@
         ]
       },
       {
-        "doc_id": "J26DS313_R0079_c2_u048_en_v1",
-        "label": "ACCOUNT",
-        "gold": "x x x",
-        "predicted": [
-          "PERSON:x x x"
-        ]
-      },
-      {
         "doc_id": "J26DS313_R0079_transcript_u061_v1",
         "label": "PHONE",
         "gold": "9 9 9 9 9 9 9 9 9 9 9 9 9",
@@ -1280,22 +1188,17 @@
       {
         "doc_id": "J26DS313_R0002_c2_summary_si_v1",
         "label": "ORG",
-        "predicted": "සසසසසස සසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0007_c2_summary_en_v1",
-        "label": "PERSON",
-        "predicted": "x"
+        "predicted": "සසසසසස සසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0007_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසස"
+        "predicted": "සසසසසස"
       },
       {
         "doc_id": "J26DS313_R0007_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසස"
+        "predicted": "සසසසසස"
       },
       {
         "doc_id": "J26DS313_R0014_transcript_u014_v1",
@@ -1365,7 +1268,7 @@
       {
         "doc_id": "J26DS313_R0020_c2_summary_si_v1",
         "label": "ORG",
-        "predicted": "සසසසස සසසස‍සසසස"
+        "predicted": "සසසසස සසසස‍සසසසසස"
       },
       {
         "doc_id": "J26DS313_R0020_c2_summary_si_v1",
@@ -1383,109 +1286,14 @@
         "predicted": "සස‍සසසසසස"
       },
       {
-        "doc_id": "J26DS313_R0029_c2_u003_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u003_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u003_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u005_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u005_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u005_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u007_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u007_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u007_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u009_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u009_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u011_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u011_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u011_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u011_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u015_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u015_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_u017_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසස"
-      },
-      {
         "doc_id": "J26DS313_R0029_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "ස"
-      },
-      {
-        "doc_id": "J26DS313_R0029_c2_summary_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසස‍සසසස සසසසසසස"
+        "predicted": "සසසසසසසස‍සසසස සසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0029_c2_summary_si_v1",
         "label": "ORG",
-        "predicted": "සසසසසස සස‍සසසසසසස"
+        "predicted": "සසසසසස"
       },
       {
         "doc_id": "J26DS313_R0029_c2_summary_si_v1",
@@ -1533,11 +1341,6 @@
         "predicted": "සසසසස සසසසසස"
       },
       {
-        "doc_id": "J26DS313_R0034_transcript_u027_v1",
-        "label": "PERSON",
-        "predicted": "ස"
-      },
-      {
         "doc_id": "J26DS313_R0034_c2_summary_si_v1",
         "label": "PERSON",
         "predicted": "සසසසසසස"
@@ -1550,7 +1353,7 @@
       {
         "doc_id": "J26DS313_R0034_c2_summary_si_v1",
         "label": "ORG",
-        "predicted": "සසසස සසසසස සසසසස සසසසසස"
+        "predicted": "සසසස සසසසස සසසසස සසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0034_c2_summary_si_v1",
@@ -1585,12 +1388,7 @@
       {
         "doc_id": "J26DS313_R0039_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "ස"
-      },
-      {
-        "doc_id": "J26DS313_R0039_c2_summary_si_v1",
-        "label": "PERSON",
-        "predicted": "සස‍සස සස‍සසසසසසස"
+        "predicted": "සසසසස‍සස සස‍සසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0039_c2_summary_si_v1",
@@ -1600,7 +1398,7 @@
       {
         "doc_id": "J26DS313_R0039_c2_summary_si_v1",
         "label": "ORG",
-        "predicted": "සසසසසසසස සසසසසස"
+        "predicted": "සසසසසසසස සසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0039_c2_summary_si_v1",
@@ -1650,7 +1448,7 @@
       {
         "doc_id": "J26DS313_R0044_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසසසසස සස"
+        "predicted": "සසසසසස සස‍සසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0044_c2_summary_si_v1",
@@ -1660,7 +1458,7 @@
       {
         "doc_id": "J26DS313_R0044_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසසස ස"
+        "predicted": "සසසස"
       },
       {
         "doc_id": "J26DS313_R0044_c2_summary_si_v1",
@@ -1700,7 +1498,7 @@
       {
         "doc_id": "J26DS313_R0044_c2_summary_si_v1",
         "label": "ADDRESS",
-        "predicted": ", සසසස සසස, සසසස 9"
+        "predicted": "99, සසසස සසස, සසසස 9"
       },
       {
         "doc_id": "J26DS313_R0044_c2_summary_si_v1",
@@ -1720,12 +1518,7 @@
       {
         "doc_id": "J26DS313_R0044_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "ස"
-      },
-      {
-        "doc_id": "J26DS313_R0044_c2_summary_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසස‍සසසසසස"
+        "predicted": "සසසසසස සසසස‍සසසසසස"
       },
       {
         "doc_id": "J26DS313_R0049_transcript_u002_v1",
@@ -1750,12 +1543,12 @@
       {
         "doc_id": "J26DS313_R0049_c2_summary_si_v1",
         "label": "ORG",
-        "predicted": "සසසසස සසසසසස සසසසසස"
+        "predicted": "සසසසස සසසසසස සසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0049_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසසසසස සසසස"
+        "predicted": "සසසසසස සසසස‍සසසසසස"
       },
       {
         "doc_id": "J26DS313_R0049_c2_summary_si_v1",
@@ -1790,7 +1583,7 @@
       {
         "doc_id": "J26DS313_R0049_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසසසස සසසස"
+        "predicted": "සසසසස සසසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0049_c2_summary_si_v1",
@@ -1828,21 +1621,6 @@
         "predicted": "99/x, xxxxxx xxxx, xxxxxxxxxxx"
       },
       {
-        "doc_id": "J26DS313_R0055_transcript_u027_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx 99/x"
-      },
-      {
-        "doc_id": "J26DS313_R0055_transcript_u027_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0055_transcript_u028_v1",
-        "label": "PERSON",
-        "predicted": "xxxxxxxx"
-      },
-      {
         "doc_id": "J26DS313_R0055_transcript_u034_v1",
         "label": "PHONE",
         "predicted": "9999999999"
@@ -1856,16 +1634,6 @@
         "doc_id": "J26DS313_R0055_c2_u002_si_v1",
         "label": "PERSON",
         "predicted": "සසසසසසසසසසස සසසස‍සසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0055_c2_u004_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0055_c2_u004_si_v1",
-        "label": "PERSON",
-        "predicted": "ස"
       },
       {
         "doc_id": "J26DS313_R0055_c2_u006_en_v1",
@@ -1884,11 +1652,6 @@
       },
       {
         "doc_id": "J26DS313_R0055_c2_u008_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0055_c2_u008_si_v1",
         "label": "ACCOUNT",
         "predicted": "xx 9999 9999"
       },
@@ -1900,17 +1663,12 @@
       {
         "doc_id": "J26DS313_R0055_c2_u009_si_v1",
         "label": "PERSON",
-        "predicted": "සසස සසසසසසස"
+        "predicted": "සසස සසසසස"
       },
       {
         "doc_id": "J26DS313_R0055_c2_u012_si_v1",
         "label": "PERSON",
-        "predicted": "සසස සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0055_c2_u015_si_v1",
-        "label": "PERSON",
-        "predicted": "ස"
+        "predicted": "සසස සසසසස"
       },
       {
         "doc_id": "J26DS313_R0055_c2_u016_en_v1",
@@ -2008,16 +1766,6 @@
         "predicted": "9999999999"
       },
       {
-        "doc_id": "J26DS313_R0055_c2_u035_si_v1",
-        "label": "PERSON",
-        "predicted": "ස"
-      },
-      {
-        "doc_id": "J26DS313_R0055_c2_u035_si_v1",
-        "label": "PERSON",
-        "predicted": "සxxx"
-      },
-      {
         "doc_id": "J26DS313_R0055_c2_u036_en_v1",
         "label": "ORG",
         "predicted": "xxx"
@@ -2026,16 +1774,6 @@
         "doc_id": "J26DS313_R0055_c2_u037_si_v1",
         "label": "PERSON",
         "predicted": "සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0055_c2_u040_si_v1",
-        "label": "PERSON",
-        "predicted": "ස"
-      },
-      {
-        "doc_id": "J26DS313_R0055_c2_u040_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0055_c2_summary_si_v1",
@@ -2050,7 +1788,7 @@
       {
         "doc_id": "J26DS313_R0055_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසසසසස"
+        "predicted": "සසසස"
       },
       {
         "doc_id": "J26DS313_R0060_transcript_u001_v1",
@@ -2075,27 +1813,12 @@
       {
         "doc_id": "J26DS313_R0060_c2_summary_si_v1",
         "label": "ORG",
-        "predicted": "සසසසස සසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0069_transcript_u030_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxx"
+        "predicted": "සසසසස සසසසස"
       },
       {
         "doc_id": "J26DS313_R0069_transcript_u030_v1",
         "label": "ORG",
         "predicted": "xxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0069_c2_u030_en_v1",
-        "label": "ORG",
-        "predicted": "x xxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0069_c2_summary_en_v1",
-        "label": "ADDRESS",
-        "predicted": "x xxxx"
       },
       {
         "doc_id": "J26DS313_R0069_c2_summary_si_v1",
@@ -2148,66 +1871,6 @@
         "predicted": "xxx-xxx-9999-9999"
       },
       {
-        "doc_id": "J26DS313_R0074_transcript_u004_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_transcript_u005_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_transcript_u009_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_transcript_u009_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_transcript_u009_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_transcript_u012_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_transcript_u012_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_u004_en_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_u005_en_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_u009_en_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_u009_en_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_u009_en_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
         "doc_id": "J26DS313_R0074_c2_u011_en_v1",
         "label": "ORG",
         "predicted": "xxxxxxx"
@@ -2218,44 +1881,14 @@
         "predicted": "සසසසසසසසස"
       },
       {
-        "doc_id": "J26DS313_R0074_c2_u012_en_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_u012_si_v1",
-        "label": "ADDRESS",
-        "predicted": "සසස"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_u012_si_v1",
-        "label": "PERSON",
-        "predicted": "සස"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_u012_si_v1",
-        "label": "PERSON",
-        "predicted": "සස"
-      },
-      {
         "doc_id": "J26DS313_R0074_c2_u014_si_v1",
         "label": "ORG",
         "predicted": "සසසසසසස"
       },
       {
-        "doc_id": "J26DS313_R0074_c2_summary_en_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_summary_en_v1",
-        "label": "ADDRESS",
-        "predicted": "xxxxxx"
-      },
-      {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසස"
+        "predicted": "සසසසස"
       },
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
@@ -2294,18 +1927,23 @@
       },
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "999.999.99.99"
+      },
+      {
+        "doc_id": "J26DS313_R0074_c2_summary_si_v1",
+        "label": "ACCOUNT",
+        "predicted": "999.999.99.99"
+      },
+      {
+        "doc_id": "J26DS313_R0074_c2_summary_si_v1",
         "label": "PERSON",
         "predicted": "සසසසස"
       },
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_summary_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසස"
+        "predicted": "සසසසසස සසසසස"
       },
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
@@ -2316,11 +1954,6 @@
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
         "label": "NIC",
         "predicted": "999999999999"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_summary_si_v1",
-        "label": "ADDRESS",
-        "predicted": "99, සසසසසසස සසස, සසසසස"
       },
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
@@ -2335,7 +1968,7 @@
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සස සසසසසසස"
+        "predicted": "සස‍සසසසස සසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
@@ -2345,17 +1978,12 @@
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
         "label": "ADDRESS",
-        "predicted": "9"
+        "predicted": "99x, සසසසසස සසසසස, සසසස 9"
       },
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_summary_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසස"
+        "predicted": "සසසසස සසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
@@ -2365,12 +1993,7 @@
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසස"
-      },
-      {
-        "doc_id": "J26DS313_R0074_c2_summary_si_v1",
-        "label": "PERSON",
-        "predicted": "සස සසසසසසසසසස"
+        "predicted": "සසසසසස සසසසසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
@@ -2418,49 +2041,19 @@
         "predicted": "xx"
       },
       {
-        "doc_id": "J26DS313_R0079_c2_u055_en_v1",
-        "label": "PERSON",
-        "predicted": "x"
-      },
-      {
-        "doc_id": "J26DS313_R0079_c2_summary_en_v1",
-        "label": "ORG",
-        "predicted": "xx"
-      },
-      {
         "doc_id": "J26DS313_R0079_c2_summary_si_v1",
         "label": "ORG",
         "predicted": "සසසස සසසස සසසසස සසසසසස"
       },
       {
-        "doc_id": "J26DS313_R0103_transcript_u011_v1",
+        "doc_id": "J26DS313_R0103_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසසසසසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0103_c2_u011_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසසසසසසස"
+        "predicted": "සසසසසස සස‍සසසසසසස"
       },
       {
         "doc_id": "J26DS313_R0103_c2_summary_si_v1",
         "label": "PERSON",
-        "predicted": "සසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0103_c2_summary_si_v1",
-        "label": "PERSON",
-        "predicted": "සස‍සසසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0103_c2_summary_si_v1",
-        "label": "PERSON",
-        "predicted": "සසසසසස"
-      },
-      {
-        "doc_id": "J26DS313_R0103_c2_summary_si_v1",
-        "label": "PERSON",
-        "predicted": "සස‍සසසසසසස"
+        "predicted": "සසසසසස සස‍සසසසසසස"
       }
     ]
   }

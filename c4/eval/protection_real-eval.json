@@ -1,10 +1,10 @@
 {
-  "model": "xlmr_both",
+  "model": "xlmr_both final",
   "gold_personal_spans": 258,
-  "fully_hidden": 242,
-  "partly_hidden": 16,
+  "fully_hidden": 247,
+  "partly_hidden": 11,
   "fully_exposed": 0,
-  "protection_rate_full": 0.938,
+  "protection_rate_full": 0.9574,
   "protection_rate_full_or_partial": 1.0,
   "per_label": {
     "ACCOUNT": {
@@ -34,8 +34,8 @@
     },
     "PERSON": {
       "spans": 153,
-      "fully_hidden": 144,
-      "partly": 9
+      "fully_hidden": 149,
+      "partly": 4
     },
     "PHONE": {
       "spans": 30,
