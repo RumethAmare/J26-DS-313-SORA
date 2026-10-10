@@ -146,7 +146,93 @@ def detect_recording(texts: dict[str, str], detect: Detector = rule_detect,
                         added.append(replace(d, start=start, end=end, source="propagated"))
                 start = text.find(surface, start + 1)
         found[doc_id] = sorted(spans + added, key=lambda x: x.start)
+    return propagate_names(found, texts)
+
+
+# A name token must be at least this long (phonetic key) to be propagated in
+# another form, and match a known name token this closely: "Nimal" -> "නිමල්"
+# / "nimal" / "නිමල්ට", but not a short common word that happens to be similar.
+NAME_KEY_MIN_LEN = 4
+NAME_TOKEN_SIMILARITY = 0.9
+_NAME_TOKEN = re.compile(r"[^\s.,;:!?()\[\]\"'’‘/]+")
+
+
+def propagate_names(found: dict[str, list], texts: dict[str, str]) -> dict[str, list]:
+    """
+    Cross-script name propagation. A person found once is looked for in every
+    document in every form the resolver treats as the same name: another case
+    ("nimal"), the other script (නිමල්), or with a Sinhala case ending
+    (නිමල්ට). Consecutive matching tokens become one span ("නිමල් පෙරේරා").
+
+    Exact-surface propagation cannot do this: the Sinhala and Latin forms of a
+    name share no characters, which is the gap Contribution 2 addresses.
+    """
+    from resolve import HONORIFICS, NAME_PARTICLES, _variants, phonetic_key
+
+    keys: dict[str, Detection] = {}
+    for dets in found.values():
+        for d in dets:
+            if d.label == "PERSON":
+                for tok in _NAME_TOKEN.findall(d.surface.casefold()):
+                    if tok not in HONORIFICS and tok not in NAME_PARTICLES:
+                        k = phonetic_key(tok)
+                        if len(k) >= NAME_KEY_MIN_LEN:
+                            keys.setdefault(k, d)
+    if not keys:
+        return found
+
+    def match(token: str):
+        """(known detection, length of the name part of the token) or None."""
+        for form in sorted(_variants(token.casefold()), key=len, reverse=True):
+            k = phonetic_key(form)
+            if len(k) < NAME_KEY_MIN_LEN:
+                continue
+            for known, d in keys.items():
+                if k == known or _close(k, known):
+                    # The case ending stays visible: "[PERSON_1]ගේ".
+                    return d, len(token) - (len(token.casefold()) - len(form))
+        return None
+
+    for doc_id, text in texts.items():
+        spans = list(found[doc_id])
+        # Proper English capitalises names; Singlish transcripts often do not.
+        lowercase_ok = "_transcript_" in doc_id
+        hits = []
+        for m in _NAME_TOKEN.finditer(text):
+            s, e = m.start(), m.end()
+            token = m.group()
+            if any(s < x.end and x.start < e for x in spans):
+                continue
+            if not lowercase_ok and token[:1].islower():
+                continue
+            hit = match(token)
+            if hit is None:
+                continue
+            d, length = hit
+            e = s + length
+            # Join neighbouring name tokens into one span: "නිමල් පෙරේරා".
+            if hits and text[hits[-1][1]:s].strip() == "":
+                hits[-1] = (hits[-1][0], e, hits[-1][2])
+            else:
+                hits.append((s, e, d))
+        for s, e, d in hits:
+            spans.append(replace(d, start=s, end=e, surface=text[s:e], source="name-propagated"))
+        found[doc_id] = sorted(spans, key=lambda x: x.start)
     return found
+
+
+def _close(key: str, known: str) -> bool:
+    """
+    Same name in another script or spelling. A consonant-skeleton match alone
+    is too loose for a single word (කැරට් "carrot" shares k-r-t with a name),
+    so it also needs a long skeleton and a reasonably close full spelling.
+    """
+    from resolve import _ratio, skeleton
+
+    if _ratio(key, known) >= NAME_TOKEN_SIMILARITY:
+        return True
+    sk, sn = skeleton(key), skeleton(known)
+    return min(len(sk), len(sn)) >= 4 and _ratio(sk, sn) >= 1.0 and _ratio(key, known) >= 0.6
 
 
 # ---------------------------------------------------------------------------

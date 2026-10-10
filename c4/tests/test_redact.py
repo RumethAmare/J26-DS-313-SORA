@@ -86,6 +86,37 @@ def test_sinhala_name_with_a_case_ending_is_still_redacted():
     assert out.texts["d2"] == "මම [PERSON_1]ට කතා කළා." and not out.leaks
 
 
+def test_name_found_once_is_found_in_other_case_script_and_inflection():
+    """Found as 'Nimal Perera' in English; missed by the detector elsewhere."""
+    texts = {"r_c2_u001_en_v1": "My name is Nimal Perera.",
+             "r_transcript_u002_v1": "ow, mama nimal.",          # Singlish: lowercase is fine
+             "r_c2_u001_si_v1": "මගේ නම නිමල් පෙරේරා.",
+             "r_c2_u003_si_v1": "මම නිමල්ට කතා කළා.",
+             "r_c2_u004_en_v1": "the nimal word in lowercase English."}
+
+    def detect(text, preceding):
+        i = text.find("Nimal Perera")
+        return [Detection(i, i + 12, "PERSON", "Nimal Perera", role="PRIVATE_INDIVIDUAL")] if i >= 0 else []
+
+    out = redact_recording(texts, detect=detect, classify_roles=False)
+    assert out.texts["r_transcript_u002_v1"] == "ow, mama [PERSON_1]."
+    assert out.texts["r_c2_u001_si_v1"] == "මගේ නම [PERSON_1]."
+    assert out.texts["r_c2_u003_si_v1"] == "මම [PERSON_1]ට කතා කළා."      # case ending kept
+    # Clean English capitalises names; a lowercase match there is not trusted.
+    assert out.texts["r_c2_u004_en_v1"] == "the nimal word in lowercase English."
+
+
+def test_name_propagation_ignores_short_and_unrelated_words():
+    texts = {"d1": "My name is Nimal.", "d2": "mama kamal ekka kathaa kala."}
+
+    def detect(text, preceding):
+        i = text.find("Nimal")
+        return [Detection(i, i + 5, "PERSON", "Nimal", role="PRIVATE_INDIVIDUAL")] if i >= 0 else []
+
+    out = redact_recording(texts, detect=detect, classify_roles=False)
+    assert out.texts["d2"] == "mama kamal ekka kathaa kala."
+
+
 def test_propagation_does_not_match_inside_a_longer_number():
     texts = {"d1": "account number eka 123456789012.", "d2": "9123456789012345"}
 
