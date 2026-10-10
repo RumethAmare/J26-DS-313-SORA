@@ -91,10 +91,25 @@ def _overlaps(start: int, end: int, spans: list) -> bool:
 
 
 def _boundary_ok(text: str, start: int, end: int) -> bool:
-    """An occurrence must not sit inside a longer word or number."""
+    """
+    An occurrence must not sit inside a longer word or number -- except that a
+    Sinhala name may carry a case ending (නිමල්ට "to Nimal"): the name is still
+    the name, and is redacted with the ending kept ("[PERSON_1]ට").
+    """
+    from resolve import SINHALA_CASE_ENDINGS
+
     before = text[start - 1] if start else " "
-    after = text[end] if end < len(text) else " "
-    return not (before.isalnum() or after.isalnum())
+    if before.isalnum():
+        return False
+    rest = text[end:]
+    if not rest or not rest[0].isalnum():
+        return True
+    for ending in SINHALA_CASE_ENDINGS:
+        if rest.startswith(ending):
+            after = rest[len(ending):len(ending) + 1]
+            if not after or not after.isalnum():
+                return True
+    return False
 
 
 def detect_recording(texts: dict[str, str], detect: Detector = rule_detect,
@@ -113,16 +128,22 @@ def detect_recording(texts: dict[str, str], detect: Detector = rule_detect,
                 forms.setdefault((d.surface, d.label), d)
 
     for doc_id, text in texts.items():
-        spans = found[doc_id]
+        spans = list(found[doc_id])
         added = []
         # Longest first, so "0771234567 extension 12" wins over "0771234567".
         for (surface, _), d in sorted(forms.items(), key=lambda kv: -len(kv[0][0])):
             start = text.find(surface)
             while start != -1:
                 end = start + len(surface)
-                if (_boundary_ok(text, start, end)
-                        and not _overlaps(start, end, spans + added)):
-                    added.append(replace(d, start=start, end=end, source="propagated"))
+                if _boundary_ok(text, start, end):
+                    clash = [s for s in spans + added if start < s.end and s.start < end]
+                    # A known personal identifier outranks a "keep visible"
+                    # label on the same words: the model calling a customer's
+                    # name ORG in one sentence must not leave it exposed there.
+                    if not clash or not any(should_redact(s) for s in clash):
+                        spans = [s for s in spans if s not in clash]
+                        added = [s for s in added if s not in clash]
+                        added.append(replace(d, start=start, end=end, source="propagated"))
                 start = text.find(surface, start + 1)
         found[doc_id] = sorted(spans + added, key=lambda x: x.start)
     return found
@@ -175,11 +196,37 @@ def link_names(detections: dict[str, list]) -> dict[str, list]:
     return linked
 
 
+def assign_roles(detections: dict[str, list], texts: dict[str, str]) -> dict[str, list]:
+    """
+    FR7: classify each linked person once, from all of their mentions, and
+    give every mention that role. Without a trained role model, roles are
+    left as detected.
+    """
+    from roles import MODEL_PATH, classify
+    if not MODEL_PATH.exists():
+        return detections
+    people: dict[str, list] = defaultdict(list)
+    for doc_id, dets in detections.items():
+        for i, d in enumerate(dets):
+            if d.label == "PERSON":
+                people[d.entity_id or f"{doc_id}#{i}"].append((doc_id, i, d))
+    out = {doc_id: list(dets) for doc_id, dets in detections.items()}
+    for mentions in people.values():
+        role = classify([{"doc_id": doc_id, "text": texts[doc_id], "start": d.start,
+                          "end": d.end, "surface": d.surface} for doc_id, _, d in mentions])
+        for doc_id, i, d in mentions:
+            out[doc_id][i] = replace(d, role=role)
+    return out
+
+
 def redact_recording(texts: dict[str, str], rid: str = "", detect: Detector = rule_detect,
-                     propagate: bool = True, resolve_names: bool = True) -> Redaction:
+                     propagate: bool = True, resolve_names: bool = True,
+                     classify_roles: bool = True) -> Redaction:
     detections = detect_recording(texts, detect, propagate)
     if resolve_names:
         detections = link_names(detections)
+    if classify_roles:
+        detections = assign_roles(detections, texts)
     order = {doc_id: i for i, doc_id in enumerate(texts)}
 
     # Group mentions into entities; number placeholders by first appearance.

@@ -60,6 +60,32 @@ def test_propagation_redacts_a_mention_the_detector_missed():
     assert with_prop.texts["d2"] == "ref [ACCOUNT_1] hari." and not with_prop.leaks
 
 
+def test_known_name_overrides_a_keep_visible_label_elsewhere():
+    """The model calls the customer's name ORG in one sentence; it must still be redacted."""
+    texts = {"d1": "mage nama Nimal Perera.", "d2": "Thank you Nimal Perera, goodbye."}
+
+    def detect(text, preceding):
+        i = text.find("Nimal Perera")
+        label, role = ("PERSON", "PRIVATE_INDIVIDUAL") if text.startswith("mage") else ("ORG", "ORGANISATION")
+        return [Detection(i, i + 12, label, "Nimal Perera", role=role)]
+
+    out = redact_recording(texts, detect=detect, classify_roles=False)
+    assert out.texts["d2"] == "Thank you [PERSON_1], goodbye." and not out.leaks
+
+
+def test_sinhala_name_with_a_case_ending_is_still_redacted():
+    """නිමල්ට is 'to Nimal': the name is redacted, the grammatical ending kept."""
+    texts = {"d1": "මගේ නම නිමල් පෙරේරා.", "d2": "මම නිමල් පෙරේරාට කතා කළා."}
+
+    def detect(text, preceding):
+        if text.startswith("මගේ"):
+            return [Detection(7, 19, "PERSON", "නිමල් පෙරේරා", role="PRIVATE_INDIVIDUAL")]
+        return []
+
+    out = redact_recording(texts, detect=detect, classify_roles=False)
+    assert out.texts["d2"] == "මම [PERSON_1]ට කතා කළා." and not out.leaks
+
+
 def test_propagation_does_not_match_inside_a_longer_number():
     texts = {"d1": "account number eka 123456789012.", "d2": "9123456789012345"}
 
