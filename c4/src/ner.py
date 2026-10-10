@@ -49,12 +49,23 @@ ROLE_OF = {"PERSON": "PRIVATE_INDIVIDUAL", "ADDRESS": "PRIVATE_INDIVIDUAL",
 # ---------------------------------------------------------------------------
 
 
-def training_recordings(data: str) -> list[Recording]:
+def dev_fold() -> list[str]:
+    """
+    Every fifth complete tuning recording. A model trained without them can be
+    analysed and improved on them, so the held-out five stay untouched until
+    the final score.
+    """
+    tuning = [r for r in complete_recording_ids() if r not in EVAL_RECORDINGS]
+    return tuning[::5]
+
+
+def training_recordings(data: str, exclude_dev: bool = False) -> list[Recording]:
     recs: list[Recording] = []
     if data in ("synthetic", "both"):
         recs += load_synthetic("train")
     if data in ("real", "both"):
-        recs += [load_real(r) for r in complete_recording_ids() if r not in EVAL_RECORDINGS]
+        skip = set(EVAL_RECORDINGS) | (set(dev_fold()) if exclude_dev else set())
+        recs += [load_real(r) for r in complete_recording_ids() if r not in skip]
     return recs
 
 
@@ -93,14 +104,15 @@ def span_examples(recordings: list[Recording], labels=MODEL_LABELS) -> tuple[lis
 
 
 def train(data: str, epochs: int = 30, seed: int = 13, dropout: float = 0.2,
-          batch_size: int = 16, out_dir: Path | None = None, verbose: bool = True) -> Path:
+          batch_size: int = 16, out_dir: Path | None = None, verbose: bool = True,
+          exclude_dev: bool = False) -> Path:
     import spacy
     from spacy.training import Example
     from spacy.util import fix_random_seed, minibatch
 
     fix_random_seed(seed)
     rng = random.Random(seed)
-    examples, skipped = span_examples(training_recordings(data))
+    examples, skipped = span_examples(training_recordings(data, exclude_dev))
 
     nlp = spacy.blank("xx")               # multilingual tokenizer: Sinhala + Latin
     ner = nlp.add_pipe("ner")
@@ -136,7 +148,7 @@ def train(data: str, epochs: int = 30, seed: int = 13, dropout: float = 0.2,
             print(f"  epoch {epoch:>2}  loss {losses.get('ner', 0):9.1f}  "
                   f"{time.time() - started:5.0f}s", flush=True)
 
-    out = out_dir or MODEL_DIR / f"ner_{data}"
+    out = out_dir or MODEL_DIR / f"ner_{data}{'_devfold' if exclude_dev else ''}"
     out.mkdir(parents=True, exist_ok=True)
     nlp.meta["c4"] = {"data": data, "epochs": epochs, "seed": seed, "dropout": dropout,
                       "batch_size": batch_size}
@@ -205,9 +217,11 @@ def main() -> None:
     t.add_argument("--data", choices=["real", "synthetic", "both"], default="both")
     t.add_argument("--epochs", type=int, default=30)
     t.add_argument("--seed", type=int, default=13)
+    t.add_argument("--dev-fold", action="store_true",
+                   help="leave the development fold out (for error analysis)")
     args = ap.parse_args()
     if args.cmd == "train":
-        train(args.data, args.epochs, args.seed)
+        train(args.data, args.epochs, args.seed, exclude_dev=args.dev_fold)
 
 
 if __name__ == "__main__":

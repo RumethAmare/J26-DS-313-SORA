@@ -255,12 +255,16 @@ def recall_by_noise(gold: list[Span], pred: list[Span]) -> dict:
 # Running an evaluation
 # ---------------------------------------------------------------------------
 
-SOURCES = ("synthetic-test", "synthetic-train", "real-dev", "real-eval")
+SOURCES = ("synthetic-test", "synthetic-train", "real-dev", "real-devfold", "real-eval")
 
 
 def load_source(source: str) -> list[Recording]:
     if source.startswith("synthetic-"):
         return load_synthetic(source.removeprefix("synthetic-"))
+    if source == "real-devfold":
+        # The tuning recordings a dev-fold model never saw (ner.py --dev-fold).
+        from ner import dev_fold
+        return [load_real(r) for r in dev_fold()]
     # real-dev uses complete recordings only; the held-out five are all complete.
     ids = real_recording_ids() if source == "real-eval" else complete_recording_ids()
     if source == "real-eval":
@@ -283,6 +287,18 @@ def get_system(name: str) -> Predictor:
     if name == "presidio":
         from presidio_baseline import PresidioDetector
         return PresidioDetector()
+    # pipeline:<model> -- what the redacted output actually uses: the hybrid
+    # detector plus recording-level propagation (exact and cross-script names).
+    if name.startswith("pipeline:"):
+        from functools import partial
+
+        from ner import HybridDetector
+        from redact import detect_recording
+        detector = HybridDetector(name.split(":", 1)[1])
+
+        class Pipeline:
+            recording = staticmethod(partial(detect_recording, detect=detector))
+        return Pipeline()
     # model:<data> / hybrid:<data>, where <data> is real, synthetic or both
     if name.startswith(("model:", "hybrid:")):
         from ner import HybridDetector, ModelDetector
