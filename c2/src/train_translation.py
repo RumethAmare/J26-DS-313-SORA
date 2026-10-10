@@ -67,8 +67,9 @@ def main():
     ap.add_argument("--target", choices=["en", "si"], required=True)
     ap.add_argument("--model", default="facebook/nllb-200-distilled-600M")
     ap.add_argument("--epochs", type=int, default=10, help="upper bound; stops early if dev chrF++ stalls")
-    ap.add_argument("--lr", type=float, default=5e-5)
-    ap.add_argument("--batch", type=int, default=8)
+    ap.add_argument("--lr", type=float, default=1e-4)
+    ap.add_argument("--batch", type=int, default=4)
+    ap.add_argument("--grad-accum", type=int, default=2, help="effective batch = batch x grad-accum")
     ap.add_argument("--max-len", type=int, default=256)
     ap.add_argument("--fraction", type=float, default=1.0, help="share of training recordings to use")
     ap.add_argument("--seed", type=int, default=13)
@@ -114,6 +115,10 @@ def main():
         learning_rate=args.lr,
         per_device_train_batch_size=args.batch,
         per_device_eval_batch_size=args.batch,
+        gradient_accumulation_steps=args.grad_accum,
+        # NLLB's 256k vocab makes AdamW + batch 8 overflow a 15 GB T4;
+        # Adafactor keeps far less optimizer state.
+        optim="adafactor",
         warmup_ratio=0.05,
         weight_decay=0.01,
         fp16=torch.cuda.is_available(),
