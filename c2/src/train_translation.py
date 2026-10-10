@@ -123,8 +123,6 @@ def main():
         save_only_model=True,  # no optimizer state: checkpoints 3x smaller, faster
         load_best_model_at_end=True,
         metric_for_best_model="chrf++",
-        # Only ~2.4k pairs: smoothing stops the model getting over-confident.
-        label_smoothing_factor=0.1,
         predict_with_generate=True,
         generation_max_length=args.max_len,
         logging_steps=50,
