@@ -160,6 +160,24 @@ kept only if it improved the development fold:
 Every measure improved and none got worse. The held-out five were then scored
 once: F1 0.822 → **0.851**, recall 0.917 → **0.938**.
 
+## 4b. Generalisation check: does the model memorise names?
+
+The recordings are team role-plays, so some names recur across recordings.
+To check that the model generalises rather than memorises, recall on
+held-out names was split by whether the name occurred in the training data:
+
+| Held-out name mentions | Mentions | Recall |
+|---|---|---|
+| Exact name seen in training | 23 | 1.000 |
+| Partly seen (one word, e.g. a surname) | 52 | 0.981 |
+| **Never seen in training** | **78** | **0.962** |
+
+On the synthetic test split, whose names share nothing with training by
+construction, PERSON recall is **0.976** (F1 0.920).
+
+The small gap between seen and unseen names shows the model recognises names
+from context and form, not from memory.
+
 ## 5. Cross-script name propagation
 
 Once a person is found, the same name is found again in another case, in the

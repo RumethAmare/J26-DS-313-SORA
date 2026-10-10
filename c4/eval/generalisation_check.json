@@ -1,0 +1,25 @@
+{
+  "question": "Does the model memorise names, or generalise to names it never saw?",
+  "held_out_real_person_recall": {
+    "exact_name_seen_in_training": {
+      "mentions": 23,
+      "recall": 1.0
+    },
+    "partly_seen_some_word_in_training": {
+      "mentions": 52,
+      "recall": 0.981
+    },
+    "unseen_never_in_training": {
+      "mentions": 78,
+      "recall": 0.962
+    }
+  },
+  "synthetic_test": {
+    "name_overlap_with_training": 0,
+    "person_recall": 0.976,
+    "person_f1": 0.92,
+    "address_recall": 0.95,
+    "micro_f1": 0.922
+  },
+  "system": "pipeline:xlmr_both (final)"
+}
