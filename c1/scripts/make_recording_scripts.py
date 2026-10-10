@@ -131,9 +131,9 @@ def phone(rng):
 
 def nic(rng):
     if rng.random() < 0.5:                       # new 12-digit format: YYYY DDD SSSS C
-        year = str(rng.randint(1965, 2004))
-        day = rng.randint(1, 365) + (500 if rng.random() < 0.5 else 0)
-        while True:
+        while True:                               # redraw everything: a year like 1987
+            year = str(rng.randint(1965, 2004))   # (9-8-7) can never pass clean()
+            day = rng.randint(1, 365) + (500 if rng.random() < 0.5 else 0)
             d = year + f"{day:03d}" + "".join(rng.choice("0123456789") for _ in range(5))
             if clean(d):
                 return Num(d, [d[:4], d[4:7], d[7:]], kind="NIC")
