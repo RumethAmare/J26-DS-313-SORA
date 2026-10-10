@@ -38,8 +38,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable, Iterable
 
-from corpus import (C4_ROOT, EVAL_RECORDINGS, Recording, load_real, load_synthetic,
-                    preceding_texts, real_recording_ids)
+from corpus import (C4_ROOT, EVAL_RECORDINGS, Recording, complete_recording_ids, load_real,
+                    load_synthetic, preceding_texts, real_recording_ids)
 
 # ---------------------------------------------------------------------------
 # Label sets
@@ -261,7 +261,8 @@ SOURCES = ("synthetic-test", "synthetic-train", "real-dev", "real-eval")
 def load_source(source: str) -> list[Recording]:
     if source.startswith("synthetic-"):
         return load_synthetic(source.removeprefix("synthetic-"))
-    ids = real_recording_ids()
+    # real-dev uses complete recordings only; the held-out five are all complete.
+    ids = real_recording_ids() if source == "real-eval" else complete_recording_ids()
     if source == "real-eval":
         ids = [r for r in ids if r in EVAL_RECORDINGS]
     else:

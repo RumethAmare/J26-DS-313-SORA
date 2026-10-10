@@ -12,7 +12,7 @@ same Detection interface.
 Training data comes from three sources, so the value of synthetic data can be
 measured rather than assumed:
 
-    real        real recordings outside the held-out set
+    real        complete real recordings outside the held-out set
     synthetic   the synthetic train split
     both        both of the above
 
@@ -32,8 +32,8 @@ import time
 from functools import lru_cache
 from pathlib import Path
 
-from corpus import (C4_ROOT, EVAL_RECORDINGS, Recording, load_real, load_synthetic,
-                    real_recording_ids)
+from corpus import (C4_ROOT, EVAL_RECORDINGS, Recording, complete_recording_ids, load_real,
+                    load_synthetic)
 from rules import Detection
 from rules import detect as rule_detect
 
@@ -54,7 +54,7 @@ def training_recordings(data: str) -> list[Recording]:
     if data in ("synthetic", "both"):
         recs += load_synthetic("train")
     if data in ("real", "both"):
-        recs += [load_real(r) for r in real_recording_ids() if r not in EVAL_RECORDINGS]
+        recs += [load_real(r) for r in complete_recording_ids() if r not in EVAL_RECORDINGS]
     return recs
 
 

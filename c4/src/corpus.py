@@ -148,6 +148,36 @@ def preceding_texts(texts: dict[str, str]) -> dict[str, str]:
     return previous
 
 
+MIN_VALID_SPANS = 0.95
+
+
+def is_complete(rid: str, root: Path | None = None) -> bool:
+    """
+    A recording is complete for C4 when its C1 transcript, C2 translation and
+    summary, and C4 spans all exist, and at least 95% of its spans match their
+    text exactly. The manifest status cannot decide this: nearly every
+    recording is still marked ANNOTATED_DRAFT.
+    """
+    ann = (root or dataset_root()) / "annotations"
+    needed = [ann / "c1" / f"{rid}.transcript.json", ann / "c2" / f"{rid}.translation.json",
+              ann / "c2" / f"{rid}.summary.json", ann / "c4" / f"{rid}.pii.jsonl",
+              ann / "c4" / f"{rid}.entities.json"]
+    if not all(p.exists() for p in needed):
+        return False
+    rows = _read_jsonl(ann / "c4" / f"{rid}.pii.jsonl")
+    if not rows:
+        return False
+    texts = load_texts(rid, root)
+    valid = sum(1 for r in rows if r.get("doc_id") in texts and "start_char" in r
+                and texts[r["doc_id"]][r["start_char"]:r["end_char"]] == r.get("surface"))
+    return valid / len(rows) >= MIN_VALID_SPANS
+
+
+def complete_recording_ids(root: Path | None = None) -> list[str]:
+    """Complete recordings only; in-progress ones are never trained or tuned on."""
+    return [r for r in real_recording_ids(root) if is_complete(r, root)]
+
+
 def real_recording_ids(root: Path | None = None) -> list[str]:
     c4 = (root or dataset_root()) / "annotations" / "c4"
     return sorted(p.name.removesuffix(".pii.jsonl") for p in c4.glob("*.pii.jsonl"))
