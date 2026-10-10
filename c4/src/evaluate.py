@@ -301,9 +301,9 @@ def get_system(name: str) -> Predictor:
         return Pipeline()
     # model:<data> / hybrid:<data>, where <data> is real, synthetic or both
     if name.startswith(("model:", "hybrid:")):
-        from ner import HybridDetector, ModelDetector
+        from ner import HybridDetector, _learned_model
         kind, data = name.split(":", 1)
-        return ModelDetector(data) if kind == "model" else HybridDetector(data)
+        return _learned_model(data) if kind == "model" else HybridDetector(data)
     raise SystemExit(f"unknown system {name!r}")
 
 

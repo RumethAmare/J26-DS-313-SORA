@@ -29,8 +29,8 @@ def detector():
     global _DETECTOR
     if _DETECTOR is None:
         try:
-            from ner import HybridDetector
-            _DETECTOR = HybridDetector("both")
+            from ner import HybridDetector, default_model
+            _DETECTOR = HybridDetector(default_model())
             _DETECTOR("warm-up")
         except FileNotFoundError:
             from rules import detect

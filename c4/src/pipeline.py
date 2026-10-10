@@ -90,7 +90,7 @@ def _shown(path: Path) -> str:
         return str(path)
 
 
-def run(rid: str, texts: dict[str, str], model: str | None = "both",
+def run(rid: str, texts: dict[str, str], model: str | None = "xlmr_both",
         save_map: bool = True, measure: bool = False) -> dict:
     if not texts:
         raise SystemExit(f"no C1/C2 text found for {rid}")
@@ -154,7 +154,9 @@ def main() -> None:
     ap.add_argument("--c2-dir", type=Path, help="directory holding <rid>.translation.json / .summary.json")
     ap.add_argument("--c1-dir", type=Path, help="optional directory holding <rid>.transcript.json")
     ap.add_argument("--rid", help="recording id when using --c2-dir")
-    ap.add_argument("--model", default="both", help="NER model (real|synthetic|both); 'none' = rules only")
+    ap.add_argument("--model", default=None,
+                    help="NER model: xlmr_both (transformer), both (spaCy), ...; 'none' = rules only. "
+                         "Default: the transformer if trained, else spaCy")
     ap.add_argument("--no-map", action="store_true", help="do not write the re-identification map")
     ap.add_argument("--offline-check", action="store_true", help="block all network access (NFR1)")
     ap.add_argument("--measure", action="store_true", help="report latency and peak memory (NFR4/5)")
@@ -165,7 +167,9 @@ def main() -> None:
         ap.error("give --recording, or --c2-dir with --rid")
     attempts = block_network() if args.offline_check else None
     texts = load_inputs(rid, args.c2_dir, args.c1_dir)
-    report = run(rid, texts, None if args.model == "none" else args.model,
+    from ner import default_model
+    model = default_model() if args.model is None else None if args.model == "none" else args.model
+    report = run(rid, texts, model,
                  save_map=not args.no_map, measure=args.measure)
     if attempts is not None:
         report["network_attempts"] = len(attempts)
