@@ -1,0 +1,446 @@
+{
+  "n_utterances": 9,
+  "transcript": "Hello. Mokadha giyan? මම ඒක කියන්න බෑ. Okay. Nama mokadha? Exam එක කොහොමද? okay okay ආ හා දෙන්නේ close කරන්න ආ හොඳයි සිස් කියන්න කොහොමද?",
+  "utterances": [
+    {
+      "utt_id": "live_u001",
+      "start": 1.31,
+      "end": 2.21,
+      "text": "Hello.",
+      "tokens": [
+        {
+          "utt_id": "live_u001",
+          "tok_id": 0,
+          "token": "Hello.",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.6,
+      "latency_after_speech_s": 1.2,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u002",
+      "start": 5.98,
+      "end": 6.94,
+      "text": "Mokadha giyan?",
+      "tokens": [
+        {
+          "utt_id": "live_u002",
+          "tok_id": 0,
+          "token": "Mokadha",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9911,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u002",
+          "tok_id": 1,
+          "token": "giyan?",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.7946,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.76,
+      "latency_after_speech_s": 1.36,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u003",
+      "start": 7.23,
+      "end": 8.99,
+      "text": "මම ඒක කියන්න බෑ.",
+      "tokens": [
+        {
+          "utt_id": "live_u003",
+          "tok_id": 0,
+          "token": "මම",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 1,
+          "token": "ඒක",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 2,
+          "token": "කියන්න",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 3,
+          "token": "බෑ.",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 1.3,
+      "latency_after_speech_s": 1.9,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u004",
+      "start": 9.31,
+      "end": 10.05,
+      "text": "Okay.",
+      "tokens": [
+        {
+          "utt_id": "live_u004",
+          "tok_id": 0,
+          "token": "Okay.",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.73,
+      "latency_after_speech_s": 1.33,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u005",
+      "start": 11.94,
+      "end": 13.18,
+      "text": "Nama mokadha?",
+      "tokens": [
+        {
+          "utt_id": "live_u005",
+          "tok_id": 0,
+          "token": "Nama",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9978,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 1,
+          "token": "mokadha?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9937,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.77,
+      "latency_after_speech_s": 1.37,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u006",
+      "start": 19.26,
+      "end": 20.8,
+      "text": "Exam එක කොහොමද?",
+      "tokens": [
+        {
+          "utt_id": "live_u006",
+          "tok_id": 0,
+          "token": "Exam",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9977,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 1,
+          "token": "එක",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 2,
+          "token": "කොහොමද?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 1.01,
+      "latency_after_speech_s": 1.61,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u007",
+      "start": 30.53,
+      "end": 31.49,
+      "text": "okay okay",
+      "tokens": [
+        {
+          "utt_id": "live_u007",
+          "tok_id": 0,
+          "token": "okay",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 1,
+          "token": "okay",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.6,
+      "latency_after_speech_s": 1.2,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u008",
+      "start": 31.81,
+      "end": 33.12,
+      "text": "ආ හා දෙන්නේ close කරන්න",
+      "tokens": [
+        {
+          "utt_id": "live_u008",
+          "tok_id": 0,
+          "token": "ආ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 1,
+          "token": "හා",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 2,
+          "token": "දෙන්නේ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 3,
+          "token": "close",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.999,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 4,
+          "token": "කරන්න",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 1.29,
+      "latency_after_speech_s": 1.89,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u009",
+      "start": 35.87,
+      "end": 37.12,
+      "text": "ආ හොඳයි සිස් කියන්න කොහොමද?",
+      "tokens": [
+        {
+          "utt_id": "live_u009",
+          "tok_id": 0,
+          "token": "ආ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 1,
+          "token": "හොඳයි",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 2,
+          "token": "සිස්",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 3,
+          "token": "කියන්න",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 4,
+          "token": "කොහොමද?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 1.98,
+      "latency_after_speech_s": 2.58,
+      "decode_action": "greedy"
+    }
+  ],
+  "session": {
+    "model": "large-v3_v4_aug",
+    "model_dir": "models\\ct2\\large-v3_v4_aug",
+    "source": "microphone (default)",
+    "started": "20261010-142040",
+    "audio_s": 38.8,
+    "decode_opts": {
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 1,
+      "temperature": 0.0,
+      "compression_ratio_threshold": null,
+      "log_prob_threshold": null,
+      "no_speech_threshold": null,
+      "condition_on_previous_text": false,
+      "without_timestamps": true,
+      "no_repeat_ngram_size": 0,
+      "word_timestamps": true,
+      "vad_filter": false
+    },
+    "endpointing": {
+      "silence_ms": 600,
+      "number_pause_ms": 1500,
+      "max_utterance_s": 25.0,
+      "vad": "silero (faster-whisper bundle), streaming"
+    },
+    "word_times": false,
+    "latency_after_speech_s": {
+      "median": 1.37,
+      "max": 2.58
+    }
+  }
+}

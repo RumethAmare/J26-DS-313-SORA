@@ -26,6 +26,7 @@ import argparse
 import json
 import os
 import queue
+import re
 import sys
 import threading
 import time
@@ -44,6 +45,17 @@ PREROLL_S = 0.3                # audio kept from just before speech started
 MIN_UTT_S = 0.4                # shorter blips are ignored
 MAX_UTT_S = 25.0               # default cap (--max-utterance-s); Whisper's window is 30 s
 PARTIAL_EVERY_S = 1.0
+# A number read digit by digit has pauses between the digits. Cutting there
+# leaves 1 s fragments with no context, where the model invents counting runs
+# ("1 2 3 4 5"). So when a pause comes right after a digit, keep listening.
+NUMBER_PAUSE_MS = 1500
+_ENDS_IN_NUMBER = re.compile(
+    # a digit, or a number word, at the end of the text. Not "eka"/"එක":
+    # besides "one" it is the everyday Sinhala "the" ("packet eka").
+    r"(\d|\b(zero|oh|two|three|four|five|six|seven|eight|nine|double|triple)"
+    r"|බිංදුව|බින්දුව|දෙක|තුන|හතර|පහ|හය|හත|අට|නවය"
+    r"|\b(binduwa|bindu|deka|thuna|hathara|paha|haya|hatha|ata|nawaya))\W*$",
+    re.IGNORECASE)
 
 C1_ROOT = ct2_decode.C1_ROOT
 OUT_DIR = os.path.join(C1_ROOT, "predictions", "live")
@@ -134,6 +146,9 @@ def main():
     ap.add_argument("--list-devices", action="store_true")
     ap.add_argument("--silence-ms", type=int, default=600,
                     help="pause that ends an utterance (shorter = faster text, more cuts)")
+    ap.add_argument("--number-pause-ms", type=int, default=NUMBER_PAUSE_MS,
+                    help="pause needed to end an utterance that ends on a digit "
+                         "(0 = treat numbers like any other speech)")
     ap.add_argument("--max-utterance-s", type=float, default=MAX_UTT_S,
                     help="force a cut after this much continuous speech (lower = text "
                          "sooner during long turns; must stay under 30)")
@@ -172,6 +187,8 @@ def main():
           flush=True)
 
     silence_frames = int(a.silence_ms / 1000 * SR / BLOCK)
+    number_frames = int(a.number_pause_ms / 1000 * SR / BLOCK)
+    waiting_number = False                         # pause came after a digit
     preroll = []                                  # recent frames before speech
     utt, in_speech, quiet, last_partial = [], False, 0, 0.0
     t_audio = 0.0                                 # session clock, from samples received
@@ -204,7 +221,7 @@ def main():
         sys.stdout.write(f"{CLEAR}{DIM}[{mmss(utt_start)}]{RESET} {coloured(toks, text) or DIM + '(no text)' + RESET}"
                          f"  {DIM}({dur:.1f}s speech, text {lag:.1f}s after it ended"
                          f"{', cut at max length' if reason == 'max' else ''}"
-                         f"{', loop: ' + action if action != 'greedy' else ''}){RESET}\n")
+                         f"{', fixed: ' + action if action != 'greedy' else ''}){RESET}\n")
         sys.stdout.flush()
 
     try:
@@ -229,8 +246,19 @@ def main():
                 continue
             utt.append(frame)
             quiet = quiet + 1 if p < SPEECH_OFF else 0
-            if quiet >= silence_frames:
+            if quiet == 0:
+                waiting_number = False
+            if (quiet == silence_frames and not waiting_number
+                    and number_frames > silence_frames):
+                # Normal pause reached: if the speech so far ends on a number,
+                # keep listening -- the next digit is probably coming.
+                tail = np.concatenate(utt[-int(4 * SR / BLOCK):])
+                text, _, _, _ = ct2_decode.transcribe(model, tail, partial=True)
+                waiting_number = bool(_ENDS_IN_NUMBER.search(text))
+            need = number_frames if waiting_number else silence_frames
+            if quiet >= need:
                 utt = utt[:-max(0, quiet - int(0.2 * SR / BLOCK))]   # keep 0.2 s of the pause
+                waiting_number = False
                 finalize("pause")
             elif len(utt) * BLOCK / SR >= a.max_utterance_s:
                 finalize("max")
@@ -267,7 +295,8 @@ def main():
             "started": stamp, "audio_s": round(t_audio, 1),
             "decode_opts": {k: (list(v) if isinstance(v, tuple) else v)
                             for k, v in ct2_decode.DECODE_OPTS.items()},
-            "endpointing": {"silence_ms": a.silence_ms, "max_utterance_s": a.max_utterance_s,
+            "endpointing": {"silence_ms": a.silence_ms, "number_pause_ms": a.number_pause_ms,
+                            "max_utterance_s": a.max_utterance_s,
                             "vad": "silero (faster-whisper bundle), streaming"},
             "word_times": a.word_times,
             "latency_after_speech_s": {

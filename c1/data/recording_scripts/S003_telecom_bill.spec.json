@@ -1,0 +1,244 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S003_telecom_bill.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Mobitel customer care, මම Tharushi. ඔයාට කොහොමද help කරන්න පුළුවන්?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "වනක්කම්. Hi, මගේ මේ මාසේ bill එක හරිම වැඩියි. ඒ ගැන check කරන්න ඕනේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි sir. Connection number එක කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "075 457 1784.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Account එක කාගේ නමින්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Rajan Thevarajah.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Verify කරන්න NIC number එක කියන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "197621871475.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ස්තූතියි. මේ මාසේ bill එක rupees 5,650. සාමාන්‍යයෙන් එන්නේ rupees 1,500 වගේ නේද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, ඒක තමයි මට තේරෙන්නේ නැත්තේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "October 18 දවසේ data add-on එකක් activate වෙලා තියෙනවා. GB 10 ක package එකක්.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "මම එහෙම එකක් activate කළේ නෑ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "සමහර වෙලාවට promotion SMS එකකට reply කළාම activate වෙනවා. අපි ඒ charge එක reverse කරන්නම්.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි, ඒක හොඳයි. ඊළඟ bill එකේ adjust වෙනවද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඔව්, ඊළඟ bill එකේ rupees 2,600 credit එකක් විදිහට පෙන්නයි. Reference number එක TKT-136270.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ආයෙත් කියන්න, TKT-136270?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඔව් හරි. ඔයාගේ email එකට e-bill එක එවන්නද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, email එක rajan.thevarajah93@gmail.com.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි, ඒක update කළා. Add-on activate වෙන එක block කරන්නත් පුළුවන්. කරන්නද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, කරන්න. තව මොකුත් නෑ, ස්තූතියි. රොම්බ නන්ද්‍රි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Mobitel එකට call කළාට ස්තූතියි. සුභ දවසක්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Operator reverses the add-on charge as a credit on the next bill, switches to e-bill, blocks add-on activation.",
+      "owner": "Mobitel",
+      "receiver": "Rajan Thevarajah",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Rajan Thevarajah",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Rajan Thevarajah"
+        },
+        {
+          "script": "LATIN",
+          "form": "Rajan"
+        }
+      ]
+    },
+    {
+      "canonical": "Tharushi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Tharushi"
+        }
+      ]
+    },
+    {
+      "canonical": "Mobitel",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Mobitel"
+        }
+      ]
+    },
+    {
+      "canonical": "075 457 1784",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "075 457 1784"
+        }
+      ]
+    },
+    {
+      "canonical": "197621871475",
+      "label": "NIC",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "197621871475"
+        }
+      ]
+    },
+    {
+      "canonical": "TKT-136270",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "TKT-136270"
+        }
+      ]
+    },
+    {
+      "canonical": "rajan.thevarajah93@gmail.com",
+      "label": "EMAIL",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "rajan.thevarajah93@gmail.com"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {
+    "වනක්කම්.": "OTHER",
+    "වනක්කම්": "OTHER",
+    "රොම්බ": "OTHER",
+    "නන්ද්‍රි.": "OTHER",
+    "නන්ද්‍රි": "OTHER"
+  }
+}

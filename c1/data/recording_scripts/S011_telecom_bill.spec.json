@@ -1,0 +1,238 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S011_telecom_bill.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Dialog customer care, මම Pradeep. ඔයාට කොහොමද help කරන්න පුළුවන්?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Hi, මගේ මේ මාසේ bill එක හරිම වැඩියි. ඒ ගැන check කරන්න ඕනේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි sir. Connection number එක කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "076 438 2993.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Account එක කාගේ නමින්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Lahiru Dissanayake.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Verify කරන්න NIC number එක කියන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "198574916494.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ස්තූතියි. මේ මාසේ bill එක rupees 11,100. සාමාන්‍යයෙන් එන්නේ rupees 2,250 වගේ නේද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, ඒක තමයි මට තේරෙන්නේ නැත්තේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "June 22 දවසේ data add-on එකක් activate වෙලා තියෙනවා. GB 40 ක package එකක්.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "මම එහෙම එකක් activate කළේ නෑ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "සමහර වෙලාවට promotion SMS එකකට reply කළාම activate වෙනවා. අපි ඒ charge එක reverse කරන්නම්.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි, ඒක හොඳයි. ඊළඟ bill එකේ adjust වෙනවද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඔව්, ඊළඟ bill එකේ rupees 3,850 credit එකක් විදිහට පෙන්නයි. Reference number එක TKT-157718.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ආයෙත් කියන්න, TKT-157718?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඔව් හරි. ඔයාගේ email එකට e-bill එක එවන්නද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, email එක lahiru.dissanayake95@gmail.com.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි, ඒක update කළා. Add-on activate වෙන එක block කරන්නත් පුළුවන්. කරන්නද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, කරන්න. තව මොකුත් නෑ, ස්තූතියි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Dialog එකට call කළාට ස්තූතියි. සුභ දවසක්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Operator reverses the add-on charge as a credit on the next bill, switches to e-bill, blocks add-on activation.",
+      "owner": "Dialog",
+      "receiver": "Lahiru Dissanayake",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Lahiru Dissanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Lahiru Dissanayake"
+        },
+        {
+          "script": "LATIN",
+          "form": "Lahiru"
+        }
+      ]
+    },
+    {
+      "canonical": "Pradeep",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Pradeep"
+        }
+      ]
+    },
+    {
+      "canonical": "Dialog",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dialog"
+        }
+      ]
+    },
+    {
+      "canonical": "076 438 2993",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "076 438 2993"
+        }
+      ]
+    },
+    {
+      "canonical": "198574916494",
+      "label": "NIC",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "198574916494"
+        }
+      ]
+    },
+    {
+      "canonical": "TKT-157718",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "TKT-157718"
+        }
+      ]
+    },
+    {
+      "canonical": "lahiru.dissanayake95@gmail.com",
+      "label": "EMAIL",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "lahiru.dissanayake95@gmail.com"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {}
+}

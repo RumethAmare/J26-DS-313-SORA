@@ -1,0 +1,262 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S002_hospital_channelling.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Hemas Hospital channelling center එකෙන්, මම Ishani කතා කරන්නේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Hello, මට doctor Senaratne ගේ appointment එකක් ගන්න ඕනේ. Cardiologist කෙනෙක්.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි madam. මොන දවසටද ඕනේ?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "පුළුවන් නම් ලබන Friday.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Friday doctor ඉන්නේ හවස 6.30 ඉඳන්. දැනට free තියෙන්නේ number 21.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඒක හරි. ඒක book කරන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Patient ගේ නම කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Meena Ganeshan. මගේ අම්මා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "වයස කීයද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "67.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Contact number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "075 697 8809.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "මම ආපහු කියන්නම්, 075 697 8809. හරිද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව් හරි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Registration එකට patient ගේ NIC number එකත් ඕනේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "197302681967.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Channelling fee එක rupees 3,350. Hospital charges එක්ක rupees 4,100 වෙනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Card එකෙන් pay කරන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඔව්, counter එකේදී card එකෙන් pay කරන්න පුළුවන්. Appointment reference එක CH-273177.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "CH-273177. හරි, ලියාගත්තා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "විනාඩි තිහකට කලින් ඇවිත් reception එකේ report කරන්න. පරණ reports තියෙනවා නම් අරන් එන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි. ECG report එකයි blood test එකයි තියෙනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඒක හොඳයි. Appointment එක confirm කරලා SMS එකක් එවන්නම්.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ගොඩක් ස්තූතියි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ස්තූතියි madam, සුභ දවසක්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Appointment booked; arrive 30 minutes early with previous reports; SMS confirmation.",
+      "owner": "Hemas Hospital",
+      "receiver": "Ishani Karunaratne",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Ishani Karunaratne",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ishani Karunaratne"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ishani"
+        }
+      ]
+    },
+    {
+      "canonical": "Ishani",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ishani"
+        }
+      ]
+    },
+    {
+      "canonical": "Hemas Hospital",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hemas Hospital"
+        }
+      ]
+    },
+    {
+      "canonical": "075 697 8809",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "075 697 8809"
+        }
+      ]
+    },
+    {
+      "canonical": "197302681967",
+      "label": "NIC",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "197302681967"
+        }
+      ]
+    },
+    {
+      "canonical": "CH-273177",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "CH-273177"
+        }
+      ]
+    },
+    {
+      "canonical": "Meena Ganeshan",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Meena Ganeshan"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {}
+}

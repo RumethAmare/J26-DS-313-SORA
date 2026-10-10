@@ -1,0 +1,262 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S010_hospital_channelling.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Asiri Hospital channelling center එකෙන්, මම Lahiru කතා කරන්නේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Hello, මට doctor Kumarasinghe ගේ appointment එකක් ගන්න ඕනේ. Cardiologist කෙනෙක්.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි madam. මොන දවසටද ඕනේ?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "පුළුවන් නම් ලබන Thursday.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Thursday doctor ඉන්නේ හවස 5.15 ඉඳන්. දැනට free තියෙන්නේ number 27.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඒක හරි. ඒක book කරන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Patient ගේ නම කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Nethmi Herath. මගේ අම්මා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "වයස කීයද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "60.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Contact number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "071 265 8440.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "මම ආපහු කියන්නම්, 071 265 8440. හරිද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව් හරි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Registration එකට patient ගේ NIC number එකත් ඕනේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "771674484V.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Channelling fee එක rupees 3,000. Hospital charges එක්ක rupees 5,200 වෙනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Card එකෙන් pay කරන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඔව්, counter එකේදී card එකෙන් pay කරන්න පුළුවන්. Appointment reference එක CH-526309.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "CH-526309. හරි, ලියාගත්තා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "විනාඩි තිහකට කලින් ඇවිත් reception එකේ report කරන්න. පරණ reports තියෙනවා නම් අරන් එන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි. ECG report එකයි blood test එකයි තියෙනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඒක හොඳයි. Appointment එක confirm කරලා SMS එකක් එවන්නම්.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ගොඩක් ස්තූතියි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ස්තූතියි madam, සුභ දවසක්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Appointment booked; arrive 30 minutes early with previous reports; SMS confirmation.",
+      "owner": "Asiri Hospital",
+      "receiver": "Sanduni Rathnayake",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Sanduni Rathnayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sanduni Rathnayake"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sanduni"
+        }
+      ]
+    },
+    {
+      "canonical": "Lahiru",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Lahiru"
+        }
+      ]
+    },
+    {
+      "canonical": "Asiri Hospital",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Asiri Hospital"
+        }
+      ]
+    },
+    {
+      "canonical": "071 265 8440",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "071 265 8440"
+        }
+      ]
+    },
+    {
+      "canonical": "771674484V",
+      "label": "NIC",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "771674484V"
+        }
+      ]
+    },
+    {
+      "canonical": "CH-526309",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "CH-526309"
+        }
+      ]
+    },
+    {
+      "canonical": "Nethmi Herath",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nethmi Herath"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {}
+}

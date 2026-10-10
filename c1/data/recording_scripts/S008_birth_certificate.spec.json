@@ -1,0 +1,304 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S008_birth_certificate.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Kottawa Divisional Secretariat එකේ registration counter එක. මොකක්ද ඕනේ?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "වනක්කම්. මට උප්පැන්න සහතිකයේ copy එකක් ගන්න ඕනේ. Passport එකට.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි. ඔයාගේ නම?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Kavitha Rajendran.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "උපන් දිනය?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "July 22, 1982.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "උපන් තැන?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Malabe hospital එකේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Birth certificate number එක දන්නවද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, 2280.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "අම්මගේ නම?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Rashmi Wijesekara.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඔයාගේ NIC number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "997018642V.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "මම ආපහු කියන්නම්, 997018642V.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව් හරි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Application fee එක rupees 250. Copy එක working days පහකින් ලැබෙයි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Post එකෙන් එවන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඔව්, postal charges rupees 150 එකතු වෙනවා. Address එක කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "No. 11/8, Hospital Road, Battaramulla.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Contact number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "076 291 2808.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Application number එක DS-458500. Status එක check කරන්න ඒක ඕනේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "DS-458500. හරි, ස්තූතියි. රොම්බ නන්ද්‍රි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ස්තූතියි.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Certified copy posted to the applicant within 5 working days.",
+      "owner": "Divisional Secretariat",
+      "receiver": "Kavitha Rajendran",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Kavitha Rajendran",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kavitha Rajendran"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kavitha"
+        }
+      ]
+    },
+    {
+      "canonical": "Ishani",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ishani"
+        }
+      ]
+    },
+    {
+      "canonical": "Divisional Secretariat",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Divisional Secretariat"
+        }
+      ]
+    },
+    {
+      "canonical": "July 22, 1982",
+      "label": "DOB",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "July 22, 1982"
+        }
+      ]
+    },
+    {
+      "canonical": "2280",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "2280"
+        }
+      ]
+    },
+    {
+      "canonical": "Rashmi Wijesekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Rashmi Wijesekara"
+        }
+      ]
+    },
+    {
+      "canonical": "997018642V",
+      "label": "NIC",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "997018642V"
+        }
+      ]
+    },
+    {
+      "canonical": "No. 11/8, Hospital Road, Battaramulla",
+      "label": "ADDRESS",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 11/8, Hospital Road, Battaramulla"
+        }
+      ]
+    },
+    {
+      "canonical": "076 291 2808",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "076 291 2808"
+        }
+      ]
+    },
+    {
+      "canonical": "DS-458500",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "DS-458500"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {
+    "වනක්කම්.": "OTHER",
+    "වනක්කම්": "OTHER",
+    "රොම්බ": "OTHER",
+    "නන්ද්‍රි.": "OTHER",
+    "නන්ද්‍රි": "OTHER"
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S004_insurance_claim.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Allianz Insurance motor claims, මම Oshadi.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "වනක්කම්. Hello, මගේ car එක accident එකකට පැටලුණා. Claim එකක් report කරන්න ඕනේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "අයියෝ, කාටවත් තුවාල වුණාද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "නෑ, කාටවත් කිසි දෙයක් නෑ. Front bumper එකයි headlight එකයි කැඩුණා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි. ඔයාගේ නම කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Lakshmi Sritharan.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Vehicle number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "CP SVE-9841.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Policy number එක ළඟ තියෙනවද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, MV10550087.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "මම ආපහු කියන්නම්, MV10550087.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, ඒක තමයි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "කොහෙද accident එක වුණේ?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Homagama junction එක ළඟ, අද උදේ 8.45 විතර.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "අනිත් වාහනයේ number එක ගත්තද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, ඒක NW YGE-9486.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Police complaint එකක් දැම්මද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, Homagama police එකේ. Complaint number එක 547517.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හොඳයි. ඔයාගේ contact number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "077 283 6016.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "අපේ assessor කෙනෙක් පැය දෙකක් ඇතුළත call කරයි. වාහනය දැන් කොහෙද තියෙන්නේ?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "තවම junction එක ළඟ පැත්තකට කරලා තියෙන්නේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි. Claim reference number එක CLM-799229. Assessor එනකම් photos ටිකක් ගන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "CLM-799229. හරි, ලියාගත්තා. ස්තූතියි. රොම්බ නන්ද්‍රි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Take care madam, අපි ඉක්මනටම contact කරන්නම්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Assessor calls within 2 hours; customer takes photos of the vehicle meanwhile.",
+      "owner": "Allianz Insurance",
+      "receiver": "Lakshmi Sritharan",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Lakshmi Sritharan",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Lakshmi Sritharan"
+        },
+        {
+          "script": "LATIN",
+          "form": "Lakshmi"
+        }
+      ]
+    },
+    {
+      "canonical": "Oshadi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Oshadi"
+        }
+      ]
+    },
+    {
+      "canonical": "Allianz Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Allianz Insurance"
+        }
+      ]
+    },
+    {
+      "canonical": "CP SVE-9841",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "CP SVE-9841"
+        }
+      ]
+    },
+    {
+      "canonical": "NW YGE-9486",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "NW YGE-9486"
+        }
+      ]
+    },
+    {
+      "canonical": "077 283 6016",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "077 283 6016"
+        }
+      ]
+    },
+    {
+      "canonical": "MV10550087",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "MV10550087"
+        }
+      ]
+    },
+    {
+      "canonical": "547517",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "547517"
+        }
+      ]
+    },
+    {
+      "canonical": "CLM-799229",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "CLM-799229"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {
+    "වනක්කම්.": "OTHER",
+    "වනක්කම්": "OTHER",
+    "රොම්බ": "OTHER",
+    "නන්ද්‍රි.": "OTHER",
+    "නන්ද්‍රි": "OTHER"
+  }
+}

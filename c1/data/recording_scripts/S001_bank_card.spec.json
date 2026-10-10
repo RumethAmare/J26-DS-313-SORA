@@ -1,0 +1,274 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S001_bank_card.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Good morning, Bank of Ceylon card center එකෙන්, මම Dilan. කොහොමද මට ඔයාට help කරන්න පුළුවන්?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Good morning sir. මගේ credit card එකෙන් මට නොදන්න transactions දෙකක් වෙලා තියෙනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි sir, කලබල වෙන්න එපා. මුලින්ම ඔයාගේ full name එක කියන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "මගේ නම Lahiru Dissanayake.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ස්තූතියි. Verify කරන්න ඔයාගේ NIC number එක කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "NIC එක 932460911V.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "මම ආපහු කියන්නම්, 932460911V. ඒක හරිද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව් හරි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Card එකේ අන්තිම digits හතර?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "4170.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Registered mobile number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Mobile number එක 078 536 4556.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ස්තූතියි sir. කවදද මේ transactions වුණේ?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "May 10 දවසේ. එකක් rupees 25,900, අනිත් එක rupees 4,500.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඒ දෙකම online purchases විදිහට තියෙන්නේ. ඔයා එහෙම මොකුත් ගත්තේ නැද්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "නෑ, මම මුකුත් ගත්තේ නෑ. Card එක මගේ ළඟම තියෙනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි, එහෙනම් අපි card එක දැන්ම block කරනවා. අලුත් card එකක් දවස් හතක් ඇතුළත ගෙදරට එවනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි. Address එක තවමත් No. 161/6, Lake Road, Moratuwa තමයි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි, confirm කළා. මේ complaint එකට reference number එක ලියාගන්න, CRD-815188.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ආයෙත් කියන්න පුළුවන්ද? CRD-815188 නේද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඔව් හරි. Working days දහහතරක් ඇතුළත investigate කරලා SMS එකක් එවනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි හරි, ගොඩක් ස්තූතියි sir.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ප්‍රශ්නයක් නෑ sir. තව මොනවා හරි help එකක් ඕනෙද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "නෑ, එච්චරයි. Thank you.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Bank of Ceylon එක තෝරගත්තට ස්තූතියි. සුභ දවසක්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Bank blocks the card, sends a new one within 7 days, and investigates the dispute within 14 working days.",
+      "owner": "Bank of Ceylon",
+      "receiver": "Lahiru Dissanayake",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Lahiru Dissanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Lahiru Dissanayake"
+        },
+        {
+          "script": "LATIN",
+          "form": "Lahiru"
+        }
+      ]
+    },
+    {
+      "canonical": "Dilan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dilan"
+        }
+      ]
+    },
+    {
+      "canonical": "Bank of Ceylon",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Bank of Ceylon"
+        }
+      ]
+    },
+    {
+      "canonical": "932460911V",
+      "label": "NIC",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "932460911V"
+        }
+      ]
+    },
+    {
+      "canonical": "4170",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "4170"
+        }
+      ]
+    },
+    {
+      "canonical": "078 536 4556",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "078 536 4556"
+        }
+      ]
+    },
+    {
+      "canonical": "CRD-815188",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "CRD-815188"
+        }
+      ]
+    },
+    {
+      "canonical": "No. 161/6, Lake Road, Moratuwa",
+      "label": "ADDRESS",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 161/6, Lake Road, Moratuwa"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {}
+}
