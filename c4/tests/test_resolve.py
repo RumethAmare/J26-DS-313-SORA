@@ -67,6 +67,16 @@ def test_different_people(a, b):
     assert mention_similarity(a, b) < DEFAULT_THRESHOLD
 
 
+@pytest.mark.parametrize("latin,sinhala", [
+    ("Dr. Pradeepa Wickramasinghe", "Doctor ප්‍රදීපා වික්‍රමසිංහ"),   # English title word
+    ("Dr. Renuka Alwis", "ආචාර්ය රේණුකා අල්විස්"),                  # Sinhala title
+    ("Osadi de Silva", "ඔසඳි ද සිල්වා"),                            # particle + prenasalised ඳ
+    ("Shyamalee", "ශ්‍යාමලී"),                                       # -ee = ී, not the female -i
+])
+def test_titles_particles_and_spelling_conventions(latin, sinhala):
+    assert mention_similarity(latin, sinhala) >= DEFAULT_THRESHOLD
+
+
 def test_sinhala_case_endings_are_ignored():
     """අමාශිට 'to Amashi', සෙල්වීගෙන් 'from Selvy' -- the span covers the ending."""
     assert mention_similarity("Amashi", "අමාශිට") >= DEFAULT_THRESHOLD

@@ -114,7 +114,14 @@ HONORIFICS = {
     "mahaththaya", "nona", "mea", "maya", "aiya", "akka", "nangi", "malli",
     "මහත්මයා", "මහතා", "මහත්මිය", "මිය", "මෙනවිය", "මිස්", "මිසිස්", "මිස්ටර්", "ඩොක්ටර්",
     "සර්", "මැඩම්", "අයියා", "අක්කා", "නංගි", "මල්ලි",
+    # Academic and professional titles, in both scripts: "Doctor ප්‍රදීපා",
+    # "ආචාර්ය රේණුකා" (Dr.), "මහාචාර්ය" (Prof.).
+    "doctor", "professor", "eng", "engineer", "hon", "dr.", "ආචාර්ය", "මහාචාර්ය",
+    "වෛද්‍ය", "ඉංජිනේරු", "ගරු", "ප්‍රොෆෙසර්", "ඩොක්ටර්",
 }
+
+# Surname particles carry no identity of their own: "de Silva" / "ද සිල්වා".
+NAME_PARTICLES = {"de", "da", "di", "du", "la", "le", "van", "von", "ද", "ඩි", "ඩී"}
 
 _REWRITES = [
     ("ph", "p"), ("f", "p"), ("v", "w"), ("ck", "k"), ("q", "k"), ("x", "ks"),
@@ -128,14 +135,22 @@ def name_tokens(surface: str) -> list[str]:
     # Split on space and punctuation only: \w does not match Sinhala vowel
     # signs or al-lakuna, so a \w+ tokeniser cuts every Sinhala name apart.
     tokens = re.findall(r"[^\s.,;:!?()\[\]\"'’‘/-]+", surface.casefold())
-    return [t for t in tokens if t not in HONORIFICS and not t.isdigit()]
+    return [t for t in tokens
+            if t not in HONORIFICS and t not in NAME_PARTICLES and not t.isdigit()]
 
 
 def phonetic_key(token: str) -> str:
     """One normalisation for Latin and romanised Sinhala alike."""
-    latin = romanise(token) if _SINHALA.search(token) else token
+    sinhala = bool(_SINHALA.search(token))
+    latin = romanise(token) if sinhala else token
     latin = unicodedata.normalize("NFKD", latin.casefold())
     latin = re.sub(r"[^a-z]", "", latin)
+    if not sinhala:
+        # English spelling writes the long final i as -ee / -ey: Shyamalee = ශ්‍යාමලී.
+        latin = re.sub(r"(ee|ey)$", "i", latin)
+    # Prenasalised ඳ / ඹ romanise as nd / mb, but English spelling usually
+    # writes a plain d / b: Osadi = ඔසඳි. Applied to both sides alike.
+    latin = latin.replace("nd", "d").replace("mb", "b")
     for a, b in _REWRITES:
         latin = latin.replace(a, b)
     latin = re.sub(r"(.)\1+", r"\1", latin)          # doubled letters / long vowels
