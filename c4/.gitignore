@@ -18,6 +18,10 @@ reid_map/
 data/corpus_copy/
 data/unredacted/
 
+# Pipeline output on real recordings. Redacted by the SYSTEM, so it can still
+# hold an identifier the detector missed -- never committed.
+out/
+
 # ── Model artefacts ───────────────────────────────────────────────────────
 # Fine-tuned checkpoints. xlm-roberta-base is ~1.1 GB per checkpoint; set up
 # Git LFS before committing any of these or the repo bloats permanently.
