@@ -67,7 +67,9 @@ def entity_key(d) -> tuple[str, str]:
     A resolver may assign `entity_id` directly (cross-script names). Otherwise
     identifiers are keyed by their normalised value, so every spoken and
     written form of one number collapses to one entity. An NIC is keyed
-    without its V/X, which speakers often drop.
+    without its V/X, which speakers often drop, and an old 9-digit NIC is
+    keyed by its 12-digit form (90 234 5678 V = 1990 234 0 5678): a caller
+    who gives both gives one number.
     """
     if getattr(d, "entity_id", None):
         return d.label, d.entity_id
@@ -76,6 +78,8 @@ def entity_key(d) -> tuple[str, str]:
         value = re.sub(r"[\s\-/]", "", value).upper()
         if d.label == "NIC":
             value = value.rstrip("VX")
+            if re.fullmatch(r"\d{9}", value):
+                value = f"19{value[:5]}0{value[5:]}"
     else:
         value = " ".join(value.casefold().split())
     return d.label, value
@@ -112,11 +116,81 @@ def _boundary_ok(text: str, start: int, end: int) -> bool:
     return False
 
 
+# Everyday Singlish words a model can mistake for a name when capitalised at
+# the start of a turn ("Sthuthiy sir"). Propagation would then hide the word
+# everywhere, so a PERSON made only of these is dropped. General vocabulary:
+# thanks, greetings, yes/no, and the names of languages.
+NOT_NAMES = {
+    "sthuthiy", "sthuthi", "isthuthi", "istuti", "stuti", "thanks", "thank", "you",
+    "ayubowan", "ayubovan", "hello", "hi", "hari", "ow", "owu", "naha", "nehe", "nae", "ehenam",
+    "aiyo", "ane", "prashnayak", "prashne", "kamak", "hondai", "mama", "oya", "api", "eya",
+    "sinhalen", "sinhala", "demalen", "demala", "ingreesi", "ingrisi", "english", "englishen",
+    "ස්තූතියි", "ස්තුතියි", "ආයුබෝවන්", "හරි", "ඔව්", "නැහැ", "සිංහලෙන්", "ඉංග්‍රීසියෙන්", "දෙමළෙන්",
+}
+# Forms of address: part of a name span is fine ("Kamala aunty"), but on
+# their own they name nobody.
+ADDRESS_TERMS = {"sir", "madam", "miss", "aunty", "uncle", "aiya", "akka", "malli", "nangi"}
+_SPAN_WORD = re.compile(r"[^\s,.;:!?()]+")
+
+
+def _trim_not_names(d):
+    """'Sthuthiy Dilshan' -> 'Dilshan': everyday words are cut off a name's edges."""
+    words = list(_SPAN_WORD.finditer(d.surface))
+    while words and words[0].group().casefold() in NOT_NAMES:
+        words.pop(0)
+    while words and words[-1].group().casefold() in NOT_NAMES:
+        words.pop()
+    if not words:
+        return None
+    s, e = words[0].start(), words[-1].end()
+    if (s, e) == (0, len(d.surface)):
+        return d
+    return replace(d, start=d.start + s, end=d.start + e, surface=d.surface[s:e],
+                   value=d.surface[s:e])
+
+
+def _clean_person_labels(found: dict[str, list]) -> dict[str, list]:
+    """
+    Two corrections before anything is propagated:
+      - everyday words (NOT_NAMES) are trimmed off a PERSON span, and a span
+        left empty, or holding only a form of address, is dropped;
+      - a one-word PERSON that is the town of an address found in the same
+        recording ("Maharagama" from "45/2, Temple Road, Maharagama") is that
+        place, so it is relabelled ADDRESS.
+    """
+    from addresses import GENERIC
+    towns = set()
+    for dets in found.values():
+        for d in dets:
+            if d.label == "ADDRESS":
+                words = re.findall(r"[^\s,.;:()/]+", d.surface.casefold())
+                # The words after the last road word ("road", "පාර") are the town.
+                road = max((i for i, w in enumerate(words) if w in GENERIC), default=-1)
+                towns.update(w for w in words[road + 1:] if not any(c.isdigit() for c in w))
+    out = {}
+    for doc_id, dets in found.items():
+        kept = []
+        for d in dets:
+            if d.label == "PERSON":
+                d = _trim_not_names(d)
+                if d is None:
+                    continue
+                words = _SPAN_WORD.findall(d.surface.casefold())
+                if all(w in ADDRESS_TERMS for w in words):
+                    continue
+                if len(words) == 1 and words[0] in towns:
+                    d = replace(d, label="ADDRESS")
+            kept.append(d)
+        out[doc_id] = kept
+    return out
+
+
 def detect_recording(texts: dict[str, str], detect: Detector = rule_detect,
                      propagate: bool = True) -> dict[str, list]:
     """doc_id -> detections, with cross-document propagation of known surfaces."""
     previous = preceding_texts(texts)
     found = {doc_id: list(detect(text, previous[doc_id])) for doc_id, text in texts.items()}
+    found = _clean_person_labels(found)
     if not propagate:
         return found
 
@@ -300,6 +374,25 @@ def link_addresses(detections: dict[str, list]) -> dict[str, list]:
     return linked
 
 
+def link_dates(detections: dict[str, list]) -> dict[str, list]:
+    """
+    A birthday said without its year ("August 22") is the full date of birth
+    already given ("22nd of August 1990") when exactly one such date matches.
+    """
+    full = defaultdict(set)
+    for dets in detections.values():
+        for d in dets:
+            if d.label == "DOB" and re.fullmatch(r"\d{4}-\d\d-\d\d", d.value or ""):
+                full[d.value[5:]].add(d.value)
+    out = {}
+    for doc_id, dets in detections.items():
+        out[doc_id] = [replace(d, value=next(iter(full[d.value[5:]])))
+                       if d.label == "DOB" and (d.value or "").startswith("????-")
+                       and len(full[d.value[5:]]) == 1 else d
+                       for d in dets]
+    return out
+
+
 def assign_roles(detections: dict[str, list], texts: dict[str, str]) -> dict[str, list]:
     """
     FR7: classify each linked person once, from all of their mentions, and
@@ -330,6 +423,7 @@ def redact_recording(texts: dict[str, str], rid: str = "", detect: Detector = ru
     if resolve_names:
         detections = link_names(detections)
         detections = link_addresses(detections)
+        detections = link_dates(detections)
     if classify_roles:
         detections = assign_roles(detections, texts)
     order = {doc_id: i for i, doc_id in enumerate(texts)}

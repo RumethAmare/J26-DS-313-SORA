@@ -179,6 +179,26 @@ spoken in words and in digits shares one. Development-fold and held-out
 scores are unchanged (F1 0.787 and 0.851): these patterns are rare in the
 short recorded utterances, and the fixes did not disturb anything else.
 
+### 4d. Fifteen-minute test call
+
+A second hand-written call (about 1,900 words, an insurance claim, every
+label and many forms of each) was run through the demo. Its failures were
+fixed with general rules only:
+
+| Failure | Fix |
+|---|---|
+| "Sthuthiy" (thank you) and "Sinhalen" inside a name span were spread to every occurrence | Everyday words (thanks, greetings, yes/no, language names) are trimmed off a name span |
+| A town said alone ("Maharagama") was labelled a person | A one-word PERSON that is the town of an address in the same recording is an ADDRESS |
+| "12, මහනුවර පාර, කඩවත" missed | A written street address (number, street name, road word, town) is an address where the model found nothing |
+| Old and new NIC of one person got two placeholders | An old NIC is keyed by its 12-digit form |
+| "August 22" and "22nd of August 1990" got two placeholders | A birthday without a year joins the one full birth date that matches |
+| EPF and engine numbers missed | Identity-document and registration keywords; digit-first codes such as "1NZ-A123456" |
+
+Development-fold and held-out scores are unchanged (micro F1 0.787 and
+0.851). Remaining imperfections:
+- Senuli and Sunil share one placeholder, because they have the same consonants.
+- The 4-digit birth certificate numbers stay visible.
+
 ## 4b. Generalisation check: does the model memorise names?
 
 The recordings are team role-plays, so some names recur across recordings.
@@ -343,7 +363,7 @@ Hardware: a consumer laptop with 8 CPU cores and no GPU.
 ## Reproducing these results
 
     cd c4
-    python -m pytest tests                                       # 350 tests
+    python -m pytest tests                                       # 361 tests
     python src/transformer_ner.py train --data both              # ~2 h on CPU
     python src/roles.py train && python src/roles.py evaluate
     python src/evaluate.py --source real-eval --system pipeline:xlmr_both --labels proposal

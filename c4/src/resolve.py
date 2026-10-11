@@ -201,7 +201,11 @@ def _variants(token: str) -> set[str]:
     if _SINHALA.search(token):
         for ending in SINHALA_CASE_ENDINGS:
             if token.endswith(ending) and len(token) > len(ending) + 1:
-                forms.add(token[: -len(ending)])
+                stem = token[: -len(ending)]
+                forms.add(stem)
+                # A linking -u- before the ending: කවීනුයි = කවීන් + යි ("and Kaveen")
+                if stem.endswith("ු"):
+                    forms.add(stem[:-1] + "්")
     return forms
 
 

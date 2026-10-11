@@ -229,7 +229,13 @@ class HybridDetector:
         ruled = rule_detect(text, preceding)
         learned = [m for m in self.model(text, preceding)
                    if not any(m.start < r.end and r.start < m.end for r in ruled)]
-        return sorted(ruled + learned, key=lambda d: d.start)
+        found = ruled + learned
+        # A written street address the model missed is still an address.
+        from addresses import find_street_addresses
+        for s, e in find_street_addresses(text):
+            if not any(s < d.end and d.start < e for d in found):
+                found.append(Detection(s, e, "ADDRESS", text[s:e], text[s:e], source="pattern"))
+        return sorted(found, key=lambda d: d.start)
 
 
 def main() -> None:

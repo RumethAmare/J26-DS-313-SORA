@@ -61,6 +61,26 @@ TRANSLATIONS = {
 _TOKEN = re.compile(r"[^\s,.;:()\[\]/'\"]+")
 
 
+# A written-out street address: house number, a street name (capitalised, or
+# in Sinhala letters), a road word, and optionally the town. Used only as a
+# fallback where the model found nothing ("12, මහනුවර පාර, කඩවත").
+_NAME_WORD = r"(?:[A-Z][^\s,.;:!?()]*|[඀-෿][^\s,.;:!?()]*)"
+_ROAD_WORD = (r"(?:[Rr]oad|Rd|[Mm]awatha|[Ll]ane|[Ss]treet|[Aa]venue|[Pp]lace|[Tt]errace"
+              r"|පාර|මාවත|වීදිය|පටුමග|පෙදෙස)")
+_STREET_ADDRESS = re.compile(
+    rf"(?<![\w/])(?:(?:No\.?|Number|number|අංක)\s*)?\d+[A-Za-z]?(?:\s*/\s*\d+[A-Za-z]?)?,?\s+"
+    rf"(?:{_NAME_WORD}\s+){{1,3}}?{_ROAD_WORD}(?=[\s,.;:!?]|$)(?:,?\s+{_NAME_WORD}(?:\s+[A-Z][a-z]+)?(?:\s+\d{{1,2}}(?!\d))?)?")
+
+
+_MONEY_BEFORE = re.compile(r"(?:rs\.?|rupees|rupiyal|රුපියල්|රු\.?)\s*$", re.IGNORECASE)
+
+
+def find_street_addresses(text: str) -> list[tuple[int, int]]:
+    """Street addresses written out in full; an amount ("Rs. 2500 Galle Road eke") is not one."""
+    return [m.span() for m in _STREET_ADDRESS.finditer(text)
+            if not _MONEY_BEFORE.search(text[max(0, m.start() - 12):m.start()])]
+
+
 def _address_key(text: str) -> str:
     # C before a vowel sounds k in place names (Colombo = කොළඹ); applied to
     # both sides, and only here, so the frozen name resolver is unchanged.

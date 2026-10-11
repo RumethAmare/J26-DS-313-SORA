@@ -66,7 +66,11 @@ _CONTEXT = [
     ("NIC", r"\bnic\b|\bid (?:number|no\.?|eka|එක)|\bidentity(?: card)?\b|හැඳුනුම්පත්"
             r"|හැඳුනුම්"),
     ("ACCOUNT", r"\baccount\b|\bacc\.? ?no\b|\bcard\b|\breference\b|\bref\b|\bpolicy\b"
-                r"|\bcustomer (?:id|number)\b|\bbill\b|ගිණුම්|ගිණුම"),
+                r"|\bcustomer (?:id|number)\b|\bbill\b|ගිණුම්|ගිණුම"
+                # identity documents and registrations other than the NIC
+                r"|\bepf\b|\betf\b|\bemployee (?:id|number|no)\b|\bengine\b|\bchassis\b"
+                r"|\blicen[cs]e\b|\bpassport\b|\bcertificate\b|\bmembership\b"
+                r"|\bregistration\b|\binvoice\b|\btin\b"),
     ("PHONE", r"\bphone\b|\bmobile\b|\bcontact\b|\bcall\b|\btel\b|\bwhatsapp\b"
               r"|\bhotline\b|දුරකථන|ඇමතුම්|කෝල්|අමතන්න"),
     ("DOB", r"\bbirth|\bborn\b|\bdob\b|\bbirthday\b|උපන්"),
@@ -249,7 +253,9 @@ _DIGIT_RUN = re.compile(
 )
 
 # Reference numbers with a letter prefix, written as one token.
-_REF_TOKEN = re.compile(r"(?<![\w/\-])[A-Z][A-Z0-9]*(?:[-/][A-Z0-9]+)*(?![\w/\-])")
+_REF_TOKEN = re.compile(r"(?<![\w/\-])[A-Z][A-Z0-9]*(?:[-/][A-Z0-9]+)*(?![\w/\-])"
+                        # or digit-first with letters and a separator: "1NZ-A123456"
+                        r"|(?<![\w/\-])\d[A-Z0-9]*[A-Z][A-Z0-9]*(?:[-/][A-Z0-9]+)+(?![\w/\-])")
 
 # A letter prefix directly before a digit or number-word run: "D L G ", "POL ", "N ".
 _PREFIX_BEFORE = re.compile(r"(?<![\w])(?:[A-Z](?: [A-Z]){1,4}|[A-Z]{1,6}) $")

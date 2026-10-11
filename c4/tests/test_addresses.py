@@ -79,3 +79,64 @@ def test_one_placeholder_per_address_and_email_across_documents():
     assert "[ADDRESS_1]" in out["en"] and "[ADDRESS_1]" in out["si"]
     assert "[EMAIL_1]" in out["en"] and "[EMAIL_1]" in out["si"]
     assert "ADDRESS_2" not in out["si"] and "EMAIL_2" not in out["si"]
+
+
+# --- From the 15-minute test call ------------------------------------------------
+
+from addresses import find_street_addresses  # noqa: E402
+from redact import _clean_person_labels, entity_key, link_dates  # noqa: E402
+
+
+@pytest.mark.parametrize("text,span", [
+    ("Api kalin hitiye 12, මහනුවර පාර, කඩවත, eth dan", "12, මහනුවර පාර, කඩවත"),
+    ("No. 12, Temple Road, Mount Lavinia. Eka", "No. 12, Temple Road, Mount Lavinia"),
+    ("25/2, Galle Road, Colombo 4, eth", "25/2, Galle Road, Colombo 4"),
+])
+def test_written_street_address_pattern(text, span):
+    assert [text[s:e] for s, e in find_street_addresses(text)] == [span]
+
+
+@pytest.mark.parametrize("text", ["Rs. 2500 Galle Road eke bill", "mama 5 parak road eka cross kala"])
+def test_amounts_and_lowercase_words_are_not_street_addresses(text):
+    assert find_street_addresses(text) == []
+
+
+def _person(text, surface):
+    i = text.index(surface)
+    return Detection(i, i + len(surface), "PERSON", surface, surface)
+
+
+def test_everyday_words_are_trimmed_off_names():
+    text = "Sthuthiy Dilshan sir. Sthuthiy. Kamala aunty"
+    found = _clean_person_labels({"d": [_person(text, "Sthuthiy Dilshan"), _person(text, "Sthuthiy."),
+                                        _person(text, "Kamala aunty")]})["d"]
+    assert [d.surface for d in found] == ["Dilshan", "Kamala aunty"]
+
+
+def test_town_of_an_address_is_not_a_person():
+    text = "No. 45/2, Temple Road, Maharagama. Maharagama ma inne"
+    addr = Detection(0, 33, "ADDRESS", text[:33], text[:33])
+    town = Detection(35, 45, "PERSON", "Maharagama", "Maharagama")
+    found = _clean_person_labels({"d": [addr, town]})["d"]
+    assert found[1].label == "ADDRESS"
+
+
+def test_old_and_new_nic_are_one_entity():
+    old = Detection(0, 10, "NIC", "902345678V", "902345678V")
+    new = Detection(0, 12, "NIC", "199023405678", "199023405678")
+    assert entity_key(old) == entity_key(new)
+
+
+def test_birthday_without_year_joins_the_full_date():
+    full = Detection(0, 1, "DOB", "x", "1990-08-22")
+    partial = Detection(2, 3, "DOB", "y", "????-08-22")
+    out = link_dates({"d": [full, partial]})["d"]
+    assert out[1].value == "1990-08-22"
+
+
+@pytest.mark.parametrize("text,surface", [
+    ("Mage EPF number eka 00453217.", "00453217"),
+    ("Engine number eka 1NZ-A123456. Eka", "1NZ-A123456"),
+])
+def test_registration_numbers(text, surface):
+    assert [(d.label, d.surface) for d in detect(text)] == [("ACCOUNT", surface)]
