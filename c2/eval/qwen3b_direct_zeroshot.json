@@ -1,0 +1,29 @@
+{
+  "run_id": "qwen3b_direct_zeroshot",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "lr": 0.0002,
+  "input": "direct",
+  "train_conversations": 0,
+  "epochs": 0,
+  "dev": {
+    "summary": {
+      "n": 5,
+      "rougeL": 25.27
+    },
+    "actions": {
+      "pred": 14,
+      "gold": 11,
+      "intent": {
+        "p": 14.3,
+        "r": 18.2,
+        "f1": 16.0
+      },
+      "intent+owner": {
+        "p": 7.1,
+        "r": 9.1,
+        "f1": 8.0
+      }
+    }
+  },
+  "note": "re-scored after stopword fix in metrics.score_actions (commit d001df4)"
+}

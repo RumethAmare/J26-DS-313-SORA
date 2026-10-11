@@ -1,0 +1,28 @@
+{
+  "run_id": "qwen3b_direct_qlora",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "lr": 0.0002,
+  "input": "direct",
+  "train_conversations": 75,
+  "epochs": 3,
+  "dev": {
+    "summary": {
+      "n": 5,
+      "rougeL": 33.95
+    },
+    "actions": {
+      "pred": 12,
+      "gold": 11,
+      "intent": {
+        "p": 16.7,
+        "r": 18.2,
+        "f1": 17.4
+      },
+      "intent+owner": {
+        "p": 8.3,
+        "r": 9.1,
+        "f1": 8.7
+      }
+    }
+  }
+}
