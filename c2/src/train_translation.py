@@ -26,7 +26,6 @@ from pathlib import Path
 
 import numpy as np
 import torch
-from datasets import Dataset
 from transformers import (AutoModelForSeq2SeqLM, AutoTokenizer, DataCollatorForSeq2Seq,
                           EarlyStoppingCallback, Seq2SeqTrainer, Seq2SeqTrainingArguments)
 
@@ -93,6 +92,8 @@ def main():
     ap.add_argument("--augment", action="store_true", help="add romanized copies of Sinhala-script train lines")
     ap.add_argument("--run-id", default=None)
     args = ap.parse_args()
+
+    from datasets import Dataset  # training-only dependency, not needed offline
 
     run_id = args.run_id or (f"nllb600m_{args.target}_zeroshot" if args.zero_shot
                              else f"nllb600m_{args.target}_frac{int(args.fraction * 100)}")

@@ -22,7 +22,6 @@ import random
 from pathlib import Path
 
 import torch
-from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from transformers import (AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig,
                           Trainer, TrainingArguments)
 
@@ -99,6 +98,8 @@ def main():
     ap.add_argument("--zero-shot", action="store_true", help="no training: score the base model (baseline)")
     ap.add_argument("--run-id", default=None)
     args = ap.parse_args()
+
+    from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training  # training only
 
     run_id = args.run_id or f"qwen3b_{args.input}_{'zeroshot' if args.zero_shot else 'qlora'}"
     out_model = C2_ROOT / "models" / run_id
