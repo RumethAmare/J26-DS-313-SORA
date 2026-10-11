@@ -37,7 +37,7 @@ CT2_DIR = os.path.join(C1_ROOT, "models", "ct2")
 SR = 16000
 
 # --model short name -> exported run
-MODELS = {"medium": "medium_v4_aug", "large-v3": "large-v3_v4_aug"}
+MODELS = {"small": "small_v4_aug", "medium": "medium_v4_aug", "large-v3": "large-v3_v4_aug"}
 
 DECODE_OPTS = dict(
     language="en",                 # the token the adapters were trained with

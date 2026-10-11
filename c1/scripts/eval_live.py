@@ -42,7 +42,7 @@ def gold_text(rid):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--model", default="medium", help="medium | large-v3")
+    ap.add_argument("--model", default="medium", help="small | medium | large-v3")
     ap.add_argument("--realtime", action="store_true",
                     help="stream at real speed (slow; measures true live latency)")
     ap.add_argument("--max-utterance-s", type=float, default=25.0)

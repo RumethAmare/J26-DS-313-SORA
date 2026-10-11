@@ -18,6 +18,7 @@ after each pause, not word by word. Provisional text fills the gap.
 Usage:
     python live_transcribe.py --model medium            # faster
     python live_transcribe.py --model large-v3          # more accurate
+    python live_transcribe.py --model small             # lightest; works without a big GPU
     python live_transcribe.py --list-devices
     python live_transcribe.py --model medium --device 3 --save-audio
     python live_transcribe.py --input-file x.wav --realtime   # test without a mic
@@ -141,7 +142,7 @@ def file_source(path, q, stop, realtime):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--model", default="medium", help="medium | large-v3")
+    ap.add_argument("--model", default="medium", help="small | medium | large-v3")
     ap.add_argument("--device", type=int, default=None, help="microphone index (--list-devices)")
     ap.add_argument("--list-devices", action="store_true")
     ap.add_argument("--silence-ms", type=int, default=600,

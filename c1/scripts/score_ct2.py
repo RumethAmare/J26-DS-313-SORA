@@ -7,7 +7,7 @@ the decoding live_transcribe.py uses (ct2_decode.py). Same 111 test clips as
 every other result in the training log.
 
 Usage:
-    python score_ct2.py --model medium        # or large-v3, or a run name
+    python score_ct2.py --model medium        # or small, large-v3, or a run name
 
 Writes results/c1_asr_ct2_<run>.json and
 predictions/finetune/<run>_ct2_test.json (fine-tuning details at the end).
@@ -27,7 +27,7 @@ import safeguard_decode as sg  # noqa: E402
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--model", required=True, help="medium | large-v3 | <run name>")
+    ap.add_argument("--model", required=True, help="small | medium | large-v3 | <run name>")
     ap.add_argument("--compute-type", default="float16")
     ap.add_argument("--tag", default="", help="suffix for output names (experiments)")
     a = ap.parse_args()

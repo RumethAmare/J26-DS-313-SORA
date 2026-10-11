@@ -113,7 +113,8 @@ The fine-tuned adapters run live through faster-whisper:
 cd c1\scripts
 ..\.venv\Scripts\python.exe export_ct2.py --run medium_v4_aug      # once per model
 ..\.venv\Scripts\python.exe export_ct2.py --run large-v3_v4_aug
-..\.venv\Scripts\python.exe live_transcribe.py --model medium      # or large-v3
+..\.venv\Scripts\python.exe export_ct2.py --run small_v4_aug
+..\.venv\Scripts\python.exe live_transcribe.py --model medium      # or large-v3, small
 ```
 
 - `export_ct2.py` merges the LoRA adapter into the base model and converts it
