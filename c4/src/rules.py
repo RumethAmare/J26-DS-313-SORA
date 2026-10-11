@@ -493,11 +493,15 @@ def _resolve_overlaps(found: list[Detection]) -> list[Detection]:
 _LINK = r"(?:\s+(?:eka|ekata|is|was|එක)|\s*:)?\s+"
 _SPELLED = r"(?:[a-z0-9](?:-[a-z0-9])+|[a-z0-9]+)"
 _TLD = r"(?:com|lk|net|org|edu|gov|io|co|uk|c-o-m|l-k|n-e-t|o-r-g)"
+_DIGIT_WORD = r"(?:zero|one|two|three|four|five|six|seven|eight|nine)\b"
+_EMAIL_PART = rf"{_SPELLED}(?:\s+{_DIGIT_WORD})*"
 
 _KEYWORD_RULES = [
     # "nimal dot perera nine five at example dot lk": an email spoken aloud.
-    ("EMAIL", re.compile(rf"\b{_SPELLED}(?:\s+(?:dot|underscore|dash|zero|one|two|three|four|five|six"
-                         rf"|seven|eight|nine|{_SPELLED}))*\s+at\s+{_SPELLED}(?:\s+dot\s+{_SPELLED})*"
+    # Before "at" only name parts joined by dot/underscore/dash, each with
+    # optional spoken digits, so the words leading up to it stay out.
+    ("EMAIL", re.compile(rf"\b{_EMAIL_PART}(?:\s+(?:dot|underscore|dash)\s+{_EMAIL_PART})*"
+                         rf"\s+at\s+{_SPELLED}(?:\s+dot\s+{_SPELLED})*"
                          rf"\s+dot\s+{_TLD}\b", re.IGNORECASE), 0),
     # "username eka nimalp95", "user ID: k.perera_7"
     ("ACCOUNT", re.compile(rf"\b(?:user\s?name|user\s?id|login(?:\s?id)?){_LINK}"
@@ -512,6 +516,29 @@ _KEYWORD_RULES = [
 ]
 
 
+_SPOKEN_SYMBOLS = {"dot": ".", "at": "@", "underscore": "_", "dash": "-", "hyphen": "-"}
+_SPOKEN_DIGITS = {w: str(i) for i, w in enumerate(
+    "zero one two three four five six seven eight nine".split())}
+
+
+def written_email(spoken: str) -> str:
+    """
+    "n-i-m-a-l dot p-e-r-e-r-a nine five at example dot l-k" ->
+    "nimal.perera95@example.lk", so the spelled and the written address are
+    one entity and share one placeholder.
+    """
+    out = []
+    for word in spoken.casefold().split():
+        word = word.strip(",")
+        if word in _SPOKEN_SYMBOLS:
+            out.append(_SPOKEN_SYMBOLS[word])
+        elif word in _SPOKEN_DIGITS:
+            out.append(_SPOKEN_DIGITS[word])
+        else:
+            out.append(word.replace("-", "") if re.fullmatch(r"\w(?:-\w)+", word) else word)
+    return "".join(out)
+
+
 def _keyword_detections(text: str) -> list[Detection]:
     found = []
     for label, rx, group in _KEYWORD_RULES:
@@ -519,8 +546,8 @@ def _keyword_detections(text: str) -> list[Detection]:
             s, e = m.span(group)
             while e > s and text[e - 1] in ".,;:":      # sentence punctuation is not part of it
                 e -= 1
-            found.append(Detection(s, e, label, text[s:e], text[s:e].lower(),
-                                   ambiguous=label == "EMAIL"))
+            value = written_email(text[s:e]) if label == "EMAIL" else text[s:e].lower()
+            found.append(Detection(s, e, label, text[s:e], value, ambiguous=label == "EMAIL"))
     return found
 
 

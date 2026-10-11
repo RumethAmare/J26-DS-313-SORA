@@ -264,6 +264,37 @@ The rules handle every spoken form in the corpus:
   - shared surnames
 - **Pairwise precision is 1.000:** two different people were never merged.
 
+### 9a. The same for addresses
+
+Without linking, "24, Galle Road, Dehiwala" and "24, ගාලු පාර, දෙහිවල"
+received two placeholders, so a reader could tell the same house appeared in
+both documents. Addresses mix transliteration (ගාලු = Galle) with translation
+(පාර = Road), so they are compared by parts (`src/addresses.py`):
+
+- **House numbers must agree.** They are compared however they were said:
+  "14th" = "14", "05" = "5", "82න් 1" = "82/1", and spoken "අසූ අට" = 88.
+- **Generic address words are dropped in both languages** (road / පාර,
+  lane / ලේන්, number / අංක), and a short list of general translations is
+  applied (පන්සල = temple, කොළඹ = Colombo).
+- **The remaining place words are compared with the resolver's phonetic keys.**
+- **A shortened mention ("Nugegoda", "Colombo 7") joins a full address only
+  when it fits exactly one**; with two Colombo 7 addresses it stays apart.
+
+| Addresses written in both scripts | Exact text | **Linking** | Different addresses merged |
+|---|---|---|---|
+| Real, tuning recordings | 69 → 0.000 | **0.971** | 0 (pair precision 1.000) |
+| Real, held-out | 5 → 0.000 | **1.000** | 0 (pair precision 1.000) |
+
+The held-out set holds only five such addresses, so its figure is indicative.
+The rules were developed on the tuning recordings, and the held-out set was
+scored once.
+
+The spelled-out email is written back in its usual form ("n-i-m-a-l dot … at
+example dot l-k" → nimal.perera95@example.lk), so it shares the written
+email's placeholder. Detection scores are unchanged (development-fold F1
+0.787): linking changes which placeholder a span receives, not which spans
+are found.
+
 ## 10. Person roles (FR7)
 
 | | People | Accuracy |
@@ -312,11 +343,12 @@ Hardware: a consumer laptop with 8 CPU cores and no GPU.
 ## Reproducing these results
 
     cd c4
-    python -m pytest tests                                       # 336 tests
+    python -m pytest tests                                       # 350 tests
     python src/transformer_ner.py train --data both              # ~2 h on CPU
     python src/roles.py train && python src/roles.py evaluate
     python src/evaluate.py --source real-eval --system pipeline:xlmr_both --labels proposal
     python src/evaluate.py --source real-eval --system presidio --labels proposal
     python src/resolve.py --source real-eval
+    python src/addresses.py                                      # address linking, tuning set
     python src/pipeline.py --recording J26DS313_R0022 --offline-check --measure
     python src/demo.py                                           # live demo

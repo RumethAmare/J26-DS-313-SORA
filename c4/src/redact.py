@@ -282,6 +282,24 @@ def link_names(detections: dict[str, list]) -> dict[str, list]:
     return linked
 
 
+def link_addresses(detections: dict[str, list]) -> dict[str, list]:
+    """
+    The same for addresses: "24, ගාලු පාර, දෙහිවල" and "24, Galle Road,
+    Dehiwala" are one address and share one placeholder (see addresses.py).
+    """
+    from addresses import cluster
+
+    where = [(doc_id, i) for doc_id, dets in detections.items()
+             for i, d in enumerate(dets) if d.label == "ADDRESS"]
+    if not where:
+        return detections
+    linked = {doc_id: list(dets) for doc_id, dets in detections.items()}
+    clusters = cluster([detections[doc_id][i].surface for doc_id, i in where])
+    for (doc_id, i), c in zip(where, clusters):
+        linked[doc_id][i] = replace(linked[doc_id][i], entity_id=f"address{c}")
+    return linked
+
+
 def assign_roles(detections: dict[str, list], texts: dict[str, str]) -> dict[str, list]:
     """
     FR7: classify each linked person once, from all of their mentions, and
@@ -311,6 +329,7 @@ def redact_recording(texts: dict[str, str], rid: str = "", detect: Detector = ru
     detections = detect_recording(texts, detect, propagate)
     if resolve_names:
         detections = link_names(detections)
+        detections = link_addresses(detections)
     if classify_roles:
         detections = assign_roles(detections, texts)
     order = {doc_id: i for i, doc_id in enumerate(texts)}
