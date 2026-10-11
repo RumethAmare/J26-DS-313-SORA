@@ -43,6 +43,8 @@ def load_conversations(args):
         return [(rid, utts, None)]
     out = []
     for split in ([args.split] if args.split else ["dev", "test", "train"]):
+        if not (DATA / f"{split}.jsonl").exists():
+            continue  # e.g. test.jsonl is deliberately not uploaded during development
         for line in open(DATA / f"{split}.jsonl", encoding="utf-8"):
             r = json.loads(line)
             if args.rid and r["rid"] != args.rid:
