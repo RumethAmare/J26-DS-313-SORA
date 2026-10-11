@@ -4,6 +4,8 @@ Rule-based normalization of the code-mixed transcript before translation.
     meeting-eka   -> meeting eka     (hyphenated Sinhala clitic split off)
     bankඑකට       -> bank එකට        (Latin stem glued to Sinhala suffix)
     uh, umm, hmm  -> removed         (fillers)
+    binduwai hatai -> 0 7            (spoken Sinhala digits, so numbers survive translation)
+    onne          -> one             (spelling variants the model rarely saw)
 
 Repeated words are NOT collapsed: Sinhala reduplication is meaningful
 ("podi podi"), and a rule cannot tell it from a stutter.
@@ -36,8 +38,92 @@ def tidy(text):
     return re.sub(r"\s+", " ", text).strip(" ,")
 
 
+# Spoken digits in a phone/NIC/account number. Only the "-ai" list forms are
+# mapped: bare "eka"/"deka" also mean "the"/"two things" in ordinary speech.
+SPOKEN_DIGITS = {
+    "binduwai": "0", "binduwayi": "0", "ekai": "1", "ekayi": "1", "dekai": "2", "dekayi": "2",
+    "thunai": "3", "thunayi": "3", "tunai": "3", "hatharai": "4", "hatarai": "4", "hathara": "4",
+    "pahai": "5", "pahayi": "5", "hayai": "6", "hayayi": "6", "hathai": "7", "hatai": "7",
+    "hathayi": "7", "atai": "8", "atayi": "8", "namayai": "9", "nawayai": "9", "namayayi": "9",
+}
+
+# Romanized spellings of one word, mapped to the form most common in training.
+SPELLING = {"onne": "one", "onee": "one", "oney": "one", "onneda": "oneda", "mokadda": "mokada"}
+
+
+def _swap_words(text, table):
+    def swap(m):
+        w = m.group(0)
+        return table.get(w.lower(), w)
+    return re.sub(r"[A-Za-z]+", swap, text)
+
+
+def spoken_numbers(text):
+    return _swap_words(text, SPOKEN_DIGITS)
+
+
+def fix_spelling(text):
+    return _swap_words(text, SPELLING)
+
+
+def prepare(text):
+    """Safe input fixes, usable even with a model trained without normalize()."""
+    return fix_spelling(spoken_numbers(text))
+
+
 def normalize(text):
-    return tidy(remove_fillers(split_mixed_words(text)))
+    return tidy(remove_fillers(split_mixed_words(prepare(text))))
+
+
+# NLLB's tokenizer drops the zero-width joiner, so a conjunct like ට්‍ර comes
+# out as a lone "ට්" + space + "ර...". A lone consonant+virama never stands as a
+# word in the gold text, so re-joining exactly that pattern is safe.
+_BROKEN_CONJUNCT = re.compile(r"(^|\s)([\u0d9a-\u0dc6]\u0dca) ([\u0dbb\u0dba])")
+
+
+def fix_sinhala(text):
+    return _BROKEN_CONJUNCT.sub("\\1\\2\u200d\\3", text)
+
+
+# --- Sinhala script -> romanized Singlish (for synthetic training data) ------
+_CONS = dict(zip("කඛගඝඞඟචඡජඣඤඥටඨඩඪණඬතථදධනඳපඵබභමඹයරලවශෂසහළෆ",
+                 "k k g g ng ng ch ch j j gn gn t t d d n nd th th d d n nd p p b b m mb "
+                 "y r l w sh sh s h l f".split()))
+_SIGNS = dict(zip("ාැෑිීුූෘෙේෛොෝෞ", "a a a i i u u ru e e ai o o au".split()))
+_INDEP = dict(zip("අආඇඈඉඊඋඌඍඑඒඓඔඕඖ", "a a a a i i u u ru e e ai o o au".split()))
+# How people actually vary the spelling, picked at random per word.
+_VARIANTS = {"ී": ["i", "ee"], "ූ": ["u", "oo"], "ැ": ["a", "e"], "ව": ["w", "v"],
+             "ත": ["th", "t"], "ං": ["n", "ng"]}
+
+
+def romanize(text, rng=None):
+    """'මචං කොහොමද' -> 'machan kohomada'. Latin text passes through."""
+    def pick(ch, default):
+        return rng.choice(_VARIANTS[ch]) if rng and ch in _VARIANTS else default
+
+    out, i = [], 0
+    while i < len(text):
+        ch = text[i]
+        if ch in _CONS:
+            out.append(pick(ch, _CONS[ch]))
+            nxt = text[i + 1] if i + 1 < len(text) else ""
+            if nxt in _SIGNS:
+                out.append(pick(nxt, _SIGNS[nxt]))
+                i += 1
+            elif nxt == "\u0dca":   # virama: no vowel
+                i += 1
+            else:
+                out.append("a")      # inherent vowel
+        elif ch in _INDEP:
+            out.append(_INDEP[ch])
+        elif ch == "ං":
+            out.append(pick(ch, "n"))
+        elif ch == "ඃ":
+            out.append("h")
+        elif ch not in "\u200c\u200d":
+            out.append(ch)
+        i += 1
+    return "".join(out)
 
 
 if __name__ == "__main__":

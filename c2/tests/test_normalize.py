@@ -3,7 +3,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from normalize import normalize, remove_fillers, split_mixed_words  # noqa: E402
+from normalize import (fix_sinhala, normalize, prepare, remove_fillers,  # noqa: E402
+                       romanize, split_mixed_words)
 
 
 def test_hyphen_clitic_is_split():
@@ -26,3 +27,22 @@ def test_reduplication_kept():
 def test_full_example():
     assert normalize("uh meeting-eka Friday ekata reschedule karamu ,") == \
         "meeting eka Friday ekata reschedule karamu"
+
+
+def test_spoken_digits_become_numbers():
+    assert prepare("number eka binduwai hatai hayai, atai namayai") == "number eka 0 7 6, 8 9"
+
+
+def test_spelling_variant():
+    assert prepare("van ekak onne neda?") == "van ekak one neda?"
+
+
+def test_broken_conjunct_rejoined():
+    assert fix_sinhala("නයින් ආර්ක් ට් රාන්ස්පෝට්") == "නයින් ආර්ක් ට්‍රාන්ස්පෝට්"
+    assert fix_sinhala("මෝටර් රථ") == "මෝටර් රථ"   # a real word break is left alone
+
+
+def test_romanize():
+    assert romanize("මචං කොහොමද") == "machan kohomada"
+    assert romanize("ඕනේ කීයද දන්නවා") == "one kiyada dannawa"
+    assert romanize("meeting එක") == "meeting eka"

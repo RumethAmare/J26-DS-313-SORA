@@ -12,6 +12,7 @@ One model per target language. Needs a GPU: run on Google Colab (T4).
     python src/train_translation.py --target en
     python src/train_translation.py --target en --normalize      # normalise input first
     python src/train_translation.py --target en --fraction 0.25  # data-size curve
+    python src/train_translation.py --target en --augment        # + romanized copies of Sinhala-script lines
 
 Trains on data/train.jsonl, picks the best epoch on data/dev.jsonl (chrF++),
 then writes dev predictions to predictions/<run_id>/dev.jsonl and scores to
@@ -30,7 +31,7 @@ from transformers import (AutoModelForSeq2SeqLM, AutoTokenizer, DataCollatorForS
                           EarlyStoppingCallback, Seq2SeqTrainer, Seq2SeqTrainingArguments)
 
 from metrics import score
-from normalize import normalize
+from normalize import fix_sinhala, normalize, romanize
 
 C2_ROOT = Path(__file__).resolve().parents[1]
 DATA = C2_ROOT / "data"
@@ -45,7 +46,12 @@ SRC_LANG = "sin_Sinh"
 SPEAKER = re.compile(r"^S(\d+|\?): ")
 
 
-def load_pairs(split, target, fraction=1.0, seed=13, norm=False):
+def is_romanized(text):
+    sinhala = sum("඀" <= c <= "෿" for c in text)
+    return sinhala < sum(c.isascii() and c.isalpha() for c in text)
+
+
+def load_pairs(split, target, fraction=1.0, seed=13, norm=False, augment=False):
     records = [json.loads(line) for line in open(DATA / f"{split}.jsonl", encoding="utf-8")]
     if fraction < 1.0:
         # Subsample whole recordings, not utterances, so a 25% run sees 25% of
@@ -59,6 +65,15 @@ def load_pairs(split, target, fraction=1.0, seed=13, norm=False):
                 src = SPEAKER.sub("", u["src"])
                 pairs.append({"utt_id": u["utt_id"], "src": normalize(src) if norm else src,
                               "tgt": u[f"clean_{target}"]})
+                # Synthetic data: NLLB already reads Sinhala script, but romanized
+                # Singlish is learned only from our data, so give every
+                # Sinhala-script line a romanized twin with the same target.
+                if augment and not is_romanized(src):
+                    rom = romanize(src, random.Random(f"{seed}{u['utt_id']}"))
+                    if rom != src:  # lines with no Sinhala (e.g. just a number) add nothing
+                            pairs.append({"utt_id": u["utt_id"] + "_rom",
+                                      "src": normalize(rom) if norm else rom,
+                                      "tgt": u[f"clean_{target}"]})
     return pairs, len(records)
 
 
@@ -75,6 +90,7 @@ def main():
     ap.add_argument("--seed", type=int, default=13)
     ap.add_argument("--normalize", action="store_true", help="run normalize.py on the input first")
     ap.add_argument("--zero-shot", action="store_true", help="no training: score the base model (baseline)")
+    ap.add_argument("--augment", action="store_true", help="add romanized copies of Sinhala-script train lines")
     ap.add_argument("--run-id", default=None)
     args = ap.parse_args()
 
@@ -82,10 +98,13 @@ def main():
                              else f"nllb600m_{args.target}_frac{int(args.fraction * 100)}")
     if args.normalize:
         run_id += "_norm"
+    if args.augment:
+        run_id += "_aug"
     out_model = C2_ROOT / "models" / run_id
     torch.manual_seed(args.seed)
 
-    train, n_train_recs = load_pairs("train", args.target, args.fraction, args.seed, args.normalize)
+    train, n_train_recs = load_pairs("train", args.target, args.fraction, args.seed, args.normalize,
+                                     args.augment)
     dev, _ = load_pairs("dev", args.target, norm=args.normalize)
     print(f"{run_id}: {len(train)} train pairs from {n_train_recs} recordings, {len(dev)} dev pairs")
 
@@ -105,7 +124,7 @@ def main():
         preds = np.where(preds < 0, tok.pad_token_id, preds)
         # Padding in labels is -100 (ignored by the loss); swap it back before decoding.
         labels = np.where(labels == -100, tok.pad_token_id, labels)
-        hyp = tok.batch_decode(preds, skip_special_tokens=True)
+        hyp = [fix_sinhala(h) for h in tok.batch_decode(preds, skip_special_tokens=True)]
         ref = tok.batch_decode(labels, skip_special_tokens=True)
         return score(hyp, ref)
 
@@ -166,7 +185,7 @@ def main():
         with torch.no_grad():
             out = model.generate(**enc, forced_bos_token_id=tgt_bos, num_beams=4,
                                  max_length=args.max_len)
-        hyps += tok.batch_decode(out, skip_special_tokens=True)
+        hyps += [fix_sinhala(h) for h in tok.batch_decode(out, skip_special_tokens=True)]
 
     pred_dir = C2_ROOT / "predictions" / run_id
     pred_dir.mkdir(parents=True, exist_ok=True)
@@ -178,8 +197,13 @@ def main():
     result = {"run_id": run_id, "model": args.model, "target": args.target,
               "train_recordings": n_train_recs, "train_pairs": len(train),
               "epochs": 0 if args.zero_shot else args.epochs, "lr": args.lr,
-              "fraction": args.fraction, "normalize": args.normalize,
-              "dev": score(hyps, [p["tgt"] for p in dev])}
+              "fraction": args.fraction, "normalize": args.normalize, "augment": args.augment,
+              "dev": score(hyps, [p["tgt"] for p in dev]),
+              # Romanized Singlish is the hard case; report it separately.
+              "dev_by_script": {
+                  name: score([h for h, p in zip(hyps, dev) if is_romanized(p["src"]) == rom],
+                              [p["tgt"] for p in dev if is_romanized(p["src"]) == rom])
+                  for name, rom in (("romanized", True), ("sinhala_script", False))}}
     (C2_ROOT / "eval").mkdir(exist_ok=True)
     (C2_ROOT / "eval" / f"{run_id}.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
     print(json.dumps(result, indent=2))
