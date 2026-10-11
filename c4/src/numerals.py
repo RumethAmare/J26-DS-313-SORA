@@ -407,6 +407,13 @@ def find_number_word_runs(text: str, min_digits: int = 6):
             else:
                 break
 
+        # A bare "eka" after a pause is the demonstrative "that", not the digit
+        # 1: "... hatha, eka thama 077 ..." ("..., that is 077 ...").
+        while (j - 1 > start_idx
+               and spans[j - 1][2].strip(",.‘’'\"").lower() in _CLASSIFIER_BARE
+               and spans[j - 2][2].endswith(",")):
+            j -= 1
+
         # Punctuation attached to the edge tokens ("අට." ending a sentence) is
         # not part of the identifier, per the span boundary convention.
         first, last = spans[start_idx][2], spans[j - 1][2]

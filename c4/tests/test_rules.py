@@ -252,3 +252,30 @@ def test_number_read_out_digit_by_digit_is_an_identifier(text):
 @pytest.mark.parametrize("text", ["rupiyal 2 5 0 0 0 0 0 gewwa", "1,500,000 rupees"])
 def test_amounts_stay_visible(text):
     assert detect(text) == []
+
+
+# --- Keyword-anchored identifiers (from a long-text stress test) ---------------
+
+@pytest.mark.parametrize("text,label,surface", [
+    ("n-i-m-a-l dot p-e-r-e-r-a nine five at example dot l-k. Eka", "EMAIL",
+     "n-i-m-a-l dot p-e-r-e-r-a nine five at example dot l-k"),
+    ("Online banking username eka nimalp95. Password", "ACCOUNT", "nimalp95"),
+    ("Dehiwala, postal code eka 10350. Mage office", "ADDRESS", "10350"),
+    ("expiry eka 08/28. Dan", "ACCOUNT", "08/28"),
+])
+def test_keyword_anchored_identifiers(text, label, surface):
+    d = only(text)
+    assert (d.label, d.surface) == (label, surface)
+
+
+@pytest.mark.parametrize("text", ["we will meet at the office dot", "expiry eka passe",
+                                  "my username is admin"])
+def test_keyword_rules_need_a_real_identifier(text):
+    assert detect(text) == []
+
+
+def test_eka_after_a_pause_is_not_a_digit():
+    """'..., eka thama 077...' is 'that is 077...', not a trailing digit 1."""
+    text = "number eka binduwai hatai hatai ekai dekai thunai hatharai pahai hayai hatha, eka thama"
+    d = only(text)
+    assert d.value == "0771234567" and d.surface.endswith("hatha")

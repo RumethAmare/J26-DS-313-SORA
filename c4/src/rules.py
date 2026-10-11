@@ -472,7 +472,7 @@ def _numeric_detections(text: str, preceding: str = "") -> list[Detection]:
 # ---------------------------------------------------------------------------
 
 # Tie-break for spans of equal length over the same text.
-_PRIORITY = {"EMAIL": 0, "DOB": 1, "NIC": 2, "PHONE": 3, "ACCOUNT": 4}
+_PRIORITY = {"EMAIL": 0, "DOB": 1, "NIC": 2, "PHONE": 3, "ACCOUNT": 4, "ADDRESS": 5}
 
 
 def _resolve_overlaps(found: list[Detection]) -> list[Detection]:
@@ -483,6 +483,45 @@ def _resolve_overlaps(found: list[Detection]) -> list[Detection]:
         if all(d.end <= k.start or d.start >= k.end for k in kept):
             kept.append(d)
     return sorted(kept, key=lambda d: d.start)
+
+
+# ---------------------------------------------------------------------------
+# Keyword-anchored identifiers. Each needs an explicit cue word, so ordinary
+# words and numbers are never touched.
+# ---------------------------------------------------------------------------
+
+_LINK = r"(?:\s+(?:eka|ekata|is|was|එක)|\s*:)?\s+"
+_SPELLED = r"(?:[a-z0-9](?:-[a-z0-9])+|[a-z0-9]+)"
+_TLD = r"(?:com|lk|net|org|edu|gov|io|co|uk|c-o-m|l-k|n-e-t|o-r-g)"
+
+_KEYWORD_RULES = [
+    # "nimal dot perera nine five at example dot lk": an email spoken aloud.
+    ("EMAIL", re.compile(rf"\b{_SPELLED}(?:\s+(?:dot|underscore|dash|zero|one|two|three|four|five|six"
+                         rf"|seven|eight|nine|{_SPELLED}))*\s+at\s+{_SPELLED}(?:\s+dot\s+{_SPELLED})*"
+                         rf"\s+dot\s+{_TLD}\b", re.IGNORECASE), 0),
+    # "username eka nimalp95", "user ID: k.perera_7"
+    ("ACCOUNT", re.compile(rf"\b(?:user\s?name|user\s?id|login(?:\s?id)?){_LINK}"
+                           r"([A-Za-z][\w.]{2,}\d[\w.]*|[A-Za-z]*[._]\w+)", re.IGNORECASE), 1),
+    # "postal code eka 10350"
+    ("ADDRESS", re.compile(rf"\b(?:postal\s?code|post\s?code|zip(?:\s?code)?){_LINK}(\d{{5}})\b",
+                           re.IGNORECASE), 1),
+    # "expiry eka 08/28": card data alongside the card number
+    ("ACCOUNT", re.compile(rf"\b(?:expiry|expiration|expires|exp\.?|valid\s+(?:thru|till|until))"
+                           rf"(?:\s+date)?{_LINK}((?:0[1-9]|1[0-2])\s?/\s?\d{{2}}(?:\d{{2}})?)\b",
+                           re.IGNORECASE), 1),
+]
+
+
+def _keyword_detections(text: str) -> list[Detection]:
+    found = []
+    for label, rx, group in _KEYWORD_RULES:
+        for m in rx.finditer(text):
+            s, e = m.span(group)
+            while e > s and text[e - 1] in ".,;:":      # sentence punctuation is not part of it
+                e -= 1
+            found.append(Detection(s, e, label, text[s:e], text[s:e].lower(),
+                                   ambiguous=label == "EMAIL"))
+    return found
 
 
 def detect(text: str, preceding: str = "") -> list[Detection]:
@@ -497,4 +536,5 @@ def detect(text: str, preceding: str = "") -> list[Detection]:
              for m in _EMAIL.finditer(text)]
     found += _detect_dates(text, preceding)
     found += _numeric_detections(text, preceding)
+    found += _keyword_detections(text)
     return _resolve_overlaps(found)
