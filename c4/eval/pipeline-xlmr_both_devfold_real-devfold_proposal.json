@@ -21,7 +21,7 @@
       "J26DS313_R0079",
       "J26DS313_R0103"
     ],
-    "commit": "0683512",
+    "commit": "a1439ca",
     "date": "2026-10-11"
   },
   "micro": {
@@ -1923,7 +1923,7 @@
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",
         "label": "ORG",
-        "predicted": "xxxx xxxxxx"
+        "predicted": "xxxx"
       },
       {
         "doc_id": "J26DS313_R0074_c2_summary_si_v1",

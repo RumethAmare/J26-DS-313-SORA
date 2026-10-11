@@ -160,6 +160,25 @@ kept only if it improved the development fold:
 Every measure improved and none got worse. The held-out five were then scored
 once: F1 0.822 → **0.851**, recall 0.917 → **0.938**.
 
+## 4c. Long-text stress test
+
+A long, dense hand-written Singlish call (about 600 words, 30+ identifiers)
+exposed failures the held-out recordings did not contain. Each was fixed with
+a general rule:
+
+| Failure | Fix |
+|---|---|
+| The model reads at most 512 word pieces, so names late in a long text were never seen. Their surnames were then linked to the wrong person by propagation | Long texts are read in sentence-aligned windows |
+| "…hatha, eka thama 077…": the word *eka* ("that") was read as a final digit 1 | A bare *eka* after a pause is not a digit |
+| Spelled-out email ("n-i-m-a-l dot … at example dot l-k") | "… at … dot \<domain ending\>" spoken aloud is an email |
+| Username, postal code, card expiry | Identified when introduced by their keyword |
+
+After the fixes, every personal identifier in the stress text is redacted.
+Each family member receives a separate placeholder, and the phone number
+spoken in words and in digits shares one. Development-fold and held-out
+scores are unchanged (F1 0.787 and 0.851): these patterns are rare in the
+short recorded utterances, and the fixes did not disturb anything else.
+
 ## 4b. Generalisation check: does the model memorise names?
 
 The recordings are team role-plays, so some names recur across recordings.
@@ -293,7 +312,7 @@ Hardware: a consumer laptop with 8 CPU cores and no GPU.
 ## Reproducing these results
 
     cd c4
-    python -m pytest tests                                       # 327 tests
+    python -m pytest tests                                       # 336 tests
     python src/transformer_ner.py train --data both              # ~2 h on CPU
     python src/roles.py train && python src/roles.py evaluate
     python src/evaluate.py --source real-eval --system pipeline:xlmr_both --labels proposal
