@@ -279,3 +279,9 @@ def test_eka_after_a_pause_is_not_a_digit():
     text = "number eka binduwai hatai hatai ekai dekai thunai hatharai pahai hayai hatha, eka thama"
     d = only(text)
     assert d.value == "0771234567" and d.surface.endswith("hatha")
+
+
+def test_keyword_in_the_next_sentence_does_not_label_a_number():
+    """'... 071 456 7890. Policy eke ...': 'policy' describes something else."""
+    d = only("owner aiyage number eka 071 456 7890. Policy eke excess eka")
+    assert d.label == "PHONE"

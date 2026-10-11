@@ -363,7 +363,7 @@ Hardware: a consumer laptop with 8 CPU cores and no GPU.
 ## Reproducing these results
 
     cd c4
-    python -m pytest tests                                       # 361 tests
+    python -m pytest tests                                       # 362 tests
     python src/transformer_ner.py train --data both              # ~2 h on CPU
     python src/roles.py train && python src/roles.py evaluate
     python src/evaluate.py --source real-eval --system pipeline:xlmr_both --labels proposal

@@ -131,6 +131,9 @@ def context_class(text: str, start: int, window: int = CONTEXT_WINDOW,
 
     right = text[end : end + RIGHT_WINDOW]
     right = right[: next((i for i, ch in enumerate(right) if ch.isdigit()), len(right))]
+    # ... and stays in its sentence: in "0714567890. Policy eke excess ..." the
+    # next sentence's keyword describes something else.
+    right = re.split(r"[.?!](?:\s|$)", right)[0]
     after = _first_keyword(right)
     if after is not None:
         return after
