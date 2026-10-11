@@ -23,7 +23,7 @@ from pathlib import Path
 import torch
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
-from normalize import fix_sinhala, prepare
+from normalize import postprocess, prepare
 from train_translation import LANG, SPEAKER, SRC_LANG
 
 C2_ROOT = Path(__file__).resolve().parents[1]
@@ -136,9 +136,11 @@ def main():
     # Step A: per-utterance clean English and clean Sinhala.
     en = iter(translate(models / "nllb600m_en_frac100", texts, SRC_LANG, LANG["en"]))
     si = iter(translate(models / "nllb600m_si_frac100", texts, SRC_LANG, LANG["si"]))
+    src = iter(texts)
     for _, utts, _ in convs:
         for u in utts:
-            u["clean_en"], u["clean_si"] = next(en), fix_sinhala(next(si))
+            s = next(src)
+            u["clean_en"], u["clean_si"] = postprocess(s, next(en)), postprocess(s, next(si))
 
     # Step B: summary from the English translation (translate-first won on dev).
     summaries = [(None, None, [])] * len(convs)
@@ -150,7 +152,7 @@ def main():
         # NLLB is a sentence-level model: translate the summary sentence by sentence.
         sents = [re.split(r"(?<=[.!?])\s+", s[1] or "") for s in summaries]
         flat = iter(translate(BASE_NLLB, [x for ss in sents for x in ss], LANG["en"], LANG["si"]))
-        summaries_si = [fix_sinhala(" ".join(next(flat) for _ in ss)) for ss in sents]
+        summaries_si = [" ".join(postprocess(x, next(flat)) for x in ss) for ss in sents]
 
     for (rid, utts, _), (_, summary, items), summary_si in zip(convs, summaries, summaries_si):
         (out_dir / f"{rid}.translation.json").write_text(json.dumps({

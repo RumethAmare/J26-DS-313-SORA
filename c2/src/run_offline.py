@@ -24,7 +24,7 @@ import re  # noqa: E402
 import time  # noqa: E402
 from pathlib import Path  # noqa: E402
 
-from normalize import fix_sinhala, prepare  # noqa: E402
+from normalize import postprocess, prepare  # noqa: E402
 from run_c2 import LANG_ENGLISH, load_conversations  # noqa: E402
 from train_summary import INSTRUCTION, parse  # noqa: E402
 from train_translation import LANG, SRC_LANG  # noqa: E402
@@ -85,9 +85,11 @@ def main():
     t = time.time()
     en = iter(translate(models / "nllb_en", texts, SRC_LANG, LANG["en"]))
     si = iter(translate(models / "nllb_si", texts, SRC_LANG, LANG["si"]))
+    src = iter(texts)
     for _, utts, _ in convs:
         for u in utts:
-            u["clean_en"], u["clean_si"] = next(en), fix_sinhala(next(si))
+            s = next(src)
+            u["clean_en"], u["clean_si"] = postprocess(s, next(en)), postprocess(s, next(si))
     timing["translate"] = time.time() - t
 
     t = time.time()
@@ -99,7 +101,7 @@ def main():
     t = time.time()
     sents = [re.split(r"(?<=[.!?])\s+", s[1] or "") for s in summaries]
     flat = iter(translate(models / "nllb_base", [x for ss in sents for x in ss], LANG["en"], LANG["si"]))
-    summaries_si = [fix_sinhala(" ".join(next(flat) for _ in ss)) for ss in sents]
+    summaries_si = [" ".join(postprocess(x, next(flat)) for x in ss) for ss in sents]
     timing["summary_si"] = time.time() - t
 
     for (rid, utts, _), (_, summary, items), summary_si in zip(convs, summaries, summaries_si):

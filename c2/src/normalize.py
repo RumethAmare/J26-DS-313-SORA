@@ -76,13 +76,74 @@ def normalize(text):
 
 
 # NLLB's tokenizer drops the zero-width joiner, so a conjunct like ට්‍ර comes
-# out as a lone "ට්" + space + "ර...". A lone consonant+virama never stands as a
-# word in the gold text, so re-joining exactly that pattern is safe.
+# out split: "ට් රාන්ස්පෝට්", "අවශ් යතාවය", "වෛද් ය". Two safe re-joins:
+#   1. a lone consonant+virama ("ට්") never stands as a word, so always join;
+#   2. otherwise join only if some gold Sinhala word starts with the joined
+#      conjunct ("අවශ්‍ය..."), so real word breaks ("මෝටර් රථ",
+#      "නිවේදනයක් යවමුද") are left alone.
 _BROKEN_CONJUNCT = re.compile(r"(^|\s)([\u0d9a-\u0dc6]\u0dca) ([\u0dbb\u0dba])")
+_SPLIT_PAIR = re.compile(r"(\S*\u0dca) ([\u0dbb\u0dba]\S*)")
+_PUNCT = ".,?!:;\"'()"
+_SINHALA_VOCAB = None
 
 
-def fix_sinhala(text):
-    return _BROKEN_CONJUNCT.sub("\\1\\2\u200d\\3", text)
+def sinhala_vocab():
+    """Conjunct word-starts in the gold clean_si text (data/train.jsonl), loaded
+    once: "අවශ්‍යතාවය" contributes "අවශ්‍ය"."""
+    global _SINHALA_VOCAB
+    if _SINHALA_VOCAB is None:
+        import json
+        from pathlib import Path
+        _SINHALA_VOCAB = set()
+        path = Path(__file__).resolve().parents[1] / "data" / "train.jsonl"
+        if path.exists():
+            for line in open(path, encoding="utf-8"):
+                for u in json.loads(line)["utterances"]:
+                    for w in (u["clean_si"] or "").split():
+                        w = w.strip(_PUNCT)
+                        for m in re.finditer("්‍", w):
+                            _SINHALA_VOCAB.add(w[:m.end() + 1])
+    return _SINHALA_VOCAB
+
+
+def fix_sinhala(text, vocab=None):
+    text = _BROKEN_CONJUNCT.sub(r"\1\2" + "\u200d" + r"\3", text)
+    vocab = sinhala_vocab() if vocab is None else vocab
+
+    def join(m):
+        left = m.group(1).lstrip(_PUNCT)
+        known = (left + "\u200d" + m.group(2)[0]) in vocab
+        return m.group(1) + "\u200d" + m.group(2) if known else m.group(0)
+    return _SPLIT_PAIR.sub(join, text)
+
+
+# Digits must survive translation exactly: C4 redacts NICs and phone numbers by
+# their exact characters. The model sometimes adds, drops or reorders digits
+# ("1995 123 089 34" -> "1995123809346"), so copy each number back from the
+# source when the digits differ. Only done when source and output have the same
+# number of numbers, so the pairing is unambiguous.
+_NUMBER = re.compile(r"\d+(?:[ ,.:/-]+\d+)*")
+
+
+def fix_numbers(src, hyp):
+    src_nums, hyp_nums = _NUMBER.findall(src), list(_NUMBER.finditer(hyp))
+    if not src_nums or len(src_nums) != len(hyp_nums):
+        return hyp
+    out, last = [], 0
+    for s, h in zip(src_nums, hyp_nums):
+        digits_s, digits_h = re.sub(r"\D", "", s), re.sub(r"\D", "", h.group())
+        fixed = h.group()
+        if digits_s != digits_h:
+            # keep the output's style: one block stays one block
+            fixed = digits_s if not re.search(r"\D", h.group()) else s.strip(" ,.")
+        out += [hyp[last:h.start()], fixed]
+        last = h.end()
+    return "".join(out) + hyp[last:]
+
+
+def postprocess(src, hyp):
+    """Model output -> final text: exact numbers, re-joined Sinhala letters."""
+    return fix_sinhala(fix_numbers(src, hyp))
 
 
 # --- Sinhala script -> romanized Singlish (for synthetic training data) ------

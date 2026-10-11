@@ -21,7 +21,7 @@ import json
 from pathlib import Path
 
 from metrics import score, score_actions, score_summaries
-from normalize import fix_sinhala, prepare
+from normalize import postprocess, prepare
 from run_c2 import (BASE_NLLB, DRIVE_MODELS, LANG_ENGLISH, LANG_SINGLISH, summarise,
                     translate)
 from train_translation import LANG, SPEAKER, SRC_LANG, is_romanized
@@ -76,7 +76,7 @@ def main():
         if args.google:
             systems["google_translate"] = lambda: google_translate(src, tgt)
         for name, run in systems.items():
-            hyps = [fix_sinhala(h) for h in run()]
+            hyps = [postprocess(s, h) for s, h in zip(src, run())]
             saved[(tgt, name)] = dict(zip([utts[i]["utt_id"] for i in keep], hyps))
             results["translation"].setdefault(tgt, {})[name] = by_script(hyps, refs, src)
             print(tgt, name, results["translation"][tgt][name]["all"])

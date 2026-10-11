@@ -30,7 +30,7 @@ from transformers import (AutoModelForSeq2SeqLM, AutoTokenizer, DataCollatorForS
                           EarlyStoppingCallback, Seq2SeqTrainer, Seq2SeqTrainingArguments)
 
 from metrics import score
-from normalize import fix_sinhala, normalize, romanize
+from normalize import fix_sinhala, normalize, postprocess, romanize
 
 C2_ROOT = Path(__file__).resolve().parents[1]
 DATA = C2_ROOT / "data"
@@ -186,7 +186,7 @@ def main():
         with torch.no_grad():
             out = model.generate(**enc, forced_bos_token_id=tgt_bos, num_beams=4,
                                  max_length=args.max_len)
-        hyps += [fix_sinhala(h) for h in tok.batch_decode(out, skip_special_tokens=True)]
+        hyps += [postprocess(p["src"], h) for p, h in zip(chunk, tok.batch_decode(out, skip_special_tokens=True))]
 
     pred_dir = C2_ROOT / "predictions" / run_id
     pred_dir.mkdir(parents=True, exist_ok=True)
