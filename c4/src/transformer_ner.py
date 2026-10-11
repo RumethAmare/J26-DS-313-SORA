@@ -165,9 +165,23 @@ class TransformerDetector:
         self._cache: dict[str, list] = {}
 
     def raw_spans(self, text: str) -> list[list]:
-        """[start, end, label, confidence] straight from the model (cached)."""
+        """
+        [start, end, label, confidence] from the model (cached).
+
+        The model reads at most 512 word pieces, so a long text is read in
+        sentence-aligned windows; without this, everything past the limit was
+        silently never seen (a name late in a long document went undetected).
+        """
         if text in self._cache:
             return self._cache[text]
+        out = []
+        for offset, chunk in _windows(text):
+            for s, e, label, conf in self._predict(chunk):
+                out.append([s + offset, e + offset, label, conf])
+        self._cache[text] = out
+        return out
+
+    def _predict(self, text: str) -> list[list]:
         import torch
         tok, model = _load(str(self.path))
         enc = tok(text, truncation=True, max_length=512, return_offsets_mapping=True,
@@ -192,9 +206,7 @@ class TransformerDetector:
             else:
                 cur = [s, e, label, None, [c]]
                 spans.append(cur)
-        out = [[s, e, label, sum(cs) / len(cs)] for s, e, label, _, cs in spans]
-        self._cache[text] = out
-        return out
+        return [[s, e, label, sum(cs) / len(cs)] for s, e, label, _, cs in spans]
 
     def __call__(self, text: str, preceding: str = "") -> list[Detection]:
         if not text.strip():
@@ -226,6 +238,34 @@ class TransformerDetector:
                 out.append(Detection(s, e, label, text[s:e], role=ROLE_OF[label],
                                      source="xlmr", score=round(score, 4)))
         return out
+
+
+WINDOW_CHARS = 1200      # comfortably under 512 word pieces for Singlish / Sinhala
+
+
+def _windows(text: str) -> list[tuple[int, str]]:
+    """
+    Split text into windows of whole sentences, each at most WINDOW_CHARS long
+    (a single longer sentence is cut at a space). Returns (offset, chunk).
+    """
+    import re
+    if len(text) <= WINDOW_CHARS:
+        return [(0, text)]
+    bounds = [m.end() for m in re.finditer(r"[.!?\n]+\s+", text)] + [len(text)]
+    windows, start, last = [], 0, 0
+    for b in bounds:
+        if b - start > WINDOW_CHARS and last > start:
+            windows.append((start, text[start:last]))
+            start = last
+        while b - start > WINDOW_CHARS:                  # one very long sentence
+            cut = text.rfind(" ", start, start + WINDOW_CHARS)
+            cut = cut if cut > start else start + WINDOW_CHARS
+            windows.append((start, text[start:cut]))
+            start = cut
+        last = b
+    if start < len(text):
+        windows.append((start, text[start:]))
+    return windows
 
 
 def _split_at_sentence(text: str, s: int, e: int) -> list[tuple[int, int]]:

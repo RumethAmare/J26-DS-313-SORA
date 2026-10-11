@@ -67,3 +67,13 @@ def test_sinhala_case_ending_is_trimmed_from_a_name():
     span = "නිමල් පෙරේරාට"
     assert span[:_without_case_ending(span)] == "නිමල් පෙරේරා"
     assert _without_case_ending("Nimal") == len("Nimal")
+
+
+def test_long_text_is_read_in_windows_that_cover_every_character():
+    """The model reads 512 word pieces; a long text must not be truncated."""
+    from transformer_ner import WINDOW_CHARS, _windows
+    text = ("Mage nama Nimal Perera. " * 120).strip()
+    windows = _windows(text)
+    assert len(windows) > 1 and all(len(c) <= WINDOW_CHARS for _, c in windows)
+    covered = "".join(c for _, c in windows)
+    assert covered == text and all(text[o:o + len(c)] == c for o, c in windows)
