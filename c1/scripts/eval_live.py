@@ -15,6 +15,10 @@ Usage:
     python eval_live.py --model medium
     python eval_live.py --model large-v3 --realtime    # also measure live latency
 
+Also scores the word timestamps (CTC forced alignment, the live default)
+against the gold token times over the whole recording: session-absolute
+times, after VAD cutting -- what C3 actually receives.
+
 Writes results/c1_asr_live_<run>.json and predictions/live/eval_<run>/<rid>.json.
 """
 import argparse
@@ -47,11 +51,14 @@ def main():
                     help="stream at real speed (slow; measures true live latency)")
     ap.add_argument("--max-utterance-s", type=float, default=25.0)
     ap.add_argument("--silence-ms", type=int, default=600)
+    ap.add_argument("--tag", default="", help="suffix for output names (keeps earlier results)")
     a = ap.parse_args()
     tag = f"_max{a.max_utterance_s:g}s" if a.max_utterance_s != 25.0 else ""
     tag += f"_sil{a.silence_ms}" if a.silence_ms != 600 else ""
+    tag += f"_{a.tag}" if a.tag else ""
 
     import ct2_decode
+    import eval_timestamps as et
     run = ct2_decode.MODELS.get(a.model, a.model)
     out_dir = os.path.join(fw.C1_ROOT, "predictions", "live", f"eval_{run}{tag}")
     os.makedirs(out_dir, exist_ok=True)
@@ -59,6 +66,7 @@ def main():
                           encoding="utf-8"))["splits"]["test"]["recordings"]
 
     refs, hyps, per, lags, t_all = [], [], [], [], time.time()
+    time_errs, n_gold = [], 0
     for rid in rids:
         wav = os.path.join(corpus.AUDIO_DIR, f"{rid}.wav")
         out = os.path.join(out_dir, f"{rid}.json")
@@ -77,6 +85,14 @@ def main():
         refs.append(ref)
         hyps.append(hyp)
         s = fw.score([ref], [hyp])
+        hyp_toks = [{"word": t["token"], "start": t["start"], "end": t["end"]}
+                    for u in doc["utterances"] for t in u["tokens"]]
+        gold_toks = [{"word": t["token"], "start": t["start"], "end": t["end"]}
+                     for t in et.gold_tokens(rid) if t.get("start") is not None and t.get("end") is not None]
+        n_gold += len(gold_toks)
+        for h, g in et.pairs(hyp_toks, gold_toks):
+            if h["start"] is not None:
+                time_errs.append(et.word_error(h, g, et.turns(rid)))
         lag = [u["latency_after_speech_s"] for u in doc["utterances"] if u["end_reason"] == "pause"]
         lags += lag
         per.append({"recording": rid, "utterances": len(doc["utterances"]),
@@ -95,6 +111,8 @@ def main():
            "latency_after_speech_s": {"median": round(float(np.median(lags)), 2) if lags else None,
                                       "p90": round(float(np.percentile(lags, 90)), 2) if lags else None,
                                       "n": len(lags)},
+           "word_timestamps": {"method": "MMS forced alignment (live default --timing ctc)",
+                               **et.summarise(time_errs, n_gold)},
            "wall_s": round(time.time() - t_all, 1)}
     clip = os.path.join(fw.RESULTS_DIR, f"c1_asr_ct2_{run}.json")
     if os.path.exists(clip):
@@ -105,6 +123,12 @@ def main():
           f"(clip-based {res.get('clip_based_wer')}), CER {total['norm_cer']:.3f}, "
           f"words recovered {100 * total['recall_of_ref_words']:.1f}%, "
           f"latency after pause median {res['latency_after_speech_s']['median']} s")
+    ts = res["word_timestamps"]
+    if ts.get("matched_words"):
+        print(f"word times: start median {ts['start_err_ms']['median']} ms, end median "
+              f"{ts['end_err_ms']['median']} ms, within 100 ms {100 * ts['within_ms']['100']:.0f}%, "
+              f"midpoint in gold word {100 * ts['midpoint_inside_gold_word']:.0f}%, "
+              f"same speaker turn as gold {100 * (ts['same_speaker_turn_as_gold'] or 0):.1f}%")
 
 
 if __name__ == "__main__":

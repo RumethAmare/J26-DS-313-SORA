@@ -9,8 +9,10 @@ How it works:
     -> pause of SILENCE_MS (or 25 s of speech): the utterance is final;
        transcribe it with the safeguarded decoder (ct2_decode.py), label each
        word SI/EN/OTHER with the Task 3 hybrid LID, print it coloured
+    -> after the text is on screen: CTC forced alignment (word_align.py)
+       gives each word its start/end in the session (--timing)
   Ctrl+C -> saves predictions/live/<timestamp>.json (and the audio with
-  --save-audio).
+  --save-audio; the token stream for C3 with --tokens-jsonl).
 
 Whisper is not a streaming model, so text arrives per utterance: shortly
 after each pause, not word by word. Provisional text fills the gap.
@@ -22,6 +24,8 @@ Usage:
     python live_transcribe.py --list-devices
     python live_transcribe.py --model medium --device 3 --save-audio
     python live_transcribe.py --input-file x.wav --realtime   # test without a mic
+    python live_transcribe.py --model large-v3 --input-file rec.wav --tokens-jsonl rec.tokens.jsonl
+                                                              # whole recording -> C3 token stream
 """
 import argparse
 import json
@@ -97,7 +101,7 @@ def label_tokens(words, lid, utt_id, t0):
                      "end": None if w["end"] is None else round(t0 + w["end"], 2),
                      "switch": prev is not None and lang != prev,
                      "asr_confidence": w["probability"], "lang_confidence": conf,
-                     "lang_method": method})
+                     "lang_method": method, "align_score": w.get("align_score")})
         prev = lang
     return toks
 
@@ -155,8 +159,13 @@ def main():
                          "sooner during long turns; must stay under 30)")
     ap.add_argument("--no-partials", action="store_true",
                     help="skip provisional text (saves GPU; useful for large-v3)")
-    ap.add_argument("--word-times", action="store_true",
-                    help="word-level timestamps in the saved tokens (+0.4-0.7 s per utterance)")
+    ap.add_argument("--timing", choices=ct2_decode.TIMINGS, default="ctc",
+                    help="word start/end in the saved tokens: ctc = forced alignment, run "
+                         "after the text is shown (default); whisper = cross-attention "
+                         "estimate, also gives asr_confidence (+0.4-0.7 s before the text); "
+                         "both = whisper confidence + ctc times; none")
+    ap.add_argument("--tokens-jsonl", help="also write the token stream (one token per line, "
+                    "session times) -- the format C3/C4 read")
     ap.add_argument("--save-audio", action="store_true")
     ap.add_argument("--input-file", help="stream a WAV instead of the microphone")
     ap.add_argument("--realtime", action="store_true", help="with --input-file: play at real speed")
@@ -176,6 +185,9 @@ def main():
     lid = HybridLID()
     vad = StreamingVAD()
     model.transcribe(np.zeros(SR, dtype="float32"), **ct2_decode.PARTIAL_OPTS)  # warm-up
+    ctc = a.timing in ("ctc", "both")
+    if ctc:
+        ct2_decode.align_words(np.zeros(SR, dtype="float32"), [{"word": "a"}])      # load + warm-up
 
     q, stop = queue.Queue(), threading.Event()
     src = threading.Thread(target=file_source if a.input_file else mic_source,
@@ -195,6 +207,8 @@ def main():
     t_audio = 0.0                                 # session clock, from samples received
     utt_start = 0.0
     session_audio, utterances = [], []
+    # utt_id like the gold for a recording (J26DS313_R0018_u001), live_u001 for the mic
+    utt_prefix = os.path.splitext(os.path.basename(a.input_file))[0] if a.input_file else "live"
 
     def finalize(reason):
         nonlocal utt, in_speech, quiet
@@ -206,13 +220,11 @@ def main():
             return
         t_end = utt_start + dur
         t0 = time.time()
-        text, words, _, action = ct2_decode.transcribe(model, audio, word_times=a.word_times)
-        if not words and text:          # no alignment pass: words without times
-            words = [{"word": w, "start": None, "end": None, "probability": None}
-                     for w in text.split()]
-        cut = action == "beam + truncate"
+        # CTC times are added after printing, so they never delay the text
+        timing = {"ctc": "none", "both": "whisper"}.get(a.timing, a.timing)
+        text, words, _, action = ct2_decode.transcribe(model, audio, timing=timing)
         dec = time.time() - t0
-        uid = f"live_u{len(utterances) + 1:03d}"
+        uid = f"{utt_prefix}_u{len(utterances) + 1:03d}"
         toks = label_tokens(words, lid, uid, utt_start)
         lag = dec + (a.silence_ms / 1000 if reason == "pause" else 0)
         utterances.append({"utt_id": uid, "start": round(utt_start, 2), "end": round(t_end, 2),
@@ -224,6 +236,14 @@ def main():
                          f"{', cut at max length' if reason == 'max' else ''}"
                          f"{', fixed: ' + action if action != 'greedy' else ''}){RESET}\n")
         sys.stdout.flush()
+        if ctc and words:
+            t1 = time.time()
+            ct2_decode.align_words(audio, words)
+            for t, w in zip(toks, words):
+                t["start"] = None if w["start"] is None else round(utt_start + w["start"], 2)
+                t["end"] = None if w["end"] is None else round(utt_start + w["end"], 2)
+                t["align_score"] = w.get("align_score")
+            utterances[-1]["align_s"] = round(time.time() - t1, 3)
 
     try:
         while True:
@@ -299,7 +319,11 @@ def main():
             "endpointing": {"silence_ms": a.silence_ms, "number_pause_ms": a.number_pause_ms,
                             "max_utterance_s": a.max_utterance_s,
                             "vad": "silero (faster-whisper bundle), streaming"},
-            "word_times": a.word_times,
+            "timing": a.timing,
+            "time_method": {"ctc": "MMS forced alignment (word_align.py)",
+                            "both": "MMS forced alignment (word_align.py); asr_confidence from whisper",
+                            "whisper": "faster-whisper cross-attention (word_timestamps)",
+                            "none": None}[a.timing],
             "latency_after_speech_s": {
                 "median": round(float(np.median(lags)), 2) if lags else None,
                 "max": round(max(lags), 2) if lags else None},
@@ -309,6 +333,12 @@ def main():
         json.dump(doc, fh, ensure_ascii=False, indent=2)
         fh.write("\n")
     print(f"\nsaved {len(utterances)} utterances -> {out}")
+    if a.tokens_jsonl:
+        with open(a.tokens_jsonl, "w", encoding="utf-8") as fh:
+            for u in utterances:
+                for t in u["tokens"]:
+                    fh.write(json.dumps(t, ensure_ascii=False) + "\n")
+        print(f"tokens -> {a.tokens_jsonl}")
     if a.save_audio and session_audio:
         import soundfile as sf
         sf.write(out[:-5] + ".wav", np.concatenate(session_audio), SR)

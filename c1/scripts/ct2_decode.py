@@ -119,34 +119,100 @@ def _run(model, audio, opts):
     return " ".join(t for t in texts if t), words, info
 
 
-def transcribe(model, audio, partial=False, word_times=True):
+# --- word timestamps -------------------------------------------------------------
+# "ctc"     MMS forced alignment of the final text (word_align.py): times from
+#           the sound itself, ~50 ms per utterance. The default for token times.
+# "whisper" faster-whisper's cross-attention estimate (word_timestamps=True);
+#           also the only source of per-word asr_confidence; +0.4-0.7 s.
+# "both"    whisper pass for asr_confidence, CTC for the times.
+# "none"    text only.
+# eval_timestamps.py compares the methods against the gold token times.
+TIMINGS = ("ctc", "whisper", "both", "none")
+_aligner = None
+
+
+def get_aligner():
+    global _aligner
+    if _aligner is None:
+        import word_align
+        _aligner = word_align.Aligner()
+    return _aligner
+
+
+def plain_words(text):
+    return [{"word": w, "start": None, "end": None, "probability": None} for w in text.split()]
+
+
+def match_words(text, words):
+    """Whisper's word records for the FINAL text. The safeguards can cut or
+    edit the text after decoding, and Whisper's word list does not always
+    split where the spaces are; a word keeps Whisper's times only where the
+    two sequences agree exactly, so a time never sits on the wrong word."""
+    from difflib import SequenceMatcher
+    out = plain_words(text)
+    a, b = [o["word"] for o in out], [w["word"] for w in words]
+    for blk in SequenceMatcher(None, a, b, autojunk=False).get_matching_blocks():
+        for k in range(blk.size):
+            out[blk.a + k].update(words[blk.b + k])
+    return out
+
+
+def align_words(audio, words, min_score=None, use_whisper=False):
+    """Overwrite start/end with CTC forced-alignment times (in place) and add
+    align_score. Words keep start/end None if the alignment fails.
+    min_score: re-time words aligned with a lower score (word_align.repair),
+    from Whisper's own times if use_whisper and the words carry them, else by
+    interpolation between confident neighbours."""
+    import word_align
+    names = [w["word"] for w in words]
+    times = get_aligner().align(audio, names)
+    if times is None:
+        for w in words:
+            w["start"] = w["end"] = w["align_score"] = None
+        return words
+    if min_score is not None:
+        fb = [dict(w) for w in words] if use_whisper else None
+        word_align.repair(times, names, min_score, fb)
+    for w, t in zip(words, word_align.tidy(times, len(audio) / SR)):
+        w["start"], w["end"], w["align_score"] = round(t["start"], 2), round(t["end"], 2), t["score"]
+        if t.get("retimed"):
+            w["retimed"] = True
+    return words
+
+
+def transcribe(model, audio, partial=False, timing="whisper"):
     """audio: float32 mono 16 kHz numpy array.
 
     Returns (text, words, info, action): words is [{word, start, end,
-    probability}]; action is "greedy", "beam re-decode", "beam + truncate" or
+    probability[, align_score]}] and always matches text word for word;
+    action is "greedy", "beam re-decode", "beam + truncate" or
     "beam + digit trim". An output counts as bad if it loops (loop_reasons)
     or holds more digits than the audio could (too_many_digits).
-    word_times=False skips the word-alignment pass (0.4-0.7 s faster per
-    utterance); words then carry no start/end/probability.
+    timing: see TIMINGS. Callers that want the text on screen before the
+    alignment runs use timing="none" and then align_words().
     """
+    assert timing in TIMINGS, timing
     if partial:
         text, words, info = _run(model, audio, PARTIAL_OPTS)
         return text, words, info, "partial"
-    opts = dict(DECODE_OPTS, word_timestamps=word_times)
+    opts = dict(DECODE_OPTS, word_timestamps=timing in ("whisper", "both"))
     text, words, info = _run(model, audio, opts)
     dur = len(audio) / SR
 
     def bad(t):
         return sg.loop_reasons(t, dur) or too_many_digits(t, dur)
 
-    if not bad(text):
-        return text, words, info, "greedy"
-    text, words, info = _run(model, audio, dict(opts, beam_size=BEAM_FALLBACK))
-    if not bad(text):
-        return text, words, info, "beam re-decode"
-    action = "beam + truncate"
-    if sg.loop_reasons(text, dur):
-        text = sg.truncate_loop(text, dur)
-    if too_many_digits(text, dur):
-        text, action = trim_digits(text, dur), "beam + digit trim"
-    return text, words[:len(text.split())], info, action
+    action = "greedy"
+    if bad(text):
+        text, words, info = _run(model, audio, dict(opts, beam_size=BEAM_FALLBACK))
+        action = "beam re-decode"
+        if bad(text):
+            action = "beam + truncate"
+            if sg.loop_reasons(text, dur):
+                text = sg.truncate_loop(text, dur)
+            if too_many_digits(text, dur):
+                text, action = trim_digits(text, dur), "beam + digit trim"
+    words = match_words(text, words)
+    if timing in ("ctc", "both"):
+        align_words(audio, words)
+    return text, words, info, action

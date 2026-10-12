@@ -95,6 +95,30 @@ cases, and Task 5 handles romanized Tamil the same way.
 currently invisible to this method — consistent with the 0% OTHER recall
 already measured in the LID baseline.
 
+## `start` / `end` and `align_score`: when the word was said (for C3)
+
+Since 2026-10-12 the fine-tuned live pipeline (`live_transcribe.py`, also used
+offline with `--input-file rec.wav --tokens-jsonl rec.tokens.jsonl`) times each
+word with **CTC forced alignment** (`scripts/word_align.py`, the MMS aligner):
+Whisper decides the words, and the aligner finds where each word's letters sit
+in the audio, at 20 ms resolution. Times are seconds from the start of the
+session or recording. Sinhala script is romanized with `uroman` for the
+aligner; digits match a wildcard, so number tokens are timed more coarsely.
+
+`align_score` (0–1) is the mean CTC probability of the word's letters, i.e. how
+well the sound fits the text. It is a third, separate signal: it does not say
+whether the word is right (`asr_confidence`) or what language it is
+(`lang_confidence`).
+
+With the default `--timing ctc`, `asr_confidence` is `null`, because
+faster-whisper only produces per-word probabilities in its own
+word-timestamp pass, which costs 0.4–0.7 s before the text appears. Use
+`--timing both` to get both. Accuracy against the gold token times is in
+`results/c1_timestamps_report.md`. On large-v3 the median start error is 60 ms,
+against 270 ms for Whisper's own estimate, and ~95% of words fall in the same
+gold speaker turn. Tokens with `align_score` below ~0.05 are the ones most often
+misplaced, so C3 should treat them as weak evidence near a speaker change.
+
 ## `switch`
 
 Derived, not predicted: `switch = (tok_id > 0) and (lang[i] != lang[i-1])`

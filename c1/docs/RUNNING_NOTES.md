@@ -127,3 +127,22 @@ cd c1\scripts
   word; provisional text shows while speaking (`--no-partials` to disable).
 - `--input-file x.wav --realtime` streams a file through the same pipeline.
 - Sessions save to `c1/predictions/live/`; `--save-audio` keeps the WAV.
+
+### Word timestamps for C3 (2026-10-12)
+
+Every token gets `start`/`end` from CTC forced alignment (`scripts/word_align.py`,
+torchaudio's MMS aligner). It runs after the text is printed (~0.05–0.1 s per
+utterance), so on-screen latency is unchanged. The first run downloads the
+aligner weights (~1.2 GB) into the torch hub cache.
+
+```powershell
+# whole recording -> token stream in the shared schema (utt_id J26DS313_R0018_u001, ...)
+..\.venv\Scripts\python.exe live_transcribe.py --model large-v3 --no-partials `
+    --input-file F:\SLIIT\Research\SORA_Dataset\processed\audio\J26DS313_R0018.wav `
+    --tokens-jsonl J26DS313_R0018.tokens.jsonl
+```
+
+- `--timing ctc` (default) | `both` (also Whisper's per-word `asr_confidence`,
+  +0.4–0.7 s) | `whisper` | `none`.
+- Accuracy against the gold token times: `python eval_timestamps.py` on clips →
+  `results/c1_timestamps_report.md`; `eval_live.py` on whole recordings → `word_timestamps`.
