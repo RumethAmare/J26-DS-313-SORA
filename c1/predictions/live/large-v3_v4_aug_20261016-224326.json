@@ -1,0 +1,1339 @@
+{
+  "n_utterances": 29,
+  "transcript": "ඉතින් කොහොමද? Sepasa neda? මට ඔයාට දෙකක් කියන්න තියෙනවා ආ හරි ලහ්නම් Oya hari lasse nai. මම ඔයාට කැනෙති Numa kiyanawa. ඇහැනුමක් යනවා මැඩම් මට කක්කම බෑ right මටක අක්ක බරයි යි Honda wadi. Inhala theryum. මොනවද විස්තර? රට ගිහාද? Hondai da wada? Vanadika kohomada? මැඩම් ටික. Miss... එයාට ආද්ඩේ මම ඔයාට ආදෙලෙන් මැඩම් Wenna monada wennu one? damil Tamil ඔව් මැඩම් Vanakkam. හරි හරි, ඒක කමක් නෑ. Rumba. Rombo Nalla.",
+  "utterances": [
+    {
+      "utt_id": "live_u001",
+      "start": 0.86,
+      "end": 1.86,
+      "text": "ඉතින්",
+      "tokens": [
+        {
+          "utt_id": "live_u001",
+          "tok_id": 0,
+          "token": "ඉතින්",
+          "lang": "SI",
+          "start": 1.14,
+          "end": 1.47,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.6763
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.5,
+      "latency_after_speech_s": 1.1,
+      "decode_action": "greedy",
+      "align_s": 0.038
+    },
+    {
+      "utt_id": "live_u002",
+      "start": 4.48,
+      "end": 5.54,
+      "text": "කොහොමද?",
+      "tokens": [
+        {
+          "utt_id": "live_u002",
+          "tok_id": 0,
+          "token": "කොහොමද?",
+          "lang": "SI",
+          "start": 4.68,
+          "end": 5.23,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.6754
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.57,
+      "latency_after_speech_s": 1.17,
+      "decode_action": "greedy",
+      "align_s": 0.044
+    },
+    {
+      "utt_id": "live_u003",
+      "start": 7.97,
+      "end": 9.18,
+      "text": "Sepasa neda?",
+      "tokens": [
+        {
+          "utt_id": "live_u003",
+          "tok_id": 0,
+          "token": "Sepasa",
+          "lang": "EN",
+          "start": 8.17,
+          "end": 8.56,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9867,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.7279
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 1,
+          "token": "neda?",
+          "lang": "SI",
+          "start": 8.64,
+          "end": 8.92,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9979,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.2695
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.43,
+      "latency_after_speech_s": 1.03,
+      "decode_action": "greedy",
+      "align_s": 0.039
+    },
+    {
+      "utt_id": "live_u004",
+      "start": 13.02,
+      "end": 15.01,
+      "text": "මට ඔයාට දෙකක් කියන්න තියෙනවා",
+      "tokens": [
+        {
+          "utt_id": "live_u004",
+          "tok_id": 0,
+          "token": "මට",
+          "lang": "SI",
+          "start": 13.1,
+          "end": 13.41,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.902
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 1,
+          "token": "ඔයාට",
+          "lang": "SI",
+          "start": 13.44,
+          "end": 13.75,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.2618
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 2,
+          "token": "දෙකක්",
+          "lang": "SI",
+          "start": 13.81,
+          "end": 13.97,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.362
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 3,
+          "token": "කියන්න",
+          "lang": "SI",
+          "start": 14.03,
+          "end": 14.42,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.8969
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 4,
+          "token": "තියෙනවා",
+          "lang": "SI",
+          "start": 14.46,
+          "end": 14.78,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.436
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 1.19,
+      "latency_after_speech_s": 1.79,
+      "decode_action": "greedy",
+      "align_s": 0.036
+    },
+    {
+      "utt_id": "live_u005",
+      "start": 21.98,
+      "end": 23.07,
+      "text": "ආ හරි ලහ්නම්",
+      "tokens": [
+        {
+          "utt_id": "live_u005",
+          "tok_id": 0,
+          "token": "ආ",
+          "lang": "SI",
+          "start": 22.02,
+          "end": 22.08,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.666
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 1,
+          "token": "හරි",
+          "lang": "SI",
+          "start": 22.1,
+          "end": 22.28,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.7068
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 2,
+          "token": "ලහ්නම්",
+          "lang": "SI",
+          "start": 22.34,
+          "end": 22.72,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.3812
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.73,
+      "latency_after_speech_s": 1.33,
+      "decode_action": "greedy",
+      "align_s": 0.035
+    },
+    {
+      "utt_id": "live_u006",
+      "start": 26.98,
+      "end": 28.51,
+      "text": "Oya hari lasse nai.",
+      "tokens": [
+        {
+          "utt_id": "live_u006",
+          "tok_id": 0,
+          "token": "Oya",
+          "lang": "SI",
+          "start": 27.06,
+          "end": 27.26,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.999,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.9751
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 1,
+          "token": "hari",
+          "lang": "SI",
+          "start": 27.43,
+          "end": 27.65,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9725,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.984
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 2,
+          "token": "lasse",
+          "lang": "EN",
+          "start": 27.71,
+          "end": 28.05,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9943,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.8699
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 3,
+          "token": "nai.",
+          "lang": "SI",
+          "start": 28.09,
+          "end": 28.25,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.991,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.9609
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.52,
+      "latency_after_speech_s": 1.12,
+      "decode_action": "greedy",
+      "align_s": 0.036
+    },
+    {
+      "utt_id": "live_u007",
+      "start": 32.48,
+      "end": 33.79,
+      "text": "මම ඔයාට කැනෙති",
+      "tokens": [
+        {
+          "utt_id": "live_u007",
+          "tok_id": 0,
+          "token": "මම",
+          "lang": "SI",
+          "start": 32.54,
+          "end": 32.76,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.9496
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 1,
+          "token": "ඔයාට",
+          "lang": "SI",
+          "start": 32.84,
+          "end": 33.19,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.898
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 2,
+          "token": "කැනෙති",
+          "lang": "SI",
+          "start": 33.23,
+          "end": 33.61,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.5255
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.74,
+      "latency_after_speech_s": 1.34,
+      "decode_action": "greedy",
+      "align_s": 0.046
+    },
+    {
+      "utt_id": "live_u008",
+      "start": 41.54,
+      "end": 42.5,
+      "text": "Numa kiyanawa.",
+      "tokens": [
+        {
+          "utt_id": "live_u008",
+          "tok_id": 0,
+          "token": "Numa",
+          "lang": "SI",
+          "start": 41.56,
+          "end": 41.74,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.8583,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5595
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 1,
+          "token": "kiyanawa.",
+          "lang": "SI",
+          "start": 41.87,
+          "end": 42.23,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9216,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5511
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.45,
+      "latency_after_speech_s": 1.05,
+      "decode_action": "greedy",
+      "align_s": 0.039
+    },
+    {
+      "utt_id": "live_u009",
+      "start": 45.12,
+      "end": 46.4,
+      "text": "ඇහැනුමක් යනවා",
+      "tokens": [
+        {
+          "utt_id": "live_u009",
+          "tok_id": 0,
+          "token": "ඇහැනුමක්",
+          "lang": "SI",
+          "start": 45.14,
+          "end": 45.73,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.5872
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 1,
+          "token": "යනවා",
+          "lang": "SI",
+          "start": 45.81,
+          "end": 46.16,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.648
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.73,
+      "latency_after_speech_s": 1.33,
+      "decode_action": "greedy",
+      "align_s": 0.044
+    },
+    {
+      "utt_id": "live_u010",
+      "start": 50.34,
+      "end": 51.42,
+      "text": "මැඩම් මට කක්කම බෑ right",
+      "tokens": [
+        {
+          "utt_id": "live_u010",
+          "tok_id": 0,
+          "token": "මැඩම්",
+          "lang": "SI",
+          "start": 50.34,
+          "end": 50.52,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.1213
+        },
+        {
+          "utt_id": "live_u010",
+          "tok_id": 1,
+          "token": "මට",
+          "lang": "SI",
+          "start": 50.54,
+          "end": 50.66,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.2414
+        },
+        {
+          "utt_id": "live_u010",
+          "tok_id": 2,
+          "token": "කක්කම",
+          "lang": "SI",
+          "start": 50.66,
+          "end": 50.86,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.2669
+        },
+        {
+          "utt_id": "live_u010",
+          "tok_id": 3,
+          "token": "බෑ",
+          "lang": "SI",
+          "start": 50.86,
+          "end": 50.99,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.5435
+        },
+        {
+          "utt_id": "live_u010",
+          "tok_id": 4,
+          "token": "right",
+          "lang": "EN",
+          "start": 51.03,
+          "end": 51.19,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9998,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.1831
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.84,
+      "latency_after_speech_s": 1.44,
+      "decode_action": "greedy",
+      "align_s": 0.029
+    },
+    {
+      "utt_id": "live_u011",
+      "start": 56.03,
+      "end": 57.86,
+      "text": "මටක අක්ක බරයි යි",
+      "tokens": [
+        {
+          "utt_id": "live_u011",
+          "tok_id": 0,
+          "token": "මටක",
+          "lang": "SI",
+          "start": 56.05,
+          "end": 56.46,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.8274
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 1,
+          "token": "අක්ක",
+          "lang": "SI",
+          "start": 56.52,
+          "end": 56.78,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.5438
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 2,
+          "token": "බරයි",
+          "lang": "SI",
+          "start": 56.88,
+          "end": 57.29,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.6848
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 3,
+          "token": "යි",
+          "lang": "SI",
+          "start": 57.29,
+          "end": 57.47,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.1951
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.89,
+      "latency_after_speech_s": 1.49,
+      "decode_action": "greedy",
+      "align_s": 0.035
+    },
+    {
+      "utt_id": "live_u012",
+      "start": 62.69,
+      "end": 63.68,
+      "text": "Honda wadi.",
+      "tokens": [
+        {
+          "utt_id": "live_u012",
+          "tok_id": 0,
+          "token": "Honda",
+          "lang": "SI",
+          "start": 62.83,
+          "end": 63.08,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9686,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.7205
+        },
+        {
+          "utt_id": "live_u012",
+          "tok_id": 1,
+          "token": "wadi.",
+          "lang": "SI",
+          "start": 63.11,
+          "end": 63.38,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9966,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5888
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.41,
+      "latency_after_speech_s": 1.01,
+      "decode_action": "greedy",
+      "align_s": 0.029
+    },
+    {
+      "utt_id": "live_u013",
+      "start": 69.54,
+      "end": 71.01,
+      "text": "Inhala theryum.",
+      "tokens": [
+        {
+          "utt_id": "live_u013",
+          "tok_id": 0,
+          "token": "Inhala",
+          "lang": "EN",
+          "start": 69.58,
+          "end": 69.98,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.7568,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.8854
+        },
+        {
+          "utt_id": "live_u013",
+          "tok_id": 1,
+          "token": "theryum.",
+          "lang": "EN",
+          "start": 70.29,
+          "end": 70.69,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9994,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.8139
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.44,
+      "latency_after_speech_s": 1.04,
+      "decode_action": "greedy",
+      "align_s": 0.038
+    },
+    {
+      "utt_id": "live_u014",
+      "start": 95.81,
+      "end": 96.99,
+      "text": "මොනවද විස්තර?",
+      "tokens": [
+        {
+          "utt_id": "live_u014",
+          "tok_id": 0,
+          "token": "මොනවද",
+          "lang": "SI",
+          "start": 95.85,
+          "end": 96.18,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.4346
+        },
+        {
+          "utt_id": "live_u014",
+          "tok_id": 1,
+          "token": "විස්තර?",
+          "lang": "SI",
+          "start": 96.22,
+          "end": 96.61,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.6126
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.75,
+      "latency_after_speech_s": 1.35,
+      "decode_action": "greedy",
+      "align_s": 0.059
+    },
+    {
+      "utt_id": "live_u015",
+      "start": 100.58,
+      "end": 101.6,
+      "text": "රට ගිහාද?",
+      "tokens": [
+        {
+          "utt_id": "live_u015",
+          "tok_id": 0,
+          "token": "රට",
+          "lang": "SI",
+          "start": 100.62,
+          "end": 100.87,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.7951
+        },
+        {
+          "utt_id": "live_u015",
+          "tok_id": 1,
+          "token": "ගිහාද?",
+          "lang": "SI",
+          "start": 100.93,
+          "end": 101.38,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.4202
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.59,
+      "latency_after_speech_s": 1.19,
+      "decode_action": "greedy",
+      "align_s": 0.038
+    },
+    {
+      "utt_id": "live_u016",
+      "start": 106.43,
+      "end": 107.58,
+      "text": "Hondai da wada?",
+      "tokens": [
+        {
+          "utt_id": "live_u016",
+          "tok_id": 0,
+          "token": "Hondai",
+          "lang": "SI",
+          "start": 106.47,
+          "end": 106.85,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.997,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5271
+        },
+        {
+          "utt_id": "live_u016",
+          "tok_id": 1,
+          "token": "da",
+          "lang": "SI",
+          "start": 106.91,
+          "end": 106.98,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9674,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5406
+        },
+        {
+          "utt_id": "live_u016",
+          "tok_id": 2,
+          "token": "wada?",
+          "lang": "SI",
+          "start": 107.02,
+          "end": 107.26,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9967,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.1316
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.47,
+      "latency_after_speech_s": 1.07,
+      "decode_action": "greedy",
+      "align_s": 0.04
+    },
+    {
+      "utt_id": "live_u017",
+      "start": 110.82,
+      "end": 112.29,
+      "text": "Vanadika kohomada?",
+      "tokens": [
+        {
+          "utt_id": "live_u017",
+          "tok_id": 0,
+          "token": "Vanadika",
+          "lang": "EN",
+          "start": 111.08,
+          "end": 111.53,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.917,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.6271
+        },
+        {
+          "utt_id": "live_u017",
+          "tok_id": 1,
+          "token": "kohomada?",
+          "lang": "SI",
+          "start": 111.59,
+          "end": 112.05,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.6283
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.49,
+      "latency_after_speech_s": 1.09,
+      "decode_action": "greedy",
+      "align_s": 0.034
+    },
+    {
+      "utt_id": "live_u018",
+      "start": 114.21,
+      "end": 115.49,
+      "text": "මැඩම් ටික.",
+      "tokens": [
+        {
+          "utt_id": "live_u018",
+          "tok_id": 0,
+          "token": "මැඩම්",
+          "lang": "SI",
+          "start": 114.51,
+          "end": 114.8,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.2886
+        },
+        {
+          "utt_id": "live_u018",
+          "tok_id": 1,
+          "token": "ටික.",
+          "lang": "SI",
+          "start": 114.84,
+          "end": 115.15,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.5654
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.72,
+      "latency_after_speech_s": 1.32,
+      "decode_action": "greedy",
+      "align_s": 0.033
+    },
+    {
+      "utt_id": "live_u019",
+      "start": 124.29,
+      "end": 125.09,
+      "text": "Miss...",
+      "tokens": [
+        {
+          "utt_id": "live_u019",
+          "tok_id": 0,
+          "token": "Miss...",
+          "lang": "EN",
+          "start": 124.49,
+          "end": 124.88,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.3241
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.38,
+      "latency_after_speech_s": 0.98,
+      "decode_action": "greedy",
+      "align_s": 0.038
+    },
+    {
+      "utt_id": "live_u020",
+      "start": 130.05,
+      "end": 131.07,
+      "text": "එයාට ආද්ඩේ",
+      "tokens": [
+        {
+          "utt_id": "live_u020",
+          "tok_id": 0,
+          "token": "එයාට",
+          "lang": "SI",
+          "start": 130.07,
+          "end": 130.36,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.5873
+        },
+        {
+          "utt_id": "live_u020",
+          "tok_id": 1,
+          "token": "ආද්ඩේ",
+          "lang": "SI",
+          "start": 130.4,
+          "end": 131.01,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.3173
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.66,
+      "latency_after_speech_s": 1.26,
+      "decode_action": "greedy",
+      "align_s": 0.033
+    },
+    {
+      "utt_id": "live_u021",
+      "start": 134.21,
+      "end": 135.78,
+      "text": "මම ඔයාට ආදෙලෙන් මැඩම්",
+      "tokens": [
+        {
+          "utt_id": "live_u021",
+          "tok_id": 0,
+          "token": "මම",
+          "lang": "SI",
+          "start": 134.23,
+          "end": 134.43,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.99
+        },
+        {
+          "utt_id": "live_u021",
+          "tok_id": 1,
+          "token": "ඔයාට",
+          "lang": "SI",
+          "start": 134.55,
+          "end": 134.95,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.9177
+        },
+        {
+          "utt_id": "live_u021",
+          "tok_id": 2,
+          "token": "ආදෙලෙන්",
+          "lang": "SI",
+          "start": 135.07,
+          "end": 135.48,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.4854
+        },
+        {
+          "utt_id": "live_u021",
+          "tok_id": 3,
+          "token": "මැඩම්",
+          "lang": "SI",
+          "start": 135.48,
+          "end": 135.78,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.0048
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.96,
+      "latency_after_speech_s": 1.56,
+      "decode_action": "greedy",
+      "align_s": 0.035
+    },
+    {
+      "utt_id": "live_u022",
+      "start": 159.42,
+      "end": 160.9,
+      "text": "Wenna monada wennu one?",
+      "tokens": [
+        {
+          "utt_id": "live_u022",
+          "tok_id": 0,
+          "token": "Wenna",
+          "lang": "SI",
+          "start": 159.54,
+          "end": 159.74,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9985,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5301
+        },
+        {
+          "utt_id": "live_u022",
+          "tok_id": 1,
+          "token": "monada",
+          "lang": "SI",
+          "start": 159.76,
+          "end": 160.09,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.8862,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5917
+        },
+        {
+          "utt_id": "live_u022",
+          "tok_id": 2,
+          "token": "wennu",
+          "lang": "EN",
+          "start": 160.13,
+          "end": 160.43,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.5563,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.6324
+        },
+        {
+          "utt_id": "live_u022",
+          "tok_id": 3,
+          "token": "one?",
+          "lang": "EN",
+          "start": 160.49,
+          "end": 160.63,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5839,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.6059
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.5,
+      "latency_after_speech_s": 1.1,
+      "decode_action": "greedy",
+      "align_s": 0.03
+    },
+    {
+      "utt_id": "live_u023",
+      "start": 166.24,
+      "end": 166.85,
+      "text": "damil",
+      "tokens": [
+        {
+          "utt_id": "live_u023",
+          "tok_id": 0,
+          "token": "damil",
+          "lang": "EN",
+          "start": 166.32,
+          "end": 166.63,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.562
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.36,
+      "latency_after_speech_s": 0.96,
+      "decode_action": "greedy",
+      "align_s": 0.035
+    },
+    {
+      "utt_id": "live_u024",
+      "start": 170.02,
+      "end": 170.72,
+      "text": "Tamil",
+      "tokens": [
+        {
+          "utt_id": "live_u024",
+          "tok_id": 0,
+          "token": "Tamil",
+          "lang": "EN",
+          "start": 170.14,
+          "end": 170.48,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5504
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.39,
+      "latency_after_speech_s": 0.99,
+      "decode_action": "greedy",
+      "align_s": 0.04
+    },
+    {
+      "utt_id": "live_u025",
+      "start": 176.96,
+      "end": 177.6,
+      "text": "ඔව් මැඩම්",
+      "tokens": [
+        {
+          "utt_id": "live_u025",
+          "tok_id": 0,
+          "token": "ඔව්",
+          "lang": "SI",
+          "start": 176.96,
+          "end": 177.0,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.0173
+        },
+        {
+          "utt_id": "live_u025",
+          "tok_id": 1,
+          "token": "මැඩම්",
+          "lang": "SI",
+          "start": 177.0,
+          "end": 177.33,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.1757
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 3.21,
+      "latency_after_speech_s": 3.81,
+      "decode_action": "beam re-decode",
+      "align_s": 0.031
+    },
+    {
+      "utt_id": "live_u026",
+      "start": 180.9,
+      "end": 182.08,
+      "text": "Vanakkam.",
+      "tokens": [
+        {
+          "utt_id": "live_u026",
+          "tok_id": 0,
+          "token": "Vanakkam.",
+          "lang": "OTHER",
+          "start": 181.08,
+          "end": 181.8,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9988,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.8367
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.4,
+      "latency_after_speech_s": 1.0,
+      "decode_action": "greedy",
+      "align_s": 0.029
+    },
+    {
+      "utt_id": "live_u027",
+      "start": 212.54,
+      "end": 214.21,
+      "text": "හරි හරි, ඒක කමක් නෑ.",
+      "tokens": [
+        {
+          "utt_id": "live_u027",
+          "tok_id": 0,
+          "token": "හරි",
+          "lang": "SI",
+          "start": 212.68,
+          "end": 212.88,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.9796
+        },
+        {
+          "utt_id": "live_u027",
+          "tok_id": 1,
+          "token": "හරි,",
+          "lang": "SI",
+          "start": 212.95,
+          "end": 213.15,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.9782
+        },
+        {
+          "utt_id": "live_u027",
+          "tok_id": 2,
+          "token": "ඒක",
+          "lang": "SI",
+          "start": 213.21,
+          "end": 213.37,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.3858
+        },
+        {
+          "utt_id": "live_u027",
+          "tok_id": 3,
+          "token": "කමක්",
+          "lang": "SI",
+          "start": 213.43,
+          "end": 213.74,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.7878
+        },
+        {
+          "utt_id": "live_u027",
+          "tok_id": 4,
+          "token": "නෑ.",
+          "lang": "SI",
+          "start": 213.82,
+          "end": 213.96,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.3734
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.84,
+      "latency_after_speech_s": 1.44,
+      "decode_action": "greedy",
+      "align_s": 0.037
+    },
+    {
+      "utt_id": "live_u028",
+      "start": 217.38,
+      "end": 218.24,
+      "text": "Rumba.",
+      "tokens": [
+        {
+          "utt_id": "live_u028",
+          "tok_id": 0,
+          "token": "Rumba.",
+          "lang": "SI",
+          "start": 217.59,
+          "end": 217.98,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.8148,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5015
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.38,
+      "latency_after_speech_s": 0.98,
+      "decode_action": "greedy",
+      "align_s": 0.038
+    },
+    {
+      "utt_id": "live_u029",
+      "start": 220.86,
+      "end": 221.95,
+      "text": "Rombo Nalla.",
+      "tokens": [
+        {
+          "utt_id": "live_u029",
+          "tok_id": 0,
+          "token": "Rombo",
+          "lang": "EN",
+          "start": 220.88,
+          "end": 221.18,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9539,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.467
+        },
+        {
+          "utt_id": "live_u029",
+          "tok_id": 1,
+          "token": "Nalla.",
+          "lang": "SI",
+          "start": 221.26,
+          "end": 221.63,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9949,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.8489
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.46,
+      "latency_after_speech_s": 1.06,
+      "decode_action": "greedy",
+      "align_s": 0.043
+    }
+  ],
+  "session": {
+    "model": "large-v3_v4_aug",
+    "model_dir": "models\\ct2\\large-v3_v4_aug",
+    "source": "browser microphone (live_web.py)",
+    "started": "20261016-224326",
+    "audio_s": 240.3,
+    "decode_opts": {
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 1,
+      "temperature": 0.0,
+      "compression_ratio_threshold": null,
+      "log_prob_threshold": null,
+      "no_speech_threshold": null,
+      "condition_on_previous_text": false,
+      "without_timestamps": true,
+      "no_repeat_ngram_size": 0,
+      "word_timestamps": true,
+      "vad_filter": false
+    },
+    "endpointing": {
+      "silence_ms": 600,
+      "number_pause_ms": 1500,
+      "max_utterance_s": 25.0,
+      "vad": "silero (faster-whisper bundle), streaming"
+    },
+    "timing": "ctc",
+    "time_method": "MMS forced alignment (word_align.py)",
+    "latency_after_speech_s": {
+      "median": 1.12,
+      "max": 3.81
+    }
+  }
+}

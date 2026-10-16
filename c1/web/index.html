@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SORA Live Transcript</title>
+<style>
+  :root {
+    --bg: #f7f7f5; --panel: #ffffff; --text: #1d1d1b; --muted: #6b6b66; --line: #e3e2dc;
+    --si: #1b7f4b; --en: #1f6fb2; --other: #b26a00; --accent: #1d1d1b; --accent-text: #ffffff;
+    --live: #c62828; --warn-bg: #fff4e0; --warn-text: #7a4b00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #141413; --panel: #1e1e1c; --text: #ecebe6; --muted: #9a9993; --line: #33332f;
+      --si: #5cc98f; --en: #6cb4f0; --other: #f0b25c; --accent: #ecebe6; --accent-text: #141413;
+      --live: #ff6b6b; --warn-bg: #3a2c12; --warn-text: #f0c879;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", "Noto Sans Sinhala", "Iskoola Pota", sans-serif;
+    display: flex; flex-direction: column;
+  }
+  header {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px;
+    padding: 12px 16px; border-bottom: 1px solid var(--line); background: var(--panel);
+  }
+  h1 { font-size: 16px; margin: 0 8px 0 0; font-weight: 600; }
+  select, button {
+    font: inherit; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--line);
+    background: var(--panel); color: var(--text);
+  }
+  button.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); min-width: 96px; }
+  button:disabled, select:disabled { opacity: .5; }
+  .status { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 14px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--line); flex: none; }
+  .dot.on { background: var(--live); box-shadow: 0 0 0 4px color-mix(in srgb, var(--live) 25%, transparent); }
+  .dot.ready { background: var(--si); }
+  .meter { width: 90px; height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
+  .meter > div { height: 100%; width: 0; background: var(--si); transition: width 60ms linear; }
+  .legend { margin-left: auto; display: flex; gap: 12px; font-size: 13px; color: var(--muted); }
+  .legend b { font-weight: 600; }
+  .si { color: var(--si); } .en { color: var(--en); } .other { color: var(--other); }
+
+  .stats {
+    display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 8px 16px; font-size: 13px;
+    color: var(--muted); border-bottom: 1px solid var(--line);
+  }
+  .stats span b { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  main { flex: 1; overflow-y: auto; padding: 16px; }
+  .empty { color: var(--muted); max-width: 560px; margin: 48px auto; text-align: center; }
+  .utt { display: grid; grid-template-columns: 64px 1fr; gap: 4px 12px; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .time { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; padding-top: 2px; }
+  .words { font-size: 18px; line-height: 1.6; overflow-wrap: anywhere; }
+  .w { border-radius: 4px; padding: 0 1px; cursor: default; }
+  .w:hover { background: color-mix(in srgb, currentColor 14%, transparent); }
+  .w.weak { text-decoration: underline dotted; text-underline-offset: 4px; }
+  .meta { grid-column: 2; font-size: 12px; color: var(--muted); }
+  .partial .words { color: var(--muted); font-style: italic; }
+  .notext { color: var(--muted); font-style: italic; font-size: 15px; }
+
+  .tip {
+    position: fixed; z-index: 10; pointer-events: none; background: var(--panel); color: var(--text);
+    border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; font-size: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.15); display: none; white-space: nowrap;
+  }
+  .tip td:first-child { color: var(--muted); padding-right: 10px; }
+
+  footer {
+    display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; padding: 10px 16px;
+    border-top: 1px solid var(--line); background: var(--panel); font-size: 13px; color: var(--muted);
+  }
+  footer .saved { flex: 1; min-width: 200px; }
+  .banner { padding: 10px 16px; background: var(--warn-bg); color: var(--warn-text); font-size: 14px; display: none; }
+
+  @media (max-width: 640px) {
+    .legend { margin-left: 0; width: 100%; }
+    .utt { grid-template-columns: 1fr; }
+    .meta { grid-column: 1; }
+    .words { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>SORA · live transcript</h1>
+  <label class="status">model
+    <select id="model" aria-label="Model"></select>
+  </label>
+  <button id="toggle" class="primary">Start</button>
+  <button id="clear" title="Clear the transcript from the page (saved sessions are not affected)">Clear</button>
+  <div class="status"><span id="dot" class="dot"></span><span id="state">connecting…</span></div>
+  <div class="meter" title="microphone level"><div id="level"></div></div>
+  <div class="legend">
+    <span><b class="si">■</b> Sinhala</span><span><b class="en">■</b> English</span><span><b class="other">■</b> Other (Tamil)</span>
+  </div>
+</header>
+<div id="banner" class="banner"></div>
+<div class="stats">
+  <span>utterances <b id="s-n">0</b></span>
+  <span>audio <b id="s-audio">0:00</b></span>
+  <span>text after a pause <b id="s-med">–</b> median · <b id="s-max">–</b> max</span>
+  <span>model <b id="s-model">–</b></span>
+</div>
+<main id="transcript">
+  <p class="empty" id="empty">Press <b>Start</b>, allow the microphone, and speak.
+    Grey text appears while you talk; the final, colour-coded text follows about a second after each pause.
+    Hover a word for its timing and confidence.</p>
+</main>
+<footer>
+  <span class="saved" id="saved">Sessions are saved on this laptop in <code>c1/predictions/live/</code>.</span>
+  <button id="dl-json" disabled>Download session (.json)</button>
+  <button id="dl-tokens" disabled>Download tokens for C3 (.jsonl)</button>
+</footer>
+<div class="tip" id="tip"></div>
+<script src="app.js"></script>
+</body>
+</html>

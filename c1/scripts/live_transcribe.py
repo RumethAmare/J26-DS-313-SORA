@@ -144,6 +144,174 @@ def file_source(path, q, stop, realtime):
     q.put(None)                                   # end of file
 
 
+TIME_METHODS = {"ctc": "MMS forced alignment (word_align.py)",
+                "both": "MMS forced alignment (word_align.py); asr_confidence from whisper",
+                "whisper": "faster-whisper cross-attention (word_timestamps)",
+                "none": None}
+
+
+class LiveSession:
+    """The live pipeline, one 32 ms frame at a time -- shared by the terminal
+    (main below) and the web page (live_web.py), so both behave the same.
+
+    feed(frame) / finish() return events (dicts with "type"):
+      speech      {"on": bool, "t": session time}    speech started / stopped
+      partial     {"text"}                           provisional text
+      discard     {}                                 blip too short to transcribe
+      utterance   {"utt": utterance dict, "dur"}     final text + tokens (no CTC times yet)
+      times       {"utt_id", "tokens", "align_s"}    the same tokens with CTC word times
+    The word alignment is returned as a callable after the utterance event:
+    the caller shows/sends the text first, then calls it to get the times
+    event, so times never delay text.
+    """
+
+    def __init__(self, model, run, lid, silence_ms=600, number_pause_ms=NUMBER_PAUSE_MS,
+                 max_utterance_s=MAX_UTT_S, partials=True, timing="ctc", utt_prefix="live",
+                 keep_audio=False):
+        self.model, self.run, self.lid = model, run, lid
+        self.silence_ms, self.number_pause_ms = silence_ms, number_pause_ms
+        self.max_utterance_s, self.partials, self.timing = max_utterance_s, partials, timing
+        self.utt_prefix, self.keep_audio = utt_prefix, keep_audio
+        self.vad = StreamingVAD()
+        self.ctc = timing in ("ctc", "both")
+        self.silence_frames = int(silence_ms / 1000 * SR / BLOCK)
+        self.number_frames = int(number_pause_ms / 1000 * SR / BLOCK)
+        self.waiting_number = False                # pause came after a digit
+        self.preroll = []                          # recent frames before speech
+        self.utt, self.in_speech, self.quiet, self.last_partial = [], False, 0, 0.0
+        self.t_audio = 0.0                         # session clock, from samples received
+        self.utt_start = 0.0
+        self.audio, self.utterances = [], []
+        self.started = datetime.now().strftime("%Y%m%d-%H%M%S")
+
+    def _finalize(self, reason):
+        audio = np.concatenate(self.utt) if self.utt else np.zeros(0, dtype="float32")
+        self.utt, self.in_speech, self.quiet = [], False, 0
+        dur = len(audio) / SR
+        off = [] if reason == "max" else [{"type": "speech", "on": False, "t": round(self.t_audio, 2)}]
+        if dur < MIN_UTT_S:
+            return [{"type": "discard"}] + off
+        utt_start = self.utt_start
+        t0 = time.time()
+        # CTC times are added after the text is out, so they never delay it
+        timing = {"ctc": "none", "both": "whisper"}.get(self.timing, self.timing)
+        text, words, _, action = ct2_decode.transcribe(self.model, audio, timing=timing)
+        dec = time.time() - t0
+        uid = f"{self.utt_prefix}_u{len(self.utterances) + 1:03d}"
+        toks = label_tokens(words, self.lid, uid, utt_start)
+        lag = dec + (self.silence_ms / 1000 if reason == "pause" else 0)
+        u = {"utt_id": uid, "start": round(utt_start, 2), "end": round(utt_start + dur, 2),
+             "text": text, "tokens": toks, "end_reason": reason,
+             "decode_s": round(dec, 2), "latency_after_speech_s": round(lag, 2),
+             "decode_action": action}
+        self.utterances.append(u)
+        events = [{"type": "utterance", "utt": u, "dur": round(dur, 2)}] + off
+        if self.ctc and words:
+            events.append(lambda: self._align(u, audio, words))   # run after the text is sent
+        return events
+
+    def _align(self, u, audio, words):
+        t1 = time.time()
+        ct2_decode.align_words(audio, words)
+        for t, w in zip(u["tokens"], words):
+            t["start"] = None if w["start"] is None else round(u["start"] + w["start"], 2)
+            t["end"] = None if w["end"] is None else round(u["start"] + w["end"], 2)
+            t["align_score"] = w.get("align_score")
+        u["align_s"] = round(time.time() - t1, 3)
+        return {"type": "times", "utt_id": u["utt_id"], "tokens": u["tokens"], "align_s": u["align_s"]}
+
+    def feed(self, frame, backlog=0):
+        """One BLOCK of float32 16 kHz audio. backlog: frames still waiting
+        behind this one (provisional text is skipped when falling behind)."""
+        if self.keep_audio:
+            self.audio.append(frame)
+        p = self.vad(frame)
+        self.t_audio += BLOCK / SR
+        if not self.in_speech:
+            self.preroll.append(frame)
+            self.preroll = self.preroll[-int(PREROLL_S * SR / BLOCK):]
+            if p >= SPEECH_ON:
+                self.in_speech, self.quiet = True, 0
+                self.utt = list(self.preroll)
+                self.utt_start = max(0.0, self.t_audio - len(self.utt) * BLOCK / SR)
+                self.last_partial = time.time()
+                return [{"type": "speech", "on": True, "t": round(self.utt_start, 2)}]
+            return []
+        self.utt.append(frame)
+        self.quiet = self.quiet + 1 if p < SPEECH_OFF else 0
+        if self.quiet == 0:
+            self.waiting_number = False
+        if (self.quiet == self.silence_frames and not self.waiting_number
+                and self.number_frames > self.silence_frames):
+            # Normal pause reached: if the speech so far ends on a number,
+            # keep listening -- the next digit is probably coming.
+            tail = np.concatenate(self.utt[-int(4 * SR / BLOCK):])
+            text, _, _, _ = ct2_decode.transcribe(self.model, tail, partial=True)
+            self.waiting_number = bool(_ENDS_IN_NUMBER.search(text))
+        need = self.number_frames if self.waiting_number else self.silence_frames
+        if self.quiet >= need:
+            self.utt = self.utt[:-max(0, self.quiet - int(0.2 * SR / BLOCK))]   # keep 0.2 s of the pause
+            self.waiting_number = False
+            return self._finalize("pause")
+        if len(self.utt) * BLOCK / SR >= self.max_utterance_s:
+            events = self._finalize("max")
+            self.in_speech, self.utt = True, []                                 # speech continues
+            self.utt_start, self.last_partial = self.t_audio, time.time()
+            return events
+        if (self.partials and time.time() - self.last_partial >= PARTIAL_EVERY_S
+                and backlog < int(0.5 * SR / BLOCK)):                           # only if keeping up
+            text, _, _, _ = ct2_decode.transcribe(self.model, np.concatenate(self.utt), partial=True)
+            self.last_partial = time.time()
+            return [{"type": "partial", "text": text}]
+        return []
+
+    def finish(self, reason="stopped"):
+        return self._finalize(reason) if self.in_speech else []
+
+    def document(self, source):
+        lags = [u["latency_after_speech_s"] for u in self.utterances if u["end_reason"] == "pause"]
+        return {
+            "n_utterances": len(self.utterances),
+            "transcript": " ".join(u["text"] for u in self.utterances if u["text"]),
+            "utterances": self.utterances,
+            "session": {
+                "model": self.run,
+                "model_dir": os.path.relpath(os.path.join(ct2_decode.CT2_DIR, self.run), C1_ROOT),
+                "source": source, "started": self.started, "audio_s": round(self.t_audio, 1),
+                "decode_opts": {k: (list(v) if isinstance(v, tuple) else v)
+                                for k, v in ct2_decode.DECODE_OPTS.items()},
+                "endpointing": {"silence_ms": self.silence_ms, "number_pause_ms": self.number_pause_ms,
+                                "max_utterance_s": self.max_utterance_s,
+                                "vad": "silero (faster-whisper bundle), streaming"},
+                "timing": self.timing,
+                "time_method": TIME_METHODS[self.timing],
+                "latency_after_speech_s": {
+                    "median": round(float(np.median(lags)), 2) if lags else None,
+                    "max": round(max(lags), 2) if lags else None},
+            },
+        }
+
+    def save(self, doc, out, tokens_jsonl=None):
+        os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
+        with open(out, "w", encoding="utf-8") as fh:
+            json.dump(doc, fh, ensure_ascii=False, indent=2)
+            fh.write("\n")
+        if tokens_jsonl:
+            with open(tokens_jsonl, "w", encoding="utf-8") as fh:
+                for u in self.utterances:
+                    for t in u["tokens"]:
+                        fh.write(json.dumps(t, ensure_ascii=False) + "\n")
+        if self.keep_audio and self.audio:
+            import soundfile as sf
+            sf.write(out[:-5] + ".wav", np.concatenate(self.audio), SR)
+
+
+def warm_up(model, timing):
+    model.transcribe(np.zeros(SR, dtype="float32"), **ct2_decode.PARTIAL_OPTS)
+    if timing in ("ctc", "both"):
+        ct2_decode.align_words(np.zeros(SR, dtype="float32"), [{"word": "a"}])  # load + warm-up
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default="medium", help="small | medium | large-v3")
@@ -182,12 +350,13 @@ def main():
     print(f"loading {a.model} ...", flush=True)
     run, model = ct2_decode.load_model(a.model)
     from lid_hybrid import HybridLID
-    lid = HybridLID()
-    vad = StreamingVAD()
-    model.transcribe(np.zeros(SR, dtype="float32"), **ct2_decode.PARTIAL_OPTS)  # warm-up
-    ctc = a.timing in ("ctc", "both")
-    if ctc:
-        ct2_decode.align_words(np.zeros(SR, dtype="float32"), [{"word": "a"}])      # load + warm-up
+    # utt_id like the gold for a recording (J26DS313_R0018_u001), live_u001 for the mic
+    prefix = os.path.splitext(os.path.basename(a.input_file))[0] if a.input_file else "live"
+    session = LiveSession(model, run, HybridLID(), silence_ms=a.silence_ms,
+                          number_pause_ms=a.number_pause_ms, max_utterance_s=a.max_utterance_s,
+                          partials=not a.no_partials, timing=a.timing, utt_prefix=prefix,
+                          keep_audio=a.save_audio)
+    warm_up(model, a.timing)
 
     q, stop = queue.Queue(), threading.Event()
     src = threading.Thread(target=file_source if a.input_file else mic_source,
@@ -199,149 +368,48 @@ def main():
           f"{COLOR['SI']}SI{RESET} {COLOR['EN']}EN{RESET} {COLOR['OTHER']}OTHER{RESET}\n",
           flush=True)
 
-    silence_frames = int(a.silence_ms / 1000 * SR / BLOCK)
-    number_frames = int(a.number_pause_ms / 1000 * SR / BLOCK)
-    waiting_number = False                         # pause came after a digit
-    preroll = []                                  # recent frames before speech
-    utt, in_speech, quiet, last_partial = [], False, 0, 0.0
-    t_audio = 0.0                                 # session clock, from samples received
-    utt_start = 0.0
-    session_audio, utterances = [], []
-    # utt_id like the gold for a recording (J26DS313_R0018_u001), live_u001 for the mic
-    utt_prefix = os.path.splitext(os.path.basename(a.input_file))[0] if a.input_file else "live"
-
-    def finalize(reason):
-        nonlocal utt, in_speech, quiet
-        audio = np.concatenate(utt) if utt else np.zeros(0, dtype="float32")
-        utt, in_speech, quiet = [], False, 0
-        dur = len(audio) / SR
-        if dur < MIN_UTT_S:
-            sys.stdout.write(CLEAR)
-            return
-        t_end = utt_start + dur
-        t0 = time.time()
-        # CTC times are added after printing, so they never delay the text
-        timing = {"ctc": "none", "both": "whisper"}.get(a.timing, a.timing)
-        text, words, _, action = ct2_decode.transcribe(model, audio, timing=timing)
-        dec = time.time() - t0
-        uid = f"{utt_prefix}_u{len(utterances) + 1:03d}"
-        toks = label_tokens(words, lid, uid, utt_start)
-        lag = dec + (a.silence_ms / 1000 if reason == "pause" else 0)
-        utterances.append({"utt_id": uid, "start": round(utt_start, 2), "end": round(t_end, 2),
-                           "text": text, "tokens": toks, "end_reason": reason,
-                           "decode_s": round(dec, 2), "latency_after_speech_s": round(lag, 2),
-                           "decode_action": action})
-        sys.stdout.write(f"{CLEAR}{DIM}[{mmss(utt_start)}]{RESET} {coloured(toks, text) or DIM + '(no text)' + RESET}"
-                         f"  {DIM}({dur:.1f}s speech, text {lag:.1f}s after it ended"
-                         f"{', cut at max length' if reason == 'max' else ''}"
-                         f"{', fixed: ' + action if action != 'greedy' else ''}){RESET}\n")
-        sys.stdout.flush()
-        if ctc and words:
-            t1 = time.time()
-            ct2_decode.align_words(audio, words)
-            for t, w in zip(toks, words):
-                t["start"] = None if w["start"] is None else round(utt_start + w["start"], 2)
-                t["end"] = None if w["end"] is None else round(utt_start + w["end"], 2)
-                t["align_score"] = w.get("align_score")
-            utterances[-1]["align_s"] = round(time.time() - t1, 3)
+    def show(events):
+        for ev in events:
+            if callable(ev):                      # deferred word alignment
+                ev()
+            elif ev["type"] == "discard":
+                sys.stdout.write(CLEAR)
+            elif ev["type"] == "partial":
+                text = ev["text"]
+                shown = text if len(text) <= 110 else "…" + text[-110:]
+                sys.stdout.write(f"{CLEAR}{DIM}… {shown}{RESET}")
+            elif ev["type"] == "utterance":
+                u, toks = ev["utt"], ev["utt"]["tokens"]
+                lag, action, reason = u["latency_after_speech_s"], u["decode_action"], u["end_reason"]
+                sys.stdout.write(f"{CLEAR}{DIM}[{mmss(u['start'])}]{RESET} "
+                                 f"{coloured(toks, u['text']) or DIM + '(no text)' + RESET}"
+                                 f"  {DIM}({ev['dur']:.1f}s speech, text {lag:.1f}s after it ended"
+                                 f"{', cut at max length' if reason == 'max' else ''}"
+                                 f"{', fixed: ' + action if action != 'greedy' else ''}){RESET}\n")
+            sys.stdout.flush()
 
     try:
         while True:
             frame = q.get()
             if frame is None:
-                if in_speech:
-                    finalize("end")
+                show(session.finish("end"))
                 break
-            if a.save_audio:
-                session_audio.append(frame)
-            p = vad(frame)
-            t_audio += BLOCK / SR
-            if not in_speech:
-                preroll.append(frame)
-                preroll = preroll[-int(PREROLL_S * SR / BLOCK):]
-                if p >= SPEECH_ON:
-                    in_speech, quiet = True, 0
-                    utt = list(preroll)
-                    utt_start = max(0.0, t_audio - len(utt) * BLOCK / SR)
-                    last_partial = time.time()
-                continue
-            utt.append(frame)
-            quiet = quiet + 1 if p < SPEECH_OFF else 0
-            if quiet == 0:
-                waiting_number = False
-            if (quiet == silence_frames and not waiting_number
-                    and number_frames > silence_frames):
-                # Normal pause reached: if the speech so far ends on a number,
-                # keep listening -- the next digit is probably coming.
-                tail = np.concatenate(utt[-int(4 * SR / BLOCK):])
-                text, _, _, _ = ct2_decode.transcribe(model, tail, partial=True)
-                waiting_number = bool(_ENDS_IN_NUMBER.search(text))
-            need = number_frames if waiting_number else silence_frames
-            if quiet >= need:
-                utt = utt[:-max(0, quiet - int(0.2 * SR / BLOCK))]   # keep 0.2 s of the pause
-                waiting_number = False
-                finalize("pause")
-            elif len(utt) * BLOCK / SR >= a.max_utterance_s:
-                finalize("max")
-                in_speech, utt = True, []                            # speech continues
-                utt_start, last_partial = t_audio, time.time()
-            elif (not a.no_partials and time.time() - last_partial >= PARTIAL_EVERY_S
-                  and q.qsize() < int(0.5 * SR / BLOCK)):           # only if keeping up
-                text, _, _, _ = ct2_decode.transcribe(model, np.concatenate(utt), partial=True)
-                width = 110
-                shown = text if len(text) <= width else "…" + text[-width:]
-                sys.stdout.write(f"{CLEAR}{DIM}… {shown}{RESET}")
-                sys.stdout.flush()
-                last_partial = time.time()
+            show(session.feed(frame, backlog=q.qsize()))
     except KeyboardInterrupt:
-        if in_speech:
-            finalize("stopped")
+        show(session.finish("stopped"))
     finally:
         stop.set()
 
-    if not utterances:
+    if not session.utterances:
         print("\nno speech captured; nothing saved")
         return
-    os.makedirs(OUT_DIR, exist_ok=True)
-    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    out = a.out or os.path.join(OUT_DIR, f"{run}_{stamp}.json")
-    lags = [u["latency_after_speech_s"] for u in utterances if u["end_reason"] == "pause"]
-    doc = {
-        "n_utterances": len(utterances),
-        "transcript": " ".join(u["text"] for u in utterances if u["text"]),
-        "utterances": utterances,
-        "session": {
-            "model": run, "model_dir": os.path.relpath(os.path.join(ct2_decode.CT2_DIR, run), C1_ROOT),
-            "source": a.input_file or f"microphone {a.device if a.device is not None else '(default)'}",
-            "started": stamp, "audio_s": round(t_audio, 1),
-            "decode_opts": {k: (list(v) if isinstance(v, tuple) else v)
-                            for k, v in ct2_decode.DECODE_OPTS.items()},
-            "endpointing": {"silence_ms": a.silence_ms, "number_pause_ms": a.number_pause_ms,
-                            "max_utterance_s": a.max_utterance_s,
-                            "vad": "silero (faster-whisper bundle), streaming"},
-            "timing": a.timing,
-            "time_method": {"ctc": "MMS forced alignment (word_align.py)",
-                            "both": "MMS forced alignment (word_align.py); asr_confidence from whisper",
-                            "whisper": "faster-whisper cross-attention (word_timestamps)",
-                            "none": None}[a.timing],
-            "latency_after_speech_s": {
-                "median": round(float(np.median(lags)), 2) if lags else None,
-                "max": round(max(lags), 2) if lags else None},
-        },
-    }
-    with open(out, "w", encoding="utf-8") as fh:
-        json.dump(doc, fh, ensure_ascii=False, indent=2)
-        fh.write("\n")
-    print(f"\nsaved {len(utterances)} utterances -> {out}")
+    out = a.out or os.path.join(OUT_DIR, f"{run}_{session.started}.json")
+    source = a.input_file or f"microphone {a.device if a.device is not None else '(default)'}"
+    session.save(session.document(source), out, a.tokens_jsonl)
+    print(f"\nsaved {len(session.utterances)} utterances -> {out}")
     if a.tokens_jsonl:
-        with open(a.tokens_jsonl, "w", encoding="utf-8") as fh:
-            for u in utterances:
-                for t in u["tokens"]:
-                    fh.write(json.dumps(t, ensure_ascii=False) + "\n")
         print(f"tokens -> {a.tokens_jsonl}")
-    if a.save_audio and session_audio:
-        import soundfile as sf
-        sf.write(out[:-5] + ".wav", np.concatenate(session_audio), SR)
+    if a.save_audio and session.audio:
         print(f"audio -> {out[:-5]}.wav")
 
 

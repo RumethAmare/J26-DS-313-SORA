@@ -33,6 +33,8 @@ psutil
 
 # live transcription (live_transcribe.py)
 sounddevice           # microphone capture (PortAudio)
+fastapi               # live_web.py: web page + WebSocket
+uvicorn[standard]
 
 # shared
 pandas

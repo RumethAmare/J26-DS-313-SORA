@@ -128,6 +128,27 @@ cd c1\scripts
 - `--input-file x.wav --realtime` streams a file through the same pipeline.
 - Sessions save to `c1/predictions/live/`; `--save-audio` keeps the WAV.
 
+### Web interface (2026-10-16)
+
+```powershell
+..\.venv\Scripts\python.exe live_web.py               # --model large-v3 to start with another
+# then open http://localhost:8000 in Chrome or Edge on this laptop
+```
+
+- The browser records the microphone and streams 16 kHz audio to `live_web.py`,
+  which runs the same pipeline as the terminal (`live_transcribe.LiveSession`).
+  `eval_live.py` numbers therefore apply to the page as well.
+- The page shows provisional grey text while you speak, then each utterance with words
+  coloured SI/EN/OTHER. Hovering a word shows its time, alignment score and language
+  confidence. You can switch the model (one is loaded at a time) and see latency per
+  utterance.
+- Stop saves `predictions/live/<run>_<time>.json` + `.tokens.jsonl`, and the page offers
+  both as downloads.
+- **Mic access needs `localhost` or https.** Opening the page from a phone on the same
+  Wi-Fi (`--host 0.0.0.0`) shows the transcript but can't use that device's mic without
+  a certificate.
+- One session at a time; a second tab is told the server is busy.
+
 ### Word timestamps for C3 (2026-10-12)
 
 Every token gets `start`/`end` from CTC forced alignment (`scripts/word_align.py`,
