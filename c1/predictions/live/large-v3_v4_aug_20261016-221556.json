@@ -1,0 +1,507 @@
+{
+  "n_utterances": 10,
+  "transcript": "Syndac symbol. Hello. Nama mokadha? Oyata kohomada? Wenawa kiyada? Veylava kiyala? Mage pension eka oni. ඔව් එයාට මොකක්ද කරන්න පුළුවන් Oyata mokadha karanna puluwan. Okay bye",
+  "utterances": [
+    {
+      "utt_id": "live_u001",
+      "start": 9.63,
+      "end": 10.75,
+      "text": "Syndac symbol.",
+      "tokens": [
+        {
+          "utt_id": "live_u001",
+          "tok_id": 0,
+          "token": "Syndac",
+          "lang": "EN",
+          "start": 9.77,
+          "end": 10.16,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9987,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.1143
+        },
+        {
+          "utt_id": "live_u001",
+          "tok_id": 1,
+          "token": "symbol.",
+          "lang": "EN",
+          "start": 10.2,
+          "end": 10.53,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9996,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.083
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.41,
+      "latency_after_speech_s": 1.01,
+      "decode_action": "greedy",
+      "align_s": 0.089
+    },
+    {
+      "utt_id": "live_u002",
+      "start": 12.19,
+      "end": 13.09,
+      "text": "Hello.",
+      "tokens": [
+        {
+          "utt_id": "live_u002",
+          "tok_id": 0,
+          "token": "Hello.",
+          "lang": "EN",
+          "start": 12.43,
+          "end": 12.6,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.2267
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.36,
+      "latency_after_speech_s": 0.96,
+      "decode_action": "greedy",
+      "align_s": 0.046
+    },
+    {
+      "utt_id": "live_u003",
+      "start": 15.2,
+      "end": 16.42,
+      "text": "Nama mokadha?",
+      "tokens": [
+        {
+          "utt_id": "live_u003",
+          "tok_id": 0,
+          "token": "Nama",
+          "lang": "SI",
+          "start": 15.46,
+          "end": 15.67,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9978,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.9424
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 1,
+          "token": "mokadha?",
+          "lang": "SI",
+          "start": 15.73,
+          "end": 16.11,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9937,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.6878
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.45,
+      "latency_after_speech_s": 1.05,
+      "decode_action": "greedy",
+      "align_s": 0.063
+    },
+    {
+      "utt_id": "live_u004",
+      "start": 18.94,
+      "end": 20.1,
+      "text": "Oyata kohomada?",
+      "tokens": [
+        {
+          "utt_id": "live_u004",
+          "tok_id": 0,
+          "token": "Oyata",
+          "lang": "SI",
+          "start": 19.18,
+          "end": 19.49,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.6759
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 1,
+          "token": "kohomada?",
+          "lang": "SI",
+          "start": 19.51,
+          "end": 19.89,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5604
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.48,
+      "latency_after_speech_s": 1.08,
+      "decode_action": "greedy",
+      "align_s": 0.055
+    },
+    {
+      "utt_id": "live_u005",
+      "start": 22.43,
+      "end": 23.68,
+      "text": "Wenawa kiyada?",
+      "tokens": [
+        {
+          "utt_id": "live_u005",
+          "tok_id": 0,
+          "token": "Wenawa",
+          "lang": "SI",
+          "start": 22.65,
+          "end": 23.03,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9861,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.4691
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 1,
+          "token": "kiyada?",
+          "lang": "SI",
+          "start": 23.09,
+          "end": 23.42,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.999,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.4816
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.44,
+      "latency_after_speech_s": 1.04,
+      "decode_action": "greedy",
+      "align_s": 0.062
+    },
+    {
+      "utt_id": "live_u006",
+      "start": 25.73,
+      "end": 27.07,
+      "text": "Veylava kiyala?",
+      "tokens": [
+        {
+          "utt_id": "live_u006",
+          "tok_id": 0,
+          "token": "Veylava",
+          "lang": "SI",
+          "start": 26.0,
+          "end": 26.46,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9741,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.8197
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 1,
+          "token": "kiyala?",
+          "lang": "SI",
+          "start": 26.52,
+          "end": 26.85,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9984,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.7101
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.44,
+      "latency_after_speech_s": 1.04,
+      "decode_action": "greedy",
+      "align_s": 0.04
+    },
+    {
+      "utt_id": "live_u007",
+      "start": 32.61,
+      "end": 34.14,
+      "text": "Mage pension eka oni.",
+      "tokens": [
+        {
+          "utt_id": "live_u007",
+          "tok_id": 0,
+          "token": "Mage",
+          "lang": "SI",
+          "start": 32.79,
+          "end": 32.97,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9987,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.7362
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 1,
+          "token": "pension",
+          "lang": "EN",
+          "start": 33.03,
+          "end": 33.48,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9959,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5696
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 2,
+          "token": "eka",
+          "lang": "SI",
+          "start": 33.5,
+          "end": 33.6,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9701,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.3507
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 3,
+          "token": "oni.",
+          "lang": "SI",
+          "start": 33.62,
+          "end": 33.86,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9858,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.9891
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.46,
+      "latency_after_speech_s": 1.06,
+      "decode_action": "greedy",
+      "align_s": 0.048
+    },
+    {
+      "utt_id": "live_u008",
+      "start": 37.15,
+      "end": 38.85,
+      "text": "ඔව් එයාට මොකක්ද කරන්න පුළුවන්",
+      "tokens": [
+        {
+          "utt_id": "live_u008",
+          "tok_id": 0,
+          "token": "ඔව්",
+          "lang": "SI",
+          "start": 37.37,
+          "end": 37.45,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.4609
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 1,
+          "token": "එයාට",
+          "lang": "SI",
+          "start": 37.45,
+          "end": 37.7,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.5937
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 2,
+          "token": "මොකක්ද",
+          "lang": "SI",
+          "start": 37.71,
+          "end": 38.0,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.6458
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 3,
+          "token": "කරන්න",
+          "lang": "SI",
+          "start": 38.04,
+          "end": 38.34,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.9163
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 4,
+          "token": "පුළුවන්",
+          "lang": "SI",
+          "start": 38.36,
+          "end": 38.6,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.5803
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 1.03,
+      "latency_after_speech_s": 1.63,
+      "decode_action": "greedy",
+      "align_s": 0.053
+    },
+    {
+      "utt_id": "live_u009",
+      "start": 44.1,
+      "end": 45.95,
+      "text": "Oyata mokadha karanna puluwan.",
+      "tokens": [
+        {
+          "utt_id": "live_u009",
+          "tok_id": 0,
+          "token": "Oyata",
+          "lang": "SI",
+          "start": 44.28,
+          "end": 44.75,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.893
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 1,
+          "token": "mokadha",
+          "lang": "SI",
+          "start": 44.77,
+          "end": 45.11,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9937,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.7707
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 2,
+          "token": "karanna",
+          "lang": "SI",
+          "start": 45.15,
+          "end": 45.45,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.8955
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 3,
+          "token": "puluwan.",
+          "lang": "SI",
+          "start": 45.47,
+          "end": 45.77,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9996,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.651
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.54,
+      "latency_after_speech_s": 1.14,
+      "decode_action": "greedy",
+      "align_s": 0.031
+    },
+    {
+      "utt_id": "live_u010",
+      "start": 49.38,
+      "end": 50.3,
+      "text": "Okay bye",
+      "tokens": [
+        {
+          "utt_id": "live_u010",
+          "tok_id": 0,
+          "token": "Okay",
+          "lang": "EN",
+          "start": 49.46,
+          "end": 49.72,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.2974
+        },
+        {
+          "utt_id": "live_u010",
+          "tok_id": 1,
+          "token": "bye",
+          "lang": "EN",
+          "start": 49.76,
+          "end": 50.05,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9901,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.4733
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.35,
+      "latency_after_speech_s": 0.95,
+      "decode_action": "greedy",
+      "align_s": 0.048
+    }
+  ],
+  "session": {
+    "model": "large-v3_v4_aug",
+    "model_dir": "models\\ct2\\large-v3_v4_aug",
+    "source": "microphone (default)",
+    "started": "20261016-221556",
+    "audio_s": 52.7,
+    "decode_opts": {
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 1,
+      "temperature": 0.0,
+      "compression_ratio_threshold": null,
+      "log_prob_threshold": null,
+      "no_speech_threshold": null,
+      "condition_on_previous_text": false,
+      "without_timestamps": true,
+      "no_repeat_ngram_size": 0,
+      "word_timestamps": true,
+      "vad_filter": false
+    },
+    "endpointing": {
+      "silence_ms": 600,
+      "number_pause_ms": 1500,
+      "max_utterance_s": 25.0,
+      "vad": "silero (faster-whisper bundle), streaming"
+    },
+    "timing": "ctc",
+    "time_method": "MMS forced alignment (word_align.py)",
+    "latency_after_speech_s": {
+      "median": 1.04,
+      "max": 1.63
+    }
+  }
+}
