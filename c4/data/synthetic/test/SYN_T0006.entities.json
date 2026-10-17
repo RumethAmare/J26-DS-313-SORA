@@ -1,0 +1,143 @@
+{
+  "recording": "SYN_T0006",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0006_e001",
+      "canonical": "Seylan Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Seylan Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Seylan Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලාන් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0006_e002",
+      "canonical": "Saman",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සමන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Saman"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0006_e003",
+      "canonical": "Saman Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Saman Kumara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සමන් කුමාර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0006_e004",
+      "canonical": "Chilaw",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Chilaw",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "හලාවත"
+        },
+        {
+          "script": "LATIN",
+          "form": "Chilaw"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0006_e005",
+      "canonical": "830367785001",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "830367785001",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "830367785001"
+        },
+        {
+          "script": "SINHALA",
+          "form": "830367785001"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0006_e006",
+      "canonical": "850677802X",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "850677802X",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "850 677 802 x"
+        },
+        {
+          "script": "LATIN",
+          "form": "850677802X"
+        },
+        {
+          "script": "SINHALA",
+          "form": "850677802X"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0006_e007",
+      "canonical": "0110792666",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0110792666",
+      "redact": false,
+      "value": "0110792666",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "01110792666"
+        },
+        {
+          "script": "LATIN",
+          "form": "0110792666"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0110792666"
+        }
+      ]
+    }
+  ]
+}

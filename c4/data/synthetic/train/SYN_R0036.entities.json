@@ -1,0 +1,179 @@
+{
+  "recording": "SYN_R0036",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0036_e001",
+      "canonical": "Nuwan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nuwan"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නුවන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0036_e002",
+      "canonical": "Bank of Ceylon",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Bank of Ceylon",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Bank of Ceylon"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ලංකා බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0036_e003",
+      "canonical": "Pradeep Silva",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Pradeep Silva"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ප්‍රදීප් සිල්වා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0036_e004",
+      "canonical": "pradeep.silva26@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "pradeep.silva26@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "pradeep.silva26@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "pradeep.silva26@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0036_e005",
+      "canonical": "0110092206",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0110092206",
+      "redact": false,
+      "value": "0110092206",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 009 2206"
+        },
+        {
+          "script": "LATIN",
+          "form": "0110092206"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0110092206"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0036_e006",
+      "canonical": "560480437V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "560480437V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "560480437V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "560480437V"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0036_e007",
+      "canonical": "No. 174/7, Hospital Road, Negombo",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "174/7, Hospital Road, Negombo"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 174/7, Hospital Road, Negombo"
+        },
+        {
+          "script": "SINHALA",
+          "form": "174/7, රෝහල් පාර, මීගමුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0036_e008",
+      "canonical": "Colombo",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Colombo",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "කොළඹ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Colombo"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0036_e009",
+      "canonical": "Chathura Herath",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "චතුර හේරත්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Chathura Herath"
+        }
+      ]
+    }
+  ]
+}

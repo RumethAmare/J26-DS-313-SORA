@@ -1,0 +1,34 @@
+{"doc_id": "SYN_T0003_transcript_u001_v1", "recording": "SYN_T0003", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "hmm, ayubowan, Ceylinco Insurance eken ඉසුරු kiyala kenek kathaa karanne."}
+{"doc_id": "SYN_T0003_c2_u001_en_v1", "recording": "SYN_T0003", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good afternoon, Isuru here from Ceylinco Insurance."}
+{"doc_id": "SYN_T0003_c2_u001_si_v1", "recording": "SYN_T0003", "kind": "si", "utterance": 1, "topic": "greet", "text": "සුබ දවසක්, මම සෙලින්කෝ රක්ෂණ ආයතනයෙන් ඉසුරු."}
+{"doc_id": "SYN_T0003_transcript_u002_v1", "recording": "SYN_T0003", "kind": "transcript", "utterance": 2, "topic": "name", "text": "oyaage nama mokakda?"}
+{"doc_id": "SYN_T0003_c2_u002_en_v1", "recording": "SYN_T0003", "kind": "en", "utterance": 2, "topic": "name", "text": "May I have your name?"}
+{"doc_id": "SYN_T0003_c2_u002_si_v1", "recording": "SYN_T0003", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔබගේ නම කුමක්ද?"}
+{"doc_id": "SYN_T0003_transcript_u003_v1", "recording": "SYN_T0003", "kind": "transcript", "utterance": 3, "topic": "name", "text": "Piumi Kumara thamai."}
+{"doc_id": "SYN_T0003_c2_u003_en_v1", "recording": "SYN_T0003", "kind": "en", "utterance": 3, "topic": "name", "text": "It is Piumi Kumara."}
+{"doc_id": "SYN_T0003_c2_u003_si_v1", "recording": "SYN_T0003", "kind": "si", "utterance": 3, "topic": "name", "text": "පියුමි කුමාර."}
+{"doc_id": "SYN_T0003_transcript_u004_v1", "recording": "SYN_T0003", "kind": "transcript", "utterance": 4, "topic": "dob", "text": "upan dinaya kiyanna puluwanda?"}
+{"doc_id": "SYN_T0003_c2_u004_en_v1", "recording": "SYN_T0003", "kind": "en", "utterance": 4, "topic": "dob", "text": "Can you confirm your date of birth?"}
+{"doc_id": "SYN_T0003_c2_u004_si_v1", "recording": "SYN_T0003", "kind": "si", "utterance": 4, "topic": "dob", "text": "ඔබේ උපන් දිනය තහවුරු කරන්න."}
+{"doc_id": "SYN_T0003_transcript_u005_v1", "recording": "SYN_T0003", "kind": "transcript", "utterance": 5, "topic": "dob", "text": "1993 අප්‍රේල් 14."}
+{"doc_id": "SYN_T0003_c2_u005_en_v1", "recording": "SYN_T0003", "kind": "en", "utterance": 5, "topic": "dob", "text": "Yes, 1993-04-14."}
+{"doc_id": "SYN_T0003_c2_u005_si_v1", "recording": "SYN_T0003", "kind": "si", "utterance": 5, "topic": "dob", "text": "1993 අප්‍රේල් 14."}
+{"doc_id": "SYN_T0003_transcript_u006_v1", "recording": "SYN_T0003", "kind": "transcript", "utterance": 6, "topic": "address", "text": "dan inne koheda?"}
+{"doc_id": "SYN_T0003_c2_u006_en_v1", "recording": "SYN_T0003", "kind": "en", "utterance": 6, "topic": "address", "text": "Where are you living now?"}
+{"doc_id": "SYN_T0003_c2_u006_si_v1", "recording": "SYN_T0003", "kind": "si", "utterance": 6, "topic": "address", "text": "දැන් පදිංචිය කොහේද?"}
+{"doc_id": "SYN_T0003_transcript_u007_v1", "recording": "SYN_T0003", "kind": "transcript", "utterance": 7, "topic": "address", "text": "ane 124, වටරවුම් පාර, අනුරාධපුරය."}
+{"doc_id": "SYN_T0003_c2_u007_en_v1", "recording": "SYN_T0003", "kind": "en", "utterance": 7, "topic": "address", "text": "No. 124, Circular Road, Anuradhapura."}
+{"doc_id": "SYN_T0003_c2_u007_si_v1", "recording": "SYN_T0003", "kind": "si", "utterance": 7, "topic": "address", "text": "124, වටරවුම් පාර, අනුරාධපුරය."}
+{"doc_id": "SYN_T0003_transcript_u008_v1", "recording": "SYN_T0003", "kind": "transcript", "utterance": 8, "topic": "account", "text": "ane savings eke number eka 8496 852 1700 532."}
+{"doc_id": "SYN_T0003_c2_u008_en_v1", "recording": "SYN_T0003", "kind": "en", "utterance": 8, "topic": "account", "text": "My savings number is 84968521700532."}
+{"doc_id": "SYN_T0003_c2_u008_si_v1", "recording": "SYN_T0003", "kind": "si", "utterance": 8, "topic": "account", "text": "මගේ ඉතුරුම් අංකය 84968521700532."}
+{"doc_id": "SYN_T0003_transcript_u009_v1", "recording": "SYN_T0003", "kind": "transcript", "utterance": 9, "topic": "email", "text": "email ekak thiyenawada?"}
+{"doc_id": "SYN_T0003_c2_u009_en_v1", "recording": "SYN_T0003", "kind": "en", "utterance": 9, "topic": "email", "text": "Do you have an email address?"}
+{"doc_id": "SYN_T0003_c2_u009_si_v1", "recording": "SYN_T0003", "kind": "si", "utterance": 9, "topic": "email", "text": "ඊමේල් ලිපිනයක් තිබේද?"}
+{"doc_id": "SYN_T0003_transcript_u010_v1", "recording": "SYN_T0003", "kind": "transcript", "utterance": 10, "topic": "email", "text": "ow, piumi.kumara54@yahoo.com."}
+{"doc_id": "SYN_T0003_c2_u010_en_v1", "recording": "SYN_T0003", "kind": "en", "utterance": 10, "topic": "email", "text": "Yes, piumi.kumara54@yahoo.com."}
+{"doc_id": "SYN_T0003_c2_u010_si_v1", "recording": "SYN_T0003", "kind": "si", "utterance": 10, "topic": "email", "text": "ඔව්, piumi.kumara54@yahoo.com."}
+{"doc_id": "SYN_T0003_transcript_u011_v1", "recording": "SYN_T0003", "kind": "transcript", "utterance": 11, "topic": "hotline", "text": "prashnayak thiyenam 0116943733 ta call karanna."}
+{"doc_id": "SYN_T0003_c2_u011_en_v1", "recording": "SYN_T0003", "kind": "en", "utterance": 11, "topic": "hotline", "text": "For any issue, call +94 11 694 3733."}
+{"doc_id": "SYN_T0003_c2_u011_si_v1", "recording": "SYN_T0003", "kind": "si", "utterance": 11, "topic": "hotline", "text": "ගැටලුවක් ඇත්නම් 0116943733 අමතන්න."}
+{"doc_id": "SYN_T0003_c2_summary_en_v1", "recording": "SYN_T0003", "kind": "summary", "utterance": null, "topic": "summary", "text": "Isuru of Ceylinco Insurance handled a call from Piumi Kumara. Customer born 14 April 1993. Residential address: No. 124, Circular Road, Anuradhapura. Funds are to be credited to 84968521700532. Email: piumi.kumara54@yahoo.com."}

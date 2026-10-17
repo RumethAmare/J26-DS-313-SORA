@@ -1,0 +1,19 @@
+{"doc_id": "SYN_R0003_transcript_u001_v1", "recording": "SYN_R0003", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "hello, mama Nuwan, Sampath Bank call centre eken kathaa karanne."}
+{"doc_id": "SYN_R0003_c2_u001_en_v1", "recording": "SYN_R0003", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good morning, Sampath Bank customer service, Nuwan speaking."}
+{"doc_id": "SYN_R0003_c2_u001_si_v1", "recording": "SYN_R0003", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම නුවන්, සම්පත් බැංකුව ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0003_transcript_u002_v1", "recording": "SYN_R0003", "kind": "transcript", "utterance": 2, "topic": "name", "text": "mage nama නෙත්මි."}
+{"doc_id": "SYN_R0003_c2_u002_en_v1", "recording": "SYN_R0003", "kind": "en", "utterance": 2, "topic": "name", "text": "Yes, this is Ms. Rathnayake."}
+{"doc_id": "SYN_R0003_c2_u002_si_v1", "recording": "SYN_R0003", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔව්, මම නෙත්මි."}
+{"doc_id": "SYN_R0003_transcript_u003_v1", "recording": "SYN_R0003", "kind": "transcript", "utterance": 3, "topic": "branch", "text": "Galle branch එකට ගියා."}
+{"doc_id": "SYN_R0003_c2_u003_en_v1", "recording": "SYN_R0003", "kind": "en", "utterance": 3, "topic": "branch", "text": "I visited the Galle branch yesterday."}
+{"doc_id": "SYN_R0003_c2_u003_si_v1", "recording": "SYN_R0003", "kind": "si", "utterance": 3, "topic": "branch", "text": "මම ඊයේ ගාල්ල ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0003_transcript_u004_v1", "recording": "SYN_R0003", "kind": "transcript", "utterance": 4, "topic": "hotline", "text": "Sampath Bank hotline eka binduwai ekai ekai dekai hayai namayai atai hathai hathai haya."}
+{"doc_id": "SYN_R0003_c2_u004_en_v1", "recording": "SYN_R0003", "kind": "en", "utterance": 4, "topic": "hotline", "text": "You can call the Sampath Bank hotline on +94 11 269 8776."}
+{"doc_id": "SYN_R0003_c2_u004_si_v1", "recording": "SYN_R0003", "kind": "si", "utterance": 4, "topic": "hotline", "text": "සම්පත් බැංකුව ක්ෂණික ඇමතුම් අංකය 0112698776."}
+{"doc_id": "SYN_R0003_transcript_u005_v1", "recording": "SYN_R0003", "kind": "transcript", "utterance": 5, "topic": "phone", "text": "call karanna puluwan බිංදුවයි හතයි හැත්තෑ හතරයි හැට දෙකයි හතළිස් එකයි තිස් අට ta."}
+{"doc_id": "SYN_R0003_c2_u005_en_v1", "recording": "SYN_R0003", "kind": "en", "utterance": 5, "topic": "phone", "text": "You can reach me on 0774624138."}
+{"doc_id": "SYN_R0003_c2_u005_si_v1", "recording": "SYN_R0003", "kind": "si", "utterance": 5, "topic": "phone", "text": "මගේ දුරකථන අංකය 0774624138."}
+{"doc_id": "SYN_R0003_transcript_u006_v1", "recording": "SYN_R0003", "kind": "transcript", "utterance": 6, "topic": "account", "text": "account number eka පහයි දෙකයි බිංදුවයි හතයි හාරසිය හැත්තෑ පහයි විස්සයි එකයි හතළිස් හය."}
+{"doc_id": "SYN_R0003_c2_u006_en_v1", "recording": "SYN_R0003", "kind": "en", "utterance": 6, "topic": "account", "text": "My account number is 520747520146."}
+{"doc_id": "SYN_R0003_c2_u006_si_v1", "recording": "SYN_R0003", "kind": "si", "utterance": 6, "topic": "account", "text": "මගේ ගිණුම් අංකය 520747520146."}
+{"doc_id": "SYN_R0003_c2_summary_en_v1", "recording": "SYN_R0003", "kind": "summary", "utterance": null, "topic": "summary", "text": "Nethmi Rathnayake called Sampath Bank and spoke to Nuwan. The customer had visited the Galle branch. The contact number is 0774624138. The account number is 520747520146."}

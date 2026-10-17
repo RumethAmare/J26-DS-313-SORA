@@ -1,0 +1,151 @@
+{
+  "recording": "SYN_T0059",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0059_e001",
+      "canonical": "Seylan Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Seylan Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Seylan Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලාන් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0059_e002",
+      "canonical": "Anjali",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Anjali"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අංජලී"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0059_e003",
+      "canonical": "Janaka Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Janaka"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka Kumara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0059_e004",
+      "canonical": "672031280V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "672031280V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "hayai hathai dekai binduwai thunai ekai dekai atai atai binduwa"
+        },
+        {
+          "script": "LATIN",
+          "form": "672031280V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "672031280V"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0059_e005",
+      "canonical": "Amal Ekanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Amal Ekanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අමල් ඒකනායක"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0059_e006",
+      "canonical": "janaka.kumara39@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "janaka.kumara39@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "janaka.kumara39@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "janaka.kumara39@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0059_e007",
+      "canonical": "0777706189",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0777706189",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "zero බිංදුවයි හැත්තෑ හතයි හැත්තෑ හතයි බිංදුවයි හයයි දහඅටයි නවය"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 77 770 6189"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0777706189"
+        },
+        {
+          "script": "LATIN",
+          "form": "0777706189"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "recording": "SYN_T0048",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0048_e001",
+      "canonical": "Hutch",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Hutch",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Hutch"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හච්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0048_e002",
+      "canonical": "Rashmi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "රශ්මි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Rashmi"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0048_e003",
+      "canonical": "Buddhika Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Buddhika"
+        },
+        {
+          "script": "SINHALA",
+          "form": "බුද්ධික"
+        },
+        {
+          "script": "LATIN",
+          "form": "Buddhika Ranasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0048_e004",
+      "canonical": "2003-10-25",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "2003-10-25",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "2003 October 25th"
+        },
+        {
+          "script": "LATIN",
+          "form": "25th of October 2003"
+        },
+        {
+          "script": "SINHALA",
+          "form": "2003 ඔක්තෝබර් 25"
+        },
+        {
+          "script": "LATIN",
+          "form": "25 October 2003"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0048_e005",
+      "canonical": "Chilaw",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Chilaw",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Chilaw"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හලාවත"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0048_e006",
+      "canonical": "0777307935",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0777307935",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හැත්තෑහතයි හැත්තෑතුනයි බිංදුවයි හතයි නවයයි තිස්පහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "0777307935"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0777307935"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0048_e007",
+      "canonical": "618947871933",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "618947871933",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "හයසිය දහඅටයි අනූහතරයි හැත්තෑඅටයි හත්සිය දහනවයයි තුනයි තුන"
+        },
+        {
+          "script": "LATIN",
+          "form": "618947871933"
+        },
+        {
+          "script": "SINHALA",
+          "form": "618947871933"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0048_e008",
+      "canonical": "200329967643",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "200329967643",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "දෙකයි බිංදුවයි බිංදුවයි තුනයි විසි නවයයි අනූ හයයි හතයි හයසිය හතළිස් තුන"
+        },
+        {
+          "script": "LATIN",
+          "form": "200329967643"
+        },
+        {
+          "script": "SINHALA",
+          "form": "200329967643"
+        }
+      ]
+    }
+  ]
+}

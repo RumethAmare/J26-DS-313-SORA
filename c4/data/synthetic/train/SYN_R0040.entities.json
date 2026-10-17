@@ -1,0 +1,174 @@
+{
+  "recording": "SYN_R0040",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0040_e001",
+      "canonical": "People's Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "People's Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "People's Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මහජන බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0040_e002",
+      "canonical": "Lahiru",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "lahiru"
+        },
+        {
+          "script": "LATIN",
+          "form": "Lahiru"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ලහිරු"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0040_e003",
+      "canonical": "Tharushi Wickramasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "තරුෂි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Tharushi Wickramasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0040_e004",
+      "canonical": "0758901633",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0758901633",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 5 8 9 0 1 6 3 3"
+        },
+        {
+          "script": "LATIN",
+          "form": "0758901633"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0758901633"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0040_e005",
+      "canonical": "707744402X",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "707744402X",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "707 744 402 x"
+        },
+        {
+          "script": "LATIN",
+          "form": "707744402X"
+        },
+        {
+          "script": "SINHALA",
+          "form": "707744402X"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0040_e006",
+      "canonical": "No. 228, School Lane, Matara",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "228, පාසල් පටුමග, මාතර"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 228, School Lane, Matara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0040_e007",
+      "canonical": "737650579145",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "737650579145",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "737 650 579 145"
+        },
+        {
+          "script": "LATIN",
+          "form": "737650579145"
+        },
+        {
+          "script": "SINHALA",
+          "form": "737650579145"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0040_e008",
+      "canonical": "1970-09-30",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1970-09-30",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "30/09/1970"
+        },
+        {
+          "script": "LATIN",
+          "form": "1970-09-30"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1970.09.30"
+        }
+      ]
+    }
+  ]
+}

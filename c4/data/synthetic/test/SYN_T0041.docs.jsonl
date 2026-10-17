@@ -1,0 +1,25 @@
+{"doc_id": "SYN_T0041_transcript_u001_v1", "recording": "SYN_T0041", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "hmm, Seylan Bank ekata call kalata thanks, mage nama මාධවී."}
+{"doc_id": "SYN_T0041_c2_u001_en_v1", "recording": "SYN_T0041", "kind": "en", "utterance": 1, "topic": "greet", "text": "Thank you for calling Seylan Bank, my name is Madhavi."}
+{"doc_id": "SYN_T0041_c2_u001_si_v1", "recording": "SYN_T0041", "kind": "si", "utterance": 1, "topic": "greet", "text": "සෙලාන් බැංකුව ඇමතීම ගැන ස්තූතියි, මගේ නම මාධවී."}
+{"doc_id": "SYN_T0041_transcript_u002_v1", "recording": "SYN_T0041", "kind": "transcript", "utterance": 2, "topic": "name", "text": "mama Isuru, account holder."}
+{"doc_id": "SYN_T0041_c2_u002_en_v1", "recording": "SYN_T0041", "kind": "en", "utterance": 2, "topic": "name", "text": "I am Isuru, the account holder."}
+{"doc_id": "SYN_T0041_c2_u002_si_v1", "recording": "SYN_T0041", "kind": "si", "utterance": 2, "topic": "name", "text": "මම ඉසුරු, ගිණුම් හිමියා."}
+{"doc_id": "SYN_T0041_transcript_u003_v1", "recording": "SYN_T0041", "kind": "transcript", "utterance": 3, "topic": "relative", "text": "mage ayya saman kumara th ekka enawa."}
+{"doc_id": "SYN_T0041_c2_u003_en_v1", "recording": "SYN_T0041", "kind": "en", "utterance": 3, "topic": "relative", "text": "My brother Saman Kumara will come with me."}
+{"doc_id": "SYN_T0041_c2_u003_si_v1", "recording": "SYN_T0041", "kind": "si", "utterance": 3, "topic": "relative", "text": "මගේ අයියා සමන් කුමාර මා සමඟ එනවා."}
+{"doc_id": "SYN_T0041_transcript_u004_v1", "recording": "SYN_T0041", "kind": "transcript", "utterance": 4, "topic": "email", "text": "ammo, email ekak thiyenawada?"}
+{"doc_id": "SYN_T0041_c2_u004_en_v1", "recording": "SYN_T0041", "kind": "en", "utterance": 4, "topic": "email", "text": "Do you have an email address?"}
+{"doc_id": "SYN_T0041_c2_u004_si_v1", "recording": "SYN_T0041", "kind": "si", "utterance": 4, "topic": "email", "text": "ඊමේල් ලිපිනයක් තිබේද?"}
+{"doc_id": "SYN_T0041_transcript_u005_v1", "recording": "SYN_T0041", "kind": "transcript", "utterance": 5, "topic": "email", "text": "ow, isuru.samarakoon9@yahoo.com."}
+{"doc_id": "SYN_T0041_c2_u005_en_v1", "recording": "SYN_T0041", "kind": "en", "utterance": 5, "topic": "email", "text": "Yes, isuru.samarakoon9@yahoo.com."}
+{"doc_id": "SYN_T0041_c2_u005_si_v1", "recording": "SYN_T0041", "kind": "si", "utterance": 5, "topic": "email", "text": "ඔව්, isuru.samarakoon9@yahoo.com."}
+{"doc_id": "SYN_T0041_transcript_u006_v1", "recording": "SYN_T0041", "kind": "transcript", "utterance": 6, "topic": "branch", "text": "uh, කළුතර office eke idala thamai call karanne."}
+{"doc_id": "SYN_T0041_c2_u006_en_v1", "recording": "SYN_T0041", "kind": "en", "utterance": 6, "topic": "branch", "text": "I am calling from near the Kalutara office."}
+{"doc_id": "SYN_T0041_c2_u006_si_v1", "recording": "SYN_T0041", "kind": "si", "utterance": 6, "topic": "branch", "text": "මම කළුතර කාර්යාලය අසල සිට කතා කරන්නේ."}
+{"doc_id": "SYN_T0041_transcript_u007_v1", "recording": "SYN_T0041", "kind": "transcript", "utterance": 7, "topic": "phone", "text": "oyaawa contact karanna number ekak denna."}
+{"doc_id": "SYN_T0041_c2_u007_en_v1", "recording": "SYN_T0041", "kind": "en", "utterance": 7, "topic": "phone", "text": "What is the best number to contact you on?"}
+{"doc_id": "SYN_T0041_c2_u007_si_v1", "recording": "SYN_T0041", "kind": "si", "utterance": 7, "topic": "phone", "text": "ඔබව සම්බන්ධ කරගන්න අංකයක් දෙන්න."}
+{"doc_id": "SYN_T0041_transcript_u008_v1", "recording": "SYN_T0041", "kind": "transcript", "utterance": 8, "topic": "phone", "text": "0 7 0 9 3 7 2 8 1 8 ta gahanna."}
+{"doc_id": "SYN_T0041_c2_u008_en_v1", "recording": "SYN_T0041", "kind": "en", "utterance": 8, "topic": "phone", "text": "Please call +94 70 937 2818."}
+{"doc_id": "SYN_T0041_c2_u008_si_v1", "recording": "SYN_T0041", "kind": "si", "utterance": 8, "topic": "phone", "text": "0709372818 අමතන්න."}
+{"doc_id": "SYN_T0041_c2_summary_en_v1", "recording": "SYN_T0041", "kind": "summary", "utterance": null, "topic": "summary", "text": "Madhavi of Seylan Bank handled a call from Isuru Samarakoon. Saman Kumara was mentioned as a family member. Email: isuru.samarakoon9@yahoo.com. The Kalutara office was referenced. Callback number: 0709372818."}

@@ -1,0 +1,165 @@
+{
+  "recording": "SYN_R0041",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0041_e001",
+      "canonical": "Tharushi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "තරුෂි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Tharushi"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0041_e002",
+      "canonical": "HNB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "HNB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "HNB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "එච්එන්බී"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0041_e003",
+      "canonical": "Nadeesha Herath",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "නදීෂා හේරත්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ms. Herath"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nadeesha Herath"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0041_e004",
+      "canonical": "Tharindu Wijesinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Tharindu Wijesinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "තරිඳු විජේසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0041_e005",
+      "canonical": "55995523362406",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "55995523362406",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "pahai pahai namayai namayai pahai pahai dekai thunai thunai hayai dekai hatharai binduwai haya"
+        },
+        {
+          "script": "LATIN",
+          "form": "55995523362406"
+        },
+        {
+          "script": "SINHALA",
+          "form": "55995523362406"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0041_e006",
+      "canonical": "0747919863",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0747919863",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0747 919 863"
+        },
+        {
+          "script": "LATIN",
+          "form": "0747919863"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0747919863"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0041_e007",
+      "canonical": "No. 28/1, Station Road, Matara",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "28/1, දුම්රියපොළ පාර, මාතර"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 28/1, Station Road, Matara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0041_e008",
+      "canonical": "nadeesha.herath22@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "nadeesha.herath22@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "nadeesha.herath22@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "nadeesha.herath22@yahoo.com"
+        }
+      ]
+    }
+  ]
+}

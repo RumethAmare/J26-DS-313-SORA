@@ -1,0 +1,151 @@
+{
+  "recording": "SYN_T0020",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0020_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0020_e002",
+      "canonical": "Buddhika",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බුද්ධික"
+        },
+        {
+          "script": "LATIN",
+          "form": "Buddhika"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0020_e003",
+      "canonical": "Rashmi Ekanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "රශ්මි ඒකනායක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Rashmi Ekanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0020_e004",
+      "canonical": "Ratnapura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Ratnapura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "රත්නපුර"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ratnapura"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0020_e005",
+      "canonical": "36745605977484",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "36745605977484",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "3 6 7 4 5 6 0 5 9 7 7 4 8 4"
+        },
+        {
+          "script": "LATIN",
+          "form": "36745605977484"
+        },
+        {
+          "script": "SINHALA",
+          "form": "36745605977484"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0020_e006",
+      "canonical": "197465150373",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "197465150373",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "197 465 150 373"
+        },
+        {
+          "script": "LATIN",
+          "form": "197465150373"
+        },
+        {
+          "script": "SINHALA",
+          "form": "197465150373"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0020_e007",
+      "canonical": "0768746733",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0768746733",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 6 8 7 4 6 7 3 3"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 76 874 6733"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0768746733"
+        },
+        {
+          "script": "LATIN",
+          "form": "0768746733"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{"doc_id": "SYN_T0040_transcript_u001_v1", "recording": "SYN_T0040", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "ane ayubowan, Ceylinco Insurance eken Saman kiyala kenek kathaa karanne."}
+{"doc_id": "SYN_T0040_c2_u001_en_v1", "recording": "SYN_T0040", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good afternoon, Saman here from Ceylinco Insurance."}
+{"doc_id": "SYN_T0040_c2_u001_si_v1", "recording": "SYN_T0040", "kind": "si", "utterance": 1, "topic": "greet", "text": "සුබ දවසක්, මම සෙලින්කෝ රක්ෂණ ආයතනයෙන් සමන්."}
+{"doc_id": "SYN_T0040_transcript_u002_v1", "recording": "SYN_T0040", "kind": "transcript", "utterance": 2, "topic": "name", "text": "hmm, mama Yasodha, account holder."}
+{"doc_id": "SYN_T0040_c2_u002_en_v1", "recording": "SYN_T0040", "kind": "en", "utterance": 2, "topic": "name", "text": "I am Yasodha, the account holder."}
+{"doc_id": "SYN_T0040_c2_u002_si_v1", "recording": "SYN_T0040", "kind": "si", "utterance": 2, "topic": "name", "text": "මම යශෝධා, ගිණුම් හිමියා."}
+{"doc_id": "SYN_T0040_transcript_u003_v1", "recording": "SYN_T0040", "kind": "transcript", "utterance": 3, "topic": "phone", "text": "ane whatsapp karanna zero binduwai hathai binduwai binduwai ekai ekai hathai hatharai pahai eka ekata."}
+{"doc_id": "SYN_T0040_c2_u003_en_v1", "recording": "SYN_T0040", "kind": "en", "utterance": 3, "topic": "phone", "text": "Message me on WhatsApp at +94 70 011 7451."}
+{"doc_id": "SYN_T0040_c2_u003_si_v1", "recording": "SYN_T0040", "kind": "si", "utterance": 3, "topic": "phone", "text": "0700117451 අංකයට WhatsApp කරන්න."}
+{"doc_id": "SYN_T0040_transcript_u004_v1", "recording": "SYN_T0040", "kind": "transcript", "utterance": 4, "topic": "dob", "text": "upan dinaya kiyanna puluwanda?"}
+{"doc_id": "SYN_T0040_c2_u004_en_v1", "recording": "SYN_T0040", "kind": "en", "utterance": 4, "topic": "dob", "text": "Can you confirm your date of birth?"}
+{"doc_id": "SYN_T0040_c2_u004_si_v1", "recording": "SYN_T0040", "kind": "si", "utterance": 4, "topic": "dob", "text": "ඔබේ උපන් දිනය තහවුරු කරන්න."}
+{"doc_id": "SYN_T0040_transcript_u005_v1", "recording": "SYN_T0040", "kind": "transcript", "utterance": 5, "topic": "dob", "text": "14th February 2002."}
+{"doc_id": "SYN_T0040_c2_u005_en_v1", "recording": "SYN_T0040", "kind": "en", "utterance": 5, "topic": "dob", "text": "Yes, 14 February 2002."}
+{"doc_id": "SYN_T0040_c2_u005_si_v1", "recording": "SYN_T0040", "kind": "si", "utterance": 5, "topic": "dob", "text": "2002.02.14."}
+{"doc_id": "SYN_T0040_transcript_u006_v1", "recording": "SYN_T0040", "kind": "transcript", "utterance": 6, "topic": "address", "text": "uh, dan inne koheda?"}
+{"doc_id": "SYN_T0040_c2_u006_en_v1", "recording": "SYN_T0040", "kind": "en", "utterance": 6, "topic": "address", "text": "Where are you living now?"}
+{"doc_id": "SYN_T0040_c2_u006_si_v1", "recording": "SYN_T0040", "kind": "si", "utterance": 6, "topic": "address", "text": "දැන් පදිංචිය කොහේද?"}
+{"doc_id": "SYN_T0040_transcript_u007_v1", "recording": "SYN_T0040", "kind": "transcript", "utterance": 7, "topic": "address", "text": "hmm, No. 172, Church Street, Anuradhapura."}
+{"doc_id": "SYN_T0040_c2_u007_en_v1", "recording": "SYN_T0040", "kind": "en", "utterance": 7, "topic": "address", "text": "No. 172, Church Street, Anuradhapura."}
+{"doc_id": "SYN_T0040_c2_u007_si_v1", "recording": "SYN_T0040", "kind": "si", "utterance": 7, "topic": "address", "text": "172, පල්ලිය වීදිය, අනුරාධපුරය."}
+{"doc_id": "SYN_T0040_transcript_u008_v1", "recording": "SYN_T0040", "kind": "transcript", "utterance": 8, "topic": "relative", "text": "ah mage ayya Isuru Ekanayake th ekka enawa."}
+{"doc_id": "SYN_T0040_c2_u008_en_v1", "recording": "SYN_T0040", "kind": "en", "utterance": 8, "topic": "relative", "text": "My brother Isuru Ekanayake will come with me."}
+{"doc_id": "SYN_T0040_c2_u008_si_v1", "recording": "SYN_T0040", "kind": "si", "utterance": 8, "topic": "relative", "text": "මගේ අයියා ඉසුරු ඒකනායක මා සමඟ එනවා."}
+{"doc_id": "SYN_T0040_c2_summary_en_v1", "recording": "SYN_T0040", "kind": "summary", "utterance": null, "topic": "summary", "text": "Saman of Ceylinco Insurance handled a call from Yasodha Abeysekara. Callback number: 0700117451. Customer born 14 February 2002. Residential address: No. 172, Church Street, Anuradhapura. Isuru Ekanayake was mentioned as a family member."}

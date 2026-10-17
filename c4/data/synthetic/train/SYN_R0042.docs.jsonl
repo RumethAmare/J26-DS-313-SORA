@@ -1,0 +1,25 @@
+{"doc_id": "SYN_R0042_transcript_u001_v1", "recording": "SYN_R0042", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "good morning, Dialog customer service, mama සචිනි."}
+{"doc_id": "SYN_R0042_c2_u001_en_v1", "recording": "SYN_R0042", "kind": "en", "utterance": 1, "topic": "greet", "text": "Hello, this is Sachini from the Dialog call centre."}
+{"doc_id": "SYN_R0042_c2_u001_si_v1", "recording": "SYN_R0042", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම සචිනි, ඩයලොග් ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0042_transcript_u002_v1", "recording": "SYN_R0042", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ow, mage nama Chamari Dissanayake."}
+{"doc_id": "SYN_R0042_c2_u002_en_v1", "recording": "SYN_R0042", "kind": "en", "utterance": 2, "topic": "name", "text": "Yes, this is Ms. Dissanayake."}
+{"doc_id": "SYN_R0042_c2_u002_si_v1", "recording": "SYN_R0042", "kind": "si", "utterance": 2, "topic": "name", "text": "මගේ නම චමරි දිසානායක."}
+{"doc_id": "SYN_R0042_transcript_u003_v1", "recording": "SYN_R0042", "kind": "transcript", "utterance": 3, "topic": "address", "text": "mage address eka No. 147, Main Street, Kandy."}
+{"doc_id": "SYN_R0042_c2_u003_en_v1", "recording": "SYN_R0042", "kind": "en", "utterance": 3, "topic": "address", "text": "My address is No. 147, Main Street, Kandy."}
+{"doc_id": "SYN_R0042_c2_u003_si_v1", "recording": "SYN_R0042", "kind": "si", "utterance": 3, "topic": "address", "text": "මගේ ලිපිනය 147, ප්‍රධාන වීදිය, මහනුවර."}
+{"doc_id": "SYN_R0042_transcript_u004_v1", "recording": "SYN_R0042", "kind": "transcript", "utterance": 4, "topic": "dob", "text": "date of birth eka 21 November 1984."}
+{"doc_id": "SYN_R0042_c2_u004_en_v1", "recording": "SYN_R0042", "kind": "en", "utterance": 4, "topic": "dob", "text": "My date of birth is 21 November 1984."}
+{"doc_id": "SYN_R0042_c2_u004_si_v1", "recording": "SYN_R0042", "kind": "si", "utterance": 4, "topic": "dob", "text": "මගේ උපන් දිනය 1984 නොවැම්බර් 21."}
+{"doc_id": "SYN_R0042_transcript_u005_v1", "recording": "SYN_R0042", "kind": "transcript", "utterance": 5, "topic": "account", "text": "account number eka අටයි හැත්තෑහයයි පහයි පනස්තුනයි බිංදුවයි අසූනවයයි හැත්තෑහතයි තුන."}
+{"doc_id": "SYN_R0042_c2_u005_en_v1", "recording": "SYN_R0042", "kind": "en", "utterance": 5, "topic": "account", "text": "My account number is 876553089773."}
+{"doc_id": "SYN_R0042_c2_u005_si_v1", "recording": "SYN_R0042", "kind": "si", "utterance": 5, "topic": "account", "text": "මගේ ගිණුම් අංකය 876553089773."}
+{"doc_id": "SYN_R0042_transcript_u006_v1", "recording": "SYN_R0042", "kind": "transcript", "utterance": 6, "topic": "hotline", "text": "oyata 011 5563 355 ta call karanna puluwan."}
+{"doc_id": "SYN_R0042_c2_u006_en_v1", "recording": "SYN_R0042", "kind": "en", "utterance": 6, "topic": "hotline", "text": "You can call the Dialog hotline on 0115563355."}
+{"doc_id": "SYN_R0042_c2_u006_si_v1", "recording": "SYN_R0042", "kind": "si", "utterance": 6, "topic": "hotline", "text": "ඩයලොග් ක්ෂණික ඇමතුම් අංකය 0115563355."}
+{"doc_id": "SYN_R0042_transcript_u007_v1", "recording": "SYN_R0042", "kind": "transcript", "utterance": 7, "topic": "branch", "text": "Moratuwa branch එකට ගියා."}
+{"doc_id": "SYN_R0042_c2_u007_en_v1", "recording": "SYN_R0042", "kind": "en", "utterance": 7, "topic": "branch", "text": "I visited the Moratuwa branch yesterday."}
+{"doc_id": "SYN_R0042_c2_u007_si_v1", "recording": "SYN_R0042", "kind": "si", "utterance": 7, "topic": "branch", "text": "මම ඊයේ මොරටුව ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0042_transcript_u008_v1", "recording": "SYN_R0042", "kind": "transcript", "utterance": 8, "topic": "payment", "text": "mama 11th of January rupiyal 150000 gewwa."}
+{"doc_id": "SYN_R0042_c2_u008_en_v1", "recording": "SYN_R0042", "kind": "en", "utterance": 8, "topic": "payment", "text": "I paid Rs. 150,000 on 11th of January."}
+{"doc_id": "SYN_R0042_c2_u008_si_v1", "recording": "SYN_R0042", "kind": "si", "utterance": 8, "topic": "payment", "text": "මම ජනවාරි 11 රුපියල් 150,000 ක් ගෙව්වා."}
+{"doc_id": "SYN_R0042_c2_summary_en_v1", "recording": "SYN_R0042", "kind": "summary", "utterance": null, "topic": "summary", "text": "Chamari Dissanayake called Dialog and spoke to Sachini. The customer lives at No. 147, Main Street, Kandy. The date of birth given was 21 November 1984. The account number is 876553089773. The customer had visited the Moratuwa branch. A payment of Rs. 150,000 was discussed."}

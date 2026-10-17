@@ -1,0 +1,40 @@
+{"doc_id": "SYN_T0024_transcript_u001_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "Seylan Bank ekata call kalata thanks, mage nama amal."}
+{"doc_id": "SYN_T0024_c2_u001_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 1, "topic": "greet", "text": "Thank you for calling Seylan Bank, my name is Amal."}
+{"doc_id": "SYN_T0024_c2_u001_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 1, "topic": "greet", "text": "සෙලාන් බැංකුව ඇමතීම ගැන ස්තූතියි, මගේ නම අමල්."}
+{"doc_id": "SYN_T0024_transcript_u002_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 2, "topic": "name", "text": "oyaage nama mokakda?"}
+{"doc_id": "SYN_T0024_c2_u002_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 2, "topic": "name", "text": "May I have your name?"}
+{"doc_id": "SYN_T0024_c2_u002_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔබගේ නම කුමක්ද?"}
+{"doc_id": "SYN_T0024_transcript_u003_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 3, "topic": "name", "text": "Piumi Weerasinghe thamai."}
+{"doc_id": "SYN_T0024_c2_u003_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 3, "topic": "name", "text": "It is Piumi Weerasinghe."}
+{"doc_id": "SYN_T0024_c2_u003_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 3, "topic": "name", "text": "පියුමි වීරසිංහ."}
+{"doc_id": "SYN_T0024_transcript_u004_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 4, "topic": "address", "text": "dan inne koheda?"}
+{"doc_id": "SYN_T0024_c2_u004_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 4, "topic": "address", "text": "Where are you living now?"}
+{"doc_id": "SYN_T0024_c2_u004_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 4, "topic": "address", "text": "දැන් පදිංචිය කොහේද?"}
+{"doc_id": "SYN_T0024_transcript_u005_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 5, "topic": "address", "text": "149, Kandy Road, Ratnapura."}
+{"doc_id": "SYN_T0024_c2_u005_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 5, "topic": "address", "text": "No. 149, Kandy Road, Ratnapura."}
+{"doc_id": "SYN_T0024_c2_u005_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 5, "topic": "address", "text": "149, මහනුවර පාර, රත්නපුර."}
+{"doc_id": "SYN_T0024_transcript_u006_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 6, "topic": "payment", "text": "ah 24th of January 150000 ක් bill eka gewwa."}
+{"doc_id": "SYN_T0024_c2_u006_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 6, "topic": "payment", "text": "On 24th of January I transferred 150,000 rupees."}
+{"doc_id": "SYN_T0024_c2_u006_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 6, "topic": "payment", "text": "ජනවාරි 24 දින රුපියල් 150,000 ක් මාරු කළා."}
+{"doc_id": "SYN_T0024_transcript_u007_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 7, "topic": "account", "text": "salli daanna one account eka?"}
+{"doc_id": "SYN_T0024_c2_u007_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 7, "topic": "account", "text": "Which account should the money go to?"}
+{"doc_id": "SYN_T0024_c2_u007_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 7, "topic": "account", "text": "මුදල් බැර කළ යුතු ගිණුම කුමක්ද?"}
+{"doc_id": "SYN_T0024_transcript_u008_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 8, "topic": "account", "text": "661 171 2274."}
+{"doc_id": "SYN_T0024_c2_u008_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 8, "topic": "account", "text": "6611712274."}
+{"doc_id": "SYN_T0024_c2_u008_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 8, "topic": "account", "text": "6611712274."}
+{"doc_id": "SYN_T0024_transcript_u009_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 9, "topic": "branch", "text": "hmm, Anuradhapura office eke idala thamai call karanne."}
+{"doc_id": "SYN_T0024_c2_u009_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 9, "topic": "branch", "text": "I am calling from near the Anuradhapura office."}
+{"doc_id": "SYN_T0024_c2_u009_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 9, "topic": "branch", "text": "මම අනුරාධපුරය කාර්යාලය අසල සිට කතා කරන්නේ."}
+{"doc_id": "SYN_T0024_transcript_u010_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 10, "topic": "relative", "text": "mage ayya Gayan Weerasinghe th ekka enawa."}
+{"doc_id": "SYN_T0024_c2_u010_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 10, "topic": "relative", "text": "My brother Gayan Weerasinghe will come with me."}
+{"doc_id": "SYN_T0024_c2_u010_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 10, "topic": "relative", "text": "මගේ අයියා ගයාන් වීරසිංහ මා සමඟ එනවා."}
+{"doc_id": "SYN_T0024_transcript_u011_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 11, "topic": "email", "text": "email ekak thiyenawada?"}
+{"doc_id": "SYN_T0024_c2_u011_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 11, "topic": "email", "text": "Do you have an email address?"}
+{"doc_id": "SYN_T0024_c2_u011_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 11, "topic": "email", "text": "ඊමේල් ලිපිනයක් තිබේද?"}
+{"doc_id": "SYN_T0024_transcript_u012_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 12, "topic": "email", "text": "hmm, ow, piumi.weerasinghe17@yahoo.com."}
+{"doc_id": "SYN_T0024_c2_u012_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 12, "topic": "email", "text": "Yes, piumi.weerasinghe17@yahoo.com."}
+{"doc_id": "SYN_T0024_c2_u012_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 12, "topic": "email", "text": "ඔව්, piumi.weerasinghe17@yahoo.com."}
+{"doc_id": "SYN_T0024_transcript_u013_v1", "recording": "SYN_T0024", "kind": "transcript", "utterance": 13, "topic": "nic", "text": "identity card eke thiyenne 197461691612."}
+{"doc_id": "SYN_T0024_c2_u013_en_v1", "recording": "SYN_T0024", "kind": "en", "utterance": 13, "topic": "nic", "text": "The number on my identity card is 197461691612."}
+{"doc_id": "SYN_T0024_c2_u013_si_v1", "recording": "SYN_T0024", "kind": "si", "utterance": 13, "topic": "nic", "text": "මගේ හැඳුනුම්පතේ අංකය 197461691612."}
+{"doc_id": "SYN_T0024_c2_summary_en_v1", "recording": "SYN_T0024", "kind": "summary", "utterance": null, "topic": "summary", "text": "Amal of Seylan Bank handled a call from Piumi Weerasinghe. Residential address: No. 149, Kandy Road, Ratnapura. A transfer of Rs. 2,500 was reported. Funds are to be credited to 6611712274. The Anuradhapura office was referenced. Gayan Weerasinghe was mentioned as a family member. Email: piumi.weerasinghe17@yahoo.com. Identity number provided: 197461691612."}

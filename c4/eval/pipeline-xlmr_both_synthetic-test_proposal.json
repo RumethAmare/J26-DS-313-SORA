@@ -1,0 +1,1409 @@
+{
+  "config": {
+    "system": "pipeline:xlmr_both",
+    "source": "synthetic-test",
+    "labels": "proposal",
+    "matching": "strict",
+    "recordings": [
+      "SYN_T0001",
+      "SYN_T0002",
+      "SYN_T0003",
+      "SYN_T0004",
+      "SYN_T0005",
+      "SYN_T0006",
+      "SYN_T0007",
+      "SYN_T0008",
+      "SYN_T0009",
+      "SYN_T0010",
+      "SYN_T0011",
+      "SYN_T0012",
+      "SYN_T0013",
+      "SYN_T0014",
+      "SYN_T0015",
+      "SYN_T0016",
+      "SYN_T0017",
+      "SYN_T0018",
+      "SYN_T0019",
+      "SYN_T0020",
+      "SYN_T0021",
+      "SYN_T0022",
+      "SYN_T0023",
+      "SYN_T0024",
+      "SYN_T0025",
+      "SYN_T0026",
+      "SYN_T0027",
+      "SYN_T0028",
+      "SYN_T0029",
+      "SYN_T0030",
+      "SYN_T0031",
+      "SYN_T0032",
+      "SYN_T0033",
+      "SYN_T0034",
+      "SYN_T0035",
+      "SYN_T0036",
+      "SYN_T0037",
+      "SYN_T0038",
+      "SYN_T0039",
+      "SYN_T0040",
+      "SYN_T0041",
+      "SYN_T0042",
+      "SYN_T0043",
+      "SYN_T0044",
+      "SYN_T0045",
+      "SYN_T0046",
+      "SYN_T0047",
+      "SYN_T0048",
+      "SYN_T0049",
+      "SYN_T0050",
+      "SYN_T0051",
+      "SYN_T0052",
+      "SYN_T0053",
+      "SYN_T0054",
+      "SYN_T0055",
+      "SYN_T0056",
+      "SYN_T0057",
+      "SYN_T0058",
+      "SYN_T0059",
+      "SYN_T0060"
+    ],
+    "commit": "bc7dbd5",
+    "date": "2026-10-11"
+  },
+  "micro": {
+    "precision": 0.897,
+    "recall": 0.9481,
+    "f1": 0.9218,
+    "tp": 1533,
+    "fp": 176,
+    "fn": 84,
+    "support": 1617
+  },
+  "macro": {
+    "precision": 0.9231,
+    "recall": 0.9494,
+    "f1": 0.9357
+  },
+  "per_label": {
+    "PERSON": {
+      "precision": 0.8702,
+      "recall": 0.9763,
+      "f1": 0.9202,
+      "tp": 617,
+      "fp": 92,
+      "fn": 15,
+      "support": 632
+    },
+    "NIC": {
+      "precision": 0.9655,
+      "recall": 1.0,
+      "f1": 0.9825,
+      "tp": 140,
+      "fp": 5,
+      "fn": 0,
+      "support": 140
+    },
+    "PHONE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 221,
+      "fp": 0,
+      "fn": 0,
+      "support": 221
+    },
+    "ADDRESS": {
+      "precision": 0.95,
+      "recall": 0.95,
+      "f1": 0.95,
+      "tp": 114,
+      "fp": 6,
+      "fn": 6,
+      "support": 120
+    },
+    "ORG": {
+      "precision": 0.7368,
+      "recall": 0.7583,
+      "f1": 0.7474,
+      "tp": 182,
+      "fp": 65,
+      "fn": 58,
+      "support": 240
+    },
+    "ACCOUNT": {
+      "precision": 0.9389,
+      "recall": 0.9609,
+      "f1": 0.9498,
+      "tp": 123,
+      "fp": 8,
+      "fn": 5,
+      "support": 128
+    },
+    "DOB": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 136,
+      "fp": 0,
+      "fn": 0,
+      "support": 136
+    }
+  },
+  "per_script": {
+    "LATIN": {
+      "precision": 0.8905,
+      "recall": 0.9621,
+      "f1": 0.9249,
+      "tp": 1065,
+      "fp": 131,
+      "fn": 42,
+      "support": 1107
+    },
+    "SINHALA": {
+      "precision": 0.9123,
+      "recall": 0.9176,
+      "f1": 0.915,
+      "tp": 468,
+      "fp": 45,
+      "fn": 42,
+      "support": 510
+    }
+  },
+  "per_doc_kind": {
+    "clean_en": {
+      "precision": 0.9504,
+      "recall": 0.9757,
+      "f1": 0.9629,
+      "tp": 402,
+      "fp": 21,
+      "fn": 10,
+      "support": 412
+    },
+    "clean_si": {
+      "precision": 0.8988,
+      "recall": 0.9053,
+      "f1": 0.9021,
+      "tp": 373,
+      "fp": 42,
+      "fn": 39,
+      "support": 412
+    },
+    "summary": {
+      "precision": 0.9235,
+      "recall": 0.9501,
+      "f1": 0.9366,
+      "tp": 362,
+      "fp": 30,
+      "fn": 19,
+      "support": 381
+    },
+    "transcript": {
+      "precision": 0.8267,
+      "recall": 0.9612,
+      "f1": 0.8889,
+      "tp": 396,
+      "fp": 83,
+      "fn": 16,
+      "support": 412
+    }
+  },
+  "errors": {
+    "boundary": [
+      {
+        "doc_id": "SYN_T0001_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ජාතික ඉතිරිකිරීමේ බැංකුව",
+        "predicted": [
+          "ORG:ජාතික ඉතිරිකිරීමේ බැංකුව ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0001_c2_summary_en_v1",
+        "label": "ADDRESS",
+        "gold": "No. 242/5, Park Avenue, Chilaw",
+        "predicted": [
+          "ADDRESS:242/5, Park Avenue, Chilaw"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0003_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ රක්ෂණ ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0008_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ජාතික ඉතිරිකිරීමේ බැංකුව",
+        "predicted": [
+          "ORG:ජාතික ඉතිරිකිරීමේ බැංකුව ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0010_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ජාතික ඉතිරිකිරීමේ බැංකුව",
+        "predicted": [
+          "ORG:ජාතික ඉතිරිකිරීමේ බැංකුව ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0010_c2_u009_si_v1",
+        "label": "PERSON",
+        "gold": "සමන් ලියනගේ",
+        "predicted": [
+          "PERSON:සමන් ලියන"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0011_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "හච්",
+        "predicted": [
+          "ORG:හච් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0012_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "හච්",
+        "predicted": [
+          "ORG:හච් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0012_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "ORG:Gayan of Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0014_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ රක්ෂණ ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0017_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ජාතික ඉතිරිකිරීමේ බැංකුව",
+        "predicted": [
+          "ORG:ජාතික ඉතිරිකිරීමේ බැංකුව ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0017_transcript_u003_v1",
+        "label": "PERSON",
+        "gold": "janaka abeysekara",
+        "predicted": [
+          "PERSON:janaka",
+          "PERSON:abeysekara"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0017_transcript_u006_v1",
+        "label": "ADDRESS",
+        "gold": "229, Circular Road, Panadura",
+        "predicted": [
+          "ADDRESS:229"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0017_c2_u006_si_v1",
+        "label": "ADDRESS",
+        "gold": "229, වටරවුම් පාර, පානදුර",
+        "predicted": [
+          "ADDRESS:229"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0019_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0022_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0023_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0025_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0027_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0028_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "ORG:of Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0029_transcript_u003_v1",
+        "label": "PERSON",
+        "gold": "rashmi ranasinghe",
+        "predicted": [
+          "PERSON:rashmi",
+          "PERSON:ranasinghe"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0031_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ රක්ෂණ ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0032_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "හච්",
+        "predicted": [
+          "ORG:හච් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0032_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "ORG:Isuru of Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0033_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "ORG:Amal of Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0034_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "හච්",
+        "predicted": [
+          "ORG:හච් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0035_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0037_c2_u004_si_v1",
+        "label": "ADDRESS",
+        "gold": "18, මහනුවර පාර, කළුතර",
+        "predicted": [
+          "ADDRESS:ලියුම් 18, මහනුවර පාර, කළුතර"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0038_transcript_u003_v1",
+        "label": "PERSON",
+        "gold": "රශ්මි ලියනගේ",
+        "predicted": [
+          "PERSON:රශ්මි ලියන"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0038_c2_u003_si_v1",
+        "label": "PERSON",
+        "gold": "රශ්මි ලියනගේ",
+        "predicted": [
+          "PERSON:රශ්මි ලියන"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0040_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ රක්ෂණ ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0043_c2_u005_si_v1",
+        "label": "PERSON",
+        "gold": "සමන් ලියනගේ",
+        "predicted": [
+          "PERSON:සමන් ලියන"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0045_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0045_c2_summary_en_v1",
+        "label": "ADDRESS",
+        "gold": "No. 240/3, Park Avenue, Jaffna",
+        "predicted": [
+          "ADDRESS:240/3, Park Avenue, Jaffna"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0047_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "ORG:of Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0048_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "හච්",
+        "predicted": [
+          "ORG:හච් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0048_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Rashmi",
+        "predicted": [
+          "PERSON:Rashmi of Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0049_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ රක්ෂණ ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0049_transcript_u003_v1",
+        "label": "PERSON",
+        "gold": "අංජලී ලියනගේ",
+        "predicted": [
+          "PERSON:අංජලී ලියන"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0049_c2_u003_si_v1",
+        "label": "PERSON",
+        "gold": "අංජලී ලියනගේ",
+        "predicted": [
+          "PERSON:අංජලී ලියන"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0050_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "සෙලින්කෝ රක්ෂණ",
+        "predicted": [
+          "ORG:සෙලින්කෝ රක්ෂණ ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0050_c2_u003_si_v1",
+        "label": "PERSON",
+        "gold": "ජනක ලියනගේ",
+        "predicted": [
+          "PERSON:ජනක ලියන"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0054_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ශ්‍රී ලංකා ටෙලිකොම්",
+        "predicted": [
+          "ORG:ශ්‍රී ලංකා ටෙලිකොම් ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0054_c2_u011_si_v1",
+        "label": "PERSON",
+        "gold": "ගයාන් ලියනගේ",
+        "predicted": [
+          "PERSON:ගයාන් ලියන"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0055_c2_u003_si_v1",
+        "label": "PERSON",
+        "gold": "පියුමි ලියනගේ",
+        "predicted": [
+          "PERSON:පියුමි ලියන"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0058_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "ජාතික ඉතිරිකිරීමේ බැංකුව",
+        "predicted": [
+          "ORG:ජාතික ඉතිරිකිරීමේ බැංකුව ආයතනයෙන්"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0058_transcript_u004_v1",
+        "label": "ADDRESS",
+        "gold": "27, වෙළඳපොළ පාර, රත්නපුර",
+        "predicted": [
+          "ADDRESS:ewanna 27, වෙළඳපොළ පාර, රත්නපුර"
+        ]
+      }
+    ],
+    "label": [
+      {
+        "doc_id": "SYN_T0002_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0002_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0002_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0006_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "830367785001",
+        "predicted": [
+          "NIC:830367785001"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0011_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0011_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0011_c2_u009_si_v1",
+        "label": "ACCOUNT",
+        "gold": "883614234894",
+        "predicted": [
+          "NIC:883614234894"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0012_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0012_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0020_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "36745605977484",
+        "predicted": [
+          "NIC:36745605977484"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0028_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0028_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0032_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0032_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0032_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "495336988269",
+        "predicted": [
+          "NIC:495336988269"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0033_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0033_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0034_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0034_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0034_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0047_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0047_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0048_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0048_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0048_c2_summary_en_v1",
+        "label": "ACCOUNT",
+        "gold": "618947871933",
+        "predicted": [
+          "NIC:618947871933"
+        ]
+      }
+    ],
+    "missed": [
+      {
+        "doc_id": "SYN_T0002_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "හච්",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0012_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Gayan",
+        "predicted": [
+          "ORG:Gayan of Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0028_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "හච්",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0032_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Isuru",
+        "predicted": [
+          "ORG:Isuru of Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0033_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "හච්",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0033_c2_summary_en_v1",
+        "label": "PERSON",
+        "gold": "Amal",
+        "predicted": [
+          "ORG:Amal of Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0047_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "හච්",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0048_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": [
+          "PERSON:Rashmi of Hutch"
+        ]
+      },
+      {
+        "doc_id": "SYN_T0051_transcript_u001_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0051_c2_u001_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0051_c2_u001_si_v1",
+        "label": "ORG",
+        "gold": "හච්",
+        "predicted": []
+      },
+      {
+        "doc_id": "SYN_T0051_c2_summary_en_v1",
+        "label": "ORG",
+        "gold": "Hutch",
+        "predicted": []
+      }
+    ],
+    "spurious": [
+      {
+        "doc_id": "SYN_T0001_transcript_u004_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0001_transcript_u007_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0002_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Panadura"
+      },
+      {
+        "doc_id": "SYN_T0003_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0004_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0005_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0005_transcript_u005_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0006_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0006_c2_u004_en_v1",
+        "label": "ORG",
+        "predicted": "Chilaw"
+      },
+      {
+        "doc_id": "SYN_T0006_transcript_u005_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0008_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0008_c2_u009_si_v1",
+        "label": "ORG",
+        "predicted": "කළුතර"
+      },
+      {
+        "doc_id": "SYN_T0008_transcript_u010_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0008_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Kalutara"
+      },
+      {
+        "doc_id": "SYN_T0009_c2_u004_en_v1",
+        "label": "ORG",
+        "predicted": "Homagama"
+      },
+      {
+        "doc_id": "SYN_T0009_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Homagama"
+      },
+      {
+        "doc_id": "SYN_T0010_transcript_u003_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0010_c2_u010_en_v1",
+        "label": "ORG",
+        "predicted": "Badulla"
+      },
+      {
+        "doc_id": "SYN_T0010_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Badulla"
+      },
+      {
+        "doc_id": "SYN_T0012_transcript_u003_v1",
+        "label": "PERSON",
+        "predicted": "ipadune"
+      },
+      {
+        "doc_id": "SYN_T0012_c2_u003_si_v1",
+        "label": "PERSON",
+        "predicted": "ඉපදුණේ"
+      },
+      {
+        "doc_id": "SYN_T0013_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0013_transcript_u004_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0013_c2_u006_en_v1",
+        "label": "ORG",
+        "predicted": "Chilaw"
+      },
+      {
+        "doc_id": "SYN_T0013_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Chilaw"
+      },
+      {
+        "doc_id": "SYN_T0014_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0014_transcript_u004_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0015_transcript_u003_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0017_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0018_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0019_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0019_transcript_u006_v1",
+        "label": "PERSON",
+        "predicted": "ipadune"
+      },
+      {
+        "doc_id": "SYN_T0019_c2_u006_si_v1",
+        "label": "PERSON",
+        "predicted": "ඉපදුණේ"
+      },
+      {
+        "doc_id": "SYN_T0020_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0020_transcript_u005_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0022_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0022_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Ratnapura"
+      },
+      {
+        "doc_id": "SYN_T0024_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0024_transcript_u006_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0024_transcript_u007_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0024_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Anuradhapura"
+      },
+      {
+        "doc_id": "SYN_T0025_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0025_transcript_u010_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0026_transcript_u009_v1",
+        "label": "ORG",
+        "predicted": "Chilaw"
+      },
+      {
+        "doc_id": "SYN_T0026_c2_u009_en_v1",
+        "label": "ORG",
+        "predicted": "Chilaw"
+      },
+      {
+        "doc_id": "SYN_T0026_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Chilaw"
+      },
+      {
+        "doc_id": "SYN_T0027_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0027_transcript_u007_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0028_transcript_u003_v1",
+        "label": "PERSON",
+        "predicted": "ipadune"
+      },
+      {
+        "doc_id": "SYN_T0028_c2_u003_si_v1",
+        "label": "PERSON",
+        "predicted": "ඉපදුණේ"
+      },
+      {
+        "doc_id": "SYN_T0029_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0029_c2_u010_si_v1",
+        "label": "ORG",
+        "predicted": "කළුතර"
+      },
+      {
+        "doc_id": "SYN_T0029_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Kalutara"
+      },
+      {
+        "doc_id": "SYN_T0032_transcript_u003_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0032_transcript_u008_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0033_transcript_u005_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0034_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Anuradhapura"
+      },
+      {
+        "doc_id": "SYN_T0035_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0035_c2_u007_en_v1",
+        "label": "ORG",
+        "predicted": "Homagama"
+      },
+      {
+        "doc_id": "SYN_T0036_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0036_transcript_u012_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0037_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0037_transcript_u005_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0037_transcript_u014_v1",
+        "label": "ORG",
+        "predicted": "Kalutara"
+      },
+      {
+        "doc_id": "SYN_T0037_c2_u014_si_v1",
+        "label": "ORG",
+        "predicted": "කළුතර"
+      },
+      {
+        "doc_id": "SYN_T0037_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Kalutara"
+      },
+      {
+        "doc_id": "SYN_T0038_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0038_c2_u006_en_v1",
+        "label": "ORG",
+        "predicted": "Jaffna"
+      },
+      {
+        "doc_id": "SYN_T0038_transcript_u010_v1",
+        "label": "PERSON",
+        "predicted": "prashnayak"
+      },
+      {
+        "doc_id": "SYN_T0039_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0039_transcript_u004_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0041_c2_u006_si_v1",
+        "label": "ORG",
+        "predicted": "කළුතර"
+      },
+      {
+        "doc_id": "SYN_T0043_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0043_c2_u004_en_v1",
+        "label": "ORG",
+        "predicted": "Badulla"
+      },
+      {
+        "doc_id": "SYN_T0045_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0045_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Panadura"
+      },
+      {
+        "doc_id": "SYN_T0046_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0047_c2_u003_en_v1",
+        "label": "ORG",
+        "predicted": "Badulla"
+      },
+      {
+        "doc_id": "SYN_T0047_transcript_u004_v1",
+        "label": "PERSON",
+        "predicted": "ipadune"
+      },
+      {
+        "doc_id": "SYN_T0047_c2_u004_si_v1",
+        "label": "PERSON",
+        "predicted": "ඉපදුණේ"
+      },
+      {
+        "doc_id": "SYN_T0048_transcript_u004_v1",
+        "label": "ORG",
+        "predicted": "Chilaw"
+      },
+      {
+        "doc_id": "SYN_T0048_c2_u004_en_v1",
+        "label": "ORG",
+        "predicted": "Chilaw"
+      },
+      {
+        "doc_id": "SYN_T0048_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Chilaw"
+      },
+      {
+        "doc_id": "SYN_T0049_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0049_transcript_u004_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0050_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0050_transcript_u008_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0051_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0051_transcript_u013_v1",
+        "label": "ACCOUNT",
+        "predicted": "150000"
+      },
+      {
+        "doc_id": "SYN_T0051_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Anuradhapura"
+      },
+      {
+        "doc_id": "SYN_T0052_transcript_u005_v1",
+        "label": "PERSON",
+        "predicted": "prashnayak"
+      },
+      {
+        "doc_id": "SYN_T0053_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0053_transcript_u004_v1",
+        "label": "PERSON",
+        "predicted": "prashnayak"
+      },
+      {
+        "doc_id": "SYN_T0054_transcript_u003_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0055_c2_u008_en_v1",
+        "label": "ORG",
+        "predicted": "Homagama"
+      },
+      {
+        "doc_id": "SYN_T0057_transcript_u002_v1",
+        "label": "PERSON",
+        "predicted": "mokakda"
+      },
+      {
+        "doc_id": "SYN_T0057_transcript_u010_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0057_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Ratnapura"
+      },
+      {
+        "doc_id": "SYN_T0058_transcript_u007_v1",
+        "label": "ORG",
+        "predicted": "Chilaw"
+      },
+      {
+        "doc_id": "SYN_T0058_c2_u007_en_v1",
+        "label": "ORG",
+        "predicted": "Chilaw"
+      },
+      {
+        "doc_id": "SYN_T0058_transcript_u008_v1",
+        "label": "PERSON",
+        "predicted": "salli"
+      },
+      {
+        "doc_id": "SYN_T0058_c2_summary_en_v1",
+        "label": "ORG",
+        "predicted": "Chilaw"
+      }
+    ]
+  },
+  "recall_by_noise": {
+    "clean": {
+      "recall": 0.9471,
+      "support": 1587
+    },
+    "digit_repeated": {
+      "recall": 1.0,
+      "support": 6
+    },
+    "nic_letter_dropped": {
+      "recall": 1.0,
+      "support": 9
+    },
+    "ordinal_error": {
+      "recall": 1.0,
+      "support": 10
+    },
+    "restatement": {
+      "recall": 1.0,
+      "support": 8
+    }
+  }
+}

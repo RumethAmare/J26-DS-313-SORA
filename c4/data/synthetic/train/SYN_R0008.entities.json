@@ -1,0 +1,139 @@
+{
+  "recording": "SYN_R0008",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0008_e001",
+      "canonical": "Kasun",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kasun"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කසුන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0008_e002",
+      "canonical": "People's Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "People's Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "People's Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මහජන බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0008_e003",
+      "canonical": "Nethmi Perera",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nethmi Perera"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නෙත්මි පෙරේරා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0008_e004",
+      "canonical": "nethmi.perera90@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "nethmi.perera90@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "nethmi.perera90@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "nethmi.perera90@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0008_e005",
+      "canonical": "3418361650",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "3418361650",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "3 4 1 8 3 6 1 6 5 0"
+        },
+        {
+          "script": "LATIN",
+          "form": "3418361650"
+        },
+        {
+          "script": "SINHALA",
+          "form": "3418361650"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0008_e006",
+      "canonical": "197084672259",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "197084672259",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "197084672259"
+        },
+        {
+          "script": "SINHALA",
+          "form": "197084672259"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0008_e007",
+      "canonical": "Nuwan Mendis",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nuwan Mendis"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නුවන් මෙන්ඩිස්"
+        }
+      ]
+    }
+  ]
+}

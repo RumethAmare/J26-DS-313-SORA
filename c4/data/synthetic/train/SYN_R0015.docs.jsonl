@@ -1,0 +1,22 @@
+{"doc_id": "SYN_R0015_transcript_u001_v1", "recording": "SYN_R0015", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "good morning, Dialog customer service, mama kasun."}
+{"doc_id": "SYN_R0015_c2_u001_en_v1", "recording": "SYN_R0015", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good morning, Dialog customer service, Kasun speaking."}
+{"doc_id": "SYN_R0015_c2_u001_si_v1", "recording": "SYN_R0015", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම කසුන්, ඩයලොග් ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0015_transcript_u002_v1", "recording": "SYN_R0015", "kind": "transcript", "utterance": 2, "topic": "name", "text": "mage nama රුවන්."}
+{"doc_id": "SYN_R0015_c2_u002_en_v1", "recording": "SYN_R0015", "kind": "en", "utterance": 2, "topic": "name", "text": "My name is Ruwan Bandara."}
+{"doc_id": "SYN_R0015_c2_u002_si_v1", "recording": "SYN_R0015", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔව්, මම රුවන්."}
+{"doc_id": "SYN_R0015_transcript_u003_v1", "recording": "SYN_R0015", "kind": "transcript", "utterance": 3, "topic": "relative", "text": "mage thaththage nama කමල් ගුණවර්ධන."}
+{"doc_id": "SYN_R0015_c2_u003_en_v1", "recording": "SYN_R0015", "kind": "en", "utterance": 3, "topic": "relative", "text": "My father's name is Kamal Gunawardena."}
+{"doc_id": "SYN_R0015_c2_u003_si_v1", "recording": "SYN_R0015", "kind": "si", "utterance": 3, "topic": "relative", "text": "මගේ තාත්තාගේ නම කමල් ගුණවර්ධන."}
+{"doc_id": "SYN_R0015_transcript_u004_v1", "recording": "SYN_R0015", "kind": "transcript", "utterance": 4, "topic": "address", "text": "mama inne 74, පාසල් පටුමග, මීගමුව."}
+{"doc_id": "SYN_R0015_c2_u004_en_v1", "recording": "SYN_R0015", "kind": "en", "utterance": 4, "topic": "address", "text": "I live at No. 74, School Lane, Negombo."}
+{"doc_id": "SYN_R0015_c2_u004_si_v1", "recording": "SYN_R0015", "kind": "si", "utterance": 4, "topic": "address", "text": "මගේ ලිපිනය 74, පාසල් පටුමග, මීගමුව."}
+{"doc_id": "SYN_R0015_transcript_u005_v1", "recording": "SYN_R0015", "kind": "transcript", "utterance": 5, "topic": "email", "text": "mage email එක ruwan.bandara66@yahoo.com."}
+{"doc_id": "SYN_R0015_c2_u005_en_v1", "recording": "SYN_R0015", "kind": "en", "utterance": 5, "topic": "email", "text": "My email address is ruwan.bandara66@yahoo.com."}
+{"doc_id": "SYN_R0015_c2_u005_si_v1", "recording": "SYN_R0015", "kind": "si", "utterance": 5, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය ruwan.bandara66@yahoo.com."}
+{"doc_id": "SYN_R0015_transcript_u006_v1", "recording": "SYN_R0015", "kind": "transcript", "utterance": 6, "topic": "hotline", "text": "oyata 0 1 1 7 3 0 1 5 8 2 ta call karanna puluwan."}
+{"doc_id": "SYN_R0015_c2_u006_en_v1", "recording": "SYN_R0015", "kind": "en", "utterance": 6, "topic": "hotline", "text": "You can call the Dialog hotline on 0117301582."}
+{"doc_id": "SYN_R0015_c2_u006_si_v1", "recording": "SYN_R0015", "kind": "si", "utterance": 6, "topic": "hotline", "text": "ඩයලොග් ක්ෂණික ඇමතුම් අංකය 0117301582."}
+{"doc_id": "SYN_R0015_transcript_u007_v1", "recording": "SYN_R0015", "kind": "transcript", "utterance": 7, "topic": "account", "text": "මගේ account එක නවයයි හතළිස්නවයයි පන්සිය පනස්හතරයි හැටනවයයි දෙකයි බිංදුවයි හැටපහ."}
+{"doc_id": "SYN_R0015_c2_u007_en_v1", "recording": "SYN_R0015", "kind": "en", "utterance": 7, "topic": "account", "text": "My account number is 949554692065."}
+{"doc_id": "SYN_R0015_c2_u007_si_v1", "recording": "SYN_R0015", "kind": "si", "utterance": 7, "topic": "account", "text": "මගේ ගිණුම් අංකය 949554692065."}
+{"doc_id": "SYN_R0015_c2_summary_en_v1", "recording": "SYN_R0015", "kind": "summary", "utterance": null, "topic": "summary", "text": "Ruwan Bandara called Dialog and spoke to Kasun. The nominee is Kamal Gunawardena. The customer lives at No. 74, School Lane, Negombo. The email address on file is ruwan.bandara66@yahoo.com. The account number is 949554692065."}

@@ -1,0 +1,148 @@
+{
+  "recording": "SYN_R0048",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0048_e001",
+      "canonical": "Ruwan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "රුවන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ruwan"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0048_e002",
+      "canonical": "Dialog",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Dialog",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dialog"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඩයලොග්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0048_e003",
+      "canonical": "Sunil Wickramasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "sunil wickramasinghe"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sunil Wickramasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සුනිල් වික්‍රමසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0048_e004",
+      "canonical": "1996-08-03",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1996-08-03",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "03/08/1996"
+        },
+        {
+          "script": "LATIN",
+          "form": "3rd of August 1996"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1996.08.03"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0048_e005",
+      "canonical": "660431706520",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "660431706520",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "660 431 706 520"
+        },
+        {
+          "script": "LATIN",
+          "form": "660431706520"
+        },
+        {
+          "script": "SINHALA",
+          "form": "660431706520"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0048_e006",
+      "canonical": "sunil.wickramasinghe86@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "sunil.wickramasinghe86@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "sunil.wickramasinghe86@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "sunil.wickramasinghe86@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0048_e007",
+      "canonical": "962160857V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "962160857V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "962160857V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "962160857V"
+        }
+      ]
+    }
+  ]
+}

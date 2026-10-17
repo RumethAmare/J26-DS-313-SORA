@@ -1,0 +1,212 @@
+{
+  "recording": "SYN_R0031",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0031_e001",
+      "canonical": "Dilani",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dilani"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දිලානි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0031_e002",
+      "canonical": "Mobitel",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Mobitel",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Mobitel"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මොබිටෙල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0031_e003",
+      "canonical": "Tharindu Rathnayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "තරිඳු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Tharindu Rathnayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0031_e004",
+      "canonical": "1971-10-14",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1971-10-14",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "October 14, 1971"
+        },
+        {
+          "script": "LATIN",
+          "form": "1971-10-14"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1971.10.14"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0031_e005",
+      "canonical": "No. 187, Hospital Road, Negombo",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 187, Hospital Road, Negombo"
+        },
+        {
+          "script": "SINHALA",
+          "form": "187, රෝහල් පාර, මීගමුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0031_e006",
+      "canonical": "tharindu.rathnayake49@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "tharindu.rathnayake49@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "tharindu.rathnayake49@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "tharindu.rathnayake49@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0031_e007",
+      "canonical": "226145915211",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "226145915211",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "දෙසිය විසි හයයි දාහතරයි පන්සිය අනූ එකයි පන්සිය විසි එකයි එක"
+        },
+        {
+          "script": "LATIN",
+          "form": "226145915211"
+        },
+        {
+          "script": "SINHALA",
+          "form": "226145915211"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0031_e008",
+      "canonical": "197128847277",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "197128847277",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "එකසිය අනූ හතයි එකයි දෙකයි අසූ අටයි හාරසිය හැත්තෑ දෙකයි හතයි හත"
+        },
+        {
+          "script": "LATIN",
+          "form": "197128847277"
+        },
+        {
+          "script": "SINHALA",
+          "form": "197128847277"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0031_e009",
+      "canonical": "0779376922",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0779376922",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "077 9376 922"
+        },
+        {
+          "script": "LATIN",
+          "form": "0779376922"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0779376922"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0031_e010",
+      "canonical": "0112005693",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0112005693",
+      "redact": false,
+      "value": "0112005693",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 1 1 2 0 0 5 6 9 3"
+        },
+        {
+          "script": "LATIN",
+          "form": "0112005693"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0112005693"
+        }
+      ]
+    }
+  ]
+}

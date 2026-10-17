@@ -1,0 +1,150 @@
+{
+  "recording": "SYN_T0040",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0040_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0040_e002",
+      "canonical": "Saman",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Saman"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සමන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0040_e003",
+      "canonical": "Yasodha Abeysekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Yasodha"
+        },
+        {
+          "script": "SINHALA",
+          "form": "යශෝධා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Yasodha Abeysekara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0040_e004",
+      "canonical": "0700117451",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0700117451",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero binduwai hathai binduwai binduwai ekai ekai hathai hatharai pahai eka"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 70 011 7451"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0700117451"
+        },
+        {
+          "script": "LATIN",
+          "form": "0700117451"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0040_e005",
+      "canonical": "2002-02-14",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "2002-02-14",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "14th February 2002"
+        },
+        {
+          "script": "LATIN",
+          "form": "14 February 2002"
+        },
+        {
+          "script": "SINHALA",
+          "form": "2002.02.14"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0040_e006",
+      "canonical": "No. 172, Church Street, Anuradhapura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 172, Church Street, Anuradhapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "172, පල්ලිය වීදිය, අනුරාධපුරය"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0040_e007",
+      "canonical": "Isuru Ekanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Isuru Ekanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු ඒකනායක"
+        }
+      ]
+    }
+  ]
+}

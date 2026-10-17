@@ -1,0 +1,183 @@
+{
+  "recording": "SYN_T0024",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0024_e001",
+      "canonical": "Seylan Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Seylan Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Seylan Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලාන් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0024_e002",
+      "canonical": "Amal",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "amal"
+        },
+        {
+          "script": "LATIN",
+          "form": "Amal"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අමල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0024_e003",
+      "canonical": "Piumi Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Piumi Weerasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "පියුමි වීරසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0024_e004",
+      "canonical": "No. 149, Kandy Road, Ratnapura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "149, Kandy Road, Ratnapura"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 149, Kandy Road, Ratnapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "149, මහනුවර පාර, රත්නපුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0024_e005",
+      "canonical": "6611712274",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "6611712274",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "661 171 2274"
+        },
+        {
+          "script": "LATIN",
+          "form": "6611712274"
+        },
+        {
+          "script": "SINHALA",
+          "form": "6611712274"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0024_e006",
+      "canonical": "Anuradhapura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Anuradhapura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Anuradhapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අනුරාධපුරය"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0024_e007",
+      "canonical": "Gayan Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Gayan Weerasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ගයාන් වීරසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0024_e008",
+      "canonical": "piumi.weerasinghe17@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "piumi.weerasinghe17@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "piumi.weerasinghe17@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "piumi.weerasinghe17@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0024_e009",
+      "canonical": "197461691612",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "197461691612",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "197461691612"
+        },
+        {
+          "script": "SINHALA",
+          "form": "197461691612"
+        }
+      ]
+    }
+  ]
+}

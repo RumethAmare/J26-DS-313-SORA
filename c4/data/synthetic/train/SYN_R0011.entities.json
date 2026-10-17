@@ -1,0 +1,166 @@
+{
+  "recording": "SYN_R0011",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0011_e001",
+      "canonical": "Bank of Ceylon",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Bank of Ceylon",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Bank of Ceylon"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ලංකා බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0011_e002",
+      "canonical": "Nuwan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nuwan"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නුවන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0011_e003",
+      "canonical": "Tharindu Silva",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Tharindu Silva"
+        },
+        {
+          "script": "SINHALA",
+          "form": "තරිඳු සිල්වා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0011_e004",
+      "canonical": "tharindu.silva84@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "tharindu.silva84@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "tharindu.silva84@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "tharindu.silva84@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0011_e005",
+      "canonical": "0777824722",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0777824722",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හැත්තෑ හතයි හැත්තෑ අටයි දෙසිය හතළිස් හතයි විසි දෙක"
+        },
+        {
+          "script": "LATIN",
+          "form": "0777824722"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0777824722"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0011_e006",
+      "canonical": "Tharindu Mendis",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Tharindu Mendis"
+        },
+        {
+          "script": "SINHALA",
+          "form": "තරිඳු මෙන්ඩිස්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0011_e007",
+      "canonical": "800947909X",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "800947909X",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "800 947 909 x"
+        },
+        {
+          "script": "LATIN",
+          "form": "800947909X"
+        },
+        {
+          "script": "SINHALA",
+          "form": "800947909X"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0011_e008",
+      "canonical": "1980-04-03",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1980-04-03",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "April 3, 1980"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1980 අප්‍රේල් 3"
+        },
+        {
+          "script": "LATIN",
+          "form": "3 April 1980"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "recording": "SYN_T0008",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0008_e001",
+      "canonical": "NSB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "NSB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "NSB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජාතික ඉතිරිකිරීමේ බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0008_e002",
+      "canonical": "Anjali",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "anjali"
+        },
+        {
+          "script": "LATIN",
+          "form": "Anjali"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අංජලී"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0008_e003",
+      "canonical": "Gayan Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Gayan Weerasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ගයාන් වීරසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0008_e004",
+      "canonical": "gayan.weerasinghe35@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "gayan.weerasinghe35@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "gayan.weerasinghe35@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "gayan.weerasinghe35@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0008_e005",
+      "canonical": "0770749936",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0770749936",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero binduwai hathai hathai binduwai hathai hatharai namayai namayai thunai haya"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 77 074 9936"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0770749936"
+        },
+        {
+          "script": "LATIN",
+          "form": "0770749936"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0008_e006",
+      "canonical": "195905474654",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "195905474654",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "one nine five, nine zero five, four seven four, six five four"
+        },
+        {
+          "script": "LATIN",
+          "form": "195905474654"
+        },
+        {
+          "script": "SINHALA",
+          "form": "195905474654"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0008_e007",
+      "canonical": "Kalutara",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Kalutara",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kalutara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කළුතර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0008_e008",
+      "canonical": "80909400863445",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "80909400863445",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අසූවයි නවයයි බිංදුවයි නවසිය හතළිහයි බිංදුවයි අටසිය හැට තුනයි හතළිස් හතරයි පහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "80909400863445"
+        },
+        {
+          "script": "SINHALA",
+          "form": "80909400863445"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0008_e009",
+      "canonical": "Janaka Ekanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Janaka Ekanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක ඒකනායක"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "recording": "SYN_T0060",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0060_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0060_e002",
+      "canonical": "Isuru",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0060_e003",
+      "canonical": "Madhavi Abeysekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "madhavi"
+        },
+        {
+          "script": "LATIN",
+          "form": "Madhavi"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මාධවී"
+        },
+        {
+          "script": "LATIN",
+          "form": "Madhavi Abeysekara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0060_e004",
+      "canonical": "Amal Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Amal Kumara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අමල් කුමාර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0060_e005",
+      "canonical": "No. 134, Park Avenue, Anuradhapura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "134, Park Avenue, Anuradhapura"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 134, Park Avenue, Anuradhapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "134, උද්‍යාන මාවත, අනුරාධපුරය"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0060_e006",
+      "canonical": "455690585040",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "455690585040",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "four five five, six nine zero, five eight five, zero four zero"
+        },
+        {
+          "script": "LATIN",
+          "form": "455690585040"
+        },
+        {
+          "script": "SINHALA",
+          "form": "455690585040"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0060_e007",
+      "canonical": "0114160399",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0114160399",
+      "redact": false,
+      "value": "0114160399",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero one one, four one six, zero three nine, nine"
+        },
+        {
+          "script": "LATIN",
+          "form": "0114160399"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0114160399"
+        }
+      ]
+    }
+  ]
+}

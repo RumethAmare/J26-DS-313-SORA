@@ -1,0 +1,146 @@
+{
+  "recording": "SYN_T0005",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0005_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0005_e002",
+      "canonical": "Shanika",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "shanika"
+        },
+        {
+          "script": "LATIN",
+          "form": "Shanika"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශානිකා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0005_e003",
+      "canonical": "Piumi Pathirana",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Piumi Pathirana"
+        },
+        {
+          "script": "SINHALA",
+          "form": "පියුමි පතිරණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0005_e004",
+      "canonical": "120031952214",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "120031952214",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "120 031 952 214"
+        },
+        {
+          "script": "LATIN",
+          "form": "120031952214"
+        },
+        {
+          "script": "SINHALA",
+          "form": "120031952214"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0005_e005",
+      "canonical": "0110632630",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0110632630",
+      "redact": false,
+      "value": "0110632630",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි එකොළහයි බිංදුවයි හැට තුනයි දෙකයි හයයි තිහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "0110632630"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0110632630"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0005_e006",
+      "canonical": "Anuradhapura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Anuradhapura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අනුරාධපුරය"
+        },
+        {
+          "script": "LATIN",
+          "form": "Anuradhapura"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0005_e007",
+      "canonical": "Isuru Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Isuru Weerasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු වීරසිංහ"
+        }
+      ]
+    }
+  ]
+}

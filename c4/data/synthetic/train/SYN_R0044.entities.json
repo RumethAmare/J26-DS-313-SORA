@@ -1,0 +1,170 @@
+{
+  "recording": "SYN_R0044",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0044_e001",
+      "canonical": "Ishara",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ishara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉෂාරා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0044_e002",
+      "canonical": "Mobitel",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Mobitel",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Mobitel"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මොබිටෙල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0044_e003",
+      "canonical": "Ruwan Perera",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "රුවන් පෙරේරා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Mr. Perera"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ruwan Perera"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0044_e004",
+      "canonical": "0118038322",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0118038322",
+      "redact": false,
+      "value": "0118038322",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 1 1 8 0 3 8 3 2 2"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 803 8322"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0118038322"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0044_e005",
+      "canonical": "1978-06-05",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1978-06-05",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "5th of June 1978"
+        },
+        {
+          "script": "LATIN",
+          "form": "5 June 1978"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1978 ජූනි 5"
+        },
+        {
+          "script": "LATIN",
+          "form": "June 5, 1978"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0044_e006",
+      "canonical": "ruwan.perera32@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "ruwan.perera32@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ruwan.perera32@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ruwan.perera32@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0044_e007",
+      "canonical": "No. 24, Lake Road, Moratuwa",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "24, වැව් පාර, මොරටුව"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 24, Lake Road, Moratuwa"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0044_e008",
+      "canonical": "197815792841",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "197815792841",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "197815792841"
+        },
+        {
+          "script": "SINHALA",
+          "form": "197815792841"
+        }
+      ]
+    }
+  ]
+}

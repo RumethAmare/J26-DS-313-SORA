@@ -1,0 +1,19 @@
+{"doc_id": "SYN_T0060_transcript_u001_v1", "recording": "SYN_T0060", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "ah Ceylinco Insurance ekata call kalata thanks, mage nama ඉසුරු."}
+{"doc_id": "SYN_T0060_c2_u001_en_v1", "recording": "SYN_T0060", "kind": "en", "utterance": 1, "topic": "greet", "text": "Thank you for calling Ceylinco Insurance, my name is Isuru."}
+{"doc_id": "SYN_T0060_c2_u001_si_v1", "recording": "SYN_T0060", "kind": "si", "utterance": 1, "topic": "greet", "text": "සෙලින්කෝ රක්ෂණ ඇමතීම ගැන ස්තූතියි, මගේ නම ඉසුරු."}
+{"doc_id": "SYN_T0060_transcript_u002_v1", "recording": "SYN_T0060", "kind": "transcript", "utterance": 2, "topic": "name", "text": "mama madhavi, account holder."}
+{"doc_id": "SYN_T0060_c2_u002_en_v1", "recording": "SYN_T0060", "kind": "en", "utterance": 2, "topic": "name", "text": "I am Madhavi, the account holder."}
+{"doc_id": "SYN_T0060_c2_u002_si_v1", "recording": "SYN_T0060", "kind": "si", "utterance": 2, "topic": "name", "text": "මම මාධවී, ගිණුම් හිමියා."}
+{"doc_id": "SYN_T0060_transcript_u003_v1", "recording": "SYN_T0060", "kind": "transcript", "utterance": 3, "topic": "relative", "text": "mage ayya Amal Kumara th ekka enawa."}
+{"doc_id": "SYN_T0060_c2_u003_en_v1", "recording": "SYN_T0060", "kind": "en", "utterance": 3, "topic": "relative", "text": "My brother Amal Kumara will come with me."}
+{"doc_id": "SYN_T0060_c2_u003_si_v1", "recording": "SYN_T0060", "kind": "si", "utterance": 3, "topic": "relative", "text": "මගේ අයියා අමල් කුමාර මා සමඟ එනවා."}
+{"doc_id": "SYN_T0060_transcript_u004_v1", "recording": "SYN_T0060", "kind": "transcript", "utterance": 4, "topic": "address", "text": "letters ewanna 134, Park Avenue, Anuradhapura ta."}
+{"doc_id": "SYN_T0060_c2_u004_en_v1", "recording": "SYN_T0060", "kind": "en", "utterance": 4, "topic": "address", "text": "Please send letters to No. 134, Park Avenue, Anuradhapura."}
+{"doc_id": "SYN_T0060_c2_u004_si_v1", "recording": "SYN_T0060", "kind": "si", "utterance": 4, "topic": "address", "text": "ලියුම් 134, උද්‍යාන මාවත, අනුරාධපුරය වෙත එවන්න."}
+{"doc_id": "SYN_T0060_transcript_u005_v1", "recording": "SYN_T0060", "kind": "transcript", "utterance": 5, "topic": "account", "text": "uh, savings eke number eka four five five, six nine zero, five eight five, zero four zero."}
+{"doc_id": "SYN_T0060_c2_u005_en_v1", "recording": "SYN_T0060", "kind": "en", "utterance": 5, "topic": "account", "text": "My savings number is 455690585040."}
+{"doc_id": "SYN_T0060_c2_u005_si_v1", "recording": "SYN_T0060", "kind": "si", "utterance": 5, "topic": "account", "text": "මගේ ඉතුරුම් අංකය 455690585040."}
+{"doc_id": "SYN_T0060_transcript_u006_v1", "recording": "SYN_T0060", "kind": "transcript", "utterance": 6, "topic": "hotline", "text": "ah prashnayak thiyenam zero one one, four one six, zero three nine, nine ta call karanna."}
+{"doc_id": "SYN_T0060_c2_u006_en_v1", "recording": "SYN_T0060", "kind": "en", "utterance": 6, "topic": "hotline", "text": "For any issue, call 0114160399."}
+{"doc_id": "SYN_T0060_c2_u006_si_v1", "recording": "SYN_T0060", "kind": "si", "utterance": 6, "topic": "hotline", "text": "ගැටලුවක් ඇත්නම් 0114160399 අමතන්න."}
+{"doc_id": "SYN_T0060_c2_summary_en_v1", "recording": "SYN_T0060", "kind": "summary", "utterance": null, "topic": "summary", "text": "Isuru of Ceylinco Insurance handled a call from Madhavi Abeysekara. Amal Kumara was mentioned as a family member. Residential address: No. 134, Park Avenue, Anuradhapura. Funds are to be credited to 455690585040."}

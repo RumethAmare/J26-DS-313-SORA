@@ -1,0 +1,203 @@
+{
+  "recording": "SYN_R0029",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0029_e001",
+      "canonical": "Pradeep",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Pradeep"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ප්‍රදීප්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0029_e002",
+      "canonical": "Commercial Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Commercial Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Commercial Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කොමර්ෂල් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0029_e003",
+      "canonical": "Tharindu Silva",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "තරිඳු සිල්වා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Tharindu Silva"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0029_e004",
+      "canonical": "1985-01-17",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1985-01-17",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "17th of January 1985"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1985.01.17"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0029_e005",
+      "canonical": "Maharagama",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Maharagama",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "මහරගම"
+        },
+        {
+          "script": "LATIN",
+          "form": "Maharagama"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0029_e006",
+      "canonical": "No. 217/1, Station Road, Maharagama",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "217/1, Station Road, Maharagama"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 217/1, Station Road, Maharagama"
+        },
+        {
+          "script": "SINHALA",
+          "form": "217/1, දුම්රියපොළ පාර, මහරගම"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0029_e007",
+      "canonical": "198501771654",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "198501771654",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "198501771654"
+        },
+        {
+          "script": "SINHALA",
+          "form": "198501771654"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0029_e008",
+      "canonical": "0764464331",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0764464331",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 6 4 4 6 4 3 3 1"
+        },
+        {
+          "script": "LATIN",
+          "form": "0764464331"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0764464331"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0029_e009",
+      "canonical": "925892564520",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "925892564520",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අනූ දෙකයි පහයි අටසිය අනූ දෙකයි පනස් හයයි හතළිස් පහයි විස්ස"
+        },
+        {
+          "script": "LATIN",
+          "form": "925892564520"
+        },
+        {
+          "script": "SINHALA",
+          "form": "925892564520"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0029_e010",
+      "canonical": "tharindu.silva62@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "tharindu.silva62@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "tharindu.silva62@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "tharindu.silva62@yahoo.com"
+        }
+      ]
+    }
+  ]
+}

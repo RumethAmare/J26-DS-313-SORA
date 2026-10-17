@@ -1,0 +1,143 @@
+{
+  "recording": "SYN_T0044",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0044_e001",
+      "canonical": "Seylan Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Seylan Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Seylan Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලාන් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0044_e002",
+      "canonical": "Piumi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Piumi"
+        },
+        {
+          "script": "SINHALA",
+          "form": "පියුමි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0044_e003",
+      "canonical": "Amal Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Amal Ranasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අමල් රණසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0044_e004",
+      "canonical": "0771962288",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0771962288",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "077 1962 288"
+        },
+        {
+          "script": "LATIN",
+          "form": "0771962288"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0771962288"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0044_e005",
+      "canonical": "640211981V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "640211981V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "6 4 0 2 1 1 9 8 1 v"
+        },
+        {
+          "script": "LATIN",
+          "form": "640211981V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "640211981V"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0044_e006",
+      "canonical": "No. 77, Circular Road, Homagama",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "77, වටරවුම් පාර, හෝමාගම"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 77, Circular Road, Homagama"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0044_e007",
+      "canonical": "amal.ranasinghe28@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "amal.ranasinghe28@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "amal.ranasinghe28@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "amal.ranasinghe28@yahoo.com"
+        }
+      ]
+    }
+  ]
+}

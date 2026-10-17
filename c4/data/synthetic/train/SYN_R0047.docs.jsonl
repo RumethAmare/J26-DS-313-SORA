@@ -1,0 +1,22 @@
+{"doc_id": "SYN_R0047_transcript_u001_v1", "recording": "SYN_R0047", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "good morning, Dialog customer service, mama Chamari."}
+{"doc_id": "SYN_R0047_c2_u001_en_v1", "recording": "SYN_R0047", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good morning, Dialog customer service, Chamari speaking."}
+{"doc_id": "SYN_R0047_c2_u001_si_v1", "recording": "SYN_R0047", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම චමරි, ඩයලොග් ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0047_transcript_u002_v1", "recording": "SYN_R0047", "kind": "transcript", "utterance": 2, "topic": "name", "text": "මගේ නම චතුර ප්‍රනාන්දු."}
+{"doc_id": "SYN_R0047_c2_u002_en_v1", "recording": "SYN_R0047", "kind": "en", "utterance": 2, "topic": "name", "text": "My name is Chathura Fernando."}
+{"doc_id": "SYN_R0047_c2_u002_si_v1", "recording": "SYN_R0047", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔව්, මම චතුර."}
+{"doc_id": "SYN_R0047_transcript_u003_v1", "recording": "SYN_R0047", "kind": "transcript", "utterance": 3, "topic": "relative", "text": "account eke nominee Dinesh Herath."}
+{"doc_id": "SYN_R0047_c2_u003_en_v1", "recording": "SYN_R0047", "kind": "en", "utterance": 3, "topic": "relative", "text": "The nominee on the account is Dinesh Herath."}
+{"doc_id": "SYN_R0047_c2_u003_si_v1", "recording": "SYN_R0047", "kind": "si", "utterance": 3, "topic": "relative", "text": "මගේ තාත්තාගේ නම දිනේෂ් හේරත්."}
+{"doc_id": "SYN_R0047_transcript_u004_v1", "recording": "SYN_R0047", "kind": "transcript", "utterance": 4, "topic": "nic", "text": "ow, ID number eka 198333764395."}
+{"doc_id": "SYN_R0047_c2_u004_en_v1", "recording": "SYN_R0047", "kind": "en", "utterance": 4, "topic": "nic", "text": "My national identity card number is 198333764395."}
+{"doc_id": "SYN_R0047_c2_u004_si_v1", "recording": "SYN_R0047", "kind": "si", "utterance": 4, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 198333764395."}
+{"doc_id": "SYN_R0047_transcript_u005_v1", "recording": "SYN_R0047", "kind": "transcript", "utterance": 5, "topic": "payment", "text": "mama 12th of December rupiyal 2500 gewwa."}
+{"doc_id": "SYN_R0047_c2_u005_en_v1", "recording": "SYN_R0047", "kind": "en", "utterance": 5, "topic": "payment", "text": "I paid Rs. 2,500 on 12th of December."}
+{"doc_id": "SYN_R0047_c2_u005_si_v1", "recording": "SYN_R0047", "kind": "si", "utterance": 5, "topic": "payment", "text": "මම දෙසැම්බර් 12 රුපියල් 2,500 ක් ගෙව්වා."}
+{"doc_id": "SYN_R0047_transcript_u006_v1", "recording": "SYN_R0047", "kind": "transcript", "utterance": 6, "topic": "email", "text": "mage email එක chathura.fernando42@gmail.com."}
+{"doc_id": "SYN_R0047_c2_u006_en_v1", "recording": "SYN_R0047", "kind": "en", "utterance": 6, "topic": "email", "text": "My email address is chathura.fernando42@gmail.com."}
+{"doc_id": "SYN_R0047_c2_u006_si_v1", "recording": "SYN_R0047", "kind": "si", "utterance": 6, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය chathura.fernando42@gmail.com."}
+{"doc_id": "SYN_R0047_transcript_u007_v1", "recording": "SYN_R0047", "kind": "transcript", "utterance": 7, "topic": "dob", "text": "mage birthday eka December 2, 1983."}
+{"doc_id": "SYN_R0047_c2_u007_en_v1", "recording": "SYN_R0047", "kind": "en", "utterance": 7, "topic": "dob", "text": "I was born on December 2, 1983."}
+{"doc_id": "SYN_R0047_c2_u007_si_v1", "recording": "SYN_R0047", "kind": "si", "utterance": 7, "topic": "dob", "text": "මගේ උපන් දිනය 1983.12.02."}
+{"doc_id": "SYN_R0047_c2_summary_en_v1", "recording": "SYN_R0047", "kind": "summary", "utterance": null, "topic": "summary", "text": "Chathura Fernando called Dialog and spoke to Chamari. The nominee is Dinesh Herath. The customer's NIC number is 198333764395. A payment of Rs. 1,500 was discussed. The email address on file is chathura.fernando42@gmail.com. The date of birth given was 2nd of December 1983."}

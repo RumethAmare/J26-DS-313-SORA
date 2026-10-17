@@ -1,0 +1,159 @@
+{
+  "recording": "SYN_T0029",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0029_e001",
+      "canonical": "Seylan Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Seylan Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Seylan Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලාන් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0029_e002",
+      "canonical": "Anjali",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "anjali"
+        },
+        {
+          "script": "LATIN",
+          "form": "Anjali"
+        },
+        {
+          "script": "SINHALA",
+          "form": "අංජලී"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0029_e003",
+      "canonical": "Rashmi Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "rashmi ranasinghe"
+        },
+        {
+          "script": "LATIN",
+          "form": "Rashmi Ranasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "රශ්මි රණසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0029_e004",
+      "canonical": "197679336539",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "197679336539",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "one nine seven, six seven nine, three three six, five three nine"
+        },
+        {
+          "script": "LATIN",
+          "form": "197679336539"
+        },
+        {
+          "script": "SINHALA",
+          "form": "197679336539"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0029_e005",
+      "canonical": "0705218939",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0705218939",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai hathai binduwai pahai dekai ekai atai namayai thunai namaya"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 70 521 8939"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0705218939"
+        },
+        {
+          "script": "LATIN",
+          "form": "0705218939"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0029_e006",
+      "canonical": "rashmi.ranasinghe12@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "rashmi.ranasinghe12@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "rashmi.ranasinghe12@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "rashmi.ranasinghe12@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0029_e007",
+      "canonical": "Kalutara",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Kalutara",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "kalutara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kalutara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කළුතර"
+        }
+      ]
+    }
+  ]
+}

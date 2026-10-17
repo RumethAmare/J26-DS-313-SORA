@@ -1,0 +1,127 @@
+{
+  "recording": "SYN_R0039",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0039_e001",
+      "canonical": "Nethmi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nethmi"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නෙත්මි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0039_e002",
+      "canonical": "Sampath Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Sampath Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sampath Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0039_e003",
+      "canonical": "Lahiru Senanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "lahiru senanayake"
+        },
+        {
+          "script": "LATIN",
+          "form": "Mr. Senanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ලහිරු සේනානායක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Lahiru Senanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0039_e004",
+      "canonical": "Lahiru Perera",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Lahiru Perera"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ලහිරු පෙරේරා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0039_e005",
+      "canonical": "Galle",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Galle",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Galle"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ගාල්ල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0039_e006",
+      "canonical": "572091476V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "572091476V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "5 7 2 0 9 1 4 7 6 v"
+        },
+        {
+          "script": "LATIN",
+          "form": "572091476V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "572091476V"
+        }
+      ]
+    }
+  ]
+}

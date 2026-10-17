@@ -1,0 +1,211 @@
+{
+  "recording": "SYN_R0037",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0037_e001",
+      "canonical": "Bank of Ceylon",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Bank of Ceylon",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Bank of Ceylon"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ලංකා බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0037_e002",
+      "canonical": "Nuwan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nuwan"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නුවන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0037_e003",
+      "canonical": "Chamari Fernando",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Chamari Fernando"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ms. Fernando"
+        },
+        {
+          "script": "SINHALA",
+          "form": "චමරි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0037_e004",
+      "canonical": "0720648562",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0720648562",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හැත්තෑදෙකයි බිංදුවයි හයයි හතළිස්අටයි පහයි හැටදෙක"
+        },
+        {
+          "script": "LATIN",
+          "form": "0720648562"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0720648562"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0037_e005",
+      "canonical": "818608833862",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "818608833862",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "atai ekai atai hayai binduwai atai atai thunai thunai atai hayai deka"
+        },
+        {
+          "script": "LATIN",
+          "form": "818608833862"
+        },
+        {
+          "script": "SINHALA",
+          "form": "818608833862"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0037_e006",
+      "canonical": "1988-04-23",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1988-04-23",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "23/04/1988"
+        },
+        {
+          "script": "LATIN",
+          "form": "23 April 1988"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1988 අප්‍රේල් 23"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0037_e007",
+      "canonical": "0116091059",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0116091059",
+      "redact": false,
+      "value": "0116091059",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 609 1059"
+        },
+        {
+          "script": "LATIN",
+          "form": "0116091059"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0116091059"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0037_e008",
+      "canonical": "198861431547",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "198861431547",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "198861431547"
+        },
+        {
+          "script": "SINHALA",
+          "form": "198861431547"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0037_e009",
+      "canonical": "Kegalle",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Kegalle",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kegalle"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කෑගල්ල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0037_e010",
+      "canonical": "Chathura Jayasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Chathura Jayasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "චතුර ජයසිංහ"
+        }
+      ]
+    }
+  ]
+}
