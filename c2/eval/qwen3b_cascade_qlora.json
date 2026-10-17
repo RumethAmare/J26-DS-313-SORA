@@ -1,0 +1,28 @@
+{
+  "run_id": "qwen3b_cascade_qlora",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "lr": 0.0002,
+  "input": "cascade",
+  "train_conversations": 75,
+  "epochs": 3,
+  "dev": {
+    "summary": {
+      "n": 5,
+      "rougeL": 43.71
+    },
+    "actions": {
+      "pred": 14,
+      "gold": 11,
+      "intent": {
+        "p": 28.6,
+        "r": 36.4,
+        "f1": 32.0
+      },
+      "intent+owner": {
+        "p": 21.4,
+        "r": 27.3,
+        "f1": 24.0
+      }
+    }
+  }
+}

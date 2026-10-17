@@ -1,0 +1,16 @@
+{
+  "run_id": "nllb600m_en_frac100",
+  "model": "facebook/nllb-200-distilled-600M",
+  "target": "en",
+  "train_recordings": 75,
+  "train_pairs": 2369,
+  "epochs": 10,
+  "lr": 0.0001,
+  "fraction": 1.0,
+  "normalize": false,
+  "dev": {
+    "n": 95,
+    "chrf++": 56.33,
+    "bleu": 33.57
+  }
+}
