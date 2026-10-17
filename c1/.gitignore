@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Regenerable audio: scripts/make_noisy_variants.py rebuilds these from
+# the dataset audio, and at ~120MB per sweep they do not belong in git.
+predictions/noisy_audio/
+
+# Model weights: too large for GitHub (100 MB limit); rebuild with finetune_whisper.py
+models/whisper_lora/*/adapter_model.safetensors
+
+# Exported faster-whisper models (1.4-2.9 GB each); rebuild with scripts/export_ct2.py
+models/ct2/
