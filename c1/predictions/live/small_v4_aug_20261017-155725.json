@@ -1,0 +1,208 @@
+{
+  "n_utterances": 4,
+  "transcript": "Hello? ආ හා මම මොකක්ද දැමෙයි දැනට ඔව් කියන්නේ",
+  "utterances": [
+    {
+      "utt_id": "live_u001",
+      "start": 0.8,
+      "end": 1.79,
+      "text": "Hello?",
+      "tokens": [
+        {
+          "utt_id": "live_u001",
+          "tok_id": 0,
+          "token": "Hello?",
+          "lang": "EN",
+          "start": 1.02,
+          "end": 1.19,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.2905
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.09,
+      "latency_after_speech_s": 0.69,
+      "decode_action": "greedy",
+      "align_s": 0.036
+    },
+    {
+      "utt_id": "live_u002",
+      "start": 3.01,
+      "end": 3.84,
+      "text": "ආ හා",
+      "tokens": [
+        {
+          "utt_id": "live_u002",
+          "tok_id": 0,
+          "token": "ආ",
+          "lang": "SI",
+          "start": 3.17,
+          "end": 3.23,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.0001
+        },
+        {
+          "utt_id": "live_u002",
+          "tok_id": 1,
+          "token": "හා",
+          "lang": "SI",
+          "start": 3.23,
+          "end": 3.52,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.3624
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.13,
+      "latency_after_speech_s": 0.73,
+      "decode_action": "greedy",
+      "align_s": 0.045
+    },
+    {
+      "utt_id": "live_u003",
+      "start": 6.59,
+      "end": 7.94,
+      "text": "මම මොකක්ද",
+      "tokens": [
+        {
+          "utt_id": "live_u003",
+          "tok_id": 0,
+          "token": "මම",
+          "lang": "SI",
+          "start": 6.81,
+          "end": 6.96,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.249
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 1,
+          "token": "මොකක්ද",
+          "lang": "SI",
+          "start": 6.98,
+          "end": 7.38,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.4029
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.19,
+      "latency_after_speech_s": 0.79,
+      "decode_action": "greedy",
+      "align_s": 0.033
+    },
+    {
+      "utt_id": "live_u004",
+      "start": 9.22,
+      "end": 10.72,
+      "text": "දැමෙයි දැනට ඔව් කියන්නේ",
+      "tokens": [
+        {
+          "utt_id": "live_u004",
+          "tok_id": 0,
+          "token": "දැමෙයි",
+          "lang": "SI",
+          "start": 9.57,
+          "end": 9.89,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.3293
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 1,
+          "token": "දැනට",
+          "lang": "SI",
+          "start": 9.93,
+          "end": 10.24,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.2336
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 2,
+          "token": "ඔව්",
+          "lang": "SI",
+          "start": 10.26,
+          "end": 10.36,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.419
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 3,
+          "token": "කියන්නේ",
+          "lang": "SI",
+          "start": 10.48,
+          "end": 10.72,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.1333
+        }
+      ],
+      "end_reason": "stopped",
+      "decode_s": 0.35,
+      "latency_after_speech_s": 0.35,
+      "decode_action": "greedy",
+      "align_s": 0.039
+    }
+  ],
+  "session": {
+    "model": "small_v4_aug",
+    "model_dir": "models\\ct2\\small_v4_aug",
+    "source": "browser microphone (live_web.py)",
+    "started": "20261017-155725",
+    "audio_s": 10.7,
+    "decode_opts": {
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 1,
+      "temperature": 0.0,
+      "compression_ratio_threshold": null,
+      "log_prob_threshold": null,
+      "no_speech_threshold": null,
+      "condition_on_previous_text": false,
+      "without_timestamps": true,
+      "no_repeat_ngram_size": 0,
+      "word_timestamps": true,
+      "vad_filter": false
+    },
+    "endpointing": {
+      "silence_ms": 600,
+      "number_pause_ms": 1500,
+      "max_utterance_s": 25.0,
+      "vad": "silero (faster-whisper bundle), streaming"
+    },
+    "timing": "ctc",
+    "time_method": "MMS forced alignment (word_align.py)",
+    "latency_after_speech_s": {
+      "median": 0.73,
+      "max": 0.79
+    }
+  }
+}
