@@ -1,0 +1,192 @@
+{
+  "recording": "SYN_T0036",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0036_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0036_e002",
+      "canonical": "Saman",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "saman"
+        },
+        {
+          "script": "LATIN",
+          "form": "Saman"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සමන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0036_e003",
+      "canonical": "Janaka Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Janaka Weerasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක වීරසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0036_e004",
+      "canonical": "Isuru Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු රණසිංහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru Ranasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0036_e005",
+      "canonical": "Ratnapura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Ratnapura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ratnapura"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ratnapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "රත්නපුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0036_e006",
+      "canonical": "198904154960",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "198904154960",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "198 904 1549 60"
+        },
+        {
+          "script": "LATIN",
+          "form": "198904154960"
+        },
+        {
+          "script": "SINHALA",
+          "form": "198904154960"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0036_e007",
+      "canonical": "janaka.weerasinghe93@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "janaka.weerasinghe93@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "janaka.weerasinghe93@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "janaka.weerasinghe93@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0036_e008",
+      "canonical": "1989-02-10",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1989-02-10",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "10nd February 1989"
+        },
+        {
+          "script": "LATIN",
+          "form": "10 February 1989"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1989.02.10"
+        },
+        {
+          "script": "LATIN",
+          "form": "1989-02-10"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0036_e009",
+      "canonical": "851810551261",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "851810551261",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "851810551261"
+        },
+        {
+          "script": "SINHALA",
+          "form": "851810551261"
+        }
+      ]
+    }
+  ]
+}

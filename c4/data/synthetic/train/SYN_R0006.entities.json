@@ -1,0 +1,222 @@
+{
+  "recording": "SYN_R0006",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0006_e001",
+      "canonical": "People's Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "People's Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "People's Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මහජන බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0006_e002",
+      "canonical": "Nuwan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nuwan"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නුවන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0006_e003",
+      "canonical": "Kavindi Fernando",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "kavindi fernando"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ms. Fernando"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කවින්දි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kavindi Fernando"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0006_e004",
+      "canonical": "0789706717",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0789706717",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 8 9 7 0 6 7 1 7"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 78 970 6717"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0789706717"
+        },
+        {
+          "script": "LATIN",
+          "form": "0789706717"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0006_e005",
+      "canonical": "0115996540",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0115996540",
+      "redact": false,
+      "value": "0115996540",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0115 996 540"
+        },
+        {
+          "script": "LATIN",
+          "form": "0115996540"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0115996540"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0006_e006",
+      "canonical": "Negombo",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Negombo",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Negombo"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මීගමුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0006_e007",
+      "canonical": "4376048817",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "4376048817",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "හතරයි තුනයි හතයි හැටයි හතළිස් අටයි අටසිය දහහත"
+        },
+        {
+          "script": "LATIN",
+          "form": "4376048817"
+        },
+        {
+          "script": "SINHALA",
+          "form": "4376048817"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0006_e008",
+      "canonical": "Nimal Herath",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nimal Herath"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නිමල් හේරත්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0006_e009",
+      "canonical": "No. 190, Main Street, Kandy",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 190, Main Street, Kandy"
+        },
+        {
+          "script": "SINHALA",
+          "form": "190, ප්‍රධාන වීදිය, මහනුවර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0006_e010",
+      "canonical": "1977-07-10",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1977-07-10",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "10/07/1977"
+        },
+        {
+          "script": "LATIN",
+          "form": "10th of July 1977"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1977 ජූලි 10"
+        },
+        {
+          "script": "LATIN",
+          "form": "10 July 1977"
+        }
+      ]
+    }
+  ]
+}

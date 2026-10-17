@@ -1,0 +1,142 @@
+{
+  "recording": "SYN_T0043",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0043_e001",
+      "canonical": "Seylan Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Seylan Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Seylan Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලාන් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0043_e002",
+      "canonical": "Yasodha",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "යශෝධා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Yasodha"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0043_e003",
+      "canonical": "Shanika Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ශානිකා වීරසිංහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Shanika Weerasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0043_e004",
+      "canonical": "Badulla",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Badulla",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "badulla"
+        },
+        {
+          "script": "LATIN",
+          "form": "Badulla"
+        },
+        {
+          "script": "SINHALA",
+          "form": "බදුල්ල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0043_e005",
+      "canonical": "Saman Liyanage",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Saman Liyanage"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සමන් ලියනගේ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0043_e006",
+      "canonical": "195979935964",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "195979935964",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "one nine five, nine seven nine, nine three five, nine six four"
+        },
+        {
+          "script": "LATIN",
+          "form": "195979935964"
+        },
+        {
+          "script": "SINHALA",
+          "form": "195979935964"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0043_e007",
+      "canonical": "shanika.weerasinghe54@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "shanika.weerasinghe54@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "shanika.weerasinghe54@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "shanika.weerasinghe54@gmail.com"
+        }
+      ]
+    }
+  ]
+}

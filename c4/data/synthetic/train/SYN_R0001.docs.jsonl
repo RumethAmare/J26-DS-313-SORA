@@ -1,0 +1,31 @@
+{"doc_id": "SYN_R0001_transcript_u001_v1", "recording": "SYN_R0001", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "hello, mama නිමල්, Dialog call centre eken kathaa karanne."}
+{"doc_id": "SYN_R0001_c2_u001_en_v1", "recording": "SYN_R0001", "kind": "en", "utterance": 1, "topic": "greet", "text": "Hello, this is Nimal from the Dialog call centre."}
+{"doc_id": "SYN_R0001_c2_u001_si_v1", "recording": "SYN_R0001", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම නිමල්, ඩයලොග් ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0001_transcript_u002_v1", "recording": "SYN_R0001", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ow, mage nama Kasun Wickramasinghe."}
+{"doc_id": "SYN_R0001_c2_u002_en_v1", "recording": "SYN_R0001", "kind": "en", "utterance": 2, "topic": "name", "text": "My name is Kasun Wickramasinghe."}
+{"doc_id": "SYN_R0001_c2_u002_si_v1", "recording": "SYN_R0001", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔව්, මම කසුන්."}
+{"doc_id": "SYN_R0001_transcript_u003_v1", "recording": "SYN_R0001", "kind": "transcript", "utterance": 3, "topic": "hotline", "text": "oyata 011 987 9510 ta call karanna puluwan."}
+{"doc_id": "SYN_R0001_c2_u003_en_v1", "recording": "SYN_R0001", "kind": "en", "utterance": 3, "topic": "hotline", "text": "You can call the Dialog hotline on +94 11 987 9510."}
+{"doc_id": "SYN_R0001_c2_u003_si_v1", "recording": "SYN_R0001", "kind": "si", "utterance": 3, "topic": "hotline", "text": "ඩයලොග් ක්ෂණික ඇමතුම් අංකය 0119879510."}
+{"doc_id": "SYN_R0001_transcript_u004_v1", "recording": "SYN_R0001", "kind": "transcript", "utterance": 4, "topic": "branch", "text": "mama iye kegalle branch ekata giya."}
+{"doc_id": "SYN_R0001_c2_u004_en_v1", "recording": "SYN_R0001", "kind": "en", "utterance": 4, "topic": "branch", "text": "I visited the Kegalle branch yesterday."}
+{"doc_id": "SYN_R0001_c2_u004_si_v1", "recording": "SYN_R0001", "kind": "si", "utterance": 4, "topic": "branch", "text": "මම ඊයේ කෑගල්ල ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0001_transcript_u005_v1", "recording": "SYN_R0001", "kind": "transcript", "utterance": 5, "topic": "dob", "text": "date of birth eka April 7, 1983."}
+{"doc_id": "SYN_R0001_c2_u005_en_v1", "recording": "SYN_R0001", "kind": "en", "utterance": 5, "topic": "dob", "text": "My date of birth is 7 April 1983."}
+{"doc_id": "SYN_R0001_c2_u005_si_v1", "recording": "SYN_R0001", "kind": "si", "utterance": 5, "topic": "dob", "text": "මගේ උපන් දිනය 1983 අප්‍රේල් 7."}
+{"doc_id": "SYN_R0001_transcript_u006_v1", "recording": "SYN_R0001", "kind": "transcript", "utterance": 6, "topic": "account", "text": "මගේ account එක විසි හතයි හැට හයයි බිංදුවයි දෙකයි බිංදුවයි බිංදුවයි දහසයයි එකයි හත."}
+{"doc_id": "SYN_R0001_c2_u006_en_v1", "recording": "SYN_R0001", "kind": "en", "utterance": 6, "topic": "account", "text": "My account number is 276602001617."}
+{"doc_id": "SYN_R0001_c2_u006_si_v1", "recording": "SYN_R0001", "kind": "si", "utterance": 6, "topic": "account", "text": "මගේ ගිණුම් අංකය 276602001617."}
+{"doc_id": "SYN_R0001_transcript_u007_v1", "recording": "SYN_R0001", "kind": "transcript", "utterance": 7, "topic": "payment", "text": "last month 1500 rupees debit una, hathara parak."}
+{"doc_id": "SYN_R0001_c2_u007_en_v1", "recording": "SYN_R0001", "kind": "en", "utterance": 7, "topic": "payment", "text": "I paid Rs. 1,500 on 19th of November."}
+{"doc_id": "SYN_R0001_c2_u007_si_v1", "recording": "SYN_R0001", "kind": "si", "utterance": 7, "topic": "payment", "text": "මම නොවැම්බර් 19 රුපියල් 1,500 ක් ගෙව්වා."}
+{"doc_id": "SYN_R0001_transcript_u008_v1", "recording": "SYN_R0001", "kind": "transcript", "utterance": 8, "topic": "phone", "text": "call karanna puluwan 0 7 1 0 8 0 0 9 3 7 ta."}
+{"doc_id": "SYN_R0001_c2_u008_en_v1", "recording": "SYN_R0001", "kind": "en", "utterance": 8, "topic": "phone", "text": "You can reach me on +94 71 080 0937."}
+{"doc_id": "SYN_R0001_c2_u008_si_v1", "recording": "SYN_R0001", "kind": "si", "utterance": 8, "topic": "phone", "text": "මගේ දුරකථන අංකය 0710800937."}
+{"doc_id": "SYN_R0001_transcript_u009_v1", "recording": "SYN_R0001", "kind": "transcript", "utterance": 9, "topic": "email", "text": "mage email එක kasun.wickramasinghe53@yahoo.com."}
+{"doc_id": "SYN_R0001_c2_u009_en_v1", "recording": "SYN_R0001", "kind": "en", "utterance": 9, "topic": "email", "text": "My email address is kasun.wickramasinghe53@yahoo.com."}
+{"doc_id": "SYN_R0001_c2_u009_si_v1", "recording": "SYN_R0001", "kind": "si", "utterance": 9, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය kasun.wickramasinghe53@yahoo.com."}
+{"doc_id": "SYN_R0001_transcript_u010_v1", "recording": "SYN_R0001", "kind": "transcript", "utterance": 10, "topic": "address", "text": "mage address eka 210, Hospital Road, Galle."}
+{"doc_id": "SYN_R0001_c2_u010_en_v1", "recording": "SYN_R0001", "kind": "en", "utterance": 10, "topic": "address", "text": "My address is No. 210, Hospital Road, Galle."}
+{"doc_id": "SYN_R0001_c2_u010_si_v1", "recording": "SYN_R0001", "kind": "si", "utterance": 10, "topic": "address", "text": "මගේ ලිපිනය 210, රෝහල් පාර, ගාල්ල."}
+{"doc_id": "SYN_R0001_c2_summary_en_v1", "recording": "SYN_R0001", "kind": "summary", "utterance": null, "topic": "summary", "text": "Kasun Wickramasinghe called Dialog and spoke to Nimal. The customer had visited the Kegalle branch. The date of birth given was 7th of April 1983. The account number is 276602001617. A payment of Rs. 150,000 was discussed. The contact number is 0710800937. The email address on file is kasun.wickramasinghe53@yahoo.com. The customer lives at No. 210, Hospital Road, Galle."}

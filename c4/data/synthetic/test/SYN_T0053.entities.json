@@ -1,0 +1,151 @@
+{
+  "recording": "SYN_T0053",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0053_e001",
+      "canonical": "Seylan Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Seylan Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Seylan Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලාන් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0053_e002",
+      "canonical": "Gayan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ගයාන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Gayan"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0053_e003",
+      "canonical": "Gayan Ekanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ගයාන් ඒකනායක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Gayan Ekanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0053_e004",
+      "canonical": "0112110506",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0112110506",
+      "redact": false,
+      "value": "0112110506",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "binduwai ekai ekai dekai ekai ekai binduwai pahai binduwai haya"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 211 0506"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0112110506"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0053_e005",
+      "canonical": "682897010V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "682897010V",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "හයයි අසූ දෙකයි අටසිය අනූ හතයි බිංදුවයි දහය"
+        },
+        {
+          "script": "LATIN",
+          "form": "682897010V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "682897010V"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0053_e006",
+      "canonical": "1968-10-15",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1968-10-15",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "15nd October 1968"
+        },
+        {
+          "script": "LATIN",
+          "form": "October 15, 1968"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1968 ඔක්තෝබර් 15"
+        },
+        {
+          "script": "LATIN",
+          "form": "1968-10-15"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0053_e007",
+      "canonical": "Gayan Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ගයාන් වීරසිංහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Gayan Weerasinghe"
+        }
+      ]
+    }
+  ]
+}

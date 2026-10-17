@@ -1,0 +1,150 @@
+{
+  "recording": "SYN_T0041",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0041_e001",
+      "canonical": "Seylan Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Seylan Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Seylan Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලාන් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0041_e002",
+      "canonical": "Madhavi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "මාධවී"
+        },
+        {
+          "script": "LATIN",
+          "form": "Madhavi"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0041_e003",
+      "canonical": "Isuru Samarakoon",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Isuru"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru Samarakoon"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0041_e004",
+      "canonical": "Saman Kumara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "saman kumara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Saman Kumara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සමන් කුමාර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0041_e005",
+      "canonical": "isuru.samarakoon9@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "isuru.samarakoon9@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "isuru.samarakoon9@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "isuru.samarakoon9@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0041_e006",
+      "canonical": "Kalutara",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Kalutara",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "කළුතර"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kalutara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0041_e007",
+      "canonical": "0709372818",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0709372818",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 0 9 3 7 2 8 1 8"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 70 937 2818"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0709372818"
+        },
+        {
+          "script": "LATIN",
+          "form": "0709372818"
+        }
+      ]
+    }
+  ]
+}

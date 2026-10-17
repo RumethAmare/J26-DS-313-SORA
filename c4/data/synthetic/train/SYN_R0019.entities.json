@@ -1,0 +1,151 @@
+{
+  "recording": "SYN_R0019",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0019_e001",
+      "canonical": "Sanduni",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සඳුනි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sanduni"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0019_e002",
+      "canonical": "Dialog",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Dialog",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dialog"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඩයලොග්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0019_e003",
+      "canonical": "Pradeep Senanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "pradeep"
+        },
+        {
+          "script": "LATIN",
+          "form": "Pradeep Senanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ප්‍රදීප් සේනානායක"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0019_e004",
+      "canonical": "Moratuwa",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Moratuwa",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Moratuwa"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මොරටුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0019_e005",
+      "canonical": "952271310X",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "952271310X",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "952271310X"
+        },
+        {
+          "script": "SINHALA",
+          "form": "952271310X"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0019_e006",
+      "canonical": "0117316777",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0117316777",
+      "redact": false,
+      "value": "0117316777",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 731 6777"
+        },
+        {
+          "script": "LATIN",
+          "form": "0117316777"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0117316777"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0019_e007",
+      "canonical": "1995-08-14",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1995-08-14",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "14/08/1995"
+        },
+        {
+          "script": "LATIN",
+          "form": "August 14, 1995"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1995.08.14"
+        },
+        {
+          "script": "LATIN",
+          "form": "14 August 1995"
+        }
+      ]
+    }
+  ]
+}

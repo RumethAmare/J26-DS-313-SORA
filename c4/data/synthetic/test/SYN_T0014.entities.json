@@ -1,0 +1,169 @@
+{
+  "recording": "SYN_T0014",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0014_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0014_e002",
+      "canonical": "Isuru",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉසුරු"
+        },
+        {
+          "script": "LATIN",
+          "form": "Isuru"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0014_e003",
+      "canonical": "Yasodha Pathirana",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "යශෝධා පතිරණ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Yasodha Pathirana"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0014_e004",
+      "canonical": "430417344798",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "430417344798",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "4 3 0 4 1 7 3 4 4 7 9 8"
+        },
+        {
+          "script": "LATIN",
+          "form": "430417344798"
+        },
+        {
+          "script": "SINHALA",
+          "form": "430417344798"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0014_e005",
+      "canonical": "yasodha.pathirana97@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "yasodha.pathirana97@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "yasodha.pathirana97@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "yasodha.pathirana97@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0014_e006",
+      "canonical": "No. 250, Circular Road, Panadura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "250, Circular Road, Panadura"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 250, Circular Road, Panadura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "250, වටරවුම් පාර, පානදුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0014_e007",
+      "canonical": "706298876V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "706298876V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "7 0 6 2 9 8 8 7 6 v"
+        },
+        {
+          "script": "LATIN",
+          "form": "706298876V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "706298876V"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0014_e008",
+      "canonical": "Janaka Ranasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "janaka ranasinghe"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka Ranasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක රණසිංහ"
+        }
+      ]
+    }
+  ]
+}

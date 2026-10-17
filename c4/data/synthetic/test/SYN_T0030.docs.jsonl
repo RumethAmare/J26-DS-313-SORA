@@ -1,0 +1,25 @@
+{"doc_id": "SYN_T0030_transcript_u001_v1", "recording": "SYN_T0030", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "NSB ekata call kalata thanks, mage nama ගයාන්."}
+{"doc_id": "SYN_T0030_c2_u001_en_v1", "recording": "SYN_T0030", "kind": "en", "utterance": 1, "topic": "greet", "text": "Thank you for calling NSB, my name is Gayan."}
+{"doc_id": "SYN_T0030_c2_u001_si_v1", "recording": "SYN_T0030", "kind": "si", "utterance": 1, "topic": "greet", "text": "ජාතික ඉතිරිකිරීමේ බැංකුව ඇමතීම ගැන ස්තූතියි, මගේ නම ගයාන්."}
+{"doc_id": "SYN_T0030_transcript_u002_v1", "recording": "SYN_T0030", "kind": "transcript", "utterance": 2, "topic": "name", "text": "mama Shanika, account holder."}
+{"doc_id": "SYN_T0030_c2_u002_en_v1", "recording": "SYN_T0030", "kind": "en", "utterance": 2, "topic": "name", "text": "I am Shanika, the account holder."}
+{"doc_id": "SYN_T0030_c2_u002_si_v1", "recording": "SYN_T0030", "kind": "si", "utterance": 2, "topic": "name", "text": "මම ශානිකා, ගිණුම් හිමියා."}
+{"doc_id": "SYN_T0030_transcript_u003_v1", "recording": "SYN_T0030", "kind": "transcript", "utterance": 3, "topic": "account", "text": "savings eke number eka 4 6 3 5 1 3 0 3 9 9 0."}
+{"doc_id": "SYN_T0030_c2_u003_en_v1", "recording": "SYN_T0030", "kind": "en", "utterance": 3, "topic": "account", "text": "My savings number is 4635130390."}
+{"doc_id": "SYN_T0030_c2_u003_si_v1", "recording": "SYN_T0030", "kind": "si", "utterance": 3, "topic": "account", "text": "මගේ ඉතුරුම් අංකය 4635130390."}
+{"doc_id": "SYN_T0030_transcript_u004_v1", "recording": "SYN_T0030", "kind": "transcript", "utterance": 4, "topic": "relative", "text": "mage ayya Isuru Abeysekara th ekka enawa."}
+{"doc_id": "SYN_T0030_c2_u004_en_v1", "recording": "SYN_T0030", "kind": "en", "utterance": 4, "topic": "relative", "text": "My brother Isuru Abeysekara will come with me."}
+{"doc_id": "SYN_T0030_c2_u004_si_v1", "recording": "SYN_T0030", "kind": "si", "utterance": 4, "topic": "relative", "text": "මගේ අයියා ඉසුරු අබේසේකර මා සමඟ එනවා."}
+{"doc_id": "SYN_T0030_transcript_u005_v1", "recording": "SYN_T0030", "kind": "transcript", "utterance": 5, "topic": "email", "text": "email ekak thiyenawada?"}
+{"doc_id": "SYN_T0030_c2_u005_en_v1", "recording": "SYN_T0030", "kind": "en", "utterance": 5, "topic": "email", "text": "Do you have an email address?"}
+{"doc_id": "SYN_T0030_c2_u005_si_v1", "recording": "SYN_T0030", "kind": "si", "utterance": 5, "topic": "email", "text": "ඊමේල් ලිපිනයක් තිබේද?"}
+{"doc_id": "SYN_T0030_transcript_u006_v1", "recording": "SYN_T0030", "kind": "transcript", "utterance": 6, "topic": "email", "text": "ow, shanika.weerasinghe13@yahoo.com."}
+{"doc_id": "SYN_T0030_c2_u006_en_v1", "recording": "SYN_T0030", "kind": "en", "utterance": 6, "topic": "email", "text": "Yes, shanika.weerasinghe13@yahoo.com."}
+{"doc_id": "SYN_T0030_c2_u006_si_v1", "recording": "SYN_T0030", "kind": "si", "utterance": 6, "topic": "email", "text": "ඔව්, shanika.weerasinghe13@yahoo.com."}
+{"doc_id": "SYN_T0030_transcript_u007_v1", "recording": "SYN_T0030", "kind": "transcript", "utterance": 7, "topic": "dob", "text": "ah upan dinaya kiyanna puluwanda?"}
+{"doc_id": "SYN_T0030_c2_u007_en_v1", "recording": "SYN_T0030", "kind": "en", "utterance": 7, "topic": "dob", "text": "Can you confirm your date of birth?"}
+{"doc_id": "SYN_T0030_c2_u007_si_v1", "recording": "SYN_T0030", "kind": "si", "utterance": 7, "topic": "dob", "text": "ඔබේ උපන් දිනය තහවුරු කරන්න."}
+{"doc_id": "SYN_T0030_transcript_u008_v1", "recording": "SYN_T0030", "kind": "transcript", "utterance": 8, "topic": "dob", "text": "August 19rd 1977."}
+{"doc_id": "SYN_T0030_c2_u008_en_v1", "recording": "SYN_T0030", "kind": "en", "utterance": 8, "topic": "dob", "text": "Yes, 1977-08-19."}
+{"doc_id": "SYN_T0030_c2_u008_si_v1", "recording": "SYN_T0030", "kind": "si", "utterance": 8, "topic": "dob", "text": "1977 අගෝස්තු 19."}
+{"doc_id": "SYN_T0030_c2_summary_en_v1", "recording": "SYN_T0030", "kind": "summary", "utterance": null, "topic": "summary", "text": "Gayan of NSB handled a call from Shanika Weerasinghe. Funds are to be credited to 4635130390. Isuru Abeysekara was mentioned as a family member. Email: shanika.weerasinghe13@yahoo.com. Customer born August 19, 1977."}

@@ -1,0 +1,152 @@
+{
+  "recording": "SYN_T0046",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0046_e001",
+      "canonical": "SLT",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "SLT",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SLT"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශ්‍රී ලංකා ටෙලිකොම්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0046_e002",
+      "canonical": "Yasodha",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Yasodha"
+        },
+        {
+          "script": "SINHALA",
+          "form": "යශෝධා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0046_e003",
+      "canonical": "Piumi Samarakoon",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "පියුමි සමරකෝන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Piumi Samarakoon"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0046_e004",
+      "canonical": "199770257006",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "199770257006",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ekai namayai namayai hathai hathai binduwai dekai pahai hathai binduwai binduwai haya"
+        },
+        {
+          "script": "LATIN",
+          "form": "199770257006"
+        },
+        {
+          "script": "SINHALA",
+          "form": "199770257006"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0046_e005",
+      "canonical": "piumi.samarakoon62@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "piumi.samarakoon62@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "piumi.samarakoon62@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "piumi.samarakoon62@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0046_e006",
+      "canonical": "119545455616",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "119545455616",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "one one nine, five four five, four five five, six one six"
+        },
+        {
+          "script": "LATIN",
+          "form": "119545455616"
+        },
+        {
+          "script": "SINHALA",
+          "form": "119545455616"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0046_e007",
+      "canonical": "1997-07-20",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1997-07-20",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "1997 ජූලි 20"
+        },
+        {
+          "script": "LATIN",
+          "form": "1997-07-20"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1997.07.20"
+        },
+        {
+          "script": "LATIN",
+          "form": "20 July 1997"
+        }
+      ]
+    }
+  ]
+}

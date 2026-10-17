@@ -1,0 +1,29 @@
+# Component 4 — PII detection and redaction
+#
+# Phase 1 (rule layer, evaluation harness, cross-script resolver) needs only the
+# first block. The transformer block is heavy and is installed when model
+# fine-tuning opens; on a machine without CUDA it is not worth installing at all,
+# since xlm-roberta-base measured 110-130 s per training step on CPU here.
+
+# --- Phase 1: rules, evaluation, synthetic data -----------------------------
+regex>=2024.0.0
+pytest>=8.0.0
+
+# --- Phase 1: baseline NER (CPU-friendly, trains in minutes) ----------------
+spacy>=3.8.0
+
+# --- Phase 2: external comparison baseline (SO2) ----------------------------
+# Presidio is the comparator, not a dependency of the component itself.
+presidio-analyzer>=2.2.0
+presidio-anonymizer>=2.2.0
+
+# --- Phase 3: multilingual token classification (SO4) -----------------------
+# Install on Colab / a CUDA machine. For a local CUDA build, do NOT rely on the
+# default index -- plain `pip install torch` yields a +cpu wheel that silently
+# ignores the GPU:
+#     pip install torch --index-url https://download.pytorch.org/whl/cu124
+torch>=2.4.0
+transformers>=4.44.0
+accelerate>=0.26.0
+peft>=0.12.0
+seqeval>=1.2.2

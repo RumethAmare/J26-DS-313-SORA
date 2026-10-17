@@ -1,0 +1,19 @@
+{"doc_id": "SYN_R0039_transcript_u001_v1", "recording": "SYN_R0039", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම Nethmi, Sampath Bank එකෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0039_c2_u001_en_v1", "recording": "SYN_R0039", "kind": "en", "utterance": 1, "topic": "greet", "text": "Hello, this is Nethmi from the Sampath Bank call centre."}
+{"doc_id": "SYN_R0039_c2_u001_si_v1", "recording": "SYN_R0039", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම නෙත්මි, සම්පත් බැංකුව ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0039_transcript_u002_v1", "recording": "SYN_R0039", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ow, mage nama lahiru senanayake."}
+{"doc_id": "SYN_R0039_c2_u002_en_v1", "recording": "SYN_R0039", "kind": "en", "utterance": 2, "topic": "name", "text": "Yes, this is Mr. Senanayake."}
+{"doc_id": "SYN_R0039_c2_u002_si_v1", "recording": "SYN_R0039", "kind": "si", "utterance": 2, "topic": "name", "text": "මගේ නම ලහිරු සේනානායක."}
+{"doc_id": "SYN_R0039_transcript_u003_v1", "recording": "SYN_R0039", "kind": "transcript", "utterance": 3, "topic": "relative", "text": "account eke nominee Lahiru Perera."}
+{"doc_id": "SYN_R0039_c2_u003_en_v1", "recording": "SYN_R0039", "kind": "en", "utterance": 3, "topic": "relative", "text": "The nominee on the account is Lahiru Perera."}
+{"doc_id": "SYN_R0039_c2_u003_si_v1", "recording": "SYN_R0039", "kind": "si", "utterance": 3, "topic": "relative", "text": "මගේ තාත්තාගේ නම ලහිරු පෙරේරා."}
+{"doc_id": "SYN_R0039_transcript_u004_v1", "recording": "SYN_R0039", "kind": "transcript", "utterance": 4, "topic": "branch", "text": "mama iye Galle branch ekata giya."}
+{"doc_id": "SYN_R0039_c2_u004_en_v1", "recording": "SYN_R0039", "kind": "en", "utterance": 4, "topic": "branch", "text": "I visited the Galle branch yesterday."}
+{"doc_id": "SYN_R0039_c2_u004_si_v1", "recording": "SYN_R0039", "kind": "si", "utterance": 4, "topic": "branch", "text": "මම ඊයේ ගාල්ල ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0039_transcript_u005_v1", "recording": "SYN_R0039", "kind": "transcript", "utterance": 5, "topic": "payment", "text": "last month 1500 rupees debit una, deka parak."}
+{"doc_id": "SYN_R0039_c2_u005_en_v1", "recording": "SYN_R0039", "kind": "en", "utterance": 5, "topic": "payment", "text": "I paid Rs. 1,500 on 10th of September."}
+{"doc_id": "SYN_R0039_c2_u005_si_v1", "recording": "SYN_R0039", "kind": "si", "utterance": 5, "topic": "payment", "text": "මම සැප්තැම්බර් 10 රුපියල් 1,500 ක් ගෙව්වා."}
+{"doc_id": "SYN_R0039_transcript_u006_v1", "recording": "SYN_R0039", "kind": "transcript", "utterance": 6, "topic": "nic", "text": "mage NIC number eka 5 7 2 0 9 1 4 7 6 v."}
+{"doc_id": "SYN_R0039_c2_u006_en_v1", "recording": "SYN_R0039", "kind": "en", "utterance": 6, "topic": "nic", "text": "My NIC number is 572091476V."}
+{"doc_id": "SYN_R0039_c2_u006_si_v1", "recording": "SYN_R0039", "kind": "si", "utterance": 6, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 572091476V."}
+{"doc_id": "SYN_R0039_c2_summary_en_v1", "recording": "SYN_R0039", "kind": "summary", "utterance": null, "topic": "summary", "text": "Lahiru Senanayake called Sampath Bank and spoke to Nethmi. The nominee is Lahiru Perera. The customer had visited the Galle branch. A payment of Rs. 12,000 was discussed. The customer's NIC number is 572091476V."}

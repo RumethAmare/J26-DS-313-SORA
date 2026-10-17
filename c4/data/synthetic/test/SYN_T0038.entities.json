@@ -1,0 +1,191 @@
+{
+  "recording": "SYN_T0038",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0038_e001",
+      "canonical": "NSB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "NSB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "NSB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජාතික ඉතිරිකිරීමේ බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0038_e002",
+      "canonical": "Anjali",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අංජලී"
+        },
+        {
+          "script": "LATIN",
+          "form": "Anjali"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0038_e003",
+      "canonical": "Rashmi Liyanage",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "රශ්මි ලියනගේ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Rashmi Liyanage"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0038_e004",
+      "canonical": "Saman Weerasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Saman Weerasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සමන් වීරසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0038_e005",
+      "canonical": "Jaffna",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Jaffna",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "යාපනය"
+        },
+        {
+          "script": "LATIN",
+          "form": "Jaffna"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0038_e006",
+      "canonical": "No. 240/3, Circular Road, Anuradhapura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 240/3, Circular Road, Anuradhapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "240/3, වටරවුම් පාර, අනුරාධපුරය"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0038_e007",
+      "canonical": "1963-12-17",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1963-12-17",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "1963 December 17th"
+        },
+        {
+          "script": "LATIN",
+          "form": "1963-12-17"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1963.12.17"
+        },
+        {
+          "script": "LATIN",
+          "form": "17th of December 1963"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0038_e008",
+      "canonical": "0113101532",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0113101532",
+      "redact": false,
+      "value": "0113101532",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 1 1 3 1 0 1 5 3 2"
+        },
+        {
+          "script": "LATIN",
+          "form": "0113101532"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0113101532"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0038_e009",
+      "canonical": "0779129739",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0779129739",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0779 1297 39"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 77 912 9739"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0779129739"
+        },
+        {
+          "script": "LATIN",
+          "form": "0779129739"
+        }
+      ]
+    }
+  ]
+}

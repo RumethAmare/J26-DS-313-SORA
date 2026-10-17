@@ -1,0 +1,187 @@
+{
+  "recording": "SYN_R0043",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0043_e001",
+      "canonical": "Commercial Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Commercial Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Commercial Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කොමර්ෂල් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0043_e002",
+      "canonical": "Pradeep",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Pradeep"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ප්‍රදීප්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0043_e003",
+      "canonical": "Kasun Bandara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kasun Bandara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Mr. Bandara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කසුන් බණ්ඩාර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0043_e004",
+      "canonical": "Pradeep Gunawardena",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Pradeep Gunawardena"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ප්‍රදීප් ගුණවර්ධන"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0043_e005",
+      "canonical": "kasun.bandara26@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "kasun.bandara26@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "kasun.bandara26@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "kasun.bandara26@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0043_e006",
+      "canonical": "1958-04-06",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1958-04-06",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "April 6, 1958"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1958 අප්‍රේල් 6"
+        },
+        {
+          "script": "LATIN",
+          "form": "6th of April 1958"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0043_e007",
+      "canonical": "Nugegoda",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Nugegoda",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "nugegoda"
+        },
+        {
+          "script": "LATIN",
+          "form": "Nugegoda"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නුගේගොඩ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0043_e008",
+      "canonical": "No. 135, Flower Road, Galle",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "135, මල් පාර, ගාල්ල"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 135, Flower Road, Galle"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0043_e009",
+      "canonical": "12897653250390",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "12897653250390",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "128 9765 325 0390"
+        },
+        {
+          "script": "LATIN",
+          "form": "12897653250390"
+        },
+        {
+          "script": "SINHALA",
+          "form": "12897653250390"
+        }
+      ]
+    }
+  ]
+}

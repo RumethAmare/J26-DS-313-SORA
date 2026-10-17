@@ -1,0 +1,19 @@
+{"doc_id": "SYN_R0045_transcript_u001_v1", "recording": "SYN_R0045", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "good morning, People's Bank customer service, mama Dilani."}
+{"doc_id": "SYN_R0045_c2_u001_en_v1", "recording": "SYN_R0045", "kind": "en", "utterance": 1, "topic": "greet", "text": "Good morning, People's Bank customer service, Dilani speaking."}
+{"doc_id": "SYN_R0045_c2_u001_si_v1", "recording": "SYN_R0045", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම දිලානි, මහජන බැංකුව ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0045_transcript_u002_v1", "recording": "SYN_R0045", "kind": "transcript", "utterance": 2, "topic": "name", "text": "මගේ නම නිමල් බණ්ඩාර."}
+{"doc_id": "SYN_R0045_c2_u002_en_v1", "recording": "SYN_R0045", "kind": "en", "utterance": 2, "topic": "name", "text": "Yes, this is Mr. Bandara."}
+{"doc_id": "SYN_R0045_c2_u002_si_v1", "recording": "SYN_R0045", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔව්, මම නිමල්."}
+{"doc_id": "SYN_R0045_transcript_u003_v1", "recording": "SYN_R0045", "kind": "transcript", "utterance": 3, "topic": "phone", "text": "call karanna puluwan binduwai hathai dekai binduwai ekai dekai hayai hayai dekai hathara ta."}
+{"doc_id": "SYN_R0045_c2_u003_en_v1", "recording": "SYN_R0045", "kind": "en", "utterance": 3, "topic": "phone", "text": "My mobile number is 0720126624."}
+{"doc_id": "SYN_R0045_c2_u003_si_v1", "recording": "SYN_R0045", "kind": "si", "utterance": 3, "topic": "phone", "text": "මගේ දුරකථන අංකය 0720126624."}
+{"doc_id": "SYN_R0045_transcript_u004_v1", "recording": "SYN_R0045", "kind": "transcript", "utterance": 4, "topic": "nic", "text": "NIC එක දහනවයයි අනූ එකයි බිංදුවයි හතළිස් හතයි දෙකයි විසි පහයි හතළිස් හතර."}
+{"doc_id": "SYN_R0045_c2_u004_en_v1", "recording": "SYN_R0045", "kind": "en", "utterance": 4, "topic": "nic", "text": "My NIC number is 199104722544."}
+{"doc_id": "SYN_R0045_c2_u004_si_v1", "recording": "SYN_R0045", "kind": "si", "utterance": 4, "topic": "nic", "text": "මගේ ජාතික හැඳුනුම්පත් අංකය 199104722544."}
+{"doc_id": "SYN_R0045_transcript_u005_v1", "recording": "SYN_R0045", "kind": "transcript", "utterance": 5, "topic": "address", "text": "mage address eka 1, ප්‍රධාන වීදිය, මීගමුව."}
+{"doc_id": "SYN_R0045_c2_u005_en_v1", "recording": "SYN_R0045", "kind": "en", "utterance": 5, "topic": "address", "text": "I live at No. 1, Main Street, Negombo."}
+{"doc_id": "SYN_R0045_c2_u005_si_v1", "recording": "SYN_R0045", "kind": "si", "utterance": 5, "topic": "address", "text": "මගේ ලිපිනය 1, ප්‍රධාන වීදිය, මීගමුව."}
+{"doc_id": "SYN_R0045_transcript_u006_v1", "recording": "SYN_R0045", "kind": "transcript", "utterance": 6, "topic": "email", "text": "mage email එක nimal.bandara80@gmail.com."}
+{"doc_id": "SYN_R0045_c2_u006_en_v1", "recording": "SYN_R0045", "kind": "en", "utterance": 6, "topic": "email", "text": "My email address is nimal.bandara80@gmail.com."}
+{"doc_id": "SYN_R0045_c2_u006_si_v1", "recording": "SYN_R0045", "kind": "si", "utterance": 6, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය nimal.bandara80@gmail.com."}
+{"doc_id": "SYN_R0045_c2_summary_en_v1", "recording": "SYN_R0045", "kind": "summary", "utterance": null, "topic": "summary", "text": "Nimal Bandara called People's Bank and spoke to Dilani. The contact number is 0720126624. The customer's NIC number is 199104722544. The customer lives at No. 1, Main Street, Negombo. The email address on file is nimal.bandara80@gmail.com."}

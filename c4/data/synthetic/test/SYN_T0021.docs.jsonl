@@ -1,0 +1,22 @@
+{"doc_id": "SYN_T0021_transcript_u001_v1", "recording": "SYN_T0021", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "Ceylinco Insurance ekata call kalata thanks, mage nama Gayan."}
+{"doc_id": "SYN_T0021_c2_u001_en_v1", "recording": "SYN_T0021", "kind": "en", "utterance": 1, "topic": "greet", "text": "Thank you for calling Ceylinco Insurance, my name is Gayan."}
+{"doc_id": "SYN_T0021_c2_u001_si_v1", "recording": "SYN_T0021", "kind": "si", "utterance": 1, "topic": "greet", "text": "සෙලින්කෝ රක්ෂණ ඇමතීම ගැන ස්තූතියි, මගේ නම ගයාන්."}
+{"doc_id": "SYN_T0021_transcript_u002_v1", "recording": "SYN_T0021", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ane mama සමන්, account holder."}
+{"doc_id": "SYN_T0021_c2_u002_en_v1", "recording": "SYN_T0021", "kind": "en", "utterance": 2, "topic": "name", "text": "I am Saman, the account holder."}
+{"doc_id": "SYN_T0021_c2_u002_si_v1", "recording": "SYN_T0021", "kind": "si", "utterance": 2, "topic": "name", "text": "මම සමන්, ගිණුම් හිමියා."}
+{"doc_id": "SYN_T0021_transcript_u003_v1", "recording": "SYN_T0021", "kind": "transcript", "utterance": 3, "topic": "nic", "text": "identity card eke thiyenne one nine nine, five zero seven, five four six, nine three zero."}
+{"doc_id": "SYN_T0021_c2_u003_en_v1", "recording": "SYN_T0021", "kind": "en", "utterance": 3, "topic": "nic", "text": "The number on my identity card is 199507546930."}
+{"doc_id": "SYN_T0021_c2_u003_si_v1", "recording": "SYN_T0021", "kind": "si", "utterance": 3, "topic": "nic", "text": "මගේ හැඳුනුම්පතේ අංකය 199507546930."}
+{"doc_id": "SYN_T0021_transcript_u004_v1", "recording": "SYN_T0021", "kind": "transcript", "utterance": 4, "topic": "phone", "text": "whatsapp karanna බිංදුවයි හතයි බිංදුවයි බිංදුවයි හතරයි පහයි දහසයයි පනස්හතර ekata."}
+{"doc_id": "SYN_T0021_c2_u004_en_v1", "recording": "SYN_T0021", "kind": "en", "utterance": 4, "topic": "phone", "text": "Message me on WhatsApp at +94 70 045 1654."}
+{"doc_id": "SYN_T0021_c2_u004_si_v1", "recording": "SYN_T0021", "kind": "si", "utterance": 4, "topic": "phone", "text": "0700451654 අංකයට WhatsApp කරන්න."}
+{"doc_id": "SYN_T0021_transcript_u005_v1", "recording": "SYN_T0021", "kind": "transcript", "utterance": 5, "topic": "hotline", "text": "prashnayak thiyenam zero one one, nine nine zero, three two four, seven ta call karanna."}
+{"doc_id": "SYN_T0021_c2_u005_en_v1", "recording": "SYN_T0021", "kind": "en", "utterance": 5, "topic": "hotline", "text": "For any issue, call 0119903247."}
+{"doc_id": "SYN_T0021_c2_u005_si_v1", "recording": "SYN_T0021", "kind": "si", "utterance": 5, "topic": "hotline", "text": "ගැටලුවක් ඇත්නම් 0119903247 අමතන්න."}
+{"doc_id": "SYN_T0021_transcript_u006_v1", "recording": "SYN_T0021", "kind": "transcript", "utterance": 6, "topic": "email", "text": "ah email ekak thiyenawada?"}
+{"doc_id": "SYN_T0021_c2_u006_en_v1", "recording": "SYN_T0021", "kind": "en", "utterance": 6, "topic": "email", "text": "Do you have an email address?"}
+{"doc_id": "SYN_T0021_c2_u006_si_v1", "recording": "SYN_T0021", "kind": "si", "utterance": 6, "topic": "email", "text": "ඊමේල් ලිපිනයක් තිබේද?"}
+{"doc_id": "SYN_T0021_transcript_u007_v1", "recording": "SYN_T0021", "kind": "transcript", "utterance": 7, "topic": "email", "text": "ow, saman.liyanage73@gmail.com."}
+{"doc_id": "SYN_T0021_c2_u007_en_v1", "recording": "SYN_T0021", "kind": "en", "utterance": 7, "topic": "email", "text": "Yes, saman.liyanage73@gmail.com."}
+{"doc_id": "SYN_T0021_c2_u007_si_v1", "recording": "SYN_T0021", "kind": "si", "utterance": 7, "topic": "email", "text": "ඔව්, saman.liyanage73@gmail.com."}
+{"doc_id": "SYN_T0021_c2_summary_en_v1", "recording": "SYN_T0021", "kind": "summary", "utterance": null, "topic": "summary", "text": "Gayan of Ceylinco Insurance handled a call from Saman Liyanage. Identity number provided: 199507546930. Callback number: 0700451654. Email: saman.liyanage73@gmail.com."}

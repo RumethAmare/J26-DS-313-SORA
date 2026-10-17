@@ -1,0 +1,173 @@
+{
+  "recording": "SYN_T0050",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0050_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0050_e002",
+      "canonical": "Janaka",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ජනක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0050_e003",
+      "canonical": "Janaka Liyanage",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "janaka liyanage"
+        },
+        {
+          "script": "LATIN",
+          "form": "Janaka Liyanage"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජනක ලියනගේ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0050_e004",
+      "canonical": "200119133652",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "200119133652",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "විස්සයි බිංදුවයි එකයි දහනවයයි එකයි තිස් තුනයි හයසිය පනස් දෙක"
+        },
+        {
+          "script": "LATIN",
+          "form": "200119133652"
+        },
+        {
+          "script": "SINHALA",
+          "form": "200119133652"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0050_e005",
+      "canonical": "No. 106/2, Church Street, Ratnapura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "106/2, Church Street, Ratnapura"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 106/2, Church Street, Ratnapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "106/2, පල්ලිය වීදිය, රත්නපුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0050_e006",
+      "canonical": "Ratnapura",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Ratnapura",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "රත්නපුර"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ratnapura"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0050_e007",
+      "canonical": "61860257947011",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "61860257947011",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "six one eight, six zero two, five seven nine, four seven zero, one one"
+        },
+        {
+          "script": "LATIN",
+          "form": "61860257947011"
+        },
+        {
+          "script": "SINHALA",
+          "form": "61860257947011"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0050_e008",
+      "canonical": "0778425898",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0778425898",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0778 425 898"
+        },
+        {
+          "script": "LATIN",
+          "form": "0778425898"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0778425898"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "recording": "SYN_R0013",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0013_e001",
+      "canonical": "Sampath",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සම්පත්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sampath"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0013_e002",
+      "canonical": "People's Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "People's Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "People's Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මහජන බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0013_e003",
+      "canonical": "Ishara Senanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉෂාරා සේනානායක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ishara Senanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0013_e004",
+      "canonical": "ishara.senanayake63@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "ishara.senanayake63@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ishara.senanayake63@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ishara.senanayake63@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0013_e005",
+      "canonical": "815684545X",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "815684545X",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "815684545X"
+        },
+        {
+          "script": "SINHALA",
+          "form": "815684545X"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0013_e006",
+      "canonical": "1981-03-08",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1981-03-08",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "8 March 1981"
+        },
+        {
+          "script": "LATIN",
+          "form": "March 8, 1981"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1981.03.08"
+        },
+        {
+          "script": "LATIN",
+          "form": "8th of March 1981"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0013_e007",
+      "canonical": "0770529462",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0770529462",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0770529462"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 77 052 9462"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0770529462"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0013_e008",
+      "canonical": "Sunil Senanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සුනිල් සේනානායක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sunil Senanayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0013_e009",
+      "canonical": "0110870179",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0110870179",
+      "redact": false,
+      "value": "0110870179",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි එකයි දහයයි අටයි හතයි බිංදුවයි දහහතයි නවය"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 087 0179"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0110870179"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0013_e010",
+      "canonical": "772281602012",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "772281602012",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "7 7 2 2 8 1 6 0 2 0 1 2"
+        },
+        {
+          "script": "LATIN",
+          "form": "772281602012"
+        },
+        {
+          "script": "SINHALA",
+          "form": "772281602012"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0013_e011",
+      "canonical": "No. 183, Lake Road, Kandy",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "183, Lake Road, Kandy"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 183, Lake Road, Kandy"
+        },
+        {
+          "script": "SINHALA",
+          "form": "183, වැව් පාර, මහනුවර"
+        }
+      ]
+    }
+  ]
+}

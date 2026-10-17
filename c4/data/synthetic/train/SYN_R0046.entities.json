@@ -1,0 +1,169 @@
+{
+  "recording": "SYN_R0046",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0046_e001",
+      "canonical": "Ruwan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "රුවන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ruwan"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0046_e002",
+      "canonical": "People's Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "People's Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "People's Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මහජන බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0046_e003",
+      "canonical": "Chamari Jayasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "චමරි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Chamari Jayasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "චමරි ජයසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0046_e004",
+      "canonical": "4253766316",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "4253766316",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "හාරසිය විසිපහයි තුනයි හතයි හයසිය හැටතුනයි දහසය"
+        },
+        {
+          "script": "LATIN",
+          "form": "4253766316"
+        },
+        {
+          "script": "SINHALA",
+          "form": "4253766316"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0046_e005",
+      "canonical": "Nimal Dissanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nimal Dissanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නිමල් දිසානායක"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0046_e006",
+      "canonical": "chamari.jayasinghe29@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "chamari.jayasinghe29@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "chamari.jayasinghe29@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "chamari.jayasinghe29@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0046_e007",
+      "canonical": "Colombo",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Colombo",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Colombo"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කොළඹ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0046_e008",
+      "canonical": "1979-03-18",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1979-03-18",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "18/03/1979"
+        },
+        {
+          "script": "LATIN",
+          "form": "18 March 1979"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1979.03.18"
+        },
+        {
+          "script": "LATIN",
+          "form": "March 18, 1979"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "recording": "SYN_R0018",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0018_e001",
+      "canonical": "Pradeep",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ප්‍රදීප්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Pradeep"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0018_e002",
+      "canonical": "Sampath Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Sampath Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sampath Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0018_e003",
+      "canonical": "Ishara Jayasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ඉෂාරා ජයසිංහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ishara Jayasinghe"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0018_e004",
+      "canonical": "0111312128",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0111312128",
+      "redact": false,
+      "value": "0111312128",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0111312128"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0111312128"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0018_e005",
+      "canonical": "1957-10-07",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1957-10-07",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "07/10/1957"
+        },
+        {
+          "script": "LATIN",
+          "form": "7th of October 1957"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1957 ඔක්තෝබර් 7"
+        },
+        {
+          "script": "LATIN",
+          "form": "7 October 1957"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0018_e006",
+      "canonical": "No. 105, Station Road, Moratuwa",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "105, දුම්රියපොළ පාර, මොරටුව"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 105, Station Road, Moratuwa"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0018_e007",
+      "canonical": "Lahiru Bandara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "ලහිරු බණ්ඩාර"
+        },
+        {
+          "script": "LATIN",
+          "form": "Lahiru Bandara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0018_e008",
+      "canonical": "0713943060",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0713943060",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 1 3 9 4 3 0 6 0"
+        },
+        {
+          "script": "LATIN",
+          "form": "0713943060"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0713943060"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0018_e009",
+      "canonical": "Dehiwala",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Dehiwala",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dehiwala"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දෙහිවල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0018_e010",
+      "canonical": "785048670653",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "785048670653",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "7 8 5 0 4 8 6 7 0 6 5 3"
+        },
+        {
+          "script": "LATIN",
+          "form": "785048670653"
+        },
+        {
+          "script": "SINHALA",
+          "form": "785048670653"
+        }
+      ]
+    }
+  ]
+}

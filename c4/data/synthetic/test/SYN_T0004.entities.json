@@ -1,0 +1,128 @@
+{
+  "recording": "SYN_T0004",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0004_e001",
+      "canonical": "Seylan Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Seylan Bank",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Seylan Bank"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලාන් බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0004_e002",
+      "canonical": "Piumi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Piumi"
+        },
+        {
+          "script": "SINHALA",
+          "form": "පියුමි"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0004_e003",
+      "canonical": "Yasodha Abeysekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "yasodha abeysekara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Yasodha Abeysekara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "යශෝධා අබේසේකර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0004_e004",
+      "canonical": "No. 244/7, Circular Road, Ratnapura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 244/7, Circular Road, Ratnapura"
+        },
+        {
+          "script": "SINHALA",
+          "form": "244/7, වටරවුම් පාර, රත්නපුර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0004_e005",
+      "canonical": "988003891V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "988003891V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "namayai atai atai binduwai binduwai binduwai thunai atai namayai eka"
+        },
+        {
+          "script": "LATIN",
+          "form": "988003891V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "988003891V"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0004_e006",
+      "canonical": "0116852638",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0116852638",
+      "redact": false,
+      "value": "0116852638",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero one one, six eight five, two six three, eight"
+        },
+        {
+          "script": "LATIN",
+          "form": "0116852638"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0116852638"
+        }
+      ]
+    }
+  ]
+}

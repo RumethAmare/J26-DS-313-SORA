@@ -1,0 +1,147 @@
+{
+  "recording": "SYN_R0009",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0009_e001",
+      "canonical": "Sachini",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සචිනි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sachini"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0009_e002",
+      "canonical": "Mobitel",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Mobitel",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Mobitel"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මොබිටෙල්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0009_e003",
+      "canonical": "Kasun Rathnayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "kasun"
+        },
+        {
+          "script": "LATIN",
+          "form": "Mr. Rathnayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කසුන් රත්නායක"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kasun Rathnayake"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0009_e004",
+      "canonical": "1997-11-29",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1997-11-29",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "29/11/1997"
+        },
+        {
+          "script": "LATIN",
+          "form": "29 November 1997"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1997 නොවැම්බර් 29"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0009_e005",
+      "canonical": "973349210V",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "973349210V",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "973349210V"
+        },
+        {
+          "script": "SINHALA",
+          "form": "973349210V"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0009_e006",
+      "canonical": "No. 34, School Lane, Maharagama",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 34, School Lane, Maharagama"
+        },
+        {
+          "script": "SINHALA",
+          "form": "34, පාසල් පටුමග, මහරගම"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0009_e007",
+      "canonical": "kasun.rathnayake92@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "kasun.rathnayake92@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "kasun.rathnayake92@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "kasun.rathnayake92@yahoo.com"
+        }
+      ]
+    }
+  ]
+}

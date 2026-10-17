@@ -1,0 +1,25 @@
+{"doc_id": "SYN_T0004_transcript_u001_v1", "recording": "SYN_T0004", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "Seylan Bank ekata call kalata thanks, mage nama Piumi."}
+{"doc_id": "SYN_T0004_c2_u001_en_v1", "recording": "SYN_T0004", "kind": "en", "utterance": 1, "topic": "greet", "text": "Thank you for calling Seylan Bank, my name is Piumi."}
+{"doc_id": "SYN_T0004_c2_u001_si_v1", "recording": "SYN_T0004", "kind": "si", "utterance": 1, "topic": "greet", "text": "සෙලාන් බැංකුව ඇමතීම ගැන ස්තූතියි, මගේ නම පියුමි."}
+{"doc_id": "SYN_T0004_transcript_u002_v1", "recording": "SYN_T0004", "kind": "transcript", "utterance": 2, "topic": "name", "text": "ah oyaage nama mokakda?"}
+{"doc_id": "SYN_T0004_c2_u002_en_v1", "recording": "SYN_T0004", "kind": "en", "utterance": 2, "topic": "name", "text": "May I have your name?"}
+{"doc_id": "SYN_T0004_c2_u002_si_v1", "recording": "SYN_T0004", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔබගේ නම කුමක්ද?"}
+{"doc_id": "SYN_T0004_transcript_u003_v1", "recording": "SYN_T0004", "kind": "transcript", "utterance": 3, "topic": "name", "text": "yasodha abeysekara thamai."}
+{"doc_id": "SYN_T0004_c2_u003_en_v1", "recording": "SYN_T0004", "kind": "en", "utterance": 3, "topic": "name", "text": "It is Yasodha Abeysekara."}
+{"doc_id": "SYN_T0004_c2_u003_si_v1", "recording": "SYN_T0004", "kind": "si", "utterance": 3, "topic": "name", "text": "යශෝධා අබේසේකර."}
+{"doc_id": "SYN_T0004_transcript_u004_v1", "recording": "SYN_T0004", "kind": "transcript", "utterance": 4, "topic": "address", "text": "dan inne koheda?"}
+{"doc_id": "SYN_T0004_c2_u004_en_v1", "recording": "SYN_T0004", "kind": "en", "utterance": 4, "topic": "address", "text": "Where are you living now?"}
+{"doc_id": "SYN_T0004_c2_u004_si_v1", "recording": "SYN_T0004", "kind": "si", "utterance": 4, "topic": "address", "text": "දැන් පදිංචිය කොහේද?"}
+{"doc_id": "SYN_T0004_transcript_u005_v1", "recording": "SYN_T0004", "kind": "transcript", "utterance": 5, "topic": "address", "text": "ammo, No. 244/7, Circular Road, Ratnapura."}
+{"doc_id": "SYN_T0004_c2_u005_en_v1", "recording": "SYN_T0004", "kind": "en", "utterance": 5, "topic": "address", "text": "No. 244/7, Circular Road, Ratnapura."}
+{"doc_id": "SYN_T0004_c2_u005_si_v1", "recording": "SYN_T0004", "kind": "si", "utterance": 5, "topic": "address", "text": "244/7, වටරවුම් පාර, රත්නපුර."}
+{"doc_id": "SYN_T0004_transcript_u006_v1", "recording": "SYN_T0004", "kind": "transcript", "utterance": 6, "topic": "payment", "text": "ane 26th of March 1500 ක් bill eka gewwa."}
+{"doc_id": "SYN_T0004_c2_u006_en_v1", "recording": "SYN_T0004", "kind": "en", "utterance": 6, "topic": "payment", "text": "On 26th of March I transferred 1,500 rupees."}
+{"doc_id": "SYN_T0004_c2_u006_si_v1", "recording": "SYN_T0004", "kind": "si", "utterance": 6, "topic": "payment", "text": "මාර්තු 26 දින රුපියල් 1,500 ක් මාරු කළා."}
+{"doc_id": "SYN_T0004_transcript_u007_v1", "recording": "SYN_T0004", "kind": "transcript", "utterance": 7, "topic": "nic", "text": "identity card eke thiyenne namayai atai atai binduwai binduwai binduwai thunai atai namayai eka."}
+{"doc_id": "SYN_T0004_c2_u007_en_v1", "recording": "SYN_T0004", "kind": "en", "utterance": 7, "topic": "nic", "text": "The number on my identity card is 988003891V."}
+{"doc_id": "SYN_T0004_c2_u007_si_v1", "recording": "SYN_T0004", "kind": "si", "utterance": 7, "topic": "nic", "text": "මගේ හැඳුනුම්පතේ අංකය 988003891V."}
+{"doc_id": "SYN_T0004_transcript_u008_v1", "recording": "SYN_T0004", "kind": "transcript", "utterance": 8, "topic": "hotline", "text": "prashnayak thiyenam zero one one, six eight five, two six three, eight ta call karanna."}
+{"doc_id": "SYN_T0004_c2_u008_en_v1", "recording": "SYN_T0004", "kind": "en", "utterance": 8, "topic": "hotline", "text": "For any issue, call 0116852638."}
+{"doc_id": "SYN_T0004_c2_u008_si_v1", "recording": "SYN_T0004", "kind": "si", "utterance": 8, "topic": "hotline", "text": "ගැටලුවක් ඇත්නම් 0116852638 අමතන්න."}
+{"doc_id": "SYN_T0004_c2_summary_en_v1", "recording": "SYN_T0004", "kind": "summary", "utterance": null, "topic": "summary", "text": "Piumi of Seylan Bank handled a call from Yasodha Abeysekara. Residential address: No. 244/7, Circular Road, Ratnapura. A transfer of Rs. 150,000 was reported. Identity number provided: 988003891V."}

@@ -1,0 +1,186 @@
+{
+  "recording": "SYN_R0014",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0014_e001",
+      "canonical": "Kasun",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "kasun"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kasun"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කසුන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0014_e002",
+      "canonical": "Dialog",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Dialog",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dialog"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඩයලොග්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0014_e003",
+      "canonical": "Hiruni Bandara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "හිරුනි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Hiruni Bandara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හිරුනි බණ්ඩාර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0014_e004",
+      "canonical": "2004-02-28",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "2004-02-28",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "February 28, 2004"
+        },
+        {
+          "script": "LATIN",
+          "form": "28 February 2004"
+        },
+        {
+          "script": "SINHALA",
+          "form": "2004.02.28"
+        },
+        {
+          "script": "LATIN",
+          "form": "2004-02-28"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0014_e005",
+      "canonical": "0716074713",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0716074713",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 7 1 6 0 7 4 7 1 3"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 71 607 4713"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0716074713"
+        },
+        {
+          "script": "LATIN",
+          "form": "0716074713"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0014_e006",
+      "canonical": "Dehiwala",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Dehiwala",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dehiwala"
+        },
+        {
+          "script": "SINHALA",
+          "form": "දෙහිවල"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0014_e007",
+      "canonical": "200455958757",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "200455958757",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "dekai binduwai binduwai hatharai pahai pahai namayai pahai atai hathai pahai hatha"
+        },
+        {
+          "script": "LATIN",
+          "form": "200455958757"
+        },
+        {
+          "script": "SINHALA",
+          "form": "200455958757"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0014_e008",
+      "canonical": "8637347401",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "8637347401",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "8 6 3 7 3 4 7 4 0 1"
+        },
+        {
+          "script": "LATIN",
+          "form": "8637347401"
+        },
+        {
+          "script": "SINHALA",
+          "form": "8637347401"
+        }
+      ]
+    }
+  ]
+}

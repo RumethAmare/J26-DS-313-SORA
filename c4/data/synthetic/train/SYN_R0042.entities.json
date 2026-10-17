@@ -1,0 +1,165 @@
+{
+  "recording": "SYN_R0042",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0042_e001",
+      "canonical": "Dialog",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Dialog",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dialog"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඩයලොග්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0042_e002",
+      "canonical": "Sachini",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සචිනි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Sachini"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0042_e003",
+      "canonical": "Chamari Dissanayake",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Chamari Dissanayake"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ms. Dissanayake"
+        },
+        {
+          "script": "SINHALA",
+          "form": "චමරි දිසානායක"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0042_e004",
+      "canonical": "No. 147, Main Street, Kandy",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 147, Main Street, Kandy"
+        },
+        {
+          "script": "SINHALA",
+          "form": "147, ප්‍රධාන වීදිය, මහනුවර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0042_e005",
+      "canonical": "1984-11-21",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1984-11-21",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "21 November 1984"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1984 නොවැම්බර් 21"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0042_e006",
+      "canonical": "876553089773",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "876553089773",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "අටයි හැත්තෑහයයි පහයි පනස්තුනයි බිංදුවයි අසූනවයයි හැත්තෑහතයි තුන"
+        },
+        {
+          "script": "LATIN",
+          "form": "876553089773"
+        },
+        {
+          "script": "SINHALA",
+          "form": "876553089773"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0042_e007",
+      "canonical": "0115563355",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0115563355",
+      "redact": false,
+      "value": "0115563355",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 5563 355"
+        },
+        {
+          "script": "LATIN",
+          "form": "0115563355"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0115563355"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0042_e008",
+      "canonical": "Moratuwa",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Moratuwa",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Moratuwa"
+        },
+        {
+          "script": "SINHALA",
+          "form": "මොරටුව"
+        }
+      ]
+    }
+  ]
+}

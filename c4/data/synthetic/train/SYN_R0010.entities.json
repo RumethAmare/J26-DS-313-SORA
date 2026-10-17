@@ -1,0 +1,144 @@
+{
+  "recording": "SYN_R0010",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0010_e001",
+      "canonical": "Sampath",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sampath"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සම්පත්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0010_e002",
+      "canonical": "HNB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "HNB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "HNB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "එච්එන්බී"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0010_e003",
+      "canonical": "Kasun Jayasinghe",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kasun Jayasinghe"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කසුන් ජයසිංහ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0010_e004",
+      "canonical": "0112206685",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0112206685",
+      "redact": false,
+      "value": "0112206685",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "011 220 6685"
+        },
+        {
+          "script": "LATIN",
+          "form": "0112206685"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0112206685"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0010_e005",
+      "canonical": "760330160X",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "760330160X",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "7 6 0 3 3 0 1 6 0 x"
+        },
+        {
+          "script": "LATIN",
+          "form": "760330160X"
+        },
+        {
+          "script": "SINHALA",
+          "form": "760330160X"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0010_e006",
+      "canonical": "2602620487",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "2602620487",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "2602620487"
+        },
+        {
+          "script": "SINHALA",
+          "form": "2602620487"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0010_e007",
+      "canonical": "kasun.jayasinghe54@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "kasun.jayasinghe54@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "kasun.jayasinghe54@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "kasun.jayasinghe54@yahoo.com"
+        }
+      ]
+    }
+  ]
+}

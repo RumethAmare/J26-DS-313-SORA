@@ -1,0 +1,22 @@
+{"doc_id": "SYN_R0007_transcript_u001_v1", "recording": "SYN_R0007", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "hello, mama nadeesha, Dialog call centre eken kathaa karanne."}
+{"doc_id": "SYN_R0007_c2_u001_en_v1", "recording": "SYN_R0007", "kind": "en", "utterance": 1, "topic": "greet", "text": "Hello, this is Nadeesha from the Dialog call centre."}
+{"doc_id": "SYN_R0007_c2_u001_si_v1", "recording": "SYN_R0007", "kind": "si", "utterance": 1, "topic": "greet", "text": "ආයුබෝවන්, මම නදීෂා, ඩයලොග් ඇමතුම් මධ්‍යස්ථානයෙන් කතා කරන්නේ."}
+{"doc_id": "SYN_R0007_transcript_u002_v1", "recording": "SYN_R0007", "kind": "transcript", "utterance": 2, "topic": "name", "text": "mage nama Sachini."}
+{"doc_id": "SYN_R0007_c2_u002_en_v1", "recording": "SYN_R0007", "kind": "en", "utterance": 2, "topic": "name", "text": "My name is Sachini Perera."}
+{"doc_id": "SYN_R0007_c2_u002_si_v1", "recording": "SYN_R0007", "kind": "si", "utterance": 2, "topic": "name", "text": "මගේ නම සචිනි පෙරේරා."}
+{"doc_id": "SYN_R0007_transcript_u003_v1", "recording": "SYN_R0007", "kind": "transcript", "utterance": 3, "topic": "account", "text": "account number eka 6 3 0 3 7 8 1 3 4 3 5 0."}
+{"doc_id": "SYN_R0007_c2_u003_en_v1", "recording": "SYN_R0007", "kind": "en", "utterance": 3, "topic": "account", "text": "My account number is 630378134350."}
+{"doc_id": "SYN_R0007_c2_u003_si_v1", "recording": "SYN_R0007", "kind": "si", "utterance": 3, "topic": "account", "text": "මගේ ගිණුම් අංකය 630378134350."}
+{"doc_id": "SYN_R0007_transcript_u004_v1", "recording": "SYN_R0007", "kind": "transcript", "utterance": 4, "topic": "email", "text": "mage email එක sachini.perera74@gmail.com."}
+{"doc_id": "SYN_R0007_c2_u004_en_v1", "recording": "SYN_R0007", "kind": "en", "utterance": 4, "topic": "email", "text": "My email address is sachini.perera74@gmail.com."}
+{"doc_id": "SYN_R0007_c2_u004_si_v1", "recording": "SYN_R0007", "kind": "si", "utterance": 4, "topic": "email", "text": "මගේ ඊමේල් ලිපිනය sachini.perera74@gmail.com."}
+{"doc_id": "SYN_R0007_transcript_u005_v1", "recording": "SYN_R0007", "kind": "transcript", "utterance": 5, "topic": "phone", "text": "contact number එක 0719693877."}
+{"doc_id": "SYN_R0007_c2_u005_en_v1", "recording": "SYN_R0007", "kind": "en", "utterance": 5, "topic": "phone", "text": "My mobile number is 0719693877."}
+{"doc_id": "SYN_R0007_c2_u005_si_v1", "recording": "SYN_R0007", "kind": "si", "utterance": 5, "topic": "phone", "text": "මගේ දුරකථන අංකය 0719693877."}
+{"doc_id": "SYN_R0007_transcript_u006_v1", "recording": "SYN_R0007", "kind": "transcript", "utterance": 6, "topic": "address", "text": "mama inne No. 140/1, Main Street, Colombo."}
+{"doc_id": "SYN_R0007_c2_u006_en_v1", "recording": "SYN_R0007", "kind": "en", "utterance": 6, "topic": "address", "text": "I live at No. 140/1, Main Street, Colombo."}
+{"doc_id": "SYN_R0007_c2_u006_si_v1", "recording": "SYN_R0007", "kind": "si", "utterance": 6, "topic": "address", "text": "මගේ ලිපිනය 140/1, ප්‍රධාන වීදිය, කොළඹ."}
+{"doc_id": "SYN_R0007_transcript_u007_v1", "recording": "SYN_R0007", "kind": "transcript", "utterance": 7, "topic": "branch", "text": "Kandy branch එකට ගියා."}
+{"doc_id": "SYN_R0007_c2_u007_en_v1", "recording": "SYN_R0007", "kind": "en", "utterance": 7, "topic": "branch", "text": "I visited the Kandy branch yesterday."}
+{"doc_id": "SYN_R0007_c2_u007_si_v1", "recording": "SYN_R0007", "kind": "si", "utterance": 7, "topic": "branch", "text": "මම ඊයේ මහනුවර ශාඛාවට ගියා."}
+{"doc_id": "SYN_R0007_c2_summary_en_v1", "recording": "SYN_R0007", "kind": "summary", "utterance": null, "topic": "summary", "text": "Sachini Perera called Dialog and spoke to Nadeesha. The account number is 630378134350. The email address on file is sachini.perera74@gmail.com. The contact number is 0719693877. The customer lives at No. 140/1, Main Street, Colombo. The customer had visited the Kandy branch."}

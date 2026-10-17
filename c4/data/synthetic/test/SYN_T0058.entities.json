@@ -1,0 +1,165 @@
+{
+  "recording": "SYN_T0058",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0058_e001",
+      "canonical": "NSB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "NSB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "NSB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ජාතික ඉතිරිකිරීමේ බැංකුව"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0058_e002",
+      "canonical": "Shanika",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Shanika"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ශානිකා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0058_e003",
+      "canonical": "Yasodha Pathirana",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Yasodha"
+        },
+        {
+          "script": "SINHALA",
+          "form": "යශෝධා"
+        },
+        {
+          "script": "LATIN",
+          "form": "Yasodha Pathirana"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0058_e004",
+      "canonical": "0117665603",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0117665603",
+      "redact": false,
+      "value": "0117665603",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි එකොළහයි හතයි හයයි හයයි පහයි හැටයි තුන"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 11 766 5603"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0117665603"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0058_e005",
+      "canonical": "No. 27, Market Road, Ratnapura",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "27, වෙළඳපොළ පාර, රත්නපුර"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 27, Market Road, Ratnapura"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0058_e006",
+      "canonical": "yasodha.pathirana23@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "yasodha.pathirana23@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "yasodha.pathirana23@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "yasodha.pathirana23@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0058_e007",
+      "canonical": "Chilaw",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Chilaw",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Chilaw"
+        },
+        {
+          "script": "SINHALA",
+          "form": "හලාවත"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0058_e008",
+      "canonical": "523719954522",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "523719954522",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "5237 1995 4522"
+        },
+        {
+          "script": "LATIN",
+          "form": "523719954522"
+        },
+        {
+          "script": "SINHALA",
+          "form": "523719954522"
+        }
+      ]
+    }
+  ]
+}

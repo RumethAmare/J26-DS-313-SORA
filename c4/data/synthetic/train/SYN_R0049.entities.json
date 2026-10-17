@@ -1,0 +1,207 @@
+{
+  "recording": "SYN_R0049",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0049_e001",
+      "canonical": "Tharushi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "තරුෂි"
+        },
+        {
+          "script": "LATIN",
+          "form": "Tharushi"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0049_e002",
+      "canonical": "HNB",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "HNB",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "HNB"
+        },
+        {
+          "script": "SINHALA",
+          "form": "එච්එන්බී"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0049_e003",
+      "canonical": "Ruwan Bandara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ruwan Bandara"
+        },
+        {
+          "script": "SINHALA",
+          "form": "රුවන් බණ්ඩාර"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0049_e004",
+      "canonical": "ruwan.bandara90@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "ruwan.bandara90@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ruwan.bandara90@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ruwan.bandara90@gmail.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0049_e005",
+      "canonical": "Nugegoda",
+      "label": "LOCATION",
+      "role": "PUBLIC_PLACE",
+      "pseudonym": "Nugegoda",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Nugegoda"
+        },
+        {
+          "script": "SINHALA",
+          "form": "නුගේගොඩ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0049_e006",
+      "canonical": "1999-05-30",
+      "label": "DOB",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[DOB_1]",
+      "redact": true,
+      "value": "1999-05-30",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "30th of May 1999"
+        },
+        {
+          "script": "LATIN",
+          "form": "May 30, 1999"
+        },
+        {
+          "script": "SINHALA",
+          "form": "1999.05.30"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0049_e007",
+      "canonical": "0753991225",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0753991225",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හතයි පහයි තිස්නවයයි නවසිය දොළහයි දෙකයි පහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "0753991225"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0753991225"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0049_e008",
+      "canonical": "199915197388",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "199915197388",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ekai namayai namayai namayai ekai pahai ekai namayai hathai thunai atai ata"
+        },
+        {
+          "script": "LATIN",
+          "form": "199915197388"
+        },
+        {
+          "script": "SINHALA",
+          "form": "199915197388"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0049_e009",
+      "canonical": "Pradeep Perera",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Pradeep Perera"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ප්‍රදීප් පෙරේරා"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0049_e010",
+      "canonical": "9679083246",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "9679083246",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "namayai hayai hathai namayai binduwai atai thunai dekai hatharai haya"
+        },
+        {
+          "script": "LATIN",
+          "form": "9679083246"
+        },
+        {
+          "script": "SINHALA",
+          "form": "9679083246"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "recording": "SYN_R0015",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_R0015_e001",
+      "canonical": "Dialog",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Dialog",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dialog"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ඩයලොග්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0015_e002",
+      "canonical": "Kasun",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "kasun"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kasun"
+        },
+        {
+          "script": "SINHALA",
+          "form": "කසුන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0015_e003",
+      "canonical": "Ruwan Bandara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "රුවන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Ruwan Bandara"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0015_e004",
+      "canonical": "Kamal Gunawardena",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_3]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "කමල් ගුණවර්ධන"
+        },
+        {
+          "script": "LATIN",
+          "form": "Kamal Gunawardena"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0015_e005",
+      "canonical": "No. 74, School Lane, Negombo",
+      "label": "ADDRESS",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ADDRESS_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "74, පාසල් පටුමග, මීගමුව"
+        },
+        {
+          "script": "LATIN",
+          "form": "No. 74, School Lane, Negombo"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0015_e006",
+      "canonical": "ruwan.bandara66@yahoo.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "ruwan.bandara66@yahoo.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "ruwan.bandara66@yahoo.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ruwan.bandara66@yahoo.com"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0015_e007",
+      "canonical": "0117301582",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0117301582",
+      "redact": false,
+      "value": "0117301582",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "0 1 1 7 3 0 1 5 8 2"
+        },
+        {
+          "script": "LATIN",
+          "form": "0117301582"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0117301582"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_R0015_e008",
+      "canonical": "949554692065",
+      "label": "ACCOUNT",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[ACCOUNT_1]",
+      "redact": true,
+      "value": "949554692065",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "නවයයි හතළිස්නවයයි පන්සිය පනස්හතරයි හැටනවයයි දෙකයි බිංදුවයි හැටපහ"
+        },
+        {
+          "script": "LATIN",
+          "form": "949554692065"
+        },
+        {
+          "script": "SINHALA",
+          "form": "949554692065"
+        }
+      ]
+    }
+  ]
+}

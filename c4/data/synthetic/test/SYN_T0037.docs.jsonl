@@ -1,0 +1,46 @@
+{"doc_id": "SYN_T0037_transcript_u001_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 1, "topic": "greet", "text": "SLT ekata call kalata thanks, mage nama Janaka."}
+{"doc_id": "SYN_T0037_c2_u001_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 1, "topic": "greet", "text": "Thank you for calling SLT, my name is Janaka."}
+{"doc_id": "SYN_T0037_c2_u001_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 1, "topic": "greet", "text": "ශ්‍රී ලංකා ටෙලිකොම් ඇමතීම ගැන ස්තූතියි, මගේ නම ජනක."}
+{"doc_id": "SYN_T0037_transcript_u002_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 2, "topic": "name", "text": "oyaage nama mokakda?"}
+{"doc_id": "SYN_T0037_c2_u002_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 2, "topic": "name", "text": "May I have your name?"}
+{"doc_id": "SYN_T0037_c2_u002_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 2, "topic": "name", "text": "ඔබගේ නම කුමක්ද?"}
+{"doc_id": "SYN_T0037_transcript_u003_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 3, "topic": "name", "text": "Isuru Ranasinghe thamai."}
+{"doc_id": "SYN_T0037_c2_u003_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 3, "topic": "name", "text": "It is Isuru Ranasinghe."}
+{"doc_id": "SYN_T0037_c2_u003_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 3, "topic": "name", "text": "ඉසුරු රණසිංහ."}
+{"doc_id": "SYN_T0037_transcript_u004_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 4, "topic": "address", "text": "letters ewanna No. 18, Kandy Road, Kalutara ta."}
+{"doc_id": "SYN_T0037_c2_u004_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 4, "topic": "address", "text": "Please send letters to No. 18, Kandy Road, Kalutara."}
+{"doc_id": "SYN_T0037_c2_u004_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 4, "topic": "address", "text": "ලියුම් 18, මහනුවර පාර, කළුතර වෙත එවන්න."}
+{"doc_id": "SYN_T0037_transcript_u005_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 5, "topic": "account", "text": "ane salli daanna one account eka?"}
+{"doc_id": "SYN_T0037_c2_u005_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 5, "topic": "account", "text": "Which account should the money go to?"}
+{"doc_id": "SYN_T0037_c2_u005_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 5, "topic": "account", "text": "මුදල් බැර කළ යුතු ගිණුම කුමක්ද?"}
+{"doc_id": "SYN_T0037_transcript_u006_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 6, "topic": "account", "text": "1139 3501 0389."}
+{"doc_id": "SYN_T0037_c2_u006_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 6, "topic": "account", "text": "113935010389."}
+{"doc_id": "SYN_T0037_c2_u006_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 6, "topic": "account", "text": "113935010389."}
+{"doc_id": "SYN_T0037_transcript_u007_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 7, "topic": "phone", "text": "oyaawa contact karanna number ekak denna."}
+{"doc_id": "SYN_T0037_c2_u007_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 7, "topic": "phone", "text": "What is the best number to contact you on?"}
+{"doc_id": "SYN_T0037_c2_u007_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 7, "topic": "phone", "text": "ඔබව සම්බන්ධ කරගන්න අංකයක් දෙන්න."}
+{"doc_id": "SYN_T0037_transcript_u008_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 8, "topic": "phone", "text": "0 7 4 3 6 6 2 3 7 0 ta gahanna."}
+{"doc_id": "SYN_T0037_c2_u008_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 8, "topic": "phone", "text": "Please call 0743662370."}
+{"doc_id": "SYN_T0037_c2_u008_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 8, "topic": "phone", "text": "0743662370 අමතන්න."}
+{"doc_id": "SYN_T0037_transcript_u009_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 9, "topic": "email", "text": "hmm, email ekak thiyenawada?"}
+{"doc_id": "SYN_T0037_c2_u009_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 9, "topic": "email", "text": "Do you have an email address?"}
+{"doc_id": "SYN_T0037_c2_u009_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 9, "topic": "email", "text": "ඊමේල් ලිපිනයක් තිබේද?"}
+{"doc_id": "SYN_T0037_transcript_u010_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 10, "topic": "email", "text": "hmm, ow, isuru.ranasinghe58@yahoo.com."}
+{"doc_id": "SYN_T0037_c2_u010_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 10, "topic": "email", "text": "Yes, isuru.ranasinghe58@yahoo.com."}
+{"doc_id": "SYN_T0037_c2_u010_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 10, "topic": "email", "text": "ඔව්, isuru.ranasinghe58@yahoo.com."}
+{"doc_id": "SYN_T0037_transcript_u011_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 11, "topic": "payment", "text": "11th of April 2500 ක් bill eka gewwa."}
+{"doc_id": "SYN_T0037_c2_u011_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 11, "topic": "payment", "text": "On 11th of April I transferred 2,500 rupees."}
+{"doc_id": "SYN_T0037_c2_u011_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 11, "topic": "payment", "text": "අප්‍රේල් 11 දින රුපියල් 2,500 ක් මාරු කළා."}
+{"doc_id": "SYN_T0037_transcript_u012_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 12, "topic": "nic", "text": "ID eke number eka kiyanna puluwanda?"}
+{"doc_id": "SYN_T0037_c2_u012_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 12, "topic": "nic", "text": "Could you read out your ID number?"}
+{"doc_id": "SYN_T0037_c2_u012_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 12, "topic": "nic", "text": "ඔබගේ හැඳුනුම්පත් අංකය කියන්න."}
+{"doc_id": "SYN_T0037_transcript_u013_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 13, "topic": "nic", "text": "ow, 961 500 929 v."}
+{"doc_id": "SYN_T0037_c2_u013_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 13, "topic": "nic", "text": "Sure, 961500929V."}
+{"doc_id": "SYN_T0037_c2_u013_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 13, "topic": "nic", "text": "961500929V."}
+{"doc_id": "SYN_T0037_transcript_u014_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 14, "topic": "branch", "text": "ah Kalutara office eke idala thamai call karanne."}
+{"doc_id": "SYN_T0037_c2_u014_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 14, "topic": "branch", "text": "I am calling from near the Kalutara office."}
+{"doc_id": "SYN_T0037_c2_u014_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 14, "topic": "branch", "text": "මම කළුතර කාර්යාලය අසල සිට කතා කරන්නේ."}
+{"doc_id": "SYN_T0037_transcript_u015_v1", "recording": "SYN_T0037", "kind": "transcript", "utterance": 15, "topic": "relative", "text": "uh, mage ayya සමන් ඒකනායක th ekka enawa."}
+{"doc_id": "SYN_T0037_c2_u015_en_v1", "recording": "SYN_T0037", "kind": "en", "utterance": 15, "topic": "relative", "text": "My brother Saman Ekanayake will come with me."}
+{"doc_id": "SYN_T0037_c2_u015_si_v1", "recording": "SYN_T0037", "kind": "si", "utterance": 15, "topic": "relative", "text": "මගේ අයියා සමන් ඒකනායක මා සමඟ එනවා."}
+{"doc_id": "SYN_T0037_c2_summary_en_v1", "recording": "SYN_T0037", "kind": "summary", "utterance": null, "topic": "summary", "text": "Janaka of SLT handled a call from Isuru Ranasinghe. Residential address: No. 18, Kandy Road, Kalutara. Funds are to be credited to 113935010389. Callback number: 0743662370. Email: isuru.ranasinghe58@yahoo.com. A transfer of Rs. 25,000 was reported. Identity number provided: 961500929V. The Kalutara office was referenced. Saman Ekanayake was mentioned as a family member."}

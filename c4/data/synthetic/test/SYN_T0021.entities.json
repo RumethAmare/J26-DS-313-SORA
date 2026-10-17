@@ -1,0 +1,156 @@
+{
+  "recording": "SYN_T0021",
+  "annotation_source": "synthetic",
+  "entities": [
+    {
+      "entity_id": "SYN_T0021_e001",
+      "canonical": "Ceylinco Insurance",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "pseudonym": "Ceylinco Insurance",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Ceylinco Insurance"
+        },
+        {
+          "script": "SINHALA",
+          "form": "සෙලින්කෝ රක්ෂණ"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0021_e002",
+      "canonical": "Gayan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "pseudonym": "[PERSON_1]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Gayan"
+        },
+        {
+          "script": "SINHALA",
+          "form": "ගයාන්"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0021_e003",
+      "canonical": "Saman Liyanage",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PERSON_2]",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "සමන්"
+        },
+        {
+          "script": "LATIN",
+          "form": "Saman"
+        },
+        {
+          "script": "LATIN",
+          "form": "Saman Liyanage"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0021_e004",
+      "canonical": "199507546930",
+      "label": "NIC",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[NIC_1]",
+      "redact": true,
+      "value": "199507546930",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "one nine nine, five zero seven, five four six, nine three zero"
+        },
+        {
+          "script": "LATIN",
+          "form": "199507546930"
+        },
+        {
+          "script": "SINHALA",
+          "form": "199507546930"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0021_e005",
+      "canonical": "0700451654",
+      "label": "PHONE",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[PHONE_1]",
+      "redact": true,
+      "value": "0700451654",
+      "surfaces": [
+        {
+          "script": "SINHALA",
+          "form": "බිංදුවයි හතයි බිංදුවයි බිංදුවයි හතරයි පහයි දහසයයි පනස්හතර"
+        },
+        {
+          "script": "LATIN",
+          "form": "+94 70 045 1654"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0700451654"
+        },
+        {
+          "script": "LATIN",
+          "form": "0700451654"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0021_e006",
+      "canonical": "0119903247",
+      "label": "PHONE",
+      "role": "ORGANISATION",
+      "pseudonym": "0119903247",
+      "redact": false,
+      "value": "0119903247",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "zero one one, nine nine zero, three two four, seven"
+        },
+        {
+          "script": "LATIN",
+          "form": "0119903247"
+        },
+        {
+          "script": "SINHALA",
+          "form": "0119903247"
+        }
+      ]
+    },
+    {
+      "entity_id": "SYN_T0021_e007",
+      "canonical": "saman.liyanage73@gmail.com",
+      "label": "EMAIL",
+      "role": "PRIVATE_INDIVIDUAL",
+      "pseudonym": "[EMAIL_1]",
+      "redact": true,
+      "value": "saman.liyanage73@gmail.com",
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "saman.liyanage73@gmail.com"
+        },
+        {
+          "script": "SINHALA",
+          "form": "saman.liyanage73@gmail.com"
+        }
+      ]
+    }
+  ]
+}

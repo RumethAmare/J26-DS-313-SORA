@@ -1,0 +1,96 @@
+{
+  "model": "xlmr_both + rules + propagation + post-processing (PERSON/ADDRESS confidence >= 0.85)",
+  "nfr1_network_attempts": 0,
+  "nfr5_ms_per_document_median": 99.3,
+  "nfr5_ms_per_document_max": 117.7,
+  "nfr5_seconds_per_recording_median": 7.277,
+  "nfr4_peak_process_memory_mb": 995.5,
+  "hardware": "consumer laptop, 8 CPU cores, no GPU",
+  "leaks_total": 0,
+  "per_recording": [
+    {
+      "recording": "J26DS313_R0011",
+      "documents": 50,
+      "entities_redacted": 7,
+      "by_label": {
+        "ADDRESS": 2,
+        "NIC": 1,
+        "PERSON": 3,
+        "PHONE": 1
+      },
+      "leaks": 0,
+      "seconds_total": 5.887,
+      "ms_per_document": 117.7,
+      "peak_python_memory_mb": 0.3
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "documents": 104,
+      "entities_redacted": 13,
+      "by_label": {
+        "ACCOUNT": 4,
+        "ADDRESS": 2,
+        "DOB": 1,
+        "NIC": 1,
+        "PERSON": 3,
+        "PHONE": 2
+      },
+      "leaks": 0,
+      "seconds_total": 10.332,
+      "ms_per_document": 99.3,
+      "peak_python_memory_mb": 0.1
+    },
+    {
+      "recording": "J26DS313_R0021",
+      "documents": 104,
+      "entities_redacted": 17,
+      "by_label": {
+        "ACCOUNT": 5,
+        "ADDRESS": 3,
+        "DOB": 1,
+        "EMAIL": 1,
+        "NIC": 1,
+        "PERSON": 4,
+        "PHONE": 2
+      },
+      "leaks": 0,
+      "seconds_total": 9.528,
+      "ms_per_document": 91.6,
+      "peak_python_memory_mb": 0.1
+    },
+    {
+      "recording": "J26DS313_R0022",
+      "documents": 68,
+      "entities_redacted": 11,
+      "by_label": {
+        "ACCOUNT": 2,
+        "ADDRESS": 3,
+        "DOB": 1,
+        "NIC": 1,
+        "PERSON": 3,
+        "PHONE": 1
+      },
+      "leaks": 0,
+      "seconds_total": 7.167,
+      "ms_per_document": 105.4,
+      "peak_python_memory_mb": 0.1
+    },
+    {
+      "recording": "J26DS313_R0023",
+      "documents": 74,
+      "entities_redacted": 14,
+      "by_label": {
+        "ACCOUNT": 2,
+        "ADDRESS": 2,
+        "DOB": 1,
+        "NIC": 1,
+        "PERSON": 5,
+        "PHONE": 3
+      },
+      "leaks": 0,
+      "seconds_total": 7.277,
+      "ms_per_document": 98.3,
+      "peak_python_memory_mb": 0.1
+    }
+  ]
+}
