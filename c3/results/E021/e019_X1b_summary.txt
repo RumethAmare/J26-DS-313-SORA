@@ -1,0 +1,21 @@
+E019 X1b — leave-one-set-out CV, collar 0.0, blind. 8 real panel clips.
+
+[X1_c1emb_ahc] CV pooled DER 23.51  (miss 3.83 fa 5.57 conf 14.10)  per set {'TEST': 10.46, 'TEST2': 25.36, 'TEST3': 25.99}
+   chosen per held-out set: {'TEST': '{"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.75}, "segmentation": {"min_duration_off": 0.0}}', 'TEST2': '{"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.75}, "segmentation": {"min_duration_off": 0.0}}', 'TEST3': '{"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.75}, "segmentation": {"min_duration_off": 0.0}}'}
+   in-sample ORACLE (upper bound, not a result): 23.51 at {"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.75}, "segmentation": {"min_duration_off": 0.0}}
+   CV per clip: {'IRD_Harshana_Silva': 23.79, 'IRD_Recording_2_IIT': 8.75, 'Yt01': 8.93, 'YT02': 25.74, 'YT03': 50.85, 'YT04': 28.12, 'YT05': 26.47, 'YT07': 24.93}
+
+[X1b_ecapa_ahc] CV pooled DER 26.69  (miss 3.83 fa 5.57 conf 17.28)  per set {'TEST': 17.52, 'TEST2': 25.92, 'TEST3': 30.24}
+   chosen per held-out set: {'TEST': '{"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.65}, "segmentation": {"min_duration_off": 0.0}}', 'TEST2': '{"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.65}, "segmentation": {"min_duration_off": 0.0}}', 'TEST3': '{"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.75}, "segmentation": {"min_duration_off": 0.0}}'}
+   in-sample ORACLE (upper bound, not a result): 25.23 at {"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.65}, "segmentation": {"min_duration_off": 0.0}}
+   CV per clip: {'IRD_Harshana_Silva': 42.35, 'IRD_Recording_2_IIT': 14.33, 'Yt01': 9.21, 'YT02': 25.92, 'YT03': 52.49, 'YT04': 10.25, 'YT05': 42.48, 'YT07': 23.12}
+
+[X1b_sb_resnet_ahc] CV pooled DER 22.15  (miss 3.83 fa 5.57 conf 12.74)  per set {'TEST': 12.84, 'TEST2': 24.32, 'TEST3': 23.18}
+   chosen per held-out set: {'TEST': '{"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.7}, "segmentation": {"min_duration_off": 0.0}}', 'TEST2': '{"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.7}, "segmentation": {"min_duration_off": 0.0}}', 'TEST3': '{"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.7}, "segmentation": {"min_duration_off": 0.0}}'}
+   in-sample ORACLE (upper bound, not a result): 22.15 at {"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.7}, "segmentation": {"min_duration_off": 0.0}}
+   CV per clip: {'IRD_Harshana_Silva': 41.64, 'IRD_Recording_2_IIT': 9.14, 'Yt01': 8.5, 'YT02': 25.73, 'YT03': 47.02, 'YT04': 10.25, 'YT05': 26.95, 'YT07': 22.79}
+
+[X1b_sb_xvector_ahc] CV pooled DER 31.75  (miss 3.83 fa 5.57 conf 22.34)  per set {'TEST': 30.72, 'TEST2': 28.57, 'TEST3': 34.84}
+   chosen per held-out set: {'TEST': '{"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.2}, "segmentation": {"min_duration_off": 0.0}}', 'TEST2': '{"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.2}, "segmentation": {"min_duration_off": 0.0}}', 'TEST3': '{"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.2}, "segmentation": {"min_duration_off": 0.0}}'}
+   in-sample ORACLE (upper bound, not a result): 31.75 at {"clustering": {"method": "centroid", "min_cluster_size": 12, "threshold": 0.2}, "segmentation": {"min_duration_off": 0.0}}
+   CV per clip: {'IRD_Harshana_Silva': 23.79, 'IRD_Recording_2_IIT': 31.61, 'Yt01': 11.34, 'YT02': 25.92, 'YT03': 60.55, 'YT04': 10.25, 'YT05': 42.2, 'YT07': 33.88}

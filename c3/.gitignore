@@ -1,0 +1,19 @@
+# Audio and model weights never go in the repo (participant consent, size)
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.tgz
+*.zip
+*.ckpt
+*.pt
+# Annotations and per-clip model outputs stay in the dataset repo
+*.rttm
+*.uem
+*.events.jsonl
+# Secrets
+*.env
+*API*Key*.txt
+# Python / notebooks
+__pycache__/
+.ipynb_checkpoints/

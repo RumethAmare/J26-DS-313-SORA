@@ -1,0 +1,20 @@
+===== PART B — TEST (frozen, IRD_Harshana_Silva, IRD_Recording_2_IIT), collar 0.0 =====
+arm            seed     DER   miss     fa   conf   per clip
+c1_zeroshot       -    7.50   1.48   1.51   4.51   {"IRD_Harshana_Silva": 27.9885, "IRD_Recording_2_IIT": 4.867}
+small             0   14.73   3.61   1.65   9.48   {"IRD_Harshana_Silva": 28.1334, "IRD_Recording_2_IIT": 13.0125}
+small             1   14.07   3.28   2.42   8.36   {"IRD_Harshana_Silva": 28.4657, "IRD_Recording_2_IIT": 12.2157}
+small             2   16.27   4.46   1.60  10.20   {"IRD_Harshana_Silva": 28.1304, "IRD_Recording_2_IIT": 14.7453}
+small MEAN            15.02   3.78   1.89   9.35   range 14.07-16.27
+big               0   15.57   3.60   3.06   8.91   {"IRD_Harshana_Silva": 30.9736, "IRD_Recording_2_IIT": 13.5912}
+big               1   14.29   3.69   2.91   7.68   {"IRD_Harshana_Silva": 31.5924, "IRD_Recording_2_IIT": 12.066}
+big               2   18.30   4.05   3.24  11.01   {"IRD_Harshana_Silva": 31.2474, "IRD_Recording_2_IIT": 16.6332}
+big MEAN              16.05   3.78   3.07   9.20   range 14.29-18.30
+
+VERDICT (pre-registered rule): NO DETECTABLE DIFFERENCE at this test size: the seed ranges overlap
+mean change big - small: +1.03 pp DER
+big mean vs c1_zeroshot: +8.55 pp  (worse)
+
+DEV (in-domain, speakers shared with training -> leakage-inflated, sanity only), collar 0.0:
+  c1_zeroshot    mean  22.46  (n=1)
+  small          mean   7.36  (n=3)
+  big            mean   8.75  (n=3)

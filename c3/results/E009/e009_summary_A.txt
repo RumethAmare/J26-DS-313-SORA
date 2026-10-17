@@ -1,0 +1,23 @@
+===== PART A — TEST (frozen, IRD_Harshana_Silva, IRD_Recording_2_IIT), collar 0.0 =====
+arm            seed     DER   miss     fa   conf   per clip
+pretrained        -   14.35   1.48   1.51  11.36   {"IRD_Harshana_Silva": 27.9885, "IRD_Recording_2_IIT": 12.5949}
+e008_original     -   16.76   3.63   1.84  11.29   {"IRD_Harshana_Silva": 28.4161, "IRD_Recording_2_IIT": 15.2643}
+small             0   20.35   3.87   1.93  14.56   {"IRD_Harshana_Silva": 29.2788, "IRD_Recording_2_IIT": 19.2074}
+small             1   15.58   3.44   2.06  10.08   {"IRD_Harshana_Silva": 27.7489, "IRD_Recording_2_IIT": 14.0148}
+small             2   20.18   3.61   2.20  14.38   {"IRD_Harshana_Silva": 28.7077, "IRD_Recording_2_IIT": 19.0858}
+small MEAN            18.70   3.64   2.06  13.01   range 15.58-20.35
+big               0   20.84   3.20   4.70  12.95   {"IRD_Harshana_Silva": 35.3625, "IRD_Recording_2_IIT": 18.9791}
+big               1   18.77   3.06   2.99  12.71   {"IRD_Harshana_Silva": 29.7792, "IRD_Recording_2_IIT": 17.3545}
+big               2   21.44   3.63   3.75  14.06   {"IRD_Harshana_Silva": 32.3575, "IRD_Recording_2_IIT": 20.0407}
+big MEAN              20.35   3.30   3.82  13.24   range 18.77-21.44
+
+VERDICT (pre-registered rule): NO DETECTABLE DIFFERENCE at this test size: the seed ranges overlap
+mean change big - small: +1.65 pp DER
+big mean vs pretrained: +6.00 pp  (worse)
+big mean vs e008_original: +3.59 pp  (worse)
+
+DEV (in-domain, speakers shared with training -> leakage-inflated, sanity only), collar 0.0:
+  pretrained     mean  22.46  (n=1)
+  e008_original  mean   8.99  (n=1)
+  small          mean   6.78  (n=3)
+  big            mean   8.62  (n=3)

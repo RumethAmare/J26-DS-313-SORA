@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>C3 Scorer — diarization DER</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --panel2:#1e222b; --line:#2b303b;
+    --tx:#e6e9ef; --dim:#9aa3b2; --acc:#6ea8fe; --ok:#3fb950; --warn:#d29922; --bad:#f85149;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f7f9; --panel:#fff; --panel2:#f0f2f5; --line:#d8dde5;
+           --tx:#1b1f27; --dim:#5b6472; --acc:#1f6feb; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+       font:15px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;padding:28px}
+  .wrap{max-width:1100px;margin:0 auto}
+  h1{font-size:21px;margin:0 0 4px}
+  .sub{color:var(--dim);font-size:13px;margin-bottom:22px}
+  .drops{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
+  .drop{background:var(--panel);border:1.5px dashed var(--line);border-radius:10px;
+        padding:20px;text-align:center;cursor:pointer;transition:.15s}
+  .drop:hover,.drop.over{border-color:var(--acc);background:var(--panel2)}
+  .drop b{display:block;font-size:14px;margin-bottom:3px}
+  .drop span{color:var(--dim);font-size:12px}
+  .files{margin-top:9px;font-size:11.5px;color:var(--acc);text-align:left;
+         max-height:110px;overflow:auto;font-family:ui-monospace,Consolas,monospace}
+  .bar{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:20px}
+  button{background:var(--acc);color:#fff;border:0;border-radius:7px;padding:9px 17px;
+         font-size:14px;font-weight:600;cursor:pointer}
+  button:disabled{opacity:.4;cursor:default}
+  button.sec{background:var(--panel2);color:var(--tx);border:1px solid var(--line);font-weight:500}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+        padding:17px 19px;margin-bottom:15px}
+  .card h2{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--dim);
+           margin:0 0 13px;font-weight:600}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{padding:7px 9px;text-align:right;border-bottom:1px solid var(--line)}
+  th:first-child,td:first-child{text-align:left}
+  th{color:var(--dim);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em}
+  tr.tot td{font-weight:700;border-top:2px solid var(--line);border-bottom:0}
+  .num{font-variant-numeric:tabular-nums;font-family:ui-monospace,Consolas,monospace}
+  .big{display:flex;gap:26px;flex-wrap:wrap;margin-bottom:6px}
+  .big div{min-width:110px}
+  .big .v{font-size:27px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.15}
+  .big .k{font-size:11.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.05em}
+  .ins{margin:0;padding-left:19px}
+  .ins li{margin-bottom:7px}
+  .ok{color:var(--ok)} .warn{color:var(--warn)} .bad{color:var(--bad)} .dimc{color:var(--dim)}
+  .note{font-size:12px;color:var(--dim);border-top:1px solid var(--line);
+        margin-top:22px;padding-top:13px}
+  code{background:var(--panel2);padding:1.5px 5px;border-radius:4px;
+       font-family:ui-monospace,Consolas,monospace;font-size:12px}
+  .hide{display:none}
+  .logline{background:var(--panel2);border:1px solid var(--line);border-radius:7px;padding:11px;
+           font-family:ui-monospace,Consolas,monospace;font-size:11.5px;word-break:break-all}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>C3 Scorer</h1>
+<div class="sub">Drop your corrected annotation and the machine output. Protocol v1: overlap included, both collars, explicit UEM.</div>
+
+<div class="drops">
+  <div class="drop" id="dT">
+    <b>1 · Your annotation (ground truth)</b>
+    <span>the <code>.rttm</code> files from <code>rttm_truth\</code> — drop the <code>.uem</code> files too</span>
+    <div class="files" id="fT"></div>
+  </div>
+  <div class="drop" id="dH">
+    <b>2 · Machine output (draft)</b>
+    <span>the <code>.rttm</code> files from <code>rttm_draft\</code></span>
+    <div class="files" id="fH"></div>
+  </div>
+</div>
+
+<div class="bar">
+  <button id="go" disabled>Score</button>
+  <button class="sec" id="clr">Clear</button>
+  <button class="sec hide" id="csv">Download CSV</button>
+</div>
+
+<div id="out"></div>
+
+<div class="note">
+  Matches <code>pyannote.metrics</code> exactly — verified to 0.000 pp on all 8 already-scored clips,
+  DER and all three components, at both collars.
+  <b>For the thesis, <code>05_score.py</code> stays the citable tool</b>; this is for quick looks between annotation sessions.
+  Everything runs in your browser — no file leaves this computer.
+</div>
+
+</div>
+<script>
+"use strict";
+
+/* ---------- parsing ---------- */
+function parseRTTM(t){
+  const segs=[];
+  for(const line of t.split(/\r?\n/)){
+    const p=line.trim().split(/\s+/);
+    if(p.length>=8 && p[0]==="SPEAKER"){
+      const s=parseFloat(p[3]), d=parseFloat(p[4]);
+      if(isFinite(s)&&isFinite(d)&&d>0) segs.push([s,s+d,p[7]]);
+    }
+  }
+  return segs;
+}
+function parseUEM(t){
+  const out=[];
+  for(const line of t.split(/\r?\n/)){
+    const p=line.trim().split(/\s+/);
+    if(p.length>=4){
+      const a=parseFloat(p[2]), b=parseFloat(p[3]);
+      if(isFinite(a)&&isFinite(b)&&b>a) out.push([a,b]);
+    }
+  }
+  return out;
+}
+const stem = n => n.replace(/\.[^.]+$/,"").replace(/\.(rttm|uem)$/i,"");
+
+/* ---------- interval helpers (mirror of 05_score.py) ---------- */
+function support(iv){
+  const a=iv.slice().sort((x,y)=>x[0]-y[0]), out=[];
+  for(const [s,e] of a){
+    if(out.length && s<=out[out.length-1][1]) out[out.length-1][1]=Math.max(out[out.length-1][1],e);
+    else out.push([s,e]);
+  }
+  return out;
+}
+function subtract(regs,holes){
+  const res=[];
+  for(const [rs,re] of regs){
+    let pieces=[[rs,re]];
+    for(const [hs,he] of holes){
+      const nxt=[];
+      for(const [ps,pe] of pieces){
+        if(he<=ps||hs>=pe){nxt.push([ps,pe]);continue;}
+        if(hs>ps) nxt.push([ps,hs]);
+        if(he<pe) nxt.push([he,pe]);
+      }
+      pieces=nxt;
+    }
+    for(const p of pieces) if(p[1]-p[0]>1e-9) res.push(p);
+  }
+  return res;
+}
+function clipSegs(segs,regs){
+  const out=[];
+  for(const [s,e,l] of segs)
+    for(const [rs,re] of regs){
+      const lo=Math.max(s,rs), hi=Math.min(e,re);
+      if(hi-lo>1e-9) out.push([lo,hi,l]);
+    }
+  return out;
+}
+
+/* ---------- Hungarian (max co-occurrence mapping) ---------- */
+function hungarian(cost){
+  const n=cost.length, m=cost[0].length, INF=1e18;
+  const u=new Array(n+1).fill(0), v=new Array(m+1).fill(0),
+        p=new Array(m+1).fill(0), way=new Array(m+1).fill(0);
+  for(let i=1;i<=n;i++){
+    p[0]=i; let j0=0;
+    const minv=new Array(m+1).fill(INF), used=new Array(m+1).fill(false);
+    do{
+      used[j0]=true;
+      const i0=p[j0]; let delta=INF, j1=-1;
+      for(let j=1;j<=m;j++) if(!used[j]){
+        const cur=cost[i0-1][j-1]-u[i0]-v[j];
+        if(cur<minv[j]){minv[j]=cur; way[j]=j0;}
+        if(minv[j]<delta){delta=minv[j]; j1=j;}
+      }
+      for(let j=0;j<=m;j++){
+        if(used[j]){u[p[j]]+=delta; v[j]-=delta;}
+        else minv[j]-=delta;
+      }
+      j0=j1;
+    }while(p[j0]!==0);
+    do{const j1=way[j0]; p[j0]=p[j1]; j0=j1;}while(j0);
+  }
+  const res=new Array(n).fill(-1);
+  for(let j=1;j<=m;j++) if(p[j]>0) res[p[j]-1]=j-1;
+  return res;
+}
+
+/* ---------- the metric ---------- */
+function score(ref,hyp,uem,collar){
+  let scored=uem.map(x=>x.slice());
+  if(collar>0){
+    const half=collar/2, holes=[];
+    for(const [s,e] of ref){ holes.push([s-half,s+half]); holes.push([e-half,e+half]); }
+    scored=subtract(scored,support(holes));
+  }
+  const R=clipSegs(ref,scored), H=clipSegs(hyp,scored);
+  const ptset=new Set();
+  for(const [s,e] of R) {ptset.add(s);ptset.add(e);}
+  for(const [s,e] of H) {ptset.add(s);ptset.add(e);}
+  for(const [s,e] of scored){ptset.add(s);ptset.add(e);}
+  const pts=[...ptset].sort((a,b)=>a-b);
+
+  const rl=[...new Set(R.map(x=>x[2]))].sort();
+  const hl=[...new Set(H.map(x=>x[2]))].sort();
+  const ri=new Map(rl.map((l,i)=>[l,i])), hi=new Map(hl.map((l,i)=>[l,i]));
+
+  const inScored=m=>scored.some(([s,e])=>s<=m&&m<=e);
+  const cell=(a,b)=>a*hl.length+b;
+  const cooc=new Map();
+  const spans=[];
+  for(let i=0;i<pts.length-1;i++){
+    const a=pts[i], b=pts[i+1], d=b-a;
+    if(d<=1e-9) continue;
+    const m=(a+b)/2;
+    if(!inScored(m)) continue;
+    const ra=[...new Set(R.filter(([s,e])=>s<=m&&m<=e).map(x=>x[2]))];
+    const ha=[...new Set(H.filter(([s,e])=>s<=m&&m<=e).map(x=>x[2]))];
+    spans.push([d,ra,ha]);
+    for(const x of ra) for(const y of ha){
+      const k=cell(ri.get(x),hi.get(y));
+      cooc.set(k,(cooc.get(k)||0)+d);
+    }
+  }
+  let mapping=new Map();
+  if(rl.length&&hl.length){
+    const flip = rl.length>hl.length;
+    const nR=flip?hl.length:rl.length, nC=flip?rl.length:hl.length;
+    const M=Array.from({length:nR},()=>new Array(nC).fill(0));
+    for(let a=0;a<rl.length;a++) for(let b=0;b<hl.length;b++){
+      const val=cooc.get(cell(a,b))||0;
+      if(flip) M[b][a]=-val; else M[a][b]=-val;
+    }
+    const asg=hungarian(M);
+    for(let i2=0;i2<asg.length;i2++){
+      const j=asg[i2]; if(j<0) continue;
+      const a=flip?j:i2, b=flip?i2:j;
+      if((cooc.get(cell(a,b))||0)>0) mapping.set(hl[b],rl[a]);
+    }
+  }
+  let total=0,miss=0,fa=0,conf=0;
+  for(const [d,ra,ha] of spans){
+    const Nr=ra.length, Nh=ha.length;
+    const rset=new Set(ra);
+    let Nc=0; for(const y of ha) if(rset.has(mapping.get(y))) Nc++;
+    total+=d*Nr;
+    miss+=d*Math.max(0,Nr-Nh);
+    fa+=d*Math.max(0,Nh-Nr);
+    conf+=d*(Math.min(Nr,Nh)-Nc);
+  }
+  return {total,miss,fa,conf};
+}
+
+/* extra descriptive stats */
+function stats(ref,hyp){
+  const dur=ls=>{const m=new Map();for(const[s,e,l]of ls)m.set(l,(m.get(l)||0)+(e-s));return m;};
+  const hd=dur(hyp);
+  const overlap=(ls)=>{let o=0;for(let i=0;i<ls.length;i++)for(let j=i+1;j<ls.length;j++){
+      if(ls[i][2]===ls[j][2])continue;
+      const lo=Math.max(ls[i][0],ls[j][0]),hi=Math.min(ls[i][1],ls[j][1]);
+      if(hi-lo>0.01)o+=hi-lo;} return o;};
+  const speech=ls=>{let t=0;for(const[s,e]of support(ls.map(x=>[x[0],x[1]])))t+=e-s;return t;};
+  return {
+    trueSpk:new Set(ref.map(x=>x[2])).size,
+    foundSpk:hd.size,
+    foundSpk2s:[...hd.values()].filter(d=>d>=2).length,
+    tiny:[...hd.entries()].filter(([,d])=>d<2).map(([l,d])=>`${l} (${d.toFixed(2)}s)`),
+    refEnd:ref.length?Math.max(...ref.map(x=>x[1])):0,
+    refTurns:ref.length,
+    refOverlap:overlap(ref),
+    refSpeech:speech(ref),
+    labels:[...new Set(ref.map(x=>x[2]))]
+  };
+}
+
+/* ---------- files ---------- */
+const T=new Map(), H=new Map(), U=new Map();
+function wire(zone,list,kind){
+  const el=document.getElementById(zone), out=document.getElementById(list);
+  const inp=document.createElement("input");
+  inp.type="file"; inp.multiple=true; inp.accept=".rttm,.uem"; inp.className="hide";
+  el.appendChild(inp);
+  el.onclick=e=>{if(e.target!==inp)inp.click();};
+  inp.onchange=()=>take([...inp.files],kind,out);
+  el.ondragover=e=>{e.preventDefault();el.classList.add("over");};
+  el.ondragleave=()=>el.classList.remove("over");
+  el.ondrop=e=>{e.preventDefault();el.classList.remove("over");take([...e.dataTransfer.files],kind,out);};
+}
+function take(files,kind,out){
+  let pend=files.length;
+  if(!pend) return;
+  files.forEach(f=>{
+    const r=new FileReader();
+    r.onload=()=>{
+      const k=stem(f.name);
+      if(/\.uem$/i.test(f.name)) U.set(k,parseUEM(r.result));
+      else if(/\.rttm$/i.test(f.name)) (kind==="T"?T:H).set(k,parseRTTM(r.result));
+      if(--pend===0) refresh();
+    };
+    r.readAsText(f);
+  });
+}
+function refresh(){
+  const nm=m=>[...m.keys()].sort().join("\n");
+  document.getElementById("fT").textContent=[...T.keys()].sort()
+    .map(k=>k+(U.has(k)?"  + uem":"  (no uem)")).join("\n");
+  document.getElementById("fH").textContent=nm(H);
+  document.getElementById("go").disabled=!([...T.keys()].some(k=>H.has(k)));
+}
+wire("dT","fT","T"); wire("dH","fH","H");
+
+document.getElementById("clr").onclick=()=>{
+  T.clear();H.clear();U.clear();refresh();
+  document.getElementById("out").innerHTML="";
+  document.getElementById("csv").classList.add("hide");
+};
+
+/* ---------- run ---------- */
+let lastRows=[];
+document.getElementById("go").onclick=()=>{
+  const clips=[...T.keys()].filter(k=>H.has(k)).sort();
+  const rows=[]; const pooled={0:{t:0,m:0,f:0,c:0},0.25:{t:0,m:0,f:0,c:0}};
+  const noUem=[];
+  for(const c of clips){
+    const ref=T.get(c), hyp=H.get(c);
+    let uem=U.get(c);
+    if(!uem||!uem.length){
+      const end=Math.max(...ref.concat(hyp).map(x=>x[1]));
+      uem=[[0,end]]; noUem.push(c);
+    }
+    const r={clip:c, st:stats(ref,hyp), uemEnd:Math.max(...uem.map(x=>x[1]))};
+    for(const col of [0,0.25]){
+      const s=score(ref,hyp,uem,col);
+      r["c"+col]={der:s.total?(s.miss+s.fa+s.conf)/s.total*100:0,
+                  miss:s.total?s.miss/s.total*100:0,
+                  fa:s.total?s.fa/s.total*100:0,
+                  conf:s.total?s.conf/s.total*100:0};
+      pooled[col].t+=s.total;pooled[col].m+=s.miss;pooled[col].f+=s.fa;pooled[col].c+=s.conf;
+    }
+    rows.push(r);
+  }
+  lastRows=rows;
+  render(rows,pooled,noUem);
+  document.getElementById("csv").classList.remove("hide");
+};
+
+const f2=x=>x.toFixed(2);
+function render(rows,pooled,noUem){
+  const P=col=>{const p=pooled[col];return p.t?{der:(p.m+p.f+p.c)/p.t*100,miss:p.m/p.t*100,
+                fa:p.f/p.t*100,conf:p.c/p.t*100}:{der:0,miss:0,fa:0,conf:0};};
+  const p0=P(0), p25=P(0.25);
+  let h="";
+
+  h+=`<div class="card"><h2>Result — ${rows.length} clip${rows.length>1?"s":""}, duration-weighted</h2>
+    <div class="big">
+      <div><div class="v">${f2(p0.der)}%</div><div class="k">DER · collar 0.0</div></div>
+      <div><div class="v">${f2(p25.der)}%</div><div class="k">DER · collar 0.25</div></div>
+      <div><div class="v ${p0.conf/p0.der>0.6?"bad":"dimc"}">${f2(p0.conf)}%</div><div class="k">mixed up</div></div>
+      <div><div class="v dimc">${f2(p0.miss)}%</div><div class="k">missed</div></div>
+      <div><div class="v dimc">${f2(p0.fa)}%</div><div class="k">extra</div></div>
+    </div></div>`;
+
+  h+=`<div class="card"><h2>Per clip</h2><table><thead><tr>
+      <th>clip</th><th>DER 0.0</th><th>DER 0.25</th><th>missed</th><th>extra</th><th>mixed up</th>
+      <th>spk true</th><th>found</th><th>found ≥2s</th></tr></thead><tbody>`;
+  for(const r of rows){
+    const bad=r.st.foundSpk2s!==r.st.trueSpk;
+    h+=`<tr><td>${r.clip}</td>
+      <td class="num">${f2(r["c0"].der)}</td><td class="num">${f2(r["c0.25"].der)}</td>
+      <td class="num dimc">${f2(r["c0"].miss)}</td><td class="num dimc">${f2(r["c0"].fa)}</td>
+      <td class="num">${f2(r["c0"].conf)}</td>
+      <td class="num">${r.st.trueSpk}</td>
+      <td class="num ${r.st.tiny.length?"warn":""}">${r.st.foundSpk}</td>
+      <td class="num ${bad?"bad":"ok"}">${r.st.foundSpk2s}</td></tr>`;
+  }
+  h+=`<tr class="tot"><td>ALL</td><td class="num">${f2(p0.der)}</td><td class="num">${f2(p25.der)}</td>
+      <td class="num">${f2(p0.miss)}</td><td class="num">${f2(p0.fa)}</td><td class="num">${f2(p0.conf)}</td>
+      <td colspan="3"></td></tr></tbody></table></div>`;
+
+  /* insights */
+  const ins=[];
+  const share=p0.der>0?p0.conf/p0.der*100:0;
+  if(p0.der>0){
+    ins.push(share>=60
+      ? `<span class="bad">Speaker confusion is ${f2(share)}% of all error.</span> The model finds the speech, it just gives it to the wrong person. Effort belongs in embedding/clustering, not segmentation.`
+      : `Confusion is ${f2(share)}% of error; missed ${f2(p0.miss/p0.der*100)}%, extra ${f2(p0.fa/p0.der*100)}%. Mixed profile — say which dominates per clip rather than in aggregate.`);
+  }
+  const under=rows.filter(r=>r.st.foundSpk2s<r.st.trueSpk);
+  if(under.length) ins.push(`Under-counts speakers on <b>${under.length} of ${rows.length}</b> clips (${under.map(r=>r.clip).join(", ")}) — merging people together.`);
+  const tiny=rows.filter(r=>r.st.tiny.length);
+  if(tiny.length) ins.push(`<span class="warn">Speaker count inflated by fragments</span> on ${tiny.map(r=>r.clip+": "+r.st.tiny.join(", ")).join("; ")}. The “found” column counts these; “found ≥2s” does not. Quote the ≥2s column.`);
+  if(noUem.length) ins.push(`<span class="warn">No .uem for ${noUem.join(", ")}</span> — scored the whole clip. Protocol v1 wants an explicit UEM; drop the .uem files in with the truth files.`);
+  const uemGap=rows.filter(r=>r.uemEnd-r.st.refEnd < -0.05 || r.uemEnd-r.st.refEnd > 60);
+  const shortUem=rows.filter(r=>r.uemEnd < r.st.refEnd-0.01);
+  if(shortUem.length) ins.push(`<span class="bad">UEM ends before the last speech</span> on ${shortUem.map(r=>r.clip+` (uem ${f2(r.uemEnd)}s, speech to ${f2(r.st.refEnd)}s)`).join(", ")} — real audio is outside the scored region.`);
+  const ov=rows.reduce((a,r)=>a+r.st.refOverlap,0), sp=rows.reduce((a,r)=>a+r.st.refSpeech,0);
+  ins.push(`Overlap in your annotation: <b>${f2(ov)}s of ${f2(sp)}s speech (${f2(sp?ov/sp*100:0)}%)</b>. ${sp&&ov/sp*100<3?`<span class="warn">Published conversational corpora run 5–15%.</span> Scripted audio suppresses this — it is the overlap novelty's evidence base.`:``}`);
+  const oddLbl=rows.filter(r=>r.st.labels.some(l=>/^s\d+$/i.test(l)));
+  if(oddLbl.length) ins.push(`<span class="warn">Labels look like S1/S2</span> on ${oddLbl.map(r=>r.clip).join(", ")} — that is the transcript-derived convention, not your by-ear <code>spk01</code> convention. Check you loaded the right file as truth.`);
+  h+=`<div class="card"><h2>What this says</h2><ul class="ins">${ins.map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
+
+  const d=new Date().toISOString().slice(0,10);
+  h+=`<div class="card"><h2>Line for the experiment log</h2><div class="logline">
+      ${d} | ${rows.length} clips | pyannote/speaker-diarization-community-1, defaults, no speaker count |
+      DER ${f2(p0.der)}% @collar0.0, ${f2(p25.der)}% @collar0.25 |
+      missed ${f2(p0.miss)}%, extra ${f2(p0.fa)}%, confusion ${f2(p0.conf)}% |
+      overlap included | ${noUem.length?"UEM MISSING for "+noUem.join(","):"explicit UEM"}
+      </div></div>`;
+
+  document.getElementById("out").innerHTML=h;
+}
+
+document.getElementById("csv").onclick=()=>{
+  const head="clip,true_speakers,found_speakers,found_speakers_min2s,DER_c0.0,miss_c0.0,fa_c0.0,conf_c0.0,DER_c0.25,miss_c0.25,fa_c0.25,conf_c0.25";
+  const lines=lastRows.map(r=>[r.clip,r.st.trueSpk,r.st.foundSpk,r.st.foundSpk2s,
+    r["c0"].der,r["c0"].miss,r["c0"].fa,r["c0"].conf,
+    r["c0.25"].der,r["c0.25"].miss,r["c0.25"].fa,r["c0.25"].conf].join(","));
+  const blob=new Blob([[head,...lines].join("\n")],{type:"text/csv"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);
+  a.download="c3_scores_"+new Date().toISOString().slice(0,10)+".csv";
+  a.click();
+};
+</script>
+</body>
+</html>

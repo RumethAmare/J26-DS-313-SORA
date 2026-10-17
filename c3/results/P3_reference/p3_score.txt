@@ -1,0 +1,2 @@
+collar 0.0: pooled DER 13.79 (miss 4.84 fa 6.12 conf 2.83)  per clip: IRD_Harshana_Silva 16.37 (spk 3->3), IRD_Recording_2_IIT 13.46 (spk 6->6)
+collar 0.25: pooled DER 10.48 (miss 4.19 fa 4.26 conf 2.03)  per clip: IRD_Harshana_Silva 14.87 (spk 3->3), IRD_Recording_2_IIT 9.89 (spk 6->6)

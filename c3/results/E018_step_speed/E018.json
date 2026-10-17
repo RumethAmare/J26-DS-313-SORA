@@ -1,0 +1,17 @@
+{
+  "0.1": {
+    "total_proc_s": 901.5,
+    "x_rt": 0.78,
+    "pooled_der": 15.9
+  },
+  "0.25": {
+    "total_proc_s": 394.2,
+    "x_rt": 1.78,
+    "pooled_der": 20.26
+  },
+  "0.5": {
+    "total_proc_s": 209.3,
+    "x_rt": 3.35,
+    "pooled_der": 23.66
+  }
+}
