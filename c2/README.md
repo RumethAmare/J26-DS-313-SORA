@@ -91,6 +91,8 @@ pretrained on Sinhala.
     python src/run_c2.py --split dev --rid J26DS313_R0007   # full pipeline, GPU
     python src/run_offline.py --rid J26DS313_R0007      # full pipeline, laptop CPU, offline
     python src/evaluate.py                              # final test scores → eval/c2_report.md
+    python src/app.py                                   # demo app in the browser (offline models)
+    python src/app.py --backend gpu --share             # demo app on Colab (public link)
 
 ## Metrics
 

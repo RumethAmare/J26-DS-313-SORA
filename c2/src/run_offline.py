@@ -33,11 +33,16 @@ C2_ROOT = Path(__file__).resolve().parents[1]
 THREADS = os.cpu_count() or 4
 
 
-def translate(model_dir, texts, src_lang, tgt_lang, batch=8):
+def load_translator(model_dir):
     import ctranslate2
     from transformers import AutoTokenizer
-    tok = AutoTokenizer.from_pretrained(str(model_dir), src_lang=src_lang)
-    model = ctranslate2.Translator(str(model_dir), device="cpu", intra_threads=THREADS)
+    return (AutoTokenizer.from_pretrained(str(model_dir)),
+            ctranslate2.Translator(str(model_dir), device="cpu", intra_threads=THREADS))
+
+
+def translate_with(loaded, texts, src_lang, tgt_lang, batch=8):
+    tok, model = loaded
+    tok.src_lang = src_lang
     out = []
     for i in range(0, len(texts), batch):
         chunk = [tok.convert_ids_to_tokens(tok.encode(t, truncation=True, max_length=256))
@@ -50,9 +55,16 @@ def translate(model_dir, texts, src_lang, tgt_lang, batch=8):
     return out
 
 
-def summarise(gguf, transcripts):
+def translate(model_dir, texts, src_lang, tgt_lang, batch=8):
+    return translate_with(load_translator(model_dir), texts, src_lang, tgt_lang, batch)
+
+
+def load_summariser(gguf):
     from llama_cpp import Llama
-    llm = Llama(model_path=str(gguf), n_ctx=4096, n_threads=THREADS, verbose=False)
+    return Llama(model_path=str(gguf), n_ctx=4096, n_threads=THREADS, verbose=False)
+
+
+def summarise_with(llm, transcripts):
     results = []
     for text in transcripts:
         ids = llm.tokenize(text.encode("utf-8"), add_bos=False)[:3072]
@@ -63,6 +75,10 @@ def summarise(gguf, transcripts):
         raw = res["choices"][0]["message"]["content"]
         results.append((raw, *parse(raw)))
     return results
+
+
+def summarise(gguf, transcripts):
+    return summarise_with(load_summariser(gguf), transcripts)
 
 
 def main():

@@ -58,10 +58,17 @@ def load_conversations(args):
     return out
 
 
-def translate(model_dir, texts, src_lang, tgt_lang, batch=8, max_len=256):
-    tok = AutoTokenizer.from_pretrained(model_dir, src_lang=src_lang)
+def load_translator(model_dir):
+    """(tokenizer, model) for an NLLB checkpoint, on the GPU if there is one."""
+    tok = AutoTokenizer.from_pretrained(model_dir)
     model = AutoModelForSeq2SeqLM.from_pretrained(
         model_dir, torch_dtype=torch.float16 if DEVICE == "cuda" else torch.float32).to(DEVICE).eval()
+    return tok, model
+
+
+def translate_with(loaded, texts, src_lang, tgt_lang, batch=8, max_len=256):
+    tok, model = loaded
+    tok.src_lang = src_lang
     bos = tok.convert_tokens_to_ids(tgt_lang)
     out = []
     for i in range(0, len(texts), batch):
@@ -70,7 +77,14 @@ def translate(model_dir, texts, src_lang, tgt_lang, batch=8, max_len=256):
         with torch.no_grad():
             gen = model.generate(**enc, forced_bos_token_id=bos, num_beams=4, max_length=max_len)
         out += tok.batch_decode(gen, skip_special_tokens=True)
-    del model
+    return out
+
+
+def translate(model_dir, texts, src_lang, tgt_lang, batch=8, max_len=256):
+    """Load, translate, free: for one-off runs that need the GPU memory back."""
+    loaded = load_translator(model_dir)
+    out = translate_with(loaded, texts, src_lang, tgt_lang, batch, max_len)
+    del loaded
     torch.cuda.empty_cache()
     return out
 
@@ -80,13 +94,10 @@ LANG_ENGLISH = " in English"
 LANG_SINGLISH = " in mixed Sinhala-English (Singlish)"
 
 
-def summarise(adapter_dir, transcripts, lang=LANG_ENGLISH):
-    """Transcripts -> [(raw_text, summary, action_items)] with a step-4 model.
-
-    adapter_dir=None runs the untrained base model (the baseline)."""
+def load_summariser(adapter_dir):
+    """(tokenizer, model): 4-bit Qwen plus a step-4 LoRA adapter (None = base model)."""
     from peft import PeftModel
     from transformers import AutoModelForCausalLM, BitsAndBytesConfig
-    from train_summary import INSTRUCTION, parse
 
     tok = AutoTokenizer.from_pretrained(BASE_LLM)
     model = AutoModelForCausalLM.from_pretrained(
@@ -96,7 +107,13 @@ def summarise(adapter_dir, transcripts, lang=LANG_ENGLISH):
             bnb_4bit_compute_dtype=torch.float16, bnb_4bit_use_double_quant=True))
     if adapter_dir is not None:
         model = PeftModel.from_pretrained(model, adapter_dir)
-    model.eval()
+    return tok, model.eval()
+
+
+def summarise_with(loaded, transcripts, lang=LANG_ENGLISH):
+    """Transcripts -> [(raw_text, summary, action_items)]."""
+    from train_summary import INSTRUCTION, parse
+    tok, model = loaded
     results = []
     for text in transcripts:
         ids = tok(text, add_special_tokens=False)["input_ids"][:3072]
@@ -109,7 +126,14 @@ def summarise(adapter_dir, transcripts, lang=LANG_ENGLISH):
                                  do_sample=False, pad_token_id=tok.pad_token_id)
         raw = tok.decode(gen[0][x.shape[1]:], skip_special_tokens=True)
         results.append((raw, *parse(raw)))
-    del model
+    return results
+
+
+def summarise(adapter_dir, transcripts, lang=LANG_ENGLISH):
+    """Load, summarise, free. adapter_dir=None runs the untrained base model (the baseline)."""
+    loaded = load_summariser(adapter_dir)
+    results = summarise_with(loaded, transcripts, lang)
+    del loaded
     torch.cuda.empty_cache()
     return results
 

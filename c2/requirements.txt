@@ -31,5 +31,10 @@ rouge_score>=0.1.2        # ROUGE-L for summaries
 ctranslate2>=4.5.0
 llama-cpp-python>=0.3.0
 
+# --- Demo app (src/app.py) ----------------------------------------------------
+# Gradio 6 needs huggingface-hub >= 1.0, which transformers 4.56 rejects; stay on 5.
+gradio>=5.30,<6
+huggingface-hub>=0.34,<1.0
+
 # --- Phase 3: learned translation metric -------------------------------------
 # unbabel-comet          # COMET; ~2 GB model download, install when needed
