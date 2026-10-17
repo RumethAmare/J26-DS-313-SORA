@@ -1,0 +1,244 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S006_courier_delivery.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Domex customer service, මම Isuru.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "වනක්කම්. Hello, මගේ parcel එක තවම ආවේ නෑ. Track කරලා බලන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Tracking number එක කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "PX948214162.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "මම ආපහු කියන්නම්, PX948214162.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව් හරි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Parcel එක දැන් තියෙන්නේ Nugegoda hub එකේ. ඊයේ deliver කරන්න ගියාම ගෙදර කවුරුත් හිටියේ නෑ කියලා තියෙනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "අනේ, මම මුළු දවසම ගෙදර හිටියා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "සමාවෙන්න sir. Delivery address එක confirm කරමු.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "No. 33, Park Road, Galle.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ළඟ landmark එකක් තියෙනවද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, Bank of Ceylon branch එක ළඟ, දෙවෙනි පාරේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Receiver ගේ නම?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Vimal Shanmugam.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Contact number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "071 854 9145. Rider ට එන්න කලින් call කරන්න කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි, ලබන Tuesday උදේ 9.30 ත් 11.00 ත් අතර deliver කරනවා. Cash on delivery amount එක rupees 12,000.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Card එකෙන් pay කරන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඔව්, rider ළඟ card machine එකක් තියෙනවා. Complaint reference එක CS-460013.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි, ගොඩක් ස්තූතියි. රොම්බ නන්ද්‍රි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Thank you, සුභ දවසක්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Redelivery booked with a call before arrival; card payment accepted on delivery.",
+      "owner": "Domex",
+      "receiver": "Vimal Shanmugam",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Vimal Shanmugam",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Vimal Shanmugam"
+        },
+        {
+          "script": "LATIN",
+          "form": "Vimal"
+        }
+      ]
+    },
+    {
+      "canonical": "Isuru",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Isuru"
+        }
+      ]
+    },
+    {
+      "canonical": "Domex",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Domex"
+        }
+      ]
+    },
+    {
+      "canonical": "PX948214162",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "PX948214162"
+        }
+      ]
+    },
+    {
+      "canonical": "No. 33, Park Road, Galle",
+      "label": "ADDRESS",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 33, Park Road, Galle"
+        }
+      ]
+    },
+    {
+      "canonical": "071 854 9145",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "071 854 9145"
+        }
+      ]
+    },
+    {
+      "canonical": "CS-460013",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "CS-460013"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {
+    "වනක්කම්.": "OTHER",
+    "වනක්කම්": "OTHER",
+    "රොම්බ": "OTHER",
+    "නන්ද්‍රි.": "OTHER",
+    "නන්ද්‍රි": "OTHER"
+  }
+}

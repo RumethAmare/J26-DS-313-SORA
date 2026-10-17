@@ -1,0 +1,1016 @@
+{
+  "n_clips": 111,
+  "predictions": [
+    {
+      "recording": "J26DS313_R0007",
+      "clip": 0,
+      "start": 2.01,
+      "end": 10.21,
+      "reference": "van ekak onne neda? mama oya driver kenek dannawa Suresh kiyala. Nine Arch Transport eken. Suresh reliable da?",
+      "hypothesis": "නෑ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මැරි මැරි"
+    },
+    {
+      "recording": "J26DS313_R0007",
+      "clip": 1,
+      "start": 13.8,
+      "end": 35.35,
+      "reference": "ow reliable. mama call karala ahannam. eyage number eka zero binduwai hatai hayai, atai namayai binduwai, ekai dekai thunai hathara. kiyada charge karanne? kiyada yanne oya van eka kiyak weida? ow poddak.. eka eh eka mata tikak ahanna. round trip ekata mama hithanne 15,000 walata ei.",
+      "hypothesis": "ඔව් reliable මම call කරලා අහන්නම් එයාගේ number එක 0 0 7 6 8 9 0 1 2 3 4 කීයක්ද charge කරන්නේ බැල්ලා යන්නේ ඔයා ඇන්න එක කීයක් වේදේ ඔව් පොඩ්ඩක් පොඩ්ඩක් එක ඒක එක මට ටික අහන්නවා round flip එකට මම හිතන්නේ 15th මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0007",
+      "clip": 2,
+      "start": 37.59,
+      "end": 58.24,
+      "reference": "aiyo, eka tikak wadi ne. na na, okay okay. hari petrol ekath ekka nam okay. mama Suresh ekka confirm karannam. pick up eka kohenda? hamoma ape gedara gawata enna dannawane. number 23, Muththegama, Kosgama. hayata enna one.",
+      "hypothesis": "අයියෝ, මේක ටිකක් වැඩි නේ. නෑ නෑ, okay okay. හරි petrol එකත් එක්ක නම් okay. මම stories එක confirm කරමු. ටිකත් එක්කො හෙන්ද? හැන් මම අපේ ගෙදෙර ගාවට එන්නේ දන්න ඕනේ. Number 23, මුරුතගම කොස්තම. හරියිරවට එන්න ඕනේ."
+    },
+    {
+      "recording": "J26DS313_R0013",
+      "clip": 0,
+      "start": 0.52,
+      "end": 22.54,
+      "reference": "Good afternoon. Welcome to Senaratne and Associates. Let's discuss confidential case details about your property agreement dispute. Good afternoon miss. මගේ business partner agreement එක breach කරලා property එක transfer කරන්න ට්‍රයි කරා. ඒක නිසා තමයි මම ආවේ. Miss, මම registry එක and contract documents check කරා. clause 4 අනුව එයාලට ඒක කරන්න විදිහක් නෑ.",
+      "hypothesis": "Good afternoon, welcome to Senaratne and Associates. Let's discuss confidential case details about your property agreement dispute. Good afternoon miss. Mage business partner agreement eka breach karala property eka transfer karanna ra ekak. Eka nisadai mama awi. Miss mama registry eka and contract documents check kara clause 4 eka 9 oya eyata kiyaka kiyanawa."
+    },
+    {
+      "recording": "J26DS313_R0013",
+      "clip": 1,
+      "start": 24.92,
+      "end": 35.15,
+      "reference": "Let me check the file. Mahesh, ඔයාගේ full name එකයි NIC එකයි කියන්නකෝ බලන්න. System එකේ record update කරන්න. මගේ නම මහේෂ් ගුණවර්ධන. NIC එක 198212345678.",
+      "hypothesis": "Let me check the file. Mahesh, oyage full name eka and NIC eka kiyannako balanna system eke record update karanna. Mage nama Mahesh Gunawardena."
+    },
+    {
+      "recording": "J26DS313_R0013",
+      "clip": 2,
+      "start": 42.0,
+      "end": 56.51,
+      "reference": "Address එක update කරන්නද? දැන් system එකේ තියෙන්නේ 45 Duplication Road, Colombo 3 නේද? නෑ miss, ඒක පරණ address එකක්. අලුත් එක number 12 Baseline Road, Borella. මහේෂ් ඔයාගේ phone number එක 0777123456 නේද?",
+      "hypothesis": "Address eka update karannada? Dan system eke thiyenne 45, Duplication Road, Colombo 3 neda? Na miss, eka parne address eka. Aluth eka number 12, Baseline Road, Borella. Mahesh, oyage phone number eka 07771234."
+    },
+    {
+      "recording": "J26DS313_R0013",
+      "clip": 3,
+      "start": 60.0,
+      "end": 83.93,
+      "reference": "ඔව්, ඒක තමයි number එක. NDA එක ඉක්මනට send කරන්න පුළුවන්ද? සරි පුරියම්. We will find an injunction order immediately to protect our rights under this. Miss court එකට යන්න කලින් notice එක send කරමුද? ඔව්, first formal notice එක send කරමු. Mahesh, ඔයාට හෙට office එකට එන්න පුළුවන්ද sign කරන්න? හරි miss, මම හෙට උදේ එන්නම්.",
+      "hypothesis": "මම එහෙම එක එක්මන්ට send කරන්න පුළුවන්ද? ඔව්, මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මැත්තා මැත්තා මැත්තා මැත්තා මැත්තා මැත්තා මැත්තා මැත්තා මැත්තා මැත්තා මැත්තා මැත්තා මැත්තා මැත්තා මැත�"
+    },
+    {
+      "recording": "J26DS313_R0013",
+      "clip": 4,
+      "start": 87.58,
+      "end": 93.5,
+      "reference": "Great. Anita, මම හෙට උදේම draft එක email කරන්නම්. ඔයා court documentation එක check කරලා finish කරන්න.",
+      "hypothesis": "Great. Anita, mama heta udeyema draft eka email karannam oya court doctor ekak dennam."
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "clip": 0,
+      "start": 1.52,
+      "end": 22.49,
+      "reference": "Welcome to the Student Affairs Office. Registration එක complete කරන්න documentation check කරමු. Good morning sir. මම ඔෆර් ලෙටර් එක ගත්තා last week IT degree එකට. හැබැයි මගේ final exam වල වැඩ ගොඩක් තියෙනවා මේ දවස්වල. ඒක හින්දා අද මේක ඉවර කරගන්න. ඒක හොඳයි. Full name එකයි NIC එකයි system එකෙන් verify කරමු. මගේ නම පසින්දි සිල්වා. NIC එක 200311223344.",
+      "hypothesis": "Welcome to the Student Affairs Office. Registration eka complete karam documentation check karamu. Good morning sir. Mama offer letter eka gaththa last week IT degree ekata habai mage final exam wala wada godak thiyenawa me da sall. So mama nithuwa adama kiyawara karaganna. Eka hondai. Full name nIC ekak kiyanna system eka verify karamu. Mage nama Pasindhi Silva NIC number 07123456789."
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "clip": 1,
+      "start": 27.28,
+      "end": 38.01,
+      "reference": "Sir අපි first sem එකේ fee එක ගෙව්වා. Receipt එක මේ තියෙන්නේ. තව documents මොනවාද ඕනේ? Mm, let me check. පසින්දිගේ date of birth එක confirm කරන්න. 2003 ජනවාරි 15.",
+      "hypothesis": "අපි first sem එකේ free එක ගෙවුවා. Recip එක මේ තියෙන්නේ. තව documents මොනවද ඕනේ? ම්. Let me check. පස්සින් එකේ date of birth එක confirm කරන්න?"
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "clip": 2,
+      "start": 40.34,
+      "end": 44.13,
+      "reference": "Address එක update කරන්න ඕනේ නැද්ද? දැන් system එකේ තියෙන්නේ අංක 25, කඩවෙල රෝඩ්, මාලබේ.",
+      "hypothesis": "Address එක update කරන්න ඕනෙනෙද? නෑ system එකේ තියෙන්නේ number 25, Card Road, කෝල්ල."
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "clip": 3,
+      "start": 46.22,
+      "end": 52.45,
+      "reference": "නෑ sir, අපි මේ ළඟදී මාරු වුණා. දැන් ඉන්නේ නුගේ-- ආ හරි ඔයා කියන්න. අලුත් එක නම්බර් 10, ස්ටැන්ලි තිලකරත්න මාවත, නුගේගොඩ.",
+      "hypothesis": "නෑ sir, අපි මේ ළංරුති මාරුණා. දැන් එන්නේ නුගේ... ආ හරි වා කියන්න. අලුත් එක number 10, Stanford Road, කෝල්ල."
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "clip": 4,
+      "start": 55.41,
+      "end": 60.61,
+      "reference": "Noted. ඔයාලගේ contact number එකක් දෙනවද emergency වලට? මගේ නම්බර් එක ගන්න. 0714455667. මම නිමාලි සිල්වා.",
+      "hypothesis": "Noted. Oyal contact number ekak denad emergency walata? Mage number ekak ganna. 07123456123."
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "clip": 5,
+      "start": 66.22,
+      "end": 80.13,
+      "reference": "පසින්දි, ඔයාගේ specialization එක Software Engineering නේද? Module registration එක හෙට වෙනකන් open තියෙනවා. Tamil language එක optional module එකක් විදියට ගන්නවද? sari sari. මම try එකක් try කරන්නම් sir ඒකට.",
+      "hypothesis": "Pasindi, oyaage specialization eka soft engineering nedha? Moral registration eka hetenakam open thiyenawa. Tamil language eka option model ekak ganna one. Saree saree, mama try ekak try karannam sir ekak."
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "clip": 6,
+      "start": 82.5,
+      "end": 90.39,
+      "reference": "හරි, එහෙනම් ඒක add කරමු. කෝ medical certificate එක? අප්පා, අපි ඒක ගෙදර අමතක වෙලා දාලා ඇවිත්නේ. අද දෙන්නම ඕනෙද?",
+      "hypothesis": "නෑ මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැනවා කවා කවා කවා කවා කවා කවා"
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "clip": 7,
+      "start": 92.42,
+      "end": 109.81,
+      "reference": "ඔව්, medical එක නැතුව ID card එක print කරන්න බෑ system එකෙන්. ඒක mandatory. I'm sorry sir. මම හෙට උදෙන්ම medical එක ගෙනැත් දෙන්නම්. ඒක ගෙනාවම process එක finish කරමු. මම file එක pending තියන්නම්. හෙට උදේ මගේ assistant කවින්දිට මේක hand over කරන්නම්.",
+      "hypothesis": "Medical eka netho ID card eka print karanna ba system eken, eka mandatory. I'm sorry sir, mama heta ude medical eka genak denna. Eka genawa mama process eka finish karamu. Mama file eka pending thiyannam, heta ude mage assistant Kavindita meka hand over karannam."
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "clip": 0,
+      "start": 1.88,
+      "end": 24.1,
+      "reference": "Good morning, MAS Holdings HR Division, mama Dilini. How can I help you? Good morning. Mama last week eke interview ekakata attend una Software Engineering position ekakata. Result eka kohomada danne na ne, ekayi mama call kare. Ah sure, full name eka kiyanna puluwanda? Hasitha Gunasekara. Ow. Mm NIC number eka?",
+      "hypothesis": "Good morning NIC Holdings HR Division. Mama Dilini, how can I help you? Good morning. Mama last week eke interview ekata attend una. Software engineer position ekakata. Result eka kohomadha danne na ne eka emma call kare. Sure, full name eka kiyanna puluwan dha? Hassitha Gunasekara. Ow. NIC nama Hassitha Gunasekara."
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "clip": 1,
+      "start": 25.32,
+      "end": 29.21,
+      "reference": "NIC eka 1994... poddak inna. 199456712034.",
+      "hypothesis": "NIC eka 199012304567V."
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "clip": 2,
+      "start": 38.86,
+      "end": 41.83,
+      "reference": "Uh date of birth? September 21st, 1994.",
+      "hypothesis": "ආ හා තැනම් date of birth මැඩම් මැඩම් මැඩම් මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "clip": 3,
+      "start": 44.0,
+      "end": 49.39,
+      "reference": "Uh contact number eka confirm කරන්න puluwanda? Ow. 0762890355.",
+      "hypothesis": "Content number eka confirm karanna puluwan da? Ow, 076 05212."
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "clip": 4,
+      "start": 54.32,
+      "end": 61.86,
+      "reference": "Uh poddak inna. Interview panel result processing eke thamayi thiyenne. Sure, no problem. Dilini...",
+      "hypothesis": "Hari, ok. Poddak inna. Interview panel result processing eke thamai thiyenne. Sure, no problem. Dili nisa."
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "clip": 5,
+      "start": 64.28,
+      "end": 65.43,
+      "reference": "Dilini, Hasitha Gunasekara da?",
+      "hypothesis": "දිහි හස්ත ගුණස් ජෙකරද?"
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "clip": 6,
+      "start": 72.48,
+      "end": 87.47,
+      "reference": "Mm hari, mama direct... directly kiyannada? Uh sir, ow please. Hasitha, good morning. Mama IT Department eke Head, Ranjith. Congratulations, you have been selected to the Software Engineer position.",
+      "hypothesis": "ආ සිතුමි good morning මම IT department එකෙන් රාජිත් congratulations you have been selected to the software engineering position Really thank you so much sir thank you So joint date එක November 1st week වගේ තමයි යන්නේ basically මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ ම්ක කවවා ක ක කවවා කවා කවා කවා කව"
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "clip": 7,
+      "start": 90.78,
+      "end": 104.75,
+      "reference": "Really? Thank you so much, sir. Thank you. So, joining date eka November first week wage thamayi yanne. Uh basic salary eka 1,40,000 wage wenne. Uh employee ID eka thama MASIT2024/0892. Onboarding walata use කරන්න.",
+      "hypothesis": "Employee ID eka tama MAs IT 2024 08 92 onboarding walata use karanna. Hari sir, hari sir. November 1st, perfect sir. Office offer letter eka email kata send karanna. Email address eka giyanna puluwan."
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "clip": 8,
+      "start": 108.2,
+      "end": 132.19,
+      "reference": "Hari sir, hari sir. November 1st, perfect sir. Offer... offer letter eka email එකට uh send කරන්නම්. Email address eka kiyannako. Email eka sir, hasitha.94@gmail.com. Hari, Dilini offer letter eka draft කරන්න. Address eka records වලට ගන්න. Uh sir, me address eka, No. 33, Duminegegama Street, Kesbewa. Poddak ayeth kiyannako.",
+      "hypothesis": "info at gmail dot com. Hari Dilini, awful letter eka draft karanna. Address eka record set ekanna. Sir, me address eka me number 33, Dumithegama Street, Kasbawe. Poddak aaye kiyannako. Dilinita call karanna."
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "clip": 9,
+      "start": 133.3,
+      "end": 136.97,
+      "reference": "Dilini ta call කරන්න. 0112345678 extension 45, uh anything you need.",
+      "hypothesis": "Ekai ekai desi ethi satarai panasai hath atai."
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "clip": 10,
+      "start": 139.28,
+      "end": 156.0,
+      "reference": "Uh no, no, no madam, no madam. I'm so grateful. Thank you, thank you madam, thank you sir. Uh Dilini, mata address eka poddak oyayi kiyannako ayeth. Ah sir, me, mama eka note down කරගත්තා. Ah okay, okay. Thank you. Okay, okay, thank you.",
+      "hypothesis": "Anything you need? No, no madam, no madam. I'm so grateful. Thank you, thank you madam, thank you sir. Dilini, mata address eka poddak oy kiyanna ko oy. Ah, eya sir, me... Mama eka note down karagatta. Ah, okay, okay. Thank you. Okay, okay, thank you."
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "clip": 0,
+      "start": 1.2,
+      "end": 10.95,
+      "reference": "Good afternoon Dialog customer care. මම තිසාරි. account number එක කියන්න පුළුවන්ද? Good afternoon. Account number එක D L G 2 0 1 9 0 0 5 6 7 8 3 4.",
+      "hypothesis": "Good afternoon Dialog Customer Care, mama Thisari, account number eka kiyanna puluwanda? Good afternoon, account number eka DLG201944567V."
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "clip": 1,
+      "start": 15.0,
+      "end": 20.93,
+      "reference": "NIC එක confirm කරන්න පුළුවන්ද? ඔව්. NIC එක දහනවයයි අනූඑකයි හැටහතයි අසූවයි තිස්හතරයි විසිඑක.",
+      "hypothesis": "NIC eka confirm karanna puluwanda? Ow, NIC eka 1991216789."
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "clip": 2,
+      "start": 23.52,
+      "end": 45.68,
+      "reference": "Thank you. Account name එක? Account name එක අනෝමා සිරිවර්ධන. මොකක්ද තියෙන issue එක කියලා මට explain කරන්න පුළුවන්ද? මගේ last month bill එක ටිකක් වැඩි වුණා. මේ extra data charge වෙලා තියෙනවා මම හිතන්නේ. හැබැයි මම මේ package එකක් add කරගත්තා. එතකොට මොකක්ද දන්නේ නෑනේ issue එක. ගාන ගොඩක් වැඩියි. ඒකයි.",
+      "hypothesis": "thank you account name එක account name එක අනෝමා සිරිවර්ධන මොකක්ද තියෙන්නේ issue එක කියන්නේ මට explain කරගෙනවාද මගේ last month bill එක ටිකක් වැඩි වුණා මේ extra data charge වෙලා තියෙනවා මම හිතන්නේ හැබැයි මම මේ package එකක් add කරගත්තා එතකොට මොකක්ද දැන් නෑ නෑ නේ issue එක ගානේ ගොඩක් වෙන්නේ"
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "clip": 3,
+      "start": 46.46,
+      "end": 49.33,
+      "reference": "Let me check. පොඩ්ඩක් ඉන්න.",
+      "hypothesis": "Okay let me check."
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "clip": 4,
+      "start": 51.54,
+      "end": 75.68,
+      "reference": "Data pack එක add වෙලා තියෙන්නේ October 5th. But billing cycle එක October 1st ඉඳන් start වෙලා තියෙන්නේ. ඒක නිසා October 1st to 4th වලට extra charge එකක් වැදිලා තියෙනවා. ආ හා හා. එතකොට මේ මේ custom care එකෙන් මට ඒක explain කරේ නෑනේ. Yeah yeah, I understand. Sorry for the confusion. මම complaint එක log කරන්නම්.",
+      "hypothesis": "Data pack eka add wela thiyenne October 5th but billing cycle eka October 1st din dan start wela thiyenne. Eka nisa October 1st to 4th thirta extra charge ekak wadi wela thiyenawa. Ah ha ha, ethakota me custom kiyai eke mata eka explain kare na ne. Yeah, I understand. Sorry for the confusion. Eek madam ehema. Mama complaint eka log karanna."
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "clip": 5,
+      "start": 76.32,
+      "end": 88.23,
+      "reference": "තිසාරි billing complaint එකක්ද? මම ඒක handle කරන්නම්. Sir, අනෝමා සිරිවර්ධන, D L G 2019 00567834, data charge dispute එකක් තමයි තියෙන්නේ.",
+      "hypothesis": "ආ හා සහරි bidding complaint එකක්ද මම ඒක add වෙන්නම් sir අනෝමා සිරිවර්තන DLG 2019 0056 712 මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "clip": 6,
+      "start": 92.8,
+      "end": 116.3,
+      "reference": "හරි අනෝමා, මම senior agent නාමල්. October එකේ ඉඳන් හතරට charges ටික රුපියල් එක්දාස් දෙසිය හතළිහයි. මම account එකට ඒ ටික credit කරන්නම්. Apology for the confusion. ඔව් ඔව් sir. Thank you so much sir. Thank you, I appreciate it. Also අනෝමා, ඔයාගේ five years loyal customer account එක නිසා මම special upgrade එකක් offer එකක් දෙන්නම් 15 GB plan එකකට shift කරන්න. Same price එකකටම.",
+      "hypothesis": "ඔව් මම senior agent නාමල්. October 1 එකේ ඉඳන් හතර charges ටික, රුක්කර් එක්දාස් දෙසි හැත්ලි යේ. මම account එකට ඒ ටික් credit කරන් නම්, apology for the confusion. ඔව් sir, thank you so much sir. Thank you, appreciate it. ඔව් sir, මම ඔයාගේ 5 years loyal customer account එක නිසා. මම special upgrade එකක් offer එකක් දෙන්නම් 15GB plan එකකට shift කරන් නවා. Same price එකක්."
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "clip": 7,
+      "start": 117.04,
+      "end": 141.87,
+      "reference": "Oh really? Thank you so much sir. තිසාරි, upgrade form එක process කරන්න. Address එක confirm කරන්න පුළුවන්ද? Sir, number 56, Hospital Road, Gampaha. Contact number එකක් දෙන්නකෝ. හරි sir, පොඩ්ඩක් ඉන්න. Contact number එක අර ඉස්සෙල්ලා කිව්ව number එකම තමයි sir. හැබැයි... බිංදුවයි හැත්තෑ එකයි දහතුනයි අටසිය අනූනවයයි හාරසිය පනස්හය. ඒක හරි නේද? ඔව් sir, ඔව් sir. හරි, date of birth එක verification වලට? ඒක sir, March 7th 1991 sir.",
+      "hypothesis": "ඔව් really sir thank you so much sir සිසා අපි upgrade form එක process කරන්න address එක confirm කරන්න පුළුවන්ද sir number 56 hospital road ganna pa contact number එකක් තියෙන්නකෝ හරි sir පොඩ්ඩක් ඉන්න contact number එක අර ඉස්ස්සෙල්ලා කිව්වා number එකම තමයි sir ඇහැබැ 0 7 13 89 12 34 මැඩම් ඒක හරි නෙන්න ඔව් sir ඔව් sir හරි date of birth එක verification වට ඒක sir March 7th 19th"
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "clip": 8,
+      "start": 143.86,
+      "end": 168.45,
+      "reference": "Upgrade එක confirm. New plan එක active වෙනවා හෙට ඉඳන්. හරි sir. තිසාරි confirmation එක SMS එකක් යවන්න. අනෝමා, SMS එක 0 7 1 3 8 9 9 4 5 6 number එකට යවන්නම්. Complaint reference එක D L G C M P 2 0 2 4 0 9 1 2 3. Anything else? නෑ sir... නෑ sorry madam. නෑ madam all good, everything is okay. Take care Anoma. Have a nice day.",
+      "hypothesis": "ආ හරි sir. මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ �"
+    },
+    {
+      "recording": "J26DS313_R0030",
+      "clip": 0,
+      "start": 0.14,
+      "end": 22.1,
+      "reference": "ආයුබෝවන් Asiri Central Hospital reception මම චතුරි කොහොමද ඔයාට සහය වෙන්නේ ආයුබෝවන් මම ආවේ මගේ husband ගේ medical report එක collect කරන්න ඒ එක්කම අලුත් doctor appointment එකකුත් book කරන්න ඕනේ ආ හරි හරි හරි හරි පොඩ්ඩක් ඉන්නකෝ Madam ඔයාගේ full name එක කියන්න බලන්න NIC එකයි phone number එකත් එක්ක",
+      "hypothesis": "Ayubowan Asiri Central Hospital reception. Mama chaturi, kohomada oyata sahaya venne? Ayubowan mama aaye mage husband ge medical report ekak collect karanna, e ekkoma alu doctor appointment ekak dhook karanna one. Hari hari hari. Poddak innako. Madam, oyage full name eka kiyanna balanne NIC ekai phone number ekak ekak kiyanne."
+    },
+    {
+      "recording": "J26DS313_R0030",
+      "clip": 1,
+      "start": 23.1,
+      "end": 44.59,
+      "reference": "හා එයාගේ name එක කසුන් වික්‍රමසිංහ තියෙන්නේ Oh sorry sorry මගේ name එක දිල්හානි පෙරේරා Husband ගේ name එක කසුන් වික්‍රමසිංහ ආ හා දිල්හානි පෙරේරා හරි madam NIC එක NIC ආ NIC එකත් කියන්න බලන්න ඔය NIC එක එයාගේ NIC එක 92 54 30 12 NV",
+      "hypothesis": "Eyage name eka Kasun Vikrama Singha thiyenne. Ow sorry sorry. Mage name eka Dilhani Perera. Husband ge name eka Kasun Vikrama Singha. Dilhani Perera. Hari madam. NIC eka... NIC... NIC ekakath kiyanna balawa. Oy NIC eka. Eyage NIC eka 92,512,412,3214."
+    },
+    {
+      "recording": "J26DS313_R0030",
+      "clip": 2,
+      "start": 47.12,
+      "end": 52.17,
+      "reference": "හරි madam Birthday එකත් ඕනෙද ආ ඔව් birthday එකත් කියන්න 1992 September 29 තමා date of birth එක",
+      "hypothesis": "හරි මැඩම් birthday එකත් ඕනෙද ආ හා ඔව් birthday එකත් කියන්න එහෙම මේ 1992 September 3rd"
+    },
+    {
+      "recording": "J26DS313_R0030",
+      "clip": 3,
+      "start": 54.66,
+      "end": 67.64,
+      "reference": "ආ හරි madam Thank you Madam මම system එක check කරා ඔයාගේ patient profile එකේ phone number එක තියෙනවා Phone number එක තියෙන්නේ 077 456 7890 කියලා තමයි තියෙන්නේ ඒක හරි නේද madam",
+      "hypothesis": "ආ හරි madam thank you madam මම system එක check කරා ඔයාගේ patient profile එකේ phone number එක තියෙනවා phone number එක තියෙන්නේ 0 7 7 4 5 6 7 1 2 3 4 5 6 7 1 2 3 4"
+    },
+    {
+      "recording": "J26DS313_R0030",
+      "clip": 4,
+      "start": 71.54,
+      "end": 89.08,
+      "reference": "ඔව් ඔව් ඒක තමයි number එක හරි දැන් address එක update කරන්න ඕනෙද madam ඒ address එකේමද ඉන්නේ මගේ system එකේ පෙන්නන address එක එකක් තියෙනවා ඒ address එකේම නේ නෑ නෑ address එක වෙනස් වුනා last month එකේ අලුත් address එක number 45 Temple Road Nugegoda",
+      "hypothesis": "ඔව් ඔව් ඔව් ඔව් ඒක තමයි number එක හරි දැන් address එක update කරන්න ඕනෙද madam ඒ address එක එම දින්නේ මගේ system එකේ පෙන්නන්න address එක එකක් තියෙනවා ඒ address එක එක නෑ address එක වෙනස් වුණා last moment එකේ අලුත් address එක number 45 Temple Road Nugegoda"
+    },
+    {
+      "recording": "J26DS313_R0030",
+      "clip": 5,
+      "start": 122.82,
+      "end": 126.73,
+      "reference": "හා මම ලියාගන්නම් ACC 88 42 SL ACC 88 42 SL",
+      "hypothesis": "ආ හා හා මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0030",
+      "clip": 6,
+      "start": 131.0,
+      "end": 136.24,
+      "reference": "හරි thank you එහෙනම් මමත් checkup එකකුත් දාගන්නම්කෝ හරි okay okay thank you",
+      "hypothesis": "හරි thank you එහෙනම් මම මමත් check up එක පුළුවන් දාගන්නම් හරි okay okay thank you"
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 0,
+      "start": 0.3,
+      "end": 13.07,
+      "reference": "Good morning Sri Lankan Probation and Child Care Services මම චමිලා රත්නායක ඔයාගේ monthly check-in එකක්ද ඔව් මැඩම් Good morning මම ඉසුරි මධුෂි මගේ case number එක PC 2023 COL 00892",
+      "hypothesis": "Good morning, Sri Lankan Probation and Child Care Services. Mama Chamila Ratnayake, oyage monthly check in ekak da? Ow madam, good morning. Mama Isuri Madushi, mage case number ekak dennam."
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 1,
+      "start": 18.38,
+      "end": 23.62,
+      "reference": "okay මට ආයේ repeat කරන්න පුළුවන්ද PC PC 20 23 COL 00 89 2 okay",
+      "hypothesis": "okay මට ආයේ repeat කරන්න පුළුවන්ද PC 2022 7712"
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 2,
+      "start": 29.98,
+      "end": 33.94,
+      "reference": "ඔව් ඉසුරි system එක බලන්නම් NIC එකත් confirm කරන්නකො ඔහොම්මම",
+      "hypothesis": "ඔව් ඔව් මැඩම් system එක බලන්නම් NIC එකත් confirm කරන්න කොහොමද මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 3,
+      "start": 35.98,
+      "end": 37.03,
+      "reference": "1995 123 089 34 මැඩම්",
+      "hypothesis": "1999 November 8th"
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 4,
+      "start": 41.41,
+      "end": 61.08,
+      "reference": "හරි okay date of birth එක 1995 April 22 මැඩම් current address එක last month address එක change එකක් නෑ නේද ඒක නිසා current address එක මට system එකේ පෙන්නන්නේ නම් නොම්බර 67 Old Kelaniya Road පෑලියගොඩ හරි මැඩම්",
+      "hypothesis": "Date of birth එක? 1995 April 22 මැඩම්. Current address එක last month address එක change එකක් නෑ නේද? ඒක නිසා current address එක මට system එකේ පෙන්නන් එහෙනම්. Number එක 077, Old Calanier Road, පැලියගොඩ. හරි මැඩම්. හරි."
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 5,
+      "start": 62.22,
+      "end": 83.06,
+      "reference": "හරි එතකොට employment status එක last month මම කිව්වේ job එකක් දාන්න try කරන්න කියලා එතකොට මොකද ඔයාගේ process එක ඔව් මැඩම් මම job එකක් ගත්තා Keells Super එකේ cashier position එකක් two weeks තමයි හිටියේ so far so good ඔව් හරි ආ හා අයියෝ ඒක ගොඩක් හොඳයි ඉසුරි මේ salary එක සාමාන්‍යයෙන් කොච්චරක් විතර යනවද range එක",
+      "hypothesis": "එතකොට employment status එක last month මම කිව්වේ job එකක් දාන් try කරන්න කියලා එතකොට මොකද ඔයාගේ process එක ඔව් මැඩම් මම job එකක් ගත්තා key super එකේ cashier position එකක් two weeks තමයි කියලාවා so fast ඔව් බැරි ඔව් හරි ආ හා අයියෝ එක ගොඩක් හොඳයි සුරි මේ මේ මේ මේ මේ මේ මැඩම් මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 6,
+      "start": 86.84,
+      "end": 99.19,
+      "reference": "මැඩම් 35,000 per month තමයි යන්නේ probation period එක තාම තියෙන්නේ තාම ඉන්නේ ආ හා මේ contact number එක change වුණාද මේ ඉසුරි නෑ මැඩම් same number එකමයි 0 7 1 4 5 6 7 8 9 0",
+      "hypothesis": "35,000 per month තමයි ඇන්නේ probation period එක තාම තියෙන්නේ තාම ඉන්නේ ආ හා මේ contact number එක change වුණාද මේ සුරි නෑ madam same number එකම 0 7 1 2 3 4 5 6 1 2 3 4"
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 7,
+      "start": 102.7,
+      "end": 119.11,
+      "reference": "ආ community service hours මේ නේද last month eight hours complete කරනවා කරන්න ඕනේ කියලා තමයි කිව්වේ ඔව් මැඩම් මම කොටහේන community center එකට ගියේ hours log එක sign කරගත්තා supervisor ගෙන් reference number එක CS 2024 KOT 045",
+      "hypothesis": "service hours මේ නේද last month 8 hours complete කරන්න ඕනේ කියලා තමයි QA ඔව් මැඩම් මම පොඩ්ඩක් එයින්නේ community center එකට ඊටියේ hours log එක sign කරගත්තා supply second reference number එක CS 2022 0123"
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 8,
+      "start": 122.64,
+      "end": 140.62,
+      "reference": "ආ right right ඒකත් system එකේ තියෙනවා මේ ඔව් supervisor sign එක තියෙන්නේ ඔව් මැඩම් මේ ඒක page two එකේ තියෙන්නේ ආ log එකේ මේ මම බලන්නම් මම බලන්නම් okay හොඳයි නෑ ඇත්තටම හොඳයි මට happy මේ next month ත් eight hours complete කරන්න ඕනේ ඉසුරි ඔයාගේ මේ",
+      "hypothesis": "ආ right right ඒකත් system එකේ තියෙනවා මේ ඔව් supervisor sign එක තියෙනවා ඔව් මැඩම් මැඩම් එක page 2 එක එකේ ආ log එකේ මේ මම බලන්නම් මම බලන්නම් okay හොඳයි නැහැ ඇත්තටම හොඳයි මට happy මේ next month 8 hours complete කරන්න ඕනේ නිසුරි"
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 9,
+      "start": 143.28,
+      "end": 159.34,
+      "reference": "officer Doctor සම්පත් ගුණවර්ධන ඔව් Doctor සම්පත් ගුණවර්ධන statement එකක් ගෙනල්ලා තියෙනවා මේ ඔයාගේ behavior එක improve කරගන්න කියලා but එයා හොඳ sign එකක් තමයි දීලා තියෙන්නේ එහෙම ඒක අවුලක් නැහැ",
+      "hypothesis": "ඔව් Officer Doctor සම්පත් ගුණ වර්දෙනවා ඔව් Doctor සම්පත් ගුණ වර්දෙනවා statement එකක් ගෙනාලා තියෙනවා මේ ඔයාගේ behavior එක improve කරගන්න කියලා but එයා හොඳ sign එකක් තමයි දීලා තියෙනවා මැඩ්නම්"
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 10,
+      "start": 162.26,
+      "end": 174.71,
+      "reference": "ඔව් මැඩම් මම genuinely try කරනවා straight path එකක ඉන්න ඔව් ඒක හොඳයි ඒක හොඳයි ඉසුරි ඒක මේ ගොඩක් හොඳයි මේ next check check-in එක September 15th same time 9:30 AM miss miss කරන්න එපා මේ අනිවාර්යයෙන්ම එන්න",
+      "hypothesis": "මේ මම genuinely try කරන්නේ නැස් straight path එක ගිහ්න ඔව් ඒක හොඳයි ඒක හොඳයි sorry ඒක මේ හොඳයි මේ next check-in එක September 15th same time 9.30 AM"
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 11,
+      "start": 179.14,
+      "end": 188.26,
+      "reference": "මේ මොකද මේක report කරනවනේ මේ ඔයාට තේරෙනවනේ මම කියන එක ඒක ඔව් මැඩම් මම miss කරන්නේ නෑ හරි thank you මැඩම් හරි okay okay ඉසුරි okay bye take care",
+      "hypothesis": "මේ මොකද මේක report කරන්න ඕනේ මේ ඔයාට තේරෙන්න ඕනේ මම කියන්නේ ඒක ඔව් මැඩම් මම miss කරන්නේ නෑ හරි thank you මැඩම් හරි okay okay sorry okay bye take care"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 0,
+      "start": 0.02,
+      "end": 17.7,
+      "reference": "Good evening Sri Lanka Customs මම ඔසඳි සිල්වා ඔයාලා ඔයාලට red channel එකෙන් ආවද මේ declaration form එකක් fill කරන්න තියෙනවා Good morning madam මම සත්මින ප්‍රනාන්දු මගේ wife අමාෂි පෙරේරා අපි මේ honeymoon එකට return එක ආවා මේ red channel එකෙන් තමයි",
+      "hypothesis": "Good evening Sri Lanka Customs මම මේ Osadi Silva ඔයාලට Red Channel එකෙන් ආවද මේ declaration form එකක් fill කරන්න තියෙනවා Good morning මැඩම් මේ මම සත්තින ප්‍රොනාන්දු මේ මගේ wife අමච් වෙලා අපි මේ hand move කරන්න ඕනේ"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 1,
+      "start": 22.83,
+      "end": 37.9,
+      "reference": "Good evening madam සත්මින මම කිව්වනේ red channel එකේ යන්න එපා කියලා green channel එකේ යන්න කියලා අමාෂි මේ මම honest වෙන්නම් එයා decide කරේ ඒකයි අපි declare කරා Honest Now you want to be honest after buying හරි හරි හරි හරි හරි",
+      "hypothesis": "Date of birth මැඩම් සත්පින මැඩම් මම කිව්වා නේ නෙජ් ජැනල් එක් කියන්නේ එපා කියලා ගේරින් ජැනල් එක්ක කියන්න කියලා අමාශි මේ මම honest වෙන්නම් එයාද decide කරන්නේ එකයි අපි ගෙවරියක් කරන්නේ honest now you want to be honest after buying වෙන්නේ හරි හරි හරි"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 2,
+      "start": 38.56,
+      "end": 60.26,
+      "reference": "හරි හරි මේ madam sir මම මේ hear කරන්න පුළුවන් ඔයාලා දෙන්නටම Please මේ declaration form එක මම බලන්නම් Passport number එකත් කියන්නකෝ ඔය ගමන්ම හා madam passport number එක මේ N 89 34 521 madam මගේ passport number එක හරි NIC එක ඔව් NIC madam 1994 23 10 2345",
+      "hypothesis": "හරි හරි මේ madam sir මම මේ hear කරන්න පුළුවන් ඔයාලා දෙන්නටම මේ please මේ declaration form එක මම බලන්නම් passport number එකත් කියන්නකෝ ඔය ගමන්ම ඔව් madam passport number එකත් මැඩම් NIC එක NIC එක NIC එක madam 0 7 7 8 9 2 3 4 2 1 2 3 4"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 3,
+      "start": 63.37,
+      "end": 70.72,
+      "reference": "Date of birth එක කියන්න sir Date of birth madam 1994 August 22nd madam අමාෂි madam ඔයාගේ passport number එක N 78 23 456 madam",
+      "hypothesis": "ආ හා ඒක කියන්න බැරි මැඩම් 1994 August 22nd වෙනවා අමාශි මැඩම් ඔයාගේ passport number එක N7994456"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 4,
+      "start": 72.89,
+      "end": 74.42,
+      "reference": "NIC එක 1996 73 40 1234",
+      "hypothesis": "NIC eka? NIC eka?"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 5,
+      "start": 76.91,
+      "end": 89.76,
+      "reference": "Date of birth එක 1996 March 15 හරි හරි Current address එක කියන්න බලන්න ඔව් madam current address එක number 12 Galle Road Colombo 3 madam ආ හරි හරි මේ contact numbers දෙකම කියන්නකෝ මට මේ අමාෂි 077 890 1234 madam",
+      "hypothesis": "ආ හරි මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් �"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 6,
+      "start": 92.27,
+      "end": 102.53,
+      "reference": "හරි සත්මින ඔයාගේ එකත් කියන්න ඔව් madam මේ මම madam declaration form එකේ honestly fill කරේ මම Thailand එකේ items කරා මම duty pay කරන්න ready",
+      "hypothesis": "Shathmin, oya ekath kiyanna. Mama madam declaration form eke honestly fill kare, mama thai enneke items kata. Mama duty play karanna ready for the next month."
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 7,
+      "start": 103.25,
+      "end": 119.57,
+      "reference": "හරි හරි මට තේරෙනවා මේ declaration form එක බලන්නම් Madam two bottles of wine one bottle of whiskey three watches මම correctly reading නේද මේ two drones Two drones",
+      "hypothesis": "හරි හරි ඔව් මට තේරෙන්නවා මේ declaration form එක බලන්නම් madam two bottles of wine one bottle of whiskey three watches මම correctly reading නේද මේ two drones"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 8,
+      "start": 123.72,
+      "end": 132.22,
+      "reference": "Madam මම Thailand shopping mall එකේ bathroom එකේ cry කරනවා මම කියනවා madam ට bathroom එකේ",
+      "hypothesis": "මැඩම් මම Thailand shopping mall එකේ bathroom එකේ cry කරනවා මම කියනවා madam ට bathroom එකේ මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 9,
+      "start": 134.24,
+      "end": 158.56,
+      "reference": "ආ හා sir ඔයාගේ declaration form එකේ total value එක මේ LKR 2 lakhs වගේ වෙනවා Allowance එකේ per person 20,000 වගේ වෙනවා ඔයාට excess amount එක මේ around 2 lakhs ඔව් ඒ වගේ වෙනවා Duty calculation එක කරන්නම් මම",
+      "hypothesis": "ආ හා sir ඔයාගේ declaration form එක total value එක මේ LKR 2 lakhs වගේ වෙනවා around 11s එකේ per person 20,000 වගේ වෙනවා ඔයාට excess amount එක මේ around 2 lakhs ඒ වගේ වෙනවා duty calculation එක කරන්න පුළුවන්"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 10,
+      "start": 159.06,
+      "end": 181.19,
+      "reference": "ඔව් madam අවුලක් නෑ මම ready මේ drones වලට duty කොහොමද Electronics වලට 15% විතර යනවා VAT එකක් Drones වලට additionally Civil Aviation සත්මින මට කිව්වේ නැහැ Thailand එකේ shop එකේ sales person කිව්වේ Sri Lanka වල drones අරන් යන්න පුළුවන් කියලා Separate process එකක් හැබැයි අමාෂි ඒක අමාෂි ඒක fine මම කිව්වනේ Google එකේ check කරාද හරි මම internet එකේ check කරා",
+      "hypothesis": "ඔව් මැඩම් ඔව් මැහැ මැහැ මේ මම නෙට්ටි මේ drones වල duty කොහොමද Electronics වලට 15% විතර යනවා Watt එකක් drones වලට additionally civil invitation එකක් මැඩම් මම කිව්වා නැහැ Thailand එකේ shop එකේ sales person කිව්වා Sri Lanka travel drones යයි යන්න පුළුවන් කියලා නැහැ මැඩම් මැඩම් මම කිව්වා නැහැ මම කිව්වා නැහැ මම මැඩම් මම indent එකේ check කරනවා"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 11,
+      "start": 182.27,
+      "end": 201.49,
+      "reference": "Okay okay okay මම මේ දෙන්නටම පොඩ්ඩක් මේ ඉන්නකෝ sir sir මේ drone එකේ bag එකේ drone එකේ bag එක තියෙනවද ඔව් තියෙනවා තියෙනවා මම physically inspect කරන්නම් ඒක issue එකක් නෑ මොකක්ද large කොහොමද ඔතන තියෙනවද මේ drone bag එක ඔව් madam මේ large මේ suitcase එකේ තියෙන්නේ",
+      "hypothesis": "okay okay okay මම මේ දෙන්නටම පොඩ්ඩක් මේ ඉන්නකෝ sir මේ drone එකේ bag එකේ drone එකේ bag එක තියෙනවද මම physically inspect කරන්නම් ඒක issue එකක් නෑ මේ මොකක්ද large සූහුව් මේ කොහොමද කොහොතන් තියෙනවද මේ drone bag එක ඔව් මැඩම් මේ large"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 12,
+      "start": 202.47,
+      "end": 220.64,
+      "reference": "හරි මම මේ suitcase එක 30 kilogram වැඩිනේ Airlines allow කරන්නේ නෑ මේක Madam මේ airline එකේත් extra baggage fee 45,000 rupees ගත්තා මේ suitcase එකට අපි business class ticket වලට money invest කරන්න තිබ්බා ඒක drone fee වලට ගියා",
+      "hypothesis": "හරි මැඩම් මැඩම් මේ suitcase එක 30 kg වැඩිනේ airlines allow කරන්නේ නෑ මේක මැඩම් airline එකේත් extra baggage fee 45,000 rupees ගත්තා මේ suitcase එකත් business class ticket වලට මොනවා තියෙනවා මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 13,
+      "start": 223.56,
+      "end": 245.49,
+      "reference": "අමාෂි අපි honeymoon එක enjoy කරානේ හරිද Enjoy මම last two days Bangkok hotel room එකේ shopping limit එක exceed වුන නිසා ආ මේ watches තුනක් alcohol out of very large box sorry madam මේ මොකක්ද මේ declaration form එකේ නැහැනේ මේක",
+      "hypothesis": "ආ හා මේ watches තුනක් alcohol out of very large box මැඩම් මේ මොකක්ද මේ ඩික්ම් මෙරේරියි මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩක් මැ"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 14,
+      "start": 247.05,
+      "end": 249.86,
+      "reference": "නෑ දැන් මේ massage chair එකක් madam What",
+      "hypothesis": "මැඩම් මැඩම් මේ මම සහත් චෑකක් මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 15,
+      "start": 252.21,
+      "end": 261.68,
+      "reference": "ඔයාට back pain තියෙනවනේ මම thought ඉතින් I would buy a massage chair for you මම Bangkok එකේ jewelry ගත්තේ නැහැ expensive dinner ගත්තේ නැහැ මොනවද මේ අරන් තියෙන්නේ",
+      "hypothesis": "මේ ඔයාට back pain කියන්නේ නැහැ නැහැ නැහැ මම thought ඉතින් ආයි goodbye මැඩම් මම මැඩම් share for you මැඩම් මම බැන්ටොත්ත් එකේ jewelry ගත්තේ රැහැ එක්කෝ මැඩම් මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 16,
+      "start": 264.36,
+      "end": 275.37,
+      "reference": "ඒකේ discount එකක් තියෙනවා 60% off එකක් Madam please jail එකක් තියෙනවද මේ items වලට මේ divorce case එකක් කරන්න වෙනවා දැන් නම්",
+      "hypothesis": "මේ අර මේ අර මේ අර මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 17,
+      "start": 277.43,
+      "end": 296.11,
+      "reference": "මේ madam jail යන්න එහෙම නැහැ මම duty amount එක මේ substantial වෙනවා මේ massage chair එක luxury item එකක් නිසා 30% විතර duty plus VAT එකක් එනවා අපි බලමුකෝ ඉතින් මොකද කරන්නේ මේ THB ඒක 45,000 ක් madam approximately මේ ලක්ෂ හතරක් වගේ වෙනවා ඒක",
+      "hypothesis": "මේ මැඩම් jail එකක් එහෙම නැහැ මම duty amount එක මේ substantial වෙනවා මේ massage chair එක luxury item එකක් නිසා 30% විතර duty plus VAT එකක් එනවා මේ අපි බලමුකු ඉතින්ම මම කරන්නේ මේ THB එක 45 කියන්නේ මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 18,
+      "start": 298.92,
+      "end": 321.51,
+      "reference": "ඔව් මේ duty payable approximately drones දෙකයි massage chair එකයි watches තුනකුයි alcohol මම calculate කරගන්නම් මේ ටික Total duty free amount එක මේ 1 lakh විතර පනිනවා ඉතින් plus Civil ඒ tax වලටත් එක්ක ඔව් madam අවුලක් නෑ",
+      "hypothesis": "ඔව් total duty මේ payable approximately drones දෙකක් තියෙනවා massage chair එකයි washers තුනකුයි alcohol and මම calculate කරගන්නම් මේ ටික Total duty free amount එක මේ 1 lakh විතර පයිනවා ඉතින් plus civil ඒ tax එකත් එක්ක මේ මේ මෙතන තියෙනවා"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 19,
+      "start": 321.63,
+      "end": 346.13,
+      "reference": "Madam මේ items ඔක්කොම surrender කරන්න පුළුවන් නේද අමාෂි මොනවද කියන්නේ Technically ඔව් සත්මින මම serious අහන්නේ මේ serious question එකක් Technically ඔව් මේ surrender කරන්න option එකක් තියෙනවා But duty pay කරලා items එක ගන්න එක better මේ financially usually ඕගොල්ලොන් බලන්නකෝ මේ Massage chair එක surrender කරන්න",
+      "hypothesis": "ඔව් මැඩම් මේ items ඔක්කොම surrender කරන්න පුළුවන් නේද මම හස්ස්ටියි මුලුවත් කියන්නේ නැහැනේ Technically ඔව් නැහැනේ නැහැනේ මම මේකේ serious question එකක්කෝ Technically ඔව් මේ surrender කරන්න option එකක් තියෙනවා බත් duty pay කරලා items එක ගන්න එක better මේ financially usually ඕගොල්ලොම බලන්නකෝ මේ මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 20,
+      "start": 346.47,
+      "end": 367.92,
+      "reference": "Madam please ඔතනින් පොඩ්ඩක් moment එකක් දෙන්න පුළුවන්ද අපි දෙන්නට මේ ඔව් මම meantime paperwork ටික start කරන්නම් ඕගොල්ලොන් බලලා මට කියන්නකෝ reference numbers ඕගොල්ලොන් පොඩ්ඩක් මේ මේවා කරගන්න මේ related CUS AIR 2024 SUR 00234 Drones වලට මේ අනිත් දේවල් වලටයි reference number එක CAASL IMP 2024 DRN 00567 reference එක apply කරන්න ඕනේ",
+      "hypothesis": "ඔව් මම මේ මේ මේ මැඩම් please ඔව් දෙන්න පොඩ්ඩක් මොනවා ටිකක් දෙන්න පුළුවන් අපි දෙන්න මැඩම් මේ ඔව් මම මේ meantime paperwork ටික start කරන්නම් මේ ඕගොල්ලොම බලලා මට කියන්නකෝ reference numbers එක ඕගොල්ලොම පොඩ්ඩක් මේ මේවා කරගන්න මේ related CAS එයා 2024 SMR 00234 මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 21,
+      "start": 382.72,
+      "end": 395.61,
+      "reference": "Madam drones උත් surrender කරන්න අනේ අමාෂි those were for our videography for our memories සත්මින for what two drones for honeymoon We gonna videograph our honeymoon Madam do you have a husband",
+      "hypothesis": "මැඩම් drones උත් surrender කරන්නේ නැහැ නැහැ මැඩම් මැඩම් දෝස් වෙක්වා පියෙනවා නැහැ රිෆ්නේ පැන් රිෆ්නේ නැහැ රිෆ්නේ නැහැ නැහැ නැහැ නැහැ නැහැ නැහැ නැහැ නැහැ"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 22,
+      "start": 395.75,
+      "end": 410.86,
+      "reference": "නෑ නෑ මම single අම්බෝ ඕගොල්ලොන්ගේ life බලනකොට මට single ම තමයි ඉන්න හිතෙන්නේ Okay watches තුනයි alcohol උයි duty free එකේ ඒවයි tax උයි ඔය ඔක්කොමත් එක්ක මේ අපි බලමු කොහොමද amount එක වෙන්නේ කියලා කමක් නෑ ඕගොල්ලොන් මේ මම අනිත් ටික මේ fill කරගන්නම් ඕගොල්ලොන් වැඩ ටික කරගන්න",
+      "hypothesis": "මැඩම් බෑ මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩ"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 23,
+      "start": 422.84,
+      "end": 424.02,
+      "reference": "හා madam හරි හරි madam thank you",
+      "hypothesis": "okay madam thank you"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 0,
+      "start": 0.8,
+      "end": 25.05,
+      "reference": "Hello Commercial Bank Card Center එකද මේ මගේ card එකේ unauthorized transactions වගයක් වෙලා තියෙනවා මොකද්ද දන්නේ නෑ නේ මට බලාගන්න Hello madam මේ කලබල වෙන්න එපා මම නෙත්ම මේ Card Fraud and Disputes Division එකෙන් ආ හා මේ මගේ phone එකට දැන් OTPs තුනක් ආවා මම කිසිම purchase එකක් කරලා නෑ කවුරු හරි මගේ මොකක් හරි මේවා කරාද දන්නේ නෑ නේද",
+      "hypothesis": "Commercial Bank card center eken, ekada? Ow. Mage card eka unauthorized transactions vageyak wela thiyenawa, mokeda danne na ne? Hello sir, ah me hello madam. Me kalawala wenne nepa, mama nethma card fraud and disputes division eken. Mage phone ekata danne OTPs thunakka, mama kisima purchase ekak karala na, kawwara mage mokak hari neda?"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 1,
+      "start": 27.86,
+      "end": 52.25,
+      "reference": "ආ හරි madam මේ අපි මේ card එක instantly block කරමු හා මට card balance එකත් බලාගන්න ඕනේ මේ card එක එහෙම හරි miss හරි හරි ඊට කලින් මට ඔයාගේ මේ full legal name එක කියන්නකෝ මම චාමිකා ප්‍රසාදි වික්‍රමසිංහ චාමිකා ප්‍රසාදි වික්‍රමසිංහ හරි මට miss මේ verify කරගන්න ඔයාගේ මේ NIC number එක කියන්න පුළුවන්ද Okay NIC එක 1988 19 50 24 10",
+      "hypothesis": "හරි madam මේ අපි මේ card එක instantly block කරා ආ මට card balances එකත් බලගන්නම් මේ card එකෙන් එහෙම කරා හරි miss හරි හරි ඔක්කෝ මේ ඊට කලින් මට ඔයාගේ මේ full legal name එක කියන්නම් මම චාමිකා ප්‍රසාදි වික්‍රමසිංහ චාමිකා ප්‍රසාදි වික්‍රමසිංහ හරි මට miss මේ verify කරගන්න ඔයාගේ මේ NIC number එක කියන්න පුළුවන්ද Okay NIC එක මේ NIC එක මැත්ත්"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 2,
+      "start": 58.34,
+      "end": 81.08,
+      "reference": "24 10 හරි මට මේ date of birth එකත් ඔහොම්මම කියන්න Date of birth එක ඇවිල්ලා මේ 1988 ජූලි 14 ආ ජූලි 14 හරි හරි miss වික්‍රමසිංහ මේ profile එක open වුණා Compromised වෙච්ච card එකේ last four digits ටික කියන්න පුළුවන්ද ආ last four digits ටික පොඩ්ඩක් ඉන්න 8842 ඔව් 42",
+      "hypothesis": "2410. හරි. මට මේ date of birth එකත් ඕමු යන්න. Date of birth එක ඇවිලා මේ 1988 ජූලි දාහතර. ආ ජූලි දාහතර. හරි. හරි Mrs වික්‍රමාරි. මේ එයාම සිංහ. මේ profile එක open වුණා. Okay. Compromise වෙච්චා card එකේ last four digits ටික යන්න පුළුවන්ද? ආ last four digits ටික පොඩ්ඩක් තියෙනවා."
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 3,
+      "start": 88.78,
+      "end": 105.52,
+      "reference": "42 නේ හරි madam මේ මම Visa Platinum card ending with 8842 permanent block කරා දැන් transactions වෙන්නේ නෑ අපෝ ලොකු දෙයක් මේ sir මොනවා හරි amount එකක් deduct වෙලාද කොහොමද දන්නේ නෑ නේ මට ඒක තමයි බලාගන්නම ඕනේ",
+      "hypothesis": "42nd. හරි madam මේ මම visa platinum card ending with 8842 permanent block කරා and transactions වෙන්නේ නෑ. අපෝ ලුකු දෙයක්. මේ sir. ඕනා හරි amount එකක් detect කරන්න වෙලා දෙකුත් කොහොමද?"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 4,
+      "start": 108.16,
+      "end": 120.65,
+      "reference": "Madam මෙහෙමයි මේ system එක check කළාම පේනවා UK e-commerce site එකකින් මේ GBP 420ක transaction එකක් pending authorization වැටිලා තියෙනවා බුදු අම්මෝ ඒ කියන්නේ රුපියල් 160,000කට වඩා වැඩියිනේ අනේ",
+      "hypothesis": "මෙහෙමයි මේ system එක check කරාම පෙනවා UK e-commerce site එකෙන් මේ GPP hard seas එක transaction එක pending authorization වෙනවා නේද රුක්ච් බංබුවේ කියන්නේ රුක්ච් රක්ෂා ඇත්තක්ෂා හැට දහ්නවා"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 5,
+      "start": 122.92,
+      "end": 129.88,
+      "reference": "Madam බය වෙන්න එපා මේ OTP verify වෙලා නැති නිසා transaction එක hold කරලා මේ chargeback dispute එකක් raise කරන්න පුළුවන්",
+      "hypothesis": "මැඩම් මගේ වෙන්නේ බෑ මේ OTP verify වෙනවා නැහැ නැහැ නිසා transaction එක hold කරලා මේ charge back dispute එකක් raise කරන්න පුළුවන්"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 6,
+      "start": 133.06,
+      "end": 150.44,
+      "reference": "ආ හා හා එතකොට මොකක්ද මේ හරි මේ dispute form එක මේ sir ගේ මේ current billing ඒ කියන්නේ address එකේද මට තේරෙන්නේ නෑ මම මොකක්ද කරන්න ඕනේ කියලා",
+      "hypothesis": "මේ මොකද මේ හරි මේ මොකද මේ payment එකක් එතකොට dispute form එක මේ sir ගේ මේ current billing එක කියන්නේ address එකෙන් මට තේරෙන්නේ නෑ මම මොකද කරන්න ඕනේ"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 7,
+      "start": 151.2,
+      "end": 166.47,
+      "reference": "හරි හරි madam බය වෙන්න එපා පොඩ්ඩක් කලබල වෙන්නේ නැතුව ඉන්නකෝ මට මැඩම්ගේ මේ current billing address එක කියන්නකෝ ආ හරි හරි ඉන්න පොඩ්ඩක් ඉන්න Billing address එක 42/1 කල්දෙමුල්ල පාර මොරටුව",
+      "hypothesis": "හරි හරි madam madam බය වෙන්නේ පොඩ්ඩක් කලම වෙන්නේ නැත්නේ ඉන්නකෝ මට මේ මොකක්ද madam ගේ මේ මට මේ current billing address එක කියන්නකෝ ආ හරි හරි එහෙනම් පොඩ්ඩක් ඉන්න Billing address එක නැහැනේ Billing address එක ඕනේ"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 8,
+      "start": 171.36,
+      "end": 179.29,
+      "reference": "හරි එතකොට මේ phone number එක මේ 077 319 8840 නේද ඔව් ඔව් ඒක තමයි අනේ මට ඉක්මන් කරලා මගේ details ටික මට",
+      "hypothesis": "එතකොට මේ phone number එක 0773198409ද? ඔව් ඔව් ඒක තමයි. මේ අනේ මට විත්මන් ගෙවන්නේ නැහැ."
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 9,
+      "start": 181.64,
+      "end": 203.71,
+      "reference": "හරි හරි madam කලබල වෙන්න එපා කලබල වෙන්න එපා මම මේ වැඩේ ගානට කරලා දෙන්නම් මට මේ මැඩම්ගේ මේ personal email address එක කියන්න පුළුවන්ද මගේ personal එක chamika.wickrama@gmail.com පුදුම වික්‍රමයක් වෙලා තියෙන්නේ හරි madam මේ merchant name එක display වෙන්නේ Luxury Brands Online London විදිහට නෑ නෑ නෑ මම එහෙම කිසිම දෙයක් purchase කරේ නෑ",
+      "hypothesis": "නෑ මැඩම් Colourful වෙන්නේ බං Colourful වෙන්නේ බං මම මේ ඩිකාට කරලා දෙන්නවා මට මේ madam ගේ මේ personal letters එක කියන්න පුළුවන්ද මගේ personal එක chamica.vikrama.gmail.com පුළුවන් මේ මේක් වෙන්නවා හරි madam මේ merchant name එක display වෙන්නේ luxury brands online London විදිහට නෑ නෑ නෑ මම එහෙම කිසිම දෙයක් purchase කරේන්නේ"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 10,
+      "start": 205.1,
+      "end": 223.1,
+      "reference": "ඒ කියන්නේ හරිනේ miss ඒ කියන්නේ clearly suspicious compromise එකක් ඔව් obvious මම නම් ඇත්තෙන්ම purchase කරේ නෑ හරි හරි මට තේරෙනවා Card skimming එකක් වෙලා තියෙන්නේ somewhere හරි මම ඊයේ airport fuel shed එකේදී card එක swipe කරා එතනදී leak වුණාද දන්නේ නෑ හැබැයි නේද",
+      "hypothesis": "එහෙම ඒක ඒ කියන්නේ clearly suspicious compromise එකක් ඔව් appears මම නම් එත්තටම purchase කරේ නැහැ හරි හරි මැඩම් මම තේනවා තුනේ card streaming එකක් වෙලා තියෙන්නේ somewhere හා හරි තියෙන්නේ මම ඊයේ airport shed එකේදි card එක්ක් මැත්තා එතනවා දිලික් නැද්ද දැන් නැහැ"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 11,
+      "start": 224.15,
+      "end": 230.78,
+      "reference": "එතන නම් possibility එකක් තියෙනවා madam මොකද මේ fraud investigation report එකට මම ඒ location එකත් add කරන්නම් එහෙනම්",
+      "hypothesis": "එහෙනම් එතකොට මේ Ford investigation report එකට මම ඒ location එකත් add කරන් නම් එහෙනම්"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 12,
+      "start": 235.05,
+      "end": 258.09,
+      "reference": "හා මට replacement card එකක් ගන්න පුළුවන්ද එතකොට කොහොමද දන්නේ නෑ නේද ඔව් miss මේ new card එකක් issue කරලා priority courier එකෙන් deliver කරන්න පුළුවන් within two working days ඇතුළත Okay Office address එකට deliver කරන්න පුළුවන්ද මට මොකද මම daytime එකේ ඉන්නේ office එකේ මම ගෙදර ඉන්නේ නැති තරම් පොඩ්ඩක් මට ඒක හදලා දෙන්න පුළුවන්ද අනිවාර්යයෙන්ම madam අනිවාර්යයෙන්ම මට මේ office company name එකයි delivery address එකයි දෙන්න පුළුවන්ද",
+      "hypothesis": "මේ new card එකක් issue කරලා priority courier එකෙන් deliver කරන්න පුළුවන් within two working days ඇතුළ තෙරෙන්නේ okay office address එක deliver කරන්න පුළුවන්ද මම මේ මොකද මම daytime එකේ ඉන්නේ office එකේ මම ගෙතර ඉන්නේ ඇත්තනම් පොඩ්ඩක් මට මාල්දෙන් බලන්න ආ නිවාරි madam ආ හිවාරි මේ මට මේ company මොකක්ද office company එකේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ ම"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 13,
+      "start": 258.09,
+      "end": 274.12,
+      "reference": "හරි මම දෙන්නම් මගේ office එක Dialog Axiata PLC number 475 Union Place Colombo 2 හරි Delivery recipient contact person විදිහට මැඩම්මද ඉන්නේ",
+      "hypothesis": "මේ මේකයි delivery address එක දෙන්න පුළුවන් හරි මම දෙන්නම් මේ මගේ office එක Dialog Axiata PA 0745 Union Place Colombo 2 මේ delivery මේ කියන්නේ කියන්නේ හරි delivery discipline contact person විදිහට madam මලින්නේ"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 14,
+      "start": 274.24,
+      "end": 292.86,
+      "reference": "ඔව් මාව දාන්න මේ හරි direct extension එක 3302 හරි madam මේ dispute case එකේ reference ticket එක note කරගන්න මේ ඕක ලියාගත්තා නම් හොඳයි මම දැන් කියන්නම් ඒක FRD-DISP-2026-9041",
+      "hypothesis": "ඔව් මම මේ මේ මේ මේ කියන්නේ මොකක්ද direct extension එක 3302 හරි madam මේ dispute case එකේ reference ටිකන් එක note කරගන්න miss මේ ඔක්කොම යියාගත්තා නම් හොඳයි මේ මොකද මේ මම නැහැ කියන්නම් madam"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 15,
+      "start": 292.86,
+      "end": 317.59,
+      "reference": "හරි okay මම ලියාගත්තා මම ආයේ කියන්නද FRD-DISP-2026-9041 9041 හරියට හරි ඔව් madam මේ fraud officer විදිහට ඉන්නේ ප්‍රභාත් ලියනගේ මහත්මයා හෙට උදේ 10ට call එකක් දෙයි signed dispute form එක collect කරගන්න",
+      "hypothesis": "F R D P I S B 2026 90 41 90 41 හරි ඒක කියන්නම් මම මම ආයි කියන්නම්න F R D P I S B 2026 90 41 90 හරි වැඩි වැඩි ඔව් මැඩම් මේ short officer විදිහට ඉන්නේ ප්‍රබාද් ලියෙන ගෙවත් නැහැ වෙටමු මේ උදේ දහයට call එකක් දෙන්නවා මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 16,
+      "start": 317.63,
+      "end": 337.65,
+      "reference": "ආ okay මේ හරි මොකක්ද hotline number එකක් එහෙම තියෙනවද මට එයාව contact කරගන්න පුළුවන් හරි එයාගේ hotline එක මේ 011 248 6210 10 හරි මේ එතකොට මේ හරි නේද",
+      "hypothesis": "ආ හා හරි සිංස් ඩිස්ටුවේ පොඩ්ඩක් මම collect කරගන්න ආ okay මේ හරි මම මේ මොකක්ද hotline number එකක් එහෙම තියෙනවද මට එයා කරගන්න එක හරි හරි එයාගේ hotline එක මේ 012 48 62 10"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 17,
+      "start": 337.69,
+      "end": 348.97,
+      "reference": "හරි හරි miss එතකොට card එක මේ timely තමයි block කරලා තියෙන්නේ හරි හරි Timely block කරාට thank you so much හොඳේ හරි එහෙනම් have a good day හරි okay",
+      "hypothesis": "හරි හරි miss එතකොට card එක මේ timely මේ තමයි block කරලා තියෙන්නේ හරි හරි timely block කරලා thank you so much හරි හරි එහෙනම් have a good day හරි okay"
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 0,
+      "start": 0.82,
+      "end": 11.14,
+      "reference": "ආ මේ good afternoon miss මම චාමර විජේගුණවර්ධන මගේ තාත්තාව admission එකකට ලෑස්ති කරනවා මෙතන insurance desk එකෙන් cashless admission pre-authorization එකක් ගන්න කිව්වා",
+      "hypothesis": "ආ මේ good afternoon miss මම චාමර ජේ ගුණවර්ධෙන් මගේ තාත්තා මේ admission එකකට last තිකරෙනවා මෙතන insurance desk එකෙන් cashless admission pre-authorization එකක් ගන්න කියන්නේ"
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 1,
+      "start": 11.3,
+      "end": 31.34,
+      "reference": "Good afternoon Mr විජේගුණවර්ධන වාඩි වෙන්න මේ මම මේ නිදුකා අබේසේකර Durdans Hospital insurance and billing officer මම මේ admission portal එක open කරගෙන ඉන්නේ මේ මොන doctor යටතේද admission එක recommend කරලා තියෙන්නේ කොහොමද දන්නේ නෑ නේ",
+      "hypothesis": "Good afternoon Mr. Vijay Gunawardena. Wadi wenne. Mama me Niluka Abe Sekara. Durden's Hospital Insurance and Billing Officer. Mama me admission portal eka open karagena inna. Mona doctor yatta theda admission eka recommend karala thiyenne? Mama danna."
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 2,
+      "start": 32.1,
+      "end": 48.22,
+      "reference": "ආ Consultant Cardiologist Doctor නිහාල් රාජපක්ෂ යටතේ තමයි මේ දාලා තියෙන්නේ තාත්තාට angiogram test එකක් කරලා stent එකක් දාන්න ඕන වෙයි කියලා කිව්වා මේ තියෙන්නේ මේ doctor issue කරපු admission order slip එක",
+      "hypothesis": "Resident cardiologist Dr. Nihal Rajapaksa yatate tamai me dala thiyenne. Thathata angiogram test ekak karala stent ekak danna ona weigela kiwwa. Me thiyenne me doctor issue karupa admission order slip ekak."
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 3,
+      "start": 48.68,
+      "end": 66.78,
+      "reference": "හරි thank you මම admission form එක review කරන්නම් ඊට කලින් primary policyholder ගේයි patient ගේයි identification details උයි verify කරගන්න ඕනේ මට මුලින්ම මේ ඔයාගේ legal name එක කියන්නකෝ NIC එකේ තියෙන විදිහට",
+      "hypothesis": "හරි thank you මම admission form එක review කරන්නම් ඊට කලින් primary policy holder ගේ patient ගේ identification details යි verify කරගන්න ඕනේ මට මුලින්ම මේ ඔයාගේ legal නෑ මේ name එක කියන්නකෝ NIC 0 7 7 8 9 0 1 2 3 4"
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 4,
+      "start": 67.74,
+      "end": 77.23,
+      "reference": "ආ දෙන්නම් මගේ සම්පූර්ණ නම විජේගුණවර්ධන ආරච්චිලාගේ චාමර සංජීව විජේගුණවර්ධන මගේ NIC number එක මේ 1986 14 20 19 44",
+      "hypothesis": "ආ දෙන්නම් මගේ සම්පූරු නම විජේගුණා දෙනාරච්චිලාගෙත් චාමර සංහ්ජේගුණාර් දෙන්න මගේ NIC number එක මේ 1988 0712 3456"
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 5,
+      "start": 82.1,
+      "end": 97.2,
+      "reference": "19 44 හරි okay Date of birth එක Date of birth එක 1986 මැයි 20 Okay හරි Mr විජේගුණවර්ධන ඔයාගේ මේ permanent residential address එකයි direct mobile number එකකුයි කියන්නකෝ ඉක්මනට",
+      "hypothesis": "ආ හා හා හරි okay date of birth එක date of birth එක 1986 මැයි 20 okay හරි Mr. විජේ ගුණවර්තන ඔයාගේ මේ permanent residential address එකයි direct mobile number එකකුයි කියන්නකෝ ඊක්මන්ට මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැඩි මැනි මැනවා"
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 6,
+      "start": 97.42,
+      "end": 107.95,
+      "reference": "ආ miss හා මේ අපේ permanent address එක මේ number 82/1 විජේරාම පාර උඩහමුල්ල නුගේගොඩ මගේ mobile number එක 077 219 4430 මගේ personal email address එක chamara.san@gmail.com Residential landline එක 011 283 5512",
+      "hypothesis": "ආ මිසා මේ අපේ permanent address එක මේ number 82 එක විජේරාම පාර උඩහමුල්ල නුගේගොඩ අපි mobile number එක 077 213 0123 මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 7,
+      "start": 123.04,
+      "end": 139.23,
+      "reference": "55 12 හරි okay perfect දැන් patient ගේ details ටික අපි check කරගමු Patient ගේ full name එකයි NIC number එකයි ඉක්මනට කියන්න හරි අපේ තාත්තාගේ නම නම් මේ විජේගුණවර්ධන ආරච්චිලාගේ දයානන්ද විජේගුණවර්ධන තාත්තාගේ NIC එක 1954 28 90 12 33 තාත්තාගේ date of birth එක මේ 1954 ඔක්තෝබර් 15 තාත්තාගේ direct phone number එක නම් මේ 071 830 2291",
+      "hypothesis": "හරි okay perfect දැන් patient ගේ details ටික අපි check කරගමු patient ගේ full name එකයි NIC number එකයි ඉක්මන්ට කියන්න හරි අපි තාත්තගෙ නම නම් මේ විජේගෙනවා දෙනාරත් හිතනවාද හරි okay තාත්තගෙ NIC එක එක්දා මස්සි පනස් වත් වැයි විසි අයි අනූව අයි අනූව අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි අයි �"
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 8,
+      "start": 153.88,
+      "end": 167.5,
+      "reference": "830 22 91 okay හරි patient profile එක create වුණා මේ patient ID එක මේ DHP-88204 Insurance policy details එක verify කරමු ඔයාගේ මේ insurance provider කවුද",
+      "hypothesis": "ඔව් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැනවා කවා කියිනවා කි"
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 9,
+      "start": 171.42,
+      "end": 197.6,
+      "reference": "මේ මගේ insurance provider නම් මේ Ceylinco Life Insurance policy එකක් තියෙන්නේ මේ corporate group health insurance cover එකක් තියෙන්නේ Policy number එක මේ CL-MED-2024-90412 Member reference ID එක CEY-880125 Group policyholder විදිහට තියෙන්නේ මගේ employer මේ Virtusa Private Limited මේ number 752 ආචාර්ය ඩෑන්ඩිස්ටර් ද සිල්වා මාවත කොළඹ 9",
+      "hypothesis": "මේ මගේ insurance provider එකක් මේ Ceylon Ceylon Co life insurance policy එකක් තියෙන්නේ Ceylon Co එකක් Ceylon Co තියෙන්නේ මේ corporate group health insurance cover එකක් තියෙන්නේ Policy number එක මේ C L M E D 24 94 12 Member reference ID එක C E Y 88 21 24 Group policy holder විදිහාරියිත්තා කියන්නේ"
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 10,
+      "start": 242.23,
+      "end": 249.09,
+      "reference": "ආ එහෙමද doctor කියලා තියෙන්නේ නේ ආ ඒක හොඳයි miss මේ admission එකට room selection එක කොහොමද වෙන්නේ",
+      "hypothesis": "ආ එහෙම තමයි තියෙන්නේ නේ ආ එහෙම තමයි තියෙන්නේ නැහැ මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම් මැඩම්"
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 11,
+      "start": 249.27,
+      "end": 269.23,
+      "reference": "ඔව් මේ ඔයාට හරි එහෙනම් මේ පොඩ්ඩක් concentrate කරන්න මේ details වලට Room category එක semi-luxury private room එකක් මේ allocate කරන්න පුළුවන් Room number එක 412 fourth floor එකේ තමයි තියෙන්නේ අවුලක් නෑනේ ඔයාට අනේ නෑ ඒක අවුලක් නෑ miss",
+      "hypothesis": "Oya oya hari thiyenan me poddak poddak concentrate karanna me details velata. Hari hari miss, hari miss. Room category eka semi luxury private room ekak me allocate karanna puluwan. Room number eka 412, fourth floor eka thamai thiyenne, awulak naha oya."
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 12,
+      "start": 269.23,
+      "end": 293.5,
+      "reference": "හරි එහෙම තමයි මේ තියෙන්නේ Pre-authentication request එක අපි දැන් මේ TPA desk එකට dispatch කරනවා Reference number එක PRE-AUTH-99214 214 එක නේ ආ හා හරි Cashless approval එක එන්න කොච්චර වෙලාවක් යයිද miss අවුලක් නෑ මම ඒක ගෙනත් දෙන්නම් දැන් ඔයා යන්නකෝ",
+      "hypothesis": "ආ හා නිවා ඒක තමයි මේ තියෙන්නේ pre authentication request එක අපි දැන් මේ TPA desk එකට dispatch කරනවා reference number එක PRE oath 99214 එක නෑ ආ හා හරි Casels approval එක එන්න ගොචලා කෙන්නේ නිස් ආ ඔව් නම් නෑ මම ඒක ගෙනත් දෙන්නම් දැන් ඔයා අපි මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ මේ"
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 13,
+      "start": 293.58,
+      "end": 299.22,
+      "reference": "අනේ thank you miss thanks a lot මේ miss අර Ceylinco එකේ insurance එක නෑ අවුලක් නෑ",
+      "hypothesis": "ආ හා නේ thank you miss මේ thank you මේ බිස්තා දෙලෙක් ඉන්නවා"
+    }
+  ],
+  "fine_tuning": {
+    "model": "large-v3",
+    "run": "large-v3_v4_aug",
+    "note": "Augmentation on large-v3: speed 0.9/1.0/1.1x + SpecAugment (time 5%, 1 freq band). Same data and settings as large-v3_v4 (no-augmentation comparison). medium_v4_aug with safeguards reached WER 0.459.",
+    "augment": {
+      "speed": [
+        0.9,
+        1.0,
+        1.1
+      ],
+      "spec_augment": {
+        "mask_time_prob": 0.05,
+        "mask_time_length": 10,
+        "mask_time_min_masks": 2,
+        "mask_feature_prob": 0.05,
+        "mask_feature_length": 10,
+        "mask_feature_min_masks": 1
+      }
+    },
+    "started": "2026-10-09T19:45",
+    "epochs_max": 10,
+    "patience": 2,
+    "hf_id": "openai/whisper-large-v3",
+    "language": "en",
+    "method": "LoRA",
+    "lora_r": 32,
+    "lr": 0.001,
+    "batch": {
+      "micro": 2,
+      "accum": 8
+    },
+    "seed": 13,
+    "data": {
+      "train": {
+        "n_recordings": 69,
+        "n_clips": 809,
+        "hours": 3.094,
+        "scripts": {
+          "mixed": 1,
+          "none": 3,
+          "romanized": 14,
+          "unicode": 51
+        }
+      },
+      "val": {
+        "n_recordings": 6,
+        "n_clips": 63,
+        "hours": 0.228,
+        "scripts": {
+          "romanized": 1,
+          "unicode": 5
+        }
+      },
+      "test": {
+        "n_recordings": 10,
+        "n_clips": 111,
+        "hours": 0.443,
+        "scripts": {
+          "romanized": 2,
+          "unicode": 8
+        }
+      }
+    },
+    "best_epoch": 4,
+    "curve": [
+      {
+        "epoch": 0,
+        "val_loss": 2.1337
+      },
+      {
+        "epoch": 1,
+        "train_loss": 1.1812,
+        "val_loss": 0.9815,
+        "elapsed_min": 11.7
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.6871,
+        "val_loss": 0.8785,
+        "elapsed_min": 23.2
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.5203,
+        "val_loss": 0.8772,
+        "elapsed_min": 35.0
+      },
+      {
+        "epoch": 4,
+        "train_loss": 0.3884,
+        "val_loss": 0.8189,
+        "elapsed_min": 46.6
+      },
+      {
+        "epoch": 5,
+        "train_loss": 0.2933,
+        "val_loss": 0.8556,
+        "elapsed_min": 58.1
+      },
+      {
+        "epoch": 6,
+        "train_loss": 0.2074,
+        "val_loss": 0.8813,
+        "elapsed_min": 69.6
+      }
+    ],
+    "train_minutes": 69.6,
+    "peak_gpu_gib": 4.67,
+    "finetuned_test": {
+      "norm_wer": 0.6004,
+      "raw_wer": 0.6843,
+      "norm_cer": 0.3635,
+      "words_recovered": 2259,
+      "n_ref_words": 3836,
+      "recall_of_ref_words": 0.5889,
+      "output_ratio": 1.089,
+      "substitutions": 1193,
+      "deletions": 384,
+      "insertions": 726,
+      "decode_s": 2864.0
+    },
+    "adapter": "models\\whisper_lora\\large-v3_v4_aug"
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S009_bank_card.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Good morning, People's Bank card center එකෙන්, මම Charith. කොහොමද මට ඔයාට help කරන්න පුළුවන්?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Good morning sir. මගේ credit card එකෙන් මට නොදන්න transactions දෙකක් වෙලා තියෙනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි sir, කලබල වෙන්න එපා. මුලින්ම ඔයාගේ full name එක කියන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "මගේ නම Dinesh Gunasekara.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ස්තූතියි. Verify කරන්න ඔයාගේ NIC number එක කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "NIC එක 773845778V.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "මම ආපහු කියන්නම්, 773845778V. ඒක හරිද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව් හරි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Card එකේ අන්තිම digits හතර?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "7943.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Registered mobile number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Mobile number එක 072 627 0586.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ස්තූතියි sir. කවදද මේ transactions වුණේ?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "March 23 දවසේ. එකක් rupees 40,350, අනිත් එක rupees 3,450.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඒ දෙකම online purchases විදිහට තියෙන්නේ. ඔයා එහෙම මොකුත් ගත්තේ නැද්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "නෑ, මම මුකුත් ගත්තේ නෑ. Card එක මගේ ළඟම තියෙනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි, එහෙනම් අපි card එක දැන්ම block කරනවා. අලුත් card එකක් දවස් හතක් ඇතුළත ගෙදරට එවනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි. Address එක තවමත් No. 12, Park Road, Negombo තමයි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි, confirm කළා. මේ complaint එකට reference number එක ලියාගන්න, CMP-214584.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ආයෙත් කියන්න පුළුවන්ද? CMP-214584 නේද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඔව් හරි. Working days දහහතරක් ඇතුළත investigate කරලා SMS එකක් එවනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි හරි, ගොඩක් ස්තූතියි sir.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ප්‍රශ්නයක් නෑ sir. තව මොනවා හරි help එකක් ඕනෙද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "නෑ, එච්චරයි. Thank you.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "People's Bank එක තෝරගත්තට ස්තූතියි. සුභ දවසක්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Bank blocks the card, sends a new one within 7 days, and investigates the dispute within 14 working days.",
+      "owner": "People's Bank",
+      "receiver": "Dinesh Gunasekara",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Dinesh Gunasekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Dinesh Gunasekara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Dinesh"
+        }
+      ]
+    },
+    {
+      "canonical": "Charith",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Charith"
+        }
+      ]
+    },
+    {
+      "canonical": "People's Bank",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "People's Bank"
+        }
+      ]
+    },
+    {
+      "canonical": "773845778V",
+      "label": "NIC",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "773845778V"
+        }
+      ]
+    },
+    {
+      "canonical": "7943",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "7943"
+        }
+      ]
+    },
+    {
+      "canonical": "072 627 0586",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "072 627 0586"
+        }
+      ]
+    },
+    {
+      "canonical": "CMP-214584",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "CMP-214584"
+        }
+      ]
+    },
+    {
+      "canonical": "No. 12, Park Road, Negombo",
+      "label": "ADDRESS",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 12, Park Road, Negombo"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {}
+}

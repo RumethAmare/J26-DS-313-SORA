@@ -1,0 +1,250 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S005_university_results.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Good morning, NSBM student services. මම Lahiru.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Good morning sir. මගේ exam results portal එකේ පේන්නේ නෑ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි. ඔයාගේ student ID එක කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "IT32080737.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "මම ආපහු කියන්නම්, IT32080737. හරිද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්. මගේ නම Rashmi Wijesekara.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "කොයි semester එකද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Year 1 semester 1.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "System එකේ semester fee එකේ balance එකක් පෙන්නනවා, rupees 82,500.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "මම ඒක April 26 දවසේ pay කළා. Receipt එක ළඟ තියෙනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Receipt number එක කියන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "61642524.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ආ හරි, payment එක ආවා, ඒත් අපේ system එකට update වෙලා නෑ. මම ඒක finance එකට යවන්නම්.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "කවදද results පේන්නේ?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Working days තුනක් ඇතුළත. University email එකට message එකක් එයි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "මගේ personal email එකටත් එවන්න පුළුවන්ද? rashmi.wijesekara68@hotmail.com.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි, ඒකත් add කළා. Contact number එකත් කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "078 771 8841.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Ticket number එක SS-330175. ආයෙත් call කරනවා නම් ඒක කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි, ස්තූතියි sir.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "සුභ දවසක්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Student services forwards the payment to finance; results visible within 3 working days.",
+      "owner": "NSBM",
+      "receiver": "Rashmi Wijesekara",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Rashmi Wijesekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Rashmi Wijesekara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Rashmi"
+        }
+      ]
+    },
+    {
+      "canonical": "Lahiru",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Lahiru"
+        }
+      ]
+    },
+    {
+      "canonical": "NSBM",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "NSBM"
+        }
+      ]
+    },
+    {
+      "canonical": "IT32080737",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "IT32080737"
+        }
+      ]
+    },
+    {
+      "canonical": "61642524",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "61642524"
+        }
+      ]
+    },
+    {
+      "canonical": "078 771 8841",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "078 771 8841"
+        }
+      ]
+    },
+    {
+      "canonical": "SS-330175",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SS-330175"
+        }
+      ]
+    },
+    {
+      "canonical": "rashmi.wijesekara68@hotmail.com",
+      "label": "EMAIL",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "rashmi.wijesekara68@hotmail.com"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {}
+}

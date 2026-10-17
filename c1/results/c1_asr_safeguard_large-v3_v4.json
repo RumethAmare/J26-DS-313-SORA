@@ -1,0 +1,181 @@
+{
+  "run": "large-v3_v4",
+  "model": "large-v3",
+  "experiment": "loop safeguards (decode-time)",
+  "thresholds": {
+    "compression_ratio": 3.0,
+    "word_run": 10,
+    "phrase_run": 5,
+    "char_run": 8,
+    "words_per_s": 10.0,
+    "word_slack": 5,
+    "fallback_beams": 5
+  },
+  "n_clips": 111,
+  "n_flagged": 10,
+  "actions": {
+    "beam + truncate": 4,
+    "beam re-decode": 6,
+    "kept": 101
+  },
+  "non_looping_clips_unchanged": true,
+  "still_looping_after": 0,
+  "greedy_test": {
+    "norm_wer": 0.5863,
+    "raw_wer": 0.6541,
+    "norm_cer": 0.3462,
+    "words_recovered": 2238,
+    "n_ref_words": 3836,
+    "recall_of_ref_words": 0.5834,
+    "output_ratio": 1.025,
+    "substitutions": 1044,
+    "deletions": 554,
+    "insertions": 651
+  },
+  "safeguard_test": {
+    "norm_wer": 0.4447,
+    "raw_wer": 0.5127,
+    "norm_cer": 0.284,
+    "words_recovered": 2361,
+    "n_ref_words": 3836,
+    "recall_of_ref_words": 0.6155,
+    "output_ratio": 0.891,
+    "substitutions": 826,
+    "deletions": 649,
+    "insertions": 231,
+    "decode_s": 237.8
+  },
+  "flagged_clips": [
+    {
+      "recording": "J26DS313_R0019",
+      "clip": 1,
+      "reasons": [
+        "compression",
+        "1-word unit x36",
+        "char loop"
+      ],
+      "action": "beam + truncate",
+      "words_before": 39,
+      "words_after": 13,
+      "reference_words": 14
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 4,
+      "reasons": [
+        "compression",
+        "1-word unit x44",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 44,
+      "words_after": 41,
+      "reference_words": 39
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "clip": 7,
+      "reasons": [
+        "compression",
+        "1-word unit x110",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 110,
+      "words_after": 37,
+      "reference_words": 39
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 3,
+      "reasons": [
+        "compression",
+        "1-word unit x39",
+        "char loop"
+      ],
+      "action": "beam + truncate",
+      "words_before": 44,
+      "words_after": 2,
+      "reference_words": 25
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 15,
+      "reasons": [
+        "compression",
+        "1-word unit x28",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 51,
+      "words_after": 22,
+      "reference_words": 29
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 19,
+      "reasons": [
+        "compression",
+        "1-word unit x53",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 89,
+      "words_after": 36,
+      "reference_words": 49
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "clip": 21,
+      "reasons": [
+        "compression",
+        "1-word unit x16",
+        "char loop"
+      ],
+      "action": "beam + truncate",
+      "words_before": 33,
+      "words_after": 20,
+      "reference_words": 33
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "clip": 0,
+      "reasons": [
+        "compression",
+        "1-word unit x99",
+        "char loop"
+      ],
+      "action": "beam re-decode",
+      "words_before": 107,
+      "words_after": 62,
+      "reference_words": 62
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 8,
+      "reasons": [
+        "compression",
+        "4-word unit x45",
+        "char loop",
+        "too long for audio"
+      ],
+      "action": "beam re-decode",
+      "words_before": 182,
+      "words_after": 22,
+      "reference_words": 27
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "clip": 11,
+      "reasons": [
+        "compression",
+        "1-word unit x53",
+        "char loop"
+      ],
+      "action": "beam + truncate",
+      "words_before": 85,
+      "words_after": 13,
+      "reference_words": 41
+    }
+  ]
+}

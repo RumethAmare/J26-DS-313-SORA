@@ -1,0 +1,250 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S013_university_results.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Good morning, University of Colombo student services. මම Kasun.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Good morning sir. මගේ exam results portal එකේ පේන්නේ නෑ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි. ඔයාගේ student ID එක කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "BM42599677.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "මම ආපහු කියන්නම්, BM42599677. හරිද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්. මගේ නම Charith Abeyratne.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "කොයි semester එකද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Year 3 semester 1.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "System එකේ semester fee එකේ balance එකක් පෙන්නනවා, rupees 19,500.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "මම ඒක April 21 දවසේ pay කළා. Receipt එක ළඟ තියෙනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Receipt number එක කියන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "14503784.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ආ හරි, payment එක ආවා, ඒත් අපේ system එකට update වෙලා නෑ. මම ඒක finance එකට යවන්නම්.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "කවදද results පේන්නේ?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Working days තුනක් ඇතුළත. University email එකට message එකක් එයි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "මගේ personal email එකටත් එවන්න පුළුවන්ද? charith.abeyratne88@gmail.com.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි, ඒකත් add කළා. Contact number එකත් කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "076 196 8982.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Ticket number එක SS-104602. ආයෙත් call කරනවා නම් ඒක කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි, ස්තූතියි sir.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "සුභ දවසක්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Student services forwards the payment to finance; results visible within 3 working days.",
+      "owner": "University of Colombo",
+      "receiver": "Charith Abeyratne",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Charith Abeyratne",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Charith Abeyratne"
+        },
+        {
+          "script": "LATIN",
+          "form": "Charith"
+        }
+      ]
+    },
+    {
+      "canonical": "Kasun",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Kasun"
+        }
+      ]
+    },
+    {
+      "canonical": "University of Colombo",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "University of Colombo"
+        }
+      ]
+    },
+    {
+      "canonical": "BM42599677",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "BM42599677"
+        }
+      ]
+    },
+    {
+      "canonical": "14503784",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "14503784"
+        }
+      ]
+    },
+    {
+      "canonical": "076 196 8982",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "076 196 8982"
+        }
+      ]
+    },
+    {
+      "canonical": "SS-104602",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SS-104602"
+        }
+      ]
+    },
+    {
+      "canonical": "charith.abeyratne88@gmail.com",
+      "label": "EMAIL",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "charith.abeyratne88@gmail.com"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {}
+}

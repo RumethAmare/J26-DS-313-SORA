@@ -1,0 +1,132 @@
+{
+  "run": "large-v3_v4_aug_ctc",
+  "max_utterance_s": 25.0,
+  "silence_ms": 600,
+  "mode": "as fast as possible",
+  "what": "whole test recordings streamed through live_transcribe.py; VAD finds the utterances; joined transcript scored against the full gold transcript",
+  "live_test": {
+    "norm_wer": 0.3739,
+    "raw_wer": 0.4991,
+    "norm_cer": 0.201,
+    "words_recovered": 2817,
+    "n_ref_words": 3948,
+    "recall_of_ref_words": 0.7135,
+    "output_ratio": 1.013,
+    "substitutions": 836,
+    "deletions": 295,
+    "insertions": 345
+  },
+  "per_recording": [
+    {
+      "recording": "J26DS313_R0007",
+      "utterances": 16,
+      "wer": 0.6863,
+      "words_recovered": 0.402,
+      "wall_s": 44.7,
+      "median_latency_s": 1.23
+    },
+    {
+      "recording": "J26DS313_R0013",
+      "utterances": 8,
+      "wer": 0.1579,
+      "words_recovered": 0.8947,
+      "wall_s": 32.3,
+      "median_latency_s": 1.64
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "utterances": 15,
+      "wer": 0.3264,
+      "words_recovered": 0.7155,
+      "wall_s": 38.5,
+      "median_latency_s": 1.4
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "utterances": 13,
+      "wer": 0.3633,
+      "words_recovered": 0.7079,
+      "wall_s": 37.5,
+      "median_latency_s": 1.23
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "utterances": 8,
+      "wer": 0.3693,
+      "words_recovered": 0.6759,
+      "wall_s": 35.5,
+      "median_latency_s": 1.56
+    },
+    {
+      "recording": "J26DS313_R0030",
+      "utterances": 7,
+      "wer": 0.2908,
+      "words_recovered": 0.773,
+      "wall_s": 42.7,
+      "median_latency_s": 8.9
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "utterances": 9,
+      "wer": 0.272,
+      "words_recovered": 0.7798,
+      "wall_s": 58.4,
+      "median_latency_s": 2.08
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "utterances": 25,
+      "wer": 0.3848,
+      "words_recovered": 0.6982,
+      "wall_s": 127.4,
+      "median_latency_s": 2.31
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "utterances": 18,
+      "wer": 0.4245,
+      "words_recovered": 0.708,
+      "wall_s": 95.8,
+      "median_latency_s": 2.47
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "utterances": 15,
+      "wer": 0.4554,
+      "words_recovered": 0.6907,
+      "wall_s": 97.9,
+      "median_latency_s": 4.38
+    }
+  ],
+  "latency_after_speech_s": {
+    "median": 1.54,
+    "p90": 4.69,
+    "n": 84
+  },
+  "word_timestamps": {
+    "method": "MMS forced alignment (live default --timing ctc)",
+    "matched_words": 2794,
+    "gold_words": 3904,
+    "start_err_ms": {
+      "median": 100,
+      "mean": 853,
+      "p90": 2240
+    },
+    "end_err_ms": {
+      "median": 140,
+      "mean": 888,
+      "p90": 2274
+    },
+    "within_ms": {
+      "50": 0.2706,
+      "100": 0.3955,
+      "200": 0.5082,
+      "500": 0.65
+    },
+    "midpoint_inside_gold_word": 0.5175,
+    "same_speaker_turn_as_gold": 0.9269,
+    "speaker_turn_words": 1943
+  },
+  "wall_s": 611.3,
+  "clip_based_wer": 0.4408
+}

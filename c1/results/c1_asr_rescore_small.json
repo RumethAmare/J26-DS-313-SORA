@@ -1,0 +1,36 @@
+{
+  "run": "small",
+  "model": "small",
+  "language": "en",
+  "test_split": {
+    "n_recordings": 10,
+    "n_clips": 111,
+    "hours": 0.443,
+    "scripts": {
+      "romanized": 2,
+      "unicode": 8
+    }
+  },
+  "trained_on": {
+    "n_recordings": 47,
+    "n_clips": 479,
+    "hours": 1.587,
+    "scripts": {
+      "romanized": 7,
+      "unicode": 40
+    }
+  },
+  "finetuned_test": {
+    "norm_wer": 0.9257,
+    "raw_wer": 0.9582,
+    "norm_cer": 0.588,
+    "words_recovered": 1859,
+    "n_ref_words": 3836,
+    "recall_of_ref_words": 0.4846,
+    "output_ratio": 1.325,
+    "substitutions": 1651,
+    "deletions": 326,
+    "insertions": 1574,
+    "decode_s": 105.5
+  }
+}

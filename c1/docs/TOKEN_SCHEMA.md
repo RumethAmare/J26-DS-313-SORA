@@ -1,164 +1,138 @@
-# C1 token schema — SI / EN / NUM / OTHER
+# C1 Extended Token Schema (Task 2)
 
-Proposed schema for per-token language identification, and the output contract
-Stage D emits to Components 2 and 3. Derived from a full audit of all 27
-recordings (5 818 tokens); reproduce with `python -m src.audit_labels`.
+Extends the shared `<rid>.tokens.jsonl` contract in
+`SORA_Dataset/docs/DATA_CONTRACT.md` with the confidence fields the TAF asks
+for. `SORA_Dataset` is treated as read-only here, so this document is the
+authoritative spec for C1 *predictions*; the shared contract should be updated
+by the team before any release that includes these fields.
 
-## The four labels
-
-| Label | Means | Decided by |
-|---|---|---|
-| `SI` | Sinhala, in either script | Annotation / model |
-| `EN` | English, in either script | Annotation / model |
-| `NUM` | Numerals and numeric identifiers | Deterministic rule |
-| `OTHER` | **Tamil** | Annotation / model |
-
-`OTHER` means Tamil specifically — Sri Lanka's other national language — not
-"anything else". This matches the intent behind `docs/DATA_CONTRACT.md`; the
-`NUM` class is what makes it true in practice.
-
-## Why NUM was added
-
-The three-label schema was not being applied consistently. Of 92 `OTHER`
-tokens, 81 were numerals, phone numbers, NIC numbers or reference codes;
-separately, 227 numeric tokens sat in `EN` and 15 in `SI`. The same
-phenomenon was split across three classes on no stated principle.
-
-The measured cost is in `SORA_Dataset/results/c1_lid_eval.json`: `OTHER`
-scored precision 0.00, recall 0.00, **F1 0.00**. Not a modelling failure — the
-class had no learnable definition.
-
-Splitting `NUM` out moves 323 tokens (5.6 % of the corpus) and leaves `OTHER`
-with 11 tokens that are actually about language:
-
-```
-label     before    after    delta
-SI          3338     3323      -15
-EN          2388     2161     -227
-NUM            0      323     +323
-OTHER         92       11      -81
-```
-
-`NUM` is also directly useful downstream: C4 needs NIC and phone-number spans
-for PII redaction, and C2 needs them for action-item extraction. One rule
-serves three components.
-
-### The NUM rule
-
-Strip leading and trailing punctuation. The token is `NUM` if what remains
-contains a digit and no `@`.
-
-Deliberately mechanical, so it never needs adjudicating. It captures bare
-numerals (`1990`), grouped amounts (`15,000`), decimals (`1.5`), percentages
-(`70%`), times (`10:00`), ordinals (`21st`), phone numbers (`0777998876`),
-NICs (`8812304567V`) and reference codes (`CEB/KW/2024/008834`). The `@`
-exclusion keeps email addresses out — they carry digits but are not numbers,
-and they belong in a review bucket rather than a language class.
-
-## The 11 remaining OTHER tokens
-
-Small enough to list, which is the point — they can be verified by hand.
-
-| Recording | Script | Token |
-|---|---|---|
-| R0012 | Latin | `puriyam.` |
-| R0013 | Latin | `ಪುರಿಯമ്.` |
-| R0015 | Sinhala | `ඉදු`, `ඔරුව`, `පෙරිය`, `ප්‍රචන`, `ඉල්ලයි.` |
-| R0016 | Latin | `sari`, `sari.` |
-| R0018 | Latin | `hasitha.94@gmail.com.`, `No.` |
-
-Two open items for the annotation team:
-
-- `hasitha.94@gmail.com.` and `No.` are not Tamil. The email belongs in a
-  review bucket; `No.` is English.
-- **There are zero Tamil-script tokens in the corpus.** Every Tamil token is
-  written either romanized or in Sinhala script, so a script-based feature can
-  never find them. With 11 examples, `OTHER` cannot be learned from this data
-  at all — it needs either targeted Tamil collection or an external lexicon,
-  and until then its F1 should be reported as not-measurable rather than 0.00.
-
-## English loanwords in Sinhala script
-
-56 tokens (43 distinct) are labelled `EN` but written in Sinhala script:
-`හොටෙල්` (hotel), `රූම්ස්` (rooms), `එන්අයිසී` (NIC), `නම්බර්` (number),
-`ඇඩ්රස්` (address), `ට්‍රිප්` (trip).
-
-**This is correct annotation, not drift.** It is the genuinely hard case for
-per-token LID: the script says Sinhala and the word is English. Any classifier
-built on script features alone will get all 56 wrong, so `lid_features.py`
-needs lexical and character-n-gram features rather than a script flag.
-
-## Two systematically mislabelled recordings
-
-Bigger than the `NUM` drift, and found by a check that needs no external
-lexicon: compare each token's label against how the same word (folded, so
-`කොහොමද` and `kohomada` count as one) is labelled in every *other* recording.
-A token is only checkable when it appears elsewhere with enough occurrences to
-form a majority.
-
-The corpus splits cleanly — 25 recordings contradict the rest on ≤7% of their
-checkable tokens, which is ordinary ambiguity (`me` is both English *me* and
-Sinhala *මේ*; `one` collides with *ඕන*). Two do not:
-
-| Recording | Rate | Direction | Examples |
-|---|---|---|---|
-| **R0017** | **55%** of 179 | Sinhala labelled `EN` | `mama`, `Oyata`, `ekak`, `oneda?`, `eken,` |
-| **R0023** | **20%** of 128 | English labelled `SI` | `complaint`, `sir,`, `file`, `Phone`, `number` |
-
-R0017 is the worse case and the manifest agrees with the error — it declares
-`EN+OTHER+OTHER`, so nothing cross-checks it. The transcript is plainly
-code-mixed ("Good morning Ceylon Electricity Board Kaduwela office **eken, mama
-Chaminda. Oyata connection ekak oneda?**"); its romanized Sinhala was read as
-English, at the manifest level and the token level together.
-
-Both must be corrected **before** any CRF training or LID evaluation. A
-recording annotated on a different reading of the label set does not add noise,
-it adds a competing definition — it poisons training and makes the reported F1
-unfalsifiable. Note that R0023 sits in the **eval** split, so this affects the
-headline LID number directly. Correcting labels does not change the split, so
-`data/manifest.csv` stays locked.
-
-## The `switch` field
-
-Annotated `switch=true` on 2 012 of 5 818 tokens (34.6 %). Deriving it
-instead as "language differs from the previous token in the same utterance"
-gives 1 877 (32.3 %), agreeing with the annotation **97.6 %** of the time —
-136 tokens are flagged as switches without a language change, 1 the reverse.
-
-Close, but not identical, so `switch` does not mean exactly "the language
-changed". Two consequences:
-
-- Stage D **derives** switch markers from the language sequence rather than
-  copying the field, so the definition is one line of code rather than 27
-  annotators' judgement.
-- Switch-point accuracy (§9 of the implementation document) needs that
-  definition stated before it is reported, or the metric is unfalsifiable.
-
-## Output contract (Stage D)
-
-Extends `docs/DATA_CONTRACT.md` with the confidence score §1 requires:
+## Current shared schema (gold annotations)
 
 ```json
-{"utt_id": "J26DS313_R0002_u001", "tok_id": 0, "token": "hello",
- "lang": "EN", "start": 1.19, "end": 1.49, "conf": 0.92, "switch": false}
+{"utt_id", "tok_id", "token", "lang", "start", "end", "switch"}
 ```
 
-| Field | Type | Notes |
+`lang ∈ {SI, EN, OTHER}`, `start`/`end` in seconds.
+
+## Extended schema (C1 predictions)
+
+```json
+{
+  "utt_id":          "J26DS313_R0015_u001",
+  "tok_id":          1,
+  "token":           "Golden",
+  "lang":            "EN",
+  "start":           1.43,
+  "end":             1.91,
+  "switch":          true,
+  "asr_confidence":  0.87,
+  "lang_confidence": 0.94,
+  "lang_method":     "wordfreq_en"
+}
+```
+
+The first seven fields are unchanged, so anything reading the gold format
+keeps working. Three fields are added.
+
+### `asr_confidence` — did we hear the word?
+
+Per-word probability from faster-whisper, obtained with
+`word_timestamps=True` (`word.probability`). Range 0–1.
+
+### `lang_confidence` — is the language label right?
+
+Confidence in the `lang` tag, from whichever LID method produced it. Range
+0–1.
+
+**These two are deliberately separate fields and must not be merged.** They
+answer different questions and fail independently. A token can be heard
+perfectly and tagged wrongly (a clearly-articulated romanized Sinhala word
+that also exists in English), or heard badly and tagged confidently (a
+mangled token that is still unambiguously Sinhala script). Collapsing them
+into one number destroys exactly the distinction C2/C3/C4 need in order to
+decide whether to trust a token's text or its language.
+
+### `lang_method` — which rule fired?
+
+Provenance for the label, so a consumer can tell a deterministic
+script-match from a frequency guess without re-deriving it. This matters
+because Task 3 will add a second method (fastText) alongside the heuristic,
+and mixed-provenance output is otherwise unauditable.
+
+| value | meaning |
+|---|---|
+| `unicode_sinhala` | token contains Sinhala script — deterministic |
+| `unicode_tamil` | token contains Tamil script — deterministic |
+| `numeric` | token is purely numeric |
+| `wordfreq_en` | Latin script, English by corpus frequency |
+| `fallback_si` | Latin script, no English evidence — assumed romanized Sinhala |
+| `fasttext_latin` | Latin script, labelled by Task 3's fastText classifier (`lid_hybrid.py`, the default for `build_token_stream.py` since 2026-10-07); confidence is the model's softmax probability |
+
+## How `lang_confidence` is calibrated for the heuristic
+
+Confidence reflects how *decisive the rule that fired actually is*, not how
+common the label is. The heuristic's rules differ enormously in reliability,
+and a single flat confidence would hide that.
+
+| rule | confidence | reasoning |
 |---|---|---|
-| `utt_id` | string | `<rid>_u###`, zero-padding identical across all layers |
-| `tok_id` | int | 0-based within the utterance |
-| `token` | string | Surface form, in the decoded script |
-| `lang` | enum | `SI` / `EN` / `NUM` / `OTHER` |
-| `start`, `end` | float | Seconds into the recording, from Whisper word timestamps |
-| `conf` | float | 0–1, the ASR word probability |
-| `switch` | bool | Derived: `lang` differs from the previous token in the utterance |
+| `unicode_sinhala` / `unicode_tamil` | 0.99 | Script presence is unambiguous. Near-certain by construction. |
+| `numeric` | 0.50 | Deliberately low. Gold itself is inconsistent here — `"8"`→EN but `"075"`→OTHER — so this is annotation-guideline drift, not a confident prediction. Section D of the plan flags it; the confidence should say so rather than paper over it. |
+| `wordfreq_en` | 0.50–0.95 | Scaled by how far the word's English frequency sits above the 1e-5 threshold, in decades. A word barely over the line gets ~0.5; a common word two decades above gets 0.95. |
+| `fallback_si` | 0.50–0.90 | Negative evidence only — "not recognisably English". Scaled by how far *below* threshold, and capped lower than the EN ceiling because absence of English evidence is weaker than presence of Sinhala script. |
+| `fasttext_latin` | model probability | fastText's top-class softmax probability. Not calibrated against held-out data; treat values below ~0.8 as uncertain (the threshold `pretag_relabel.py` uses for review). |
 
-`conf` is additive, so the output stays readable by anything expecting the
-existing contract. Adding `NUM` to the `lang` enum is the one change that needs
-team sign-off before `validate.py` will accept it.
+### Known miscalibration
 
-## Status
+The fallback cannot detect romanized Sinhala that collides with a real
+English word. `mama` (Sinhala "I") carries genuine English frequency, so it
+is tagged EN with *high* confidence — confidently wrong. The confidence
+signal does not catch this class of error and should not be trusted to.
+Task 3's fastText classifier targets precisely these ambiguous Latin-script
+cases, and Task 5 handles romanized Tamil the same way.
 
-Proposed. `src/audit_labels.py` writes `data/label_relabel_patch.jsonl` with all
-323 changes for review; **nothing in `SORA_Dataset` has been modified.** Applying
-the patch is a Phase 1 team decision.
+`OTHER` is only ever produced by the Tamil-script rule, so romanized Tamil is
+currently invisible to this method — consistent with the 0% OTHER recall
+already measured in the LID baseline.
+
+## `start` / `end` and `align_score`: when the word was said (for C3)
+
+Since 2026-10-12 the fine-tuned live pipeline (`live_transcribe.py`, also used
+offline with `--input-file rec.wav --tokens-jsonl rec.tokens.jsonl`) times each
+word with **CTC forced alignment** (`scripts/word_align.py`, the MMS aligner):
+Whisper decides the words, and the aligner finds where each word's letters sit
+in the audio, at 20 ms resolution. Times are seconds from the start of the
+session or recording. Sinhala script is romanized with `uroman` for the
+aligner; digits match a wildcard, so number tokens are timed more coarsely.
+
+`align_score` (0–1) is the mean CTC probability of the word's letters, i.e. how
+well the sound fits the text. It is a third, separate signal: it does not say
+whether the word is right (`asr_confidence`) or what language it is
+(`lang_confidence`).
+
+With the default `--timing ctc`, `asr_confidence` is `null`, because
+faster-whisper only produces per-word probabilities in its own
+word-timestamp pass, which costs 0.4–0.7 s before the text appears. Use
+`--timing both` to get both. Accuracy against the gold token times is in
+`results/c1_timestamps_report.md`. On large-v3 the median start error is 60 ms,
+against 270 ms for Whisper's own estimate, and ~95% of words fall in the same
+gold speaker turn. Tokens with `align_score` below ~0.05 are the ones most often
+misplaced, so C3 should treat them as weak evidence near a speaker change.
+
+## `switch`
+
+Derived, not predicted: `switch = (tok_id > 0) and (lang[i] != lang[i-1])`
+within an utterance. The first token of each utterance is always `false`.
+
+**The gold `switch` field does not reliably follow this rule, or any other.**
+It disagrees with the derivation on 137 of 5,818 tokens (2.4%), and 129 of
+those sit on the first token of an utterance. That looked like gold using a
+cross-utterance convention instead, but it is not: at utterance boundaries
+where the language actually changes, gold marks `switch=true` 102 times and
+`switch=false` 100 times — a coin flip — plus 27 tokens marked as switches
+with no language change at all.
+
+Task 4 must therefore **re-derive the gold switch sequence from gold `lang`**
+rather than scoring against the annotated field, or switch-point F1 will
+largely measure annotator inconsistency at turn boundaries. Full analysis and
+reproduction steps in [SWITCH_FIELD_AUDIT.md](SWITCH_FIELD_AUDIT.md).

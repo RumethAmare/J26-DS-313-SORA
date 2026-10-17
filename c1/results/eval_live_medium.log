@@ -1,0 +1,12 @@
+﻿J26DS313_R0007:  17 utterances, WER 0.716, 19s
+J26DS313_R0013:   8 utterances, WER 0.232, 10s
+J26DS313_R0016:  15 utterances, WER 0.343, 18s
+J26DS313_R0018:  13 utterances, WER 0.453, 29s
+J26DS313_R0019:   8 utterances, WER 0.362, 36s
+J26DS313_R0030:   7 utterances, WER 0.252, 27s
+J26DS313_R0033:   9 utterances, WER 0.389, 19s
+J26DS313_R0047:  25 utterances, WER 0.427, 70s
+J26DS313_R0073:  18 utterances, WER 0.473, 60s
+J26DS313_R0075:  15 utterances, WER 0.429, 37s
+
+medium_v4_aug LIVE (whole recordings): WER 0.407 (clip-based 0.4583), CER 0.228, words recovered 69.0%, latency after pause median 1.35 s

@@ -1,0 +1,226 @@
+{
+  "note": "Merges make matching easier, so normalized WER is a mild lower bound on true error (optimistic, never pessimistic).",
+  "n_raw_vocab": 1804,
+  "n_skeletons": 1585,
+  "n_merged_skeletons": 181,
+  "n_vocab_items_merged": 400,
+  "pct_vocab_merged": 22.17,
+  "n_cross_script_merges": 162,
+  "n_within_script_merges": 19,
+  "cross_script_examples": {
+    "eka": [
+      "eka",
+      "ekka",
+      "එක",
+      "එක්ක",
+      "ඒක"
+    ],
+    "a": [
+      "a",
+      "aa",
+      "අ",
+      "ආ"
+    ],
+    "tiyena": [
+      "thiyena",
+      "thiyenna",
+      "තියෙන",
+      "තියෙන්න"
+    ],
+    "one": [
+      "one",
+      "onne",
+      "ඕනෙ",
+      "ඕනේ"
+    ],
+    "karana": [
+      "karana",
+      "karanna",
+      "කරන",
+      "කරන්න"
+    ],
+    "gana": [
+      "gana",
+      "ganna",
+      "ගන්න",
+      "ගාන"
+    ],
+    "eke": [
+      "eke",
+      "එකේ",
+      "ඒකෙ",
+      "ඒකේ"
+    ],
+    "mokada": [
+      "mokada",
+      "mokadda",
+      "mokadha",
+      "මොකද"
+    ],
+    "ekat": [
+      "ekat",
+      "ekath",
+      "එකත්",
+      "ඒකත්"
+    ],
+    "karanako": [
+      "karannako",
+      "කරන්නකො",
+      "කරන්නකෝ"
+    ],
+    "eken": [
+      "eken",
+      "එකෙන්",
+      "ඒකෙන්"
+    ],
+    "oya": [
+      "oya",
+      "ඔය",
+      "ඔයා"
+    ],
+    "kohomada": [
+      "kohomada",
+      "kohomadha",
+      "කොහොමද"
+    ],
+    "saman": [
+      "saman",
+      "සමන්",
+      "සාමාන්"
+    ],
+    "kara": [
+      "kara",
+      "කර",
+      "කරා"
+    ],
+    "dan": [
+      "dan",
+      "dhan",
+      "දැන්"
+    ],
+    "neda": [
+      "neda",
+      "nedda",
+      "නේද"
+    ],
+    "kiyana": [
+      "kiyanna",
+      "කියන",
+      "කියන්න"
+    ],
+    "satmina": [
+      "sathmina",
+      "සත්මිණ",
+      "සත්මින"
+    ],
+    "vene": [
+      "venne",
+      "wenne",
+      "වෙන්නේ"
+    ],
+    "ave": [
+      "aave",
+      "awe",
+      "ආවේ"
+    ],
+    "kiva": [
+      "kiwwa",
+      "කිව්ව",
+      "කිව්වා"
+    ],
+    "da": [
+      "da",
+      "dha",
+      "ද"
+    ],
+    "ekayi": [
+      "ekayi",
+      "එකයි",
+      "ඒකයි"
+    ],
+    "yana": [
+      "yanna",
+      "යන",
+      "යන්න"
+    ]
+  },
+  "within_script_examples": {
+    "hata": [
+      "හත",
+      "හැට",
+      "හැත්තෑ"
+    ],
+    "vena": [
+      "වෙන",
+      "වෙන්න"
+    ],
+    "vuna": [
+      "වුණ",
+      "වුණා"
+    ],
+    "pase": [
+      "passe",
+      "phase"
+    ],
+    "dala": [
+      "දළ",
+      "දාලා"
+    ],
+    "tu": [
+      "ටු",
+      "ටූ"
+    ],
+    "anuva": [
+      "අනුව",
+      "අනූව"
+    ],
+    "m": [
+      "m",
+      "mm"
+    ],
+    "au": [
+      "aau",
+      "au"
+    ],
+    "hatalihayi": [
+      "හතලිහයි",
+      "හතළිහයි"
+    ],
+    "eyage": [
+      "eyaage",
+      "eyage"
+    ],
+    "monavada": [
+      "මොනවද",
+      "මොනවාද"
+    ],
+    "dana": [
+      "දන්න",
+      "දාන්න"
+    ],
+    "daka": [
+      "දැක්ක",
+      "දැක්කා"
+    ],
+    "taraka": [
+      "තාරක",
+      "තාරකා"
+    ],
+    "l": [
+      "l",
+      "ll"
+    ],
+    "deta": [
+      "ඩේට",
+      "ඩේටා"
+    ],
+    "nane": [
+      "නෑනෙ",
+      "නෑනේ"
+    ],
+    "stuti": [
+      "sthuthi",
+      "stuthi"
+    ]
+  }
+}

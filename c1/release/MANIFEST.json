@@ -1,0 +1,2064 @@
+{
+  "name": "SORA C1 code-switching token dataset",
+  "version": "0.1.0",
+  "built": "2026-10-08T09:58:28",
+  "dataset_card": "docs/C1_DATASET_CARD.md",
+  "provenance": {
+    "c1_repo_commit": "9bf5c7d23d287bf1ea7cd819e386f2cc29aca941",
+    "sora_dataset_commit": "75f446980663dbc98820a05536ad3efd2b58206c",
+    "lid_model": "models/lid_latin.ftz",
+    "lid_model_sha256": "fe4fa915997dc85c9cf4dc57377e304da1d46417ff893cb19a8bf4404c69f1c2",
+    "lid_cv_eval": "results/c1_lid_eval.json",
+    "tamil_threshold": 1.4745,
+    "tamil_eval": "results/c1_otherlang_eval.json",
+    "asr_stream_config": "results/c1_token_stream_summary.json"
+  },
+  "totals_usable": {
+    "recordings": 66,
+    "recordings_with_audio": 59,
+    "tokens": 25582,
+    "lang_counts": {
+      "SI": 16224,
+      "EN": 8294,
+      "OTHER": 1064
+    },
+    "switches": 8544,
+    "tamil_flags": 70,
+    "audio_hours": 3.2
+  },
+  "totals_all": {
+    "recordings": 78,
+    "excluded": 12,
+    "tokens": 28974
+  },
+  "recordings": [
+    {
+      "recording": "J26DS313_R0002",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 114,
+      "n_utterances": 14,
+      "lang_counts": {
+        "SI": 47,
+        "EN": 67,
+        "OTHER": 0
+      },
+      "n_switches": 33,
+      "mean_cmi": 19.21,
+      "pct_monolingual_utterances": 28.6,
+      "lang_pred_agreement": 0.9825,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 66.84,
+      "asr_tokens": 22,
+      "gold_source_file": "J26DS313_R0002.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0003",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 70,
+      "n_utterances": 12,
+      "lang_counts": {
+        "SI": 41,
+        "EN": 29,
+        "OTHER": 0
+      },
+      "n_switches": 21,
+      "mean_cmi": 21.82,
+      "pct_monolingual_utterances": 33.3,
+      "lang_pred_agreement": 0.9286,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 45.33,
+      "asr_tokens": 15,
+      "gold_source_file": "J26DS313_R0003.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0004",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 75,
+      "n_utterances": 9,
+      "lang_counts": {
+        "SI": 66,
+        "EN": 9,
+        "OTHER": 0
+      },
+      "n_switches": 15,
+      "mean_cmi": 11.26,
+      "pct_monolingual_utterances": 44.4,
+      "lang_pred_agreement": 0.76,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 41.15,
+      "asr_tokens": 29,
+      "gold_source_file": "J26DS313_R0004.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0005",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 83,
+      "n_utterances": 13,
+      "lang_counts": {
+        "SI": 56,
+        "EN": 27,
+        "OTHER": 0
+      },
+      "n_switches": 19,
+      "mean_cmi": 21.94,
+      "pct_monolingual_utterances": 30.8,
+      "lang_pred_agreement": 0.988,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 53.61,
+      "asr_tokens": 36,
+      "gold_source_file": "J26DS313_R0005.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0006",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 108,
+      "n_utterances": 10,
+      "lang_counts": {
+        "SI": 75,
+        "EN": 33,
+        "OTHER": 0
+      },
+      "n_switches": 48,
+      "mean_cmi": 27.21,
+      "pct_monolingual_utterances": 10.0,
+      "lang_pred_agreement": 0.7407,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "SINHALA_SCRIPT_AS_EN"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 86.04,
+      "asr_tokens": 31,
+      "gold_source_file": "J26DS313_R0006.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0007",
+      "status": "usable_no_audio",
+      "exclusion_reason": null,
+      "n_tokens": 101,
+      "n_utterances": 14,
+      "lang_counts": {
+        "SI": 77,
+        "EN": 22,
+        "OTHER": 2
+      },
+      "n_switches": 32,
+      "mean_cmi": 23.91,
+      "pct_monolingual_utterances": 14.3,
+      "lang_pred_agreement": 0.9307,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [
+        "NO_AUDIO"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0007.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0008",
+      "status": "excluded",
+      "exclusion_reason": "token file structurally malformed (junk in timestamps)",
+      "n_tokens": 22,
+      "n_utterances": 6,
+      "lang_counts": {
+        "SI": 18,
+        "EN": 4,
+        "OTHER": 0
+      },
+      "n_switches": 6,
+      "mean_cmi": 15.83,
+      "pct_monolingual_utterances": 50.0,
+      "lang_pred_agreement": 0.9545,
+      "tamil_flags": 0,
+      "null_timestamps": 22,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NULL_TIMESTAMPS",
+        "SINHALA_SCRIPT_AS_EN"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 62.48,
+      "asr_tokens": 32,
+      "gold_source_file": "J26DS313_R0008.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0009",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 67,
+      "n_utterances": 8,
+      "lang_counts": {
+        "SI": 53,
+        "EN": 14,
+        "OTHER": 0
+      },
+      "n_switches": 26,
+      "mean_cmi": 24.03,
+      "pct_monolingual_utterances": 12.5,
+      "lang_pred_agreement": 0.791,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "SINHALA_SCRIPT_AS_EN"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 42.86,
+      "asr_tokens": 35,
+      "gold_source_file": "J26DS313_R0009.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0010",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 62,
+      "n_utterances": 9,
+      "lang_counts": {
+        "SI": 44,
+        "EN": 18,
+        "OTHER": 0
+      },
+      "n_switches": 27,
+      "mean_cmi": 17.8,
+      "pct_monolingual_utterances": 44.4,
+      "lang_pred_agreement": 0.7903,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "SINHALA_SCRIPT_AS_EN"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 40.38,
+      "asr_tokens": 58,
+      "gold_source_file": "J26DS313_R0010.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0011",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 211,
+      "n_utterances": 16,
+      "lang_counts": {
+        "SI": 132,
+        "EN": 79,
+        "OTHER": 0
+      },
+      "n_switches": 84,
+      "mean_cmi": 29.75,
+      "pct_monolingual_utterances": 12.5,
+      "lang_pred_agreement": 0.9763,
+      "tamil_flags": 2,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 99.18,
+      "asr_tokens": 71,
+      "gold_source_file": "J26DS313_R0011.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0012",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 202,
+      "n_utterances": 16,
+      "lang_counts": {
+        "SI": 84,
+        "EN": 117,
+        "OTHER": 1
+      },
+      "n_switches": 76,
+      "mean_cmi": 31.5,
+      "pct_monolingual_utterances": 12.5,
+      "lang_pred_agreement": 0.9703,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 107.11,
+      "asr_tokens": 37,
+      "gold_source_file": "J26DS313_R0012.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0013",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 189,
+      "n_utterances": 14,
+      "lang_counts": {
+        "SI": 86,
+        "EN": 102,
+        "OTHER": 1
+      },
+      "n_switches": 80,
+      "mean_cmi": 34.27,
+      "pct_monolingual_utterances": 7.1,
+      "lang_pred_agreement": 0.9841,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 96.87,
+      "asr_tokens": 61,
+      "gold_source_file": "J26DS313_R0013.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0014",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 177,
+      "n_utterances": 17,
+      "lang_counts": {
+        "SI": 112,
+        "EN": 59,
+        "OTHER": 6
+      },
+      "n_switches": 64,
+      "mean_cmi": 30.92,
+      "pct_monolingual_utterances": 11.8,
+      "lang_pred_agreement": 0.8023,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 90.9,
+      "asr_tokens": 50,
+      "gold_source_file": "J26DS313_R0014.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0015",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 278,
+      "n_utterances": 25,
+      "lang_counts": {
+        "SI": 177,
+        "EN": 96,
+        "OTHER": 5
+      },
+      "n_switches": 116,
+      "mean_cmi": 32.26,
+      "pct_monolingual_utterances": 8.0,
+      "lang_pred_agreement": 0.9748,
+      "tamil_flags": 6,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "SINHALA_SCRIPT_AS_EN"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 150.46,
+      "asr_tokens": 100,
+      "gold_source_file": "J26DS313_R0015.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0016",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 238,
+      "n_utterances": 19,
+      "lang_counts": {
+        "SI": 150,
+        "EN": 80,
+        "OTHER": 8
+      },
+      "n_switches": 102,
+      "mean_cmi": 30.91,
+      "pct_monolingual_utterances": 5.3,
+      "lang_pred_agreement": 0.9622,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 110.61,
+      "asr_tokens": 36,
+      "gold_source_file": "J26DS313_R0016.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0017",
+      "status": "excluded",
+      "exclusion_reason": "every token tagged EN, including obvious romanized Sinhala",
+      "n_tokens": 251,
+      "n_utterances": 30,
+      "lang_counts": {
+        "SI": 0,
+        "EN": 237,
+        "OTHER": 14
+      },
+      "n_switches": 21,
+      "mean_cmi": 7.24,
+      "pct_monolingual_utterances": 66.7,
+      "lang_pred_agreement": 0.4821,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "none",
+      "audit_issues": [
+        "PARTIAL_MISLABEL"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 151.06,
+      "asr_tokens": 43,
+      "gold_source_file": "J26DS313_R0017.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0018",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 260,
+      "n_utterances": 30,
+      "lang_counts": {
+        "SI": 95,
+        "EN": 152,
+        "OTHER": 13
+      },
+      "n_switches": 98,
+      "mean_cmi": 29.65,
+      "pct_monolingual_utterances": 20.0,
+      "lang_pred_agreement": 0.8769,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 156.44,
+      "asr_tokens": 65,
+      "gold_source_file": "J26DS313_R0018.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0019",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 398,
+      "n_utterances": 34,
+      "lang_counts": {
+        "SI": 174,
+        "EN": 224,
+        "OTHER": 0
+      },
+      "n_switches": 128,
+      "mean_cmi": 26.87,
+      "pct_monolingual_utterances": 17.6,
+      "lang_pred_agreement": 0.9874,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 169.64,
+      "asr_tokens": 124,
+      "gold_source_file": "J26DS313_R0019.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0020",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 335,
+      "n_utterances": 32,
+      "lang_counts": {
+        "SI": 173,
+        "EN": 162,
+        "OTHER": 0
+      },
+      "n_switches": 103,
+      "mean_cmi": 24.05,
+      "pct_monolingual_utterances": 25.0,
+      "lang_pred_agreement": 0.997,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 161.71,
+      "asr_tokens": 38,
+      "gold_source_file": "J26DS313_R0020.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0021",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 355,
+      "n_utterances": 34,
+      "lang_counts": {
+        "SI": 223,
+        "EN": 132,
+        "OTHER": 0
+      },
+      "n_switches": 117,
+      "mean_cmi": 29.15,
+      "pct_monolingual_utterances": 17.6,
+      "lang_pred_agreement": 1.0,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 204.12,
+      "asr_tokens": 80,
+      "gold_source_file": "J26DS313_R0021.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0022",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 291,
+      "n_utterances": 22,
+      "lang_counts": {
+        "SI": 173,
+        "EN": 107,
+        "OTHER": 11
+      },
+      "n_switches": 106,
+      "mean_cmi": 32.83,
+      "pct_monolingual_utterances": 0.0,
+      "lang_pred_agreement": 0.9416,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 186.64,
+      "asr_tokens": 80,
+      "gold_source_file": "J26DS313_R0022.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0023",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 215,
+      "n_utterances": 24,
+      "lang_counts": {
+        "SI": 138,
+        "EN": 64,
+        "OTHER": 13
+      },
+      "n_switches": 48,
+      "mean_cmi": 21.76,
+      "pct_monolingual_utterances": 37.5,
+      "lang_pred_agreement": 0.614,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 141.67,
+      "asr_tokens": 72,
+      "gold_source_file": "J26DS313_R0023.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0024",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 249,
+      "n_utterances": 24,
+      "lang_counts": {
+        "SI": 123,
+        "EN": 114,
+        "OTHER": 12
+      },
+      "n_switches": 115,
+      "mean_cmi": 34.17,
+      "pct_monolingual_utterances": 12.5,
+      "lang_pred_agreement": 0.8434,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 150.63,
+      "asr_tokens": 72,
+      "gold_source_file": "J26DS313_R0024.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0025",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 416,
+      "n_utterances": 44,
+      "lang_counts": {
+        "SI": 221,
+        "EN": 195,
+        "OTHER": 0
+      },
+      "n_switches": 114,
+      "mean_cmi": 25.36,
+      "pct_monolingual_utterances": 18.2,
+      "lang_pred_agreement": 0.9952,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 222.98,
+      "asr_tokens": 94,
+      "gold_source_file": "J26DS313_R0025.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0026",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 259,
+      "n_utterances": 29,
+      "lang_counts": {
+        "SI": 141,
+        "EN": 118,
+        "OTHER": 0
+      },
+      "n_switches": 95,
+      "mean_cmi": 26.95,
+      "pct_monolingual_utterances": 20.7,
+      "lang_pred_agreement": 0.9884,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 127.4,
+      "asr_tokens": 59,
+      "gold_source_file": "J26DS313_R0026.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0027",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 711,
+      "n_utterances": 74,
+      "lang_counts": {
+        "SI": 597,
+        "EN": 108,
+        "OTHER": 6
+      },
+      "n_switches": 159,
+      "mean_cmi": 13.72,
+      "pct_monolingual_utterances": 40.5,
+      "lang_pred_agreement": 0.9859,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 266.12,
+      "asr_tokens": 70,
+      "gold_source_file": "J26DS313_R0027.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0028",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 81,
+      "n_utterances": 7,
+      "lang_counts": {
+        "SI": 62,
+        "EN": 19,
+        "OTHER": 0
+      },
+      "n_switches": 24,
+      "mean_cmi": 25.14,
+      "pct_monolingual_utterances": 14.3,
+      "lang_pred_agreement": 0.963,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [],
+      "has_audio": true,
+      "audio_duration_s": 37.62,
+      "asr_tokens": 18,
+      "gold_source_file": "J26DS313_R0028.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0029",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 258,
+      "n_utterances": 19,
+      "lang_counts": {
+        "SI": 155,
+        "EN": 89,
+        "OTHER": 14
+      },
+      "n_switches": 131,
+      "mean_cmi": 29.31,
+      "pct_monolingual_utterances": 21.1,
+      "lang_pred_agreement": 0.9457,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 134.85,
+      "asr_tokens": 26,
+      "gold_source_file": "J26DS313_R0029.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0030",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 282,
+      "n_utterances": 19,
+      "lang_counts": {
+        "SI": 173,
+        "EN": 95,
+        "OTHER": 14
+      },
+      "n_switches": 128,
+      "mean_cmi": 34.17,
+      "pct_monolingual_utterances": 5.3,
+      "lang_pred_agreement": 0.9504,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 136.81,
+      "asr_tokens": 54,
+      "gold_source_file": "J26DS313_R0030.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0031",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 658,
+      "n_utterances": 42,
+      "lang_counts": {
+        "SI": 367,
+        "EN": 241,
+        "OTHER": 50
+      },
+      "n_switches": 247,
+      "mean_cmi": 31.21,
+      "pct_monolingual_utterances": 11.9,
+      "lang_pred_agreement": 0.9286,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 316.52,
+      "asr_tokens": 94,
+      "gold_source_file": "J26DS313_R0031.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0032",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 288,
+      "n_utterances": 24,
+      "lang_counts": {
+        "SI": 174,
+        "EN": 78,
+        "OTHER": 36
+      },
+      "n_switches": 100,
+      "mean_cmi": 28.04,
+      "pct_monolingual_utterances": 16.7,
+      "lang_pred_agreement": 0.875,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 148.16,
+      "asr_tokens": 73,
+      "gold_source_file": "J26DS313_R0032.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0033",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 382,
+      "n_utterances": 28,
+      "lang_counts": {
+        "SI": 217,
+        "EN": 137,
+        "OTHER": 28
+      },
+      "n_switches": 145,
+      "mean_cmi": 31.89,
+      "pct_monolingual_utterances": 7.1,
+      "lang_pred_agreement": 0.9241,
+      "tamil_flags": 2,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 188.27,
+      "asr_tokens": 83,
+      "gold_source_file": "J26DS313_R0033.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0034",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 397,
+      "n_utterances": 37,
+      "lang_counts": {
+        "SI": 215,
+        "EN": 146,
+        "OTHER": 36
+      },
+      "n_switches": 134,
+      "mean_cmi": 26.16,
+      "pct_monolingual_utterances": 24.3,
+      "lang_pred_agreement": 0.9043,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 197.4,
+      "asr_tokens": 109,
+      "gold_source_file": "J26DS313_R0034.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0035",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 383,
+      "n_utterances": 23,
+      "lang_counts": {
+        "SI": 189,
+        "EN": 128,
+        "OTHER": 66
+      },
+      "n_switches": 148,
+      "mean_cmi": 32.04,
+      "pct_monolingual_utterances": 13.0,
+      "lang_pred_agreement": 0.8277,
+      "tamil_flags": 2,
+      "null_timestamps": 85,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NULL_TIMESTAMPS",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 200.47,
+      "asr_tokens": 63,
+      "gold_source_file": "J26DS313_R0035.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0036",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 333,
+      "n_utterances": 32,
+      "lang_counts": {
+        "SI": 155,
+        "EN": 145,
+        "OTHER": 33
+      },
+      "n_switches": 127,
+      "mean_cmi": 28.5,
+      "pct_monolingual_utterances": 25.0,
+      "lang_pred_agreement": 0.9039,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 166.85,
+      "asr_tokens": 31,
+      "gold_source_file": "J26DS313_R0036.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0037",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 367,
+      "n_utterances": 39,
+      "lang_counts": {
+        "SI": 201,
+        "EN": 135,
+        "OTHER": 31
+      },
+      "n_switches": 120,
+      "mean_cmi": 25.52,
+      "pct_monolingual_utterances": 12.8,
+      "lang_pred_agreement": 0.9074,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 173.84,
+      "asr_tokens": 62,
+      "gold_source_file": "J26DS313_R0037.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0038",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 353,
+      "n_utterances": 26,
+      "lang_counts": {
+        "SI": 176,
+        "EN": 135,
+        "OTHER": 42
+      },
+      "n_switches": 137,
+      "mean_cmi": 32.48,
+      "pct_monolingual_utterances": 7.7,
+      "lang_pred_agreement": 0.881,
+      "tamil_flags": 2,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 185.79,
+      "asr_tokens": 26,
+      "gold_source_file": "J26DS313_R0038.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0039",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 338,
+      "n_utterances": 40,
+      "lang_counts": {
+        "SI": 228,
+        "EN": 73,
+        "OTHER": 37
+      },
+      "n_switches": 99,
+      "mean_cmi": 21.4,
+      "pct_monolingual_utterances": 27.5,
+      "lang_pred_agreement": 0.8905,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 124.78,
+      "asr_tokens": 73,
+      "gold_source_file": "J26DS313_R0039.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0040",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 290,
+      "n_utterances": 30,
+      "lang_counts": {
+        "SI": 187,
+        "EN": 82,
+        "OTHER": 21
+      },
+      "n_switches": 92,
+      "mean_cmi": 27.31,
+      "pct_monolingual_utterances": 16.7,
+      "lang_pred_agreement": 0.9276,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 150.12,
+      "asr_tokens": 104,
+      "gold_source_file": "J26DS313_R0040.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0041",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 389,
+      "n_utterances": 32,
+      "lang_counts": {
+        "SI": 208,
+        "EN": 128,
+        "OTHER": 53
+      },
+      "n_switches": 139,
+      "mean_cmi": 35.78,
+      "pct_monolingual_utterances": 12.5,
+      "lang_pred_agreement": 0.8638,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 177.6,
+      "asr_tokens": 76,
+      "gold_source_file": "J26DS313_R0041.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0042",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 350,
+      "n_utterances": 32,
+      "lang_counts": {
+        "SI": 208,
+        "EN": 98,
+        "OTHER": 44
+      },
+      "n_switches": 129,
+      "mean_cmi": 33.59,
+      "pct_monolingual_utterances": 6.2,
+      "lang_pred_agreement": 0.8714,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 147.05,
+      "asr_tokens": 38,
+      "gold_source_file": "J26DS313_R0042.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0043",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 357,
+      "n_utterances": 33,
+      "lang_counts": {
+        "SI": 233,
+        "EN": 85,
+        "OTHER": 39
+      },
+      "n_switches": 114,
+      "mean_cmi": 25.94,
+      "pct_monolingual_utterances": 12.1,
+      "lang_pred_agreement": 0.8908,
+      "tamil_flags": 0,
+      "null_timestamps": 1,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NULL_TIMESTAMPS",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 136.3,
+      "asr_tokens": 99,
+      "gold_source_file": "J26DS313_R0043.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0044",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 387,
+      "n_utterances": 33,
+      "lang_counts": {
+        "SI": 245,
+        "EN": 98,
+        "OTHER": 44
+      },
+      "n_switches": 115,
+      "mean_cmi": 25.2,
+      "pct_monolingual_utterances": 21.2,
+      "lang_pred_agreement": 0.8863,
+      "tamil_flags": 3,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 224.62,
+      "asr_tokens": 128,
+      "gold_source_file": "J26DS313_R0044.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0045",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 398,
+      "n_utterances": 23,
+      "lang_counts": {
+        "SI": 245,
+        "EN": 128,
+        "OTHER": 25
+      },
+      "n_switches": 150,
+      "mean_cmi": 33.58,
+      "pct_monolingual_utterances": 0.0,
+      "lang_pred_agreement": 0.9372,
+      "tamil_flags": 2,
+      "null_timestamps": 114,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NULL_TIMESTAMPS",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 184.94,
+      "asr_tokens": 87,
+      "gold_source_file": "J26DS313_R0045.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0046",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 737,
+      "n_utterances": 61,
+      "lang_counts": {
+        "SI": 468,
+        "EN": 226,
+        "OTHER": 43
+      },
+      "n_switches": 251,
+      "mean_cmi": 27.74,
+      "pct_monolingual_utterances": 19.7,
+      "lang_pred_agreement": 0.9362,
+      "tamil_flags": 0,
+      "null_timestamps": 13,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NULL_TIMESTAMPS",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 396.39,
+      "asr_tokens": 92,
+      "gold_source_file": "J26DS313_R0046.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0047",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 852,
+      "n_utterances": 70,
+      "lang_counts": {
+        "SI": 447,
+        "EN": 369,
+        "OTHER": 36
+      },
+      "n_switches": 370,
+      "mean_cmi": 31.1,
+      "pct_monolingual_utterances": 14.3,
+      "lang_pred_agreement": 0.9519,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 424.3,
+      "asr_tokens": 154,
+      "gold_source_file": "J26DS313_R0047.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0048",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 214,
+      "n_utterances": 15,
+      "lang_counts": {
+        "SI": 149,
+        "EN": 61,
+        "OTHER": 4
+      },
+      "n_switches": 70,
+      "mean_cmi": 29.5,
+      "pct_monolingual_utterances": 0.0,
+      "lang_pred_agreement": 0.9813,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 114.96,
+      "asr_tokens": 62,
+      "gold_source_file": "J26DS313_R0048.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0049",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 445,
+      "n_utterances": 36,
+      "lang_counts": {
+        "SI": 225,
+        "EN": 192,
+        "OTHER": 28
+      },
+      "n_switches": 207,
+      "mean_cmi": 33.12,
+      "pct_monolingual_utterances": 13.9,
+      "lang_pred_agreement": 0.9326,
+      "tamil_flags": 3,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 218.39,
+      "asr_tokens": 135,
+      "gold_source_file": "J26DS313_R0049.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0050",
+      "status": "usable_no_audio",
+      "exclusion_reason": null,
+      "n_tokens": 356,
+      "n_utterances": 28,
+      "lang_counts": {
+        "SI": 157,
+        "EN": 198,
+        "OTHER": 1
+      },
+      "n_switches": 128,
+      "mean_cmi": 29.27,
+      "pct_monolingual_utterances": 7.1,
+      "lang_pred_agreement": 0.8961,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0050.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0051",
+      "status": "excluded",
+      "exclusion_reason": "partial: 14% of Sinhala function words tagged EN",
+      "n_tokens": 310,
+      "n_utterances": 22,
+      "lang_counts": {
+        "SI": 231,
+        "EN": 78,
+        "OTHER": 1
+      },
+      "n_switches": 79,
+      "mean_cmi": 23.59,
+      "pct_monolingual_utterances": 4.5,
+      "lang_pred_agreement": 0.5677,
+      "tamil_flags": 2,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [
+        "PARTIAL_MISLABEL",
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0051.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0052",
+      "status": "usable_no_audio",
+      "exclusion_reason": null,
+      "n_tokens": 411,
+      "n_utterances": 25,
+      "lang_counts": {
+        "SI": 186,
+        "EN": 223,
+        "OTHER": 2
+      },
+      "n_switches": 188,
+      "mean_cmi": 39.54,
+      "pct_monolingual_utterances": 0.0,
+      "lang_pred_agreement": 0.9148,
+      "tamil_flags": 2,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "mixed",
+      "audit_issues": [
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0052.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0053",
+      "status": "usable_no_audio",
+      "exclusion_reason": null,
+      "n_tokens": 369,
+      "n_utterances": 29,
+      "lang_counts": {
+        "SI": 208,
+        "EN": 160,
+        "OTHER": 1
+      },
+      "n_switches": 147,
+      "mean_cmi": 30.7,
+      "pct_monolingual_utterances": 6.9,
+      "lang_pred_agreement": 0.9919,
+      "tamil_flags": 2,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0053.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0054",
+      "status": "excluded",
+      "exclusion_reason": "every token tagged EN despite code-mixed speech",
+      "n_tokens": 426,
+      "n_utterances": 40,
+      "lang_counts": {
+        "SI": 0,
+        "EN": 426,
+        "OTHER": 0
+      },
+      "n_switches": 0,
+      "mean_cmi": 0.0,
+      "pct_monolingual_utterances": 100.0,
+      "lang_pred_agreement": 0.5211,
+      "tamil_flags": 2,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "none",
+      "audit_issues": [
+        "BULK_LABEL",
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0054.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0055",
+      "status": "excluded",
+      "exclusion_reason": "every token tagged EN despite code-mixed speech",
+      "n_tokens": 392,
+      "n_utterances": 43,
+      "lang_counts": {
+        "SI": 0,
+        "EN": 392,
+        "OTHER": 0
+      },
+      "n_switches": 0,
+      "mean_cmi": 0.0,
+      "pct_monolingual_utterances": 100.0,
+      "lang_pred_agreement": 0.5,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "none",
+      "audit_issues": [
+        "BULK_LABEL",
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0055.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0056",
+      "status": "excluded",
+      "exclusion_reason": "290/291 tokens tagged EN despite code-mixed speech",
+      "n_tokens": 291,
+      "n_utterances": 27,
+      "lang_counts": {
+        "SI": 1,
+        "EN": 290,
+        "OTHER": 0
+      },
+      "n_switches": 2,
+      "mean_cmi": 0.31,
+      "pct_monolingual_utterances": 96.3,
+      "lang_pred_agreement": 0.6082,
+      "tamil_flags": 2,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [
+        "BULK_LABEL",
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0056.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0057",
+      "status": "usable_no_audio",
+      "exclusion_reason": null,
+      "n_tokens": 162,
+      "n_utterances": 25,
+      "lang_counts": {
+        "SI": 132,
+        "EN": 26,
+        "OTHER": 4
+      },
+      "n_switches": 27,
+      "mean_cmi": 16.33,
+      "pct_monolingual_utterances": 48.0,
+      "lang_pred_agreement": 0.9506,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0057.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0058",
+      "status": "excluded",
+      "exclusion_reason": "369/373 tokens tagged SI, including plain English ('Customer service desk')",
+      "n_tokens": 373,
+      "n_utterances": 24,
+      "lang_counts": {
+        "SI": 369,
+        "EN": 4,
+        "OTHER": 0
+      },
+      "n_switches": 2,
+      "mean_cmi": 0.88,
+      "pct_monolingual_utterances": 95.8,
+      "lang_pred_agreement": 0.6086,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [
+        "BULK_LABEL",
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0058.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0059",
+      "status": "excluded",
+      "exclusion_reason": "every token tagged EN despite code-mixed speech",
+      "n_tokens": 173,
+      "n_utterances": 17,
+      "lang_counts": {
+        "SI": 0,
+        "EN": 173,
+        "OTHER": 0
+      },
+      "n_switches": 0,
+      "mean_cmi": 0.0,
+      "pct_monolingual_utterances": 100.0,
+      "lang_pred_agreement": 0.4509,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "none",
+      "audit_issues": [
+        "BULK_LABEL",
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0059.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0060",
+      "status": "usable_no_audio",
+      "exclusion_reason": null,
+      "n_tokens": 208,
+      "n_utterances": 19,
+      "lang_counts": {
+        "SI": 161,
+        "EN": 47,
+        "OTHER": 0
+      },
+      "n_switches": 45,
+      "mean_cmi": 18.53,
+      "pct_monolingual_utterances": 31.6,
+      "lang_pred_agreement": 0.9952,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0060.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0061",
+      "status": "usable_no_audio",
+      "exclusion_reason": null,
+      "n_tokens": 298,
+      "n_utterances": 21,
+      "lang_counts": {
+        "SI": 194,
+        "EN": 104,
+        "OTHER": 0
+      },
+      "n_switches": 122,
+      "mean_cmi": 32.07,
+      "pct_monolingual_utterances": 4.8,
+      "lang_pred_agreement": 1.0,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "J26DS313_R0061.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0062",
+      "status": "excluded",
+      "exclusion_reason": "partial: 51% of Sinhala function words tagged EN",
+      "n_tokens": 255,
+      "n_utterances": 34,
+      "lang_counts": {
+        "SI": 66,
+        "EN": 189,
+        "OTHER": 0
+      },
+      "n_switches": 77,
+      "mean_cmi": 22.29,
+      "pct_monolingual_utterances": 26.5,
+      "lang_pred_agreement": 0.5059,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [
+        "PARTIAL_MISLABEL",
+        "NO_PREFIX",
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "R0062.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0063",
+      "status": "excluded",
+      "exclusion_reason": "partial: 35% of Sinhala function words tagged EN",
+      "n_tokens": 233,
+      "n_utterances": 33,
+      "lang_counts": {
+        "SI": 56,
+        "EN": 177,
+        "OTHER": 0
+      },
+      "n_switches": 63,
+      "mean_cmi": 20.67,
+      "pct_monolingual_utterances": 30.3,
+      "lang_pred_agreement": 0.7296,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [
+        "PARTIAL_MISLABEL",
+        "NO_PREFIX",
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "R0063.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0064",
+      "status": "excluded",
+      "exclusion_reason": "partial: 22% of Sinhala function words tagged EN",
+      "n_tokens": 243,
+      "n_utterances": 43,
+      "lang_counts": {
+        "SI": 57,
+        "EN": 186,
+        "OTHER": 0
+      },
+      "n_switches": 68,
+      "mean_cmi": 18.03,
+      "pct_monolingual_utterances": 37.2,
+      "lang_pred_agreement": 0.7737,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [
+        "PARTIAL_MISLABEL",
+        "NO_PREFIX",
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "R0064.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0065",
+      "status": "excluded",
+      "exclusion_reason": "partial: 26% of Sinhala function words tagged EN",
+      "n_tokens": 423,
+      "n_utterances": 53,
+      "lang_counts": {
+        "SI": 113,
+        "EN": 310,
+        "OTHER": 0
+      },
+      "n_switches": 140,
+      "mean_cmi": 23.45,
+      "pct_monolingual_utterances": 13.2,
+      "lang_pred_agreement": 0.7305,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "romanized",
+      "audit_issues": [
+        "PARTIAL_MISLABEL",
+        "NO_PREFIX",
+        "NO_AUDIO",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": false,
+      "audio_duration_s": null,
+      "asr_tokens": null,
+      "gold_source_file": "R0065.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0068",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 616,
+      "n_utterances": 62,
+      "lang_counts": {
+        "SI": 336,
+        "EN": 244,
+        "OTHER": 36
+      },
+      "n_switches": 221,
+      "mean_cmi": 30.33,
+      "pct_monolingual_utterances": 22.6,
+      "lang_pred_agreement": 0.9448,
+      "tamil_flags": 0,
+      "null_timestamps": 25,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NULL_TIMESTAMPS",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 303.74,
+      "asr_tokens": 62,
+      "gold_source_file": "J26DS313_R0068.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0069",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 610,
+      "n_utterances": 44,
+      "lang_counts": {
+        "SI": 397,
+        "EN": 190,
+        "OTHER": 23
+      },
+      "n_switches": 217,
+      "mean_cmi": 31.21,
+      "pct_monolingual_utterances": 9.1,
+      "lang_pred_agreement": 0.9639,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 333.93,
+      "asr_tokens": 99,
+      "gold_source_file": "J26DS313_R0069.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0070",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 562,
+      "n_utterances": 47,
+      "lang_counts": {
+        "SI": 297,
+        "EN": 234,
+        "OTHER": 31
+      },
+      "n_switches": 203,
+      "mean_cmi": 39.34,
+      "pct_monolingual_utterances": 6.4,
+      "lang_pred_agreement": 0.9395,
+      "tamil_flags": 2,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 330.35,
+      "asr_tokens": 154,
+      "gold_source_file": "J26DS313_R0070.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0071",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 613,
+      "n_utterances": 35,
+      "lang_counts": {
+        "SI": 307,
+        "EN": 269,
+        "OTHER": 37
+      },
+      "n_switches": 255,
+      "mean_cmi": 36.52,
+      "pct_monolingual_utterances": 8.6,
+      "lang_pred_agreement": 0.938,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 372.59,
+      "asr_tokens": 91,
+      "gold_source_file": "J26DS313_R0071.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0072",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 467,
+      "n_utterances": 42,
+      "lang_counts": {
+        "SI": 267,
+        "EN": 171,
+        "OTHER": 29
+      },
+      "n_switches": 163,
+      "mean_cmi": 31.84,
+      "pct_monolingual_utterances": 11.9,
+      "lang_pred_agreement": 0.9379,
+      "tamil_flags": 0,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 306.37,
+      "asr_tokens": 135,
+      "gold_source_file": "J26DS313_R0072.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0073",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 690,
+      "n_utterances": 49,
+      "lang_counts": {
+        "SI": 454,
+        "EN": 210,
+        "OTHER": 26
+      },
+      "n_switches": 255,
+      "mean_cmi": 32.63,
+      "pct_monolingual_utterances": 4.1,
+      "lang_pred_agreement": 0.9638,
+      "tamil_flags": 7,
+      "null_timestamps": 217,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NULL_TIMESTAMPS",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 348.97,
+      "asr_tokens": 80,
+      "gold_source_file": "J26DS313_R0073.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0074",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 752,
+      "n_utterances": 19,
+      "lang_counts": {
+        "SI": 411,
+        "EN": 306,
+        "OTHER": 35
+      },
+      "n_switches": 371,
+      "mean_cmi": 40.23,
+      "pct_monolingual_utterances": 5.3,
+      "lang_pred_agreement": 0.9561,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 427.8,
+      "asr_tokens": 177,
+      "gold_source_file": "J26DS313_R0074.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0075",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 512,
+      "n_utterances": 22,
+      "lang_counts": {
+        "SI": 286,
+        "EN": 189,
+        "OTHER": 37
+      },
+      "n_switches": 209,
+      "mean_cmi": 37.86,
+      "pct_monolingual_utterances": 9.1,
+      "lang_pred_agreement": 0.9258,
+      "tamil_flags": 2,
+      "null_timestamps": 161,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NULL_TIMESTAMPS",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 299.54,
+      "asr_tokens": 76,
+      "gold_source_file": "J26DS313_R0075.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0100",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 779,
+      "n_utterances": 19,
+      "lang_counts": {
+        "SI": 653,
+        "EN": 126,
+        "OTHER": 0
+      },
+      "n_switches": 135,
+      "mean_cmi": 15.25,
+      "pct_monolingual_utterances": 21.1,
+      "lang_pred_agreement": 1.0,
+      "tamil_flags": 1,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 300.0,
+      "asr_tokens": 47,
+      "gold_source_file": "J26DS313_R0100.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0101",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 839,
+      "n_utterances": 5,
+      "lang_counts": {
+        "SI": 719,
+        "EN": 120,
+        "OTHER": 0
+      },
+      "n_switches": 160,
+      "mean_cmi": 14.94,
+      "pct_monolingual_utterances": 0.0,
+      "lang_pred_agreement": 0.9988,
+      "tamil_flags": 4,
+      "null_timestamps": 80,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NULL_TIMESTAMPS",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 299.98,
+      "asr_tokens": 54,
+      "gold_source_file": "J26DS313_R0101.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0102",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 822,
+      "n_utterances": 17,
+      "lang_counts": {
+        "SI": 721,
+        "EN": 101,
+        "OTHER": 0
+      },
+      "n_switches": 156,
+      "mean_cmi": 10.41,
+      "pct_monolingual_utterances": 35.3,
+      "lang_pred_agreement": 0.9988,
+      "tamil_flags": 2,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 300.03,
+      "asr_tokens": 78,
+      "gold_source_file": "J26DS313_R0102.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0103",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 810,
+      "n_utterances": 13,
+      "lang_counts": {
+        "SI": 713,
+        "EN": 97,
+        "OTHER": 0
+      },
+      "n_switches": 148,
+      "mean_cmi": 11.59,
+      "pct_monolingual_utterances": 30.8,
+      "lang_pred_agreement": 1.0,
+      "tamil_flags": 5,
+      "null_timestamps": 172,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NULL_TIMESTAMPS",
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 299.98,
+      "asr_tokens": 117,
+      "gold_source_file": "J26DS313_R0103.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0104",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 838,
+      "n_utterances": 17,
+      "lang_counts": {
+        "SI": 720,
+        "EN": 118,
+        "OTHER": 0
+      },
+      "n_switches": 174,
+      "mean_cmi": 11.38,
+      "pct_monolingual_utterances": 23.5,
+      "lang_pred_agreement": 1.0,
+      "tamil_flags": 6,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 299.98,
+      "asr_tokens": 30,
+      "gold_source_file": "J26DS313_R0104.tokens.jsonl"
+    },
+    {
+      "recording": "J26DS313_R0105",
+      "status": "usable",
+      "exclusion_reason": null,
+      "n_tokens": 865,
+      "n_utterances": 9,
+      "lang_counts": {
+        "SI": 720,
+        "EN": 145,
+        "OTHER": 0
+      },
+      "n_switches": 217,
+      "mean_cmi": 23.86,
+      "pct_monolingual_utterances": 0.0,
+      "lang_pred_agreement": 1.0,
+      "tamil_flags": 2,
+      "null_timestamps": 0,
+      "sinhala_script_convention": "unicode",
+      "audit_issues": [
+        "NOT_IN_MANIFEST"
+      ],
+      "has_audio": true,
+      "audio_duration_s": 300.03,
+      "asr_tokens": 8,
+      "gold_source_file": "J26DS313_R0105.tokens.jsonl"
+    }
+  ]
+}

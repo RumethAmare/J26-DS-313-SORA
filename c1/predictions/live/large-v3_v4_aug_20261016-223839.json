@@ -1,0 +1,65 @@
+{
+  "n_utterances": 1,
+  "transcript": "Hello",
+  "utterances": [
+    {
+      "utt_id": "live_u001",
+      "start": 0.96,
+      "end": 2.14,
+      "text": "Hello",
+      "tokens": [
+        {
+          "utt_id": "live_u001",
+          "tok_id": 0,
+          "token": "Hello",
+          "lang": "EN",
+          "start": 1.19,
+          "end": 1.49,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5243
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.35,
+      "latency_after_speech_s": 0.95,
+      "decode_action": "greedy",
+      "align_s": 0.055
+    }
+  ],
+  "session": {
+    "model": "large-v3_v4_aug",
+    "model_dir": "models\\ct2\\large-v3_v4_aug",
+    "source": "browser microphone (live_web.py)",
+    "started": "20261016-223839",
+    "audio_s": 5.0,
+    "decode_opts": {
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 1,
+      "temperature": 0.0,
+      "compression_ratio_threshold": null,
+      "log_prob_threshold": null,
+      "no_speech_threshold": null,
+      "condition_on_previous_text": false,
+      "without_timestamps": true,
+      "no_repeat_ngram_size": 0,
+      "word_timestamps": true,
+      "vad_filter": false
+    },
+    "endpointing": {
+      "silence_ms": 600,
+      "number_pause_ms": 1500,
+      "max_utterance_s": 25.0,
+      "vad": "silero (faster-whisper bundle), streaming"
+    },
+    "timing": "ctc",
+    "time_method": "MMS forced alignment (word_align.py)",
+    "latency_after_speech_s": {
+      "median": 0.95,
+      "max": 0.95
+    }
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "n_utterances": 6,
+  "transcript": "Hello කොහොමද ඔයාගේ නම් මොකක්ද? ඔයාට මොකද කරන්නේ මට කවුණ් බෑලින් Mata kamawani.",
+  "utterances": [
+    {
+      "utt_id": "live_u001",
+      "start": 1.12,
+      "end": 2.11,
+      "text": "Hello",
+      "tokens": [
+        {
+          "utt_id": "live_u001",
+          "tok_id": 0,
+          "token": "Hello",
+          "lang": "EN",
+          "start": 1.32,
+          "end": 1.71,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.2765
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.09,
+      "latency_after_speech_s": 0.69,
+      "decode_action": "greedy",
+      "align_s": 0.036
+    },
+    {
+      "utt_id": "live_u002",
+      "start": 3.65,
+      "end": 4.83,
+      "text": "කොහොමද",
+      "tokens": [
+        {
+          "utt_id": "live_u002",
+          "tok_id": 0,
+          "token": "කොහොමද",
+          "lang": "SI",
+          "start": 3.85,
+          "end": 4.34,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.5925
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.16,
+      "latency_after_speech_s": 0.76,
+      "decode_action": "greedy",
+      "align_s": 0.035
+    },
+    {
+      "utt_id": "live_u003",
+      "start": 6.78,
+      "end": 8.22,
+      "text": "ඔයාගේ නම් මොකක්ද?",
+      "tokens": [
+        {
+          "utt_id": "live_u003",
+          "tok_id": 0,
+          "token": "ඔයාගේ",
+          "lang": "SI",
+          "start": 7.02,
+          "end": 7.41,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.6105
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 1,
+          "token": "නම්",
+          "lang": "SI",
+          "start": 7.41,
+          "end": 7.53,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.7158
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 2,
+          "token": "මොකක්ද?",
+          "lang": "SI",
+          "start": 7.63,
+          "end": 8.04,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.4929
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.26,
+      "latency_after_speech_s": 0.86,
+      "decode_action": "greedy",
+      "align_s": 0.041
+    },
+    {
+      "utt_id": "live_u004",
+      "start": 11.07,
+      "end": 12.58,
+      "text": "ඔයාට මොකද කරන්නේ",
+      "tokens": [
+        {
+          "utt_id": "live_u004",
+          "tok_id": 0,
+          "token": "ඔයාට",
+          "lang": "SI",
+          "start": 11.31,
+          "end": 11.58,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.4908
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 1,
+          "token": "මොකද",
+          "lang": "SI",
+          "start": 11.64,
+          "end": 11.88,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.5516
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 2,
+          "token": "කරන්නේ",
+          "lang": "SI",
+          "start": 11.92,
+          "end": 12.37,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.4228
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.33,
+      "latency_after_speech_s": 0.93,
+      "decode_action": "greedy",
+      "align_s": 0.045
+    },
+    {
+      "utt_id": "live_u005",
+      "start": 17.06,
+      "end": 18.24,
+      "text": "මට කවුණ් බෑලින්",
+      "tokens": [
+        {
+          "utt_id": "live_u005",
+          "tok_id": 0,
+          "token": "මට",
+          "lang": "SI",
+          "start": 17.29,
+          "end": 17.53,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.6185
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 1,
+          "token": "කවුණ්",
+          "lang": "SI",
+          "start": 17.53,
+          "end": 17.73,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.399
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 2,
+          "token": "බෑලින්",
+          "lang": "SI",
+          "start": 17.75,
+          "end": 17.98,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala",
+          "align_score": 0.2574
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.27,
+      "latency_after_speech_s": 0.87,
+      "decode_action": "greedy",
+      "align_s": 0.04
+    },
+    {
+      "utt_id": "live_u006",
+      "start": 19.97,
+      "end": 21.09,
+      "text": "Mata kamawani.",
+      "tokens": [
+        {
+          "utt_id": "live_u006",
+          "tok_id": 0,
+          "token": "Mata",
+          "lang": "SI",
+          "start": 20.07,
+          "end": 20.3,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9996,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.8088
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 1,
+          "token": "kamawani.",
+          "lang": "SI",
+          "start": 20.38,
+          "end": 20.85,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9927,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.4997
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.13,
+      "latency_after_speech_s": 0.73,
+      "decode_action": "greedy",
+      "align_s": 0.034
+    }
+  ],
+  "session": {
+    "model": "small_v4_aug",
+    "model_dir": "models\\ct2\\small_v4_aug",
+    "source": "browser microphone (live_web.py)",
+    "started": "20261016-230822",
+    "audio_s": 24.7,
+    "decode_opts": {
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 1,
+      "temperature": 0.0,
+      "compression_ratio_threshold": null,
+      "log_prob_threshold": null,
+      "no_speech_threshold": null,
+      "condition_on_previous_text": false,
+      "without_timestamps": true,
+      "no_repeat_ngram_size": 0,
+      "word_timestamps": true,
+      "vad_filter": false
+    },
+    "endpointing": {
+      "silence_ms": 600,
+      "number_pause_ms": 1500,
+      "max_utterance_s": 25.0,
+      "vad": "silero (faster-whisper bundle), streaming"
+    },
+    "timing": "ctc",
+    "time_method": "MMS forced alignment (word_align.py)",
+    "latency_after_speech_s": {
+      "median": 0.81,
+      "max": 0.93
+    }
+  }
+}

@@ -1,0 +1,455 @@
+{
+  "n_utterances": 9,
+  "transcript": "Hello Oyage nam mokakda? Oongal periya enna. Master Ogwe. Shrek. Batman. Shita butha. What the fuck is wrong with you? Pussy ass nigga.",
+  "utterances": [
+    {
+      "utt_id": "live_u001",
+      "start": 1.25,
+      "end": 2.24,
+      "text": "Hello",
+      "tokens": [
+        {
+          "utt_id": "live_u001",
+          "tok_id": 0,
+          "token": "Hello",
+          "lang": "EN",
+          "start": 1.45,
+          "end": 1.67,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.3582
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.35,
+      "latency_after_speech_s": 0.95,
+      "decode_action": "greedy",
+      "align_s": 0.043
+    },
+    {
+      "utt_id": "live_u002",
+      "start": 5.5,
+      "end": 7.04,
+      "text": "Oyage nam mokakda?",
+      "tokens": [
+        {
+          "utt_id": "live_u002",
+          "tok_id": 0,
+          "token": "Oyage",
+          "lang": "SI",
+          "start": 5.66,
+          "end": 5.92,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9986,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5022
+        },
+        {
+          "utt_id": "live_u002",
+          "tok_id": 1,
+          "token": "nam",
+          "lang": "SI",
+          "start": 5.95,
+          "end": 6.05,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9898,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.4727
+        },
+        {
+          "utt_id": "live_u002",
+          "tok_id": 2,
+          "token": "mokakda?",
+          "lang": "SI",
+          "start": 6.11,
+          "end": 6.57,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9991,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.6486
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.49,
+      "latency_after_speech_s": 1.09,
+      "decode_action": "greedy",
+      "align_s": 0.035
+    },
+    {
+      "utt_id": "live_u003",
+      "start": 10.14,
+      "end": 11.68,
+      "text": "Oongal periya enna.",
+      "tokens": [
+        {
+          "utt_id": "live_u003",
+          "tok_id": 0,
+          "token": "Oongal",
+          "lang": "EN",
+          "start": 10.36,
+          "end": 10.71,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9992,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5242
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 1,
+          "token": "periya",
+          "lang": "SI",
+          "start": 10.77,
+          "end": 11.07,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.5267,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.9541
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 2,
+          "token": "enna.",
+          "lang": "SI",
+          "start": 11.17,
+          "end": 11.39,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9998,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.9469
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.46,
+      "latency_after_speech_s": 1.06,
+      "decode_action": "greedy",
+      "align_s": 0.031
+    },
+    {
+      "utt_id": "live_u004",
+      "start": 15.9,
+      "end": 17.25,
+      "text": "Master Ogwe.",
+      "tokens": [
+        {
+          "utt_id": "live_u004",
+          "tok_id": 0,
+          "token": "Master",
+          "lang": "EN",
+          "start": 16.02,
+          "end": 16.47,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9977,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.6364
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 1,
+          "token": "Ogwe.",
+          "lang": "EN",
+          "start": 16.57,
+          "end": 16.94,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9786,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.6553
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.4,
+      "latency_after_speech_s": 1.0,
+      "decode_action": "greedy",
+      "align_s": 0.032
+    },
+    {
+      "utt_id": "live_u005",
+      "start": 19.68,
+      "end": 20.51,
+      "text": "Shrek.",
+      "tokens": [
+        {
+          "utt_id": "live_u005",
+          "tok_id": 0,
+          "token": "Shrek.",
+          "lang": "EN",
+          "start": 19.82,
+          "end": 20.23,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9225,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.4743
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.39,
+      "latency_after_speech_s": 0.99,
+      "decode_action": "greedy",
+      "align_s": 0.044
+    },
+    {
+      "utt_id": "live_u006",
+      "start": 24.54,
+      "end": 25.34,
+      "text": "Batman.",
+      "tokens": [
+        {
+          "utt_id": "live_u006",
+          "tok_id": 0,
+          "token": "Batman.",
+          "lang": "EN",
+          "start": 24.54,
+          "end": 25.09,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9605,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.6167
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.36,
+      "latency_after_speech_s": 0.96,
+      "decode_action": "greedy",
+      "align_s": 0.049
+    },
+    {
+      "utt_id": "live_u007",
+      "start": 28.38,
+      "end": 29.98,
+      "text": "Shita butha.",
+      "tokens": [
+        {
+          "utt_id": "live_u007",
+          "tok_id": 0,
+          "token": "Shita",
+          "lang": "EN",
+          "start": 28.56,
+          "end": 28.95,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.7584,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.6288
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 1,
+          "token": "butha.",
+          "lang": "SI",
+          "start": 29.03,
+          "end": 29.41,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.5637,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.7123
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.42,
+      "latency_after_speech_s": 1.02,
+      "decode_action": "greedy",
+      "align_s": 0.042
+    },
+    {
+      "utt_id": "live_u008",
+      "start": 34.43,
+      "end": 35.97,
+      "text": "What the fuck is wrong with you?",
+      "tokens": [
+        {
+          "utt_id": "live_u008",
+          "tok_id": 0,
+          "token": "What",
+          "lang": "EN",
+          "start": 34.51,
+          "end": 34.65,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.2603
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 1,
+          "token": "the",
+          "lang": "EN",
+          "start": 34.69,
+          "end": 34.75,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9978,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.1643
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 2,
+          "token": "fuck",
+          "lang": "EN",
+          "start": 34.83,
+          "end": 35.04,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9986,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.4756
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 3,
+          "token": "is",
+          "lang": "EN",
+          "start": 35.08,
+          "end": 35.18,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9996,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.3635
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 4,
+          "token": "wrong",
+          "lang": "EN",
+          "start": 35.2,
+          "end": 35.44,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9996,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.444
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 5,
+          "token": "with",
+          "lang": "EN",
+          "start": 35.44,
+          "end": 35.64,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9687,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5708
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 6,
+          "token": "you?",
+          "lang": "EN",
+          "start": 35.66,
+          "end": 35.78,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.0227
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.46,
+      "latency_after_speech_s": 1.06,
+      "decode_action": "greedy",
+      "align_s": 0.031
+    },
+    {
+      "utt_id": "live_u009",
+      "start": 41.6,
+      "end": 42.88,
+      "text": "Pussy ass nigga.",
+      "tokens": [
+        {
+          "utt_id": "live_u009",
+          "tok_id": 0,
+          "token": "Pussy",
+          "lang": "EN",
+          "start": 41.68,
+          "end": 41.99,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9996,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.3511
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 1,
+          "token": "ass",
+          "lang": "EN",
+          "start": 42.09,
+          "end": 42.23,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9964,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.3656
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 2,
+          "token": "nigga.",
+          "lang": "SI",
+          "start": 42.33,
+          "end": 42.55,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.8006,
+          "lang_method": "fasttext_latin",
+          "align_score": 0.5981
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.44,
+      "latency_after_speech_s": 1.04,
+      "decode_action": "greedy",
+      "align_s": 0.043
+    }
+  ],
+  "session": {
+    "model": "large-v3_v4_aug",
+    "model_dir": "models\\ct2\\large-v3_v4_aug",
+    "source": "browser microphone (live_web.py)",
+    "started": "20261016-224126",
+    "audio_s": 112.3,
+    "decode_opts": {
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 1,
+      "temperature": 0.0,
+      "compression_ratio_threshold": null,
+      "log_prob_threshold": null,
+      "no_speech_threshold": null,
+      "condition_on_previous_text": false,
+      "without_timestamps": true,
+      "no_repeat_ngram_size": 0,
+      "word_timestamps": true,
+      "vad_filter": false
+    },
+    "endpointing": {
+      "silence_ms": 600,
+      "number_pause_ms": 1500,
+      "max_utterance_s": 25.0,
+      "vad": "silero (faster-whisper bundle), streaming"
+    },
+    "timing": "ctc",
+    "time_method": "MMS forced alignment (word_align.py)",
+    "latency_after_speech_s": {
+      "median": 1.02,
+      "max": 1.09
+    }
+  }
+}

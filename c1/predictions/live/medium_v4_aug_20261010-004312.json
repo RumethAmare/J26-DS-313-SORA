@@ -1,0 +1,1129 @@
+{
+  "n_utterances": 18,
+  "transcript": "Hello. Oyage nama mokatta? Oyata kohomada? හතන කියන්නට රේපාලුක් නේද? කියලා අනුබ නම් වෙනේ නේ දැනුනේ නේ මට නම් පාලුන්නේ Mage phone number eka liyaganna. Hari, ok sir. Hari, ok sir. බිංදුවයි මේ අර්බයි කියන්න පුළුවන්ද 0012 3 4 5 6 7 8 9 2 1 2 3 4 5 6 7 Hari, ok sir. 07712345677 Mage NIC eka liyagadanna. හොඳයිනේ හොඳයි හොඳයි ලිප් ගහන්න පුළුවන් බෑන්ද්ද? ලයවු ගහන්න පුළුවන් බෑන්ද්ද එකක් නැද්ද?",
+  "utterances": [
+    {
+      "utt_id": "live_u001",
+      "start": 2.14,
+      "end": 3.07,
+      "text": "Hello.",
+      "tokens": [
+        {
+          "utt_id": "live_u001",
+          "tok_id": 0,
+          "token": "Hello.",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.33,
+      "latency_after_speech_s": 0.93,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u002",
+      "start": 4.9,
+      "end": 6.46,
+      "text": "Oyage nama mokatta?",
+      "tokens": [
+        {
+          "utt_id": "live_u002",
+          "tok_id": 0,
+          "token": "Oyage",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9986,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u002",
+          "tok_id": 1,
+          "token": "nama",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9986,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u002",
+          "tok_id": 2,
+          "token": "mokatta?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5354,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.25,
+      "latency_after_speech_s": 0.85,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u003",
+      "start": 7.9,
+      "end": 9.31,
+      "text": "Oyata kohomada?",
+      "tokens": [
+        {
+          "utt_id": "live_u003",
+          "tok_id": 0,
+          "token": "Oyata",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u003",
+          "tok_id": 1,
+          "token": "kohomada?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9999,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.26,
+      "latency_after_speech_s": 0.86,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u004",
+      "start": 12.67,
+      "end": 15.74,
+      "text": "හතන කියන්නට රේපාලුක් නේද?",
+      "tokens": [
+        {
+          "utt_id": "live_u004",
+          "tok_id": 0,
+          "token": "හතන",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 1,
+          "token": "කියන්නට",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 2,
+          "token": "රේපාලුක්",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u004",
+          "tok_id": 3,
+          "token": "නේද?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.88,
+      "latency_after_speech_s": 1.48,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u005",
+      "start": 19.17,
+      "end": 21.76,
+      "text": "කියලා අනුබ නම් වෙනේ නේ",
+      "tokens": [
+        {
+          "utt_id": "live_u005",
+          "tok_id": 0,
+          "token": "කියලා",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 1,
+          "token": "අනුබ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 2,
+          "token": "නම්",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 3,
+          "token": "වෙනේ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u005",
+          "tok_id": 4,
+          "token": "නේ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.69,
+      "latency_after_speech_s": 1.29,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u006",
+      "start": 24.99,
+      "end": 29.02,
+      "text": "දැනුනේ නේ මට නම් පාලුන්නේ",
+      "tokens": [
+        {
+          "utt_id": "live_u006",
+          "tok_id": 0,
+          "token": "දැනුනේ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 1,
+          "token": "නේ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 2,
+          "token": "මට",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 3,
+          "token": "නම්",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u006",
+          "tok_id": 4,
+          "token": "පාලුන්නේ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.61,
+      "latency_after_speech_s": 1.21,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u007",
+      "start": 33.28,
+      "end": 35.39,
+      "text": "Mage phone number eka liyaganna.",
+      "tokens": [
+        {
+          "utt_id": "live_u007",
+          "tok_id": 0,
+          "token": "Mage",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9987,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 1,
+          "token": "phone",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9434,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 2,
+          "token": "number",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9899,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 3,
+          "token": "eka",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9701,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u007",
+          "tok_id": 4,
+          "token": "liyaganna.",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9987,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.28,
+      "latency_after_speech_s": 0.88,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u008",
+      "start": 38.14,
+      "end": 39.3,
+      "text": "Hari, ok sir.",
+      "tokens": [
+        {
+          "utt_id": "live_u008",
+          "tok_id": 0,
+          "token": "Hari,",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9488,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 1,
+          "token": "ok",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9836,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u008",
+          "tok_id": 2,
+          "token": "sir.",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9867,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.27,
+      "latency_after_speech_s": 0.87,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u009",
+      "start": 42.5,
+      "end": 43.65,
+      "text": "Hari, ok sir.",
+      "tokens": [
+        {
+          "utt_id": "live_u009",
+          "tok_id": 0,
+          "token": "Hari,",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9488,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 1,
+          "token": "ok",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9836,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u009",
+          "tok_id": 2,
+          "token": "sir.",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9867,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.22,
+      "latency_after_speech_s": 0.82,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u010",
+      "start": 45.02,
+      "end": 46.24,
+      "text": "බිංදුවයි මේ අර්බයි කියන්න පුළුවන්ද",
+      "tokens": [
+        {
+          "utt_id": "live_u010",
+          "tok_id": 0,
+          "token": "බිංදුවයි",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u010",
+          "tok_id": 1,
+          "token": "මේ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u010",
+          "tok_id": 2,
+          "token": "අර්බයි",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u010",
+          "tok_id": 3,
+          "token": "කියන්න",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u010",
+          "tok_id": 4,
+          "token": "පුළුවන්ද",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.67,
+      "latency_after_speech_s": 1.27,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u011",
+      "start": 50.88,
+      "end": 52.99,
+      "text": "0012 3 4 5 6 7 8 9 2 1 2 3 4 5 6 7",
+      "tokens": [
+        {
+          "utt_id": "live_u011",
+          "tok_id": 0,
+          "token": "0012",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 1,
+          "token": "3",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 2,
+          "token": "4",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 3,
+          "token": "5",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 4,
+          "token": "6",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 5,
+          "token": "7",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 6,
+          "token": "8",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 7,
+          "token": "9",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 8,
+          "token": "2",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 9,
+          "token": "1",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 10,
+          "token": "2",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 11,
+          "token": "3",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 12,
+          "token": "4",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 13,
+          "token": "5",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 14,
+          "token": "6",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        },
+        {
+          "utt_id": "live_u011",
+          "tok_id": 15,
+          "token": "7",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.45,
+      "latency_after_speech_s": 1.05,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u012",
+      "start": 57.54,
+      "end": 59.58,
+      "text": "Hari, ok sir.",
+      "tokens": [
+        {
+          "utt_id": "live_u012",
+          "tok_id": 0,
+          "token": "Hari,",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9488,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u012",
+          "tok_id": 1,
+          "token": "ok",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9836,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u012",
+          "tok_id": 2,
+          "token": "sir.",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9867,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.36,
+      "latency_after_speech_s": 0.96,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u013",
+      "start": 61.89,
+      "end": 63.52,
+      "text": "07712345677",
+      "tokens": [
+        {
+          "utt_id": "live_u013",
+          "tok_id": 0,
+          "token": "07712345677",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.5,
+          "lang_method": "numeric"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.36,
+      "latency_after_speech_s": 0.96,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u014",
+      "start": 66.75,
+      "end": 68.96,
+      "text": "Mage NIC eka liyagadanna.",
+      "tokens": [
+        {
+          "utt_id": "live_u014",
+          "tok_id": 0,
+          "token": "Mage",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9987,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u014",
+          "tok_id": 1,
+          "token": "NIC",
+          "lang": "EN",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 1.0,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u014",
+          "tok_id": 2,
+          "token": "eka",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": true,
+          "asr_confidence": null,
+          "lang_confidence": 0.9701,
+          "lang_method": "fasttext_latin"
+        },
+        {
+          "utt_id": "live_u014",
+          "tok_id": 3,
+          "token": "liyagadanna.",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.9993,
+          "lang_method": "fasttext_latin"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.42,
+      "latency_after_speech_s": 1.02,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u015",
+      "start": 73.15,
+      "end": 74.02,
+      "text": "හොඳයිනේ",
+      "tokens": [
+        {
+          "utt_id": "live_u015",
+          "tok_id": 0,
+          "token": "හොඳයිනේ",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.44,
+      "latency_after_speech_s": 1.04,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u016",
+      "start": 78.24,
+      "end": 79.26,
+      "text": "හොඳයි හොඳයි",
+      "tokens": [
+        {
+          "utt_id": "live_u016",
+          "tok_id": 0,
+          "token": "හොඳයි",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u016",
+          "tok_id": 1,
+          "token": "හොඳයි",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.34,
+      "latency_after_speech_s": 0.94,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u017",
+      "start": 96.03,
+      "end": 98.78,
+      "text": "ලිප් ගහන්න පුළුවන් බෑන්ද්ද?",
+      "tokens": [
+        {
+          "utt_id": "live_u017",
+          "tok_id": 0,
+          "token": "ලිප්",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u017",
+          "tok_id": 1,
+          "token": "ගහන්න",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u017",
+          "tok_id": 2,
+          "token": "පුළුවන්",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u017",
+          "tok_id": 3,
+          "token": "බෑන්ද්ද?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 0.81,
+      "latency_after_speech_s": 1.41,
+      "decode_action": "greedy"
+    },
+    {
+      "utt_id": "live_u018",
+      "start": 101.6,
+      "end": 104.8,
+      "text": "ලයවු ගහන්න පුළුවන් බෑන්ද්ද එකක් නැද්ද?",
+      "tokens": [
+        {
+          "utt_id": "live_u018",
+          "tok_id": 0,
+          "token": "ලයවු",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u018",
+          "tok_id": 1,
+          "token": "ගහන්න",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u018",
+          "tok_id": 2,
+          "token": "පුළුවන්",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u018",
+          "tok_id": 3,
+          "token": "බෑන්ද්ද",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u018",
+          "tok_id": 4,
+          "token": "එකක්",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        },
+        {
+          "utt_id": "live_u018",
+          "tok_id": 5,
+          "token": "නැද්ද?",
+          "lang": "SI",
+          "start": null,
+          "end": null,
+          "switch": false,
+          "asr_confidence": null,
+          "lang_confidence": 0.99,
+          "lang_method": "unicode_sinhala"
+        }
+      ],
+      "end_reason": "pause",
+      "decode_s": 1.08,
+      "latency_after_speech_s": 1.68,
+      "decode_action": "greedy"
+    }
+  ],
+  "session": {
+    "model": "medium_v4_aug",
+    "model_dir": "models\\ct2\\medium_v4_aug",
+    "source": "microphone (default)",
+    "started": "20261010-004312",
+    "audio_s": 119.6,
+    "decode_opts": {
+      "language": "en",
+      "task": "transcribe",
+      "beam_size": 1,
+      "temperature": 0.0,
+      "compression_ratio_threshold": null,
+      "log_prob_threshold": null,
+      "no_speech_threshold": null,
+      "condition_on_previous_text": false,
+      "without_timestamps": true,
+      "no_repeat_ngram_size": 0,
+      "word_timestamps": true,
+      "vad_filter": false
+    },
+    "endpointing": {
+      "silence_ms": 600,
+      "max_utterance_s": 25.0,
+      "vad": "silero (faster-whisper bundle), streaming"
+    },
+    "word_times": false,
+    "latency_after_speech_s": {
+      "median": 0.99,
+      "max": 1.68
+    }
+  }
+}

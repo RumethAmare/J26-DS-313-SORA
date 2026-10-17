@@ -1,0 +1,307 @@
+{
+  "note": "Folded by recording, not token, so no conversation appears in both train and test. fastText sees Latin-script tokens only; Sinhala/Tamil script and numerics are handled by deterministic rules. OTHER F1 near zero is a property of the labels (~22 Latin-script examples, incoherent membership; ~97% of OTHER is numerals tagged under an inconsistent convention), not the model. *_non_numeric results drop numerals for that reason.",
+  "partial_mislabel_recordings_excluded": [],
+  "n_tokens": 27046,
+  "n_recordings": 71,
+  "excluded_recordings": [
+    "J26DS313_R0008",
+    "J26DS313_R0017",
+    "J26DS313_R0054",
+    "J26DS313_R0055",
+    "J26DS313_R0056",
+    "J26DS313_R0058",
+    "J26DS313_R0059"
+  ],
+  "folds": [
+    [
+      "J26DS313_R0009",
+      "J26DS313_R0024",
+      "J26DS313_R0050",
+      "J26DS313_R0016",
+      "J26DS313_R0031",
+      "J26DS313_R0072",
+      "J26DS313_R0075",
+      "J26DS313_R0015",
+      "J26DS313_R0019",
+      "J26DS313_R0034",
+      "J26DS313_R0035",
+      "J26DS313_R0045",
+      "J26DS313_R0046",
+      "J26DS313_R0104",
+      "J26DS313_R0105"
+    ],
+    [
+      "J26DS313_R0004",
+      "J26DS313_R0002",
+      "J26DS313_R0052",
+      "J26DS313_R0027",
+      "J26DS313_R0068",
+      "J26DS313_R0074",
+      "J26DS313_R0069",
+      "J26DS313_R0011",
+      "J26DS313_R0020",
+      "J26DS313_R0033",
+      "J26DS313_R0037",
+      "J26DS313_R0044",
+      "J26DS313_R0048",
+      "J26DS313_R0103"
+    ],
+    [
+      "J26DS313_R0007",
+      "J26DS313_R0003",
+      "J26DS313_R0018",
+      "J26DS313_R0022",
+      "J26DS313_R0013",
+      "J26DS313_R0053",
+      "J26DS313_R0049",
+      "J26DS313_R0010",
+      "J26DS313_R0021",
+      "J26DS313_R0032",
+      "J26DS313_R0038",
+      "J26DS313_R0043",
+      "J26DS313_R0057",
+      "J26DS313_R0102"
+    ],
+    [
+      "J26DS313_R0051",
+      "J26DS313_R0014",
+      "J26DS313_R0065",
+      "J26DS313_R0063",
+      "J26DS313_R0012",
+      "J26DS313_R0036",
+      "J26DS313_R0073",
+      "J26DS313_R0006",
+      "J26DS313_R0025",
+      "J26DS313_R0030",
+      "J26DS313_R0039",
+      "J26DS313_R0042",
+      "J26DS313_R0060",
+      "J26DS313_R0101"
+    ],
+    [
+      "J26DS313_R0028",
+      "J26DS313_R0023",
+      "J26DS313_R0062",
+      "J26DS313_R0064",
+      "J26DS313_R0047",
+      "J26DS313_R0071",
+      "J26DS313_R0070",
+      "J26DS313_R0005",
+      "J26DS313_R0026",
+      "J26DS313_R0029",
+      "J26DS313_R0040",
+      "J26DS313_R0041",
+      "J26DS313_R0061",
+      "J26DS313_R0100"
+    ]
+  ],
+  "fasttext_params": {
+    "epoch": 50,
+    "lr": 0.5,
+    "dim": 50,
+    "minn": 2,
+    "maxn": 5,
+    "wordNgrams": 1,
+    "minCount": 1,
+    "loss": "softmax",
+    "seed": 13,
+    "thread": 1,
+    "bucket": 50000
+  },
+  "results": {
+    "method_a_heuristic_all_tokens": {
+      "SI": {
+        "f1_mean": 0.9337,
+        "f1_std": 0.0303,
+        "precision_mean": 0.8956,
+        "recall_mean": 0.9757,
+        "support_total": 16747
+      },
+      "EN": {
+        "f1_mean": 0.8194,
+        "f1_std": 0.0412,
+        "precision_mean": 0.8386,
+        "recall_mean": 0.8023,
+        "support_total": 9234
+      },
+      "OTHER": {
+        "f1_mean": 0.0,
+        "f1_std": 0.0,
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "support_total": 1065
+      },
+      "_accuracy_mean": 0.877,
+      "_accuracy_std": 0.034,
+      "_macro_f1_mean": 0.5844,
+      "_macro_f1_std": 0.0239
+    },
+    "method_b_fasttext_latin_only": {
+      "SI": {
+        "f1_mean": 0.6766,
+        "f1_std": 0.0422,
+        "precision_mean": 0.8064,
+        "recall_mean": 0.6007,
+        "support_total": 1566
+      },
+      "EN": {
+        "f1_mean": 0.9451,
+        "f1_std": 0.0303,
+        "precision_mean": 0.9287,
+        "recall_mean": 0.9627,
+        "support_total": 8855
+      },
+      "OTHER": {
+        "f1_mean": 0.5987,
+        "f1_std": 0.1908,
+        "precision_mean": 0.752,
+        "recall_mean": 0.5691,
+        "support_total": 41
+      },
+      "_accuracy_mean": 0.9078,
+      "_accuracy_std": 0.0438,
+      "_macro_f1_mean": 0.7401,
+      "_macro_f1_std": 0.0711
+    },
+    "heuristic_latin_only": {
+      "SI": {
+        "f1_mean": 0.5356,
+        "f1_std": 0.0771,
+        "precision_mean": 0.4103,
+        "recall_mean": 0.7861,
+        "support_total": 1566
+      },
+      "EN": {
+        "f1_mean": 0.867,
+        "f1_std": 0.0518,
+        "precision_mean": 0.9467,
+        "recall_mean": 0.8007,
+        "support_total": 8855
+      },
+      "OTHER": {
+        "f1_mean": 0.0,
+        "f1_std": 0.0,
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "support_total": 41
+      },
+      "_accuracy_mean": 0.7938,
+      "_accuracy_std": 0.0671,
+      "_macro_f1_mean": 0.4675,
+      "_macro_f1_std": 0.0402
+    },
+    "hybrid_all_tokens": {
+      "SI": {
+        "f1_mean": 0.9677,
+        "f1_std": 0.0197,
+        "precision_mean": 0.9747,
+        "recall_mean": 0.9609,
+        "support_total": 16747
+      },
+      "EN": {
+        "f1_mean": 0.8949,
+        "f1_std": 0.0249,
+        "precision_mean": 0.8402,
+        "recall_mean": 0.9578,
+        "support_total": 9234
+      },
+      "OTHER": {
+        "f1_mean": 0.0396,
+        "f1_std": 0.0127,
+        "precision_mean": 0.752,
+        "recall_mean": 0.0204,
+        "support_total": 1065
+      },
+      "_accuracy_mean": 0.9223,
+      "_accuracy_std": 0.0212,
+      "_macro_f1_mean": 0.6341,
+      "_macro_f1_std": 0.0165
+    },
+    "heuristic_non_numeric": {
+      "SI": {
+        "f1_mean": 0.934,
+        "f1_std": 0.0306,
+        "precision_mean": 0.8956,
+        "recall_mean": 0.9762,
+        "support_total": 16736
+      },
+      "EN": {
+        "f1_mean": 0.864,
+        "f1_std": 0.0519,
+        "precision_mean": 0.9467,
+        "recall_mean": 0.7954,
+        "support_total": 8910
+      },
+      "OTHER": {
+        "f1_mean": 0.0,
+        "f1_std": 0.0,
+        "precision_mean": 0.0,
+        "recall_mean": 0.0,
+        "support_total": 46
+      },
+      "_accuracy_mean": 0.9105,
+      "_accuracy_std": 0.0383,
+      "_macro_f1_mean": 0.5993,
+      "_macro_f1_std": 0.0274
+    },
+    "hybrid_non_numeric": {
+      "SI": {
+        "f1_mean": 0.9679,
+        "f1_std": 0.0199,
+        "precision_mean": 0.9747,
+        "recall_mean": 0.9614,
+        "support_total": 16736
+      },
+      "EN": {
+        "f1_mean": 0.9421,
+        "f1_std": 0.0322,
+        "precision_mean": 0.9287,
+        "recall_mean": 0.9564,
+        "support_total": 8910
+      },
+      "OTHER": {
+        "f1_mean": 0.5785,
+        "f1_std": 0.2029,
+        "precision_mean": 0.752,
+        "recall_mean": 0.535,
+        "support_total": 46
+      },
+      "_accuracy_mean": 0.9581,
+      "_accuracy_std": 0.0245,
+      "_macro_f1_mean": 0.8295,
+      "_macro_f1_std": 0.07
+    },
+    "paired_fold_comparison": {
+      "heuristic_accuracy_per_fold": [
+        0.905,
+        0.8987,
+        0.9016,
+        0.8427,
+        0.837
+      ],
+      "hybrid_accuracy_per_fold": [
+        0.9323,
+        0.947,
+        0.9275,
+        0.8908,
+        0.9138
+      ],
+      "delta_per_fold": [
+        0.0273,
+        0.0483,
+        0.0259,
+        0.0481,
+        0.0768
+      ],
+      "folds_won_by_hybrid": 5,
+      "mean_delta": 0.0453,
+      "min_delta": 0.0259,
+      "max_delta": 0.0768
+    }
+  },
+  "final_model": {
+    "path": "F:\\SLIIT\\Y4 S1\\Research\\J26-DS-313-SORA\\c1\\models\\lid_latin.ftz",
+    "size_kb": 1373.8,
+    "n_train_tokens": 10462
+  }
+}

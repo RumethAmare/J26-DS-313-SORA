@@ -1,0 +1,238 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S014_courier_delivery.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Domex customer service, මම Madhavi.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Hello, මගේ parcel එක තවම ආවේ නෑ. Track කරලා බලන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Tracking number එක කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "PX407207547.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "මම ආපහු කියන්නම්, PX407207547.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව් හරි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Parcel එක දැන් තියෙන්නේ Kurunegala hub එකේ. ඊයේ deliver කරන්න ගියාම ගෙදර කවුරුත් හිටියේ නෑ කියලා තියෙනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "අනේ, මම මුළු දවසම ගෙදර හිටියා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "සමාවෙන්න madam. Delivery address එක confirm කරමු.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "No. 191/7, Station Road, Kurunegala.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ළඟ landmark එකක් තියෙනවද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, post office එක ළඟ, දෙවෙනි පාරේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Receiver ගේ නම?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Madhavi Liyanage.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Contact number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "070 618 8479. Rider ට එන්න කලින් call කරන්න කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි, ලබන Monday උදේ 9.45 ත් 12.30 ත් අතර deliver කරනවා. Cash on delivery amount එක rupees 10,700.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Card එකෙන් pay කරන්න පුළුවන්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඔව්, rider ළඟ card machine එකක් තියෙනවා. Complaint reference එක CS-218248.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි, ගොඩක් ස්තූතියි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Thank you, සුභ දවසක්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Redelivery booked with a call before arrival; card payment accepted on delivery.",
+      "owner": "Domex",
+      "receiver": "Madhavi Liyanage",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Madhavi Liyanage",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Madhavi Liyanage"
+        },
+        {
+          "script": "LATIN",
+          "form": "Madhavi"
+        }
+      ]
+    },
+    {
+      "canonical": "Madhavi",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Madhavi"
+        }
+      ]
+    },
+    {
+      "canonical": "Domex",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Domex"
+        }
+      ]
+    },
+    {
+      "canonical": "PX407207547",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "PX407207547"
+        }
+      ]
+    },
+    {
+      "canonical": "No. 191/7, Station Road, Kurunegala",
+      "label": "ADDRESS",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 191/7, Station Road, Kurunegala"
+        }
+      ]
+    },
+    {
+      "canonical": "070 618 8479",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "070 618 8479"
+        }
+      ]
+    },
+    {
+      "canonical": "CS-218248",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "CS-218248"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {}
+}

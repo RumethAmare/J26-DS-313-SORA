@@ -1,0 +1,286 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S012_insurance_claim.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "Softlogic Life motor claims, මම Chamara.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Hello, මගේ car එක accident එකකට පැටලුණා. Claim එකක් report කරන්න ඕනේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "අයියෝ, කාටවත් තුවාල වුණාද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "නෑ, කාටවත් කිසි දෙයක් නෑ. Front bumper එකයි headlight එකයි කැඩුණා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි. ඔයාගේ නම කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Rashmi Wijesekara.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Vehicle number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "NW TUM-2373.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Policy number එක ළඟ තියෙනවද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, MV42843528.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "මම ආපහු කියන්නම්, MV42843528.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, ඒක තමයි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "කොහෙද accident එක වුණේ?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Nugegoda junction එක ළඟ, අද උදේ 10.15 විතර.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "අනිත් වාහනයේ number එක ගත්තද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, ඒක SP NQV-6327.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Police complaint එකක් දැම්මද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, Nugegoda police එකේ. Complaint number එක 144976.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හොඳයි. ඔයාගේ contact number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "072 645 1547.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "අපේ assessor කෙනෙක් පැය දෙකක් ඇතුළත call කරයි. වාහනය දැන් කොහෙද තියෙන්නේ?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "තවම junction එක ළඟ පැත්තකට කරලා තියෙන්නේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි. Claim reference number එක CLM-608565. Assessor එනකම් photos ටිකක් ගන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "CLM-608565. හරි, ලියාගත්තා. ස්තූතියි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Take care madam, අපි ඉක්මනටම contact කරන්නම්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Assessor calls within 2 hours; customer takes photos of the vehicle meanwhile.",
+      "owner": "Softlogic Life",
+      "receiver": "Rashmi Wijesekara",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Rashmi Wijesekara",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Rashmi Wijesekara"
+        },
+        {
+          "script": "LATIN",
+          "form": "Rashmi"
+        }
+      ]
+    },
+    {
+      "canonical": "Chamara",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Chamara"
+        }
+      ]
+    },
+    {
+      "canonical": "Softlogic Life",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Softlogic Life"
+        }
+      ]
+    },
+    {
+      "canonical": "NW TUM-2373",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "NW TUM-2373"
+        }
+      ]
+    },
+    {
+      "canonical": "SP NQV-6327",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "SP NQV-6327"
+        }
+      ]
+    },
+    {
+      "canonical": "072 645 1547",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "072 645 1547"
+        }
+      ]
+    },
+    {
+      "canonical": "MV42843528",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "MV42843528"
+        }
+      ]
+    },
+    {
+      "canonical": "144976",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "144976"
+        }
+      ]
+    },
+    {
+      "canonical": "CLM-608565",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "CLM-608565"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {}
+}

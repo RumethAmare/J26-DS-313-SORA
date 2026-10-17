@@ -1,49 +1,41 @@
-# Component 1 — Code-Switched ASR + Per-Token Language Identification
-# J26-DS-313 | see C1_FINAL_IMPLEMENTATION.md §3
-#
-# Install into the SORA_Dataset venv, which already carries most of this:
-#   /mnt/F/SLIIT/Research/SORA_Dataset/.venv/bin/pip install -r requirements.txt
-#
-# System dependency, not pip-installable: ffmpeg
+# ASR
+faster-whisper==1.2.1
+ctranslate2==4.8.1
+av==18.1.0            # faster-whisper 1.2.1 passes av.open(metadata_errors=...),
+                      # which PyAV 19 removed -- unpinned installs fail on decode
+nvidia-cublas-cu12
+nvidia-cudnn-cu12==9.*
 
-# ── Phase 0 (needed now) ──────────────────────────────────────
-# faster-whisper runs on CTranslate2, so Phase 0 needs no torch.
-faster-whisper
-ctranslate2
-jiwer
-pandas
-indic-transliteration      # Sinhala -> ISO-15919 bridge for script-folded scoring
+# forced alignment (SORA_Dataset/tools/c1/realign_mms.py)
+torchaudio            # same version/CUDA build as torch (cu128 index)
+uroman
 
-# ── Stage C — language ID ─────────────────────────────────────
-sklearn-crfsuite
-scikit-learn
-wordfreq
+# evaluation
+jiwer==4.0.0
 
-# ── Stage A — preprocessing (Phase 1) ─────────────────────────
-# webrtcvad, not silero-vad: silero-vad's PyPI package requires torch and
-# torchaudio UNCONDITIONALLY (confirmed against its PyPI metadata), which
-# defeats the point of a lightweight Phase-1 VAD -- torch is deliberately
-# deferred to Phase 2 below. webrtcvad is a plain C-extension frame
-# classifier, no ML framework required.
-webrtcvad
-noisereduce
-librosa
-soundfile
+# LID
+wordfreq==3.1.1
+fasttext-wheel        # 'fasttext' has broken wheels on recent Python
+                      # NOTE: its .predict() wrapper ends in
+                      # np.array(probs, copy=False), which NumPy 2.x rejects.
+                      # Do NOT pin numpy<2 to work around this — call
+                      # model.f.predict() (the raw C++ binding) instead, as
+                      # lid_hybrid.py and train_lid_fasttext.py do.
+langid==1.1.6         # optional cross-check baseline
 
-# ── Stage B — ASR fine-tuning (Phase 2) ───────────────────────
-# ~5 GB of wheels. Deliberately NOT installed until Phase 2 opens;
-# /mnt/F had ~20 GB free as of Week 0, and Phase 0 does not need them.
-# The RTX 5050 is Blackwell (sm_120), so torch must be a cu128-or-newer build.
-openai-whisper
-transformers
-peft
-bitsandbytes
-accelerate
-datasets
-
-# ── Phase 3 — noise robustness ────────────────────────────────
+# noise robustness (Task 6)
 audiomentations
+soundfile
+scipy
 
-# ── Data sourcing / IO ────────────────────────────────────────
-jsonlines
-yt-dlp
+# benchmarking (Task 7)
+psutil
+
+# live transcription (live_transcribe.py)
+sounddevice           # microphone capture (PortAudio)
+fastapi               # live_web.py: web page + WebSocket
+uvicorn[standard]
+
+# shared
+pandas
+numpy

@@ -1,0 +1,64 @@
+Phase 0 — Tooling
+Create requirements.txt with the pinned deps listed in the plan (faster-whisper, ctranslate2, jiwer, wordfreq, fasttext-wheel, langid, audiomentations, soundfile, scipy, psutil, pandas, numpy).
+Install into .venv, then pip freeze > requirements-lock.txt.
+
+
+Phase 1 — Section D: Data-quality fixes (blocking, do first)
+Write scripts/c1/rerun_validate_all.py — loop validate.py <rid> --audio ... over all 27 recordings, dump results to results/validate_status_audit.csv.
+Reconcile manifests/recordings_current.csv: flip R0019/20/21/25/26 (and any others that fail) from VALIDATED to ANNOTATED_DRAFT.
+Exclude R0017 from any Task 3 train/eval split; add a note about it to the (not-yet-written) dataset card.
+Add a numeric-tagging paragraph to docs/DATA_CONTRACT.md, plus a non-failing warning check [7] in validate.py for number-tagging disagreement.
+
+
+Phase 2 — Task 1 refinement (ASR baseline)
+Add a script-normalization/transliteration pass before WER scoring so Latin-vs-Sinhala-Unicode script mismatch isn't scored as ASR error.
+Re-run evaluate.py to report both raw-script WER and normalized WER.
+Run the small ablation grid: {small, medium} × {auto-detect, forced si}.
+Update results/c1_report.md with the ablation table + a future-work paragraph on fine-tuning.
+
+
+Phase 3 — Task 2: extend the schema + build the token stream
+Extend DATA_CONTRACT.md's schema with two new fields: asr_confidence (Whisper per-word .probability, needs word_timestamps=True) and lang_confidence (from the LID method).
+Write scripts/c1/build_token_stream.py: Whisper word-level decode → LID tagging → switch computation → emit predictions/c1/token_stream/<rid>.tokens.jsonl.
+
+
+Phase 4 — Task 3: SI/EN/OTHER classifier
+Keep lid_baseline.py as Method A (already built).
+Write scripts/c1/train_lid_fasttext.py: prep training data from gold tokens, train a fastText supervised classifier for ambiguous Latin-script cases, do 5-fold CV stratified by recording (not token).
+Write scripts/c1/lid_hybrid.py: Unicode rule first, fastText fallback for Latin-script.
+Produce results/c1_lid_eval.json comparing heuristic vs hybrid, mean±std F1 per class.
+
+
+Phase 5 — Task 4: switch-point detection
+Confirm gold switch field is populated correctly (part of Section D audit).
+Write scripts/c1/switch_detection_eval.py: switch-point F1 on positions (gold vs Task 3 predictions) + per-utterance CMI.
+
+
+Phase 6 — Task 5: OTHER/Tamil flagging
+Keep the Unicode rule for native-script Tamil as-is.
+Build tiny char n-gram (order 3-4) likelihood models for SI and EN; flag Latin-script tokens as candidate-OTHER when likelihood under both is below a percentile threshold.
+Add a small hand-curated romanized-Tamil function-word gazetteer.
+Write scripts/c1/otherlang_flag.py + precision/recall report against gold OTHER tokens.
+
+
+Phase 7 — Task 6: noise robustness (highest ROI if time-constrained — prioritize if behind schedule)
+Write scripts/c1/make_noisy_variants.py: degrade audio via audiomentations at SNR tiers (clean/15/5/0dB) with MUSAN or self-recorded noise + reverb.
+Write scripts/c1/noise_robustness_eval.py: re-run Tasks 1/3/4 pipelines per tier, plot WER/LID-accuracy/switch-F1/timestamp-error vs SNR.
+Produce results/c1_noise_robustness.md.
+
+
+Phase 8 — Task 7: quantization & latency
+Write scripts/c1/benchmark_latency.py: sweep compute_type (int8/int8_float16/float16) × model size on faster-whisper/CTranslate2, measure RTF, peak VRAM/RAM, disk size.
+Run fastText's quantize() on Task 3's model for before/after size and accuracy.
+Produce results/c1_latency_report.md.
+
+
+Phase 9 — Task 8: assemble the shared dataset (last, depends on all above)
+Write scripts/c1/build_dataset_release.py: merge token stream + LID labels + switch markers + OTHER flags → processed/c1_dataset/<rid>.jsonl + corpus-level MANIFEST.json.
+Write docs/C1_DATASET_CARD.md documenting size and every Section D limitation (R0017 exclusion, numeric-tagging drift, OTHER scarcity, script inconsistency).
+
+
+Verification checkpoints throughout
+Run each script standalone; check its output against the results/*.json/.md it's supposed to produce.
+Re-run validate.py on all 27 after Section D fixes to confirm manifest status matches truth.
+For Task 3's CV folds, assert no recording appears in both train and test within a fold.

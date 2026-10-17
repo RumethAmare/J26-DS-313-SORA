@@ -1,0 +1,186 @@
+# Romanized Tamil lexicon for C1 Task 5 (OTHER = Tamil) detection.
+#
+# Common Tamil function words, pronouns, numerals and high-frequency verbs, in
+# Latin transliteration. Used two ways by scripts/otherlang_flag.py:
+#   1. as a gazetteer for high-precision exact hits
+#   2. as training data for the character n-gram Tamil model
+#
+# Everything here is normalised through script_normalize.normalize_scripted()
+# before use, so spelling variants (illai / illae / ilai) collapse together and
+# match Sinhala-script Tamil after romanisation (ඉල්ලයි -> ilayi).
+#
+# EXPANDING THIS FILE IS THE HIGHEST-LEVERAGE IMPROVEMENT for Task 5 -- the
+# detector is limited by lexicon coverage, not by model capacity. A real
+# romanized-Tamil word list (or a transliterated Tamil frequency list) would
+# help far more than a larger model.
+#
+# CAVEAT: this list was hand-written, and it necessarily contains the handful of
+# Tamil words that appear in the corpus (sari, periya, illai, puriyum) because
+# those are among the most common words in the language. Gazetteer results are
+# therefore reported as "deployment-realistic but not held-out"; the n-gram
+# detector is evaluated leave-one-out so it has a clean number.
+
+# negation / affirmation
+illai
+illa
+ille
+sari
+seri
+aama
+aamaa
+ille_da
+venum
+vendam
+mudiyum
+mudiyala
+theriyum
+theriyala
+
+# pronouns / demonstratives
+naan
+naanga
+nee
+neenga
+avan
+aval
+avanga
+ivan
+ivanga
+adhu
+idhu
+idu
+andha
+indha
+enna
+yaaru
+edhu
+evlo
+eppadi
+epdi
+enge
+eppo
+enakku
+unakku
+ungaluku
+avanukku
+
+# quantity / size
+oru
+oruthar
+onnu
+rendu
+moonu
+naalu
+anju
+aaru
+ezhu
+ettu
+onbathu
+pathu
+konjam
+romba
+niraya
+periya
+chinna
+ellam
+mattum
+
+# common nouns
+veedu
+veetu
+thanni
+sapadu
+kadai
+velai
+paattu
+pasanga
+thambi
+akka
+anna
+appa
+amma
+paiyan
+ponnu
+nanban
+kaasu
+neram
+naal
+varusham
+pillai
+manushan
+idam
+vazhi
+
+# verbs
+varen
+vandhu
+vanga
+poren
+poitu
+ponga
+panren
+pannunga
+panna
+irukku
+irukken
+irukkanga
+solli
+sollu
+sonna
+kekkanum
+kelu
+paaru
+paakka
+theriyanum
+mudinjiduchu
+aachu
+aagum
+kudu
+kuduthu
+vaangu
+vaangi
+
+# greetings / politeness
+vanakkam
+nandri
+mannikkavum
+kandippa
+nichayama
+kandippaa
+seekiram
+
+# problem / issue vocabulary
+prachanai
+prachana
+pirachanai
+kashtam
+nallathu
+nalla
+ketta
+sandai
+
+# comprehension
+puriyum
+puriyala
+puriyuthu
+puriyathu
+therinjukka
+
+# misc high-frequency
+apparam
+appuram
+aprum
+innum
+innoru
+mudiyala
+appo
+ippo
+inge
+ange
+edhukku
+enthan
+ungal
+engal
+namma
+unga
+enga

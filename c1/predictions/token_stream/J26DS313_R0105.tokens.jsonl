@@ -1,0 +1,8 @@
+{"utt_id": "J26DS313_R0105_u001", "tok_id": 0, "token": "thicker", "lang": "EN", "start": 272.1, "end": 273.5, "switch": false, "asr_confidence": 0.0, "lang_confidence": 0.9993, "lang_method": "fasttext_latin"}
+{"utt_id": "J26DS313_R0105_u002", "tok_id": 0, "token": "2", "lang": "EN", "start": 273.5, "end": 274.16, "switch": false, "asr_confidence": 0.0003, "lang_confidence": 0.5, "lang_method": "numeric"}
+{"utt_id": "J26DS313_R0105_u003", "tok_id": 0, "token": "2", "lang": "EN", "start": 276.62, "end": 278.02, "switch": false, "asr_confidence": 0.0269, "lang_confidence": 0.5, "lang_method": "numeric"}
+{"utt_id": "J26DS313_R0105_u004", "tok_id": 0, "token": "2", "lang": "EN", "start": 281.36, "end": 282.76, "switch": false, "asr_confidence": 0.2581, "lang_confidence": 0.5, "lang_method": "numeric"}
+{"utt_id": "J26DS313_R0105_u005", "tok_id": 0, "token": "2", "lang": "EN", "start": 282.76, "end": 283.3, "switch": false, "asr_confidence": 0.6841, "lang_confidence": 0.5, "lang_method": "numeric"}
+{"utt_id": "J26DS313_R0105_u006", "tok_id": 0, "token": "2", "lang": "EN", "start": 295.56, "end": 296.96, "switch": false, "asr_confidence": 0.8403, "lang_confidence": 0.5, "lang_method": "numeric"}
+{"utt_id": "J26DS313_R0105_u007", "tok_id": 0, "token": "2", "lang": "EN", "start": 296.96, "end": 298.74, "switch": false, "asr_confidence": 0.9048, "lang_confidence": 0.5, "lang_method": "numeric"}
+{"utt_id": "J26DS313_R0105_u008", "tok_id": 0, "token": "2", "lang": "EN", "start": 298.74, "end": 299.98, "switch": false, "asr_confidence": 0.9331, "lang_confidence": 0.5, "lang_method": "numeric"}

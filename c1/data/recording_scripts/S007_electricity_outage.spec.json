@@ -1,0 +1,226 @@
+{
+  "recording_id": "J26DS313_R____",
+  "_note": "DRAFT generated from the recording script. Correct every utterance to what was ACTUALLY said, fill clean_en / clean_si and the summary, assign the real recording id, then run tools/c1/realign_mms.py and tools/build_annotations.py.",
+  "_script": "S007_electricity_outage.md",
+  "utterances": [
+    {
+      "speaker": "S1",
+      "text": "LECO hotline, මම Sahan.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "Hello, අපේ ගෙදර current නෑ, පැය තුනක් විතර තිස්සේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි madam. Electricity account number එක කියන්න.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "9397615846.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "මම ආපහු කියන්නම්, 9397615846. Account එක Madhavi Liyanage ගේ නමින්ද?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "ඔව්, ඒ මම.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Address එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "No. 152, Lake Road, Maharagama.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "ඒ area එකේ transformer එකක fault එකක් report වෙලා තියෙනවා. Team එක දැනටමත් ගිහින්.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "කීයටද ආයෙත් current එන්නේ?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හවස 7.00 වෙනකොට එයි කියලා හිතනවා.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "හරි. තව එකක්, මගේ අන්තිම bill එකේ units 332 ක් පෙන්නනවා. සාමාන්‍යයෙන් 178 වගේ.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Meter reading එක check කරන්න request එකක් දාන්නම්. Contact number එක?",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "076 414 6590.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "හරි. Breakdown reference එක BD-85380. Bill complaint එකේ reference එක BC-12911.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S2",
+      "text": "BD-85380 සහ BC-12911. හරි, ස්තූතියි.",
+      "clean_en": "",
+      "clean_si": ""
+    },
+    {
+      "speaker": "S1",
+      "text": "Inconvenience එකට සමාවෙන්න, සුභ දවසක්.",
+      "clean_en": "",
+      "clean_si": ""
+    }
+  ],
+  "summary": {
+    "en": "",
+    "si": ""
+  },
+  "action_items": [
+    {
+      "intent": "Repair team on site; meter reading check requested for the high bill.",
+      "owner": "LECO",
+      "receiver": "Madhavi Liyanage",
+      "deadline": null,
+      "confidence": 0.8,
+      "source_spans": []
+    }
+  ],
+  "entities": [
+    {
+      "canonical": "Madhavi Liyanage",
+      "label": "PERSON",
+      "role": "PRIVATE_INDIVIDUAL",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Madhavi Liyanage"
+        },
+        {
+          "script": "LATIN",
+          "form": "Madhavi"
+        }
+      ]
+    },
+    {
+      "canonical": "Sahan",
+      "label": "PERSON",
+      "role": "ORGANISATION_REP",
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "Sahan"
+        }
+      ]
+    },
+    {
+      "canonical": "LECO",
+      "label": "ORG",
+      "role": "ORGANISATION",
+      "redact": false,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "LECO"
+        }
+      ]
+    },
+    {
+      "canonical": "9397615846",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "9397615846"
+        }
+      ]
+    },
+    {
+      "canonical": "No. 152, Lake Road, Maharagama",
+      "label": "ADDRESS",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "No. 152, Lake Road, Maharagama"
+        }
+      ]
+    },
+    {
+      "canonical": "076 414 6590",
+      "label": "PHONE",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "076 414 6590"
+        }
+      ]
+    },
+    {
+      "canonical": "BD-85380",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "BD-85380"
+        }
+      ]
+    },
+    {
+      "canonical": "BC-12911",
+      "label": "ACCOUNT",
+      "role": null,
+      "redact": true,
+      "surfaces": [
+        {
+          "script": "LATIN",
+          "form": "BC-12911"
+        }
+      ]
+    }
+  ],
+  "lang_overrides": {}
+}
