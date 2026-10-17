@@ -24,17 +24,23 @@ cover this pair — together with a normalization-plus-generation method that:
 
 - handles intra-word morphological mixing (`meeting-eka`, `bankඑකට`);
 - is robust to ASR errors, being trained and tested on noisy transcripts;
-- summarises the code-mixed transcript **directly**, so indirect Sinhala
-  commitments survive instead of being lost in an intermediate translation;
+- compares summarising the code-mixed transcript **directly** against
+  **translate-first** (the CS-Sum comparison) — on dev, translate-first wins;
 - has controllable output language (English / Sinhala / Singlish).
 
 ## Pipeline
 
-    C1+C3 transcript ──► normalize ──► translate (mT5 / NLLB) ──► clean_en, clean_si
-                             │
-                             └────► summarize (QLoRA LLM) ──► summary + action items
-                                        ▲
-                     commitment detector (rules) — candidate action items
+    C1+C3 transcript
+      └─► prepare: spoken digits → numerals, spelling variants        (normalize.py)
+           └─► translate: fine-tuned NLLB-600M ──► clean_en, clean_si (train_translation.py)
+                │   postprocess: numbers copied from the source,
+                │   split Sinhala conjuncts re-joined                (normalize.py)
+                └─► summarise clean_en: QLoRA Qwen2.5-3B ──► summary + action items
+                     └─► summary → Sinhala (base NLLB)               (train_summary.py)
+                          └─► <rid>.translation.json + <rid>.summary.json → C4
+
+    run_c2.py runs the whole chain on a GPU; run_offline.py runs it on a laptop
+    CPU with no internet (CTranslate2 int8 + llama.cpp GGUF Q4).
 
 ## Data lives elsewhere
 
@@ -48,25 +54,51 @@ recording count is hard-coded.
 
 ## Status
 
-| Phase | What | State |
+| Step | What | State |
 |---|---|---|
-| 0 | Corpus loader (all annotation shapes), locked split, data audit | next |
-| 0 | Normalizer, indirect-commitment detector, copy baselines, chrF/BLEU | next |
-| 1 | NLLB baseline translator; mT5-small en→si fine-tune and data-size curve | planned |
-| 2 | QLoRA summarizer, action-item extraction, output-language control | planned |
-| 3 | Noisy-vs-clean evaluation, COMET, LLM-judge + human faithfulness | planned |
+| 1 | Corpus loader (all annotation shapes), recording-level split | done |
+| 2 | Normalizer (clitics, fillers, spoken digits, spelling variants) | done |
+| 3 | Task A: NLLB-600M fine-tune, en and si, vs zero-shot baseline | done |
+| 4 | Task B: QLoRA Qwen2.5-3B, direct vs translate-first | done |
+| 5 | Full pipeline (`run_c2.py`), C4-format output | done |
+| 6 | Offline CPU pipeline (`export_offline.py`, `run_offline.py`) | built, not yet run on a laptop |
+| 7 | Test-split evaluation (`evaluate.py`) | built, run once at the end |
+| — | COMET, LLM-judge + human rating, NLLB-1.3B, context-aware translation | PP2 |
+
+### Dev results (5 recordings, 95 utterances)
+
+| Task | Before training | After training |
+|---|---|---|
+| Singlish → English, chrF++ / BLEU | 36.6 / 13.8 | **56.3 / 33.6** |
+| Singlish → Sinhala, chrF++ / BLEU | 28.1 / 6.6 | **51.1 / 22.3** |
+| Summary ROUGE-L — direct | 25.3 | 34.0 |
+| Summary ROUGE-L — translate-first | 25.3 | **43.7** |
+| Action items F1 (intent) — translate-first | 16.0 | **32.0** |
+
+Romanized-augmentation + normalisation ablation (en): 56.4 chrF++, no
+significant gain over 56.3. Full numbers in `eval/*.json`; error analysis in
+[`docs/C2_RESULTS.md`](docs/C2_RESULTS.md).
 
 Earlier mT5-small result (en→si, 22 train / 5 test recordings, 50 epochs):
-BLEU 0.06 → 0.70 → 6.99 → 9.59 at 25/50/75/100 % of training data, still
-rising — more recordings are the main lever.
+BLEU 9.59 at 100 % of training data — the reason for moving to NLLB, which is
+pretrained on Sinhala.
+
+## How to run
+
+    python src/prepare_data.py                          # data/{train,dev,test}.jsonl
+    python src/train_translation.py --target en         # GPU (Colab T4)
+    python src/train_summary.py --input cascade         # GPU
+    python src/run_c2.py --split dev --rid J26DS313_R0007   # full pipeline, GPU
+    python src/run_offline.py --rid J26DS313_R0007      # full pipeline, laptop CPU, offline
+    python src/evaluate.py                              # final test scores → eval/c2_report.md
 
 ## Metrics
 
 | Output | Metric |
 |---|---|
 | clean_en / clean_si | chrF++ (headline), BLEU, COMET (Phase 3) |
-| summary | LLM-judge + human faithfulness rating against baselines |
-| action items | precision / recall / F1 on intent, owner, deadline |
+| summary | ROUGE-L now; LLM-judge + human faithfulness rating (PP2) |
+| action items | precision / recall / F1 on intent, and intent + owner |
 
 chrF++ is the headline for translation rather than BLEU: Sinhala is
 morphologically rich, and BLEU's word n-grams punish correct inflection
@@ -81,14 +113,16 @@ variants that chrF's character n-grams credit.
     docs/       output contract and annotation guidance
     src/        implementation
     tests/      unit tests
-    eval/       scored results (committed)
-    reports/    written reports
+    eval/       scored results (committed; scores only, no transcript text)
+    data/       train/dev/test splits (gitignored: un-redacted PII)
+    predictions/, models/   regenerable outputs (gitignored)
 
 ## Invariants
 
-1. **Never train on the eval split.** The split will be locked in
-   `data/split.csv` before any training; training entry points must refuse
-   eval recordings.
+1. **Never train on the test split.** The split is fixed by recording in
+   `src/prepare_data.py` (test = the same 5 recordings C4 holds out); training
+   scripts read only `train` and `dev`, and `evaluate.py` is run once per
+   final model set.
 2. **Never write into `SORA_Dataset`.** Read from it; write here.
 3. **Gold summaries used for evaluation must be human-written** — never score
    against a machine-written summary.

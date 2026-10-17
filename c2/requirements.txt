@@ -24,5 +24,12 @@ bitsandbytes>=0.43.0
 rouge_score>=0.1.2        # ROUGE-L for summaries
 # deep-translator         # only for `evaluate.py --google` (sends text to Google)
 
+# --- Offline laptop pipeline (src/run_offline.py, CPU only) -----------------
+# ctranslate2 runs the int8 NLLB models; llama-cpp-python runs the GGUF Qwen.
+# On Windows, take llama-cpp-python's prebuilt CPU wheel:
+#     pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+ctranslate2>=4.5.0
+llama-cpp-python>=0.3.0
+
 # --- Phase 3: learned translation metric -------------------------------------
 # unbabel-comet          # COMET; ~2 GB model download, install when needed
